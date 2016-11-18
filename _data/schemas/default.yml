@@ -73,4 +73,4 @@ page_fields:
   - field_name: title
     label: Title
   - field_name: content
-    label: Content
+    label: Content 

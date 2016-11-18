@@ -27,8 +27,21 @@ The main SCSS file for everything, yep
 	background: url('http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg') no-repeat fixed center bottom /cover;
 	position: relative;
 	top:0px;
-	min-height: 450px;
+	min-height: 400px;
 	padding-top:0px;
+}
+
+.cta-front {
+	background: $trans_dark;
+	height: 420px;
+	.showme {
+		padding-top:20px;
+	}
+}
+
+.cta-box {
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .front-page-container {
@@ -139,9 +152,6 @@ The main SCSS file for everything, yep
 	}
 }
 
-.bg-smoky {
-	background: $trans_dark;
-}
 
 
 

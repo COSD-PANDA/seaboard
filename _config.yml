@@ -34,6 +34,8 @@ navigation:
     url: /datasets/
   - title: Organizations
     url: /organizations/
+  - title: Get Started
+    url: /get-started/
 
 # Collections
 collections:

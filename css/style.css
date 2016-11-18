@@ -331,8 +331,18 @@ a .hidden-link-text {
   background: url("http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg") no-repeat fixed center bottom/cover;
   position: relative;
   top: 0px;
-  min-height: 450px;
+  min-height: 400px;
   padding-top: 0px; }
+
+.cta-front {
+  background: rgba(0, 0, 0, 0.5);
+  height: 420px; }
+  .cta-front .showme {
+    padding-top: 20px; }
+
+.cta-box {
+  margin-left: 0px;
+  margin-right: 0px; }
 
 .front-page-container {
   margin-top: 115px; }
@@ -416,9 +426,6 @@ a .hidden-link-text {
   #inventory-table th {
     font-family: "Merriweather",Helvetica, Arial, sans-serif; }
 
-.bg-smoky {
-  background: rgba(0, 0, 0, 0.8); }
-
 .jumbo-intro {
   margin-top: 5%;
   color: white;
@@ -478,7 +485,7 @@ a .hidden-link-text {
   padding: 0px; }
 
 .fp-panel .panel-body {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   font-family: "Merriweather",Helvetica, Arial, sans-serif;
   padding: 5px;
