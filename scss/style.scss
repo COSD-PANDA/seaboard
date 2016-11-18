@@ -1,0 +1,491 @@
+/*
+The main SCSS file for everything, yep
+*/
+@import "syntax";
+@import "sd";
+
+.small-top-banner {
+	background: $s_blue_1_1;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	padding-top: 3px;
+	padding-bottom:3px;
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+}
+
+
+
+#header-image {
+	/*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/
+	background: url('http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg') no-repeat fixed center bottom /cover;
+	position: relative;
+	top:34px;
+	min-height: 450px;
+	padding-top:30px;
+}
+
+#header-image.small{
+	background: url('http://mrm-screen.s3.amazonaws.com/home-hero-1-1.jpg') no-repeat fixed center;
+	background-position-y: -80px;
+	min-height: 200px;
+	padding-top:0px;
+}
+
+
+.page-header {
+  font-weight: bold;
+  color: $p_black;
+  text-align: center;
+  background: white;
+  opacity: $bg_opacity;
+  padding-top:55px;
+  padding-bottom:55px;
+  margin-bottom:0px;
+  border-bottom:0px;
+  font-size: 3em;
+
+}
+
+.section-header {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.fp-panel {
+	i.text-primary {
+		color: $p_green;
+	}
+	a.btn-go, a.btn-go:active, a.btn-go:hover {
+		background: $p_orange;
+		border-color: $p_orange;
+	}
+	padding-bottom:80px;
+}
+
+
+.panel {
+	background: white;
+	opacity: $bg_opacity;
+}
+
+.page.container {
+	.page-content {
+		background: white;
+		opacity: $bg_opacity;
+		padding:10px;
+		margin-bottom:80px;
+		padding-top:1px;
+	}
+}
+
+.big-num {
+	.panel-heading {
+		background: transparent;
+		border: 0px;
+		font-size: 1em;
+		color: white;
+	}
+	.chart-stage {
+		font-size: 4em;
+	}
+	.chart-bottom {
+		font-size: 0.9em;
+	}
+	background: $p_blue;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.process-wrapper {
+	h2 {
+		font-weight: bold;
+		font-size:2.5em;
+		color: $p_blue;
+		margin-top:0px;
+	}
+	.arrow-next {
+		color: $p_green;
+	}
+}
+
+#inventory-table {
+	background: transparent;
+	padding:20px;
+	font-size:0.8em;
+	tr.light {
+		background: $table_light;
+	}
+	tr.dark {
+		background: $table_dark;
+	}
+	th {
+		@include merriweather;
+	}
+}
+
+.jumbo-intro {
+	margin-top:5%;
+	background: $trans_dark;
+	color:white;
+	.cta-box {
+		background: transparent;
+		padding:30px;
+		margin-bottom:25px;
+	}
+	.welcome-intro {
+		a, a:hover, a:visited {
+			color: $p_orange;
+		}
+	}
+	padding:30px;
+	padding-bottom: 30px !important;
+
+}
+
+.title-intro {
+	background: transparent;
+	color:black;
+	position: relative;
+	top:110px;
+	
+}
+
+.add-dataset {
+	margin-top:30px;
+}
+
+#inventory .panel-heading{
+	background-image: url("http://take.ms/K0n7c");
+}
+
+#opensd .panel-heading{
+	background-image: url("http://take.ms/GK1Gk");
+}
+
+#opengov .panel-heading {
+	background-image: url("http://take.ms/WjYwC");
+}
+
+#sdmaps .panel-heading {
+	background-image: url("http://take.ms/5AThk");
+}
+
+#odpolicy .panel-heading {
+	background-image: url("http://mrm-screen.s3.amazonaws.com/14324-illustration-of-a-book-pv.png");
+}
+
+#councilupdate .panel-heading{
+	background-image: url("http://take.ms/FJnAS");
+}
+
+#pasite {
+	.panel-body { 
+		padding-top:13px;
+	}
+	.panel-heading {
+		background-image: url("http://take.ms/bevC1");
+	}
+}
+
+
+.fp-panel a, a:hover, a:visited {
+	text-decoration: none;
+}
+
+
+.fp-panel .panel-heading {
+	background-size: cover;
+	background-position-x:50%;
+	background-position-y: 100%;
+	background-repeat: no-repeat;
+	height: 250px;
+	border: 0px;
+	background-color:white;
+	padding:0px;
+}
+
+.fp-panel .panel-body {
+	background: $trans_dark;
+	color:white;
+	@include merriweather;
+	padding: 5px;
+	padding-left: 10px;
+	position: relative;
+	top: 125px;
+	width:100%;
+	border:0px;
+	height: 125px;
+	padding-top:25px;
+}
+
+.page-container {
+	margin-top: 34px;
+}
+
+ 
+
+  .process-wrapper{
+  padding:10px 0 10px 0;
+  }
+
+   
+
+  .icon-front-center {
+  	color:white;
+  }
+
+  .icon-circle-thin {
+  	color: $p_blue;
+  }
+
+  .icon-circle {
+  	color: $footer_dark;
+  }
+
+  #pre-footer-bar {
+  	position: relative;
+  	z-index: 9999999;
+  	padding-left:10px;
+  	padding-right:10px;
+  	width: 100%;
+  	padding-bottom:90px;
+  }
+
+ .fourbox-box {
+    background: transparent;
+    text-align: left;
+    padding:30px;
+    overflow: hidden;
+    font-family: "Open Sans",Helvetica, Arial, sans-serif;
+    border: 1px solid #cccccc;
+    height:400px;
+  }
+  .fourbox-last {
+    border-right:0px;
+  }
+  .fourbox-box h3 {
+    margin-top:0px;
+  }
+
+  .inner-box h3 {
+  	margin-top:0px;
+  	font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  	font-size: 30px;
+  	font-weight: bold;
+  	color: #3b3b3b;
+  }
+
+  .inner-box h4 {
+  	font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  	font-size: 20px;
+  	margin-bottom:0px;
+  }
+
+  .inner-box {
+  	text-align: left;
+  }
+
+  .outer-box {
+  	background: transparent;
+  	font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  }
+
+  .cta-sub {
+  	font-size:15px;
+  } 
+
+  .top-row-box {
+  	height: 200px;
+  	border-right: 1px solid #cccccc;
+  }
+
+  #datasd-logo-box {
+  	background: #0098db;
+    /*margin-bottom:10px;
+    text-align: center;
+    padding-top:0px;
+    padding-bottom:10px;*/
+  }
+
+  #datasd-logo-container {
+  	margin-top: 20px;
+  	margin-left: 15px;
+  }
+
+  #contact-bubble {
+  	margin-left: 30px;
+  	margin-top: 10px;
+  }
+
+  #mc_embed_signup h3 {
+        margin-top: 20px;
+    }
+
+  #mc_embed_signup .inner-box {
+  	background: #0098db;
+  	height: 143px;
+
+  }
+
+  #cta-bottom-row {
+  	height: 275px;
+  	.inner-box {
+  		border-right: 1px solid white;
+  	}
+  }
+
+  h4.cta a {
+  	font-weight: bold;
+  	color: #00bbbc;
+  }
+
+  h4.bottom-box-head {
+    color: white;
+  }
+
+  #contact-bubble .icon-circle-thin {
+  	color: white !important;
+  }
+
+
+
+ /*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .jumbo-intro{
+		padding-bottom:0px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	#cta-box-bottom-left-container, #datasd-logo-box, #contact-box {
+		display: none;
+	}
+	#mc_embed_signup_box h4.bottom-box-head {
+		padding-top:10px;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.jumbo-intro{
+		padding-bottom:0px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	#header-image.small {
+		display: none;
+	}
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px) {
+	.jumbo-intro{
+		padding-bottom:0px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.sd-navbar-top.navbar-default .navbar-header {
+		height:0px;
+	}
+	#header-image {
+		background-position-y: -170px;
+	}
+
+	#header-image.small {
+		min-height: 300px;
+		display: block;
+	}
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.page.container .page-content {
+		padding:50px;
+	}
+	#header-image.small {
+		background-position-x: center;
+		background-position-y: 0px;
+	}
+	#header-image {
+		background-position-x: center;
+		background-position-y: 0px;
+	}
+
+	#datasd-logo-container {
+		margin-top: -2px;
+	}
+	#cta-box-bottom-left-container, #datasd-logo-box, #contact-box {
+		display: block;
+	}
+	#mc_embed_signup_box h4.bottom-box-head {
+		padding-top:0px;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	#header-image.small {
+		background-position-x: center;
+		background-position-y: -170px;
+		background-size:cover;
+	}
+	#header-image {
+		background-position-x: center;
+		background-position-y: 0px;
+	}
+}
+
+@media (max-width: 767	px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+
+
+

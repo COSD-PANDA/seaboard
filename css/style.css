@@ -1,0 +1,669 @@
+/*
+The main SCSS file for everything, yep
+*/
+.hll {
+  background-color: #ffffcc; }
+
+.c {
+  color: #999; }
+
+.err {
+  color: #AA0000;
+  background-color: #FFAAAA; }
+
+.k {
+  color: #006699; }
+
+.o {
+  color: #555555; }
+
+.cm {
+  color: #0099FF;
+  font-style: italic; }
+
+.cp {
+  color: #009999; }
+
+.c1 {
+  color: #999; }
+
+.cs {
+  color: #999; }
+
+.gd {
+  background-color: #FFCCCC;
+  border: 1px solid #CC0000; }
+
+.ge {
+  font-style: italic; }
+
+.gr {
+  color: #FF0000; }
+
+.gh {
+  color: #003300; }
+
+.gi {
+  background-color: #CCFFCC;
+  border: 1px solid #00CC00; }
+
+.go {
+  color: #AAAAAA; }
+
+.gp {
+  color: #000099; }
+
+.gu {
+  color: #003300; }
+
+.gt {
+  color: #99CC66; }
+
+.kc {
+  color: #006699; }
+
+.kd {
+  color: #006699; }
+
+.kn {
+  color: #006699; }
+
+.kp {
+  color: #006699; }
+
+.kr {
+  color: #006699; }
+
+.kt {
+  color: #007788; }
+
+.m {
+  color: #FF6600; }
+
+.s {
+  color: #d44950; }
+
+.na {
+  color: #4f9fcf; }
+
+.nb {
+  color: #336666; }
+
+.nc {
+  color: #00AA88; }
+
+.no {
+  color: #336600; }
+
+.nd {
+  color: #9999FF; }
+
+.ni {
+  color: #999999; }
+
+.ne {
+  color: #CC0000; }
+
+.nf {
+  color: #CC00FF; }
+
+.nl {
+  color: #9999FF; }
+
+.nn {
+  color: #00CCFF; }
+
+.nt {
+  color: #2f6f9f; }
+
+.nv {
+  color: #003333; }
+
+.ow {
+  color: #000000; }
+
+.w {
+  color: #bbbbbb; }
+
+.mf {
+  color: #FF6600; }
+
+.mh {
+  color: #FF6600; }
+
+.mi {
+  color: #FF6600; }
+
+.mo {
+  color: #FF6600; }
+
+.sb {
+  color: #CC3300; }
+
+.sc {
+  color: #CC3300; }
+
+.sd {
+  color: #CC3300;
+  font-style: italic; }
+
+.s2 {
+  color: #CC3300; }
+
+.se {
+  color: #CC3300; }
+
+.sh {
+  color: #CC3300; }
+
+.si {
+  color: #AA0000; }
+
+.sx {
+  color: #CC3300; }
+
+.sr {
+  color: #33AAAA; }
+
+.s1 {
+  color: #CC3300; }
+
+.ss {
+  color: #FFCC33; }
+
+.bp {
+  color: #336666; }
+
+.vc {
+  color: #003333; }
+
+.vg {
+  color: #003333; }
+
+.vi {
+  color: #003333; }
+
+.il {
+  color: #FF6600; }
+
+.css .o,
+.css .o + .nt,
+.css .nt + .nt {
+  color: #999; }
+
+/** Assists **/
+/* Mixin */
+/* Classic Pallete */
+/*http://take.ms/7Sv5Z*/
+/* Secondary colors are marked as row / col from here: http://take.ms/At27q */
+/** End Assists **/
+body {
+  font-family: "Open Sans",Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather",Helvetica, Arial, sans-serif; }
+
+/** Navbar **/
+img.logo {
+  background: #0098db;
+  height: 60px; }
+
+.panel {
+  border-radius: 0px; }
+
+#sd-bar {
+  background: #005bbb;
+  height: 37px;
+  color: white; }
+  #sd-bar a:hover, #sd-bar a, #sd-bar a:visited {
+    color: white;
+    font-size: 0.7em;
+    line-height: 37px; }
+
+.sd-navbar-top.navbar-default {
+  margin-top: 30px;
+  background: #0098db;
+  height: 85px; }
+  .sd-navbar-top.navbar-default .navbar-header {
+    margin-top: 3px;
+    height: 80px; }
+  .sd-navbar-top.navbar-default .navbar-brand {
+    padding: 0px;
+    padding-top: 5px;
+    color: white; }
+  .sd-navbar-top.navbar-default span#title {
+    position: relative;
+    top: 19px;
+    font-size: 2em; }
+  .sd-navbar-top.navbar-default .navbar-nav {
+    margin-top: 20px; }
+  .sd-navbar-top.navbar-default .navbar-collapse {
+    background: #0098db; }
+  .sd-navbar-top.navbar-default li a {
+    color: white; }
+
+#footer-bar {
+  background: #21282d;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 9999999;
+  opacity: 0.99;
+  border-radius: 0px;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  color: #e3e7ea; }
+  #footer-bar a, #footer-bar a:hover, #footer-bar a:visited {
+    color: white;
+    text-decoration: underline; }
+  #footer-bar img.sdlogo {
+    height: 25px; }
+
+.btn-secondary {
+  background: #ffa02f;
+  color: white; }
+
+/*responsive menu */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  top: 18px; }
+
+.navbar-toggle {
+  background-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  margin-right: 5px; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #334A6D; }
+
+.navbar-toggle .icon-bar {
+  height: 4px; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff; }
+
+a .hidden-link-text {
+  display: none; }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .jumbo-intro {
+    padding-bottom: 0px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .jumbo-intro {
+    padding-bottom: 0px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  #footer-bar {
+    height: 30px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  #footer-bar {
+    height: 30px; } }
+
+.small-top-banner {
+  background: #00549f;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  padding-top: 3px;
+  padding-bottom: 3px; }
+  .small-top-banner a {
+    color: white;
+    text-decoration: underline; }
+
+#header-image {
+  /*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/
+  background: url("http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg") no-repeat fixed center bottom/cover;
+  position: relative;
+  top: 34px;
+  min-height: 450px;
+  padding-top: 30px; }
+
+#header-image.small {
+  background: url("http://mrm-screen.s3.amazonaws.com/home-hero-1-1.jpg") no-repeat fixed center;
+  background-position-y: -80px;
+  min-height: 200px;
+  padding-top: 0px; }
+
+.page-header {
+  font-weight: bold;
+  color: #37424a;
+  text-align: center;
+  background: white;
+  opacity: 0.95;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+  font-size: 3em; }
+
+.section-header {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.fp-panel {
+  padding-bottom: 80px; }
+  .fp-panel i.text-primary {
+    color: #00c7b2; }
+  .fp-panel a.btn-go, .fp-panel a.btn-go:active, .fp-panel a.btn-go:hover {
+    background: #ffa02f;
+    border-color: #ffa02f; }
+
+.panel {
+  background: white;
+  opacity: 0.95; }
+
+.page.container .page-content {
+  background: white;
+  opacity: 0.95;
+  padding: 10px;
+  margin-bottom: 80px;
+  padding-top: 1px; }
+
+.big-num {
+  background: #0098db;
+  color: white;
+  font-weight: bold;
+  font-size: 1em; }
+  .big-num .panel-heading {
+    background: transparent;
+    border: 0px;
+    font-size: 1em;
+    color: white; }
+  .big-num .chart-stage {
+    font-size: 4em; }
+  .big-num .chart-bottom {
+    font-size: 0.9em; }
+
+.process-wrapper h2 {
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #0098db;
+  margin-top: 0px; }
+
+.process-wrapper .arrow-next {
+  color: #00c7b2; }
+
+#inventory-table {
+  background: transparent;
+  padding: 20px;
+  font-size: 0.8em; }
+  #inventory-table tr.light {
+    background: transparent; }
+  #inventory-table tr.dark {
+    background: #E4E9EB; }
+  #inventory-table th {
+    font-family: "Merriweather",Helvetica, Arial, sans-serif; }
+
+.jumbo-intro {
+  margin-top: 5%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px;
+  padding-bottom: 30px !important; }
+  .jumbo-intro .cta-box {
+    background: transparent;
+    padding: 30px;
+    margin-bottom: 25px; }
+  .jumbo-intro .welcome-intro a, .jumbo-intro .welcome-intro a:hover, .jumbo-intro .welcome-intro a:visited {
+    color: #ffa02f; }
+
+.title-intro {
+  background: transparent;
+  color: black;
+  position: relative;
+  top: 110px; }
+
+.add-dataset {
+  margin-top: 30px; }
+
+#inventory .panel-heading {
+  background-image: url("http://take.ms/K0n7c"); }
+
+#opensd .panel-heading {
+  background-image: url("http://take.ms/GK1Gk"); }
+
+#opengov .panel-heading {
+  background-image: url("http://take.ms/WjYwC"); }
+
+#sdmaps .panel-heading {
+  background-image: url("http://take.ms/5AThk"); }
+
+#odpolicy .panel-heading {
+  background-image: url("http://mrm-screen.s3.amazonaws.com/14324-illustration-of-a-book-pv.png"); }
+
+#councilupdate .panel-heading {
+  background-image: url("http://take.ms/FJnAS"); }
+
+#pasite .panel-body {
+  padding-top: 13px; }
+
+#pasite .panel-heading {
+  background-image: url("http://take.ms/bevC1"); }
+
+.fp-panel a, a:hover, a:visited {
+  text-decoration: none; }
+
+.fp-panel .panel-heading {
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  height: 250px;
+  border: 0px;
+  background-color: white;
+  padding: 0px; }
+
+.fp-panel .panel-body {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "Merriweather",Helvetica, Arial, sans-serif;
+  padding: 5px;
+  padding-left: 10px;
+  position: relative;
+  top: 125px;
+  width: 100%;
+  border: 0px;
+  height: 125px;
+  padding-top: 25px; }
+
+.page-container {
+  margin-top: 34px; }
+
+.process-wrapper {
+  padding: 10px 0 10px 0; }
+
+.icon-front-center {
+  color: white; }
+
+.icon-circle-thin {
+  color: #0098db; }
+
+.icon-circle {
+  color: #21282d; }
+
+#pre-footer-bar {
+  position: relative;
+  z-index: 9999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  padding-bottom: 90px; }
+
+.fourbox-box {
+  background: transparent;
+  text-align: left;
+  padding: 30px;
+  overflow: hidden;
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  border: 1px solid #cccccc;
+  height: 400px; }
+
+.fourbox-last {
+  border-right: 0px; }
+
+.fourbox-box h3 {
+  margin-top: 0px; }
+
+.inner-box h3 {
+  margin-top: 0px;
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3b3b3b; }
+
+.inner-box h4 {
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin-bottom: 0px; }
+
+.inner-box {
+  text-align: left; }
+
+.outer-box {
+  background: transparent;
+  font-family: "Open Sans",Helvetica, Arial, sans-serif; }
+
+.cta-sub {
+  font-size: 15px; }
+
+.top-row-box {
+  height: 200px;
+  border-right: 1px solid #cccccc; }
+
+#datasd-logo-box {
+  background: #0098db;
+  /*margin-bottom:10px;
+    text-align: center;
+    padding-top:0px;
+    padding-bottom:10px;*/ }
+
+#datasd-logo-container {
+  margin-top: 20px;
+  margin-left: 15px; }
+
+#contact-bubble {
+  margin-left: 30px;
+  margin-top: 10px; }
+
+#mc_embed_signup h3 {
+  margin-top: 20px; }
+
+#mc_embed_signup .inner-box {
+  background: #0098db;
+  height: 143px; }
+
+#cta-bottom-row {
+  height: 275px; }
+  #cta-bottom-row .inner-box {
+    border-right: 1px solid white; }
+
+h4.cta a {
+  font-weight: bold;
+  color: #00bbbc; }
+
+h4.bottom-box-head {
+  color: white; }
+
+#contact-bubble .icon-circle-thin {
+  color: white !important; }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .jumbo-intro {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  #cta-box-bottom-left-container, #datasd-logo-box, #contact-box {
+    display: none; }
+  #mc_embed_signup_box h4.bottom-box-head {
+    padding-top: 10px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .jumbo-intro {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  #header-image.small {
+    display: none; } }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 767px) {
+  .jumbo-intro {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .sd-navbar-top.navbar-default .navbar-header {
+    height: 0px; }
+  #header-image {
+    background-position-y: -170px; }
+  #header-image.small {
+    min-height: 300px;
+    display: block; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .page.container .page-content {
+    padding: 50px; }
+  #header-image.small {
+    background-position-x: center;
+    background-position-y: 0px; }
+  #header-image {
+    background-position-x: center;
+    background-position-y: 0px; }
+  #datasd-logo-container {
+    margin-top: -2px; }
+  #cta-box-bottom-left-container, #datasd-logo-box, #contact-box {
+    display: block; }
+  #mc_embed_signup_box h4.bottom-box-head {
+    padding-top: 0px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  #header-image.small {
+    background-position-x: center;
+    background-position-y: -170px;
+    background-size: cover; }
+  #header-image {
+    background-position-x: center;
+    background-position-y: 0px; } }
+
+@media (max-width: 767 px) {
+  .navbar-header {
+    float: none; }
+  .navbar-left, .navbar-right {
+    float: none !important; }
+  .navbar-toggle {
+    display: block; }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+  .navbar-nav > li {
+    float: none; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .collapse.in {
+    display: block !important; } }
