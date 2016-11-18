@@ -13,6 +13,8 @@ resources:
       https://datasd-prod.s3.amazonaws.com/special_events/special_events_listings_dictionary.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-maintainer: seaboard
+category:
+  - Culture and Recreation
+maintainer: ''
 maintainer_email: ''
 ---
