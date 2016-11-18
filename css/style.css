@@ -198,7 +198,8 @@ The main SCSS file for everything, yep
 /* Secondary colors are marked as row / col from here: http://take.ms/At27q */
 /** End Assists **/
 body {
-  font-family: "Open Sans",Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  padding-top: 150px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather",Helvetica, Arial, sans-serif; }
