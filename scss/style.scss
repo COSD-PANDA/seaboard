@@ -17,15 +17,18 @@ The main SCSS file for everything, yep
 	}
 }
 
+.vertical-section {
+  margin-top: 50px;
+}
 
 
 #header-image {
 	/*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/
 	background: url('http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg') no-repeat fixed center bottom /cover;
 	position: relative;
-	top:34px;
+	top:0px;
 	min-height: 450px;
-	padding-top:30px;
+	padding-top:0px;
 }
 
 #header-image.small{
@@ -128,9 +131,13 @@ The main SCSS file for everything, yep
 	}
 }
 
+.bg-smoky {
+	background: $trans_dark;
+}
+
 .jumbo-intro {
 	margin-top:5%;
-	background: $trans_dark;
+	//background: $trans_dark;
 	color:white;
 	.cta-box {
 		background: transparent;

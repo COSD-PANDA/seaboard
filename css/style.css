@@ -199,7 +199,7 @@ The main SCSS file for everything, yep
 /** End Assists **/
 body {
   font-family: "Open Sans",Helvetica, Arial, sans-serif;
-  padding-top: 150px; }
+  padding-top: 50px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather",Helvetica, Arial, sans-serif; }
@@ -324,13 +324,16 @@ a .hidden-link-text {
     color: white;
     text-decoration: underline; }
 
+.vertical-section {
+  margin-top: 50px; }
+
 #header-image {
   /*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/
   background: url("http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg") no-repeat fixed center bottom/cover;
   position: relative;
-  top: 34px;
+  top: 0px;
   min-height: 450px;
-  padding-top: 30px; }
+  padding-top: 0px; }
 
 #header-image.small {
   background: url("http://mrm-screen.s3.amazonaws.com/home-hero-1-1.jpg") no-repeat fixed center;
@@ -408,9 +411,11 @@ a .hidden-link-text {
   #inventory-table th {
     font-family: "Merriweather",Helvetica, Arial, sans-serif; }
 
+.bg-smoky {
+  background: rgba(0, 0, 0, 0.8); }
+
 .jumbo-intro {
   margin-top: 5%;
-  background: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 30px;
   padding-bottom: 30px !important; }

@@ -42,7 +42,7 @@ gulp.task("styles", function () {
     //.pipe($.autoprefixer("last 1 version", { cascade: true }))
     // Directory your CSS file goes to
     .pipe(gulp.dest("css/"))
-    //.pipe(gulp.dest("serve/assets/stylesheets/"))
+    .pipe(gulp.dest("_site/css/"))
     // Outputs the size of the CSS file
     .pipe($.size({title: "styles"}))
     // Injects the CSS changes to your browser since Jekyll doesn"t rebuild the CSS
