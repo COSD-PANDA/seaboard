@@ -1,7 +1,7 @@
-title: City of San Diego Open Data Portal
-greeting: Welcome to City of San Diego Open Data Portal
+title: Seaboard 
+greeting: Welcome to Seaboard 
 description: A lightweight, backend-free open data portal, powered by Jekyll.
-baseurl: /jkan
+baseurl: /seaboard
 logo: /img/jkan.png
 
 # Site theme
