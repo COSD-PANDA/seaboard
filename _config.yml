@@ -1,5 +1,5 @@
-title: JKAN
-greeting: Welcome to JKAN
+title: City of San Diego Open Data Portal
+greeting: Welcome to City of San Diego Open Data Portal
 description: A lightweight, backend-free open data portal, powered by Jekyll.
 baseurl: /jkan
 logo: /img/jkan.png
@@ -9,7 +9,7 @@ jkan_theme: Default
 
 # Authentication
 github_client_id: 3cd6423406e0360b4be7
-gatekeeper_host: http://jkansd.herokuapp.com
+gatekeeper_host: https://jkansd.herokuapp.com
 
 # Dataset schema
 schema: default
