@@ -31,7 +31,7 @@ resources:
   - name: Parking Meter Transactions Data Dictionary
     url: >-
       https://docs.google.com/spreadsheets/d/1KpenjidiQy0Cc_84nNeOwa0oUIbRz_L10-i50EdW_5A/pub?gid=0&single=true&output=csv
-    format: ''
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 category:
   - Budget / Finance
