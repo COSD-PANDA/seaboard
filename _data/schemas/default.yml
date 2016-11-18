@@ -68,3 +68,9 @@ category_fields:
   - field_name: featured
     label: Featured on Homepage
     form_template: form/checkbox.html
+
+page_fields:
+  - field_name: title
+    label: Title
+  - field_name: content
+    label: Content

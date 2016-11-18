@@ -31,6 +31,14 @@ The main SCSS file for everything, yep
 	padding-top:0px;
 }
 
+.front-page-container {
+	margin-top:115px;
+}
+
+.default-page-container {
+	margin-top: 150px;
+}
+
 #header-image.small{
 	background: url('http://mrm-screen.s3.amazonaws.com/home-hero-1-1.jpg') no-repeat fixed center;
 	background-position-y: -80px;
@@ -134,6 +142,8 @@ The main SCSS file for everything, yep
 .bg-smoky {
 	background: $trans_dark;
 }
+
+
 
 .jumbo-intro {
 	margin-top:5%;

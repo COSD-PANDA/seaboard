@@ -198,8 +198,7 @@ The main SCSS file for everything, yep
 /* Secondary colors are marked as row / col from here: http://take.ms/At27q */
 /** End Assists **/
 body {
-  font-family: "Open Sans",Helvetica, Arial, sans-serif;
-  padding-top: 50px; }
+  font-family: "Open Sans",Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather",Helvetica, Arial, sans-serif; }
@@ -334,6 +333,12 @@ a .hidden-link-text {
   top: 0px;
   min-height: 450px;
   padding-top: 0px; }
+
+.front-page-container {
+  margin-top: 115px; }
+
+.default-page-container {
+  margin-top: 150px; }
 
 #header-image.small {
   background: url("http://mrm-screen.s3.amazonaws.com/home-hero-1-1.jpg") no-repeat fixed center;
