@@ -450,6 +450,9 @@ span.badge {
   background: transparent;
   border-bottom: 3px solid white !important; }
 
+#sd-top-nav ul.nav li.admin-only a {
+  color: black; }
+
 .list-group-item.active {
   background: #0098db; }
 
