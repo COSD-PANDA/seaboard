@@ -198,10 +198,14 @@ The main SCSS file for everything, yep
 /* Secondary colors are marked as row / col from here: http://take.ms/At27q */
 /** End Assists **/
 body {
-  font-family: "Open Sans",Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-size: 1.7em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Merriweather",Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #0098db; }
 
 /** Navbar **/
 img.logo {
@@ -340,9 +344,13 @@ a .hidden-link-text {
   .cta-front .showme {
     padding-top: 20px; }
 
+.homepage-categories .thumbnail img {
+  height: 120px; }
+
 .cta-box {
   margin-left: 0px;
-  margin-right: 0px; }
+  margin-right: 0px;
+  height: 200px; }
 
 .front-page-container {
   margin-top: 115px; }
@@ -425,6 +433,25 @@ a .hidden-link-text {
     background: #E4E9EB; }
   #inventory-table th {
     font-family: "Merriweather",Helvetica, Arial, sans-serif; }
+
+span.badge {
+  background: #0098db; }
+
+.breadcrumb a {
+  color: #0098db; }
+
+#sd-top-nav ul.nav li a {
+  font-weight: bold;
+  font-size: 17px;
+  background: transparent;
+  padding-bottom: 5px; }
+
+#sd-top-nav ul.nav li a:hover, #sd-top-nav ul.nav li.active a {
+  background: transparent;
+  border-bottom: 3px solid white !important; }
+
+.list-group-item.active {
+  background: #0098db; }
 
 .jumbo-intro {
   margin-top: 5%;
@@ -558,7 +585,7 @@ a .hidden-link-text {
   font-size: 15px; }
 
 .top-row-box {
-  height: 200px;
+  height: 150px;
   border-right: 1px solid #cccccc; }
 
 #datasd-logo-box {

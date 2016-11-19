@@ -56,12 +56,16 @@ $footer_dark: #21282d;
 
 body {
   @include opensans;
-  //font-size: 1.7em;
+  font-size: 1.7em;
   //#overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @include merriweather;
+  @include opensans;
+  font-weight: bold;
+  a {
+    color: $p_blue;
+  }
 }
 
 /** Navbar **/

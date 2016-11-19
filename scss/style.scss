@@ -39,9 +39,14 @@ The main SCSS file for everything, yep
 	}
 }
 
+.homepage-categories .thumbnail img {
+	height: 120px;
+}
+
 .cta-box {
 	margin-left: 0px;
 	margin-right: 0px;
+	height: 200px;
 }
 
 .front-page-container {
@@ -152,7 +157,31 @@ The main SCSS file for everything, yep
 	}
 }
 
+span.badge {
+	background: $p_blue;
+}
+.breadcrumb a {
+	color: $p_blue;
+}
 
+
+#sd-top-nav ul.nav {
+	li a {
+		font-weight: bold;
+		font-size: 17px;
+		background: transparent;
+		padding-bottom:5px;
+	}
+	li a:hover, li.active a {
+		background: transparent;
+		border-bottom: 3px solid white !important;
+	}
+
+}
+
+.list-group-item.active {
+	background: $p_blue;
+}
 
 
 .jumbo-intro {
@@ -327,7 +356,7 @@ The main SCSS file for everything, yep
   } 
 
   .top-row-box {
-  	height: 200px;
+  	height: 150px;
   	border-right: 1px solid #cccccc;
   }
 

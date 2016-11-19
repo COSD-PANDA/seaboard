@@ -10,7 +10,7 @@ dataset {
 
 .list-group-item-truncate {
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   width: 75%;
   overflow: hidden;
   white-space: nowrap;
