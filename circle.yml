@@ -1,0 +1,32 @@
+machine:
+  pre:
+    - mkdir ~/.yarn-cache
+  node:
+    version: stable
+  environment:
+    PATH: ${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin:${HOME}/.yarn/bin
+dependencies:
+  pre:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+  cache_directories:
+     - ~/.yarn-cache
+  override:
+    - bundle install
+    - yarn install
+general:
+  branches:
+    only:
+      - master
+      - production
+deployment:
+  staging:
+    branch: master
+    commands:
+      - gulp publish
+        #- surge --project ./site --domain seaboard-stage.surge.sh
+      - s3_website push
+  production:
+    branch: production
+    commands:
+      - gulp publish
+      - s3_website push
