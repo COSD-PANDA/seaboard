@@ -23,7 +23,7 @@ gulp.task("clean:prod", del.bind(null, ["site"]));
 
 // Runs the build command for Jekyll to compile the site locally
 // This will build the site with the production settings
-gulp.task("jekyll:dev", $.shell.task("bundle exec jekyll build --config _config.yml,_config.local.yml"));
+gulp.task("jekyll:dev", $.shell.task("bundle exec jekyll build"));
 gulp.task("jekyll-rebuild", ["jekyll:dev"], function () {
   reload;
 });
@@ -31,18 +31,18 @@ gulp.task("jekyll-rebuild", ["jekyll:dev"], function () {
 // Almost identical to the above task, but instead we load in the build configuration
 // that overwrites some of the settings in the regular configuration so that you
 // don"t end up publishing your drafts or future posts
-//gulp.task("jekyll:prod", $.shell.task("bundle exec jekyll build --config _config.yml,_config.build.yml"));
+gulp.task("jekyll:prod", $.shell.task("bundle exec jekyll build --config _config.yml,_config.build.yml"));
 
 // Compiles the SASS files and moves them into the "assets/stylesheets" directory
 gulp.task("styles", function () {
   // Looks at the style.scss file for what to include and creates a style.css file
-  return gulp.src("scss/style.scss")
+  return gulp.src("src/assets/scss/style.scss")
     .pipe($.sass())
     // AutoPrefix your CSS so it works between browsers
-    //.pipe($.autoprefixer("last 1 version", { cascade: true }))
+    .pipe($.autoprefixer("last 1 version", { cascade: true }))
     // Directory your CSS file goes to
-    .pipe(gulp.dest("css/"))
-    .pipe(gulp.dest("_site/css/"))
+    .pipe(gulp.dest("src/assets/stylesheets/"))
+    .pipe(gulp.dest("serve/assets/stylesheets/"))
     // Outputs the size of the CSS file
     .pipe($.size({title: "styles"}))
     // Injects the CSS changes to your browser since Jekyll doesn"t rebuild the CSS
@@ -85,25 +85,30 @@ gulp.task("copy", function () {
     .pipe($.size({ title: "xml & txt" }))
 });
 
-// Optimizes all the CSS, HTML and concats the JS etc
 gulp.task("html", ["styles"], function () {
-  var assets = $.useref.assets({searchPath: "serve"});
+  var jsFilter = $.filter("**/*.js", { restore: true });
+  var cssFilter = $.filter("**/*.css", { restore: true });
+  var htmlFilter = $.filter(['**/*', '!**/*.html'], { restore: true });
 
   return gulp.src("serve/**/*.html")
-    .pipe(assets)
-    // Concatenate JavaScript files and preserve important comments
-    .pipe($.if("*.js", $.uglify({preserveComments: "some"})))
-    // Minify CSS
-    .pipe($.if("*.css", $.minifyCss()))
-    // Start cache busting the files
+    // Concatenate Files
+    .pipe($.useref({searchPath: "serve" }))
+    // Only for JS, Uglify.
+    .pipe(jsFilter)
+    .pipe($.uglify({preserveComments: "some"}))
+    .pipe(jsFilter.restore)
+    // Only for CSS - Minify
+    .pipe(cssFilter)
+    .pipe($.cleanCss())
+    .pipe(cssFilter.restore)
+    // Only for NON-HTML, revision file names
+    .pipe(htmlFilter)
     .pipe($.revAll({ ignore: [".eot", ".svg", ".ttf", ".woff", ".csv", ".json", ".jpg", ".png"] }))
-    .pipe(assets.restore())
-    // Conctenate your files based on what you specified in _layout/header.html
-    .pipe($.useref())
-    // Replace the asset names with their cache busted names
+    .pipe(htmlFilter.restore)
+    // Sub in new file names
     .pipe($.revReplace())
     // Minify HTML
-    .pipe($.if("*.html", $.htmlmin({
+    .pipe($.htmlmin({
       removeComments: true,
       removeCommentsFromCDATA: true,
       removeCDATASectionsFromCDATA: true,
@@ -111,24 +116,9 @@ gulp.task("html", ["styles"], function () {
       collapseBooleanAttributes: true,
       removeAttributeQuotes: true,
       removeRedundantAttributes: true
-    })))
-    // Send the output to the correct folder
+    }))
     .pipe(gulp.dest("site"))
     .pipe($.size({title: "optimizations"}));
-});
-
-
-// Task to upload your site to your personal GH Pages repo
-gulp.task("deploy", function () {
-  // Deploys your optimized site, you can change the settings in the html task if you want to
-  // GH_REF=github.com/user/repo.git
-  var remoteURL = "https://" + process.env.GH_TOKEN + "@" + process.env.GH_REF;
-  return gulp.src("./site/**/*")
-    .pipe($.ghPages({
-       branch: "gh-pages",
-       cacheDir: ".publish",
-       remoteUrl: remoteURL
-      }));
 });
 
 // Run JS Lint against your JS
@@ -151,20 +141,19 @@ gulp.task("serve:dev", ["styles", "jekyll:dev"], function () {
     notify: true,
     // tunnel: "",
     server: {
-      baseDir: "_site"
+      baseDir: "serve"
     },
     host: process.env.IP || 'localhost',
-    port: process.env.PORT || '4000'
+    port: process.env.PORT || '3000'
   });
 });
 
 // These tasks will look for files that change while serving and will auto-regenerate or
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
-  //gulp.watch(["./**/*.md", "./**/*.html", "./**/*.xml", "./**/*.txt", "./**/*.js"], ["jekyll-rebuild"]);
-  gulp.watch(["./**/*.html"], ["jekyll-rebuild"]);
-  gulp.watch(["css/*.css"], reload);
-  gulp.watch(["scss/*.scss"], ["styles"]);
+  gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js"], ["jekyll-rebuild"]);
+  gulp.watch(["serve/assets/stylesheets/*.css"], reload);
+  gulp.watch(["src/assets/scss/**/*.scss"], ["styles"]);
 });
 
 // Serve the site after optimizations to see that everything looks fine
