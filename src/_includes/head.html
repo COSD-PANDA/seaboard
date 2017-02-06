@@ -20,6 +20,16 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+  <!-- build:css /assets/stylesheets/vendor.min.css -->
+  <!-- endbuild -->
+  <!-- build:css /assets/stylesheets/style.min.css -->
+  <link rel="stylesheet" href="/assets/stylesheets/style.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+  <link href='//fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
   {% if site.digital_analytics_program.enabled == true %}
     <!-- US Digital Analytics Program - see https://analytics.usa.gov for data-->
     <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency={{ site.digital_analytics_program.agency }}&subagency={{ site.digital_analytics_program.subagency }}"></script>

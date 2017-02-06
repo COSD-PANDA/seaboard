@@ -1,8 +1,8 @@
 /* global __dirname */
 module.exports = {
-  entry: ['babel-polyfill', __dirname + '/scripts/src/index.js'],
+  entry: ['babel-polyfill', __dirname + '/src/assets/scripts/src/index.js'],
   output: {
-    path: __dirname + (process.env.NODE_ENV === 'development' ? '/_site' : '') + '/scripts/dist',
+    path: __dirname + '/serve/assets/scripts/dist',
     filename: 'bundle.js'
   },
   module: {

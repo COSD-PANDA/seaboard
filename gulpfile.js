@@ -1,3 +1,4 @@
+// Generated on 2015-11-12 using generator-jekyllized 0.7.4
 "use strict";
 
 var gulp = require("gulp");
@@ -70,14 +71,6 @@ gulp.task("fonts", function () {
     .pipe($.size({ title: "fonts" }));
 });
 
-// Copy over data to the "site" directory
-gulp.task("data", function () {
-  return gulp.src("src/assets/data/**")
-    .pipe(gulp.dest("site/assets/data"))
-    .pipe($.size({ title: "data" }));
-});
-
-
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
   return gulp.src(["serve/*.txt", "serve/*.xml", "src/CNAME"])
@@ -94,9 +87,9 @@ gulp.task("html", ["styles"], function () {
     // Concatenate Files
     .pipe($.useref({searchPath: "serve" }))
     // Only for JS, Uglify.
-    .pipe(jsFilter)
-    .pipe($.uglify({preserveComments: "some"}))
-    .pipe(jsFilter.restore)
+    //.pipe(jsFilter)
+    //.pipe($.uglify({preserveComments: "some"}))
+    //.pipe(jsFilter.restore)
     // Only for CSS - Minify
     .pipe(cssFilter)
     .pipe($.cleanCss())
@@ -151,10 +144,26 @@ gulp.task("serve:dev", ["styles", "jekyll:dev"], function () {
 // These tasks will look for files that change while serving and will auto-regenerate or
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
-  gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js"], ["jekyll-rebuild"]);
-  gulp.watch(["serve/assets/stylesheets/*.css"], reload);
+  //gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js"], ["jekyll-rebuild"]);
+  gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt"], ["jekyll-rebuild"]);
+  gulp.watch(["serve/assets/stylesheets/*.css", "serve/assets/scripts/dist/*.js"], reload);
   gulp.watch(["src/assets/scss/**/*.scss"], ["styles"]);
+  gulp.watch(["src/assets/scripts/src/**/*.js"], ["webpack:dev"]);
 });
+
+gulp.task("webpack:dev", function() {
+  return gulp.src("src/assets/scripts/src/**/*.js")
+    .pipe($.webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('serve/assets/scripts/dist/'));
+});
+
+
+gulp.task("webpack:prod", function() {
+  return gulp.src("src/assets/scripts/src/**/*.js")
+    .pipe($.webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('site/assets/scripts/dist/'));
+});
+
 
 // Serve the site after optimizations to see that everything looks fine
 gulp.task("serve:prod", function () {
@@ -183,3 +192,4 @@ gulp.task("build", ["jekyll:prod", "styles"], function () {});
 gulp.task("publish", ["build"], function () {
   gulp.start("html", "copy", "images", "fonts", "data");
 });
+

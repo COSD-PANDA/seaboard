@@ -191,6 +191,87 @@ The main SCSS file for everything, yep
 .css .nt + .nt {
   color: #999; }
 
+.organization-thumbnail img {
+  width: 64px; }
+
+dataset {
+  display: block;
+  border-bottom: 1px #d6d6d6 solid;
+  padding-bottom: 20px; }
+
+.list-group-item-truncate {
+  display: inline-block;
+  line-height: 1.3;
+  width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.resource-description {
+  font-size: 90%; }
+
+.select2 {
+  margin-bottom: 10px; }
+
+.datasets-count {
+  display: inline-block; }
+
+.add-dataset-btn {
+  margin-top: 15px; }
+
+/* Hidden from guests */
+.user-issue,
+.admin-only {
+  display: none; }
+
+.resource-details,
+.show-resource-details {
+  display: none; }
+
+.show-resource-details {
+  font-size: 80%; }
+
+.user-issue {
+  color: red; }
+
+[data-component~=view-switcher] [data-hook~=view] {
+  display: none; }
+
+.homepage-categories,
+.theme-gallery {
+  text-align: justify; }
+
+/* allows last line of categories to be justify aligned */
+.homepage-categories:after,
+.theme-gallery:after {
+  display: inline-block;
+  width: 100%;
+  content: ''; }
+
+.homepage-categories .thumbnail {
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  padding: 10px; }
+
+.homepage-categories .thumbnail img {
+  height: 80px; }
+
+.homepage-categories a {
+  color: #000; }
+
+.theme-gallery .panel {
+  display: inline-block;
+  max-width: 250px;
+  text-align: center; }
+
+.theme-gallery .panel img {
+  width: 100%; }
+
+.theme-gallery .panel-primary {
+  border-width: 5px; }
+
 /** Assists **/
 /* Mixin */
 /* Classic Pallete */
