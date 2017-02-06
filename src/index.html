@@ -1,0 +1,44 @@
+---
+layout: front
+---
+
+<header id="header-image">
+  <div class="container jumbo-intro">
+    <div class="col-md-12 bg-smoky cta-front">
+      <div class="col-md-6">
+        <h2>Welcome to the City of San Diego Open Data Portal!</h2>
+        Find and use data about your City government.
+        Learn more about Open Data in San Diego.
+      </div>
+      <div class="col-md-6 showme">
+        <iframe width='100%' height='380' frameborder='0' src='https://cityofsandiego.carto.com/u/cityofsandiego-admin/viz/d57f77ff-c375-4ec0-bf4d-de79fe6ecf36/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </div>
+      
+	</div>
+</header>
+
+<div class="container">
+  {% include ctabox.html %} 
+</div>
+
+<div class="container">
+  {% include ctabox-bottom.html %} 
+</div>
+
+<div class="container">
+  <div class="homepage-categories col-md-12 vertical-section">
+    <h3>Browse by Category</h3>
+    {% for category in site.data.categories %}
+      {% if category.featured == true %}
+        {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}
+        <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="thumbnail col-md-2" title="{{ logo_alt }}">
+          {% if category.logo and category.logo != empty %}
+            <img src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}">
+          {% endif %}
+          {{ category.name }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

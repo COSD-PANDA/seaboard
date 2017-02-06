@@ -1,0 +1,113 @@
+---
+layout: page 
+title: Getting Started
+permalink: /get-started/
+---
+
+<p>Open Data is a valuable resource meant for everyone. But let’s face it &#8211; data is not easy to use, and it's even harder to use correctly. Our goal is to empower all San Diego Residents, from the nerdiest to the coolest, to get and use the City’s data. We do this by trying to anticipate and remove common roadblocks to using data that we have run into as data users ourselves. </p>
+
+<strong id="exploringdatasets">Exploring Datasets</strong>
+<p>To see which datasets the City is currently publishing, click on the “Datasets” menu tab.
+You will see a search interface:</p>
+
+<img src="https://mrm-screen.s3.amazonaws.com/San_Diego_Open_Data_Portal_2016-06-23_11-22-17.png" alt="DataSD Search" width="50%"/>
+
+<p>Here, you can begin browsing datasets by using the portal’s search and filter features. If you don’t enter a search term and don’t click on a filter, you will be able to browse the full list of datasets.</p>
+
+<strong id="availablesearchfilters:">Available search filters:</strong>
+<ul>
+    <li>Topics - High-level grouping categories. </li>
+    <li>Tags- Secondary grouping categories. A dataset can have multiple tags.</li>
+    <li>Format - the format the files are available in. More information about formats [somewhere else]</li>
+    <li>Publisher - the publishing department</li>
+</ul>
+
+<img src="https://mrm-screen.s3.amazonaws.com/Parking_meter_transactions__San_Diego_Open_Data_Portal_2016-06-23_14-11-46.png" alt="Parking Meter Transactions" width="50%"/>
+
+<p> Let's now discuss how we organize the data on our portal.</p>
+
+<strong id="howtheportalisorganized">How the Portal is Organized</strong>
+
+<p>To organize our data, we follow DKAN’s <strong><em>Catalog &gt; Dataset &gt; Resource</em></strong> model:</p>
+
+<strong id="catalog">Catalog</strong>
+
+<p>The portal’s dataset listing is the catalog.</p>
+
+<strong id="dataset">Dataset</strong>
+
+<p>A dataset contains individual resources as well as metadata. Metadata is the &#8220;Who, What, When, Where, Why&#8221; of each dataset. There are a number of specifications for dataset metadata, but we currently comply with the DCAT and Project Open Data schemas.</p>
+
+<p>We use a dataset as a bucket for multiple views and formats of a single set of data, as well as a place to provide data dictionaries. Each of those permutations and formats is a resource.</p>
+
+<strong id="resources">Resources</strong>
+
+<p>Resources are the actual files, APIs or links that we are sharing. We only provide resources that are machine-readable and in an open format. Resource types include:</p>
+
+<ul>
+    <li>csv</li>
+    <li>json</li>
+    <li>geojson</li>
+    <li>zip</li>
+    <li>txt</li>
+    <li>xml</li>
+    <li>API</li>
+</ul>
+
+<p>We use resources to provide multiple permutations of data for easiest use on the portal. These permutations may include differences in format or granularity.
+
+<strong id="letswalkthroughanexample:">Let’s walk through an example:</strong>
+
+<p>We consider parking meter transactions to be one dataset.</p>
+
+<img src="http://take.ms/8Z4B9" alt="Parking Transactions" width="50%" />
+
+<p>The raw data includes every single transaction for every single parking meter in the city from the beginning of 2015 until today. In total, that&#8217;s more than 1 GB worth of data. Excel has a 1,000,000 row limit, so it&#8217;s impossible to open in Excel. That means the average user would not be able to use that data effectively.</p>
+
+<p>We split the large file into into 2015 transactions and 2016 transactions. This will make it easier for developers to use, but since the file size for 2015 is still around 500MB, an average Excel user won’t be able to work with these files either.</p>
+
+<p>The non-technical user is probably not interested in transaction level data. He or she likely wants to see just the daily or monthly trend of parking transaction counts or total money made by meters in their neighborhood. We decided to provide pre-made aggregations of the data. For both 2015 and 2016, we roll up the data into totals by month or totals by day. </p>
+
+<p>These totals are the same data - we are just offering the convenience of using the different views rather than the large raw files. We consider the raw files plus the aggregated views to still be one dataset, whereas other portals may consider those to be different datasets. </p>
+
+<p>Here&#8217;s how our portal structure fits together:</p>
+
+<img width="50%" src="https://www.lucidchart.com/publicSegments/view/1f29d0f7-0fa4-462c-8ee1-f084eb903a59/image.png" alt="Portal Structure" />
+
+<strong id="exploringdata">Exploring Data</strong>
+
+<p>To preview a dataset, click on the preview button:</p>
+
+
+<img src="http://take.ms/V2f3G" width="50%"/>
+
+
+<p>Once you are exploring a dataset, you will have many options to filter and view the data. You can choose to see rows with only certain values, and sort the table in the way that you see fit.  </p>
+
+<img width="50%" src="http://mrm-screen.s3.amazonaws.com/portal_explore%20(1).gif" alt="" />
+
+
+
+<p>You can also preview geospatial data on a map:</p>
+
+
+
+
+<img width="50%" src="http://mrm-screen.s3.amazonaws.com/parking_meter_log.gif" alt="" />
+
+
+
+<hr>
+
+<p>Of course, not everyone knows how to work with data, and we happen to like doing it. Data stories are where ourselves and other City employees share with you more detailed and deeper explorations and analysis of our City&#8217;s Open Data. People in the City who work with the data to do their jobs and have a good understanding of it can offer important context.</p>
+
+
+<img width="50%" src="http://take.ms/MQmsX" alt="" />
+
+
+
+<p>Here&#8217;s a <a href="http://data.sandiego.gov/story/explore-parking-meter-transactions-2015" title = "Explore Parking Meter Transactions 2015"> story the Treasurer&#8217;s Parking Program Manager Jonathan Carey told</a> for the portal:</p>
+
+
+
+<p><a href="http://data.sandiego.gov/story/explore-parking-meter-transactions-2015" title = "Explore Parking Meter Transactions 2015"><img src="http://take.ms/5veKL" alt="" width="50%" /></a></p>

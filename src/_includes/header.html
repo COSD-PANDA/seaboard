@@ -1,0 +1,54 @@
+<nav id="sd-bar" class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="col-md-4 col-md-offset-8 text-right"> 
+            <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a> | 
+            <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+        </div>
+    </div>
+</nav>
+<nav id="sd-top-nav" class="navbar navbar-default sd-navbar-top navbar-fixed-top" data-component="navigation">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <span id="logo">
+          <img class="logo" src="http://archive.sandiego.gov/communications/graphics/logos/cosd-logo-primary-white-color-sails-72ppi.png" alt="{{ site.title }}"/>
+        </span>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        {% for link in site.navigation %}
+          {% if page.url contains link.url %}
+            <li class="active"><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} <span class="sr-only">(current)</span></a></li>
+          {% else %}
+            <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-hook="login-link">Login</a></li>
+        <li class="dropdown hidden" data-hook="user-dropdown">
+          <a href="#" class="dropdown-toggle" data-hook="user-dropdown-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="user-issue" data-hook="user-issue"><i class="fa fa-exclamation-circle"></i></span>
+            <span data-hook="user-name">User</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="admin-only" data-hook="admin-link-list-item"><a href="{{ site.baseurl }}/admin/">Administration</a></li>
+            <li><a href="#" data-hook="logout-link">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

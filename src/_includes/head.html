@@ -1,0 +1,59 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  {% assign theme_name = site.jkan_theme | default: 'Default' %}
+  {% assign theme = site.data.themes | where:'name', theme_name | first %}
+  {% if theme and theme.src and theme.src != empty %}
+    <link rel="stylesheet" href="{{ theme.src }}">
+  {% endif %}
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notie/3.0.0/notie.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% if site.digital_analytics_program.enabled == true %}
+    <!-- US Digital Analytics Program - see https://analytics.usa.gov for data-->
+    <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency={{ site.digital_analytics_program.agency }}&subagency={{ site.digital_analytics_program.subagency }}"></script>
+  {% endif %}
+
+  {% if site.google_analytics.enabled == true %}
+    <!-- Google Analytics -->
+    {% include addons/google-analytics.html %}
+  {% endif %}
+
+  {% if site.hypothesis.enabled == true %}
+    <!-- Hypothesis.io -->
+    <script async defer src="//hypothes.is/embed.js"></script>
+  {% endif %}
+
+  {% if site.opengraph.enabled == true %}
+    <!-- Open Graph -->
+    {% include addons/opengraph.html %}
+  {% endif %}
+
+  {% if site.twittercard.enabled == true %}
+    <!-- Twittercard -->
+    {% include addons/twittercard.html %}
+  {% endif %}
+
+  <script>
+  var settings = {
+    BASE_URL: {{ site.baseurl | jsonify }},
+    PAGE_URL: {{ page.url | jsonify }},
+    REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
+    REPO_OWNER: {{ site.github.owner_name | jsonify }},
+    REPO_NAME: {{ site.github.project_title | jsonify }},
+    GITHUB_CLIENT_ID: {{ site.github_client_id | jsonify }},
+    GATEKEEPER_HOST: {{ site.gatekeeper_host | jsonify }}
+  }
+  </script>
+</head>
