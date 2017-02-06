@@ -1,8 +1,8 @@
 title: Seaboard
 greeting: Welcome to Seaboard
 description: Empowering San Diegans by making data usable.
-baseurl: /seaboard
-logo: /img/jkan.png
+baseurl: ''
+logo: /assets/img/jkan.png
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src

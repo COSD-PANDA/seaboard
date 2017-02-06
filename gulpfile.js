@@ -52,16 +52,16 @@ gulp.task("styles", function () {
 
 // Optimizes the images that exists
 gulp.task("images", function () {
-  return gulp.src("src/assets/images/**")
-    .pipe($.changed("site/assets/images"))
+  return gulp.src("src/assets/img/**")
+    .pipe($.changed("site/assets/img"))
     .pipe($.imagemin({
       // Lossless conversion to progressive JPGs
       progressive: true,
       // Interlace GIFs for progressive rendering
       interlaced: true
     }))
-    .pipe(gulp.dest("site/assets/images"))
-    .pipe($.size({title: "images"}));
+    .pipe(gulp.dest("site/assets/img"))
+    .pipe($.size({title: "img"}));
 });
 
 // Copy over fonts to the "site" directory
@@ -101,7 +101,7 @@ gulp.task("html", ["styles"], function () {
     // Sub in new file names
     .pipe($.revReplace())
     // Minify HTML
-    .pipe($.htmlmin({
+    /*.pipe($.htmlmin({
       removeComments: true,
       removeCommentsFromCDATA: true,
       removeCDATASectionsFromCDATA: true,
@@ -109,7 +109,7 @@ gulp.task("html", ["styles"], function () {
       collapseBooleanAttributes: true,
       removeAttributeQuotes: true,
       removeRedundantAttributes: true
-    }))
+    }))*/
     .pipe(gulp.dest("site"))
     .pipe($.size({title: "optimizations"}));
 });
@@ -190,6 +190,6 @@ gulp.task("build", ["jekyll:prod", "styles"], function () {});
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
 gulp.task("publish", ["build"], function () {
-  gulp.start("html", "copy", "images", "fonts", "data");
+  gulp.start("html", "copy", "images", "fonts", "webpack:prod");
 });
 
