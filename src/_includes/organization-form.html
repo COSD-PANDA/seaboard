@@ -22,7 +22,8 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
   {% if include.organization %}
-    <button class="btn btn-danger" data-component="delete-page-button" data-file-path="{{ include.organization.path }}">
+    <button class="btn btn-danger" data-component="delete-page-button"
+        data-file-path="src/{{ include.organization.path }}">
       <i class="fa fa-trash"></i> Delete organization
     </button>
   {% endif %}
