@@ -24,6 +24,14 @@ jkan_theme: Cosmo
 github_client_id: 3cd6423406e0360b4be7
 gatekeeper_host: https://jkansd.herokuapp.com
 
+github:
+    owner_name: MrMaksimize
+    repo_org: cityofsandiego
+    project_title: seaboard
+
+
+
+
 # Dataset schema
 schema: default
 

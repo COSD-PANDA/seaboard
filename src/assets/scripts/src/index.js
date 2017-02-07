@@ -28,7 +28,8 @@ const user = new UserModel({
   clientId: params.clientId || settings.GITHUB_CLIENT_ID,
   proxyHost: params.proxyHost || settings.GATEKEEPER_HOST,
   repoOwner: settings.REPO_OWNER,
-  repoName: settings.REPO_NAME
+  repoName: settings.REPO_NAME,
+  repoOrg: settings.REPO_ORG
 })
 
 // If user is mid-login, finish the login process

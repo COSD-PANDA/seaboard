@@ -15,18 +15,20 @@ export default State.extend({
   session: {
     repoOwner: 'string',
     repoName: 'string',
+    repoOrg: 'string',
     clientId: 'string',
     proxyHost: 'string'
   },
   initialize: function () {
     // If login cookies saved, set the user model to them
     this.set(Cookies.getJSON('jkan'))
+    console.log(this);
   },
   initiateLogin: function () {
     const redirectParams = {
       client_id: this.clientId,
       redirect_uri: window.location.href.split('?')[0],
-      scope: 'public_repo'
+      scope: 'repo'
     }
     window.location.href = githubLoginUrl + '?' + $.param(redirectParams)
   },
@@ -87,7 +89,8 @@ export default State.extend({
         token: this.oauthToken,
         auth: 'oauth'
       })
-      const repo = github.getRepo(this.repoOwner, this.repoName)
+      const repo = github.getRepo(this.repoOrg, this.repoName)
+      //const repo = github.getRepo(this.repoOwner, this.repoName)
       repo.isCollaborator(username, (err) => {
         if (err) reject(err)
         else resolve()
