@@ -23,6 +23,10 @@ import {queryByComponent, setParams} from './util'
 
 const params = $.deparam(window.location.search.substr(1))
 
+if (window.location.hash === '#adminify') {
+    $( "a[data-hook='login-link']").removeClass('hidden');
+}
+
 // Initialize user
 const user = new UserModel({
   clientId: params.clientId || settings.GITHUB_CLIENT_ID,

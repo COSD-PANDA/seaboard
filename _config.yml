@@ -1,7 +1,7 @@
-title: Seaboard1
-greeting: Welcome to Seaboard
+title: City of San Diego Open Data Portal
+greeting:
 description: Empowering San Diegans by making data usable.
-baseurl: 
+baseurl:
 logo: /assets/img/jkan.png
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
