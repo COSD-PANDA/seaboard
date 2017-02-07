@@ -1,13 +1,13 @@
 ---
 schema: default
-title: Bike Route Lines
+title: Bike Route Lines1
 organization: GIS
 notes: >-
   Existing (2015) Bike facilities in the San Diego Region. This dataset was
   developed for the primary purpose of updating the SANDAG San Diego Regional
   Bike Map and the interactive bike map on the iCommute website.
 resources:
-  - name: Bike Route Lines
+  - name: Bike Route Lines1
     url: >-
       https://datasd-prod.s3.amazonaws.com/sde/bike_route/CITY.BIKE_ROUTE_datasd.zip
     format: shp
