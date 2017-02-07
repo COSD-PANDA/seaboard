@@ -23,9 +23,11 @@ dataset_fields:
     datajson: category
   - field_name: maintainer
     label: Maintainer
+    default: City of San Diego
     datajson: contactPoint.fn
   - field_name: maintainer_email
     label: Maintainer Email
+    default: data@sandiego.gov
     datajson: contactPoint.hasEmail
 
 resource_fields:
