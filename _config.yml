@@ -27,6 +27,7 @@ gatekeeper_host: https://jkansd.herokuapp.com
 github:
     owner_name: MrMaksimize
     repo_org: cityofsandiego
+    repo_branch: master
     project_title: seaboard
 
 

@@ -57,7 +57,8 @@
   var settings = {
     BASE_URL: {{ site.baseurl | jsonify }},
     PAGE_URL: {{ page.url | jsonify }},
-    REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
+    REPO_BRANCH: {{ site.github.repo_branch | jsonify }},
+    //REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
     REPO_OWNER: {{ site.github.owner_name | jsonify }},
     REPO_ORG: {{ site.github.repo_org | jsonify }},
     REPO_NAME: {{ site.github.project_title | jsonify }},

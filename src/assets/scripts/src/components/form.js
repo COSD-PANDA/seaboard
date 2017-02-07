@@ -19,6 +19,7 @@ export default class {
     const file = new FileModel({
       user: opts.user,
       repoOwner: settings.REPO_OWNER,
+      repoOrg: settings.REPO_ORG,
       repoName: settings.REPO_NAME,
       repoBranch: settings.REPO_BRANCH,
       filePath: opts.el.data('file-path'),

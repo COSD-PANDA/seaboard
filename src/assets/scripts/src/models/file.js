@@ -6,6 +6,7 @@ export default State.extend({
     repoOwner: 'string',
     repoName: 'string',
     repoBranch: 'string',
+    repoOrg: 'string',
     filePath: 'string',
     renderPath: 'string'
   },
@@ -20,13 +21,13 @@ export default State.extend({
       }
     },
     repo: {
-      deps: ['user.oauthToken', 'repoOwner', 'repoName'],
+      deps: ['user.oauthToken', 'repoOrg', 'repoName'],
       fn: function () {
         const github = new Github({
           token: this.user.oauthToken,
           auth: 'oauth'
         })
-        return github.getRepo(this.repoOwner, this.repoName)
+        return github.getRepo(this.repoOrg, this.repoName)
       }
     }
   },
