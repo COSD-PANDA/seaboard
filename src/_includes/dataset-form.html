@@ -4,10 +4,10 @@
 {% assign dataset_system_fields = "title|organization|notes" | split: "|" %}
 {% assign datasets = site.collections | where:"label","datasets" | first %}
 <form data-component="form dataset-form"
-  data-file-dir="{{ datasets.relative_directory }}"
+  data-file-dir="src/{{ datasets.relative_directory }}"
   data-render-dir="datasets"
   {% if include.dataset %}
-    data-file-path="{{ include.dataset.path }}"
+    data-file-path="src/{{ include.dataset.path }}"
     data-render-path="{{ include.dataset.url }}"
   {% endif %}>
   <input type="hidden" id="schema" name="schema" value="{{ schema }}">
