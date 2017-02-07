@@ -49,6 +49,7 @@ resource_fields:
       - kmz
       - shp
       - xml
+      - pdf
 
 organization_fields:
   - field_name: title
@@ -73,4 +74,4 @@ page_fields:
   - field_name: title
     label: Title
   - field_name: content
-    label: Content 
+    label: Content
