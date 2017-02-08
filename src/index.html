@@ -27,6 +27,24 @@ layout: front
 </div>
 
 <div class="container">
+  <div class="homepage-data-stories col-md-12 vertical-section">
+    <h3>Data Stories</h3>
+    <h5>City data brought to life</h5>
+    {% for data_story in site.data.data_stories%}
+      {% if data_story.featured == true %}
+        <a href="{{ data_story.url }}" class="thumbnail col-md-3" title="{{
+            data_story.title }}">
+          {% if data_story.img and data_story.img != empty %}
+          <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
+          {% endif %}
+          {{ data_story.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container">
   <div class="homepage-categories col-md-12 vertical-section">
     <h3>Browse by Category</h3>
     {% for category in site.data.categories %}

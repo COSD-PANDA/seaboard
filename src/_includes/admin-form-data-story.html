@@ -1,0 +1,11 @@
+<div class="well" data-hook="item">
+  <fieldset>
+    {% for field in data_story_fields %}
+      {% assign template = field.form_template | default: "form/text.html" %}
+      {% capture field_name %}data_stories[][{{ field.field_name }}]{% endcapture %}
+      {% assign value = data_story[field[field_name]] %}
+      {% include {{ template }} field=field field_name=field_name value=value %}
+    {% endfor %}
+  </fieldset>
+  <button type="button" class="btn btn-danger btn-sm" data-hook="remove-item-btn"><i class="fa fa-minus"></i> Remove</button>
+</div>

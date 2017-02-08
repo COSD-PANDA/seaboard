@@ -9,6 +9,8 @@ permalink: /admin/
   <li role="presentation" class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a></li>
   <li role="presentation"><a href="#authentication" aria-controls="authentication" role="tab" data-toggle="tab">Authentication</a></li>
   <li role="presentation"><a href="#categories" aria-controls="categories" role="tab" data-toggle="tab">Categories</a></li>
+ <li role="presentation"><a href="#data-stories" aria-controls="data-stories"
+         role="tab" data-toggle="tab">Data Stories</a></li>
   <li role="presentation"><a href="#licenses" aria-controls="licenses" role="tab" data-toggle="tab">Licenses</a></li>
   <!--<li role="presentation"><a href="#theme" aria-controls="thtme" role="tab"
       data-toggle="tab">Theme</a></li>-->
@@ -95,6 +97,34 @@ permalink: /admin/
       </script>
     </form>
   </div>
+
+
+  <div role="tabpanel" class="tab-pane" id="data-stories">
+    <h2>Data Stories</h2>
+    {% assign data_story_fields = site.data.schemas[site[schema]].data_story_fields %}
+    <form data-component="data-stories-form editable-list"
+        data-file-path="src/_data/data_stories.yml" data-item-label="data_story">
+      <div data-hook="items">
+        {% for data_story in site.data.data_stories %}
+          {% include admin-form-data-story.html %}
+        {% endfor %}
+      </div>
+      <div class="form-group">
+        <button type="button" class="btn btn-default"
+            data-hook="add-item-btn"><i class="fa fa-plus"></i> Add Data Story</button>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <script type="text/template" data-hook="item-template">
+      {% include admin-form-data-story.html %}
+      </script>
+    </form>
+  </div>
+
+
+
+
 
   <div role="tabpanel" class="tab-pane" id="licenses">
     <h2>Licenses</h2>
