@@ -22,6 +22,6 @@ license: 'http://www.opendefinition.org/licenses/odc-pddl'
 category:
   - City Management
   - Economy and Community
-maintainer: ''
-maintainer_email: ''
+maintainer: City of San Diego
+maintainer_email: data@sandiego.gov
 ---
