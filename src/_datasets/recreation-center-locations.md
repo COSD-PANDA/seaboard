@@ -30,6 +30,6 @@ resources:
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 category:
   - Culture and Recreation
-maintainer: ''
-maintainer_email: ''
+maintainer: City of San Diego
+maintainer_email: data@sandiego.gov
 ---
