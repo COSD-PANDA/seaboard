@@ -19,6 +19,6 @@ license: 'http://www.opendefinition.org/licenses/odc-pddl'
 category:
   - Culture and Recreation
   - City Infrastructure
-maintainer: ''
-maintainer_email: ''
+maintainer: City of San Diego
+maintainer_email: data@sandiego.gov
 ---
