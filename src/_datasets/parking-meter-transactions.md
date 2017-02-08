@@ -34,8 +34,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 category:
-  - Budget / Finance
   - Transportation
-maintainer: ''
-maintainer_email: ''
+maintainer: City of San Diego
+maintainer_email: data@sandiego.gov
 ---
