@@ -13,6 +13,7 @@ import Form from './components/form'
 import DatasetForm from './components/dataset-form'
 import AdminForm from './components/admin-form'
 import CategoriesForm from './components/categories-form'
+import DataStoriesForm from './components/data-stories-form'
 import LicensesForm from './components/licenses-form'
 import DatasetDisplay from './components/dataset-display'
 import DeletePageButton from './components/delete-page-button'
@@ -56,6 +57,7 @@ const components = [
   {tag: 'dataset-form', class: DatasetForm},
   {tag: 'admin-form', class: AdminForm},
   {tag: 'categories-form', class: CategoriesForm},
+  {tag: 'data-stories-form', class: DataStoriesForm},
   {tag: 'licenses-form', class: LicensesForm},
   {tag: 'dataset-display', class: DatasetDisplay},
   {tag: 'delete-page-button', class: DeletePageButton},
