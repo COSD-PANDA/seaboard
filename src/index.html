@@ -30,19 +30,28 @@ layout: front
   <div class="homepage-data-stories col-md-12 vertical-section">
     <h3>Data Stories</h3>
     <h5>City data brought to life</h5>
-    {% for data_story in site.data.data_stories%}
-      {% if data_story.featured == true %}
-        <a href="{{ data_story.url }}" class="thumbnail col-md-3" title="{{
-            data_story.title }}">
-          {% if data_story.img and data_story.img != empty %}
-          <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
-          {% endif %}
-          {{ data_story.title }}
-        </a>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
+        <div class="row">
+            {% for data_story in site.data.data_stories %}
+                {% if data_story.featured == true %}
+                    <div class="col-md-3 data-story-preview-container">
+                        <div class="row">
+                            <a href="{{ data_story.url }}"
+                                class="data-story-link" title="{{ data_story.title }}">
+                            {% if data_story.img and data_story.img != empty %}
+                                <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
+                            {% endif %}
+                            {{ data_story.title }}
+                            </a>
+                        </div> <!--row-->
+                        <div class="row">
+                            {{ data_story.intro }}
+                        </div>
+                    </div> <!--container-->
+                {% endif %}
+            {% endfor %}
+        </div><!--row-->
+    </div><!--data-stories-->
+
 
 <div class="container">
   <div class="homepage-categories col-md-12 vertical-section">

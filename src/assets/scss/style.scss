@@ -22,6 +22,26 @@ The main SCSS file for everything, yep
   margin-top: 50px;
 }
 
+.data-story-preview-container {
+    margin: 10px;
+}
+.data-story-link {
+    display: block;
+    padding: 4px;
+    margin-bottom: 21px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+
+    img {
+        width: 100%
+    }
+}
+
 
 #header-image {
 	/*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/

@@ -81,6 +81,9 @@ page_fields:
 data_story_fields:
   - field_name: title
     label: Title
+  - field_name: intro
+    label: Intro
+    form_template: form/textarea.html
   - field_name: author
     label: Author
   - field_name: url
