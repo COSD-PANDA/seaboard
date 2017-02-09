@@ -1,0 +1,118 @@
+////
+/// PX-LIST-UI-DESIGN
+/// The UI list object creates blocky list items with a keyline separator out of a `ul` or `ol`.
+/// @group px-list-ui-design
+////
+
+@import "px-defaults-design/_settings.defaults.scss";
+@import "px-colors-design/_settings.colors.scss";
+
+/// Prepend value for all generated classes
+/// @group px-list-ui-design:variables:style
+/// @type String [default]
+$inuit-list-ui-namespace        : $inuit-namespace !default;
+
+/// Border width
+/// @group px-list-ui-design:variables:style
+/// @type Number [default]
+$inuit-list-ui-border-width     : 1px !default;
+
+/// Border style
+/// @group px-list-ui-design:variables:style
+/// @type String [default]
+$inuit-list-ui-border-style     : solid !default;
+
+/// Border color
+/// @group px-list-ui-design:variables:style
+/// @type Color [default]
+$inuit-list-ui-border-color     : var(--px-list-ui-border-color, $gray4) !default;
+
+/// Enable list-uis with tiny padding?
+/// @group px-list-ui-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-list-ui--tiny     : false !default;
+
+/// Enable list-uis with small padding?
+/// @group px-list-ui-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-list-ui--small    : false !default;
+
+/// Enable list-uis with large padding?
+/// @group px-list-ui-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-list-ui--large    : false !default;
+
+/// Enable list-uis with huge padding?
+/// @group px-list-ui-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-list-ui--huge     : false !default;
+
+/// Default list-ui and list-ui__item
+.#{$inuit-list-ui-namespace}list-ui,
+%#{$inuit-list-ui-namespace}list-ui,
+  .#{$inuit-list-ui-namespace}list-ui__item,
+  %#{$inuit-list-ui-namespace}list-ui__item {
+      border: 0 $inuit-list-ui-border-style $inuit-list-ui-border-color;
+  }
+.#{$inuit-list-ui-namespace}list-ui,
+%#{$inuit-list-ui-namespace}list-ui {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  border-top-width: $inuit-list-ui-border-width;
+  > li {
+      @extend %#{$inuit-list-ui-namespace}list-ui__item;
+  }
+}
+.#{$inuit-list-ui-namespace}list-ui__item,
+%#{$inuit-list-ui-namespace}list-ui__item {
+    padding: $inuit-base-spacing-unit;
+    border-bottom-width: $inuit-list-ui-border-width;
+}
+
+
+
+
+/// Tiny list-ui
+@if ($inuit-enable-list-ui--tiny == true) {
+  .#{$inuit-list-ui-namespace}list-ui--tiny,
+  %#{$inuit-list-ui-namespace}list-ui--tiny {
+      > .#{$inuit-list-ui-namespace}list-ui__item,
+      > %#{$inuit-list-ui-namespace}list-ui__item {
+          padding: $inuit-base-spacing-unit--tiny;
+      }
+  }
+}
+
+/// Small list-ui
+@if ($inuit-enable-list-ui--small == true) {
+  .#{$inuit-list-ui-namespace}list-ui--small,
+  %#{$inuit-list-ui-namespace}list-ui--small {
+      > .#{$inuit-list-ui-namespace}list-ui__item,
+      > %#{$inuit-list-ui-namespace}list-ui__item {
+          padding: $inuit-base-spacing-unit--small;
+      }
+  }
+}
+
+/// Large list-ui
+@if ($inuit-enable-list-ui--large == true) {
+  .#{$inuit-list-ui-namespace}list-ui--large,
+  %#{$inuit-list-ui-namespace}list-ui--large {
+      > .#{$inuit-list-ui-namespace}list-ui__item,
+      > %#{$inuit-list-ui-namespace}list-ui__item {
+          padding: $inuit-base-spacing-unit--large;
+      }
+  }
+}
+
+/// Huge list-ui
+@if ($inuit-enable-list-ui--huge == true) {
+  .#{$inuit-list-ui-namespace}list-ui--huge,
+  %#{$inuit-list-ui-namespace}list-ui--huge {
+      > .#{$inuit-list-ui-namespace}list-ui__item,
+      > %#{$inuit-list-ui-namespace}list-ui__item {
+          padding: $inuit-base-spacing-unit--huge;
+      }
+  }
+}

@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>px-data-table Demo</title>
+  <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="css/px-data-table-demo-styles.html"/>
+  <style include="px-data-table-demo-styles" is="custom-style"></style>
+  <link rel="import" href="../iron-ajax/iron-ajax.html" />
+
+  <link rel="import" href="../px-theme/px-theme-styles.html">
+  <style include="px-theme-styles" is="custom-style"></style>
+
+  <link rel="import" href="../px-api-viewer/px-api-viewer.html" />
+  <link rel="import" href="../px-tabs/px-tab-set.html" />
+  <link rel="import" href="../px-polymer-font-awesome/px-polymer-font-awesome.html" />
+  <link rel="import" href="px-data-table.html"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="import" href="../px-demo-snippet/px-demo-snippet.html">
+  <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+
+  </head>
+
+<body>
+
+  <!-- Wrap elements with auto-binding template to -->
+  <!-- allow use of Polymer bindings in main document -->
+  <template id="just-for-demo" is="dom-bind" >
+
+    <!-- description -->
+    <div class="hero u-p++ text--shadow">
+      <a class="actionable flex flex--right flex--middle" href="https://github.com/PredixDev/px-data-table" target="_blank"><iron-icon class="menu__open" icon="fa:fa-github"></iron-icon>View on Github</a>
+  		<h1 class="delta">px-data-table</h1>
+  		<p>
+  			The Data Table component is useful for displaying tabular data, and provides more functionality than a simple table. Users can sort ascending or descending on each column, filter within columns using simple search, select one or more rows, and edit data in-line with input validation. Rows are automatically paginated, but the user can select the number of rows to display in a single page. Cell borders can be configured by the developer to show up horizontally, vertically, or both.
+      </p>
+  		<div class="flex">
+  			<img class="u-mr--" src="https://img.shields.io/travis/PredixDev/px-data-table.svg?style=flat-square" alt="Travis" onerror="this.style.display='none'"/>
+  			<img class="u-mr--" src="https://img.shields.io/bower/v/px-data-table.svg?style=flat-square" alt="Bower" onerror="this.style.display='none'"/>
+  			<img class="u-mr--" src="https://img.shields.io/github/issues-raw/PredixDev/px-data-table.svg?style=flat-square" alt="Issues" onerror="this.style.display='none'"/>
+  		</div>
+  	</div>
+    <br />
+
+    <!-- mega demo -->
+    <div style="position: relative;" class="u-pb++ flex flex--col" id="defaultTab">
+      <div class="tabContainer u-pt++ u-pl++">
+        <px-tab-set selected="{{selected}}" bare no-bottom-border>
+          <template is="dom-repeat" items="{{optionsArray}}">
+            <px-tab>Option {{indexPlusOne(index)}}</px-tab>
+          </template>
+        </px-tab-set>
+      </div>
+      <px-tab-pages selected="{{selected}}">
+        <template is="dom-repeat" items="{{optionsArray}}">
+          <section class="tab-page">
+            <div class="mega-demo flex u-ph++ u-pb++">
+              <!-- Properties -->
+              <div class="properties u-ph+ u-pb+ u-mt+">
+                <p class="epsilon">Properties</p>
+              <div class="flex u-mb-">
+                <input id="striped{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.striped::change}}">
+                <label for$="striped{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Striped</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="filterable{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.filterable::change}}">
+                <label for$="filterable{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Filterable</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="selectable{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.selectable::change}}">
+                <label for$="selectable{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Selectable</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="showColumnChooser{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.showColumnChooser::change}}">
+                <label for$="showColumnChooser{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Show/Hide Columns</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="tableColumns{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.tableColumns::change}}">
+                <label for$="tableColumns{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Display as Columns</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="tableRows{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.tableRows::change}}">
+                <label for$="tableRows{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Display as Rows</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="hidePaginationControl{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.hidePaginationControl::change}}">
+                <label for$="hidePaginationControl{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Hide Pagination Control</div>
+              </div>
+              <p class="zeta">
+                Note: the following properties are not dynamically reflected at this time, but you can view the differences by using the "Option" tabs above.
+              </p>
+              <div class="flex u-mb-">
+                <input id="enableColumnReorder{{indexPlusOne(index)}}" type="checkbox" checked="{{item.enableColumnReorder::change}}" disabled>
+                <div class="u-ml-">Reorder Columns</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="enableColumnResize{{indexPlusOne(index)}}" type="checkbox" checked="{{item.enableColumnResize::change}}" disabled>
+                <div class="u-ml-">Resize Columns</div>
+              </div>
+            </div>
+
+            <div class="demoContainer clearfix u-mt+">
+                <!-- demo -->
+                <div class="flex flex--col">
+                  <div class="demo u-p+">
+
+                  <px-data-table
+                  table-data="{{item.tableData}}"
+                  striped="{{item.striped}}"
+                  filterable="{{item.filterable}}"
+                  selectable="{{item.selectable}}"
+                  show-column-chooser="{{item.showColumnChooser}}"
+                  enable-column-reorder="{{item.enableColumnReorder}}"
+                  enable-column-resize="{{item.enableColumnResize}}"
+                  table-columns="{{item.tableColumns}}"
+                  table-rows="{{item.tableRows}}"
+                  hide-pagination-control="{{item.hidePaginationControl}}">
+                    <px-data-table-column name="first" filterable></px-data-table-column>
+                    <px-data-table-column name="last" filterable></px-data-table-column>
+                    <px-data-table-column name="email" filterable></px-data-table-column>
+                  </px-data-table>
+                </div>
+                <div class="flex__item">
+                  <px-demo-snippet
+                    element-properties={{item}}
+                    element-name="px-data-table">
+                  </px-demo-snippet>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apiContainer">
+            <div class="flex flex--col api u-mt++" >
+              <div class="flex">
+                <div class="flex__item">
+                  <div class="flex flex--col childrenAssociated">
+                    <div class="componentHeader">Children Components</div>
+                    <div class="componentList">
+                      <ul>
+                        <li><a href="px-data-table-column-demo.html">px-data-table-column</a></li>
+                        <li><a href="px-data-table-highlight-demo.html">px-data-table-highlight</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex__item">
+                  <div class="flex flex--col">
+                    <div class="componentHeader">Associated Components</div>
+                    <div class="componentList">
+                      <ul>
+                        <li><a href="http://predixdev.github.io/px-dropdown/px-dropdown/index.html">px-dropdown</a></li>
+                        <li><a href="https://predixdev.github.io/px-validation/px-validation/index.html">px-validation</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <px-api-viewer source="px-data-table"></px-api-viewer>
+              </div>
+            </div>
+          </div>
+        </section>
+      </template>
+    </px-tab-pages>
+  </div>
+  <footer class="footer flex flex--center">
+    <div class="footer__container u-pv++">
+      <div>
+        <a href="https://ge.com/digital" >
+          <img src="monogram-wdmk.png" alt="GE Monogram" class="footer__img">
+        </a>
+      </div>
+      <div class="footer__list">
+        <ul class="list-inline list-inline--delimited">
+          <li>
+            <a href="http://predix.io/legal" class="footer__list--lnk">Legal</a>
+          </li>
+          <li>
+            <a href="mailto:info@predix.io" class="footer__list--lnk">Contact Us</a>
+          </li>
+          <li>Copyright &copy; 2016 General Electric Company. All rights reserved.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</template>
+<script>
+window.addEventListener('WebComponentsReady', function() {
+  var template = document.querySelector('template[is=dom-bind]'),
+  tableData = [
+    {
+      "first": "Valentine",
+      "last": "Meyer",
+      "email": "valentinemeyer@scentric.com"
+    },
+    {
+      "first": "Silva",
+      "last": "Alexander",
+      "email": "silvaalexander@gmail.com"
+    },
+    {
+      "first": "Hopkins",
+      "last": "Wong",
+      "email": "hopkinswong@hotmail.com"
+    }],
+  optionsArray = [
+    {
+      "tableData": tableData,
+      "striped": false,
+      "filterable": false,
+      "selectable": false,
+      "showColumnChooser": false,
+      "enableColumnReorder": false,
+      "enableColumnResize": false,
+      "tableColumns": false,
+      "tableRows": false,
+      "hidePaginationControl": false
+    },
+    {
+      "tableData": tableData,
+      "striped": true,
+      "filterable": true,
+      "selectable": true,
+      "showColumnChooser": true,
+      "enableColumnReorder": true,
+      "enableColumnResize": true,
+      "tableColumns": false,
+      "tableRows": true,
+      "hidePaginationControl": true
+    }
+  ];
+
+  var ironAjaxEl = document.createElement('iron-ajax'),
+      data;
+  ironAjaxEl.handleAs = "json";
+  ironAjaxEl.url = "contacts-mini.json";
+  ironAjaxEl.addEventListener('response', function(evt) {
+    data = evt.detail.response;
+    template.data = data;
+  });
+  ironAjaxEl.generateRequest();
+
+    var indexPlusOne = function(num) {
+      return num + 1;
+    };
+
+    template.selected = "0";
+    template.optionsArray = optionsArray;
+    template.indexPlusOne = indexPlusOne;
+});
+</script>
+</body>
+</html>

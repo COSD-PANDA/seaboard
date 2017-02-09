@@ -1,0 +1,89 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs
+-->
+<link rel="import" href="../polymer/polymer.html" />
+<!--
+Element providing the text for the px-dropdown element
+
+##### Usage
+
+```
+    <px-dropdown-text class="px-dropdown-text" display-value="{{displayValue}}"></px-dropdown-text>
+```
+
+@element px-dropdown-text
+@blurb Element to contain clickable text of a dropdown menu.
+@homepage index.html
+@demo demo.html
+-->
+<link rel="import" href="css/px-dropdown-text-styles.html">
+
+<dom-module id="px-dropdown-text">
+  <template>
+    <style include="px-dropdown-text-styles"></style>
+
+    <span id="textWrap" class="flex__item px-dropdown-text">{{displayValue}}</span>
+    <template is="dom-if" if="{{_includeTooltip(tooltipValue, maxContCharacterWidth)}}">
+        <px-tooltip tooltip-message="{{tooltipValue}}" orientation="top"></px-tooltip>
+    </template>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-dropdown-text',
+    /**
+     * Properties block,
+     *
+     * @property properties
+     * @type Object
+     */
+    properties: {
+      /**
+       * @property displayValue
+       * @type String
+       * @default ''
+       */
+      displayValue: {
+        type: String,
+        notify: true,
+        value: ''
+      },
+      /**
+       * Text value used for the tooltip, set automatically by the content hovered over.
+       *
+       * @property tooltipValue
+       * @type String
+       * @default ''
+       */
+      tooltipValue: {
+        type: String,
+        notify: true,
+        value: ''
+      },
+      /**
+       * The tooltip will be displayed if tooltipValue length is bigger than
+       * this attribute
+       *
+       * @property maxContCharacterWidth
+       * @type Number
+       * @default 0
+       */
+      maxContCharacterWidth: {
+        type: Number,
+        notify: true,
+        value: 0
+      }
+    },
+    /**
+     * @method _includeTooltip
+     *
+     * This method is called when the display value is calculated, to check if
+     * we need to display the tooltip or not.
+     */
+    _includeTooltip: function() {
+      return (this.tooltipValue.length > this.maxContCharacterWidth);
+    }
+  });
+</script>

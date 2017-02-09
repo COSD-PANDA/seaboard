@@ -1,0 +1,49 @@
+{
+  "name": "px-list-inline-design",
+  "version": "0.3.3",
+  "authors": [
+    "General Electric",
+    "Harry Roberts <harry@csswizardry.com>"
+  ],
+  "description": "Styles for displaying a list as a horizontal row",
+  "main": "_objects.list-inline.scss",
+  "keywords": [
+    "sass",
+    "px",
+    "inline",
+    "lists"
+  ],
+  "homepage": "https://github.com/PredixDev/px-list-inline-design.git",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf",
+    "*.png"
+  ],
+  "dependencies": {
+    "px-defaults-design": "^1.0.2"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.3"
+  },
+  "_release": "0.3.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.3",
+    "commit": "9df6e389070226d36cd20db9a77b598e541752c2"
+  },
+  "_source": "https://github.com/predixDev/px-list-inline-design.git",
+  "_target": "^0.3.0",
+  "_originalSource": "px-list-inline-design"
+}

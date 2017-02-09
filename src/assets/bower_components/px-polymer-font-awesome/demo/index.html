@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		<title>polymer-font-awesome Demo</title>
+		<script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+		<link rel="import" href="../polymer-font-awesome.html">
+		<script src="FontAwesome.js"></script>
+	</head>
+	<body unresolved>
+		<div class="vertical-section vertical-section-container centered">
+			<iron-icon icon="fa:fa-gift" size="55"></iron-icon>
+			<iron-icon icon="fa:fa-leaf"></iron-icon>
+			<iron-icon icon="fa:fa-archive"></iron-icon>
+			<iron-icon icon="fa:fa-database"></iron-icon>
+			<iron-icon icon="fa:fa-internet-explorer"></iron-icon>
+			<iron-icon icon="fa:fa-television"></iron-icon>
+		</div>
+		<template id="demo-icons" is="dom-bind">
+			<ul class="list-bare flex flex--col">
+				<template is="dom-repeat" items="[[icons]]">
+					<li>
+						<iron-icon icon$="{{item.icon}}"></iron-icon>
+						<span>{{item.icon}}</span>
+					</li>
+				</template>
+			</ul>
+		</template>
+    <script type="text/javascript">
+			function sortIcons(arr) {
+				var _out = [];
+				for (var i = 0; i < arr.length; i++) {
+					_out.push(arr[i].id);
+				}
+				return _out.sort();
+			}
+			var ficons = sortIcons(window.FONT_AWESOME.icons),
+				len = ficons.length,
+				icon = null,
+				tmpl = document.getElementById('demo-icons'),
+				icons = [];
+			for (var i = 0; i < len; i++) {
+				icon = ficons[i];
+				icons.push({
+					icon: 'fa:fa-' + icon
+				});
+				console.log('Adding icon', icon);
+			}
+			tmpl.icons = icons;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>px-validation Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/px-validation-demo.css"/>
+  <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../iron-ajax/iron-ajax.html" />
+
+  <link rel="import" href="../px-theme/px-theme-styles.html">
+  <style include="px-theme-styles" is="custom-style"></style>
+
+  <link rel="import" href="../px-api-viewer/px-api-viewer.html" />
+  <link rel="import" href="../px-tabs/px-tab-set.html" />
+  <link rel="import" href="../px-polymer-font-awesome/polymer-font-awesome.html" />
+  <link rel="import" href="px-validation.html"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="import" href="../px-demo-snippet/px-demo-snippet.html">
+  <link rel="import" href="../px-dropdown/px-dropdown.html">
+  <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+
+  </head>
+
+<body>
+
+  <!-- Wrap elements with auto-binding template to -->
+  <!-- allow use of Polymer bindings in main document -->
+  <template id="just-for-demo" is="dom-bind" >
+
+    <!-- description -->
+    <div class="hero u-p++ text--shadow">
+      <a class="actionable flex flex--right flex--middle" href="https://github.com/PredixDev/px-validation" target="_blank"><iron-icon class="menu__open" icon="fa:fa-github"></iron-icon>View on Github</a>
+  		<h1 class="delta">px-validation</h1>
+      <div class="description-text">
+    		<p>
+    			Px-validation is a component that provides one or more built-in or developer-supplied validation methods for form elements, data table entries, etc. This component only handles the validation logic and return success/error object - see px-forms-design or px-data-table to see how this logic is then handled by the UI of the individual components.
+        </p>
+        <p>
+          Be sure to click the link below to view the API documentation for the child component, px-validator.
+        </p>
+      </div>
+  		<div class="flex">
+  			<img class="u-mr--" src="https://img.shields.io/travis/PredixDev/px-validation.svg?style=flat-square" alt="Travis" onerror="this.style.display='none'"/>
+  			<img class="u-mr--" src="https://img.shields.io/bower/v/px-validation.svg?style=flat-square" alt="Bower" onerror="this.style.display='none'"/>
+  			<img class="u-mr--" src="https://img.shields.io/github/issues-raw/PredixDev/px-validation.svg?style=flat-square" alt="Issues" onerror="this.style.display='none'"/>
+  		</div>
+  	</div>
+
+    <!-- mega demo -->
+    <div style="position: relative;" class="u-pb++ flex flex--col" id="defaultTab">
+      <div class="tabContainer u-pt++ u-pl++">
+        <px-tab-set selected="{{selected}}" bare no-bottom-border>
+          <template is="dom-repeat" items="{{optionsArray}}">
+            <px-tab>Option {{indexPlusOne(index)}}</px-tab>
+          </template>
+        </px-tab-set>
+      </div>
+      <px-tab-pages selected="{{selected}}">
+        <template is="dom-repeat" items="{{optionsArray}}">
+          <section class="tab-page">
+            <div class="mega-demo flex u-ph++ u-pb++">
+              <!-- Properties -->
+              <div class="properties u-ph+ u-pb+ u-mt+">
+                <p class="epsilon">Properties</p>
+                <div class="u-mb-">Validation Method:</div>
+                <px-dropdown display-value="Select" value="{{item.validationMethod}}">
+                  <px-dropdown-content class="px-dropdown-content" items={{items}}>
+                  </px-dropdown-content>
+                </px-dropdown>
+              </div>
+
+              <div class="demoContainer u-mt+">
+                <!-- demo -->
+                <div class="flex flex--col">
+                  <div class="demo u-p+">
+
+                    <px-validation id="validationEl{{indexPlusOne(index)}}">
+                      <px-validator validation-method="{{item.validationMethod}}" import="{{item.import}}">
+                      </px-validator>
+                    </px-validation>
+
+                    <label id="label{{indexPlusOne(index)}}" for$="example{{indexPlusOne(index)}}">Validation Method: <strong>[[item.validationMethod]]</strong></label>
+                    <input id="example{{indexPlusOne(index)}}" class="text-input input--regular" type="text" placeholder="" onkeyup$="isValid(value,{{index}})" />
+                    <br/>
+                    <small id="validationWarning{{indexPlusOne(index)}}" class="form-field__help validation-error hidden"></small>
+
+                  </div>
+                  <div>
+                    <px-demo-snippet
+                      element-properties={{item}}
+                      element-name="px-validator"
+                      code-link="http://codepen.io/randyaskin/pen/dNyzzg/?editors=1001">
+                    </px-demo-snippet>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apiContainer">
+              <div class="flex flex--col api u-mt++" >
+                <div class="flex flex--col childrenAssociated">
+                  <div class="componentHeader">Child Component</div>
+                  <div class="componentList">
+                    <ul>
+                      <li><a href="px-validator-demo.html">px-validator</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <px-api-viewer source="px-validation"></px-api-viewer>
+                </div>
+              </div>
+            </div>
+          </section>
+        </template>
+      </px-tab-pages>
+    </div>
+    <footer class="footer flex flex--center">
+      <div class="footer__container u-pv++">
+        <div>
+          <a href="https://ge.com/digital" >
+            <img src="monogram-wdmk.png" alt="GE Monogram" class="footer__img">
+          </a>
+        </div>
+        <div class="footer__list">
+          <ul class="list-inline list-inline--delimited">
+            <li>
+              <a href="http://predix.io/legal" class="footer__list--lnk">Legal</a>
+            </li>
+            <li>
+              <a href="mailto:info@predix.io" class="footer__list--lnk">Contact Us</a>
+            </li>
+            <li>Copyright &copy; 2016 General Electric Company. All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </template>
+<script>
+window.addEventListener('WebComponentsReady', function() {
+  var template = document.querySelector('template[is=dom-bind]'),
+      items = [{"key":"one","val":"isNumber"},{"key":"three","val":"alwaysFails"}],
+      optionsArray = [
+        {
+          "validationMethod": "isNumber",
+          "import": "px-example-validator.html",
+          "parentComponent": ["<px-validation>","</px-validation>"]
+        }
+      ],
+      pxTabs = Polymer.dom(document).querySelector('px-tab-pages'),
+      indexPlusOne = function(num) {
+          return num + 1;
+      },
+      lightDomLoaded = function() {
+        isValid = function(value,index) {
+          var validator = Polymer.dom(pxTabs).querySelector("#validationEl"+indexPlusOne(index)),
+              error = validator.validate(value);
+          if(value && !error.passedValidation) {
+            Polymer.dom(pxTabs).querySelector("#validationWarning1").innerHTML = error.failedValidationErrorMessage;
+            Polymer.dom(pxTabs).querySelector("#validationWarning1").classList.remove("hidden");
+            Polymer.dom(pxTabs).querySelector("#example1").classList.add("validation-error");
+            Polymer.dom(pxTabs).querySelector("#label1").classList.add("validation-error");
+          }
+          else {
+            Polymer.dom(pxTabs).querySelector("#validationWarning1").classList.add("hidden");
+            Polymer.dom(pxTabs).querySelector("#example1").classList.remove("validation-error");
+            Polymer.dom(pxTabs).querySelector("#label1").classList.remove("validation-error");
+          }
+        }
+      },
+      content = Polymer.dom(pxTabs.root).querySelector('content'),
+      //this calls the lightDomLoaded method when the content is loaded, and makes sure the Polymer this is bound to that function
+      _observer = Polymer.dom(content).observeNodes(lightDomLoaded);
+
+
+      template.selected = "0";
+      template.optionsArray = optionsArray;
+      template.indexPlusOne = indexPlusOne;
+      template.items = items;
+});
+</script>
+
+</body>
+</html>

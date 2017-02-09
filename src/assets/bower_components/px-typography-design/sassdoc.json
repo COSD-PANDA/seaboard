@@ -1,0 +1,80 @@
+[
+    {
+        "description": "Predix font-family\n",
+        "commentRange": {
+            "start": 7,
+            "end": 9
+        },
+        "context": {
+            "type": "variable",
+            "name": "predix-font-family",
+            "value": "\"GE Inspira Sans\", sans-serif",
+            "scope": "default",
+            "line": {
+                "start": 10,
+                "end": 10
+            }
+        },
+        "group": [
+            "px-typography-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.typography.scss",
+            "name": "_base.typography.scss"
+        }
+    },
+    {
+        "description": "Load fonts locally\n",
+        "commentRange": {
+            "start": 12,
+            "end": 14
+        },
+        "context": {
+            "type": "variable",
+            "name": "predix-load-local-fonts",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 15,
+                "end": 15
+            }
+        },
+        "group": [
+            "px-typography-design:variables:style"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.typography.scss",
+            "name": "_base.typography.scss"
+        }
+    },
+    {
+        "description": "Webfont path\n",
+        "commentRange": {
+            "start": 17,
+            "end": 19
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-webfont-path",
+            "value": "'//dzlpbrbc7yvq0.cloudfront.net/predixdev/fonts/1.0.0'",
+            "scope": "default",
+            "line": {
+                "start": 20,
+                "end": 20
+            }
+        },
+        "group": [
+            "px-typography-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.typography.scss",
+            "name": "_base.typography.scss"
+        }
+    }
+]

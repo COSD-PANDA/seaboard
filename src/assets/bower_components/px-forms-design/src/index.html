@@ -1,0 +1,598 @@
+<!-- build:remove -->
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>Forms</title>
+    <link rel=stylesheet href=css/style.css>
+  </head>
+  <body>
+    <section class=viewport role=region>
+      <!-- /build -->
+      <h1>Forms</h1>
+      <div class="flex flex--justify flex--wrap flex--baseline">
+        <p>
+          To use this module, follow the instructions in the
+          <a href=https://github.com/PredixDev/px-forms-design>README</a>.
+          <!-- build:remove -->
+          (For background on PXd, read the
+          <a href=https://github.com/PredixDev/px-getting-started>Getting Started</a>
+          documentation.)
+          <!-- /build -->
+        </p>
+        <a class="btn btn--primary" href=https://github.com/PredixDev/px-forms-design>
+          <i class="fa fa-github u-mr--"></i>
+          px-forms-design
+        </a>
+      </div>
+      <h2>How to Use</h2>
+      <p>Install via command line:</p>
+      <figure class="code u-mb+">
+        <code>
+          bower install --save https://github.com/PredixDev/px-forms-design.git
+        </code>
+      </figure>
+      <p>Add to component Sass file:</p>
+      <figure class="code u-mb++">
+        <code>
+          @import "px-forms-design/_base.forms.scss";
+        </code>
+      </figure>
+      <form>
+        <fieldset>
+          <legend>Default, Readonly, Disabled</legend>
+          <p>
+            (<em>The default behavior of input fields is to stretch to 100% of their container.</em>)
+          </p>
+          <figure class="code u-mb+">
+            <code>
+              &lt;label for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &lt;input id=&hellip; class=text-input type=text placeholder="&hellip;"&gt;
+              <br>
+              &lt;label for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &lt;input id=&hellip; class=text-input type=text value="&hellip;" readonly&gt;
+              <br>
+              &lt;label for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &lt;input id=&hellip; class=text-input type=text placeholder="&hellip;" disabled&gt;
+            </code>
+          </figure>
+          <ol class=list-bare>
+            <li class=form-field>
+              <label for=input1>Default</label>
+              <input id=input1 class=text-input type=text placeholder="Type something&hellip;">
+            </li>
+            <li class=form-field>
+              <label for=input2>Readonly</label>
+              <input id=input2 class=text-input type=text value="Readonly value" readonly>
+            </li>
+            <li class=form-field>
+              <label for=input3>Disabled</label>
+              <input id=input3 class=text-input type=text placeholder="Hint text" disabled>
+            </li>
+          </ol>
+        </fieldset>
+      </form>
+      <form>
+        <fieldset class=form-field>
+          <legend>Basic form</legend>
+          <figure class="code u-mb+">
+            <code>
+              &lt;form&gt;
+              <br>
+              &nbsp;&nbsp;&lt;fieldset&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;&hellip;&lt;/legend&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol class=list-bare&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=form-field&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id=&hellip; class=text-input type=text placeholder="&hellip;"&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small class=form-field__help&gt;&hellip;&lt;/small&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=form-field&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id=&hellip; type=checkbox&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;
+              <br>
+              &nbsp;&nbsp;&lt;/fieldset&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input class="btn btn--primary" type=submit value=&hellip;&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input class=btn type=reset value=&hellip;&gt;
+              <br>
+              &lt;/form&gt;
+            </code>
+          </figure>
+          <ol class=list-bare>
+            <li class=form-field>
+              <label for=basic-form-name>Name</label>
+              <input id=basic-form-name class=text-input type=text placeholder="First name">
+              <small class=form-field__help>Lorem Ipsum Dolor Sit</small>
+            </li>
+            <li class=form-field>
+              <input id=basic-form-checkbox type=checkbox>
+              <label class=label--inline for=basic-form-checkbox>No Lastname</label>
+            </li>
+          </ol>
+          <input class="btn btn--primary" type=submit value=Submit>
+          <input class=btn type=reset value=Cancel>
+        </fieldset>
+      </form>
+      <form>
+        <fieldset>
+          <legend>Checkbox</legend>
+          <figure class="code u-mb+">
+            <code>
+              &lt;input id=&hellip; type=checkbox disabled&gt;
+              <br>
+              &lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &lt;input id=&hellip; class=u-ml++ type=checkbox&gt;
+              <br>
+              &lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &lt;input id=&hellip; class=u-ml++ type=checkbox checked&gt;
+              <br>
+              &lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+            </code>
+          </figure>
+          <div class=form-field>
+            <input id=checkbox1 type=checkbox disabled>
+            <label class=label--inline for=checkbox1>Disabled</label>
+            <input id=checkbox2 class=u-ml++ type=checkbox>
+            <label class=label--inline for=checkbox2>Unchecked</label>
+            <input id=checkbox3 class=u-ml++ type=checkbox checked>
+            <label class=label--inline for=checkbox3>Checked</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Radio Button</legend>
+          <figure class="code u-mb+">
+            <code>
+              &lt;input id=&hellip; name=&hellip; type=radio disabled&gt;
+              <br>
+              &lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &lt;input id=&hellip; class=u-ml++ name=&hellip; type=radio&gt;
+              <br>
+              &lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &lt;input id=&hellip; class=u-ml++ name=&hellip; type=radio checked&gt;
+              <br>
+              &lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+            </code>
+          </figure>
+          <div class=form-field>
+            <input id=radio1 name=radio type=radio disabled>
+            <label class=label--inline for=radio1>Disabled</label>
+            <input id=radio2 class=u-ml++ name=radio type=radio>
+            <label class=label--inline for=radio2>Unchecked</label>
+            <input id=radio3 class=u-ml++ name=radio type=radio checked>
+            <label class=label--inline for=radio3>Checked</label>
+          </div>
+        </fieldset>
+      </form>
+      <form>
+        <fieldset class="form-field form-field--inline">
+          <legend>One Line Form</legend>
+          <h4>Sass Flag</h4>
+          <figure class=code>
+            <code>
+              $inuit-enable-inline-fields : true;
+            </code>
+          </figure>
+          <small>
+            Flag must be set before
+            <code class="code code--inline">@import</code>
+            in component Sass file.
+          </small>
+          <h4>HTML</h4>
+          <figure class="code u-mb+">
+            <code>
+              &lt;&hellip; class="form-field form-field--inline"&gt;
+              <br>
+              &nbsp;&nbsp;&lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input id=&hellip; class="text-input input--&hellip;" type=text&gt;
+              <br>
+              &nbsp;&nbsp;&lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input id=&hellip; class="text-input input--&hellip;" type=text&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input id=&hellip; type=checkbox&gt;
+              <br>
+              &nbsp;&nbsp;&lt;label class=label--inline for=&hellip;&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input class="btn btn--primary" type=submit value=&hellip;&gt;
+              <br>
+              &lt;/&hellip;&gt;
+            </code>
+          </figure>
+          <label class=label--inline for=inline1>From</label>
+          <input id=inline1 class="text-input input--small" type=text>
+          <label class=label--inline for=inline2>to</label>
+          <input id=inline2 class="text-input input--small" type=text>
+          <input id=inline3 type=checkbox>
+          <label class=label--inline for=inline3>Inline checkbox</label>
+          <input class="btn btn--primary" type=submit value=Submit>
+        </fieldset>
+      </form>
+      <form>
+        <fieldset>
+          <legend>Different input field widths</legend>
+          <ol class=list-bare>
+            <li class=form-field>
+              <h4>Sass Flag</h4>
+              <figure class=code>
+                <code>
+                  $inuit-enable-input--tiny : true;
+                </code>
+              </figure>
+              <small>
+                Flag must be set before
+                <code class="code code--inline">@import</code>
+                in component Sass file.
+              </small>
+              <h4>HTML</h4>
+              <figure class="code u-mb+">
+                <code>
+                  &lt;input class="text-input input--tiny" type=text&gt;
+                </code>
+              </figure>
+              <label class=u-mt+ for=input4>Tiny Field</label>
+              <input id=input4 class="text-input input--tiny" type=text value="Up to 106 px" readonly>
+            </li>
+            <li class=form-field>
+              <h4>Sass Flag</h4>
+              <figure class=code>
+                <code>
+                  $inuit-enable-input--small : true;
+                </code>
+              </figure>
+              <small>
+                Flag must be set before
+                <code class="code code--inline">@import</code>
+                in component Sass file.
+              </small>
+              <h4>HTML</h4>
+              <figure class="code u-mb+">
+                <code>
+                  &lt;input class="text-input input--small" type=text&gt;
+                </code>
+              </figure>
+              <label class=u-mt+ for=input5>Small Field</label>
+              <input id=input5 class="text-input input--small" type=text value="Up to 212 px" readonly>
+            </li>
+            <li class=form-field>
+              <h4>Sass Flag</h4>
+              <figure class=code>
+                <code>
+                  $inuit-enable-input--regular : true;
+                </code>
+              </figure>
+              <small>
+                Flag must be set before
+                <code class="code code--inline">@import</code>
+                in component Sass file.
+              </small>
+              <h4>HTML</h4>
+              <figure class="code u-mb+">
+                <code>
+                  &lt;input class="text-input input--regular" type=text&gt;
+                </code>
+              </figure>
+              <label class=u-mt+ for=input6>Regular Field</label>
+              <input id=input6 class="text-input input--regular" type=text value="Up to 318 px" readonly>
+            </li>
+            <li class=form-field>
+              <h4>Sass Flag</h4>
+              <figure class=code>
+                <code>
+                  $inuit-enable-input--large : true;
+                </code>
+              </figure>
+              <small>
+                Flag must be set before
+                <code class="code code--inline">@import</code>
+                in component Sass file.
+              </small>
+              <h4>HTML</h4>
+              <figure class="code u-mb+">
+                <code>
+                  &lt;input class="text-input input--large" type=text&gt;
+                </code>
+              </figure>
+              <label class=u-mt+ for=input7>Large Field</label>
+              <input id=input7 class="text-input input--large" type=text value="Up to 424 px" readonly>
+            </li>
+            <li class=form-field>
+              <h4>Sass Flag</h4>
+              <figure class=code>
+                <code>
+                  $inuit-enable-input--huge : true;
+                </code>
+              </figure>
+              <small>
+                Flag must be set before
+                <code class="code code--inline">@import</code>
+                in component Sass file.
+              </small>
+              <h4>HTML</h4>
+              <figure class="code u-mb+">
+                <code>
+                  &lt;input class="text-input input--huge" type=text&gt;
+                </code>
+              </figure>
+              <label class=u-mt+ for=input8>Huge Field</label>
+              <input id=input8 class="text-input input--huge" type=text value="Up to 530 px" readonly>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <legend>Different input types</legend>
+          <figure class="code u-mb+">
+            <code>
+              &lt;input class=text-input type=email&gt;
+              <br>
+              &lt;input class=text-input type=tel&gt;
+              <br>
+              &lt;input class=text-input type=search&gt;
+              <br>
+              &lt;input class=text-input type=number&gt;
+              <br>
+              &lt;input class=text-input type=password&gt;
+            </code>
+          </figure>
+          <ol class=list-bare>
+            <li class=form-field>
+              <label for=email1>Email</label>
+              <input id=email1 class="text-input" type=email placeholder=name@example.com>
+            </li>
+            <li class=form-field>
+              <label for=tel1>Telelphone</label>
+              <input id=tel1 class="text-input" type=tel placeholder="(xxx) xxx-xxxx">
+            </li>
+            <li class=form-field>
+              <label for=search1>Search</label>
+              <input id=search1 class="text-input" type=search placeholder="Enter search term&hellip;">
+            </li>
+            <li class=form-field>
+              <label for=number1>Number</label>
+              <input id=number1 class="text-input" type=number>
+            </li>
+            <li class=form-field>
+              <label for=password1>Password</label>
+              <input id=password1 class="text-input" type=password>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <legend>Text Area</legend>
+          <figure class="code u-mb+">
+            <code>
+              &lt;textarea placeholder="&hellip;"&gt;&lt;/textarea&gt;
+            </code>
+          </figure>
+          <div class=form-field>
+            <textarea placeholder="Type something&hellip;"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Validation States</legend>
+          <h4>Sass Flag</h4>
+          <figure class=code>
+            <code>
+              $inuit-enable-validation-states : true;
+            </code>
+          </figure>
+          <small>
+            Flag must be set before
+            <code class="code code--inline">@import</code>
+            in component Sass file.
+          </small>
+          <h4>HTML</h4>
+          <figure class="code u-mb+">
+            <code>
+              &lt;ol class=list-bare&gt;
+              <br>
+              &nbsp;&lt;li class=form-field&gt;
+              <br>
+              &nbsp;&nbsp;&lt;label for=&hellip; class=validation-warning&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input id=&hellip; class="text-input validation-warning" type=text&gt;
+              <br>
+              &nbsp;&nbsp;&lt;small class="form-field__help validation-warning"&gt;&hellip;&lt;/small&gt;
+              <br>
+              &nbsp;&lt;/li&gt;
+              <br>
+              &nbsp;&lt;li class=form-field&gt;
+              <br>
+              &nbsp;&nbsp;&lt;label for=&hellip; class=validation-error&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input id=&hellip; class="text-input validation-error" type=text&gt;
+              <br>
+              &nbsp;&nbsp;&lt;small class="form-field__help validation-error"&gt;&hellip;&lt;/small&gt;
+              <br>
+              &nbsp;&lt;/li&gt;
+              <br>
+              &nbsp;&lt;li class=form-field&gt;
+              <br>
+              &nbsp;&nbsp;&lt;label for=&hellip; class=validation-success&gt;&hellip;&lt;/label&gt;
+              <br>
+              &nbsp;&nbsp;&lt;input id=&hellip; class="text-input validation-success" type=text&gt;
+              <br>
+              &nbsp;&nbsp;&lt;small class="form-field__help validation-success"&gt;&hellip;&lt;/small&gt;
+              <br>
+              &nbsp;&lt;/li&gt;
+              <br>
+              &lt;/ol&gt;
+            </code>
+          </figure>
+          <ol class=list-bare>
+            <li class=form-field>
+              <label for=validation1 class=validation-warning>Warning</label>
+              <input id=validation1 class="text-input validation-warning" type=text value="Wrong entry">
+              <small class="form-field__help validation-warning">Help Text</small>
+            </li>
+            <li class=form-field>
+              <label for=validation2 class=validation-error>Error</label>
+              <input id=validation2 class="text-input validation-error" type=text value="Absolutely wrong entry">
+              <small class="form-field__help validation-error">Help Text</small>
+            </li>
+            <li class=form-field>
+              <label for=validation3 class=validation-success>Success</label>
+              <input id=validation3 class="text-input validation-success" type=text value="Right entry">
+              <small class="form-field__help validation-success">Help Text</small>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <legend>Dropdown</legend>
+          <figure class="code u-mb+">
+            <code>
+              &lt;select&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &lt;/select&gt;
+              <br>
+              &lt;select disabled&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &lt;/select&gt;
+              <br>
+              &lt;select&gt;
+              <br>
+              &nbsp;&nbsp;&lt;optgroup label="&hellip;"&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;/optgroup&gt;
+              <br>
+              &nbsp;&nbsp;&lt;optgroup label="&hellip;"&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;/optgroup&gt;
+              <br>
+              &lt;/select&gt;
+            </code>
+          </figure>
+          <ol class=list-bare>
+            <li class=form-field>
+              <select>
+                <option>Selection 1</option>
+                <option>Selection 2</option>
+                <option>Selection 3</option>
+                <option>Selection 4</option>
+              </select>
+            </li>
+            <li class=form-field>
+              <select disabled>
+                <option>Disabled Selection 1</option>
+                <option>Disabled Selection 2</option>
+                <option>Disabled Selection 3</option>
+                <option>Disabled Selection 4</option>
+              </select>
+            </li>
+            <li class=form-field>
+              <select>
+                <optgroup label="Group 1">
+                  <option>Selection 1</option>
+                  <option>Selection 2</option>
+                  <option>Selection 3</option>
+                  <option>Selection 4</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option>Selection 1</option>
+                  <option>Selection 2</option>
+                  <option>Selection 3</option>
+                  <option>Selection 4</option>
+                </optgroup>
+              </select>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <legend>Multiple Select</legend>
+          <figure class="code u-mb+">
+            <code>
+              &lt;select multiple&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &nbsp;&nbsp;&lt;option&gt;&hellip;&lt;/option&gt;
+              <br>
+              &lt;/select&gt;
+            </code>
+          </figure>
+          <div class=form-field>
+            <select multiple>
+              <option>Selection 1</option>
+              <option>Selection 2</option>
+              <option>Selection 3</option>
+              <option>Selection 4</option>
+              <option>Selection 5</option>
+              <option>Selection 6</option>
+              <option>Selection 7</option>
+              <option>Selection 8</option>
+            </select>
+          </div>
+        </fieldset>
+      </form>
+    <!-- build:remove -->
+    </section>
+  </body>
+</html>
+<!-- /build -->

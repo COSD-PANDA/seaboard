@@ -1,0 +1,507 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs
+-->
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="px-dropdown-content.html" />
+<link rel="import" href="px-dropdown-chevron.html" />
+<link rel="import" href="px-dropdown-text.html" />
+<!--
+This element provides a dropdown where users can select one or more values (multi-select is achieved using the "checkbox-mode" property of px-dropdown-content). It can also be used in conjunction with px-validation / px-forms-design to apply error, warning, and success states.
+
+##### Usage
+
+```
+<px-dropdown display-value="Text">
+  <px-dropdown-content class="px-dropdown-content" extend-dropdown="true" extend-dropdown-by="25" max-cont-character-width="10" items='[{"key":"one", "val": "One"}, {"key":"two", "val": "Two"}, {"key":"three", "val": "Three"}, {"key":"four", "val": "How now brown cow"}]'>
+  </px-dropdown-content>
+</px-dropdown>
+```
+
+### Styling
+The following custom properties are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--px-dropdown-text-padding`| The text padding inside the dropdown | $inuit-base-spacing-unit--tiny
+`--px-dropdown-bg-color--default`| The default background color for the dropcell | $gray3
+`--px-dropdown-border-color`| The border color for the dropcell | $gray5
+`--px-dropdown-bg-color--hover`| The border color for the dropcell when hovered | $gray5
+`--px-dropdown-text-color`| The default text color for the dropcell | $black
+`--px-dropdown-text-color--hover`| The text color for the dropcell when hovered | $black
+`--px-dropdown-text-color--pressed`| The text color for the dropcell when pressed | $black
+`--px-dropdown-bg-color--disabled`| The background color for the dropcell when disabled | $white
+`--px-dropdown-text-color--disabled`| The text color for the dropcell when disabled | $gray4
+`--px-dropdown-border-color--disabled`| The border color for the dropcell when disabled | $gray4
+`--px-dropdown-bg-color--opened`| The background color for the dropcell when opened | $gray6
+`--px-dropdown-text--opened`| The text color for the dropcell when opened | $black
+`--px-dropdown-list-item-background-color`| The background color of a list item | $select-blue-default
+`--px-dropdown-list-item-text-color`| The text color of a list item | $white
+`--px-dropdown-content-background-color`| The background color of the content | $gray1
+`--px-dropdown-content-border-color`| The border color of the content | $gray5
+`--px-dropdown-content-text-color`| The text color of the content | $black
+`--px-dropdown-content-margin` |  The content margin | 0
+`--px-validation-error-text-color` | Border color that appears when validation is an error | `$alert-red`
+`--px-validation-warning-text-color` | Border color that appears when validation is a warning | `$alert-orange`
+`--px-validation-success-text-color` | Border color that appears when validation is successful | `$green`
+
+
+
+@element px-dropdown
+@blurb Element providing a dropdown solution.
+@homepage index.html
+@demo index.html
+-->
+<link rel="import" href="css/px-dropdown-styles.html">
+
+<dom-module id="px-dropdown">
+  <template>
+    <style include="px-dropdown-styles"></style>
+
+    <div
+    on-tap="triggerClicked"
+    on-mouseover="_hoverOn"
+    on-mouseout="_hoverOff"
+    class$="{{_dropcellClass(opened, hover, disabled)}} flex flex--middle dropcell"
+    id="dropcell">
+      <px-dropdown-text class$="{{_disabledClass(disabled)}}" display-value="{{displayValue}}" max-cont-character-width="{{_maxCharWidth}}" tooltip-value={{value}}></px-dropdown-text>
+      <template is="dom-if" if="{{_hideChevron(hideChevron)}}">
+        <px-dropdown-chevron class$="px-dropdown-chevron {{_disabledClass(disabled)}}"></px-dropdown-chevron>
+      </template>
+    </div>
+    <div style="position:relative;">
+      <content select="px-dropdown-content"></content>
+    </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+
+    is: 'px-dropdown',
+
+    properties: {
+      /**
+      * A flag which checks if the dropdown trigger has been clicked or not.
+      */
+      opened:{
+        type: Boolean,
+        notify: true,
+        value: false
+      },
+      /**
+      * A flag which reflects whether the dropdown is being hovered over.
+      */
+      hover: {
+        type: Boolean,
+        notify: true,
+        value: false
+      },
+      /**
+      * A flag which reflects whether the content is showing above
+      * the dropcell. Read-only.
+      */
+      above: {
+        type: Boolean,
+        value: false
+      },
+      /**
+      * A flag which reflects whether the chevron should be hidden.
+      */
+      hideChevron: {
+        type: Boolean,
+        value: false
+      },
+      /**
+       * An attribute which specifies the bounding target the dropdown will be
+       * displayed within.
+       */
+      boundTarget : {
+        type: HTMLElement,
+        value: null
+      },
+      /**
+       * An attribute which specifies whether the dropdown will close when
+       * outside it. Set to true to prevent dropdown from closing.
+       */
+      preventCloseOnOutsideClick: {
+        type: Boolean,
+        value: false
+      },
+      /**
+       * An attribute which specifies what text is displayed on the dropdown
+       * When selecting a value from the dropdown content both value and display
+       * value will change, with value being set before displayValue.
+       */
+      displayValue: {
+        type: String,
+        notify: true,
+        value: ''
+      },
+      _maxCharWidth: {
+        type: Number,
+        notify: true,
+        value: 0
+      },
+      /**
+       * An attribute which specifies the anchor element the content will use to
+       * position itself. Won't be used if null.
+       */
+      contentAnchor: {
+        type: HTMLElement,
+        value: function() { return null;}
+      },
+      /**
+       * Reflects the actual value of the dropdown rather than the displayed one
+       * (the displayed one can be shortened for example).
+       * When selecting a value from the dropdown content both value and display
+       * value will change, with value being set before displayValue.
+       */
+      value: {
+        type: String,
+        value: '',
+        notify: true
+      },
+      /**
+       * After an item has been selected from the dropdown content this represents the
+       * key of this item. Empty if no item has been selected yet.
+       */
+      selectedKey: {
+        type: String,
+        value: '',
+        notify: true
+      },
+      /**
+       * Boolean representing whether the component is active or disabled.
+       * When disabled, the user is unable to interact with the dropdown.
+       */
+      disabled: {
+        type: Boolean,
+        value: false
+      }
+    },
+    observers: [
+      '_boundTargetChanged(boundTarget, isAttached)'
+    ],
+    listeners: {
+      'px-dropdown-flip': '_flipOpened',
+      'px-dropdown-request-size':  '_provideCellSize',
+      'px-dropdown-value-changed': '_newTextValue',
+      'px-dropdown-max-width': '_newMaxContCharWidth'
+    },
+    attached: function() {
+      //capture all clicks so that we can close the dropdown if the user
+      //clicks anywhere outside the dropdown
+      // Enable document-wide tap recognizer.
+      Polymer.Gestures.add(document, 'tap', null);
+      // We should be using only 'tap', but this would be a breaking change.
+      var tapEvent = ('ontouchstart' in window) ? 'tap' : 'click';
+      document.addEventListener(tapEvent, this._onCaptureClick.bind(this), true);
+
+      if(!this.value && this.displayValue) {
+        this.set('value', this.displayValue);
+      }
+    },
+    detached: function() {
+      var tapEvent = ('ontouchstart' in window) ? 'tap' : 'click';
+      document.removeEventListener(tapEvent, this._onCaptureClick.bind(this));
+    },
+    /**
+    * This function is called when we have a newly selected value.
+    */
+    _newTextValue: function(evt) {
+      this.set('value', evt.detail.val);
+      this.set('displayValue',evt.detail.val);
+      this.set('selectedKey', evt.detail.key);
+
+      this.fire('change');
+    },
+    /**
+    * This function is called when we have a maximum character width.
+    */
+    _newMaxContCharWidth: function(evt) {
+      this.set('_maxCharWidth', evt.detail.maxContCharacterWidth);
+      evt.stopPropagation();
+    },
+    /**
+    * This function provide the cell size to the dropdown content.
+    */
+    _provideCellSize: function(evt) {
+      var dropcell = this.contentAnchor ? this.contentAnchor : this.$.dropcell,
+          rect = dropcell.getBoundingClientRect();
+
+      evt.detail.pxContent.dropCellWidth = rect.width;
+      evt.detail.pxContent.dropCellHeight = rect.height;
+
+      evt.stopPropagation();
+    },
+    /**
+    * This function checks whether the chevron should be visible or hidden.
+    */
+    _hideChevron: function(newValue) {
+      return (!this.hideChevron);
+    },
+    /**
+     * Returns whether this dropdown is within the path.
+     */
+    _selfInPath: function(path) {
+      path = path || [];
+      for (var i = 0; i < path.length; i++) {
+        if (path[i] === this) {
+          return this;
+        }
+      }
+    },
+    /**
+     * Called whenever a click happens.
+     */
+    _onCaptureClick: function(evt) {
+
+      //We're only interested in clicks:
+      // - not on ourselves
+      // - we're currently open
+      if(!this.preventCloseOnOutsideClick &&
+         !this._selfInPath(Polymer.dom(evt).path) &&
+         this.opened) {
+
+        var content = Polymer.dom(this).querySelector("px-dropdown-content");
+        this._flipOpened();
+        content.close();
+        this._reset();
+      }
+    },
+    /**
+    * This function is called when the bound target has changed.
+    */
+    _boundTargetChanged: function(boundTarget, isAttached) {
+      //find the element if we have been passed an id
+      if (typeof boundTarget === 'string') {
+        this.boundTarget = this.domHost ? this.domHost.$[boundTarget] :
+            Polymer.dom(this.ownerDocument).querySelector('#' + boundTarget);
+      }
+    },
+    _computeValue: function(displayValue) {
+      return displayValue;
+    },
+   /**
+   * This function is called when the dropdown trigger/chevron is clicked, and
+   * it either opens or closes (shows/hides) the content.
+   */
+    triggerClicked: function(evt) {
+      var content = Polymer.dom(this).querySelector("px-dropdown-content");
+      if(this.disabled) return;
+      if (!this.opened) {
+        content.open();
+        this._setPosition();
+      } else {
+        content.close();
+        this._reset();
+      }
+      this.fire('px-dropdown-flip',evt);
+    },
+    /**
+    * This function flips the "opened" property.
+    */
+    _flipOpened: function(evt) {
+      this._fireChevron('opened');
+      this.opened = !this.opened;
+
+      if(evt) {
+        evt.stopPropagation();
+      }
+    },
+    /**
+    * This function checks to make sure the chevron exists, and if it does,
+    * fire an event.
+    */
+    _fireChevron: function(fireEvent) {
+      var chevron = this.$$('px-dropdown-chevron');
+      if (chevron) {
+        chevron.fire(fireEvent);
+      }
+    },
+    /**
+    * This function returns the correct class for the chevron
+    * depending on the state of the component.
+    */
+    _dropcellClass: function(opened, hover, disabled) {
+      if (this.opened) {
+        return 'opened';
+      } else if (this.disabled) {
+        return 'disabled';
+      } else if (this.hover) {
+        return 'hover';
+      }
+    },
+    /**
+    * This function returns the correct class for the text
+    * depending on the state of the component.
+    */
+    _disabledClass: function(disabled) {
+      if (this.disabled) {
+        return 'disabled';
+      }
+      else {
+        return '';
+      }
+    },
+    /**
+    * This function fires off a hoverOn event which px-dropdown-chevron
+    * picks up, and sets the hover property to true.
+    */
+    _hoverOn: function() {
+      /*
+      normally, I would have 1 function for both on and off states, and just flip the value of hover
+      but IE10 was having issues keeping up with it, so I split it into 2 functions.
+      */
+      if(!this.disabled) {
+        this._fireChevron('hoverOn');
+        this.hover = true;
+      }
+    },
+    /**
+    * This function fires off a hoverOff event which px-dropdown-chevron
+    * picks up, and sets the hover property to false.
+    */
+    _hoverOff: function() {
+      /*
+      normally, I would have 1 function for both on and off states, and just flip the value of hover
+      but IE10 was having issues keeping up with it, so I split it into 2 functions.
+      */
+      if(!this.disabled) {
+        this._fireChevron('hoverOff');
+        this.hover = false;
+      }
+    },
+    /**
+    * This function resets the above property as well as set
+    * the top property to empty string - not 0, which causes firefox to miscalculate.
+    */
+    _reset: function() {
+      var content = Polymer.dom(this).querySelector('px-dropdown-content'),
+          dropdown = content.$.dropdown;
+      this.above = false;
+      dropdown.style.top = '';
+    },
+    /**
+    * This function changes the position of the dropdown content
+    * if the content area goes under the viewport.
+    */
+    _setPosition: function() {
+      this._reset();
+      this._positionOnContentAnchor();
+
+      if(this.boundTarget !== null) {
+          this.positionWithinBounds(this.boundTarget.getBoundingClientRect());
+      } else if (this._isoffScreenOnBottom()) {
+        this._setTopPosition();
+      }
+    },
+    /**
+    * This function changes the position of the dropdown content
+    * to be next to this.contentAnchor rather than the dropcell.
+    */
+    _positionOnContentAnchor: function() {
+      if(this.contentAnchor) {
+        var content = Polymer.dom(this).querySelector('px-dropdown-content'),
+            dropdown = content.$.dropdown,
+            anchorRect = this.contentAnchor.getBoundingClientRect(),
+            dropcellRect = this.$.dropcell.getBoundingClientRect();
+
+        dropdown.style.left = (anchorRect.left - dropcellRect.left) + 'px';
+        dropdown.style.top = (anchorRect.bottom - dropcellRect.bottom) + 'px';
+      }
+    },
+    /**
+    * This function figures out whether the content area for the dropdown is
+    * under the viewport.
+    */
+    _isoffScreenOnBottom: function() {
+      var content = Polymer.dom(this).querySelector('px-dropdown-content'),
+          dropdown = content.$.dropdown,
+          dropdownRect = dropdown.getBoundingClientRect(),
+          contentRect = content.getBoundingClientRect(),
+          dropdownBottomPoint = dropdownRect.bottom;
+      return dropdownBottomPoint > window.innerHeight;
+    },
+    /**
+    * This function appropriately positions the dropdown within the bounds given.
+    */
+    positionWithinBounds: function(parentBoundingRect) {
+      var content = Polymer.dom(this).querySelector('px-dropdown-content'),
+          dropdown = content.$.dropdown,
+          dropcell = this.contentAnchor ? this.contentAnchor : this.$.dropcell,
+          dropcellRect = dropcell.getClientRects()[0],
+          dropdownRect,
+          dropdownBottomPoint,
+          sizeAbove,
+          sizeBelow;
+
+      //reset content size and get some values
+      content.resetHeight();
+      dropdownRect = dropdown.getBoundingClientRect();
+      dropdownBottomPoint = dropdownRect.bottom,
+      sizeAbove = dropdownRect.top - parentBoundingRect.top - parseInt(dropcellRect.height),
+      sizeBelow = parentBoundingRect.bottom - dropdownRect.top;
+
+      //if we can't fit it below
+      if(dropdownBottomPoint > parentBoundingRect.bottom) {
+
+        //can we fit it above ?
+        if(sizeAbove > dropdownRect.height) {
+          content.adjustHeight();
+          this._setTopPosition();
+        } else {
+
+          //fit it where we have the most space
+          if(sizeAbove > sizeBelow) {
+            content.sizeHeight(sizeAbove - 1);
+            this._setTopPosition();
+          } else {
+            content.sizeHeight(sizeBelow - 1);
+          }
+        }
+      }
+    },
+    /**
+    * This function changes the position of the content area to be above
+    * the dropcell, instead of the default below.
+    */
+    _setTopPosition: function() {
+      var content = Polymer.dom(this).querySelector('px-dropdown-content'),
+          dropdown = content.$.dropdown,
+          dropdownRect = dropdown.getClientRects()[0],
+          dropcell = this.contentAnchor ? this.contentAnchor : this.$.dropcell,
+          dropcellRect = dropcell.getClientRects()[0],
+          newTop = (parseInt(dropdown.offsetTop) - parseInt(dropdownRect.height) - parseInt(dropcellRect.height)) + 'px';
+
+      dropdown.style.top = newTop;
+      this.above = true;
+    }
+  // These are all events that are used by px-dropdown-content, adding them here so they show up in the API document.
+  /**
+  * Event fired when any given element is selected or deselected in checkboxMode.
+  * `evt.detail` contains:
+  * ```
+  * { val: "text of the changed element",
+  *   key: "key of the changed element",
+  *   checked: true/false,
+  *   items: [the updated items array] }
+  * ```
+  * @event px-dropdown-checkbox-changed
+  */
+  /**
+  * Event fired when a single element is selected if NOT in checkboxMode.
+  * `evt.detail` contains:
+  * ```
+  * { val: "text of the selected element",
+  *   key: "key of the selected element" }
+  * ```
+  * @event px-dropdown-value-changed
+  */
+  /**
+  * Event fired when an element is clicked  on in the dropdown.
+  * @event px-dropdown-click
+  */
+  });
+</script>

@@ -1,0 +1,71 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+<link rel="import" href="../css/px-list-bare-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <!-- 0: Import the styles-->
+    <style include="px-list-bare-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-list-bare-design"
+  description="The Predix UI List Bare module simply removes bullets and indents from lists."
+  layer="objects"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-defaults-design"
+  ]'
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Set Options -->
+<!-- N/A -->
+
+<!-- 3: Make HTML Demo -->
+<section data-slot="demoHTML">
+
+<ul class="list-bare">
+  <li>List Item</li>
+  <li>List Item</li>
+  <li>List Item</li>
+</ul>
+
+</section>
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+@import "px-list-bare-design/_objects.list-bare.scss";
+</section>
+
+
+<section data-slot="usage">
+```
+<ul class="list-bare">
+  <li>List Item</li>
+  <li>List Item</li>
+  <li>List Item</li>
+</ul>
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  Polymer({
+    is: 'local-element-demo',
+
+    attached : function(){
+      this.async(function() {
+        this.fire('px-sass-doc-demo-updated',{})
+      }, 10);
+    }
+  });
+</script>

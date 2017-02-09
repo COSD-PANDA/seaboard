@@ -1,0 +1,118 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs.
+-->
+<link rel="import" href="../polymer/polymer.html" />
+
+
+<!--
+
+##### Usage
+
+    <px-validator validation-method="isNumber" import="px-example-validator.html"></px-validator>
+
+@element px-validator
+@homepage index.html
+@demo demo.html
+-->
+<dom-module id="px-validator">
+  <template>
+    <content></content>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'px-validator',
+
+    /**
+     * Properties block, expose attribute values to the DOM via 'reflect'
+     *
+     * @property properties
+     * @type Object
+     */
+    properties: {
+      /**
+       * The URL pointing to the validation function(s) to be imported for this validator.
+       * See px-example-validator.html for an example of this.
+       *
+       *     <px-validator import="px-example-validator.html"></px-validator>
+       *
+       * @default ''
+       */
+      import: {
+        type: String,
+        value: ''
+      },
+      /**
+       * Array container that stores the validation function(s) imported from the html import (specified in the `import` property).
+       *
+       * @default []
+       */
+      validators: {
+        type: Array,
+        value: function(){
+          return [];
+        }
+      },
+      /**
+       * Array containing the validation function names the developer wants to run against the value they wish to validate.
+       * Should EITHER specify validation-method (for single) or multi-step-validation (for multiple).
+       *
+       *     <px-validator multi-step-validation='["isNumber", "isRed", "isBlue"]' import="px-example-validator.html"></px-validator>
+       *
+       * @default []
+       */
+      multiStepValidation: {
+        type: Array,
+        value: function(){
+          return [];
+        }
+      },
+      /**
+       * String containing the single validation function name the developer wants to run to validate the supplied test value.
+       * Should EITHER specify validation-method (for single) or multi-step-validation (for multiple).
+       *
+       *     <px-validator validation-method='isNumber' import="px-example-validator.html"></px-validator>
+       *
+       * @default []
+       */
+      validationMethod: {
+        type: String,
+        value: '',
+        observer: '_validationMethodChanged'
+      }
+    },
+
+    /**
+     * Observer to update the validation method.
+     *
+     * @method _validationMethodChanged
+     */
+     _validationMethodChanged: function () {
+       this._importHref();
+     },
+
+     /**
+      * Imports the Href with the validation methods.
+      *
+      * @method _importHref
+      */
+      _importHref: function () {
+        this.validators = [];
+         this.importHref(this.import, function(e) {
+           if (this.validationMethod && window.PxValidators[this.validationMethod]){
+             this.validators.push(window.PxValidators[this.validationMethod]);
+           }
+           this.validators.concat(this.validators, this.multiStepValidation.map(function(funcName){
+             return window.PxValidators[funcName];
+           }.bind(this)));
+           this.fire('px-validator-loaded');
+         }, function(e) {
+           console.error('Error, could not load ' + this.import);
+         });
+       }
+
+  });
+</script>

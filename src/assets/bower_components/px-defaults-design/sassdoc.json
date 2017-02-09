@@ -1,0 +1,262 @@
+[
+    {
+        "description": "",
+        "commentRange": {
+            "start": 39,
+            "end": 39
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-spacing-unit",
+            "value": "calculateRem($inuit-base-font-size)",
+            "scope": "private",
+            "line": {
+                "start": 40,
+                "end": 40
+            }
+        },
+        "type": "Number [default] - Base spacing unit (same as $inuit base-font-size)",
+        "group": [
+            "px-defaults-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "",
+        "commentRange": {
+            "start": 42,
+            "end": 42
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-spacing-unit--tiny",
+            "value": "calculateRem(round($inuit-base-line-height / 4))",
+            "scope": "private",
+            "line": {
+                "start": 43,
+                "end": 43
+            }
+        },
+        "type": "Number [default] - Tiny base spacing unit (quarter of $inuit-base-line-height)",
+        "group": [
+            "px-defaults-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "",
+        "commentRange": {
+            "start": 45,
+            "end": 45
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-spacing-unit--small",
+            "value": "calculateRem(round($inuit-base-line-height / 2))",
+            "scope": "private",
+            "line": {
+                "start": 46,
+                "end": 46
+            }
+        },
+        "type": "Number [default] - Small base spacing unit (half of $inuit-base-line-height divided by 2)",
+        "group": [
+            "px-defaults-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "",
+        "commentRange": {
+            "start": 48,
+            "end": 48
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-spacing-unit--large",
+            "value": "calculateRem($inuit-base-line-height)",
+            "scope": "private",
+            "line": {
+                "start": 49,
+                "end": 49
+            }
+        },
+        "type": "Number [default] - Large base spacing unit (same as $inuit-base-line-height)",
+        "group": [
+            "px-defaults-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "",
+        "commentRange": {
+            "start": 51,
+            "end": 51
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-spacing-unit--huge",
+            "value": "calculateRem(round($inuit-base-line-height * 1.5))",
+            "scope": "private",
+            "line": {
+                "start": 52,
+                "end": 52
+            }
+        },
+        "type": "Number [default] - Huge base spacing unit (one and a half times $inuit-base-line-height)",
+        "group": [
+            "px-defaults-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "Sets the project-wide base font size. Also used to calculate the base spacing unit.\n\n",
+        "commentRange": {
+            "start": 9,
+            "end": 12
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-font-size",
+            "value": "15px",
+            "scope": "default",
+            "line": {
+                "start": 13,
+                "end": 13
+            }
+        },
+        "group": [
+            "px-defaults-design:variables:style"
+        ],
+        "type": "Number [default]",
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "Sets the project-wide base line-height. Also used to calculate the base spacing unit modifiers.\n\n",
+        "commentRange": {
+            "start": 15,
+            "end": 18
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-line-height",
+            "value": "20px",
+            "scope": "default",
+            "line": {
+                "start": 19,
+                "end": 19
+            }
+        },
+        "group": [
+            "px-defaults-design:variables:style"
+        ],
+        "type": "Number [default]",
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "Sets the project-wide base font color.\n\n",
+        "commentRange": {
+            "start": 21,
+            "end": 24
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-text-color",
+            "value": "rgb(0,0,0)",
+            "scope": "default",
+            "line": {
+                "start": 25,
+                "end": 25
+            }
+        },
+        "group": [
+            "px-defaults-design:variables:style"
+        ],
+        "type": "Color [default] - Base text color",
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "Sets the project-wide base background color.\n\n",
+        "commentRange": {
+            "start": 27,
+            "end": 30
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-base-background-color",
+            "value": "rgb(255,255,255)",
+            "scope": "default",
+            "line": {
+                "start": 31,
+                "end": 31
+            }
+        },
+        "group": [
+            "px-defaults-design:variables:style"
+        ],
+        "type": "Color [default] - Base background color",
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    },
+    {
+        "description": "Sets a prefix that will be added to the beginning of all classes across your project. (e.g. 'px' or 'intuit').\n\n",
+        "commentRange": {
+            "start": 33,
+            "end": 36
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-namespace",
+            "value": "null",
+            "scope": "default",
+            "line": {
+                "start": 37,
+                "end": 37
+            }
+        },
+        "group": [
+            "px-defaults-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_settings.defaults.scss",
+            "name": "_settings.defaults.scss"
+        }
+    }
+]

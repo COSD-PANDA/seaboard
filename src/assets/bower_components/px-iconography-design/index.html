@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>px-iconography-design Demo</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Boilerplate: Import Libraries -->
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../px-theme/px-theme-styles.html" />
+  <style include="px-theme-styles" is="custom-style"></style>
+  <link rel="import" href="../px-sass-doc/px-sass-doc.html" />
+  <link rel="import" href="../px-polymer-font-awesome/polymer-font-awesome.html" />
+
+  <!-- 0: Import Module Styles -->
+  <link rel="import" href="css/px-iconography-design-demo-styles.html" />
+  <style include="px-iconography-design-demo-styles" is="custom-style"></style>
+
+</head>
+<body>
+<template id="just-for-demo" is="dom-bind">
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-iconography-design"
+  description="The Predix UI Iconography module defines styles for icon sets like FontAwesome."
+  layer="base"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "http://fontawesome.io"
+  ]'
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Set Options -->
+<px-sass-doc-option
+  option-name="Icons"
+  choose-with="dropdown"
+  choices='[
+    "Hand-peace-o",
+    "Hand-o-right"
+  ]'
+  default-choice="Hand-peace-o">
+</px-sass-doc-option>
+
+<!-- 3: Make HTML Demo -->
+<section data-slot="demoHTML">
+<i class$="{{iconClass}}"></i>
+</section>
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+{{importCode}}
+</section>
+
+<!-- 5: Set Usage HTML -->
+
+<section data-slot="usage">
+```
+<i class="fa fa-briefcase"></i>
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  var template = document.querySelector('template[is=dom-bind]');
+
+  document.addEventListener('px-sass-doc-options-updated', function(evt) {
+    template.importCode = template._importCode();
+    template.iconClass = template._iconClass();
+  });
+
+  template._iconClass = function() {
+    var opts = template.selectedOptions || {}, strings = [];
+    if (opts.Icons === "Hand-peace-o")      strings.push("fa-hand-peace-o");
+    if (opts.Icons === "Hand-o-right")      strings.push("fa-hand-o-right");
+    return ("fa " + strings.join(" ")).trim();
+  };
+
+  template._importCode = function() {
+    return '@import "px-iconography-design/_base.iconography.scss";';
+  };
+</script>
+
+</body>
+</html>

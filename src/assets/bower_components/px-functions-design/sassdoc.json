@@ -1,0 +1,146 @@
+[
+    {
+        "description": "Takes a font-size value in pixels and converts it to rem.\n\n",
+        "commentRange": {
+            "start": 10,
+            "end": 14
+        },
+        "context": {
+            "type": "function",
+            "name": "calculateRem",
+            "code": "\n  $remSize: $size / $inuit-base-font-size;\n  $remUnit: 1rem;\n  @return $remSize * $remUnit;\n",
+            "line": {
+                "start": 15,
+                "end": 19
+            }
+        },
+        "parameter": [
+            {
+                "type": "Number",
+                "name": "size",
+                "description": "font-size in pixels"
+            }
+        ],
+        "return": {
+            "type": "Number",
+            "description": "rem font-size equivalent"
+        },
+        "group": [
+            "px-functions-design"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+            "path": "_tools.functions.scss",
+            "name": "_tools.functions.scss"
+        }
+    },
+    {
+        "description": "Takes a font-size value in rem and converts it to pixels.\n\n",
+        "commentRange": {
+            "start": 21,
+            "end": 25
+        },
+        "context": {
+            "type": "function",
+            "name": "remToPX",
+            "code": "\n  $remUnit: 1rem;\n  @return ($rem / $remUnit) * $inuit-base-font-size;\n",
+            "line": {
+                "start": 26,
+                "end": 29
+            }
+        },
+        "parameter": [
+            {
+                "type": "Number",
+                "name": "size",
+                "description": "font-size in rem"
+            }
+        ],
+        "return": {
+            "type": "Number",
+            "description": "pixel font-size equivalent"
+        },
+        "group": [
+            "px-functions-design"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+            "path": "_tools.functions.scss",
+            "name": "_tools.functions.scss"
+        }
+    },
+    {
+        "description": "Takes a number and returns one third of that number.\n\n",
+        "commentRange": {
+            "start": 31,
+            "end": 35
+        },
+        "context": {
+            "type": "function",
+            "name": "third",
+            "code": "\n  @return round($inuit-number / 3);\n",
+            "line": {
+                "start": 36,
+                "end": 38
+            }
+        },
+        "parameter": [
+            {
+                "type": "Number",
+                "name": "inuit-number",
+                "description": "value to be converted to a third"
+            }
+        ],
+        "return": {
+            "type": "Number",
+            "description": "value converted to a third"
+        },
+        "group": [
+            "px-functions-design"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+            "path": "_tools.functions.scss",
+            "name": "_tools.functions.scss"
+        }
+    },
+    {
+        "description": "Takes a number and returns three times that number.\n\n",
+        "commentRange": {
+            "start": 40,
+            "end": 44
+        },
+        "context": {
+            "type": "function",
+            "name": "triple",
+            "code": "\n  @return round($inuit-number * 3);\n",
+            "line": {
+                "start": 45,
+                "end": 47
+            }
+        },
+        "parameter": [
+            {
+                "type": "Number",
+                "name": "inuit-number",
+                "description": "value to be tripled"
+            }
+        ],
+        "return": {
+            "type": "Number",
+            "description": "value tripled"
+        },
+        "group": [
+            "px-functions-design"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+            "path": "_tools.functions.scss",
+            "name": "_tools.functions.scss"
+        }
+    }
+]

@@ -1,0 +1,20 @@
+////
+/// PX-LIST-BARE-DESIGN
+/// The list-bare object simply removes any indents and bullet points from lists.
+/// @group px-list-bare-design
+////
+
+@import 'px-defaults-design/_settings.defaults.scss';
+
+/// Prepend value for all generated classes
+/// @group px-list-bare-design:variables:style
+/// @type String [default]
+$inuit-list-bare-namespace  : $inuit-namespace !default;
+
+/// Default list-bare
+.#{$inuit-list-bare-namespace}list-bare,
+%#{$inuit-list-bare-namespace}list-bare {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}

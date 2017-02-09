@@ -1,0 +1,435 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../px-tooltip/px-tooltip.html">
+<link rel="import" href="../px-polymer-font-awesome/px-polymer-font-awesome.html">
+<link rel="import" href="px-edit-cell.html">
+<link rel="import" href="../px-dropdown/px-dropdown.html">
+
+<link rel="import" href="css/px-data-table-cell-styles.html">
+
+<dom-module id="px-data-table-cell">
+  <template>
+    <style include="px-data-table-cell-styles"></style>
+
+    <span class$="{{_getReaderClass(_editing)}}" on-mouseover='onCellHovered' on-mouseout='onCellUnHovered'>
+
+      <!-- in place editing template -->
+      <px-edit-cell id="celledit" class$="{{_getEditCellClass(_editing)}}">
+        <template is="dom-if" if="{{_isEqual(cellType, 'string')}}">
+          <input id="celleditinput"
+                 type="text"
+                 class="u-p0 text-input text-input--bare"
+                 required$="{{column.required}}"
+                 on-input="_cellValueChanged"
+                 on-blur="saveCell"
+                 value="{{cellValue}}" />
+        </template>
+        <template is="dom-if" if="{{_isEqual(cellType, 'text')}}">
+          <textarea required$="{{column.required}}" on-blur="saveCell">{{cellValue}}</textarea>
+        </template>
+      </px-edit-cell>
+      <!--dropdown template  -->
+      <template is="dom-if" if="{{_isEqual(cellType, 'dropdown')}}">
+        <div class="flex__item cell--container">
+          <span>
+            <px-dropdown
+              value="{{cellValue}}"
+              bound-target="{{dropdownBounds}}"
+              display-value="{{cellDisplayValue}}"
+              content-anchor="{{_cellAnchor}}"
+              on-change="saveCell">
+              <px-dropdown-content
+                class="px-dropdown-content"
+                extend-dropdown="true"
+                extend-dropdown-by="25"
+                max-cont-character-width="{{dropdownMaxCharacterWidth}}"
+                allow-outside-scroll="true"
+                items="{{dropdownItems}}">
+              </px-dropdown-content>
+            </px-dropdown>
+          </span>
+        </div>
+      </template>
+      <!-- in place editing template -->
+      <template is="dom-if" if="{{_isEqual(cellType,'string')}}">
+        <div class="flex cell--container">
+          <span id="cellvalue" class$="{{_getValueCellClass(_editing, cellValidation.passedValidation, cellDisplayValue)}}">{{cellDisplayValue}}
+            <template is="dom-if" if="{{cellDisplayTooltip}}">
+              <px-tooltip
+                orientation="top"
+                smart-orientation
+                delay="1000"
+                tooltip-message="{{cellValue}}">
+              </px-tooltip>
+            </template>
+          </span>
+        </div>
+      </template>
+      <!-- icon template -->
+      <template is="dom-if" if="{{isNotEqual(cellType, 'dropdown')}}">
+        <div class="fa fa-fw cell-status--container">
+          <iron-icon class$="{{_getCellIconClass(_showEditIcon, _editing, cellValidation.passedValidation)}}"
+            icon="{{_getCellIcon(_showEditIcon, _editing, cellValidation.passedValidation)}}">
+          </iron-icon>
+          <template is="dom-if" if="{{!cellValidation.passedValidation}}">
+            <px-tooltip
+              class="tooltip-font"
+              smart-orientation
+              orientation="top"
+              tooltip-message="{{cellValidation.failedValidationErrorMessage}}">
+            </px-tooltip>
+          </template>
+        </div>
+      </template>
+      <!-- icon template -->
+    </span>
+    <!-- html content -->
+    <template is="dom-if" if="{{_isEqual(cellType,'html')}}">
+      <aha-html-echo html="{{cellDisplayValue}}"></aha-html-echo>
+    </template>
+  </template>
+</template>
+  <script>
+    Polymer({
+      is: 'px-data-table-cell',
+      properties: {
+        cellType: {
+          type: String,
+          value: ''
+        },
+        cellDisplayValue: {
+          type: String,
+          value: '',
+          observer: '_cellDisplayValueChanged'
+        },
+        cellValue: {
+          type: String,
+          value: ''
+        },
+        cellDisplayTooltip: {
+          type: Boolean,
+          value: false
+        },
+        cellValidation: {
+          type: Object,
+          value: function(){
+            return {passedValidation: true};
+          },
+          notify: true
+        },
+        columnName: {
+          type: String,
+          value: ''
+        },
+        _editing: {
+          type: Boolean,
+          value: false,
+          notify: true
+        },
+        cellEditable:{
+          type: Boolean,
+          value: false
+        },
+        dropdownItems:{
+          type: Array,
+          value: function(){return [];},
+          notify: true,
+          observer: '_setDropdownItem'
+        },
+        dropdownBounds:{
+          type: HTMLElement,
+          value: null
+        },
+        cellSelected:{
+          type: Boolean,
+          value: false,
+          observer: "_cellSelected"
+        },
+        cellHighlighted:{
+          type: Object,
+          value: function(){
+            return {value: false};
+          }
+        },
+        rowHighlighted:{
+          type: Object,
+          value: function(){
+            return {value: false};
+          }
+        },
+        /**
+        * the maximum character width the dropdown will be using to determine
+        * when to show tooltips
+        *
+        * @param dropdownMaxCharacterWidth
+        * @type Number
+        * @default 0
+        */
+        dropdownMaxCharacterWidth: {
+          type: Number,
+          value:0
+        },
+        _showEditIcon:{
+          type: Boolean,
+          value: false
+        },
+        _editTimeout:{
+          type: Object,
+          value: function(){
+            return {};
+          }
+        },
+        _dropdownItem: {
+          type: Boolean,
+          value: false,
+        },
+        _cellAnchor: {
+          type: HTMLElement,
+          value: function() { return null;}
+        }
+      },
+      listeners: {
+        'tap': 'editCell',
+      },
+      observers: [
+        '_updateHighlight(cellHighlighted.value, rowHighlighted.value)'
+      ],
+      detached: function() {
+        //make sure we remove the tooltip in case it's currently showing
+        var tooltip = this.$$('px-tooltip');
+        if(tooltip) {
+          tooltip.remove();
+        }
+      },
+      _cellDisplayValueChanged: function(newValue){
+        if(this.$$('.cell--value') !== undefined && this.$$('.cell--value') !== null){
+          if (newValue !== undefined && newValue !== '') {
+            this.$$('.cell--value').classList.remove('empty');
+          } else {
+            this.$$('.cell--value').classList.add('empty');
+          }
+        }
+      },
+      _cellValueChanged: function(evt){
+        clearTimeout(this._editTimeout);
+        this._editTimeout = setTimeout(function(){
+          this.fire('validate', {newValue: this.$$('#celleditinput').value});
+        }.bind(this), 300);
+      },
+      onCellHovered: function(evt){
+        this.set('_showEditIcon', this.cellEditable);
+      },
+      onCellUnHovered: function(evt){
+        this.set('_showEditIcon',false);
+      },
+      /*
+      * This method checks whether the two parameters passed in are equal.
+      * Please note you should use _areAnyEqual for passing in multiple options in an array.
+      *
+      * @method _isEqual
+      * @param source String / Number
+      * @param target String / Number
+      */
+      _isEqual: function(source, target) {
+        if (!Array.isArray(target) || typeof target !== 'object') {
+          return source === target;
+        }
+        return;
+      },
+      isNotEqual: function(source, target) {
+        if (!Array.isArray(target) || typeof target !== 'object') {
+          return source !== target;
+        }
+        return;
+      },
+      /*
+      * This method checks whether the first parameter and ANY parameter passed in
+      * the array are equal.
+      *
+      * @method _areAnyEqual
+      * @param source String / Number
+      * @param arr Array
+      */
+      _areAnyEqual: function(source, arr) {
+        if (Array.isArray(arr)) {
+          var flag = false,
+              i=0,
+              len = arr.length;
+          for (; i < len; i++) {
+            if (source === arr[i]) {
+              return true;
+            }
+          }
+          return false;
+        } else {
+          console.log('You must pass an array into this function');
+          return false;
+        }
+
+      },
+      _getReaderClass: function() {
+        var datum = this.cellValue,
+            classList = [];
+
+        classList = (this.cellType ==='dropdown') ? ['flex', 'ddviewing'] : ['flex', 'viewing'];
+
+        if(datum === null || datum === undefined || typeof datum === 'string' && datum.trim().length === 0) {
+          classList.push('empty');
+        }
+        return classList.join(' ');
+      },
+      ready: function(){
+        this.addEventListener('exit-edit-mode', this._exitEditMode.bind(this));
+        this.addEventListener('undo-edit-mode', this._undoEditMode.bind(this));
+        this.addEventListener('setDropdownItem', this._setDropdownItem),
+        this.toggleClass('td', true);
+        this.toggleClass('aha-' + this.columnName.replace(/\s/g, "-") + '-td', true);
+      },
+      attached: function() {
+        this.toggleClass('td__dropdown', this._dropdownItem);
+        this._cellAnchor = this;
+      },
+      _setDropdownItem: function() {
+        //we check if there are any items in dropdownItems, and if there are, this is a dropdown cell.
+        this.set('_dropdownItem', (this.dropdownItems.length > 0));
+      },
+      _exitEditMode: function(){
+        document.activeElement.blur();
+      },
+      _undoEditMode: function(evt){
+        this.set('_cancelSave', true);
+        document.activeElement.blur();
+      },
+      editCell: function(){
+        var editCell = this.$$(".cell--edit"),
+            valueCell = this.$$(".cell--value");
+        if (this.cellEditable && this.cellType !=='dropdown') {
+          this.set('_editing', true);
+          this.toggleClass('cell__edit', this._editing);
+          this.set('_undoValue', this.$$(".cell--value").innerText);
+          Polymer.dom(editCell).querySelector('input,select,textarea').focus();
+        }
+      },
+      saveCell: function(evt){
+        this._editing = false;
+        this.toggleClass('cell__edit', this._editing);
+        var value;
+        if(this._cancelSave === true){
+          this.set('_cancelSave', false);
+          value = this._undoValue;
+          Polymer.dom(this.$$('.cell--edit')).querySelector('input,select,textarea').value = value;
+        }
+        else {
+          value = evt.target.value;
+        }
+        this.fire('save', {newValue: value});
+      },
+      _getEditCellClass: function(editing){
+        var classList = ['cell--edit'];
+        if(!editing){
+          classList.push('visuallyhidden');
+        }
+        return classList.join(' ');
+      },
+      _getValueCellClass: function(editing, valid, cellDisplayValue){
+        var classList = ['cell--value'];
+        if(editing){
+          classList.push('visuallyhidden');
+        }
+        if (!cellDisplayValue){
+          classList.push('cell--value__empty');
+        }
+
+        this.toggleClass('cell--value__validation-failed', !valid);
+
+        return classList.join(' ');
+      },
+      _getCellIcon: function(showEditIcon, editing, valid){
+        if(valid) {
+          if(showEditIcon) {
+            return 'fa:fa-pencil';
+          }
+        }
+        else {
+          return 'fa:fa-exclamation-circle';
+        }
+      },
+      _getCellIconClass: function(showEditIcon, editing, valid){
+        var classList= ['cell--status--container--icon'];
+
+        if(!valid) {
+          classList.push('cell--value--icon__validation-failed');
+        }
+        else {
+          if (editing || !showEditIcon) {
+            classList.push('visuallyhidden');
+          }
+        }
+        return classList.join(' ');
+      },
+      _cellSelected: function(selected){
+        if (this.rowHighlighted && this.rowHighlighted.value){
+          this.toggleClass('cell--value__highlight--selected__row', selected);
+        }
+        else if (this.cellHighlighted && this.cellHighlighted.value){
+          this.toggleClass('cell--value__highlight--selected', selected);
+        }
+        else{
+          this.toggleClass('selected', selected);
+        }
+      },
+      _updateHighlight: function(cellHighlight, rowHighlight){
+        this._clearHighlight();
+        if(rowHighlight) {
+          this.toggleClass(this.rowHighlighted.highlightClass, rowHighlight);
+        }
+        if(cellHighlight){
+          this.toggleClass(this.cellHighlighted.highlightClass, cellHighlight);
+        }
+      },
+      _clearHighlight: function(){
+        this.toggleClass('cell--value__highlight--color__high', false);
+        this.toggleClass('cell--value__highlight--color__medium', false);
+        this.toggleClass('cell--value__highlight--color__low', false);
+      }
+    });
+  </script>
+</dom-module>
+
+<!--
+/**
+ * @module aha-html-echo
+ *
+ *
+ * Generates html elements dynamically, inspired by sortable-table
+ * https://github.com/stevenrskelton/sortable-table
+ *
+ * WARNING! Potential XSS vulnerability if `html` comes from an untrusted source
+ *
+ *    <aha-html-echo
+ *         html="html">
+ *    </aha-html-echo>
+ *
+ * @class aha-html-echo
+ * @author Michael Heinrichs<michael.heinrichs@canoo.com>
+ *
+ */
+-->
+<script>
+  Polymer({
+    is: "aha-html-echo",
+    properties: {
+      //column name
+      html: {
+        type: String,
+        value: "",
+        observer: "onHtmlChanged"
+      }
+    },
+    onHtmlChanged: function() {
+      if (!this.html) {
+        this.html = "";
+      }
+      this.innerHTML = this.html;
+    }
+  });
+</script>

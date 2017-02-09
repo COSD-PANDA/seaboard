@@ -1,0 +1,146 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs.
+-->
+<link rel="import" href="../polymer/polymer.html" />
+
+
+<!--
+Element to define and configure highlighting behaviour for a given column (and hence cell or row).
+
+##### Usage
+
+    <px-data-table-highlight highlight-type="row" highlight-method="isLongString" import="px-example-highlight.html"></px-data-table-highlight>
+
+
+@element px-data-table-highlight
+@blurb Element to define and configure highlighting behaviour for a given column (and hence cell or row).
+@homepage index.html
+@demo demo.html
+-->
+<link rel="import" href="css/px-data-table-highlight-styles.html">
+<dom-module id="px-data-table-highlight">
+  <template>
+    <style include="px-data-table-styles"></style>
+
+    <span></span>
+    <content></content>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'px-data-table-highlight',
+
+    /**
+     * Properties block, expose attribute values to the DOM via 'notify'
+     *
+     * @property properties
+     * @type Object
+     */
+    properties: {
+      /**
+       * A url that points to a file containing the JavaScript methods to be used for determining the highlighting behavior.
+       *
+       * @property import
+       * @default ""
+       */
+      import: {
+        type: String,
+        value: ''
+      },
+      /**
+       * An object that holds the highlighting methods and attaches them to the window of the application.
+       *
+       * @property import
+       * @default "{}"
+       */
+      highlight: {
+        type: Object,
+        value: function(){
+          return new Function();
+        }
+      },
+      /**
+       * A JavaScript method name from the file located at the import url.
+       *
+       * @property highlightMethod
+       * @default ""
+       */
+      highlightMethod: {
+        type: String,
+        value: ''
+      },
+      /**
+       * Property to set the custom highlight colour style - supports any CSS color value e.g. 'rgb(67,100,221,0.25)', 'lightblue', '#0000FF' etc.
+       *
+       *      <px-data-table-highlight highlight-color="rgb(67,100,221,0.25)" highlight-type="row" highlight-method="isLongString" import="px-data-table-highlight-example.html"></px-data-table-highlight>
+       *
+       * @property highlightColor
+       * @default ""
+       */
+      highlightColor: {
+        type: String,
+        value: ''
+      },
+      /**
+       * Property for what actually gets highlighted - either 'cell' or 'row'
+       *
+       *      <px-data-table-highlight highlight-color="rgb(67,100,221,0.25)" highlight-type="row" highlight-method="isLongString" import="px-data-table-highlight-example.html"></px-data-table-highlight>
+       *
+       * @property highlightType
+       * @default "cell"
+       */
+      highlightType: {
+        type: String,
+        value: 'cell'
+      },
+      /**
+       * Property to set the pre-defined style of a highlight based on severity. One of 'high', 'medium' or 'low'
+       *
+       *      <px-data-table-highlight highlight-value="low" highlight-type="row" highlight-method="isLongString" import="px-data-table-highlight-example.html"></px-data-table-highlight>
+       *
+       * @property highlightValue
+       * @default "low"
+       */
+      highlightValue: {
+        type: String,
+        value: 'low'
+      }
+    },
+
+    /**
+     * Loads the imported highlight function.
+     *
+     * @method ready
+     */
+    ready: function() {
+      this.importHref(this.import, function(e) {
+        if (this.highlightMethod && window.PxHighlight[this.highlightMethod]){
+          this.highlight = window.PxHighlight[this.highlightMethod];
+          this.fire('px-data-table-highlight-loaded');
+        }
+      }, function(e) {
+        // loading error
+      }, false);
+    },
+    /**
+     * Returns the appropriate highlight color according to what is configured via highlight-color or highlight-value.
+     *
+     * @method calculateHighLightColor
+     */
+    calculateHighlightColor: function(){
+      var highlightColorValue;
+      this.updateStyles();
+      if(this.highlightColor){
+        highlightColorValue = this.highlightColor;
+      } else {
+        var cssVarName = '--cell--value__highlight--' + this.highlightValue + '--color';
+        highlightColorValue = this.getComputedStyleValue(cssVarName);
+      }
+      return highlightColorValue;
+    }
+
+  });
+</script>

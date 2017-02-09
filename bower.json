@@ -1,0 +1,19 @@
+{
+  "name": "Seaboard",
+  "description": "Seaboard",
+  "main": "src/assets/scripts/src/index.js",
+  "authors": [
+    "MrMaksimize"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cityofsandiego/seaboard",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ]
+}

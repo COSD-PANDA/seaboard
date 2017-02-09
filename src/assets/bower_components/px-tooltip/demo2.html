@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>px-tooltip Demo</title>
+        <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+        <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+        <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
+
+        <link rel="import" href="px-tooltip.html"/>
+        <style media="screen">
+            .sample-container {
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sample-container-relative {
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+            }
+            .sample-container-left {
+                width: 250px;
+            }
+            .sample-container-left-relative {
+                width: 250px;
+                position: relative;
+            }
+            .sample-container-right {
+                width: 250px;
+                float: right;
+            }
+            .sample-container-right-relative {
+                width: 250px;
+                float: right;
+                position: relative;
+            }
+            .hover-tooltip {
+                padding: 15px;
+                width: 200px;
+                background-color: gray;
+                color: white;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .test-el {
+                padding:10px;
+                text-align: center;
+                vertical-align: middle;
+                background-color: gray;
+            }
+            
+        </style>
+    </head>
+
+    <body unresolved>
+<template is="dom-bind" id="test">
+    <h4>Demo used to check that the "tooltip stays on screen" bug isn't there. click any of the "Hover over me" button and make sure the tooltipdoesn't stay on screen</h4>
+    <template is="dom-repeat" items="[[itemsArr]]">
+      <div>
+      <button id='btn1' on-tap="hideMe">Hover over me {{hidden}} 
+      </button>
+        <px-tooltip for="btn1" orientation="right" tooltip-message="this is a right tooltip message" delay="500" smart-orientation="true"></px-tooltip>
+      </div>
+     </template>
+    
+    <button on-tap="show">show</button>
+  </template>
+ <script>
+   document.addEventListener('WebComponentsReady', function() {
+     
+     var templateEle = document.querySelector('#test');
+     console.log(templateEle);
+     templateEle.hidden= false;
+     templateEle.hideMe = function() {
+       console.log('here');
+       templateEle.set('hidden',true);
+       templateEle.itemsArr = [];
+     };
+     
+     templateEle.show = function() {
+       templateEle.hidden = false;
+       templateEle.itemsArr = [1,2,3,4,5,6];
+     }
+     
+     templateEle.itemsArr = [1,2,3,4,5,6];
+   })
+  </script>
+
+    </body>
+</html>

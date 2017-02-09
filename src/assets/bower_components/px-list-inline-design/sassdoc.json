@@ -1,0 +1,104 @@
+[
+    {
+        "description": "Default list-inline\n",
+        "commentRange": {
+            "start": 24,
+            "end": 24
+        },
+        "context": {
+            "type": "css",
+            "name": ".#",
+            "value": "$inuit-list-inline-namespace",
+            "line": {
+                "start": 25,
+                "end": 46
+            }
+        },
+        "group": [
+            "px-list-inline-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_objects.list-inline.scss",
+            "name": "_objects.list-inline.scss"
+        }
+    },
+    {
+        "description": "Enable character to delimit list items?\n",
+        "commentRange": {
+            "start": 14,
+            "end": 16
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-list-inline--delimited",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 17,
+                "end": 17
+            }
+        },
+        "group": [
+            "px-list-inline-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.list-inline.scss",
+            "name": "_objects.list-inline.scss"
+        }
+    },
+    {
+        "description": "Prepend value for all generated classes\n",
+        "commentRange": {
+            "start": 9,
+            "end": 11
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-list-inline-namespace",
+            "value": "$inuit-namespace",
+            "scope": "default",
+            "line": {
+                "start": 12,
+                "end": 12
+            }
+        },
+        "group": [
+            "px-list-inline-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.list-inline.scss",
+            "name": "_objects.list-inline.scss"
+        }
+    },
+    {
+        "description": "Character to delimit list items\n",
+        "commentRange": {
+            "start": 19,
+            "end": 21
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-list-inline-delimit-character",
+            "value": "\"\\00A0|\\00A0\"",
+            "scope": "default",
+            "line": {
+                "start": 22,
+                "end": 22
+            }
+        },
+        "group": [
+            "px-list-inline-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.list-inline.scss",
+            "name": "_objects.list-inline.scss"
+        }
+    }
+]

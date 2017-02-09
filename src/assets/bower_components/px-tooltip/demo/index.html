@@ -1,0 +1,185 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+<link rel="import" href="../../px-polymer-font-awesome/polymer-font-awesome.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-demo/px-demo-header.html" />
+<link rel="import" href="../../px-demo/px-demo-api-viewer.html" />
+<link rel="import" href="../../px-demo/px-demo-footer.html" />
+<link rel="import" href="../../px-demo/px-demo-configs.html" />
+<link rel="import" href="../../px-demo/px-demo-props.html" />
+<link rel="import" href="../../px-demo/px-demo-interactive.html" />
+<link rel="import" href="../../px-demo/px-demo-component-snippet.html" />
+
+<!-- Imports for this componnent -->
+<link rel="import" href="../../px-demo/css/px-demo-styles.html" />
+<link rel="import" href="../../px-tooltip/px-tooltip.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <style include="px-demo-styles" is="custom-style"></style>
+
+    <!-- Header -->
+    <px-demo-header
+        module-name="px-tooltip"
+        description="A Tooltip is meant to give users more information related to an item shortly after they hover over the target component (the delay is configurable).
+          When the mouse leaves the target area, the tooltip goes away.
+          Tooltips can be positioned above, below, to the left, or to the right of the target.
+          A Smart Orientation option is included that will attempt to automatically choose a placement based on the real estate available – this attempts to prevent the tooltip from going off the screen.
+          Note: tooltips are not recommended for mobile or tablet applications since the hover affordance is inconsistent across devices and platforms (3D touch, tap-and-hold, proximity sensors, etc).">
+    </px-demo-header>
+
+    <!-- Interactive -->
+    <px-demo-interactive>
+      <!-- Configs -->
+      <px-demo-configs configs="[[configs]]" props="{{props}}" chosen-config="{{chosenConfig}}"></px-demo-configs>
+
+      <!-- Props -->
+      <px-demo-props props="{{props}}" config="[[chosenConfig]]"></px-demo-props>
+
+      <!-- Component ---------------------------------------------------------->
+      <px-demo-component>
+        <button class="btn btn--tertiary" id="btn1" type="button" name="button">Hover over me, tooltip is to the {{props.orientation.value}}</button>
+        <px-tooltip
+            for="btn1"
+            orientation="{{props.orientation.value}}"
+            delay="{{props.delay.value}}"
+            tooltip-message="{{props.tooltipMessage.value}}"
+            tooltip-style="{{props.tooltipStyle.value}}">
+        </px-tooltip>
+        </button>
+
+      </px-demo-component>
+      <!-- END Component ------------------------------------------------------>
+
+      <px-demo-component-snippet
+          element-properties="{{props}}"
+          element-name="px-tooltip">
+      </px-demo-component-snippet>
+    </px-demo-interactive>
+
+    <!-- API Viewer -->
+    <px-demo-api-viewer source="px-tooltip"></px-demo-api-viewer>
+
+    <!-- Footer -->
+    <px-demo-footer></px-demo-footer>
+
+  </template>
+
+</dom-module>
+<script>
+  Polymer({
+    is: 'local-element-demo',
+
+    properties: {
+
+      /**
+       * Note: The actual data/values for `props` are placed in `this.demoProps`
+       * to create a static reference that Polymer shouldn't overwrite.
+       *
+       * On object containing all the properties the user can configure for this
+       * demo. Usually a pretty similar copy of the component's `properties` block
+       * with some additional sugar added to describe what kind of input the
+       * user will be shown and how that input should be configured.
+       *
+       * Note that `value` for each property is the default that will be set
+       * unless a config from `configs` is applied by default.
+       *
+       *
+       * @property demoProps
+       * @type {Object}
+       */
+      props: {
+        type: Object,
+        value: function(){ return this.demoProps; }
+      },
+
+      /**
+       * An array of pre-configured `props` that can be used to provide the user
+       * with a set of common examples. These configs will be made available
+       * as a set of tabs the user can click that will automatically change
+       * the `props` to specific values.
+       *
+       * @property demoProps
+       * @type {Array}
+       */
+      configs: {
+        type: Array,
+        value: function(){
+          return [
+            
+            { configName: "Auto",
+              orientation: "auto",
+              tooltipMessage: "This is a left tooltip message",
+              delay: 50,
+              siblingElement: "<button id='btn1'>Hover over me</button>",
+              tooltipStyle: "dark"
+            },
+
+            { configName: "Light Top",
+              orientation: "top",
+              tooltipMessage: "This is a top tooltip message",
+              delay: 500,
+              siblingElement: "<button id='btn1'>Hover over me</button>",
+              tooltipStyle: "light"
+            }
+          ]
+        }
+      }
+    },
+
+    /**
+     * A reference for `this.props`. Read the documentation there.
+     */
+    demoProps: {
+      smartOrientation: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
+      },
+
+      for: {
+        type: String,
+        defaultValue: 'btn1',
+        inputType: 'text',
+        inputPlaceholder: 'btn1',
+        inputDisabled: true        
+      },
+
+      delay: {
+        type: String,
+        defaultValue: '500',
+        inputType: 'text',
+        inputPlaceholder: '500'
+      },
+
+      tooltipMessage: {
+        type: String,
+        defaultValue: 'This is a right tooltip message',
+        inputType: 'text',
+        inputPlaceholder: 'Tooltip message'
+      },
+
+      orientation: {
+        type: String,
+        inputType: 'dropdown',
+        defaultValue: 'auto',
+        inputChoices: ['auto', 'left', 'right', 'top', 'bottom']
+      },
+
+      siblingElement: {
+        type: String,
+        defaultValue: '<button id="btn1">Hover over me</button>',
+        inputDisabled: true
+      },
+
+      tooltipStyle: {
+        type: String,
+        defaultValue: 'light',
+        inputDisabled: true
+      }
+    },
+
+  });
+</script>

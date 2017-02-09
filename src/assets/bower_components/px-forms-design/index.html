@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>px-forms-design Demo</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Boilerplate: Import Libraries -->
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../px-theme/px-theme-styles.html">
+  <style include="px-theme-styles" is="custom-style"></style>
+  <link rel="import" href="../px-sass-doc/px-sass-doc.html" />
+
+  <!-- 0: Import Module Styles -->
+  <link rel="import" href="css/px-forms-design-demo-styles.html" />
+  <style include="px-forms-design-demo-styles" is="custom-style"></style>
+
+</head>
+<body>
+<template id="just-for-demo" is="dom-bind">
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-forms-design"
+  description="The Predix UI Forms module is a simple implentations of forms and form fields. Form layouts follow rhythmic spacing with simple numeric patterns. Lines are used as rarely as possible. The distance between elements creates the grouping and the visual hierarchy."
+  layer="objects"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-colors-design",
+    "https://github.com/PredixDev/px-defaults-design"
+  ]'
+  selected-options="{{selectedOptions}}"
+  tabs='["Input Fields","Select","Inline Fields","Basic Form"]' selected-tab="{{selectedTab}}">
+
+<!-- FOR 'Input Fields' TAB -->
+<template is="dom-if" if="[[_tabIs('Input Fields',selectedTab)]]" restamp="true">
+
+<px-sass-doc-option
+  option-name="Input Length"
+  choose-with="dropdown"
+  choices='[
+    "default",
+    "tiny",
+    "small",
+    "regular",
+    "large",
+    "huge"
+  ]'
+  default-choice="default">
+</px-sass-doc-option>
+<px-sass-doc-option
+  option-name="Validation States"
+  choose-with="dropdown"
+  choices='[
+    "none",
+    "warning",
+    "error",
+    "success"
+  ]'
+  default-choice="none">
+</px-sass-doc-option>
+<px-sass-doc-option
+  option-name="Type"
+  choose-with="dropdown"
+  choices='[
+    "text",
+    "email",
+    "tel",
+    "search",
+    "number",
+    "password"
+  ]'
+  default-choice="text">
+</px-sass-doc-option>
+<px-sass-doc-option
+  option-name="Bare"
+  choose-with="boolean"
+  default-choice="false">
+</px-sass-doc-option>
+<px-sass-doc-option
+  option-name="Disabled"
+  choose-with="boolean"
+  default-choice="false">
+</px-sass-doc-option>
+
+<section data-slot="demoHTML" id="demoContainer">
+
+<label for="input1">Input Label</label>
+<input class$="{{inputClasses}}" id="input1" type$="{{selectedOptions.Type}}" disabled$="{{selectedOptions.Disabled}}" placeholder="Type something...">
+
+</section>
+
+<section data-slot="import">
+{{inputImportCode}}
+</section>
+
+</template>
+
+<!-- FOR 'Select' TAB -->
+<template is="dom-if" if="[[_tabIs('Select',selectedTab)]]" restamp="true">
+
+<px-sass-doc-option
+  option-name="Multi-select"
+  choose-with="boolean"
+  default-choice="false">
+</px-sass-doc-option>
+
+<px-sass-doc-option
+  option-name="Disabled"
+  choose-with="boolean"
+  default-choice="false">
+</px-sass-doc-option>
+
+<section data-slot="demoHTML" id="demoContainer">
+<select multiple$="{{selectedOptions.Multi-select}}" disabled$="{{selectedOptions.Disabled}}">
+  <option>First</option>
+  <option>Second</option>
+  <option>Third</option>
+</select>
+</section>
+
+
+</template>
+
+<!-- FOR 'Inline Fields' TAB -->
+<template is="dom-if" if="[[_tabIs('Inline Fields',selectedTab)]]" restamp="true">
+<px-sass-doc-option
+  option-name="Length"
+  choose-with="dropdown"
+  choices='[
+    "default",
+    "tiny",
+    "small",
+    "regular",
+    "large",
+    "huge"
+  ]'
+  default-choice="tiny">
+</px-sass-doc-option>
+<px-sass-doc-option
+  option-name="Validation"
+  choose-with="dropdown"
+  choices='[
+    "none",
+    "warning",
+    "error",
+    "success"
+  ]'
+  default-choice="none">
+</px-sass-doc-option>
+
+<section data-slot="demoHTML" id="demoContainer">
+
+<label class="label--inline" for="inline1">From</label>
+<input class$="{{inlineClasses}}" id="inline1" type="text">
+<label class="label--inline" for="inline2">to</label>
+<input class$="{{inlineClasses}}" type="text">
+<input id="inline3" type="checkbox">
+<label class="label--inline" for="inline3">Inline checkbox</label>
+<input class="form-field--inline btn btn--primary" type="submit" value="Submit">
+
+</section>
+
+<section data-slot="import">
+{{inlineImportCode}}
+</section>
+
+</template>
+
+<!-- FOR 'Simple Form' TAB -->
+<template is="dom-if" if="[[_tabIs('Basic Form',selectedTab)]]" restamp="true">
+
+<section data-slot="demoHTML" id="demoContainer">
+
+<form>
+  <fieldset class="form-field">
+    <legend>Basic form</legend>
+    <ol class="list-bare">
+      <li class="form-field">
+        <label for="basic-form-name">Name</label>
+        <input class="text-input" id="basic-form-name" type="text" placeholder="First name">
+        <span class="form-field__help">Hint Text</span>
+      </li>
+      <li class="form-field">
+        <input id="basic-form-checkbox" type="checkbox">
+        <label class="label--inline" for="basic-form-checkbox">No Lastname</label>
+      </li>
+    </ol>
+    <input class="btn btn--primary" type="submit" value="Submit">
+    <input class="btn" type="reset" value="Cancel">
+  </fieldset>
+</form>
+</section>
+
+<section data-slot="import">
+@import 'px-forms-design/_base.forms.scss';
+</section>
+
+</template>
+
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="usage">
+Input Field:
+```
+<label for="input1">Input Label</label>
+<input class="text-input" id="input1" type="text" placeholder="Type something...">
+```
+
+Checkbox:
+```
+<input id="checkbox1" type="checkbox" disabled>
+<label class=label--inline for="checkbox1">Checkbox</label>
+```
+
+Radio Button:
+```
+<input id="radio1" name="radios" type="radio" disabled>
+<label class=label--inline for="radio1">Option 1</label>
+<input id="radio2" name="radios" type="radio" disabled>
+<label class=label--inline for="radio2">Option 2</label>
+```
+
+Select (Dropdown):
+```
+<select disabled>
+  <optgroup label="Header 1">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+  </optgroup>
+  <optgroup label="Header 2">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+  </optgroup>
+</select>
+```
+
+Multi-select:
+```
+<select multiple>
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+  <option>Option 4</option>
+</select>
+```
+
+Text Area:
+```
+<textarea placeholder="Type something..."></textarea>
+```
+
+Inline Form:
+```
+<label class="label--inline" for="inline1">Label Text</label>
+<input class="text-input input--small" id="inline1" type="text">
+```
+
+Basic Form:
+```
+<form>
+  <fieldset class="form-field">
+    <legend>Basic form</legend>
+    <ol class="list-bare">
+      <li class="form-field">
+        <label for="basic-form-name">Name</label>
+        <input id="basic-form-name" class="text-input" type="text" placeholder="First name">
+        <span class="form-field__help">Hint Text</span>
+      </li>
+      <li class="form-field">
+        <input id="basic-form-checkbox" type="checkbox">
+        <label class="label--inline" for="basic-form-checkbox">No Lastname</label>
+      </li>
+    </ol>
+    <input class="btn btn--primary" type="submit" value="Submit">
+    <input class="btn" type="reset" value="Cancel">
+  </fieldset>
+</form>
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  var template = document.querySelector('template[is=dom-bind]');
+
+  document.addEventListener('px-sass-doc-options-updated', function(evt) {
+    template.inputClasses = template._calcInputClasses();
+    template.inlineClasses = template._calcInlineClasses();
+    template.inputImportCode = template._inputImportCode();
+    template.inlineImportCode = template._inlineImportCode();
+
+    // Wait, then tell the highlighter to run after dom-if restamps
+    template.async(function(){ template.fire('px-sass-doc-demo-updated', {}) }, 10);
+  });
+
+  template._calcInputClasses = function() {
+    var opts = template.selectedOptions || {}, strings = [];
+
+    if (opts["Input Length"] === "tiny")     strings.push("input--tiny");
+    if (opts["Input Length"] === "small")    strings.push("input--small");
+    if (opts["Input Length"] === "regular")  strings.push("input--regular");
+    if (opts["Input Length"] === "large")    strings.push("input--large");
+    if (opts["Input Length"] === "huge")     strings.push("input--huge");
+
+    if (opts["Validation States"] === "warning")   strings.push("validation-warning");
+    if (opts["Validation States"] === "error")     strings.push("validation-error");
+    if (opts["Validation States"] === "success")   strings.push("validation-success");
+
+    if (opts.Bare === true)     strings.push("text-input--bare");
+
+    return ("text-input " + strings.join(" ")).trim();
+  };
+
+  template._calcInlineClasses = function() {
+    var optsInline = template.selectedOptions || {}, strings = [];
+
+    if (optsInline.Length === "tiny")     strings.push("input--tiny");
+    if (optsInline.Length === "small")    strings.push("input--small");
+    if (optsInline.Length === "regular")  strings.push("input--regular");
+    if (optsInline.Length === "large")    strings.push("input--large");
+    if (optsInline.Length === "huge")     strings.push("input--huge");
+
+    if (optsInline.Validation === "warning")   strings.push("validation-warning");
+    if (optsInline.Validation === "error")     strings.push("validation-error");
+    if (optsInline.Validation === "success")   strings.push("validation-success");
+
+    return ("text-input " + strings.join(" ")).trim();
+  };
+
+  template._inputImportCode = function() {
+    var opts = template.selectedOptions || {}, strings = [];
+
+    if (opts["Input Length"] === "tiny")    strings.push("$inuit-enable-input--tiny : true;");
+    if (opts["Input Length"] === "small")   strings.push("$inuit-enable-input--small : true;");
+    if (opts["Input Length"] === "regular") strings.push("$inuit-enable-input--regular : true;");
+    if (opts["Input Length"] === "large")   strings.push("$inuit-enable-input--large : true;");
+    if (opts["Input Length"] === "huge")    strings.push("$inuit-enable-input--huge : true;");
+
+    if (opts["Validation States"] === "warning")    strings.push("$inuit-enable-validation-states : true;");
+    if (opts["Validation States"] === "error")    strings.push("$inuit-enable-validation-states : true;");
+    if (opts["Validation States"] === "success")    strings.push("$inuit-enable-validation-states : true;");
+
+    if (opts.Bare === true)     strings.push("$inuit-enable-text-input--bare  : true;");
+
+    return (strings.join("\n") + "\n@import 'px-forms-design/_base.forms.scss';").trim();
+  };
+  template._inlineImportCode = function() {
+    var opts = template.selectedOptions || {}, strings = [];
+
+    if (opts["Length"] === "tiny")    strings.push("$inuit-enable-input--tiny : true;");
+    if (opts["Length"] === "small")   strings.push("$inuit-enable-input--small : true;");
+    if (opts["Length"] === "regular") strings.push("$inuit-enable-input--regular : true;");
+    if (opts["Length"] === "large")   strings.push("$inuit-enable-input--large : true;");
+    if (opts["Length"] === "huge")    strings.push("$inuit-enable-input--huge : true;");
+
+    if (opts["Validation"] === "warning")    strings.push("$inuit-enable-validation-states : true;");
+    if (opts["Validation"] === "error")    strings.push("$inuit-enable-validation-states : true;");
+    if (opts["Validation"] === "success")    strings.push("$inuit-enable-validation-states : true;");
+
+    return (strings.join("\n") + "\n@import 'px-forms-design/_base.forms.scss';").trim();
+  };
+
+  template._tabIs = function(tabName) {
+    var selected = template.selectedTab || "";
+    return selected === tabName;
+  };
+
+  // template._isMulti = function(opts) {
+  //   // var opts = template.selectedOptions || {};
+  //   return opts["Multi-select"];
+  // };
+</script>
+</body>
+</html>

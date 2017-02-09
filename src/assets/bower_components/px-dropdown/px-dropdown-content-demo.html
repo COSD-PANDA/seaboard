@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>px-dropdown Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/px-dropdown-demo.css"/>
+  <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="../px-theme/px-theme-styles.html">
+  <style include="px-theme-styles" is="custom-style"></style>
+
+  <link rel="import" href="../px-api-viewer/px-api-viewer.html" />
+  <link rel="import" href="../px-tabs/px-tab-set.html" />
+  <link rel="import" href="px-dropdown.html"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="import" href="../px-demo-snippet/px-demo-snippet.html">
+  <link rel="import" href="../px-polymer-font-awesome/polymer-font-awesome.html">
+  <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+
+  </head>
+
+<body>
+
+  <!-- Wrap elements with auto-binding template to -->
+  <!-- allow use of Polymer bindings in main document -->
+  <template id="just-for-demo" is="dom-bind" >
+
+    <!-- discription -->
+    <div class="hero u-p++ text--shadow">
+  		<h1 class="delta">px-dropdown-content</h1>
+  		<p>
+  			px-dropdown-content is a sub-component of px-dropdown, and displays the list of items passed into the component.
+  		</p>
+  	</div>
+    <br />
+
+    <!-- mega demo -->
+    <div style="position: relative;" class="u-pb++ flex flex--col" id="defaultTab">
+      <div class="tabContainer u-pt++ u-pl++">
+        <px-tab-set selected="{{selected}}" bare no-bottom-border>
+          <template is="dom-repeat" items="{{optionsArray}}">
+            <px-tab>Option {{indexPlusOne(index)}}</px-tab>
+          </template>
+        </px-tab-set>
+      </div>
+      <px-tab-pages selected="{{selected}}">
+        <template is="dom-repeat" items="{{optionsArray}}">
+          <section class="tab-page">
+            <div class="mega-demo flex u-ph++ u-pb++">
+              <!-- Properties -->
+              <div class="properties u-ph+ u-pb+ u-mt+">
+                  <p class="epsilon">Properties</p>
+              <div class="u-mb-">Extend Dropdown by: <input class="text-input" type="text" placeholder="{{item.extendDropdownBy}}" value="{{item.extendDropdownBy::input}}" /></div>
+              <div class="flex u-mb-">
+                <input id="extendDropdown{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.extendDropdown::change}}">
+                <label for$="extendDropdown{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Extend Dropdown</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="allowOutsideScroll{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.allowOutsideScroll::change}}">
+                <label for$="allowOutsideScroll{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Allow Outside Scroll</div>
+              </div>
+              <div class="flex u-mb-">
+                <input id="checkboxMode{{indexPlusOne(index)}}" class="toggle__input toggle__input--small" type="checkbox" checked="{{item.checkboxMode::change}}">
+                <label for$="checkboxMode{{indexPlusOne(index)}}" class="toggle__label toggle__label--small"></label>
+                <div class="u-ml-">Checkbox Mode</div>
+              </div>
+
+            </div>
+
+            <div class="demoContainer u-mt+">
+              <!-- demo -->
+              <div class="flex flex--col">
+                <div class="demo u-p+">
+                  <br />
+                  <div style="width: 100px;">
+                    <px-dropdown
+                      display-value="Click Me">
+                      <px-dropdown-content
+                        extend-dropdown="{{item.extendDropdown}}"
+                        extend-dropdown-by="{{item.extendDropdownBy}}"
+                        max-cont-character-width="{{item.maxContCharacterWidth}}"
+                        items="[[item.items]]"
+                        allow-outside-scroll="{{item.allowOutsideScroll}}"
+                        checkbox-mode="{{item.checkboxMode}}">
+                      </px-dropdown-content>
+                    </px-dropdown>
+                  </div>
+                </div>
+                <div class="flex__item">
+                  <px-demo-snippet
+                    element-properties={{item}}
+                    element-name="px-dropdown-content"
+                    parent-name="px-dropdown">
+                  </px-demo-snippet>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="apiContainer">
+            <div class="flex flex--col api u-mt++" >
+              <div class="flex">
+                <div class="flex__item">
+                  <div class="flex flex--col childrenAssociated">
+                    <div class="componentHeader">Children Component</div>
+                    <div class="componentList">
+                      <ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex__item">
+                  <div class="flex flex--col">
+                    <div class="componentHeader">Associated Component</div>
+                    <div class="componentList">
+                      <ul>
+                        <li><a href="index.html">px-dropdown</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <px-api-viewer source="px-dropdown-content"></px-api-viewer>
+              </div>
+            </div>
+          </div>
+        </section>
+      </template>
+    </px-tab-pages>
+  </div>
+  <footer class="footer flex flex--center">
+    <div class="footer__container u-pv++">
+      <div>
+        <a href="https://ge.com/digital" >
+          <img src="monogram-wdmk.png" alt="GE Monogram" class="footer__img">
+        </a>
+      </div>
+      <div class="footer__list">
+        <ul class="list-inline list-inline--delimited">
+          <li>
+            <a href="http://predix.io/legal" class="footer__list--lnk">Legal</a>
+          </li>
+          <li>
+            <a href="mailto:info@predix.io" class="footer__list--lnk">Contact Us</a>
+          </li>
+          <li>Copyright &copy; 2016 General Electric Company. All rights reserved.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</template>
+<script>
+window.addEventListener('WebComponentsReady', function() {
+  var template = document.querySelector('template[is=dom-bind]'),
+      optionsArray = [
+        {
+          items:[
+              {"key":"1", "val": "Rhino"},
+              {"key":"2", "val": "Giraffe"},
+              {"key":"3", "val": "Lion"},
+              {"key":"4", "val": "Dodo"},
+              {"key":"5", "val": "Hippopotamus"},
+              {"key":"6", "val": "Rhino"},
+              {"key":"7", "val": "Giraffe"},
+              {"key":"8", "val": "Lion"},
+              {"key":"9", "val": "Dodo"},
+              {"key":"10", "val": "Hippopotamus"},
+              {"key":"11", "val": "Rhino"},
+              {"key":"12", "val": "Giraffe"},
+              {"key":"13", "val": "Lion"},
+              {"key":"14", "val": "Dodo"},
+              {"key":"15", "val": "Hippopotamus"},
+              {"key":"16", "val": "Rhino", "disabled": true},
+              {"key":"17", "val": "Giraffe", "disabled": true},
+              {"key":"18", "val": "Lion", "disabled": true},
+              {"key":"19", "val": "Dodo", "disabled": true},
+              {"key":"20", "val": "Hippopotamus", "disabled": true}
+            ],
+            extendDropdownBy: 30,
+            extendDropdown: true,
+            allowOutsideScroll: false,
+            parentComponent: ["<px-dropdown display-value='Click Me'>", "</px-dropdown>"],
+            checkboxMode: false
+        },
+        {
+          items:[
+              {"key":"1", "val": "Linux"},
+              {"key":"2", "val": "Mac"},
+              {"key":"3", "val": "Windows"},
+              {"key":"4", "val": "Spark"},
+              {"key":"5", "val": "NeXT"}
+            ],
+            extendDropdownBy: 10,
+            extendDropdown: true,
+            allowOutsideScroll: true,
+            parentComponent: ["<px-dropdown display-value='Click Me'>", "</px-dropdown>"],
+            checkboxMode: true
+        }
+      ],
+      indexPlusOne = function(num) {
+        return num + 1;
+      };
+
+      // window.setTimeout(function() {
+      //   window.addEventListener('px-dropdown-checkbox-changed', function(evt) {
+      //     console.log(evt.detail);
+      //   });
+      // },300);
+
+  template.selected = "0";
+  template.optionsArray = optionsArray;
+  template.indexPlusOne = indexPlusOne;
+});
+</script>
+
+</body>
+</html>

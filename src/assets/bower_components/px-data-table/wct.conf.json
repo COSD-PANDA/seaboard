@@ -1,0 +1,39 @@
+{
+  "verbose": false,
+  "plugins": {
+    "local": {
+      "browsers": [
+        "chrome"
+      ]
+    },
+    "sauce": {
+      "disabled": true,
+      "browsers": [
+        {
+          "browserName": "microsoftedge",
+          "platform": "Windows 10",
+          "version": ""
+        },
+        {
+          "browserName": "internet explorer",
+          "platform": "Windows 8.1",
+          "version": "11"
+        },
+        {
+          "browserName": "safari",
+          "platform": "OS X 10.11",
+          "version": "9"
+        },
+        {
+          "browserName": "safari",
+          "platform": "OS X 10.11",
+          "version": "10"
+        }
+      ]
+    }
+  },
+  "suites": [
+    "test/px-data-table-fixture.html",
+    "test/px-data-table-cell-fixture.html"
+  ]
+}

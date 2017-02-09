@@ -49,7 +49,7 @@ layout: default
           {% if resource.format %}<span class="label label-default" property='dcat:mediaType'>{{ resource.format}}</span>{% endif %}
           <a href="#" class="show-resource-details" data-hook="show-resource-details">(Details)</a>
           {% if resource.description %}<div class="resource-description">{{ resource.description }}</div>{% endif %}
-          <table class="table table-striped table-condensed resource-details" data-hook="resource-details">
+          <!--<table class="table table-striped table-condensed resource-details" data-hook="resource-details">
             {% for field in resource_fields %}
               {% unless resource_system_fields contains field.field_name %}
                 {% assign value = resource[field[field_name]] %}
@@ -65,10 +65,21 @@ layout: default
                 {% endif %}
               {% endunless %}
             {% endfor %}
-          </table>
+          </table>-->
         </li>
         {% endfor %}
       </ul>
+
+      <template is="dom-bind">
+        <iron-ajax
+          auto
+          url="https://8kf9rxn2x1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview"
+          handle-as="json"
+          last-response="{% raw %}{{ jsondata }}{% endraw %}"
+          debounce-duration="300"></iron-ajax>
+
+      <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
+        </template>
 
       <h2>Additional Info</h2>
       <table class="table table-striped dataset-details">
@@ -101,6 +112,7 @@ layout: default
       </table>
     </div>
   </div>
+
 
   <div class="row" data-hook="view" data-view="edit">
     <div class="col-sm-8 col-sm-offset-2">

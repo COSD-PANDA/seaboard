@@ -1,0 +1,52 @@
+[
+    {
+        "description": "Default list-bare\n",
+        "commentRange": {
+            "start": 14,
+            "end": 14
+        },
+        "context": {
+            "type": "css",
+            "name": ".#",
+            "value": "$inuit-list-bare-namespace",
+            "line": {
+                "start": 15,
+                "end": 21
+            }
+        },
+        "group": [
+            "px-list-bare-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_objects.list-bare.scss",
+            "name": "_objects.list-bare.scss"
+        }
+    },
+    {
+        "description": "Prepend value for all generated classes\n",
+        "commentRange": {
+            "start": 9,
+            "end": 11
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-list-bare-namespace",
+            "value": "$inuit-namespace",
+            "scope": "default",
+            "line": {
+                "start": 12,
+                "end": 12
+            }
+        },
+        "group": [
+            "px-list-bare-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.list-bare.scss",
+            "name": "_objects.list-bare.scss"
+        }
+    }
+]
