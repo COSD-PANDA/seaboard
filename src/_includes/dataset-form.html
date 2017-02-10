@@ -3,6 +3,7 @@
 {% assign resource_fields = site.data.schemas[schema].resource_fields %}
 {% assign dataset_system_fields = "title|organization|notes" | split: "|" %}
 {% assign datasets = site.collections | where:"label","datasets" | first %}
+{% assign default_date = site.time | date: '%Y-%m-%d' %}
 <form data-component="form dataset-form"
   data-file-dir="src/{{ datasets.relative_directory }}"
   data-render-dir="datasets"
@@ -17,7 +18,11 @@
       {% if dataset_system_fields contains field.field_name %}
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
-        {% assign field_default = field.default  | default: "" %}
+        {% if field_name contains 'date' %}
+            {% assign field_default = field.default  | default: default_date %}
+        {% else %}
+            {% assign field_default = field.default  | default: "" %}
+        {% endif %}
         {% assign value = include.dataset[field_name] | default: field_default %}
         {% include {{ template }} field=field field_name=field_name value=value %}
       {% endif %}
@@ -46,7 +51,11 @@
       {% unless dataset_system_fields contains field.field_name %}
         {% assign template = field.form_template | default: "form/text.html" %}
         {% assign field_name = field.field_name %}
-        {% assign field_default = field.default  | default: "" %}
+        {% if field_name contains 'date' %}
+            {% assign field_default = field.default  | default: default_date %}
+        {% else %}
+            {% assign field_default = field.default  | default: "" %}
+        {% endif %}
         {% assign value = include.dataset[field_name] | default: field_default %}
         {% include {{ template }} field=field field_name=field_name value=value %}
       {% endunless %}
