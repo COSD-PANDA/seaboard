@@ -6,7 +6,7 @@ dataset_fields:
     datajson: title
   - field_name: date_issued
     label: Date Issued (YYYY-MM-DD)
-    datajson: modified
+    datajson: issued
   - field_name: date_modified
     label: Date Modified (YYYY-MM-DD)
     datajson: modified
