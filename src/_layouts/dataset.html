@@ -74,10 +74,11 @@ layout: default
                 <th>Type</th>
                 <th>Preview</th>
             </tr>
+        {% assign first_resource_url = '' %}
         {% for resource in page.resources %}
-            {% if forloop.first %}
-                {% capture first-resource-url %}{{ resource.url }}{% endcapture %}
-                {% capture first-resource-title %}{{ resource.name }}{% endcapture %}
+            {% if first_resource_url == '' and resource.url contains '.csv' %}
+                {% capture first_resource_url %}{{ resource.url }}{% endcapture %}
+                {% capture first_resource_title %}{{ resource.name }}{% endcapture %}
             	{% assign preview-is-active = 'active' %}
 			{% else %}
             	{% assign preview-is-active = '' %}
@@ -114,14 +115,14 @@ layout: default
         <iron-ajax
           auto
           url="https://8kf9rxn2x1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview"
-          params={% raw %}'{"datasetUrl": "{% endraw %}{{ first-resource-url }}{% raw %}", "numRows": "10"}'{% endraw %}
+          params={% raw %}'{"datasetUrl": "{% endraw %}{{ first_resource_url }}{% raw %}", "numRows": "10"}'{% endraw %}
           handle-as="json"
           last-response="{% raw %}{{ jsondata }}{% endraw %}"
 		  loading="{% raw %}{{ tableloading }}{% endraw %}"
           debounce-duration="300"></iron-ajax>
 
       <div class="preview-container">
-	  <h4 class="preview-resource-title">{{ first-resource-title }}</h4>
+	  <h4 class="preview-resource-title">{{ first_resource_title }}</h4>
       <px-spinner class="resource-preview-loading-spinner" finished="{% raw %}[[!tableloading]]{% endraw %}" size="50"></px-spinner>
       <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
       </div>
