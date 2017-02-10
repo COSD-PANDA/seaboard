@@ -426,6 +426,19 @@ a .hidden-link-text {
   .data-story-link img {
     width: 100%; }
 
+.resource-table-button {
+  padding: 0px;
+  min-width: 2em; }
+
+.resource-table-button[toggles][active] {
+  background: black; }
+  .resource-table-button[toggles][active] .iron-icon {
+    color: white; }
+
+.resource-preview-loading-spinner {
+  margin-left: auto;
+  margin-right: auto; }
+
 #header-image {
   /*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/
   background: url("http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg") no-repeat fixed center bottom/cover;

@@ -1,0 +1,30 @@
+{
+  "name": "Seaboard",
+  "description": "Seaboard",
+  "main": "src/assets/scripts/src/index.js",
+  "authors": [
+    "MrMaksimize"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cityofsandiego/seaboard",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-ajax": "^1.4.3",
+    "iron-icon": "^1.0.12",
+    "iron-icons": "^1.2.0",
+    "paper-button": "^1.0.14",
+    "polymer": "^1.8.0",
+    "px-data-table": "^1.15.12",
+    "px-theme": "^2.0.4",
+    "webcomponentsjs": "^0.7.24",
+    "px-spinner": "^0.5.3"
+  }
+}

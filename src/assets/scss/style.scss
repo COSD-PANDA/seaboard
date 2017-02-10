@@ -42,6 +42,23 @@ The main SCSS file for everything, yep
     }
 }
 
+.resource-table-button {
+    padding: 0px;
+    min-width: 2em;
+}
+
+.resource-table-button[toggles][active]{
+	background: black;
+	.iron-icon {
+		color: white;
+	}
+}
+
+.resource-preview-loading-spinner {
+	margin-left: auto;
+    margin-right: auto;
+}
+
 
 #header-image {
 	/*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/
