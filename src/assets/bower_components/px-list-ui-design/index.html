@@ -1,129 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>px-list-ui-design Demo</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Predix UI</title>
 
-  <!-- Boilerplate: Import Libraries -->
-  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="../px-theme/px-theme-styles.html" />
-  <style include="px-theme-styles" is="custom-style"></style>
-  <link rel="import" href="../px-sass-doc/px-sass-doc.html" />
+    <!--
+      Fast bootstrapping of the webcomponents-lite library. Only loads the library
+      if the browser doesn't natively support web components.
+    -->
+    <script type="text/javascript">
+    (function() {
+      'use strict';
 
-  <!-- 0: Import Module Styles -->
-  <link rel="import" href="css/px-list-ui-design-demo-styles.html" />
-  <style include="px-list-ui-design-demo-styles" is="custom-style"></style>
+      var onload = function() {
+        // For native Imports, manually fire WebComponentsReady so user code
+        // can use the same code path for native and polyfill'd imports.
+        if (!window.HTMLImports) {
+          document.dispatchEvent(
+            new CustomEvent('WebComponentsReady', {bubbles: true})
+          );
+        }
+      };
 
-</head>
-<body>
-<template id="just-for-demo" is="dom-bind">
+      var webComponentsSupported = (
+        'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template')
+      );
 
-<!-- 1: Describe Module -->
-<px-sass-doc
-  module-name="px-list-ui-design"
-  description="The Predix UI List UI module creates blocky, keyline-delimited list items."
-  layer="objects"
-  sassdoc-path="sassdoc.json"
-  dependencies='[
-    "https://github.com/PredixDev/px-colors-design",
-    "https://github.com/PredixDev/px-defaults-design"
-  ]'
-  selected-options="{{selectedOptions}}">
+      if (!webComponentsSupported) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '../webcomponentsjs/webcomponents-lite.min.js';
+        script.onload = onload;
+        document.head.appendChild(script);
+      } else {
+        onload();
+      }
+    })();
+    </script>
 
-<!-- 2: Set Options -->
-<px-sass-doc-option
-  option-name="Padding"
-  choose-with="dropdown"
-  choices='[
-    "tiny",
-    "small",
-    "regular (default)",
-    "large",
-    "huge"
-  ]'
-  default-choice="regular (default)">
-</px-sass-doc-option>
+    <!--
+      Load the Polymer library.
+    -->
+    <link rel="import" href="../polymer/polymer.html" />
 
-<!-- 3: Make HTML Demo -->
-<section data-slot="demoHTML">
-<ul class$="{{listClasses}}">
-  <li class="list-ui__item">List Item</li>
-  <li class="list-ui__item">List Item</li>
-  <li class="list-ui__item">List Item</li>
-</ul>
-</section>
+    <!--
+      Load the light theme (default theme).
+    -->
+    <link rel="import" href="../px-theme/px-theme-styles.html">
+    <style include="px-theme-styles" is="custom-style"></style>
 
-<!-- 4: Set Import Slot -->
-<section data-slot="import">
-{{importCode}}
-</section>
+    <!--
+      Asynchronously import the px-catalog element, which is the entrypoint
+      for our application.
+    -->
+    <link
+        async
+        id="main-element-import"
+        rel="import"
+        href="demo/index.html">
 
-<!-- 5: Set Usage HTML -->
-<section data-slot="usage">
-```
-<!-- List Tiny -->
-<ul class="list-ui list-ui--tiny">
-  <li class="list-ui__item">...</li>
-</ul>
+    <!--
+      Load the app icon and manifest for Android devices.
+    -->
+    <link defer rel="icon" href="favicon.ico" type="image/x-icon" />
 
+    <!--
+      Basic page styles.
+    -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
 
-<!-- List Small -->
-<ul class="list-ui list-ui--small">
-  <li class="list-ui__item">...</li>
-</ul>
+  <body>
+    <!-- Elements wait on the page and are upgraded after demo/index.html is loaded. -->
+    <local-element-demo></local-element-demo>
 
-
-<!-- List Regular -->
-<ul class="list-ui">
-  <li class="list-ui__item">...</li>
-</ul>
-
-
-<!-- List Large -->
-<ul class="list-ui list-ui--large">
-  <li class="list-ui__item">...</li>
-</ul>
-
-
-<!-- List Huge -->
-<ul class="list-ui list-ui--Huge">
-  <li class="list-ui__item">...</li>
-</ul>
-```
-</section>
-
-</px-sass-doc>
-</template>
-
-<!-- 6: Handle selectedOptions, update demo -->
-<script>
-  var template = document.querySelector('template[is=dom-bind]');
-
-  document.addEventListener('px-sass-doc-options-updated', function(evt) {
-    template.importCode = template._importCode();
-    template.listClasses = template._listClasses();
-  });
-
-  template._listClasses = function() {
-    var opts = template.selectedOptions || {}, strings = [];
-    if (opts.Padding === "tiny")    strings.push("list-ui--tiny");
-    if (opts.Padding === "small")   strings.push("list-ui--small");
-    if (opts.Padding === "large")   strings.push("list-ui--large");
-    if (opts.Padding === "huge")    strings.push("list-ui--huge");
-    return ("list-ui " + strings.join(" ")).trim();
-  };
-
-  template._importCode = function() {
-    var opts = template.selectedOptions || {}, strings = [];
-    if (opts.Padding === "tiny")    strings.push("$inuit-enable-list-ui--tiny : true;");
-    if (opts.Padding === "small")   strings.push("$inuit-enable-list-ui--small : true;");
-    if (opts.Padding === "large")   strings.push("$inuit-enable-list-ui--large : true;");
-    if (opts.Padding === "huge")    strings.push("$inuit-enable-list-ui--huge : true;");
-    return (strings.join("\n") + "\n@import 'px-list-ui-design/_objects.list-ui.scss';").trim();
-  };
-</script>
-
-</body>
+    <!--
+      Attempt to register a service worker with the correct scope. Fail quietly
+      if this doesn't work, but log the result to the console.
+    -->
+    <script type="text/javascript">
+      // if ('serviceWorker' in navigator) {
+      //   navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+      //     // Registration was successful
+      //     console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      //   }).catch(function(err) {
+      //     // registration failed :(
+      //     console.log('ServiceWorker registration failed: ', err);
+      //   });
+      // }
+    </script>
+  </body>
 </html>

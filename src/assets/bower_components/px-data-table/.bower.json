@@ -55,6 +55,5 @@
   },
   "_source": "https://github.com/predixdev/px-data-table.git",
   "_target": "^1.15.12",
-  "_originalSource": "px-data-table",
-  "_direct": true
+  "_originalSource": "px-data-table"
 }

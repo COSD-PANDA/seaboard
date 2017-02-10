@@ -1,0 +1,135 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+<link rel="import" href="../css/px-list-ui-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <!-- 0: Import the styles-->
+    <style include="px-list-ui-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-list-ui-design"
+  description="The Predix UI List UI module creates blocky, keyline-delimited list items."
+  layer="objects"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-colors-design",
+    "https://github.com/PredixDev/px-defaults-design"
+  ]'
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Set Options -->
+<px-sass-doc-option
+  option-name="Padding"
+  choose-with="dropdown"
+  choices='[
+    "tiny",
+    "small",
+    "regular (default)",
+    "large",
+    "huge"
+  ]'
+  default-choice="regular (default)">
+</px-sass-doc-option>
+
+<!-- 3: Make HTML Demo -->
+<section data-slot="demoHTML">
+<ul class$="{{listClasses}}">
+  <li class="list-ui__item">List Item</li>
+  <li class="list-ui__item">List Item</li>
+  <li class="list-ui__item">List Item</li>
+</ul>
+</section>
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+{{importCode}}
+</section>
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="usage">
+```
+<!-- List Tiny -->
+<ul class="list-ui list-ui--tiny">
+  <li class="list-ui__item">...</li>
+</ul>
+
+
+<!-- List Small -->
+<ul class="list-ui list-ui--small">
+  <li class="list-ui__item">...</li>
+</ul>
+
+
+<!-- List Regular -->
+<ul class="list-ui">
+  <li class="list-ui__item">...</li>
+</ul>
+
+
+<!-- List Large -->
+<ul class="list-ui list-ui--large">
+  <li class="list-ui__item">...</li>
+</ul>
+
+
+<!-- List Huge -->
+<ul class="list-ui list-ui--Huge">
+  <li class="list-ui__item">...</li>
+</ul>
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  Polymer({
+    is: 'local-element-demo',
+
+    attached : function(){
+      var boundHandler = this._handleOptionsUpdated.bind(this);
+      this.addEventListener('px-sass-doc-options-updated', boundHandler)
+    },
+
+    detached : function(){
+      this.removeEventListener('px-sass-doc-options-updated', boundHandler);
+    },
+
+    _handleOptionsUpdated : function(evt) {
+      //call functions created below
+      this.importCode = this._importCode();
+      this.listClasses = this._listClasses();
+
+      // Wait, then tell the highlighter to run after dom-if restamps
+      this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
+    },
+
+    _listClasses : function() {
+      var opts = this.selectedOptions || {}, strings = [];
+      if (opts.Padding === "tiny")    strings.push("list-ui--tiny");
+      if (opts.Padding === "small")   strings.push("list-ui--small");
+      if (opts.Padding === "large")   strings.push("list-ui--large");
+      if (opts.Padding === "huge")    strings.push("list-ui--huge");
+      return ("list-ui " + strings.join(" ")).trim();
+    },
+
+    _importCode : function() {
+      var opts = this.selectedOptions || {}, strings = [];
+      if (opts.Padding === "tiny")    strings.push("$inuit-enable-list-ui--tiny : true;");
+      if (opts.Padding === "small")   strings.push("$inuit-enable-list-ui--small : true;");
+      if (opts.Padding === "large")   strings.push("$inuit-enable-list-ui--large : true;");
+      if (opts.Padding === "huge")    strings.push("$inuit-enable-list-ui--huge : true;");
+      return (strings.join("\n") + "\n@import 'px-list-ui-design/_objects.list-ui.scss';").trim();
+    },
+
+  });
+</script>

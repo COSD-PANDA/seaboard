@@ -1,6 +1,6 @@
 {
   "name": "px-meta-lists-design",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "authors": [
     "General Electric",
     "Harry Roberts <harry@csswizardry.com>"
@@ -19,8 +19,15 @@
     "node_modules",
     "bower_components",
     "sass",
-    ".github",
-    "OSS_Notice.pdf"
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf",
+    "*.png"
   ],
   "dependencies": {
     "px-list-bare-design": "^0.3.0",
@@ -28,14 +35,14 @@
     "px-list-ui-design": "^1.1.0"
   },
   "devDependencies": {
-    "px-sass-doc": "^0.3.0",
-    "px-starter-kit-design": "^0.7.0"
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.3"
   },
-  "_release": "0.4.2",
+  "_release": "0.4.3",
   "_resolution": {
     "type": "version",
-    "tag": "v0.4.2",
-    "commit": "78536f06cca31d121552a0f566e2c59325c88b39"
+    "tag": "v0.4.3",
+    "commit": "61ba119af6fe42d60b56134cb5a73b295ca743ed"
   },
   "_source": "https://github.com/predixDev/px-meta-lists-design.git",
   "_target": "^0.4.1",

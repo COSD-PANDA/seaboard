@@ -1,6 +1,6 @@
 {
     "name": "px-meta-lists-design",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "description": "Shortcut collection of list modules for Predix UI",
     "private": false,
     "scripts": {

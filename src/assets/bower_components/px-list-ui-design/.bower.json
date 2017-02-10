@@ -1,6 +1,6 @@
 {
   "name": "px-list-ui-design",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "authors": [
     "General Electric",
     "Harry Roberts <harry@csswizardry.com>"
@@ -18,22 +18,30 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    ".github",
-    "OSS_Notice.pdf"
+    "sass",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf",
+    "*.png"
   ],
   "dependencies": {
     "px-colors-design": "^0.3.0",
     "px-defaults-design": "^1.0.2"
   },
   "devDependencies": {
-    "px-sass-doc": "^0.3.0",
-    "px-starter-kit-design": "^0.7.0"
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.3"
   },
-  "_release": "1.1.4",
+  "_release": "1.1.5",
   "_resolution": {
     "type": "version",
-    "tag": "v1.1.4",
-    "commit": "9b4b96df8988faea248f0d746a91aa19fec8ef82"
+    "tag": "v1.1.5",
+    "commit": "59398a2619445e03cb5711e62e1fc388f7bf6e3f"
   },
   "_source": "https://github.com/predixDev/px-list-ui-design.git",
   "_target": "^1.1.0",

@@ -43,6 +43,5 @@
   },
   "_source": "https://github.com/PolymerElements/iron-icons.git",
   "_target": "^1.2.0",
-  "_originalSource": "iron-icons",
-  "_direct": true
+  "_originalSource": "iron-icons"
 }

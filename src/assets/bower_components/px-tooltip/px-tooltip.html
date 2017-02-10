@@ -224,6 +224,32 @@ Custom property | Description | Default
       _internalDetaching: {
         type: Boolean,
         value: false
+      },
+      _requestShow: {
+        type: Boolean,
+        value: false
+      },
+      /**
+       * Spacer in pixel between tooltip carat and the target
+       */
+      _spacer: {
+        type: Number,
+        value: 5
+      },
+      _margin: {
+        type: Object,
+        value: function() {
+          return {
+            'top': 0,
+            'bottom': 0,
+            'left': 0,
+            'right': 0
+          }
+        }
+      },
+      _bottomMargin: {
+        type: Number,
+        value: 0
       }
     },
     observers: [
@@ -233,6 +259,7 @@ Custom property | Description | Default
       'iron-resize': '_onIronResize'
     },
     attached: function() {
+
       if(this._firstAttached) {
         // we want to remember where this tooltip was placed originally.
         this.set('_tooltipParent', this.parentNode);
@@ -245,20 +272,14 @@ Custom property | Description | Default
           this._onFor();
         }
         this.set('_firstAttached', false);
-      } else if(this._isShowing) {
-        this.$.tooltipWrapper.classList.remove('hidden');
-        this._setPosition();
-        this.fire('px-tooltip-show', {
-          target: this
-        });
-      }
+      } 
     },
     detached: function() {
       //don't do anything on detach because showing/hiding the tooltip
       //triggers it since we move it to the body
       if(!this._internalDetaching) {
-        this._unlistenEvents();
-        this._target = null;
+   //     this._unlistenEvents();
+   //     this._target = null;
       } else {
         this._internalDetaching = false;
       }
@@ -310,7 +331,8 @@ Custom property | Description | Default
 
     _onMouseMove: function(){
 
-      if(this.followMouse && this.thisRect){
+      if(this.followMouse && this.thisRect && this._isShowing){
+        console.log('on mouse move')
         if(this.orientation === 'auto') {
 
           //auto positioning
@@ -348,17 +370,15 @@ Custom property | Description | Default
      *
      */
     _onIronResize: function() {
-      if(this.debounce) {
-        this.debounce(
-          'tooltip-resize', function() {
-
-            //only reposition tooltip already showing
-            if(this._isShowing) {
-              this._setPosition();
-            }
-        }, 150);
-      }
-
+        
+      //need that debounce for IE
+      this.debounce('tooltip-resize', function() {
+        if(this._requestShow) {
+          this._processShow();
+        } else if(this._isShowing) {
+          this._setPosition();
+        }
+      }, 50);
     },
     /**
      * @method _getTarget
@@ -392,7 +412,6 @@ Custom property | Description | Default
       }
       return target;
     },
-    _timer: null,
     /**
      * @method _show
      * This function sets a timeout with the delay value, and if
@@ -405,7 +424,9 @@ Custom property | Description | Default
           currTarget = Polymer.dom(evt).rootTarget;
       //we start out with _cancel being false, but if at any time during the timeout it's set to true, we cancel the whole thing.
       this.set('_cancel',false);
-      this._timer = setTimeout(function() {
+      this._requestShow = true;
+
+      setTimeout(function() {
         if(this._cancel === true) {
           return false;
         }
@@ -417,33 +438,32 @@ Custom property | Description | Default
         this._watchDogEnabled = true;
         //make sure it's valid to show
         if(this._watchDog()) {
-
-          // show this thing
-          this._isShowing = true;
-
-          // we check to make sure there is no element with class movedTooltip
-          if (!document.querySelector('.movedTooltip')) {
-            // and toggle that class on, to ensure we don't have 2 tooltips in the dom root at once.
-            Polymer.dom(this).classList.toggle('movedTooltip');
             
-            // now that we are all set, we move the tooltip to the dom root, where the absolute positioning works everytime,
-            // and we don't have to worry about overflows, the scourge of css.
-            this._internalDetaching = true;
-            document.body.appendChild(this);
-          }
+          // now that we are all set, we move the tooltip to the dom root, where the absolute positioning works everytime,
+          // and we don't have to worry about overflows, the scourge of css.
+          this._internalDetaching = true;
+
+          //this will trigger first iron resize (timed out), then attached and then _processShow
+          document.body.appendChild(this);
         }
+        
       }.bind(this), this.delay);
     },
-    /**
-     * @method _clearTimer
-     * This function clears out the timer if the user hovers off the
-     * target.
-     *
-     */
-    _clearTimer: function() {
-      if(this._timer) {
-        clearTimeout(this._timer);
+    _processShow: function() {
+
+      if(this._cancel) {
+        return;
       }
+
+      this.$.tooltipWrapper.classList.remove('hidden');
+
+      this._isShowing = true;
+      this._setPosition();
+      
+      this.fire('px-tooltip-show', {
+        target: this
+      });
+      this._requestShow = false;
     },
     /**
      * @method _hide
@@ -451,13 +471,13 @@ Custom property | Description | Default
      *
      */
     _hide: function() {
+
       // hide this thing
       this.set('_cancel',true);
-      if (this._isShowing) {
+      if (this._isShowing || this._requestShow) {
         this._watchDogEnabled = false;
-        this._clearTimer();
-        //get rid of out movedTooltip class
-        Polymer.dom(this).classList.toggle('movedTooltip');
+        this._requestShow = false;
+
         //and we move the tooltip back to whence it came.
         this.$.tooltipWrapper.classList.add('hidden');
         this._isShowing = false;
@@ -475,7 +495,7 @@ Custom property | Description | Default
             this._isShowing = false;
           }
         }
-      }
+      } 
     },
     /**
      * @method _setPosition
@@ -486,19 +506,17 @@ Custom property | Description | Default
     _setPosition: function() {
       if(!this._target) {
         return;
-      }
-
-      //make sure we're not hidden so we can calc our size, but 'hide' ourselves offscreen.
-    //  this.$.carat.style.left = -9999 + 'px';
-    //  this.style.left = -9999 + 'px';
-      
+      }      
 
       // using this method so that we can calculate the best position
       // in the _positionXXX methods without having to do recursion, plus
       // avoiding issues when in tables in IE and inside scroll panes
       this.targetRect = this.followMouse ? this.getBoundingClientRect() : this._target.getBoundingClientRect();
-      this.thisRect = this.getBoundingClientRect();
-      this.margin = parseInt(getComputedStyle(this.$.tooltip).marginTop.replace('px', ''));
+      this.thisRect = this.followMouse ? this.targetRect : this.getBoundingClientRect();
+      this._margin.top = parseInt(getComputedStyle(this.$.tooltip).marginTop.replace('px', ''));
+      this._margin.bottom = parseInt(getComputedStyle(this.$.tooltip).marginBottom.replace('px', ''));
+      this._margin.left = parseInt(getComputedStyle(this.$.tooltip).marginLeft.replace('px', ''));
+      this._margin.right = parseInt(getComputedStyle(this.$.tooltip).marginRight.replace('px', ''));
 
       if(this.orientation === 'auto') {
 
@@ -720,20 +738,21 @@ Custom property | Description | Default
     */
     _positionTop: function() {
       // restyle the carat
+      console.log('pos top ')
       this._styleTheCaratAs(this._values.TYPE.top);
 
       // move the carat to the correct position
       this.$.carat.style.left = (this.thisRect.width / 2) - (this.caratRect.width / 2) + 'px';
-      this.$.carat.style.top = (this.thisRect.height - this.margin) + 'px';
+      this.$.carat.style.top = (this.thisRect.height - this._margin.top) + 'px';
 
       if(this.followMouse){
         this.style.left = this.mouseCoords[0] - (this.thisRect.width / 2) + 'px'
-        this.style.top = this.mouseCoords[1] - this.thisRect.height + (this.margin / 2) - 10 + 'px';
+        this.style.top = this.mouseCoords[1] - this.thisRect.height + (this._margin.top / 2) - this._spacer + 'px';
 
       } else {
         // position the tooltip itself
         this.style.left = this.getTargetPositionCenterOfLeftRight() - (this.thisRect.width / 2) + 'px';
-        this.style.top = this._getTargetPositionTop() - this.thisRect.height + (this.margin / 2) - 5 + 'px';
+        this.style.top = this._getTargetPositionTop() - this.thisRect.height + (this._margin.top / 2) - this._spacer + 'px';
       }
     },
     /**
@@ -755,7 +774,7 @@ Custom property | Description | Default
       } else {
         // position the tooltip itself
         this.style.left = this.getTargetPositionCenterOfLeftRight() - (this.thisRect.width / 2) + 'px';
-        this.style.top = this._getTargetPositionBottom() - this.caratRect.height + 5 + 'px';
+        this.style.top = this._getTargetPositionBottom()  + 'px';
       }
     },
     /**
@@ -773,14 +792,14 @@ Custom property | Description | Default
       this.$.carat.style.top = (this.thisRect.height / 2) - this.caratRect.width + 'px';
 
       if(this.followMouse){
-        this.style.left = this.mouseCoords[0] - this.thisRect.width + this.margin / 2 - 10 + 'px';
+        this.style.left = this.mouseCoords[0] - this.thisRect.width + this._margin.top / 2 - 10 + 'px';
         this.style.top = this.mouseCoords[1]  - (this.thisRect.height / 2) + 'px';
 
       } else {
         top = Math.round(this.getTargetPositionCenterOfTopBottom() - (this.thisRect.height / 2)) + 'px';
 
         // position the tooltip itself
-        this.style.left = this._getTargetPositionLeft() - this.thisRect.width + this.margin / 2 - 5 + 'px';
+        this.style.left = this._getTargetPositionLeft() - this.thisRect.width + this._margin.top / 2 - 5 + 'px';
         this.style.top = top;
       }
     },
@@ -806,7 +825,7 @@ Custom property | Description | Default
         top = Math.round(this.getTargetPositionCenterOfTopBottom() - (this.thisRect.height / 2)) + 'px';
 
         // position the tooltip itself
-        this.style.left = this._getTargetPositionRight() - this.caratRect.width + 5 + 'px';
+        this.style.left = this._getTargetPositionRight() - this.caratRect.width + this._margin.left + 'px';
         this.style.top = top;
       }
     },
@@ -816,9 +835,20 @@ Custom property | Description | Default
     *
     */
     _styleTheCaratAs: function(newCaratState) {
-      // clear all old styles and add the new one
-      this.$.carat.classList.remove(this._values.TYPE.top, this._values.TYPE.bottom, this._values.TYPE.left, this._values.TYPE.right);
-      this.$.carat.classList.add(newCaratState);
+
+      var keys = Object.keys(this._values.TYPE);
+
+      //remove all other carat state and add the new one
+      for(var i=0; i<keys.length; i++) {
+
+        var val = this._values.TYPE[keys[i]];
+        if(val === newCaratState) {
+          this.$.carat.classList.add(newCaratState);
+        } else if(this.$.carat.classList.contains(val)) {
+          this.$.carat.classList.remove(val);
+        }
+      }
+
       this.updateStyles();
       this.caratRect = this.$.carat.getBoundingClientRect(); // need to remeasure carat since height/width changes
     },

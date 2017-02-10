@@ -2,7 +2,7 @@
     "name": "px-tooltip",
     "author": "General Electric",
     "description": "A Px component that provides a tooltip on invocation",
-    "version": "0.10.12",
+    "version": "0.10.13",
     "private": true,
     "extName": null,
     "repository": {
