@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Data Inventory
+title: Data Inventory2
 organization: Performance & Analytics
 notes: >-
   Inventory of datasets targeted for release on the Open Data Portal and
@@ -11,7 +11,7 @@ notes: >-
   process, please see <a href="http://www.datasd.org/inventory"
   target="_blank">DataSD.org</a>.
 resources:
-  - name: DataSD.org Data Inventory
+  - name: DataSD.org Data Inventory2
     url: >-
       https://datasd-prod.s3.amazonaws.com/inventory/open_data_inventory_datasd.csv
     format: csv
