@@ -559,7 +559,7 @@ span.badge {
   background: transparent;
   border-bottom: 3px solid white !important; }
 
-#sd-top-nav ul.nav li.admin-only a {
+#sd-top-nav ul.nav ul.dropdown-menu li a {
   color: black; }
 
 .list-group-item.active {

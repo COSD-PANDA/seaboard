@@ -38,12 +38,10 @@ schema: default
 
 # Nav bar
 navigation:
-  - title: Datasets
-    url: /datasets/
-  - title: Organizations
-    url: /organizations/
   - title: Get Started
     url: /get-started/
+  - title: Datasets
+    url: /datasets/
 
 # Collections
 collections:
