@@ -17,6 +17,12 @@
     {% assign f_publisher_name = dataset_fields | where: "datajson", "publisher.name" | first %}
     {% assign publisher_name = dataset[f_publisher_name[field_name]] %}
 
+    {% assign f_date_issued = dataset_fields | where: "datajson", "issued" | first %}
+    {% assign date_issued = dataset[f_date_issued[field_name]] %}
+
+    {% assign f_date_modified = dataset_fields | where: "datajson", "modified" | first %}
+    {% assign date_modified = dataset[f_date_modified[field_name]] %}
+
     {% assign f_license = dataset_fields | where: "datajson", "license" | first %}
     {% assign license = dataset[f_license[field_name]] %}
 
@@ -41,7 +47,8 @@
       "title": {{ title | jsonify }},
       "identifier": "{{ title | downcase | replace:' ','_'}}_datasd",
       "@type": "dcat:Dataset",
-      "pname": {{ publisher_name | jsonify }},
+      "issued": {{ date_issued | jsonify }},
+      "modified": {{ date_modified | jsonify }},
       "accessLevel": "public"{% if publisher_name %},
       "publisher": {
         "@type": "org:Organization",
