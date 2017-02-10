@@ -13,6 +13,7 @@ dependencies:
   override:
     - bundle install
     - yarn install
+    - bower install
 general:
   branches:
     only:
