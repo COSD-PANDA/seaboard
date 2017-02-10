@@ -75,7 +75,13 @@ gulp.task("fonts", function () {
 gulp.task("copy", function () {
   return gulp.src(["serve/*.txt", "serve/*.xml", "src/CNAME"])
     .pipe(gulp.dest("site"))
-    .pipe($.size({ title: "xml & txt" }))
+    .pipe($.size({ title: "xml, txt, bower_components" }))
+});
+
+gulp.task("bower_components", function() {
+    return gulp.src(["serve/assets/bower_components/**/*"])
+        .pipe(gulp.dest("site/assets/bower_components"))
+        .pipe($.size({ title: "bower_components" }))
 });
 
 gulp.task("html", ["styles"], function () {
@@ -83,7 +89,7 @@ gulp.task("html", ["styles"], function () {
   var cssFilter = $.filter("**/*.css", { restore: true });
   var htmlFilter = $.filter(['**/*', '!**/*.html'], { restore: true });
 
-  return gulp.src("serve/**/*.html")
+  return gulp.src(["serve/**/*.html", '!serve/assets/bower_components/**/*'])
     // Concatenate Files
     .pipe($.useref({searchPath: "serve" }))
     // Only for JS, Uglify.
@@ -190,6 +196,6 @@ gulp.task("build", ["jekyll:prod", "styles"], function () {});
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
 gulp.task("publish", ["build"], function () {
-  gulp.start("html", "copy", "images", "fonts", "webpack:prod");
+  gulp.start("html", "bower_components", "copy", "images", "fonts", "webpack:prod");
 });
 
