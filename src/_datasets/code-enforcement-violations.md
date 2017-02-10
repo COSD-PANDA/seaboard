@@ -28,6 +28,8 @@ resources:
   - name: Code Enforcement Remedies
     url: 'https://datasd-prod.s3.amazonaws.com/dsd/code_enf_remedies_datasd.csv'
     format: csv
+date_issued: '2017-02-10'
+date_modified: '2017-02-10'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 category:
   - Economy and Community
