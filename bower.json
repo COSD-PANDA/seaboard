@@ -24,6 +24,7 @@
     "polymer": "^1.8.0",
     "px-data-table": "^1.15.12",
     "px-theme": "^2.0.4",
-    "webcomponentsjs": "^0.7.24"
+    "webcomponentsjs": "^0.7.24",
+    "px-spinner": "^0.5.3"
   }
 }
