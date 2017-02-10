@@ -73,9 +73,9 @@ gulp.task("fonts", function () {
 
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
-  return gulp.src(["serve/*.txt", "serve/*.xml", "src/CNAME"])
+  return gulp.src(["serve/*.txt", "serve/*.xml", "serve/*.json", "src/CNAME"])
     .pipe(gulp.dest("site"))
-    .pipe($.size({ title: "xml, txt, bower_components" }))
+    .pipe($.size({ title: "xml, txt, json" }))
 });
 
 gulp.task("bower_components", function() {
