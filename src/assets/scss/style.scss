@@ -325,6 +325,22 @@ span.badge {
 	margin-top: 34px;
 }
 
+.main-footer-container {
+    background: $footer_dark;
+    padding-top: 10px;
+    color: white;
+    margin-bottom: 30px;
+    margin-left:0px;
+    margin-right:0px;
+    a, a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+}
+
 
 
   .process-wrapper{

@@ -639,6 +639,19 @@ span.badge {
 .page-container {
   margin-top: 34px; }
 
+.main-footer-container {
+  background: #21282d;
+  padding-top: 10px;
+  color: white;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px; }
+  .main-footer-container a, .main-footer-container a:hover {
+    color: white;
+    text-decoration: none; }
+  .main-footer-container ul {
+    list-style: none; }
+
 .process-wrapper {
   padding: 10px 0 10px 0; }
 
