@@ -42,6 +42,8 @@ navigation:
     url: /get-started/
   - title: Datasets
     url: /datasets/
+  - title: About
+    url: /about/
 
 # Collections
 collections:
