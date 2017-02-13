@@ -1,8 +1,8 @@
 ---
 schema: default
 title: Get It Done 311
-organization: ''
-notes: ''
+organization: Performance & Analytics
+notes: 311 Data
 date_issued: '2017-02-13'
 date_modified: '2017-02-13'
 license: ''
