@@ -290,46 +290,69 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Navbar **/
 img.logo {
-  background: #0098db;
-  height: 60px; }
+  background: #37424a;
+  height: 40px; }
 
 .panel {
   border-radius: 0px; }
 
 #sd-bar {
-  background: #005bbb;
-  height: 37px;
-  color: white; }
-  #sd-bar a:hover, #sd-bar a, #sd-bar a:visited {
-    color: white;
-    font-size: 0.7em;
-    line-height: 37px; }
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.2px;
+  background: #e0e1dd;
+  min-height: 0;
+  margin-bottom: 0px;
+  height: 34px;
+  color: #37424a; }
+  #sd-bar a {
+    color: #37424a;
+    font-size: 0.85em;
+    /*line-height: 34px;*/ }
+    #sd-bar a:visited {
+      color: #37424a; }
+    #sd-bar a:hover {
+      color: #37424a; }
 
 .sd-navbar-top.navbar-default {
-  margin-top: 30px;
-  background: #0098db;
-  height: 85px; }
+  margin-top: 33.4px;
+  background: #37424a; }
   .sd-navbar-top.navbar-default .navbar-header {
-    margin-top: 3px;
-    height: 80px; }
+    margin-top: 0px;
+    /*height:50px;*/
+    float: right;
+    width: 100%; }
   .sd-navbar-top.navbar-default .navbar-brand {
     padding: 0px;
     padding-top: 5px;
-    color: white; }
+    color: #adafaf;
+    float: right;
+    padding-right: 15px; }
   .sd-navbar-top.navbar-default span#title {
     position: relative;
-    top: 19px;
-    font-size: 2em; }
-  .sd-navbar-top.navbar-default .navbar-nav {
-    margin-top: 20px; }
+    top: 9.3px;
+    font-size: 1.3em;
+    font-weight: 400; }
   .sd-navbar-top.navbar-default .navbar-collapse {
-    background: #0098db; }
+    background: #37424a; }
   .sd-navbar-top.navbar-default li a {
-    color: white; }
+    color: #e0e1dd;
+    font-size: 1em;
+    display: inline-block;
+    font-weight: 700; }
+    .sd-navbar-top.navbar-default li a:visited {
+      color: #e0e1dd; }
+    .sd-navbar-top.navbar-default li a:hover {
+      color: #e0e1dd;
+      text-decoration: underline;
+      background-color: #37424a; }
 
 #footer-bar {
-  background: #21282d;
-  height: 60px;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.2px;
+  background: #37424a;
+  font-size: 0.85em;
+  line-height: 34px;
+  height: 34px;
   position: fixed;
   bottom: 0px;
   z-index: 9999999;
@@ -340,12 +363,13 @@ img.logo {
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
-  color: #e3e7ea; }
-  #footer-bar a, #footer-bar a:hover, #footer-bar a:visited {
-    color: white;
-    text-decoration: underline; }
-  #footer-bar img.sdlogo {
-    height: 25px; }
+  color: #adafaf; }
+  #footer-bar a {
+    color: #e0e1dd; }
+    #footer-bar a:visited {
+      color: #e0e1dd; }
+    #footer-bar a:hover {
+      color: #e0e1dd; }
 
 .btn-secondary {
   background: #ffa02f;
@@ -354,23 +378,24 @@ img.logo {
 /*responsive menu */
 .navbar-default .navbar-toggle {
   border-color: transparent;
-  top: 18px; }
+  top: 8px; }
 
 .navbar-toggle {
   background-color: transparent;
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
-  margin-right: 5px; }
+  margin-right: 5px;
+  float: left; }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #334A6D; }
 
 .navbar-toggle .icon-bar {
-  height: 4px; }
+  height: 3px; }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff; }
+  background-color: #e0e1dd; }
 
 a .hidden-link-text {
   display: none; }
@@ -385,7 +410,11 @@ a .hidden-link-text {
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .jumbo-intro {
-    padding-bottom: 0px; } }
+    padding-bottom: 0px; }
+  .sd-navbar-top.navbar-default .navbar-header {
+    width: auto; }
+  .sd-navbar-top.navbar-default .navbar-brand {
+    float: right; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -548,19 +577,6 @@ span.badge {
 
 .breadcrumb a {
   color: #0098db; }
-
-#sd-top-nav ul.nav li a {
-  font-weight: bold;
-  font-size: 17px;
-  background: transparent;
-  padding-bottom: 5px; }
-
-#sd-top-nav ul.nav li a:hover, #sd-top-nav ul.nav li.active a {
-  background: transparent;
-  border-bottom: 3px solid white !important; }
-
-#sd-top-nav ul.nav ul.dropdown-menu li a {
-  color: black; }
 
 .list-group-item.active {
   background: #0098db; }
@@ -778,7 +794,8 @@ h4.bottom-box-head {
     padding-left: 10px;
     padding-right: 10px; }
   .sd-navbar-top.navbar-default .navbar-header {
-    height: 0px; }
+    height: 0px;
+    float: right; }
   #header-image {
     background-position-y: -170px; }
   #header-image.small {

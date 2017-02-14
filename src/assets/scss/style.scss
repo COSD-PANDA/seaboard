@@ -202,25 +202,6 @@ span.badge {
 	color: $p_blue;
 }
 
-
-#sd-top-nav ul.nav {
-	li a {
-		font-weight: bold;
-		font-size: 17px;
-		background: transparent;
-		padding-bottom:5px;
-	}
-	li a:hover, li.active a {
-		background: transparent;
-		border-bottom: 3px solid white !important;
-	}
-
-	ul.dropdown-menu li a {
-		color:black;
-	}
-
-}
-
 .list-group-item.active {
 	background: $p_blue;
 }
@@ -512,6 +493,7 @@ span.badge {
 	}
 	.sd-navbar-top.navbar-default .navbar-header {
 		height:0px;
+		float: right;
 	}
 	#header-image {
 		background-position-y: -170px;
