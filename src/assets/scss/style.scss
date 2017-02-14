@@ -5,27 +5,82 @@ The main SCSS file for everything, yep
 @import "main";
 @import "sd";
 
-.small-top-banner {
-	background: $s_blue_1_1;
-	text-align: center;
-	color: white;
-	font-size: 1.2em;
-	padding-top: 3px;
-	padding-bottom:3px;
-	a {
-		color: white;
-		text-decoration: underline;
+
+/* Front page */
+
+.front-page-container {
+	margin-top: 84.4px;
+}
+
+.data-search {
+	background-color: $s_blue_dk;
+	color: $s_gray_lt;
+}
+
+.resources-promo {
+	background-color: $s_orange_lt;
+	cursor: pointer;
+
+	ul {
+		padding-top: 7.2857px;
+	}
+
+}
+
+.data-stories-rail {
+	padding-top: 7.2857px;
+}
+
+.data-search, .resources-promo, .made-data {
+
+	padding-bottom: 60px;
+	padding-top: 30px;
+
+	h2 {
+		margin-bottom: 15px;
 	}
 }
 
-.vertical-section {
-  margin-top: 50px;
+.paper-input-container-0 {
+	.input-content {
+		.paper-input-container {
+			.paper-input {
+				color: $s_gray_lt;
+				@include merriweather;
+			}
+		}
+	}
+
+	.unfocused-line.paper-input-container, .focused-line.paper-input-container {
+		border-bottom: 1px solid $s_gray_lt;
+	}
+
 }
 
+
 .data-story-preview-container {
-    margin: 10px;
+    
+	margin-bottom: 60px;
+
+    .preview-text {
+
+    	h5 {
+    		font-size: 0.8em;
+    		font-weight: 700;
+    		text-transform: uppercase;
+    		@include sourcesans;
+    	}
+
+    	.preview-desc {
+    		font-size: 0.9em;
+    		@include merriweather;
+    	}
+
+    }
 }
+
 .data-story-link {
+
     display: block;
     padding: 4px;
     margin-bottom: 21px;
@@ -41,6 +96,8 @@ The main SCSS file for everything, yep
         width: 100%
     }
 }
+
+/* Everything else */
 
 .resource-table-button {
     padding: 0px;
@@ -60,48 +117,13 @@ The main SCSS file for everything, yep
 }
 
 
-#header-image {
-	/*background: url('http://mrm-screen.s3.amazonaws.com/skyline.jpg') no-repeat fixed center bottom /cover;*/
-	background: url('http://mrm-screen.s3.amazonaws.com/home-hero-1.jpg') no-repeat fixed center bottom /cover;
-	position: relative;
-	top:0px;
-	min-height: 400px;
-	padding-top:0px;
-}
-
-.cta-front {
-	background: $trans_dark;
-	height: 420px;
-	.showme {
-		padding-top:20px;
-	}
-}
-
 .homepage-categories .thumbnail img {
 	height: 120px;
-}
-
-.cta-box {
-	margin-left: 0px;
-	margin-right: 0px;
-	height: 200px;
-}
-
-.front-page-container {
-	margin-top:115px;
 }
 
 .default-page-container {
 	margin-top: 150px;
 }
-
-#header-image.small{
-	background: url('http://mrm-screen.s3.amazonaws.com/home-hero-1-1.jpg') no-repeat fixed center;
-	background-position-y: -80px;
-	min-height: 200px;
-	padding-top:0px;
-}
-
 
 .page-header {
   font-weight: bold;
@@ -206,25 +228,6 @@ span.badge {
 	background: $p_blue;
 }
 
-
-.jumbo-intro {
-	margin-top:5%;
-	//background: $trans_dark;
-	color:white;
-	.cta-box {
-		background: transparent;
-		padding:30px;
-		margin-bottom:25px;
-	}
-	.welcome-intro {
-		a, a:hover, a:visited {
-			color: $p_orange;
-		}
-	}
-	padding:30px;
-	padding-bottom: 30px !important;
-
-}
 
 .title-intro {
 	background: transparent;
@@ -453,15 +456,7 @@ span.badge {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-    .jumbo-intro{
-		padding-bottom:0px;
-		padding-left:10px;
-		padding-right:10px;
-	}
-
-	#cta-box-bottom-left-container, #datasd-logo-box, #contact-box {
-		display: none;
-	}
+    
 	#mc_embed_signup_box h4.bottom-box-head {
 		padding-top:10px;
 	}
@@ -471,14 +466,8 @@ span.badge {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-	.jumbo-intro{
-		padding-bottom:0px;
-		padding-left:10px;
-		padding-right:10px;
-	}
-
-	#header-image.small {
-		display: none;
+	.data-story-preview-container {
+		margin-bottom: 0px;
 	}
 
 
@@ -486,23 +475,27 @@ span.badge {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 767px) {
-	.jumbo-intro{
-		padding-bottom:0px;
-		padding-left:10px;
-		padding-right:10px;
-	}
+	
 	.sd-navbar-top.navbar-default .navbar-header {
 		height:0px;
 		float: right;
 	}
-	#header-image {
-		background-position-y: -170px;
-	}
+	
 
-	#header-image.small {
-		min-height: 300px;
-		display: block;
-	}
+	.data-story-preview-container {
+
+    .preview-text {
+
+      	h5 {
+    		font-size: 0.9em;
+    	}
+
+    	.preview-desc {
+    		font-size: 1em;
+    	}
+
+    }
+}
 
 }
 

@@ -2,41 +2,62 @@
 layout: front
 ---
 
-<div class="container search-data">
-  {% include ctabox.html %}
+<div class="container-fluid data-search">
+  <div class="container">
+    <div class="col-12">
+      <h2>
+        Find data
+      </h2>
+      <!--<div class="row">-->
+      <template is="dom-bind">
+        <paper-autocomplete label="Search by dataset name, topic or City department" id="input-local" no-label-float="true"></paper-autocomplete>
+      </template>
+    </div>
+  </div>
 </div>
 
-<div class="container get-resources">
-  {% include ctabox.html %}
+<div class="container-fluid resources-promo">
+  <div class="container">
+    <div class="col-12">
+      <h2>Get help</h2>
+      <ul>
+        <li>View a tutorial about this data portal</li>
+        <li>Learn about the portal's open source technology</li>
+        <li>Read FAQ</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<div class="container">
-  <div class="homepage-data-stories col-md-12 vertical-section">
-    <h3>Data Stories</h3>
-    <h5>City data brought to life</h5>
-        <div class="row">
-            {% for data_story in site.data.data_stories %}
+<div class="container-fluid made-data">
+  <div class="container">
+    <div class="col-12 homepage-data-stories">
+      <h2>See trends</h2>
+          <div class="row data-stories-rail">
+              {% for data_story in site.data.data_stories %}
                 {% if data_story.featured == true %}
-                    <div class="col-md-3 data-story-preview-container">
-                        <div class="row">
-                            <a href="{{ data_story.url }}"
-                                class="data-story-link" title="{{ data_story.title }}">
-                            {% if data_story.img and data_story.img != empty %}
-                                <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
-                            {% endif %}
+                    <div class="col-sm-4 data-story-preview-container">
+                      <a href="{{ data_story.url }}"
+                          class="data-story-link" title="{{ data_story.title }}">
+                      {% if data_story.img and data_story.img != empty %}
+                          <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
+                      {% endif %}
+                      </a>
+                      <div class="preview-text">
+                        <h5>
+                          <a href="{{ data_story.url }}" title="{{ data_story.title }}">
                             {{ data_story.title }}
-                            </a>
-                        </div> <!--row-->
-                        <div class="row">
-                            {{ data_story.intro }}
-                        </div>
-                    </div> <!--container-->
+                          </a>
+                        </h5>
+                        <p class="preview-desc">
+                          {{ data_story.intro }}
+                        </p>
+                      </div>
+                    </div>
                 {% endif %}
-            {% endfor %}
-        </div><!--row-->
-    </div><!--data-stories-->
-
-
-<div class="container">
-  
+              {% endfor %}
+          </div><!--row-->
+      </div><!--data-stories-->
+    </div>
 </div>
