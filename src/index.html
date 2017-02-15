@@ -34,27 +34,34 @@ layout: front
   <div class="container">
     <div class="col-12 homepage-data-stories">
       <h2>See trends</h2>
-          <div class="row data-stories-rail">
+        <div class="row data-stories-rail">
+              {% assign story = 0 %}
               {% for data_story in site.data.data_stories %}
                 {% if data_story.featured == true %}
-                    <div class="col-sm-4 data-story-preview-container">
-                      <a href="{{ data_story.url }}"
-                          class="data-story-link" title="{{ data_story.title }}">
-                      {% if data_story.img and data_story.img != empty %}
-                          <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
-                      {% endif %}
-                      </a>
-                      <div class="preview-text">
-                        <h5>
-                          <a href="{{ data_story.url }}" title="{{ data_story.title }}">
-                            {{ data_story.title }}
-                          </a>
-                        </h5>
-                        <p class="preview-desc">
-                          {{ data_story.intro }}
-                        </p>
+                    {% assign story_modulo = story | modulo:3 %}
+                    {% if story_modulo == 0 and story != 0 %}
                       </div>
-                    </div>
+                      <div class="row data-stories-rail">
+                    {% endif %}
+                        <div class="col-sm-4 data-story-preview-container">
+                          <a href="{{ data_story.url }}"
+                              class="data-story-link" title="{{ data_story.title }}">
+                          {% if data_story.img and data_story.img != empty %}
+                              <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
+                          {% endif %}
+                          </a>
+                          <div class="preview-text">
+                            <h5>
+                              <a href="{{ data_story.url }}" title="{{ data_story.title }}">
+                                {{ data_story.title }}
+                              </a>
+                            </h5>
+                            <p class="preview-desc">
+                              {{ data_story.intro }}
+                            </p>
+                          </div>
+                        </div>
+                    {% assign story = story | plus: 1 %}
                 {% endif %}
               {% endfor %}
           </div><!--row-->

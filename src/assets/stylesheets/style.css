@@ -763,7 +763,9 @@ h4.bottom-box-head {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   .data-story-preview-container {
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+  .data-stories-rail {
+    margin-bottom: 60px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 767px) {
