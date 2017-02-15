@@ -10,7 +10,49 @@ layout: front
       </h2>
       <!--<div class="row">-->
       <template is="dom-bind">
-        <paper-autocomplete label="Search by dataset name, topic or City department" id="input-local" no-label-float="true"></paper-autocomplete>
+        <script>
+			var searchIndex;
+			var findData = document.querySelector('#find-data');
+			findData.addEventListener('autocomplete-selected', onSelect);
+			findData.addEventListener('autocomplete-change', onChange);
+
+			function onSelect(event) {
+				var selected = event.detail.text;
+				window.location.href = event.detail.value;
+			}
+
+			function onChange(event) {
+				var search = event.detail.option.text.toLowerCase();
+				var searchIndexURL = "{{ settings.BASE_URL }}/searchindex.json";
+				if (!searchIndex) {
+					$.getJSON(searchIndexURL, function(data){
+						searchIndex = data;
+					})
+					return;
+				}
+
+				findData.suggestions(searchIndex.filter(function(obj){
+					return obj[findData.textProperty].toLowerCase().indexOf(search) !== -1;
+				}))
+
+
+			}
+
+        </script>
+        <paper-autocomplete
+            label="Search by dataset name, topic or City department"
+            id="find-data"
+            remote-source="true"
+            no-label-float="true"
+			text-property="title"
+			value-property="url">
+            <template autocomplete-custom-template>
+				<paper-item on-tap="_onSelect" id$="[[_getSuggestionId(index)]]" role="option" aria-selected="false">
+					[[item.title]] -- [[item.type]]
+				<paper-ripple></paper-ripple>
+				</paper-item>
+  			</template>
+        </paper-autocomplete>
       </template>
     </div>
   </div>
