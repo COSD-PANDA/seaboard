@@ -459,6 +459,17 @@ a .hidden-link-text {
 .paper-input-container-0 .unfocused-line.paper-input-container, .paper-input-container-0 .focused-line.paper-input-container {
   border-bottom: 1px solid #e0e1dd; }
 
+.paper-autocomplete-suggestions-0 {
+  font-family: "Merriweather",Helvetica, Arial, sans-serif; }
+  .paper-autocomplete-suggestions-0 .autocomplete-suggestions-type {
+    font-weight: 700;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    color: #adafaf;
+    padding-right: 10px; }
+  .paper-autocomplete-suggestions-0 .autocomplete-suggestions-result {
+    color: #37424a; }
+
 .data-story-preview-container {
   margin-bottom: 60px; }
   .data-story-preview-container .preview-text h5 {
@@ -481,6 +492,32 @@ a .hidden-link-text {
   transition: border .2s ease-in-out; }
   .data-story-link img {
     width: 100%; }
+
+.main-footer-container {
+  background: #37424a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #e0e1dd;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px; }
+  .main-footer-container a {
+    color: #e0e1dd;
+    text-decoration: none;
+    font-size: 0.8em; }
+    .main-footer-container a:hover {
+      text-decoration: underline; }
+    .main-footer-container a i {
+      font-size: 1.5em;
+      padding-bottom: 10px;
+      line-height: 1; }
+  .main-footer-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; }
+    .main-footer-container ul li {
+      padding: 0;
+      margin: 0; }
 
 /* Everything else */
 .resource-table-button {
@@ -643,19 +680,6 @@ span.badge {
 .page-container {
   margin-top: 34px; }
 
-.main-footer-container {
-  background: #21282d;
-  padding-top: 10px;
-  color: white;
-  margin-bottom: 30px;
-  margin-left: 0px;
-  margin-right: 0px; }
-  .main-footer-container a, .main-footer-container a:hover {
-    color: white;
-    text-decoration: none; }
-  .main-footer-container ul {
-    list-style: none; }
-
 .process-wrapper {
   padding: 10px 0 10px 0; }
 
@@ -765,7 +789,13 @@ h4.bottom-box-head {
   .data-story-preview-container {
     margin-bottom: 0px; }
   .data-stories-rail {
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+  .main-footer-container .right-footer-col {
+    border-right: 1px dotted #747678; }
+  .main-footer-container ul.link-list {
+    text-align: right; }
+  .main-footer-container ul.social-link-list {
+    text-align: left; } }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 767px) {
