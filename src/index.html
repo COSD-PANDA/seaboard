@@ -15,6 +15,11 @@ layout: front
     			var findData = document.querySelector('#find-data');
     			findData.addEventListener('autocomplete-selected', onSelect);
     			findData.addEventListener('autocomplete-change', onChange);
+                var noResults = {
+                    "title": "Sorry, we couldn't find anything",
+                    "type": "No Result",
+                    "url": ""
+                }
 
     			function onSelect(event) {
     				var selected = event.detail.text;
@@ -31,11 +36,14 @@ layout: front
     					return;
     				}
 
-    				findData.suggestions(searchIndex.filter(function(obj){
+                    suggestionsList = searchIndex.filter(function(obj){
     					return obj[findData.textProperty].toLowerCase().indexOf(search) !== -1;
-    				}))
+    				});
 
+                    if (suggestionsList.length == 0)
+                        suggestionsList = Array(noResults);
 
+    				findData.suggestions(suggestionsList)
     			}
         </script>
         <paper-autocomplete
