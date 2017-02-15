@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Data Inventory2
-organization: Performance & Analytics
+department: Performance & Analytics
 notes: >-
   Inventory of datasets targeted for release on the Open Data Portal and
   provided on <a href="http://www.datasd.org/inventory"

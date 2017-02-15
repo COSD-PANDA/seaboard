@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Entreprise System Information
-organization: Information Technology
+department: Information Technology
 notes: >-
   Pursuant to SB 272 - The California Public Records Act, the City of San Diego
   is providing a catalog of its enterprise systems.

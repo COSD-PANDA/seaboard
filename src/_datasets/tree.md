@@ -1,7 +1,7 @@
 ---
 schema: default
 title: tree
-organization: ''
+department: ''
 notes: ''
 license: ''
 maintainer: City of San Diego

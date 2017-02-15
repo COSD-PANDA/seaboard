@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Monitoring of Select Chemical Parameters in Drinking Water
-organization: Public Utilities
+department: Public Utilities
 notes: >-
   Results of tests on drinking water for alkalinity, color, turbidity, hardness,
   conductivity, total dissolved solids, and for selected anions. These results

@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Business Improvement Districts
-organization: GIS
+department: GIS
 notes: >-
   A BID provides a business area with the resources to develop marketing
   campaigns, increase awareness and lobbying efforts, secure additional funding

@@ -1,5 +1,5 @@
 {% assign schema = page.schema | default: site.schema %}
-{% assign department_fields = site.data.schemas[schema].page_fields%}
+{% assign department_fields = site.data.schemas[schema].department_fields %}
 {% assign department_system_fields = "title|description|logo" | split: "|" %}
 {% assign departments = site.collections | where: "label", "departments" | first %}
 <form data-component="form"

@@ -50,9 +50,9 @@ collections:
   datasets:
     output: true
     permalink: /datasets/:path/
-  organizations:
+  departments:
     output: true
-    permalink: /organizations/:path/
+    permalink: /departments/:path/
 
 # Collections (cont'd)
 defaults:
@@ -62,12 +62,12 @@ defaults:
     values:
       layout: dataset
       category: Uncategorized
-      organization: N/A
+      department: N/A
   - scope:
       path: ""
-      type: organizations
+      type: departments
     values:
-      layout: organization
+      layout: department
 
 # Markdown settings
 markdown: kramdown

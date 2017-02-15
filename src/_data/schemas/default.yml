@@ -10,9 +10,9 @@ dataset_fields:
   - field_name: date_modified
     label: Date Modified (YYYY-MM-DD)
     datajson: modified
-  - field_name: organization
-    label: Organization
-    form_template: form/organization.html
+  - field_name: department
+    label: department
+    form_template: form/department.html
     datajson: publisher.name
   - field_name: notes
     label: Description
@@ -59,7 +59,7 @@ resource_fields:
       - xml
       - pdf
 
-organization_fields:
+department_fields:
   - field_name: title
     label: Title
   - field_name: description

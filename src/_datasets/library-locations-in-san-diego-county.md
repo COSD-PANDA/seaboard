@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Library Locations in San Diego County
-organization: GIS
+department: GIS
 notes: >-
   Point feature layer of library locations with associated website and contact
   information, created by the County of San Diego Department of Public Works

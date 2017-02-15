@@ -1,0 +1,26 @@
+---
+title: departments
+layout: default
+permalink: /departments/
+---
+{% include breadcrumbs.html %}
+
+<a href="{{ site.baseurl }}/add-department/" class="btn btn-default pull-right admin-only" data-hook="add-department-btn"><i class="fa fa-plus"></i> Add department</a>
+
+{% for department in site.departments %}
+  {% assign dataset_count = site.datasets | where:"department", department.title | size %}
+  <div class="media">
+    <div class="media-left">
+      {% if department.logo and department.logo != empty %}
+        <a href="{{ site.baseurl }}{{ department.url }}" class="department-thumbnail">
+          <img class="media-object" src="{{ department.logo }}" alt="{{ department.title }}">
+        </a>
+      {% endif %}
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><a href="{{ site.baseurl }}{{ department.url }}">{{ department.title }}</a></h4>
+      <p>{{ department.description }}</p>
+      <p><a href="{{ site.baseurl }}/datasets/?department={{ department.title | slugify }}">{{ dataset_count }} datasets</a></p>
+    </div>
+  </div>
+{% endfor %}
