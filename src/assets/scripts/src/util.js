@@ -33,8 +33,8 @@ export function slugify (text) {
 export function createDatasetFilters (filters) {
   return function (dataset) {
     const conditions = []
-    if (filters.organization) {
-      conditions.push(dataset.organization && slugify(dataset.organization) === filters.organization)
+    if (filters.department) {
+      conditions.push(dataset.department && slugify(dataset.department) === filters.department)
     }
     if (filters.category) {
       conditions.push(dataset.category && slugify(dataset.category).indexOf(filters.category) !== -1)

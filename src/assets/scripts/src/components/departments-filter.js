@@ -6,23 +6,23 @@ import {setContent, slugify, createDatasetFilters, collapseListGroup} from '../u
 
 export default class {
   constructor (opts) {
-    const organizations = this._organizationsWithCount(opts.datasets, opts.params)
-    const organizationsMarkup = organizations.map(TmplListGroupItem)
-    setContent(opts.el, organizationsMarkup)
+    const departments = this._departmentsWithCount(opts.datasets, opts.params)
+    const departmentsMarkup = departments.map(TmplListGroupItem)
+    setContent(opts.el, departmentsMarkup)
     collapseListGroup(opts.el)
   }
 
-  _organizationsWithCount (datasets, params) {
+  _departmentsWithCount (datasets, params) {
     return chain(datasets)
-      .groupBy('organization')
-      .map(function (datasetsInOrg, organization) {
+      .groupBy('department')
+      .map(function (datasetsInOrg, department) {
         const filters = createDatasetFilters(pick(params, ['category']))
         const filteredDatasets = filter(datasetsInOrg, filters)
-        const orgSlug = slugify(organization)
-        const selected = params.organization && params.organization === orgSlug
-        const itemParams = selected ? omit(params, 'organization') : defaults({organization: orgSlug}, params)
+        const orgSlug = slugify(department)
+        const selected = params.department && params.department === orgSlug
+        const itemParams = selected ? omit(params, 'department') : defaults({department: orgSlug}, params)
         return {
-          title: organization,
+          title: department,
           url: '?' + $.param(itemParams),
           count: filteredDatasets.length,
           unfilteredCount: datasetsInOrg.length,

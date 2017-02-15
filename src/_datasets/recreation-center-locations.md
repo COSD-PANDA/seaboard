@@ -1,7 +1,7 @@
 ---
 schema: default
 title: 'Recreation Center Locations '
-organization: GIS
+department: GIS
 notes: >-
   Recreation centers operated by the City of San Diego Park and Recreation
   Department for active and passive recreational opportunities. The data

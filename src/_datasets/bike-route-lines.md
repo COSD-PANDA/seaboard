@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Bike Route Lines
-organization: GIS
+department: GIS
 notes: >-
   Existing (2015) Bike facilities in the San Diego Region. This dataset was
   developed for the primary purpose of updating the SANDAG San Diego Regional

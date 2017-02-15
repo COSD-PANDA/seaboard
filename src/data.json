@@ -51,7 +51,7 @@
       "modified": {{ date_modified | jsonify }},
       "accessLevel": "public"{% if publisher_name %},
       "publisher": {
-        "@type": "org:Organization",
+        "@type": "org:department",
         "name": {{ publisher_name | jsonify }}
       }{% endif %}{% if description %},
       "description": {{ description | jsonify }}{% endif %}{% if category %},

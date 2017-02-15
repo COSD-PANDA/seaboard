@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Community Planning District Boundaries
-organization: GIS
+department: GIS
 notes: >-
   Represents the geographic boundaries for the City of San Diego community land
   use policy plans specific to these geographic areas.

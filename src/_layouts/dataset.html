@@ -4,30 +4,30 @@ layout: default
 {% include breadcrumbs.html parent="Datasets" %}
 {% assign schema = page.schema | default: site.schema %}
 {% assign dataset_fields = site.data.schemas[schema].dataset_fields %}
-{% assign dataset_system_fields = "title|organization|notes|license" | split: "|" %}
+{% assign dataset_system_fields = "title|department|notes|license" | split: "|" %}
 {% assign resource_fields = site.data.schemas[schema].resource_fields %}
 {% assign resource_system_fields = "name|url|format|description" | split: "|" %}
 
-{% assign organization = site.organizations | where:"title",page.organization | first %}
-{% capture organization_url %}{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}{% endcapture %}
+{% assign department = site.departments | where:"title",page.department | first %}
+{% capture department_url %}{{ site.baseurl }}/datasets/?department={{ department.title | slugify }}{% endcapture %}
 
 <div data-component="view-switcher">
   <div class="row" data-component="dataset-display" data-hook="view" data-view="display" typeof="dcat:Dataset" resource="{{ page.url }}">
-    {% if organization %}
-      <div class="col-sm-3" property="dct:publisher" resource="{{ organization_url }}">
+    {% if department %}
+      <div class="col-sm-3" property="dct:publisher" resource="{{ department_url }}">
         <div class="panel panel-default">
             <div class="panel-heading">
-              {% if organization.logo and organization.logo != empty %}
-              <a href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}" class="thumbnail"><img src="{{ organization.logo }}" alt="{{ organization.title }} logo"></a>
+              {% if department.logo and department.logo != empty %}
+              <a href="{{ site.baseurl }}/datasets/?department={{ department.title | slugify }}" class="thumbnail"><img src="{{ department.logo }}" alt="{{ department.title }} logo"></a>
               {% endif %}
             </div>
             <div class="panel-body">
               <h3>
-                <a href="{{ organization_url }}" about="{{ organization_url }}" property="foaf:homepage">
-                  <span property="foaf:name">{{ organization.title }}</span>
+                <a href="{{ department_url }}" about="{{ department_url }}" property="foaf:homepage">
+                  <span property="foaf:name">{{ department.title }}</span>
                 </a>
               </h3>
-              {{ organization.description }}
+              {{ department.description }}
             </div>
           </div>
         </div>

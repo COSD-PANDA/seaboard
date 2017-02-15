@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include breadcrumbs.html parent="Organizations" %}
+{% include breadcrumbs.html parent="departments" %}
 
 <div data-component="view-switcher">
   <div class="row" data-hook="view" data-view="display">
@@ -18,7 +18,7 @@ layout: default
         <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
       </h1>
       <p>{{ page.description }}</p>
-      <div data-component="datasets-list" data-organization="{{ page.title | slugify }}">
+      <div data-component="datasets-list" data-department="{{ page.title | slugify }}">
         <h3 class="datasets-count" data-hook="datasets-count"></h3>
         <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
         <div data-hook="datasets-items"></div>
@@ -28,7 +28,7 @@ layout: default
 
   <div class="row" data-hook="view" data-view="edit">
     <div class="col-sm-8 col-sm-offset-2">
-      {% include organization-form.html organization=page %}
+      {% include department-form.html department=page %}
     </div>
     <div class="col-sm-2">
       <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>

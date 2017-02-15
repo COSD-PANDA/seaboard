@@ -6,10 +6,10 @@
     "url": "{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}",
 	"type": "category"
   },
-  {% endfor %}{% for org in site.organizations %}
+  {% endfor %}{% for org in site.departments %}
   {
     "title": {{ org.title | jsonify }},
-    "url": "{{ site.baseurl }}/datasets/?organization={{ org.title | slugify }}",
+    "url": "{{ site.baseurl }}/datasets/?department={{ org.title | slugify }}",
 	"type": "department"
   },
   {% endfor %}{% for dataset in site.datasets %}

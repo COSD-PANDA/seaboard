@@ -7,7 +7,7 @@
  * </div>
  *
  * Optionally, add filters to the component element such as
- *   data-organization="sample-department"
+ *   data-department="sample-department"
  *   data-category="education"
  */
 import {pick, defaults, filter} from 'lodash'
@@ -24,8 +24,8 @@ export default class {
     }
 
     // Filter datasets and render in items container
-    const paramFilters = pick(opts.params, ['organization', 'category'])
-    const attributeFilters = pick(opts.el.data(), ['organization', 'category'])
+    const paramFilters = pick(opts.params, ['department', 'category'])
+    const attributeFilters = pick(opts.el.data(), ['department', 'category'])
     const filters = createDatasetFilters(defaults(paramFilters, attributeFilters))
     const filteredDatasets = filter(opts.datasets, filters)
     const datasetsMarkup = filteredDatasets.map(TmplDatasetItem)
