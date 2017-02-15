@@ -151,7 +151,7 @@ gulp.task("serve:dev", ["styles", "webpack:dev", "jekyll:dev"], function () {
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
   //gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js"], ["jekyll-rebuild"]);
-  gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt"], ["jekyll-rebuild"]);
+  gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.json"], ["jekyll-rebuild"]);
   gulp.watch(["serve/assets/stylesheets/*.css", "serve/assets/scripts/dist/*.js"], reload);
   gulp.watch(["src/assets/scss/**/*.scss"], ["styles"]);
   gulp.watch(["src/assets/scripts/src/**/*.js"], ["webpack:dev"]);
