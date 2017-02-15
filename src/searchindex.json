@@ -1,0 +1,20 @@
+---
+---
+[{% for category in site.data.categories %}
+  {
+    "title": {{ category.name | jsonify }},
+    "url": "{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}",
+	"type": "category"
+  },
+  {% endfor %}{% for org in site.departments %}
+  {
+    "title": {{ org.title | jsonify }},
+    "url": "{{ site.baseurl }}/datasets/?department={{ org.title | slugify }}",
+	"type": "department"
+  },
+  {% endfor %}{% for dataset in site.datasets %}
+  {
+    "title": {{ dataset.title | jsonify }},
+    "url": "{{ site.baseurl }}{{ dataset.url }}",
+	"type": "dataset"
+  }{% unless forloop.last %},{% endunless %}{% endfor %}]

@@ -25,6 +25,7 @@
     "px-data-table": "^1.15.12",
     "px-theme": "^2.0.4",
     "webcomponentsjs": "^0.7.24",
-    "px-spinner": "^0.5.3"
+    "px-spinner": "^0.5.3",
+    "paper-autocomplete": "^2.3.1"
   }
 }

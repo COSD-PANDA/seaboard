@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Special Events
-organization: Special Events & Filming
+department: Special Events & Filming
 notes: Details on events from Special Event Permit Applications.
 resources:
   - name: Special Events List

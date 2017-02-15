@@ -1,6 +1,6 @@
 ---
 schema: default
-title: City Clerck
+title: City Clerk
 description: >-
   The City Clerk supports the City Council, coordinates municipal elections, and
   manages the City's records management program.

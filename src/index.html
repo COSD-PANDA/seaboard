@@ -2,70 +2,105 @@
 layout: front
 ---
 
-<header id="header-image">
-  <div class="container jumbo-intro">
-    <div class="col-md-12 bg-smoky cta-front">
-      <div class="col-md-6">
-        <h2>Welcome to the City of San Diego Open Data Portal!</h2>
-        Find and use data about your City government.
-        Learn more about Open Data in San Diego.
-      </div>
-      <div class="col-md-6 showme">
-        <iframe width='100%' height='380' frameborder='0' src='https://cityofsandiego.carto.com/u/cityofsandiego-admin/viz/d57f77ff-c375-4ec0-bf4d-de79fe6ecf36/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-      </div>
-    </div>
+<div class="container-fluid data-search">
+  <div class="container">
+    <div class="col-12">
+      <h2>
+        Find data
+      </h2>
+      <!--<div class="row">-->
+      <template is="dom-bind">
+        <script>
+    			var searchIndex;
+    			var findData = document.querySelector('#find-data');
+    			findData.addEventListener('autocomplete-selected', onSelect);
+    			findData.addEventListener('autocomplete-change', onChange);
 
-	</div>
-</header>
+    			function onSelect(event) {
+    				var selected = event.detail.text;
+    				window.location.href = event.detail.value;
+    			}
 
-<div class="container">
-  {% include ctabox.html %}
-</div>
+    			function onChange(event) {
+    				var search = event.detail.option.text.toLowerCase();
+    				var searchIndexURL = "{{ settings.BASE_URL }}/searchindex.json";
+    				if (!searchIndex) {
+    					$.getJSON(searchIndexURL, function(data){
+    						searchIndex = data;
+    					})
+    					return;
+    				}
 
-<div class="container">
-  {% include ctabox-bottom.html %}
-</div>
-
-<div class="container">
-  <div class="homepage-data-stories col-md-12 vertical-section">
-    <h3>Data Stories</h3>
-    <h5>City data brought to life</h5>
-        <div class="row">
-            {% for data_story in site.data.data_stories %}
-                {% if data_story.featured == true %}
-                    <div class="col-md-3 data-story-preview-container">
-                        <div class="row">
-                            <a href="{{ data_story.url }}"
-                                class="data-story-link" title="{{ data_story.title }}">
-                            {% if data_story.img and data_story.img != empty %}
-                                <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
-                            {% endif %}
-                            {{ data_story.title }}
-                            </a>
-                        </div> <!--row-->
-                        <div class="row">
-                            {{ data_story.intro }}
-                        </div>
-                    </div> <!--container-->
-                {% endif %}
-            {% endfor %}
-        </div><!--row-->
-    </div><!--data-stories-->
+    				findData.suggestions(searchIndex.filter(function(obj){
+    					return obj[findData.textProperty].toLowerCase().indexOf(search) !== -1;
+    				}))
 
 
-<div class="container">
-  <div class="homepage-categories col-md-12 vertical-section">
-    <h3>Browse by Category</h3>
-    {% for category in site.data.categories %}
-      {% if category.featured == true %}
-        {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}
-        <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="thumbnail col-md-2" title="{{ logo_alt }}">
-          {% if category.logo and category.logo != empty %}
-            <img src="{{ site.baseurl }}/assets{{ category.logo }}" alt="{{ logo_alt }}">
-          {% endif %}
-          {{ category.name }}
-        </a>
-      {% endif %}
-    {% endfor %}
+    			}
+        </script>
+        <paper-autocomplete
+            label="Search by dataset name, topic or City department" id="find-data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
+              <template autocomplete-custom-template>
+                <paper-item on-tap="_onSelect" id$="[[_getSuggestionId(index)]]" role="option" aria-selected="false">
+                  <span class="autocomplete-suggestions-type">[[item.type]]:</span> <span class="autocomplete-suggestions-result">[[item.title]]</span>
+                  <paper-ripple></paper-ripple>
+                </paper-item>
+              </template>
+        </paper-autocomplete>
+      </template>
+    </div><!-- column -->
   </div>
+</div>
+
+<div class="container-fluid resources-promo">
+  <div class="container">
+    <div class="col-12">
+      <h2>Get help</h2>
+      <ul>
+        <li>View a tutorial about this data portal</li>
+        <li>Learn about the portal's open source technology</li>
+        <li>Read FAQ</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid made-data">
+  <div class="container">
+    <div class="col-12 homepage-data-stories">
+      <h2>See trends</h2>
+        <div class="row data-stories-rail">
+              {% assign story = 0 %}
+              {% for data_story in site.data.data_stories %}
+                {% if data_story.featured == true %}
+                    {% assign story_modulo = story | modulo:3 %}
+                    {% if story_modulo == 0 and story != 0 %}
+                      </div>
+                      <div class="row data-stories-rail">
+                    {% endif %}
+                        <div class="col-sm-4 data-story-preview-container">
+                          <a href="{{ data_story.url }}"
+                              class="data-story-link" title="{{ data_story.title }}">
+                          {% if data_story.img and data_story.img != empty %}
+                              <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
+                          {% endif %}
+                          </a>
+                          <div class="preview-text">
+                            <h5>
+                              <a href="{{ data_story.url }}" title="{{ data_story.title }}">
+                                {{ data_story.title }}
+                              </a>
+                            </h5>
+                            <p class="preview-desc">
+                              {{ data_story.intro }}
+                            </p>
+                          </div>
+                        </div>
+                    {% assign story = story | plus: 1 %}
+                {% endif %}
+              {% endfor %}
+          </div><!--row-->
+      </div><!--data-stories-->
+    </div>
 </div>

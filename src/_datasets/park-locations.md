@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Park Locations
-organization: GIS
+department: GIS
 notes: Properties managed by the City of San Diego Parks & Recreation Department.
 resources:
   - name: Park Locations

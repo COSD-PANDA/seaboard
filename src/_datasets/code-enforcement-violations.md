@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Code Enforcement Violations
-organization: Development Services
+department: Development Services
 notes: "Code Enforcement Violations as provided by Development Services Department's\r\n <a href=\"https://www.sandiego.gov/development-services/opendsd\" target=\"_blank\">OpenDSD</a>.\r\n\r\nFor more information and to be able to search code enforcement cases, please visit \r\n<a href=\"https://www.sandiego.gov/development-services/opendsd\" target=\"_blank\">OpenDSD</a>.\r\n\r\nTo download a zipped XML please see <a href=\"https://www.sandiego.gov/development-services/opendsd/codenforcement\" target=\"_blank\"> OpenDSD's Code Enforcement Activity Reports</a>.\r\n\r\nAlternatively, you can use DSD's <a href=\"https://www.sandiego.gov/development-services/opendsd/developers\" target=\"_blank\">API</a> directly.\r\n\r\nTo learn more about the process, please see:\r\n<ul>\r\n<li><a href=\"https://www.sandiego.gov/development-services/opendsd/codeenfreports\" target=\"_blank\">Code Enforcement Reports</a></li>\r\n</ul>"
 resources:
   - name: Code Enforcement Cases  (past 6 months)
