@@ -50,10 +50,12 @@
     {% include addons/google-analytics.html %}
   {% endif %}
 
-  {% if site.hypothesis.enabled == true %}
-    <!-- Hypothesis.io -->
-    <script async defer src="//hypothes.is/embed.js"></script>
+
+  {% if site.google_gtm.enabled == true %}
+    <!-- Google GTM -->
+    {% include addons/gtm-head.html %}
   {% endif %}
+
 
   {% if site.opengraph.enabled == true %}
     <!-- Open Graph -->
