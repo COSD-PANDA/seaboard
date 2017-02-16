@@ -23,7 +23,6 @@ import ThemeGallery from './components/theme-gallery'
 import {queryByComponent, setParams} from './util'
 
 const params = $.deparam(window.location.search.substr(1))
-
 if (window.location.hash === '#adminify') {
     $( "a[data-hook='login-link']").removeClass('hidden');
 }

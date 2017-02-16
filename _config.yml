@@ -43,7 +43,7 @@ navigation:
   - title: Learn More
     url: /about/
   - title: Blog
-    url: /posts/
+    url: /stories/
 
 # Collections
 collections:
@@ -53,9 +53,9 @@ collections:
   departments:
     output: true
     permalink: /departments/:path/
-  posts:
+  stories:
     output: true
-    permalink: /posts/:path/
+    permalink: /stories/:path/
 
 # Collections (cont'd)
 defaults:
@@ -73,9 +73,9 @@ defaults:
       layout: department
   - scope:
       path: ""
-      type: posts
+      type: stories
     values:
-      layout: post
+      layout: story
 
 
 # Markdown settings
