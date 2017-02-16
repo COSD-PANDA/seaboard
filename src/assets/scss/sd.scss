@@ -80,16 +80,16 @@ $nav_strip_blue: #005bbb;
 /** End Assists **/
 
 body {
-  @include opensans;
+  @include sourcesans;
   font-size: 1.7em;
   //#overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @include opensans;
+  @include sourcesans;
   font-weight: bold;
   a {
-    color: $p_blue;
+    color: $s_blue_mid;
   }
 }
 
@@ -114,6 +114,7 @@ img.logo {
   a {
       color: $p_black;
       font-size: 0.85em;
+      font-weight: 400;
       /*line-height: 34px;*/
 
     &:visited {

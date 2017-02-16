@@ -278,14 +278,14 @@ dataset {
 /*http://take.ms/7Sv5Z*/
 /** End Assists **/
 body {
-  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.7em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #0098db; }
+    color: #005bbb; }
 
 /** Navbar **/
 img.logo {
@@ -306,6 +306,7 @@ img.logo {
   #sd-bar a {
     color: #37424a;
     font-size: 0.85em;
+    font-weight: 400;
     /*line-height: 34px;*/ }
     #sd-bar a:visited {
       color: #37424a; }
@@ -429,6 +430,23 @@ a .hidden-link-text {
   #footer-bar {
     height: 30px; } }
 
+body a {
+  color: #005bbb;
+  text-decoration: none;
+  font-weight: 700; }
+  body a:hover {
+    color: #0098db;
+    text-decoration: underline; }
+  body a:visited {
+    color: #005bbb;
+    text-decoration: none; }
+
+.breadcrumb > .active {
+  color: #747678; }
+
+.label-default {
+  background-color: #747678; }
+
 /* Front page */
 .front-page-container {
   margin-top: 84.4px; }
@@ -470,16 +488,16 @@ a .hidden-link-text {
   .paper-autocomplete-suggestions-0 .autocomplete-suggestions-result {
     color: #37424a; }
 
-.data-story-preview-container {
-  margin-bottom: 60px; }
-  .data-story-preview-container .preview-text h5 {
-    font-size: 0.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: "Source Sans Pro", sans-serif; }
-  .data-story-preview-container .preview-text .preview-desc {
-    font-size: 0.9em;
-    font-family: "Merriweather",Helvetica, Arial, sans-serif; }
+.data-story-preview-container .preview-text h5 {
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.data-story-preview-container .preview-text .preview-desc {
+  font-size: 0.9em;
+  line-height: 1.5;
+  font-family: "Merriweather",Helvetica, Arial, sans-serif; }
 
 .data-story-link {
   display: block;
@@ -504,9 +522,13 @@ a .hidden-link-text {
   .main-footer-container a {
     color: #e0e1dd;
     text-decoration: none;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    font-weight: 400; }
     .main-footer-container a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #e0e1dd; }
+    .main-footer-container a:visited {
+      color: #e0e1dd; }
     .main-footer-container a i {
       font-size: 1.5em;
       padding-bottom: 10px;
@@ -518,6 +540,47 @@ a .hidden-link-text {
     .main-footer-container ul li {
       padding: 0;
       margin: 0; }
+
+/* Dataset page */
+.dataset-main h1, .dataset-main h2, .dataset-main h3, .dataset-main h4, .dataset-main h5, .dataset-main table {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 15px; }
+
+.dataset-main p {
+  font-family: "Merriweather",Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 0.9em; }
+
+.dataset-main .preview-resource-title {
+  margin-top: 30px; }
+
+.dataset-main .el-margin {
+  margin-bottom: 60px; }
+
+.breadcrumb a {
+  color: #005bbb;
+  text-decoration: none; }
+  .breadcrumb a:hover {
+    color: #0098db;
+    text-decoration: underline; }
+  .breadcrumb a:visited {
+    color: #005bbb; }
+
+table a:not(.btn), .table a:not(.btn) {
+  text-decoration: none; }
+
+th {
+  text-transform: uppercase;
+  color: #747678;
+  font-size: 0.85em; }
+
+.preview-check {
+  width: 12px;
+  height: 12px;
+  margin: 6px;
+  background-color: white;
+  border: 1px solid #747678;
+  border-radius: 2px; }
 
 /* Everything else */
 .resource-table-button {
@@ -611,9 +674,6 @@ a .hidden-link-text {
 
 span.badge {
   background: #0098db; }
-
-.breadcrumb a {
-  color: #0098db; }
 
 .list-group-item.active {
   background: #0098db; }
@@ -805,7 +865,7 @@ h4.bottom-box-head {
   .data-story-preview-container .preview-text h5 {
     font-size: 0.9em; }
   .data-story-preview-container .preview-text .preview-desc {
-    font-size: 1em; } }
+    font-size: 0.9em; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {

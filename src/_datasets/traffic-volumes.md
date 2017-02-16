@@ -2,6 +2,7 @@
 schema: default
 title: Traffic Volumes
 department: Transportation & Storm Water
+department_page: transportation-storm-water.md
 notes: >-
   The census count of vehicles on city streets is normally reported in the form
   of Average Daily Traffic (ADT) counts. These counts provide a good estimate

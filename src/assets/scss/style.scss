@@ -5,6 +5,35 @@ The main SCSS file for everything, yep
 @import "main";
 @import "sd";
 
+body {
+
+	a {
+		color: $s_blue_mid;
+		text-decoration: none;
+		font-weight: 700;
+
+	    	&:hover {
+	    		color: $p_blue;
+	    		text-decoration: underline;
+	    	}
+
+	    	&:visited {
+	    		color: $s_blue_mid;
+	    		text-decoration: none;
+	    	}
+	}
+
+
+}
+
+.breadcrumb>.active {
+	color: $s_gray_dk;
+}
+
+.label-default{
+	background-color: $s_gray_dk;
+}
+
 
 /* Front page */
 
@@ -77,8 +106,6 @@ The main SCSS file for everything, yep
 
 .data-story-preview-container {
     
-	margin-bottom: 60px;
-
     .preview-text {
 
     	h5 {
@@ -90,10 +117,13 @@ The main SCSS file for everything, yep
 
     	.preview-desc {
     		font-size: 0.9em;
+    		line-height: 1.5;
     		@include merriweather;
     	}
 
     }
+
+    
 }
 
 .data-story-link {
@@ -127,9 +157,15 @@ The main SCSS file for everything, yep
         color: $s_gray_lt;
         text-decoration: none;
         font-size: 0.8em;
+        font-weight: 400;
 
         &:hover {
         	text-decoration: underline;
+        	color: $s_gray_lt;
+        }
+
+        &:visited {
+        	color: $s_gray_lt;
         }
 
         i {
@@ -150,6 +186,66 @@ The main SCSS file for everything, yep
         }
     }
 }
+
+/* Dataset page */
+
+.dataset-main {
+
+	h1, h2, h3, h4, h5, table {
+		@include sourcesans;
+		margin-bottom: 15px;
+	}
+
+	p {
+		@include merriweather;
+		line-height: 1.5;
+		font-size: 0.9em;
+	}
+
+	.preview-resource-title {
+		margin-top: 30px;
+	}
+
+	.el-margin {
+    	margin-bottom: 60px;
+    }
+}
+
+.breadcrumb {
+
+	a {
+		color: $s_blue_mid;
+		text-decoration: none;
+
+	    	&:hover {
+	    		color: $p_blue;
+	    		text-decoration: underline;
+	    	}
+
+	    	&:visited {
+	    		color: $s_blue_mid;
+	    	}
+	    }
+
+}
+
+table a:not(.btn),.table a:not(.btn){text-decoration:none}
+
+th {
+	text-transform: uppercase;
+	color: $s_gray_dk;
+	font-size: 0.85em;
+}
+
+.preview-check {
+	width: 12px;
+	height: 12px;
+	margin: 6px;
+	background-color: white;
+	border: 1px solid $s_gray_dk;
+	border-radius: 2px;
+}
+
 
 /* Everything else */
 
@@ -273,9 +369,6 @@ The main SCSS file for everything, yep
 
 span.badge {
 	background: $p_blue;
-}
-.breadcrumb a {
-	color: $p_blue;
 }
 
 .list-group-item.active {
@@ -547,7 +640,7 @@ span.badge {
     	}
 
     	.preview-desc {
-    		font-size: 1em;
+    		font-size: 0.9em;
     	}
 
     }
