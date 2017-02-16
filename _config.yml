@@ -30,6 +30,15 @@ github:
     repo_branch: master
     project_title: seaboard
 
+social:
+  - icon:	twitter
+    url:	https://twitter.com/mrmaksimize
+    desc: Follow Quandary on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+
 
 
 
