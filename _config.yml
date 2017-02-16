@@ -38,12 +38,12 @@ schema: default
 
 # Nav bar
 navigation:
-  - title: Get Started
-    url: /get-started/
-  - title: Datasets
+  - title: Browse Data
     url: /datasets/
-  - title: About
+  - title: Learn More
     url: /about/
+  - title: Blog
+    url: /posts/
 
 # Collections
 collections:
@@ -53,6 +53,9 @@ collections:
   departments:
     output: true
     permalink: /departments/:path/
+  posts:
+    output: true
+    permalink: /posts/:path/
 
 # Collections (cont'd)
 defaults:
@@ -68,6 +71,12 @@ defaults:
       type: departments
     values:
       layout: department
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
 
 # Markdown settings
 markdown: kramdown
