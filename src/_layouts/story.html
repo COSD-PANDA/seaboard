@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% include breadcrumbs.html parent="Blog" %}
+
+<article class="post">
+    <div class="post-meta">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="cf post-meta-text">
+            <h4 class="author-name" itemprop="author" itemscope
+                itemtype="http://schema.org/Person">{{ page.author.name }}</h4>
+            on
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+        </div>
+    </div>
+
+    <section class="post-content">
+        {{content}}
+    </section>
+    <footer class="post-footer">
+        <section class="share">
+        {% for social in site.social %}
+            {% if social.share_url != null %}
+            <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{
+                                              social.share_title }}{{page.title
+                                              | cgi_escape}}{{
+                                              social.share_link
+                                              }}{{site.url}}{{page.url}}"
+                onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+            <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
+            </a>
+            {% endif %}
+        {% endfor %}
+        </section>
+    </footer>

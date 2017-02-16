@@ -5,6 +5,41 @@ The main SCSS file for everything, yep
 @import "main";
 @import "sd";
 
+/*
+ * Posts and pages
+ *
+ */
+
+.post {
+  margin-bottom: 4em;
+}
+
+/* Blog post */
+
+.post-title {
+  color: #303030;
+  a {
+    color: #303030;
+  }
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+/* Meta data line below post title */
+
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  font-size: 0.7em;
+  color: #b3b3b1;
+  margin: 1em 0 0;
+}
 
 /* Front page */
 
@@ -58,7 +93,7 @@ The main SCSS file for everything, yep
 }
 
 .paper-autocomplete-suggestions-0 {
-	
+
 	@include merriweather;
 
 	.autocomplete-suggestions-type {
@@ -76,7 +111,7 @@ The main SCSS file for everything, yep
 
 
 .data-story-preview-container {
-    
+
 	margin-bottom: 60px;
 
     .preview-text {
@@ -122,7 +157,7 @@ The main SCSS file for everything, yep
     margin-bottom: 30px;
     margin-left:0px;
     margin-right:0px;
-    
+
     a {
         color: $s_gray_lt;
         text-decoration: none;
@@ -138,7 +173,7 @@ The main SCSS file for everything, yep
         	line-height: 1;
         }
     }
-    
+
     ul {
         list-style: none;
         padding: 0;
@@ -494,7 +529,7 @@ span.badge {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-    
+
 	#mc_embed_signup_box h4.bottom-box-head {
 		padding-top:10px;
 	}
@@ -531,12 +566,12 @@ span.badge {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 767px) {
-	
+
 	.sd-navbar-top.navbar-default .navbar-header {
 		height:0px;
 		float: right;
 	}
-	
+
 
 	.data-story-preview-container {
 
