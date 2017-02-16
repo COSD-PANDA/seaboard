@@ -1,0 +1,30 @@
+---
+title: Blog Posts
+layout: default
+permalink: /stories/
+---
+{% include breadcrumbs.html %}
+
+{% for story in site.stories %}
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+    <div class="article-item">
+        <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ story.url }}"
+                    itemprop="url">{{ story.title }}</a></h2>
+        </header>
+        <div class="post-meta">
+            Posted <time datetime="{{ story.date | date: '%B %d, %Y' }}">{{
+                story.date | date: '%B %d, %Y' }}</time>{% if story.author.name
+            %} by {{ story.author.name }}{% endif %}
+        </div>
+        <section class="post-excerpt" itemprop="description">
+            <p>{{ story.excerpt | strip_html | truncatewords: 45 }}</p>
+        </section>
+        <div class="post-more">
+            <p><a href="{{ story.url }}">Read more</a></p>
+        </div>
+    </div>
+</article>
+
+{% endfor %}

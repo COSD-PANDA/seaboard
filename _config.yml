@@ -30,6 +30,15 @@ github:
     repo_branch: master
     project_title: seaboard
 
+social:
+  - icon:	twitter
+    url:	https://twitter.com/mrmaksimize
+    desc: Follow Quandary on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+
 
 
 
@@ -38,12 +47,12 @@ schema: default
 
 # Nav bar
 navigation:
-  - title: Get Started
-    url: /get-started/
-  - title: Datasets
+  - title: Browse Data
     url: /datasets/
-  - title: About
+  - title: Learn More
     url: /about/
+  - title: Blog
+    url: /stories/
 
 # Collections
 collections:
@@ -53,6 +62,9 @@ collections:
   departments:
     output: true
     permalink: /departments/:path/
+  stories:
+    output: true
+    permalink: /stories/:path/
 
 # Collections (cont'd)
 defaults:
@@ -68,6 +80,12 @@ defaults:
       type: departments
     values:
       layout: department
+  - scope:
+      path: ""
+      type: stories
+    values:
+      layout: story
+
 
 # Markdown settings
 markdown: kramdown

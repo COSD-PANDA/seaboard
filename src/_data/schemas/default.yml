@@ -78,6 +78,12 @@ category_fields:
     label: Featured on Homepage
     form_template: form/checkbox.html
 
+story_fields:
+  - field_name: title
+    label: Title
+  - field_name: content
+    label: Content
+
 page_fields:
   - field_name: title
     label: Title
