@@ -6,18 +6,17 @@ permalink: /stories/
 {% include breadcrumbs.html %}
 
 {% for story in site.stories %}
-    <h1>Hello</h1>
-  <!--<div class="media">
+  <div class="media">
     <div class="media-left">
-      {% if post.logo and post.logo != empty %}
+      {% if story.logo and story.logo != empty %}
         <a href="{{ site.baseurl }}{{ post.url }}" class="department-thumbnail">
           <img class="media-object" src="{{ department.logo }}" alt="{{ department.title }}">
         </a>
       {% endif %}
     </div>
     <div class="media-body">
-      <h4 class="media-heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-      <p>{{ post.content}}</p>
+      <h4 class="media-heading"><a href="{{ site.baseurl }}{{ story.url }}">{{ story.title }}</a></h4>
+      <p>{{ story.content}}</p>
     </div>
-  </div>-->
+  </div>
 {% endfor %}

@@ -3,7 +3,6 @@ layout: default
 ---
 {% include breadcrumbs.html parent="Blog" %}
 
-<div data-component="view-switcher">
   <div class="row" data-hook="view" data-view="display">
     {% if page.logo and page.logo != empty %}
     <div class="col-sm-3">
@@ -15,18 +14,6 @@ layout: default
     {% endif %}
       <h1>
         {{ page.title }}
-        <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
       </h1>
       {{ page.content}}
     </div>
-  </div>
-
-  <div class="row" data-hook="view" data-view="edit">
-    <div class="col-sm-8 col-sm-offset-2">
-      {% include page-form.html department=page %}
-    </div>
-    <div class="col-sm-2">
-      <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
-    </div>
-  </div>
-</div>
