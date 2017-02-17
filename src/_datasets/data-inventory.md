@@ -2,6 +2,8 @@
 schema: default
 title: Data Inventory2
 department: Performance & Analytics
+category:
+  - City Management
 notes: >-
   Inventory of datasets targeted for release on the Open Data Portal and
   provided on <a href="http://www.datasd.org/inventory"
@@ -16,8 +18,8 @@ resources:
       https://datasd-prod.s3.amazonaws.com/inventory/open_data_inventory_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-category:
-  - City Management
+date_issued: '2017-02-13'
+date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

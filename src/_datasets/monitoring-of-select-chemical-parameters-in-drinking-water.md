@@ -2,6 +2,9 @@
 schema: default
 title: Monitoring of Select Chemical Parameters in Drinking Water
 department: Public Utilities
+category:
+  - Energy and Environment
+  - City Infrastructure
 notes: >-
   Results of tests on drinking water for alkalinity, color, turbidity, hardness,
   conductivity, total dissolved solids, and for selected anions. These results
@@ -23,9 +26,8 @@ resources:
       https://datasd-prod.s3.amazonaws.com/water_testing/parameter_defs_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-category:
-  - Energy and Environment
-  - City Infrastructure
+date_issued: '2017-02-13'
+date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

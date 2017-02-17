@@ -2,10 +2,14 @@
 schema: default
 title: Park Locations
 department: GIS
+category:
+  - Culture and Recreation
+  - City Infrastructure
 notes: Properties managed by the City of San Diego Parks & Recreation Department.
 resources:
   - name: Park Locations
-    url: 'https://datasd-prod.s3.amazonaws.com/sde/parks/CITY.PARKS_datasd.zip'
+    url: >-
+      https://datasd-prod.s3.amazonaws.com/sde/parks/CITY.PARKS_datasd.zip
     format: shp
   - name: Park Locations Dictionary
     url: >-
@@ -16,9 +20,8 @@ resources:
       https://datasd-prod.s3.amazonaws.com/sde/parks/CITY.PARKS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-category:
-  - Culture and Recreation
-  - City Infrastructure
+date_issued: '2017-02-13'
+date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
