@@ -109,7 +109,7 @@ img.logo {
 #sd-bar {
   @include sourcesans;
   letter-spacing: 0.2px;
-  background: $s_gray_lt;
+  background-color: $s_gray_lt;
   min-height: 0;
   margin-bottom: 0px;
   height: 34px;
@@ -122,9 +122,11 @@ img.logo {
 
     &:visited {
       color: $p_black;
+      background-color: $s_gray_lt;
     }
     &:hover {
       color: $p_black;
+      background-color: #s_gray_lt;
     }
   }
 
@@ -132,7 +134,7 @@ img.logo {
 
 .sd-navbar-top.navbar-default {
   margin-top: 33.4px;
-  background: $p_black;
+  background-color: $p_black;
   margin-bottom: 0px;
 
   .navbar-header {
@@ -159,6 +161,15 @@ img.logo {
     background: $p_black;
   }
 
+  li.active {
+    a {
+      &:hover {
+        background-color: $p_black;
+      }
+    }
+    
+  }
+
   li a {
     color: $s_gray_lt;
     font-size: 1em;
@@ -167,6 +178,7 @@ img.logo {
 
     &:visited {
       color: $s_gray_lt;
+      background-color: $p_black;
     }
     &:hover {
       color: $s_gray_lt;

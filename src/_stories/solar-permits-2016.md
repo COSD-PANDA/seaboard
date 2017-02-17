@@ -13,6 +13,8 @@ The City of San Diego is not only a smart city, it's a solar friendly city.  Our
 
 Even before City Council passed Mayor Faulconer's Climate Action Plan, our Development Services Department was ahead of the game and began <a href="https://www.sandiego.gov/development-services/streamlining-residential-solar-panel-systems-permitting" target="_blank">expediting solar permits</a> several years ago. This is also thanks to supportive <a href="http://energycenter.org/policy/property-assessed-clean-energy-pace" target="_blank"> financing programs such as PACE</a> and other incentives.
 
+<!--more-->
+
 Mostly, the 2016 sample of solar you see here is thanks to smart San Diegans doing what's good for their bank account and the environment all at the same time.
 
 {% include story-embed.html col-md="12" url="https://cityofsandiego.carto.com/u/cityofsandiego-admin/viz/08a24cf0-80eb-11e6-b5c2-0e3ebc282e83/embed_map"%}

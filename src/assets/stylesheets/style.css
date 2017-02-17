@@ -298,7 +298,7 @@ img.logo {
 #sd-bar {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.2px;
-  background: #e0e1dd;
+  background-color: #e0e1dd;
   min-height: 0;
   margin-bottom: 0px;
   height: 34px;
@@ -309,13 +309,15 @@ img.logo {
     font-weight: 400;
     /*line-height: 34px;*/ }
     #sd-bar a:visited {
-      color: #37424a; }
+      color: #37424a;
+      background-color: #e0e1dd; }
     #sd-bar a:hover {
-      color: #37424a; }
+      color: #37424a;
+      background-color: #s_gray_lt; }
 
 .sd-navbar-top.navbar-default {
   margin-top: 33.4px;
-  background: #37424a;
+  background-color: #37424a;
   margin-bottom: 0px; }
   .sd-navbar-top.navbar-default .navbar-header {
     margin-top: 0px;
@@ -335,13 +337,16 @@ img.logo {
     font-weight: 400; }
   .sd-navbar-top.navbar-default .navbar-collapse {
     background: #37424a; }
+  .sd-navbar-top.navbar-default li.active a:hover {
+    background-color: #37424a; }
   .sd-navbar-top.navbar-default li a {
     color: #e0e1dd;
     font-size: 1em;
     display: inline-block;
     font-weight: 700; }
     .sd-navbar-top.navbar-default li a:visited {
-      color: #e0e1dd; }
+      color: #e0e1dd;
+      background-color: #37424a; }
     .sd-navbar-top.navbar-default li a:hover {
       color: #e0e1dd;
       text-decoration: underline;
@@ -447,32 +452,8 @@ body a {
 .label-default {
   background-color: #747678; }
 
-/*
- * Posts and pages
- *
- */
-.post {
-  margin-bottom: 4em; }
-
-/* Blog post */
-.post-title {
-  color: #303030; }
-  .post-title a {
-    color: #303030; }
-
-.post-title {
-  margin-top: 0; }
-
-/* Meta data line below post title */
-.post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem; }
-
-.post-meta {
-  font-size: 0.7em;
-  color: #b3b3b1;
-  margin: 1em 0 0; }
+span.badge {
+  background: #747678; }
 
 /* Front page */
 .front-page-container {
@@ -680,20 +661,20 @@ th {
   color: #00549f; }
 
 /* Datasets landing page */
-.datasets-submenu .list-group a.list-group-item {
-  color: #00549f; }
-  .datasets-submenu .list-group a.list-group-item .badge {
-    background-color: #747678; }
-  .datasets-submenu .list-group a.list-group-item .list-group-item-truncate {
-    font-size: 0.9em; }
-  .datasets-submenu .list-group a.list-group-item:hover {
-    color: #5eb6e4;
-    text-decoration: underline; }
-    .datasets-submenu .list-group a.list-group-item:hover .list-group-item-truncate {
+.datasets-submenu .list-group {
+  margin-bottom: 60px; }
+  .datasets-submenu .list-group a.list-group-item {
+    color: #00549f; }
+    .datasets-submenu .list-group a.list-group-item .list-group-item-truncate {
+      font-size: 0.9em; }
+    .datasets-submenu .list-group a.list-group-item:hover {
       color: #5eb6e4;
       text-decoration: underline; }
+      .datasets-submenu .list-group a.list-group-item:hover .list-group-item-truncate {
+        color: #5eb6e4;
+        text-decoration: underline; }
 
-[data-component="datasets-list"] {
+.datasets-main-listing {
   padding-left: 60px; }
 
 dataset {
@@ -709,8 +690,32 @@ dataset {
   border-bottom: 1px solid #d6d6d6;
   padding-bottom: 40px;
   padding-top: 20px; }
-  .department-listing .badge {
-    background-color: #747678; }
+
+.department-page-details {
+  padding-bottom: 40px; }
+
+/* Blog landing page */
+.article-thumb {
+  max-width: 480px;
+  float: none;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem; }
+
+.post-meta {
+  font-size: 0.7em;
+  color: #747678;
+  margin: 1em 0 0; }
+
+.datasd-article {
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 40px;
+  padding-top: 20px; }
 
 /* Everything else */
 .homepage-categories .thumbnail img {
@@ -788,9 +793,6 @@ dataset {
     background: #E4E9EB; }
   #inventory-table th {
     font-family: "Merriweather",Helvetica, Arial, sans-serif; }
-
-span.badge {
-  background: #0098db; }
 
 .list-group-item.active {
   background: #0098db; }
@@ -982,7 +984,12 @@ h4.bottom-box-head {
   .data-story-preview-container .preview-text h5 {
     font-size: 0.9em; }
   .data-story-preview-container .preview-text .preview-desc {
-    font-size: 0.9em; } }
+    font-size: 0.9em; }
+  .article-thumb {
+    max-width: 250px;
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {

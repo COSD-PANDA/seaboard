@@ -12,7 +12,7 @@ The City's street sweeping schedule might not be the first thing on your mind wh
 The City aims to sweep commercial streets about once per week, and residential streets at least once per month. Sweeping removes debris that might clog the the storm water system and cause flooding and prevents harmful particles from entering the ocean. If the block you're parked on has signage restricting parking during a certain day and time for street sweeping, you could get a ticket when the sweeper goes by.
 
 The best thing to do is check for signs before you park, but this guide will give you an overview of street sweeping in general, and where you might get a ticket.
-
+<!--more-->
 
 <h3>An overview of street sweeping schedules</h3>
 As of the last revision of the street sweeping schedules in March 2015, more than 27,000 city blocks were part of the street sweeping program.
