@@ -15,6 +15,7 @@ layout: default
   <div class="row" data-component="dataset-display" data-hook="view" data-view="display" typeof="dcat:Dataset" resource="{{ page.url }}">
     {% if department %}
       <div class="col-sm-3" property="dct:publisher" resource="{{ department_url }}">
+
         <div class="panel panel-default">
             <div class="panel-heading">
               {% if department.logo and department.logo != empty %}
@@ -72,6 +73,7 @@ layout: default
             <tr>
                 <th>Resource</th>
                 <th>Type</th>
+                <th>Download</th>
                 <th>Preview</th>
             </tr>
         {% assign first_resource_url = '' %}
@@ -86,23 +88,28 @@ layout: default
             <tr>
                 <td>
                     <div class="" data-hook="resource-item" property='dcat:distribution' typeof='dcat:Distribution'>
-                        <a href="{{ resource.url }}" property='dcat:accessURL'>
-                            <span property="dct:title">{{ resource.name }}</span>
-                        </a>
+                        <span property="dct:title">{{ resource.name }}</span>
                     </div>
                 </td>
                 <td>
                     {% if resource.format %}
                         <paper-button class="resource-table-button" toggles="true" disabled="true")>
-                            <span class="label label-default" property='dcat:mediaType'>{{ resource.format}}</span>
+                            <span class="label label-default" property='dcat:mediaType'>{{ resource.format }}</span>
                         </paper-button>
                     {% endif %}
                 </td>
                 <td>
+                    <a title="Download {{ resource.name }}" href="{{ resource.url }}" property='dcat:accessURL'>
+                        <paper-button class="resource-table-button">
+                            <iron-icon icon="visibility"></iron-icon>
+                        </paper-button>
+                    </a>
+                </td>
+
+                <td>
                     {% if resource.format == 'csv' %}
-                        <paper-button
-						class="resource-table-button" {{ preview-is-active }}
-						toggles="true" onclick="preview_url('{{ resource.url }}', '{{ resource.name }}')">
+                    <paper-button title="Preview {{ resource.name }}" class="resource-table-button" {{ preview-is-active }}
+			  toggles="true" onclick="preview_url('{{ resource.url }}', '{{ resource.name }}')">
                             <iron-icon icon="visibility"></iron-icon>
                         </paper-button>
                     {% endif %}
@@ -125,6 +132,9 @@ layout: default
 	  <h4 class="preview-resource-title">{{ first_resource_title }}</h4>
       <px-spinner class="resource-preview-loading-spinner" finished="{% raw %}[[!tableloading]]{% endraw %}" size="50"></px-spinner>
       <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
+        <div class="col-md-12 dataset-preview-msg">
+            <i>Please this is a preview.  If you would like to view the full resource, please download it above.</i>
+        </div>
       </div>
 
         </template>
