@@ -7,6 +7,11 @@
   {% include head.html %}
 
   <body>
+    {% if site.google_gtm.enabled == true %}
+        <!-- Google GTM -->
+        {% include addons/gtm-body.html %}
+    {% endif %}
+
 
     {% include header.html %}
 
