@@ -72,9 +72,13 @@ layout: default
               </td>
               <td>
                 {% if resource.format %}
-                  <paper-button class="resource-table-button" toggles="true" disabled="true">
-                  <span class="label label-default" property='dcat:mediaType'>{{ resource.format}}</span>
-                  </paper-button>
+                  <div class="resource-type">
+                  <!--<paper-button class="resource-table-button" toggles="true" disabled="true">
+                  <span class="label label-default" property='dcat:mediaType'>-->
+                  {{ resource.format}}
+                  </div>
+                  <!--</span>
+                  </paper-button>-->
                 {% endif %}
               </td>
               <td>
