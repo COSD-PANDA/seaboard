@@ -703,6 +703,15 @@ dataset {
     color: #5eb6e4;
     text-decoration: underline; }
 
+/* Departments landing page */
+.department-listing {
+  display: block;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 40px;
+  padding-top: 20px; }
+  .department-listing .badge {
+    background-color: #747678; }
+
 /* Everything else */
 .homepage-categories .thumbnail img {
   height: 120px; }

@@ -426,6 +426,19 @@ dataset {
 	}
 }
 
+/* Departments landing page */
+
+.department-listing {
+	display: block;
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 40px;
+	padding-top: 20px;
+
+	.badge {
+				background-color: $s_gray_dk;
+			}
+}
+
 /* Everything else */
 
 .homepage-categories .thumbnail img {
