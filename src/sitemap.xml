@@ -1,0 +1,100 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  {% for story in site.stories %}
+    <url>
+      <loc>{{ site.url }}{{ story.url }}</loc>
+      {% if story.sitemap.lastmod %}
+        <lastmod>{{ story.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif story.date %}
+        <lastmod>{{ story.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if story.sitemap.changefreq %}
+        <changefreq>{{ story.sitemap.changefreq }}</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if story.sitemap.priority %}
+        <priority>{{ story.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.5</priority>
+      {% endif %}
+    </url>
+  {% endfor %}
+  {% for page in site.pages %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    {% if page.sitemap.lastmod %}
+      <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+    {% elsif page.date %}
+      <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+    {% else %}
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {% endif %}
+    {% if page.sitemap.changefreq %}
+      <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+    {% else %}
+      <changefreq>monthly</changefreq>
+    {% endif %}
+    {% if page.sitemap.priority %}
+      <priority>{{ page.sitemap.priority }}</priority>
+    {% else %}
+      <priority>0.3</priority>
+    {% endif %}
+  </url>
+  {% endfor %}
+  {% for dataset in site.datasets %}
+  <url>
+    <loc>{{ site.url }}{{ dataset.url }}</loc>
+    {% if dataset.sitemap.lastmod %}
+      <lastmod>{{ dataset.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+    {% elsif dataset.date %}
+      <lastmod>{{ dataset.date | date_to_xmlschema }}</lastmod>
+    {% else %}
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {% endif %}
+    {% if dataset.sitemap.changefreq %}
+      <changefreq>{{ dataset.sitemap.changefreq }}</changefreq>
+    {% else %}
+      <changefreq>monthly</changefreq>
+    {% endif %}
+    {% if dataset.sitemap.priority %}
+      <priority>{{ dataset.sitemap.priority }}</priority>
+    {% else %}
+      <priority>0.3</priority>
+    {% endif %}
+  </url>
+  {% endfor %}
+  {% for department in site.departments %}
+  <url>
+    <loc>{{ site.url }}{{ department.url }}</loc>
+    {% if department.sitemap.lastmod %}
+      <lastmod>{{ department.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+    {% elsif department.date %}
+      <lastmod>{{ department.date | date_to_xmlschema }}</lastmod>
+    {% else %}
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {% endif %}
+    {% if department.sitemap.changefreq %}
+      <changefreq>{{ department.sitemap.changefreq }}</changefreq>
+    {% else %}
+      <changefreq>monthly</changefreq>
+    {% endif %}
+    {% if department.sitemap.priority %}
+      <priority>{{ department.sitemap.priority }}</priority>
+    {% else %}
+      <priority>0.3</priority>
+    {% endif %}
+  </url>
+  {% endfor %}
+</urlset>
