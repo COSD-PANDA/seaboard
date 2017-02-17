@@ -8,7 +8,10 @@ permalink: /stories/
 {% for story in site.stories %}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-    <div class="article-item">
+    <div class="article-thumb col-md-3">
+        <img src="{{ story.thumbnail }}" width="100%" alt="{{ story.title }} image" />
+    </div>
+    <div class="article-item col-md-8">
         <header class="post-header">
             <h2 class="post-title" itemprop="name"><a href="{{ story.url }}"
                     itemprop="url">{{ story.title }}</a></h2>
