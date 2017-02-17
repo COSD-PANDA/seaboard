@@ -46,15 +46,16 @@ layout: default
           }
         </script>
 
-        <h3>Resources</h3>
+      <h3>Resources</h3>
         <table class="table table-striped table-condensed el-margin">
-          <tr>
-            <th>Resource</th>
-            <th>Type</th>
-            <th>Preview</th>
-          </tr>
-          {% assign first_resource_url = '' %}
-          {% for resource in page.resources %}
+            <tr>
+                <th>Resource</th>
+                <th>Type</th>
+                <th>Download</th>
+                <th>Preview</th>
+            </tr>
+        {% assign first_resource_url = '' %}
+        {% for resource in page.resources %}
             {% if first_resource_url == '' and resource.url contains '.csv' %}
               {% capture first_resource_url %}{{ resource.url }}{% endcapture %}
               {% capture first_resource_title %}{{ resource.name }}{% endcapture %}
@@ -63,11 +64,10 @@ layout: default
               {% assign preview-is-active = '' %}
             {% endif %}
             <tr>
+<<<<<<< HEAD
               <td>
                 <div class="" data-hook="resource-item" property='dcat:distribution' typeof='dcat:Distribution'>
-                  <a href="{{ resource.url }}" property='dcat:accessURL' class="table-resource-link">
                   <span property="dct:title">{{ resource.name }}</span>
-                  </a>
                 </div>
               </td>
               <td>
@@ -81,6 +81,13 @@ layout: default
                   </paper-button>-->
                 {% endif %}
               </td>
+              <td>
+                    <a title="Download {{ resource.name }}" href="{{ resource.url }}" property='dcat:accessURL'>
+                        <paper-button class="resource-table-button">
+                            <iron-icon icon="visibility"></iron-icon>
+                        </paper-button>
+                    </a>
+                </td>
               <td>
                 {% if resource.format == 'csv' %}
                   <paper-button class="resource-table-button" {{ preview-is-active }} toggles="true" onclick="preview_url('{{ resource.url }}', '{{ resource.name }}')">
@@ -107,6 +114,9 @@ layout: default
           <h4 class="preview-resource-title">{{ first_resource_title }}</h4>
           <px-spinner class="resource-preview-loading-spinner" finished="{% raw %}[[!tableloading]]{% endraw %}" size="50"></px-spinner>
           <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
+          <div class="col-md-12 dataset-preview-msg">
+            <i>Please this is a preview.  If you would like to view the full resource, please download it above.</i>
+        </div>
         </div>
 
       </template>
