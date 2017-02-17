@@ -2,7 +2,6 @@ title: City of San Diego Open Data Portal
 greeting:
 description: Empowering San Diegans by making data usable.
 baseurl:
-logo: /assets/img/jkan.png
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
@@ -97,15 +96,16 @@ google_analytics:
   enabled: false
   code: "UA-XXXXXX-1"
 
+# Google TagManager
+google_gtm:
+  enabled: false
+  code: "GTM-KDXK7NN"
+
 # US Digital Analytics Program - https://analytics.usa.gov
 digital_analytics_program:
   enabled: false
   agency: ""
   subagency: ""
-
-# Hypothesis.io - Annotator
-hypothesis:
-  enabled: false
 
 # Twitter
 twittercard:

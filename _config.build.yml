@@ -3,7 +3,7 @@
 # Overrides these options in _config.yml
 
 # Overrides the default URL, needed for your atom feed and sitemap
-url: 
+baseurl:
 
 # Hides your drafts and future posts
 future: false
@@ -16,4 +16,9 @@ limit_posts: 0
 source: 'src'
 destination: 'serve'
 
-googleTagmanager: "GTM-XXXXX"
+
+# Google TagManager
+google_gtm:
+  enabled: true
+  code: "GTM-KDXK7NN"
+

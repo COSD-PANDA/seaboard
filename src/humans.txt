@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Maksim P -- Chief Data Officer -- @https://github.com/MrMaksimize
+    Andrell B -- Open Data Coordinator -- @https://github.com/andrell81
+    Arnaud V -- Data Science Coordinator -- @https://github.com/arnaudvedy
+
+# THANKS
+
+    Tim W - @timwis for JKAN!
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+    Jekyll, Lanyon/Poole, HTML5 Boilerplate
+    Yeoman, Jekyllized
