@@ -679,6 +679,30 @@ th {
 .px-dropdown-chevron-0 iron-icon.px-dropdown-chevron {
   color: #00549f; }
 
+/* Datasets landing page */
+.datasets-submenu .list-group a.list-group-item {
+  color: #00549f; }
+  .datasets-submenu .list-group a.list-group-item .badge {
+    background-color: #747678; }
+  .datasets-submenu .list-group a.list-group-item .list-group-item-truncate {
+    font-size: 0.9em; }
+  .datasets-submenu .list-group a.list-group-item:hover {
+    color: #5eb6e4;
+    text-decoration: underline; }
+    .datasets-submenu .list-group a.list-group-item:hover .list-group-item-truncate {
+      color: #5eb6e4;
+      text-decoration: underline; }
+
+[data-component="datasets-list"] {
+  padding-left: 60px; }
+
+dataset {
+  padding-bottom: 40px;
+  padding-top: 20px; }
+  dataset h3 a:hover {
+    color: #5eb6e4;
+    text-decoration: underline; }
+
 /* Everything else */
 .homepage-categories .thumbnail img {
   height: 120px; }
