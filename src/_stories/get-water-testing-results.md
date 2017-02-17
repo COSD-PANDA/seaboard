@@ -2,6 +2,7 @@
 schema: default
 title: Get Water Testing Results
 date: 2016-07-15 00:00:00
+thumbnail: http://mrm-screen.s3.amazonaws.com/water-kitchen-black-design.jpg
 author:
     name: Andrell Bower
 ---

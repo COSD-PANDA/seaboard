@@ -2,6 +2,7 @@
 schema: default
 title: See Solar Permits Issued in 2016
 date: 2016-07-15 00:00:00
+thumbnail: http://mrm-screen.s3.amazonaws.com/solar-energy-868663_960_720.jpg
 author:
     name: Cody Hooven
 ---

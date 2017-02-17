@@ -2,6 +2,7 @@
 schema: default
 title: Explore Parking Meter Transactions in 2015
 date: 2015-02-15 00:00:00
+thumbnail: http://mrm-screen.s3.amazonaws.com/SD_Ave_1600.jpg
 author:
     name: Johnathan Carey
 ---
