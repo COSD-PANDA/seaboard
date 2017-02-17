@@ -125,6 +125,9 @@ layout: default
 	  <h4 class="preview-resource-title">{{ first_resource_title }}</h4>
       <px-spinner class="resource-preview-loading-spinner" finished="{% raw %}[[!tableloading]]{% endraw %}" size="50"></px-spinner>
       <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
+        <div class="col-md-12 dataset-preview-msg">
+            <i>Please this is a preview.  If you would like to view the full resource, please download it above.</i>
+        </div>
       </div>
 
         </template>
