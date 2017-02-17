@@ -1,0 +1,17 @@
+<div class="col-sm-{{ include.col-sm }} col-md-{{ include.col-md }}">
+    {% if include.title %}
+        <h4 class="embed_title">{{ include.title }}</h4>
+    {% endif %}
+    {% assign height = include.height | default: "520" %}
+    <iframe
+            width='100%'
+            height="{{ height }}"
+            frameborder='0'
+            src='{{ include.url }}'
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            oallowfullscreen
+            msallowfullscreen>
+    </iframe>
+</div>
