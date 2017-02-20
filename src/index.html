@@ -16,6 +16,7 @@ layout: front
                     <script>
                             var searchIndex;
                             var findData = document.querySelector('#find-data');
+                            var findDataIcon = document.querySelector('.find-data-icon');
                             findData.addEventListener('autocomplete-selected', onSelect);
                             findData.addEventListener('autocomplete-change', onChange);
 
@@ -25,15 +26,17 @@ layout: front
                             var noResults = {
                                 "title": "Sorry, we couldn't find anything",
                                 "type": "No Result",
-                                "url": ""
+                                "url": "none"
                             }
                             function onSelect(event) {
                                     var selected = event.detail.text;
-                                    window.location.href = event.detail.value;
+                                    if (event.detail.value !== 'none')
+                                      window.location.href = event.detail.value;
                             }
 
                             function onChange(event) {
                                     var search = event.detail.option.text.toLowerCase();
+                                    findDataIcon.classList.add('hidden')
                                     var searchIndexURL = "{{ settings.BASE_URL }}/searchindex.json";
                                     if (!searchIndex) {
                                             $.getJSON(searchIndexURL, function(data){
