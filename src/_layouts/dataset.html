@@ -12,64 +12,42 @@ layout: default
 {% capture department_url %}{{ site.baseurl }}/datasets/?department={{ department.title | slugify }}{% endcapture %}
 
 <div data-component="view-switcher">
-  <div class="row" data-component="dataset-display" data-hook="view" data-view="display" typeof="dcat:Dataset" resource="{{ page.url }}">
-    {% if department %}
-      <div class="col-sm-3" property="dct:publisher" resource="{{ department_url }}">
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-              {% if department.logo and department.logo != empty %}
-              <a href="{{ site.baseurl }}/datasets/?department={{ department.title | slugify }}" class="thumbnail"><img src="{{ department.logo }}" alt="{{ department.title }} logo"></a>
-              {% endif %}
-            </div>
-            <div class="panel-body">
-              <h3>
-                <a href="{{ department_url }}" about="{{ department_url }}" property="foaf:homepage">
-                  <span property="foaf:name">{{ department.title }}</span>
-                </a>
-              </h3>
-              {{ department.description }}
-            </div>
-          </div>
-        </div>
-    <div class="col-sm-9">
-    {% else %}
+  <div class="row dataset-main" data-component="dataset-display" data-hook="view" data-view="display" typeof="dcat:Dataset" resource="{{ page.url }}">
     <div class="col-sm-12">
-    {% endif %}
-      <h1>
+      <h2>
         <span property="dct:title">{{ page.title }}</span>
         <a href="?view=edit" class="pull-right btn btn-default admin-only" data-hook="edit-dataset-btn">Edit</a>
-      </h1>
-      <p property="dct:description">{{ page.notes }}</p>
+      </h2>
+      <p property="dct:description" class="el-margin">{{ page.notes }}</p>
 
-<template is="dom-bind">
-    <script>
-        preview_url = function(url, title) {
+      <template is="dom-bind">
+        <script>
+          preview_url = function(url, title) {
             ajax_el = document.querySelector('iron-ajax');
             table_el = document.querySelector('aha-table');
-			button_els = document.querySelectorAll('.resource-table-button');
-		    title_el = document.querySelector('.preview-resource-title');
+            button_els = document.querySelectorAll('.resource-table-button');
+            title_el = document.querySelector('.preview-resource-title');
             var params = {
-                'datasetUrl': url,
-                'numRows': '10'
+              'datasetUrl': url,
+              'numRows': '10'
             }
             // Reset the table for new dataset.
-			if (table_el) {
-				table_el.meta = [];
-				table_el._internalData = [];
-			}
+            if (table_el) {
+              table_el.meta = [];
+              table_el._internalData = [];
+            }
 
-			// Remove active from all other buttons
-			for (var i = 0; i < button_els.length; i++)
-				button_els[i].set('active', false);
+            // Remove active from all other buttons
+            for (var i = 0; i < button_els.length; i++)
+            button_els[i].set('active', false);
 
-			title_el.textContent = title;
+            title_el.textContent = title;
             ajax_el.set('params', params);
-        }
-    </script>
+          }
+        </script>
 
-      <h2>Resources</h2>
-        <table class="table table-striped table-condensed">
+      <h3>Resources</h3>
+        <table class="table table-striped table-condensed el-margin">
             <tr>
                 <th>Resource</th>
                 <th>Type</th>
@@ -79,68 +57,72 @@ layout: default
         {% assign first_resource_url = '' %}
         {% for resource in page.resources %}
             {% if first_resource_url == '' and resource.url contains '.csv' %}
-                {% capture first_resource_url %}{{ resource.url }}{% endcapture %}
-                {% capture first_resource_title %}{{ resource.name }}{% endcapture %}
-            	{% assign preview-is-active = 'active' %}
-			{% else %}
-            	{% assign preview-is-active = '' %}
+              {% capture first_resource_url %}{{ resource.url }}{% endcapture %}
+              {% capture first_resource_title %}{{ resource.name }}{% endcapture %}
+              {% assign preview-is-active = 'active' %}
+            {% else %}
+              {% assign preview-is-active = '' %}
             {% endif %}
             <tr>
-                <td>
-                    <div class="" data-hook="resource-item" property='dcat:distribution' typeof='dcat:Distribution'>
-                        <span property="dct:title">{{ resource.name }}</span>
-                    </div>
-                </td>
-                <td>
-                    {% if resource.format %}
-                        <paper-button class="resource-table-button" toggles="true" disabled="true")>
-                            <span class="label label-default" property='dcat:mediaType'>{{ resource.format }}</span>
-                        </paper-button>
-                    {% endif %}
-                </td>
-                <td>
+<<<<<<< HEAD
+              <td>
+                <div class="" data-hook="resource-item" property='dcat:distribution' typeof='dcat:Distribution'>
+                  <span property="dct:title">{{ resource.name }}</span>
+                </div>
+              </td>
+              <td>
+                {% if resource.format %}
+                  <div class="resource-type">
+                  <!--<paper-button class="resource-table-button" toggles="true" disabled="true">
+                  <span class="label label-default" property='dcat:mediaType'>-->
+                  {{ resource.format}}
+                  </div>
+                  <!--</span>
+                  </paper-button>-->
+                {% endif %}
+              </td>
+              <td>
                     <a title="Download {{ resource.name }}" href="{{ resource.url }}" property='dcat:accessURL'>
                         <paper-button class="resource-table-button">
                             <iron-icon icon="visibility"></iron-icon>
                         </paper-button>
                     </a>
                 </td>
-
-                <td>
-                    {% if resource.format == 'csv' %}
-                    <paper-button title="Preview {{ resource.name }}" class="resource-table-button" {{ preview-is-active }}
-			  toggles="true" onclick="preview_url('{{ resource.url }}', '{{ resource.name }}')">
-                            <iron-icon icon="visibility"></iron-icon>
-                        </paper-button>
-                    {% endif %}
-                </td>
-            </div>
+              <td>
+                {% if resource.format == 'csv' %}
+                  <paper-button class="resource-table-button" {{ preview-is-active }} toggles="true" onclick="preview_url('{{ resource.url }}', '{{ resource.name }}')">
+                  <div class="preview-check"></div>
+                  <!--<iron-icon icon="visibility"></iron-icon>-->
+                  </paper-button>
+                {% endif %}
+              </td>
+              </div>
             </tr>
-        {% endfor %}
+          {% endfor %}
         </table>
 
         <iron-ajax
-          auto
-          url="https://8kf9rxn2x1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview"
-          params={% raw %}'{"datasetUrl": "{% endraw %}{{ first_resource_url }}{% raw %}", "numRows": "10"}'{% endraw %}
-          handle-as="json"
-          last-response="{% raw %}{{ jsondata }}{% endraw %}"
-		  loading="{% raw %}{{ tableloading }}{% endraw %}"
-          debounce-duration="300"></iron-ajax>
+        auto
+        url="https://8kf9rxn2x1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview"
+        params={% raw %}'{"datasetUrl": "{% endraw %}{{ first_resource_url }}{% raw %}", "numRows": "10"}'{% endraw %}
+        handle-as="json"
+        last-response="{% raw %}{{ jsondata }}{% endraw %}"
+        loading="{% raw %}{{ tableloading }}{% endraw %}"
+        debounce-duration="300"></iron-ajax>
 
-      <div class="preview-container">
-	  <h4 class="preview-resource-title">{{ first_resource_title }}</h4>
-      <px-spinner class="resource-preview-loading-spinner" finished="{% raw %}[[!tableloading]]{% endraw %}" size="50"></px-spinner>
-      <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
-        <div class="col-md-12 dataset-preview-msg">
+        <div class="preview-container el-margin">
+          <h4 class="preview-resource-title">{{ first_resource_title }}</h4>
+          <px-spinner class="resource-preview-loading-spinner" finished="{% raw %}[[!tableloading]]{% endraw %}" size="50"></px-spinner>
+          <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
+          <div class="col-md-12 dataset-preview-msg">
             <i>Please this is a preview.  If you would like to view the full resource, please download it above.</i>
         </div>
-      </div>
+        </div>
 
-        </template>
+      </template>
 
-      <h2>Additional Info</h2>
-      <table class="table table-striped dataset-details">
+      <h3>Additional Info</h3>
+      <table class="table table-striped dataset-details el-margin">
         {% if page.license and page.license != empty %}
           <tr>
             <th>License</th>
@@ -151,6 +133,14 @@ layout: default
             </td>
           </tr>
         {% endif %}
+        <tr>
+          <th>Publisher</th>
+          <td>
+            <a href="{{ department_url }}" about="{{ department_url }}" property="foaf:homepage">
+                <span property="foaf:name">{{ department.title }}</span>
+              </a>
+          </td>
+        </tr>
         {% for field in dataset_fields %}
           {% unless dataset_system_fields contains field.field_name %}
             {% assign value = page[field[field_name]] %}
@@ -166,18 +156,18 @@ layout: default
             {% endif %}
           {% endunless %}
         {% endfor %}
-
       </table>
-    </div>
-  </div>
 
 
-  <div class="row" data-hook="view" data-view="edit">
-    <div class="col-sm-8 col-sm-offset-2">
-      {% include dataset-form.html dataset=page %}
-    </div>
-    <div class="col-sm-2">
-      <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
+      <div class="row" data-hook="view" data-view="edit">
+        <div class="col-sm-8 col-sm-offset-2">
+          {% include dataset-form.html dataset=page %}
+        </div>
+        <div class="col-sm-2">
+          <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
