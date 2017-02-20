@@ -474,7 +474,35 @@ span.badge {
 
 .data-search {
   background-color: #00549f;
-  color: #e0e1dd; }
+  color: #e0e1dd;
+  height: 300px; }
+  .data-search .find-data-autocomplete {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.data-search-img-layer {
+  height: 300px;
+  background: black;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.data-search-img-0 {
+  background: url("http://take.ms/yrzRA") no-repeat center center; }
+
+.data-search-img-1 {
+  background: url("http://take.ms/uTDm7") no-repeat center center; }
+
+.data-search-img-2 {
+  background: url("http://take.ms/sKgoG") no-repeat center center; }
+
+.data-search-color-layer {
+  height: 300px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
 
 .resources-promo {
   background-color: #ffb652;
