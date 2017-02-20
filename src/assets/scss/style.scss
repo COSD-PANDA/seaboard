@@ -5,40 +5,59 @@ The main SCSS file for everything, yep
 @import "main";
 @import "sd";
 
-/*
- * Posts and pages
- *
- */
+body {
 
-.post {
-  margin-bottom: 4em;
+	color: $p_black;
+
+	a {
+		color: $s_blue_mid;
+		text-decoration: none;
+		font-weight: 700;
+
+	    	&:hover {
+	    		color: $p_blue;
+	    		text-decoration: underline;
+	    	}
+
+	    	&:visited {
+	    		color: $s_blue_mid;
+	    		text-decoration: none;
+	    	}
+	}
+
+
 }
 
-/* Blog post */
-
-.post-title {
-  color: #303030;
-  a {
-    color: #303030;
-  }
+.breadcrumb>.active {
+	color: $s_gray_dk;
 }
 
-.post-title {
-  margin-top: 0;
+.label-default{
+	background-color: $s_gray_dk;
 }
 
-/* Meta data line below post title */
-
-.post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
+span.badge {
+	background: $s_gray_dk;
 }
 
-.post-meta {
-  font-size: 0.7em;
-  color: #b3b3b1;
-  margin: 1em 0 0;
+.breadcrumb {
+
+	background-color: $s_gray_lt;
+
+	a {
+		color: $s_blue_mid;
+		text-decoration: none;
+
+	    	&:hover {
+	    		color: $p_blue;
+	    		text-decoration: underline;
+	    	}
+
+	    	&:visited {
+	    		color: $s_blue_mid;
+	    	}
+	    }
+
 }
 
 /* Front page */
@@ -50,6 +69,37 @@ The main SCSS file for everything, yep
 .data-search {
 	background-color: $s_blue_dk;
 	color: $s_gray_lt;
+        height: 300px;
+        .find-data-autocomplete {
+            @include vertical-align
+        }
+}
+.data-search-img-layer {
+    height:  300px;
+    background: black;
+    @include vertical-align;
+}
+
+.data-search-img-0 {
+    background: url('http://take.ms/yrzRA') no-repeat center center;
+}
+
+.data-search-img-1 {
+    background: url('http://take.ms/uTDm7') no-repeat center center;
+}
+
+.data-search-img-2 {
+    background: url('http://take.ms/sKgoG') no-repeat center center;
+}
+
+
+
+.data-search-color-layer {
+    height: 300px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .resources-promo {
@@ -125,10 +175,13 @@ The main SCSS file for everything, yep
 
     	.preview-desc {
     		font-size: 0.9em;
+    		line-height: 1.5;
     		@include merriweather;
     	}
 
     }
+
+
 }
 
 .data-story-link {
@@ -162,9 +215,15 @@ The main SCSS file for everything, yep
         color: $s_gray_lt;
         text-decoration: none;
         font-size: 0.8em;
+        font-weight: 400;
 
         &:hover {
         	text-decoration: underline;
+        	color: $s_gray_lt;
+        }
+
+        &:visited {
+        	color: $s_gray_lt;
         }
 
         i {
@@ -186,17 +245,87 @@ The main SCSS file for everything, yep
     }
 }
 
-/* Everything else */
+/* Dataset page */
+
+.dataset-main {
+
+	h1, h2, h3, h4, h5, table {
+		@include sourcesans;
+		margin-bottom: 15px;
+	}
+
+	p {
+		@include merriweather;
+		line-height: 1.5;
+		font-size: 0.9em;
+	}
+
+	p.dataset-preview-msg {
+		font-size: 12px;
+	}
+
+	.preview-resource-title {
+		margin-top: 30px;
+	}
+
+	.el-margin {
+    	margin-bottom: 60px;
+    }
+}
+
+table a:not(.btn),.table a:not(.btn){text-decoration:none}
+
+th {
+	text-transform: uppercase;
+	color: $s_gray_dk;
+	font-size: 0.85em;
+}
+
+.table-content-centered {
+	text-align: center;
+}
 
 .resource-table-button {
     padding: 0px;
-    min-width: 2em;
+    min-width:1em;
+    min-height:1em;
+    border-radius: 50%;
+
+    .preview-check {
+		width: 17px;
+		height: 17px;
+		background-color: $s_gray_lt;
+		border: 1px solid $white;
+		border-radius: 50%;
+		color: white;
+
+		.fa-check-circle {
+			width: 17px;
+			height: 17px;
+			display: block;
+			line-height: 1;
+			padding: 0;
+			margin-top: -0.5px;
+			margin-left: -1px;
+		}
+
+	}
+
+}
+
+.paper-button-0 {
+	min-width: initial;
 }
 
 .resource-table-button[toggles][active]{
-	background: black;
-	.iron-icon {
-		color: white;
+
+	.preview-check {
+		background-color: $white;
+		color: $s_blue_dk;
+
+		&:hover {
+			color: $s_blue_mid;
+		}
 	}
 }
 
@@ -205,6 +334,229 @@ The main SCSS file for everything, yep
     margin-right: auto;
 }
 
+.px-spinner-0 .spinner.px-spinner {
+	border-left: 1.1em solid $s_blue_dk;
+}
+
+.aha-table-0 .columnChooser.aha-table {
+	-webkit-flex-direction: initial;
+	-ms-flex-direction: initial;
+	flex-direction: initial;
+}
+
+.aha-table-0 .th.aha-table {
+	text-transform: uppercase;
+	color: $s_gray_dk;
+	font-size: 0.85em;
+	@include sourcesans;
+	text-align: center;
+
+}
+
+.aha-table-0 .scroll-body.aha-table {
+	margin-top: 30px;
+}
+
+.px-dropdown-text-0 {
+	@include sourcesans;
+	font-size: 0.85em;
+	color: $s_blue_dk;
+	font-weight: 700;
+}
+
+.aha-table-0 .tr--filter.aha-table,
+.table-striped>tbody>tr:nth-of-type(odd),
+.aha-table-0 .striped.aha-table:nth-child(even) {
+	background-color: $table_stripes;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	border-top: 1px solid $table_rules;
+}
+
+.aha-table-0 .table.aha-table .td.aha-table, .aha-table-0 .table.aha-table .th.aha-table, .aha-table-0 .table.aha-table td.aha-table, .aha-table-0 .table.aha-table th.aha-table {
+	border: 1px solid $table_rules;
+}
+
+.aha-table-0 .text-input.aha-table, .aha-table-0 select.aha-table, .aha-table-0 textarea.aha-table {
+	border: 1px solid $table_rules;
+	@include sourcesans;
+}
+
+.aha-table-0 .text-input.aha-table, .aha-table-0 textarea.aha-table {
+	box-shadow: inset 0 0 0 1px $table_rules;
+}
+
+.px-dropdown-0 .dropcell.px-dropdown {
+	background-color: $table_stripes;
+	border: 1px solid $table_rules;
+	border-radius: 0px;
+}
+
+.px-dropdown-0 .dropcell.px-dropdown:hover {
+	background-color: $table_stripes;
+	border: 1px solid $table_rules;
+	border-radius: 0px;
+
+	.px-dropdown-text-0 {
+		color: $s_blue_lt;
+	}
+
+}
+
+.px-dropdown-chevron-0 iron-icon.px-dropdown-chevron {
+	color: $s_blue_dk;
+}
+
+/* Datasets landing page */
+
+.datasets-submenu {
+
+	.list-group {
+
+		margin-bottom: 60px;
+
+		a.list-group-item {
+			color: $s_blue_dk;
+
+			.list-group-item-truncate {
+				font-size: 0.9em;
+			}
+
+			&:hover {
+
+				color: $s_blue_lt;
+				text-decoration: underline;
+
+				.list-group-item-truncate {
+					color: $s_blue_lt;
+					text-decoration: underline;
+				}
+
+			}
+		}
+	}
+}
+
+.datasets-main-listing {
+	padding-left: 60px;
+}
+
+dataset {
+
+	padding-bottom: 40px;
+	padding-top: 20px;
+
+	h3 {
+		a {
+			&:hover {
+				color: $s_blue_lt;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+/* Departments landing page */
+
+.department-listing {
+	display: block;
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 40px;
+	padding-top: 20px;
+
+}
+
+.department-page-details {
+	padding-bottom: 40px;
+}
+
+/* Blog landing page */
+
+.article-thumb {
+	max-width: 480px;
+	float: none;
+	padding-left: 0px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  font-size: 0.7em;
+  color: $s_gray_dk;
+  margin: 1em 0 0;
+}
+
+.datasd-article {
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+/* Post pages */
+
+.post-title {
+	color: $p_black;
+}
+
+article.full-post {
+
+	.post-meta {
+		margin: 42px 0 30px 0;
+	}
+
+	section.share {
+
+		font-size: 1.3em;
+		line-height: 1;
+		margin-bottom: 15px;
+
+	}
+
+	section.post-content {
+		margin-bottom: 80px
+	}
+
+}
+
+.post-excerpt, .post-content {
+	
+	@include merriweather;
+	font-size: 0.95em;
+	line-height: 1.3547;
+
+	p {
+		margin: 0 0 1em;
+	}
+
+	ul {
+
+		margin: 0 0 1em;
+
+		li {
+			margin: 0 0 0.5em;
+		}
+	}
+
+	h4 {
+		line-height: 2.3;
+	}
+
+	.iframe-embed {	
+
+		iframe.story-embed {
+			margin: 60px 0 60px 0;
+		}
+	}
+}
+
+/* Everything else */
 
 .homepage-categories .thumbnail img {
 	height: 120px;
@@ -306,12 +658,7 @@ The main SCSS file for everything, yep
 	}
 }
 
-span.badge {
-	background: $p_blue;
-}
-.breadcrumb a {
-	color: $p_blue;
-}
+
 
 .list-group-item.active {
 	background: $p_blue;
@@ -577,16 +924,23 @@ span.badge {
 
     .preview-text {
 
-      	h5 {
-    		font-size: 0.9em;
-    	}
+	      	h5 {
+	    		font-size: 0.9em;
+	    	}
 
-    	.preview-desc {
-    		font-size: 1em;
-    	}
+	    	.preview-desc {
+	    		font-size: 0.9em;
+	    	}
 
-    }
-}
+	    }
+	}
+
+	.article-thumb {
+		max-width: 250px;
+		float: right;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
 
 }
 
@@ -665,7 +1019,3 @@ span.badge {
   		display:block !important;
 	}
 }
-
-
-
-
