@@ -13,7 +13,7 @@ Public Utilities currently has 160 sample sites for the City of San Diego drinki
 
 <!--more-->
 
-<h3> How To Interpret The Results </h3>
+<h4> How To Interpret The Results </h4>
 
 A value of "A" under coliform and/or E.coli means "absence," or that the latest test at that site was negative for indicator bacteria. A value of "P" means presence.
 

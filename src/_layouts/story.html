@@ -3,7 +3,7 @@ layout: default
 ---
 {% include breadcrumbs.html parent="Blog" %}
 
-<article class="post">
+<article class="post full-post">
     <div class="post-meta">
         <h2 class="post-title">{{ page.title }}</h2>
         <div class="cf post-meta-text">
@@ -14,11 +14,7 @@ layout: default
         </div>
     </div>
 
-    <section class="post-content">
-        {{content}}
-    </section>
-    <footer class="post-footer">
-        <section class="share">
+    <section class="share">
         {% for social in site.social %}
             {% if social.share_url != null %}
             <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{
@@ -31,5 +27,11 @@ layout: default
             </a>
             {% endif %}
         {% endfor %}
-        </section>
+    </section>
+
+    <section class="post-content">
+        {{content}}
+    </section>
+    <footer class="post-footer">
+        
     </footer>

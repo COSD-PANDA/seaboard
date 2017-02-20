@@ -7,6 +7,8 @@ The main SCSS file for everything, yep
 
 body {
 
+	color: $p_black;
+
 	a {
 		color: $s_blue_mid;
 		text-decoration: none;
@@ -434,6 +436,67 @@ dataset {
 	border-bottom: 1px solid #d6d6d6;
 	padding-bottom: 40px;
 	padding-top: 20px;
+}
+
+/* Post pages */
+
+.post-title {
+	color: $p_black;
+}
+
+article.full-post {
+
+	.post-meta {
+		margin: 42px 0 30px 0;
+	}
+
+	section.share {
+
+		font-size: 1.3em;
+		line-height: 1;
+		margin-bottom: 15px;
+
+	}
+
+	section.post-content {
+		margin-bottom: 80px
+	}
+
+}
+
+.post-excerpt, .post-content {
+	
+	@include merriweather;
+	font-size: 0.95em;
+	line-height: 1.3547;
+
+	p {
+		margin: 0 0 1em;
+	}
+
+	ul {
+
+		margin: 0 0 1em;
+
+		li {
+			margin: 0 0 0.5em;
+		}
+	}
+
+	h4 {
+		line-height: 2.3;
+	}
+
+	.iframe-embed {	
+		/*
+		padding-left: 0px;
+		padding-right: 0px;
+		*/
+
+		iframe.story-embed {
+			margin: 60px 0 60px 0;
+		}
+	}
 }
 
 /* Everything else */

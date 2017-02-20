@@ -435,16 +435,18 @@ a .hidden-link-text {
   #footer-bar {
     height: 30px; } }
 
-body a {
-  color: #005bbb;
-  text-decoration: none;
-  font-weight: 700; }
-  body a:hover {
-    color: #0098db;
-    text-decoration: underline; }
-  body a:visited {
+body {
+  color: #37424a; }
+  body a {
     color: #005bbb;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 700; }
+    body a:hover {
+      color: #0098db;
+      text-decoration: underline; }
+    body a:visited {
+      color: #005bbb;
+      text-decoration: none; }
 
 .breadcrumb > .active {
   color: #747678; }
@@ -716,6 +718,41 @@ dataset {
   border-bottom: 1px solid #d6d6d6;
   padding-bottom: 40px;
   padding-top: 20px; }
+
+/* Post pages */
+.post-title {
+  color: #37424a; }
+
+article.full-post .post-meta {
+  margin: 42px 0 30px 0; }
+
+article.full-post section.share {
+  font-size: 1.3em;
+  line-height: 1;
+  margin-bottom: 15px; }
+
+article.full-post section.post-content {
+  margin-bottom: 80px; }
+
+.post-excerpt, .post-content {
+  font-family: "Merriweather",Helvetica, Arial, sans-serif;
+  font-size: 0.95em;
+  line-height: 1.3547; }
+  .post-excerpt p, .post-content p {
+    margin: 0 0 1em; }
+  .post-excerpt ul, .post-content ul {
+    margin: 0 0 1em; }
+    .post-excerpt ul li, .post-content ul li {
+      margin: 0 0 0.5em; }
+  .post-excerpt h4, .post-content h4 {
+    line-height: 2.3; }
+  .post-excerpt .iframe-embed, .post-content .iframe-embed {
+    /*
+		padding-left: 0px;
+		padding-right: 0px;
+		*/ }
+    .post-excerpt .iframe-embed iframe.story-embed, .post-content .iframe-embed iframe.story-embed {
+      margin: 60px 0 60px 0; }
 
 /* Everything else */
 .homepage-categories .thumbnail img {

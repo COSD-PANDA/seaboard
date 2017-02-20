@@ -14,7 +14,7 @@ The City aims to sweep commercial streets about once per week, and residential s
 The best thing to do is check for signs before you park, but this guide will give you an overview of street sweeping in general, and where you might get a ticket.
 <!--more-->
 
-<h3>An overview of street sweeping schedules</h3>
+<h4>An overview of street sweeping schedules</h4>
 As of the last revision of the street sweeping schedules in March 2015, more than 27,000 city blocks were part of the street sweeping program.
 
 Just under two-thirds of streets are scheduled to be swept one day out of the week every other month, either in odd months or even months. The remaining streets are swept monthly, at a frequency ranging from one day out of the month to every day between both sides of the street.
@@ -25,7 +25,7 @@ Knowing the sweeping schedule of your own street is important so you can move yo
 
 
 
-<h3>Where signs are posted versus not posted</h3>
+<h4>Where signs are posted versus not posted</h4>
 About 90 percent of City blocks that are swept do not have a sign posted to restrict parking during street sweeping. For those blocks (the blue ones on the map) residents should do their part to help the environment and move their cars, although they won't be ticketed if they don't.
 
 The remaining 9 percent or so (in orange) do have signs posted that restrict parking during street sweeping, and any parked cars could be ticketed.
@@ -36,7 +36,7 @@ Some of the areas with posted signs include Downtown, Mission Beach, Ocean Beach
 
 
 
-<h3>Streets swept weekly</h3>
+<h4>Streets swept weekly</h4>
 Out of the blocks with posted signs (displayed below), about 1,300 have street sweeping scheduled weekly. The majority of those have one or two days where sweeping could take place, but some have as many as five days of possible sweeping between both sides of the street. With the exception of Mission Boulevard, streets downtown have the busiest sweeping schedules.
 
 The good news about Downtown is that the sweeping is mostly scheduled for between 3 and 6 a.m. Mission Boulevard is swept between 8 a.m. and 10 a.m.
@@ -44,14 +44,14 @@ The good news about Downtown is that the sweeping is mostly scheduled for betwee
 {% include story-embed.html col-md="12" url="https://cityofsandiego.carto.com/u/cityofsandiego-admin/viz/454b8824-cd47-4c72-8f80-9c02c9c32b1c/embed_map" %}
 
 
-<h3>Streets swept every other week </h3>
+<h4>Streets swept every other week </h4>
 North Park and La Jolla residents have to remember to park carefully four specific days out of the month. Some of these blocks have sweeping scheduled on the same day of the week, and other blocks have sweeping scheduled on a Monday one week and on a Tuesday the next week. This schedule is especially tricky during months that begin on a Tuesday. For example, in November 2016, the second and fourth Mondays are in different weeks than the second and fourth Tuesdays.
 
 {% include story-embed.html col-md="12" url="https://cityofsandiego.carto.com/u/cityofsandiego-admin/viz/7bd9e870-3741-11e6-83ca-0ea31932ec1d/embed_map" %}
 
 
 
-<h3>Need more help?</h3>
+<h4>Need more help?</h4>
 
 If you're like me, you probably still manage to mess up sometimes and be that lone car parked on the block during street sweeping, often with a little yellow envelope on your windshield.
 
