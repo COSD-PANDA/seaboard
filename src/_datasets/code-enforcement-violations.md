@@ -3,20 +3,6 @@ schema: default
 title: Code Enforcement Violations
 department: Development Services
 category: Economy and Community
-notes: >-
-    Code Enforcement Violations as provided by Development Services Department's
-    <a href="https://www.sandiego.gov/development-services/opendsd"
-    target="_blank">OpenDSD</a>. For more information and to be able to
-    search code enforcement cases, please visit
-    <a href="https://www.sandiego.gov/development-services/opendsd"
-    target="_blank">OpenDSD</a>. To download a zipped XML please see
-    <a href="https://www.sandiego.gov/development-services/opendsd/codenforcement"
-    target="_blank"> OpenDSD's Code Enforcement Activity Reports</a>.
-    Alternatively, you can use DSD's
-    <a href="https://www.sandiego.gov/development-services/opendsd/developers"
-    target="_blank">API</a> directly. To learn more about the process,
-    please see <a href="https://www.sandiego.gov/development-services/opendsd/codeenfreports"
-    target="_blank">Code Enforcement Reports</a>.
 resources:
   - name: Code Enforcement Cases (past 6 months)
     url: >-
@@ -44,3 +30,18 @@ license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Code Enforcement Violations as provided by Development Services Department's
+<a href="https://www.sandiego.gov/development-services/opendsd"
+target="_blank">OpenDSD</a>.
+<!--more-->
+For more information and to be able to
+search code enforcement cases, please visit
+<a href="https://www.sandiego.gov/development-services/opendsd"
+target="_blank">OpenDSD</a>. To download a zipped XML please see
+<a href="https://www.sandiego.gov/development-services/opendsd/codenforcement"
+target="_blank"> OpenDSD's Code Enforcement Activity Reports</a>.
+Alternatively, you can use DSD's
+<a href="https://www.sandiego.gov/development-services/opendsd/developers"
+target="_blank">API</a> directly. To learn more about the process,
+please see <a href="https://www.sandiego.gov/development-services/opendsd/codeenfreports"
+target="_blank">Code Enforcement Reports</a>.

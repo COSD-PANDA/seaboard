@@ -4,12 +4,6 @@ title: Police Calls for Service
 department: Police
 category:
   - Public Safety
-notes: >-
-  Calls dispatched by the San Diego Police Department's communications
-  dispatch center. Data regarding sensitive incidents including domestic
-  violence, child abuse, suicide, sex crimes and stalking are excluded.
-  Priority Definitions are provided in PDF.
-
 resources:
   - name: Police Calls for Service (year-to-date)
     url: >-
@@ -44,3 +38,8 @@ date_modified: '2017-01-20'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Calls dispatched by the San Diego Police Department's communications
+dispatch center. Data regarding sensitive incidents including domestic
+violence, child abuse, suicide, sex crimes and stalking are excluded.
+Priority Definitions are provided in
+<a href="http://seshat.datasd.org.s3.amazonaws.com/pd/pd_cfs_priority_defs_datasd.pdf">PDF</a>.

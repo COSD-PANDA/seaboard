@@ -5,9 +5,6 @@ department: GIS
 category:
   - City Management
   - Economy and Community
-notes: >-
-  Represents the geographic boundaries for the City of San Diego community land
-  use policy plans specific to these geographic areas.
 resources:
   - name: Community Planning District Boundaries
     url: >-
@@ -27,3 +24,5 @@ date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Represents the geographic boundaries for the City of San Diego community land
+use policy plans specific to these geographic areas.

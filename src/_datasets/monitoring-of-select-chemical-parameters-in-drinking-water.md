@@ -5,13 +5,6 @@ department: Public Utilities
 category:
   - Energy and Environment
   - City Infrastructure
-notes: >-
-  Results of tests on drinking water for alkalinity, color, turbidity, hardness,
-  conductivity, total dissolved solids, and for selected anions. These results
-  are reported monthly to the Safe Drinking Water Information System managed by
-  the State of California. This dataset does not include <a
-  href="/dataset/monitoring-indicator-bacteria-drinking-water/"
-  target="_blank">microbiological parameters</a>.
 resources:
   - name: Drinking Water Tests
     url: >-
@@ -31,3 +24,9 @@ date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Results of tests on drinking water for alkalinity, color, turbidity, hardness,
+conductivity, total dissolved solids, and for selected anions.
+<!--more-->
+These results are reported monthly to the Safe Drinking Water Information
+System managed by the State of California. This dataset does not include
+<a href="/dataset/monitoring-indicator-bacteria-drinking-water/" target="_blank">microbiological parameters</a>.

@@ -5,10 +5,6 @@ department: GIS
 category:
   - Culture and Recreation
   - City Infrastructure
-notes: >-
-  Point feature layer of library locations with associated website and contact
-  information, created by the County of San Diego Department of Public Works
-  GIS, in conjunction with San Diego County Library (SDCL).
 resources:
   - name: Library Locations (Shapefile)
     url: >-
@@ -32,3 +28,6 @@ date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Point feature layer of library locations with associated website and contact
+information, created by the County of San Diego Department of Public Works
+GIS, in conjunction with San Diego County Library (SDCL).

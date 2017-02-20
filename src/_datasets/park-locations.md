@@ -5,7 +5,6 @@ department: GIS
 category:
   - Culture and Recreation
   - City Infrastructure
-notes: Properties managed by the City of San Diego Parks & Recreation Department.
 resources:
   - name: Park Locations
     url: >-
@@ -25,3 +24,4 @@ date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Properties managed by the City of San Diego Parks & Recreation Department.

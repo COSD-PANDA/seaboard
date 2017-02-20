@@ -4,12 +4,6 @@ title: Data Inventory
 department: Performance & Analytics
 category:
   - City Management
-notes: >-
-  Inventory of datasets targeted for release on the Open Data Portal.
-  This is <strong>not</strong> a list of datasets currently published, and we still have
-  a lot of work ahead of us to extract and structure these.
-  To read more about the inventory and the process, please see the <a href="https://datasd.gitbooks.io/open-data-implementation-update-2016/content/main/prioritization.html"
-  target="_blank">Open Data Implementation Update Report</a>.
 resources:
   - name: DataSD.org Data Inventory
     url: >-
@@ -21,3 +15,10 @@ date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Inventory of datasets targeted for release on the Open Data Portal.
+<!--more-->
+This is <strong>not</strong> a list of datasets currently published, and we still have
+a lot of work ahead of us to extract and structure these.
+To read more about the inventory and the process, please see the
+<a href="https://datasd.gitbooks.io/open-data-implementation-update-2016/content/main/prioritization.html"
+target="_blank">Open Data Implementation Update Report</a>.

@@ -4,10 +4,6 @@ title: Permits Issued
 department: Development Services
 category:
   - Economy & Community
-notes: >-
-  Permits issued as provided by Development Services Department's
-  <a href="https://www.sandiego.gov/development-services/opendsd"
-  target="_blank">OpenDSD</a>.
 resources:
   - name: Permits Issued (year-to-date)
     url: >-
@@ -31,3 +27,5 @@ date_modified: '2017-02-20'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Permits issued as provided by Development Services Department's
+<a href="https://www.sandiego.gov/development-services/opendsd" target="_blank">OpenDSD</a>.

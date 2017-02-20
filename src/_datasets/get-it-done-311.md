@@ -3,10 +3,6 @@ schema: default
 title: Get It Done (311)
 department: Performance & Analytics
 category: City Management
-notes: >-
-    Requests for service made by residents via the
-    <a href="https://www.sandiego.gov/get-it-done" target="_blank">
-    Get It Done applications</a>.
 resources:
   - name: Get It Done Requests
     url: >-
@@ -34,3 +30,6 @@ license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Requests for service made by residents via the
+<a href="https://www.sandiego.gov/get-it-done" target="_blank">
+Get It Done applications</a>.

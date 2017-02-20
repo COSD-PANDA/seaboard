@@ -4,9 +4,6 @@ title: Parking Meter Transactions
 department: City Treasurer
 category:
   - Transportation
-notes: >-
-  All transactions for all parking meters. The raw datasets are large and
-  may be difficult to work with. Aggregated versions are also available below.
 resources:
   - name: Parking meters transactions - Year-to-date (raw)
     url: >-
@@ -42,3 +39,5 @@ date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+All transactions for all parking meters. The raw datasets are large and
+may be difficult to work with. Aggregated versions are also available below.

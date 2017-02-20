@@ -5,10 +5,6 @@ department: GIS
 category:
   - Transportation
   - Energy and Environment
-notes: >-
-  Existing (2015) Bike facilities in the San Diego Region. This dataset was
-  developed for the primary purpose of updating the SANDAG San Diego Regional
-  Bike Map and the interactive bike map on the iCommute website.
 resources:
   - name: Bike Route Lines
     url: >-
@@ -28,3 +24,6 @@ date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Existing (2015) Bike facilities in the San Diego Region. This dataset was
+developed for the primary purpose of updating the SANDAG San Diego Regional
+Bike Map and the interactive bike map on the iCommute website.
