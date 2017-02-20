@@ -1,9 +1,10 @@
-<div class="col-sm-{{ include.col-sm }} col-md-{{ include.col-md }}">
+<div class="col-sm-{{ include.col-sm }} col-md-{{ include.col-md }} iframe-embed">
     {% if include.title %}
         <h4 class="embed_title">{{ include.title }}</h4>
     {% endif %}
     {% assign height = include.height | default: "520" %}
     <iframe
+            class="story-embed"
             width='100%'
             height="{{ height }}"
             frameborder='0'

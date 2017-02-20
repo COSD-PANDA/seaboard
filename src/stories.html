@@ -1,5 +1,5 @@
 ---
-title: Blog Posts
+title: Blog
 layout: default
 permalink: /stories/
 ---
@@ -7,27 +7,30 @@ permalink: /stories/
 
 {% for story in site.stories %}
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-    <div class="article-thumb col-md-3">
-        <img src="{{ story.thumbnail }}" width="100%" alt="{{ story.title }} image" />
-    </div>
-    <div class="article-item col-md-8">
+<article class="post datasd-article" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+    
         <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ story.url }}"
-                    itemprop="url">{{ story.title }}</a></h2>
+            <h2 class="post-title" itemprop="name">{{ story.title }}</h2>
         </header>
-        <div class="post-meta">
-            Posted <time datetime="{{ story.date | date: '%B %d, %Y' }}">{{
-                story.date | date: '%B %d, %Y' }}</time>{% if story.author.name
-            %} by {{ story.author.name }}{% endif %}
+        <div class="row">
+            <div class="article-item col-sm-12">
+                <div class="post-meta">
+                    Posted <time datetime="{{ story.date | date: '%B %d, %Y' }}">{{
+                        story.date | date: '%B %d, %Y' }}</time>{% if story.author.name
+                    %} by {{ story.author.name }}{% endif %}
+                </div>
+                <div class="article-thumb">
+                    <img src="{{ story.thumbnail }}" width="100%" alt="{{ story.title }} image" />
+                </div>
+                <section class="post-excerpt" itemprop="description">
+                    <p>{{ story.excerpt }}</p>
+                </section>
+
+                <div class="post-more">
+                    <p><a href="{{ story.url }}">Read more</a></p>
+                </div>
+            </div>
         </div>
-        <section class="post-excerpt" itemprop="description">
-            <p>{{ story.excerpt | strip_html | truncatewords: 45 }}</p>
-        </section>
-        <div class="post-more">
-            <p><a href="{{ story.url }}">Read more</a></p>
-        </div>
-    </div>
 </article>
 
 {% endfor %}

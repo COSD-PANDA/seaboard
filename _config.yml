@@ -85,6 +85,8 @@ defaults:
     values:
       layout: story
 
+# Blog setting
+excerpt_separator: <!--more-->
 
 # Markdown settings
 markdown: kramdown
