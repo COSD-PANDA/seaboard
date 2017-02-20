@@ -26,11 +26,12 @@ layout: front
                             var noResults = {
                                 "title": "Sorry, we couldn't find anything",
                                 "type": "No Result",
-                                "url": ""
+                                "url": "none"
                             }
                             function onSelect(event) {
                                     var selected = event.detail.text;
-                                    window.location.href = event.detail.value;
+                                    if (event.detail.value !== 'none')
+                                      window.location.href = event.detail.value;
                             }
 
                             function onChange(event) {
