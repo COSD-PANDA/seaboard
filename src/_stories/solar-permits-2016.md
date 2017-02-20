@@ -17,7 +17,11 @@ Even before City Council passed Mayor Faulconer's Climate Action Plan, our Devel
 
 Mostly, the 2016 sample of solar you see here is thanks to smart San Diegans doing what's good for their bank account and the environment all at the same time.
 
+<div class="row">
 {% include story-embed.html col-md="12" url="https://cityofsandiego.carto.com/u/cityofsandiego-admin/viz/08a24cf0-80eb-11e6-b5c2-0e3ebc282e83/embed_map"%}
+</div>
 
+<div class="row">
 {% include story-embed.html col-md="6" url="https://plot.ly/~MrMaksimize/329.embed"%}
 {% include story-embed.html col-md="6" url="https://cityofsandiego.carto.com/u/cityofsandiego-admin/viz/d57f77ff-c375-4ec0-bf4d-de79fe6ecf36/embed_map"%}
+</div>
