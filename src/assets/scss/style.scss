@@ -47,6 +47,37 @@ span.badge {
 .data-search {
 	background-color: $s_blue_dk;
 	color: $s_gray_lt;
+        height: 300px;
+        .find-data-autocomplete {
+            @include vertical-align
+        }
+}
+.data-search-img-layer {
+    height:  300px;
+    background: black;
+    @include vertical-align;
+}
+
+.data-search-img-0 {
+    background: url('http://take.ms/yrzRA') no-repeat center center;
+}
+
+.data-search-img-1 {
+    background: url('http://take.ms/uTDm7') no-repeat center center;
+}
+
+.data-search-img-2 {
+    background: url('http://take.ms/sKgoG') no-repeat center center;
+}
+
+
+
+.data-search-color-layer {
+    height: 300px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .resources-promo {
@@ -128,7 +159,7 @@ span.badge {
 
     }
 
-    
+
 }
 
 .data-story-link {
@@ -301,8 +332,8 @@ th {
 	font-weight: 700;
 }
 
-.aha-table-0 .tr--filter.aha-table, 
-.table-striped>tbody>tr:nth-of-type(odd), 
+.aha-table-0 .tr--filter.aha-table,
+.table-striped>tbody>tr:nth-of-type(odd),
 .aha-table-0 .striped.aha-table:nth-child(even) {
 	background-color: $table_stripes;
 }
@@ -355,7 +386,7 @@ th {
 
 		a.list-group-item {
 			color: $s_blue_dk;
-			
+
 			.list-group-item-truncate {
 				font-size: 0.9em;
 			}
@@ -369,7 +400,7 @@ th {
 					color: $s_blue_lt;
 					text-decoration: underline;
 				}
-				
+
 			}
 		}
 	}
@@ -899,7 +930,3 @@ dataset {
   		display:block !important;
 	}
 }
-
-
-
-
