@@ -307,7 +307,7 @@ img.logo {
     color: #37424a;
     font-size: 0.85em;
     font-weight: 400;
-    /*line-height: 34px;*/ }
+    line-height: 34px; }
     #sd-bar a:visited {
       color: #37424a;
       background-color: #e0e1dd; }
@@ -474,6 +474,7 @@ span.badge {
 
 .data-search {
   background-color: #00549f;
+  position: relative;
   color: #e0e1dd;
   height: 300px; }
   .data-search .find-data-autocomplete {
@@ -488,14 +489,27 @@ span.badge {
   top: 50%;
   transform: translateY(-50%); }
 
+.data-search-box-layer {
+  height: 300px;
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  top: 0; }
+
 .data-search-img-0 {
-  background: url("http://take.ms/yrzRA") no-repeat center center; }
+  background: url("/assets/img/front/midview-historical.png") no-repeat center center;
+  opacity: 0.3; }
 
 .data-search-img-1 {
-  background: url("http://take.ms/uTDm7") no-repeat center center; }
+  background: url("/assets/img/front/midview-historical.png") no-repeat center center;
+  opacity: 0.3; }
 
 .data-search-img-2 {
-  background: url("http://take.ms/sKgoG") no-repeat center center; }
+  background: url("/assets/img/front/midview-historical.png") no-repeat center center;
+  opacity: 0.3; }
 
 .data-search-color-layer {
   height: 300px;

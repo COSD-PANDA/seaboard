@@ -68,6 +68,7 @@ span.badge {
 
 .data-search {
 	background-color: $s_blue_dk;
+	position: relative;
 	color: $s_gray_lt;
         height: 300px;
         .find-data-autocomplete {
@@ -80,16 +81,30 @@ span.badge {
     @include vertical-align;
 }
 
+.data-search-box-layer {
+	height: 300px;
+	width: 970px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	float:left;
+	top:0;
+}
+
 .data-search-img-0 {
-    background: url('http://take.ms/yrzRA') no-repeat center center;
+    background: url('/assets/img/front/midview-historical.png') no-repeat center center;
+    opacity: 0.3;
 }
 
 .data-search-img-1 {
-    background: url('http://take.ms/uTDm7') no-repeat center center;
+    background: url('/assets/img/front/midview-historical.png') no-repeat center center;
+    opacity: 0.3;
 }
 
 .data-search-img-2 {
-    background: url('http://take.ms/sKgoG') no-repeat center center;
+    background: url('/assets/img/front/midview-historical.png') no-repeat center center;
+    opacity: 0.3;
 }
 
 

@@ -5,6 +5,8 @@ layout: front
 <template is="dom-bind">
     <div class="container-fluid data-search data-search-color-layer">
         <div class="data-search-img-layer">
+        </div>
+        <div class="data-search-box-layer">
             <div class="container find-data-autocomplete">
                 <div class="col-12">
                 <h2>
@@ -51,7 +53,7 @@ layout: front
                                         }
                     </script>
                     <paper-autocomplete
-                        label="Search by dataset name, topic or City department" id="find-data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
+                        label='Search by dataset name, topic or City department' id="find-data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
                         <template autocomplete-custom-template>
                             <paper-item on-tap="_onSelect" id$="[[_getSuggestionId(index)]]" role="option" aria-selected="false">
                             <span class="autocomplete-suggestions-type">[[item.type]]:</span> <span class="autocomplete-suggestions-result">[[item.title]]</span>
