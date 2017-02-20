@@ -16,6 +16,7 @@ layout: front
                     <script>
                             var searchIndex;
                             var findData = document.querySelector('#find-data');
+                            var findDataIcon = document.querySelector('.find-data-icon');
                             findData.addEventListener('autocomplete-selected', onSelect);
                             findData.addEventListener('autocomplete-change', onChange);
 
@@ -34,6 +35,7 @@ layout: front
 
                             function onChange(event) {
                                     var search = event.detail.option.text.toLowerCase();
+                                    findDataIcon.classList.add('hidden')
                                     var searchIndexURL = "{{ settings.BASE_URL }}/searchindex.json";
                                     if (!searchIndex) {
                                             $.getJSON(searchIndexURL, function(data){
