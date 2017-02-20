@@ -19,7 +19,7 @@ resources:
       https://datasd-prod.s3.amazonaws.com/sde/parks/CITY.PARKS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-date_issued: '2017-02-13'
+date_issued: '2016-06-17'
 date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov

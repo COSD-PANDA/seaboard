@@ -9,8 +9,8 @@ resources:
     url: 'https://datasd-prod.s3.amazonaws.com/sb272_catalog/it_sb272_datasd.csv'
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-date_issued: '2017-02-13'
-date_modified: '2017-02-17'
+date_issued: '2016-08-01'
+date_modified: '2016-08-01'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

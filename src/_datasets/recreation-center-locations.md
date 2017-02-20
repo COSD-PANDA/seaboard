@@ -2,6 +2,8 @@
 schema: default
 title: 'Recreation Center Locations'
 department: GIS
+category:
+  - Culture and Recreation
 resources:
   - name: Recreation Centers (Shapefile)
     url: >-
@@ -20,8 +22,8 @@ resources:
       https://datasd-prod.s3.amazonaws.com/sde/rec_centers/CITY.REC_CENTERS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-category:
-  - Culture and Recreation
+date_issued: '2016-06-16'
+date_modified: '2016-07-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

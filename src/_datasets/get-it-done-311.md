@@ -24,7 +24,7 @@ resources:
     url: >-
       http://san-diego.spotreporters.com/open311/v2/services.json
     format: json
-date_issued: '2017-02-13'
+date_issued: '2016-05-26'
 date_modified: '2017-02-20'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
