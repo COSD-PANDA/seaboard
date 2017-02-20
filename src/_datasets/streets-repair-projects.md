@@ -20,7 +20,6 @@ notes: >-
   <br>
   <br>
   <b>Types of street repair:</b>
-  <br>
   <ul>
   <li><b>Asphalt Paving / Overlay / Inlay</b> - Placement of a new layer of asphalt
   at a thickness of 1.5 to 3 inches over an old worn-out street surface or
