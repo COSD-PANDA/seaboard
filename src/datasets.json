@@ -3,8 +3,8 @@
 [{% for dataset in site.datasets %}
   {
     "title": {{ dataset.title | jsonify }},
-    "department": {{ dataset.department | jsonify }}{% if dataset.notes != "" %},
-    "notes": {{ dataset.notes | jsonify }}{% endif %}{% if dataset.notes != "" %},
+    "department": {{ dataset.department | jsonify }}{% if dataset.excerpt != "" %},
+    "notes": {{ dataset.excerpt | jsonify }}{% endif %}{% if dataset.excerpt != "" %},
     "category": {{ dataset.category | jsonify }}{% endif %},
     "url": "{{ site.baseurl }}{{ dataset.url }}"
   }{% unless forloop.last %},{% endunless %}{% endfor %}
