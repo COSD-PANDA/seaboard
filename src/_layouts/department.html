@@ -1,26 +1,26 @@
 ---
 layout: default
 ---
-{% include breadcrumbs.html parent="departments" %}
+{% include breadcrumbs.html parent="Departments" %}
 
 <div data-component="view-switcher">
   <div class="row" data-hook="view" data-view="display">
-    {% if page.logo and page.logo != empty %}
-    <div class="col-sm-3">
-      <a href="{{ page.logo }}" class="thumbnail"><img src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
-    </div>
-    <div class="col-sm-9">
-    {% else %}
     <div class="col-sm-12">
-    {% endif %}
-      <h1>
-        {{ page.title }}
-        <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
-      </h1>
-      <p>{{ page.description }}</p>
+      <div class="row department-page-details">
+        <div class="col-sm-12">
+        <h2>
+          {{ page.title }}
+          <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
+        </h2>
+        <p>{{ page.description }}</p>
+        </div>
+      </div>
+
+      {% assign dataset_count = site.datasets | where:"department", department.title | size %}
+
       <div data-component="datasets-list" data-department="{{ page.title | slugify }}">
-        <h3 class="datasets-count" data-hook="datasets-count"></h3>
         <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
+        <span class="badge">{{dataset_count}}</span>
         <div data-hook="datasets-items"></div>
       </div>
     </div>
