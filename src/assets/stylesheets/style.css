@@ -482,6 +482,11 @@ span.badge {
     top: 50%;
     transform: translateY(-50%); }
 
+.find-data-icon {
+  position: absolute;
+  right: 35px;
+  bottom: 15px; }
+
 .data-search-img-layer {
   height: 300px;
   background: black;

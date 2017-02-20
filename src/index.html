@@ -52,6 +52,7 @@ layout: front
                                                 findData.suggestions(suggestionsList)
                                         }
                     </script>
+
                     <paper-autocomplete
                         label='Search by dataset name, topic or City department' id="find-data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
                         <template autocomplete-custom-template>
@@ -61,6 +62,7 @@ layout: front
                             </paper-item>
                         </template>
                     </paper-autocomplete>
+                    <i class="find-data-icon fa fa-search"></i>
                 </div><!-- column -->
             </div>
         </div>
