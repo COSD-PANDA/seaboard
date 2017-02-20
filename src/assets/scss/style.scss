@@ -40,6 +40,26 @@ span.badge {
 	background: $s_gray_dk;
 }
 
+.breadcrumb {
+
+	background-color: $s_gray_lt;
+
+	a {
+		color: $s_blue_mid;
+		text-decoration: none;
+
+	    	&:hover {
+	    		color: $p_blue;
+	    		text-decoration: underline;
+	    	}
+
+	    	&:visited {
+	    		color: $s_blue_mid;
+	    	}
+	    }
+
+}
+
 /* Front page */
 
 .front-page-container {
@@ -209,6 +229,10 @@ span.badge {
 		font-size: 0.9em;
 	}
 
+	p.dataset-preview-msg {
+		font-size: 12px;
+	}
+
 	.preview-resource-title {
 		margin-top: 30px;
 	}
@@ -216,26 +240,6 @@ span.badge {
 	.el-margin {
     	margin-bottom: 60px;
     }
-}
-
-.breadcrumb {
-
-	background-color: $s_gray_lt;
-
-	a {
-		color: $s_blue_mid;
-		text-decoration: none;
-
-	    	&:hover {
-	    		color: $p_blue;
-	    		text-decoration: underline;
-	    	}
-
-	    	&:visited {
-	    		color: $s_blue_mid;
-	    	}
-	    }
-
 }
 
 table a:not(.btn),.table a:not(.btn){text-decoration:none}
@@ -246,18 +250,34 @@ th {
 	font-size: 0.85em;
 }
 
+.table-content-centered {
+	text-align: center;
+}
+
 .resource-table-button {
     padding: 0px;
-    min-width:14px;
-    min-height:14px;
+    min-width:1em;
+    min-height:1em;
     border-radius: 50%;
 
     .preview-check {
-		width: 12px;
-		height: 12px;
-		background-color: white;
-		border: 1px solid $s_gray_mid;
+		width: 17px;
+		height: 17px;
+		background-color: $s_gray_lt;
+		border: 1px solid $white;
 		border-radius: 50%;
+		color: white;
+
+		.fa-check-circle {
+			width: 17px;
+			height: 17px;
+			display: block;
+			line-height: 1;
+			padding: 0;
+			margin-top: -0.5px;
+			margin-left: -1px;
+		}
+
 	}
 
 }
@@ -269,8 +289,12 @@ th {
 .resource-table-button[toggles][active]{
 
 	.preview-check {
-		background-color: $s_blue_dk;
-		border-color: $s_blue_dk;
+		background-color: $white;
+		color: $s_blue_dk;
+
+		&:hover {
+			color: $s_blue_mid;
+		}
 	}
 }
 
@@ -281,6 +305,12 @@ th {
 
 .px-spinner-0 .spinner.px-spinner {
 	border-left: 1.1em solid $s_blue_dk;
+}
+
+.aha-table-0 .columnChooser.aha-table {
+	-webkit-flex-direction: initial;
+	-ms-flex-direction: initial;
+	flex-direction: initial;
 }
 
 .aha-table-0 .th.aha-table {
@@ -488,10 +518,6 @@ article.full-post {
 	}
 
 	.iframe-embed {	
-		/*
-		padding-left: 0px;
-		padding-right: 0px;
-		*/
 
 		iframe.story-embed {
 			margin: 60px 0 60px 0;
