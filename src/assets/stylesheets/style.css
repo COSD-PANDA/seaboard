@@ -495,14 +495,13 @@ span.badge {
   transform: translateY(-50%); }
 
 .data-search-box-layer {
+  position: relative;
+  float: right;
   height: 300px;
-  width: 970px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
+  width: 100%;
+  margin-top: -300px;
   padding-left: 15px;
-  float: left;
-  top: 0; }
+  padding-right: 15px; }
 
 .data-search-img-0 {
   background: url("/assets/img/front/midview-historical.png") no-repeat center center;
@@ -1094,18 +1093,8 @@ h4.bottom-box-head {
 @media only screen and (min-width: 992px) {
   .page.container .page-content {
     padding: 50px; }
-  #header-image.small {
-    background-position-x: center;
-    background-position-y: 0px; }
-  #header-image {
-    background-position-x: center;
-    background-position-y: 0px; }
   #datasd-logo-container {
-    margin-top: -2px; }
-  #cta-box-bottom-left-container, #datasd-logo-box, #contact-box {
-    display: block; }
-  #mc_embed_signup_box h4.bottom-box-head {
-    padding-top: 0px; } }
+    margin-top: -2px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -1117,7 +1106,7 @@ h4.bottom-box-head {
     background-position-x: center;
     background-position-y: 0px; } }
 
-@media (max-width: 767 px) {
+@media (max-width: 767px) {
   .navbar-header {
     float: none; }
   .navbar-left, .navbar-right {
