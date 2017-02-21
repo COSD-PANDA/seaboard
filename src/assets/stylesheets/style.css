@@ -504,15 +504,24 @@ span.badge {
   padding-right: 15px; }
 
 .data-search-img-0 {
-  background: url("/assets/img/front/midview-historical.png") no-repeat center center;
+  background-image: url("/assets/img/front/midview-historical.png");
+  background-size: auto 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
   opacity: 0.3; }
 
 .data-search-img-1 {
-  background: url("/assets/img/front/midview-historical.png") no-repeat center center;
+  background-image: url("/assets/img/front/midview-historical.png");
+  background-size: auto 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
   opacity: 0.3; }
 
 .data-search-img-2 {
-  background: url("/assets/img/front/midview-historical.png") no-repeat center center;
+  background-image: url("/assets/img/front/midview-historical.png");
+  background-size: auto 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
   opacity: 0.3; }
 
 .data-search-color-layer {
@@ -529,7 +538,8 @@ span.badge {
   .resources-promo ul {
     padding-top: 7.2857px; }
   .resources-promo .col-sm-3 {
-    height: 150px; }
+    height: 150px;
+    margin-bottom: 60px; }
     .resources-promo .col-sm-3 .resources-box {
       height: 150px;
       background: linear-gradient(#009581, #56a494);
@@ -542,6 +552,8 @@ span.badge {
         top: 50%;
         transform: translateY(-50%);
         color: white; }
+  .resources-promo .col-sm-3:last-child {
+    margin-bottom: 0px; }
 
 .data-stories-rail {
   padding-top: 7.2857px; }
@@ -1072,16 +1084,8 @@ h4.bottom-box-head {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  #mc_embed_signup_box h4.bottom-box-head {
-    padding-top: 10px; } }
-
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  .data-story-preview-container {
-    margin-bottom: 0px; }
-  .data-stories-rail {
-    margin-bottom: 60px; }
   .main-footer-container .right-footer-col {
     border-right: 1px dotted #747678; }
   .main-footer-container ul.link-list {
@@ -1094,6 +1098,12 @@ h4.bottom-box-head {
   .sd-navbar-top.navbar-default .navbar-header {
     height: 0px;
     float: right; }
+  .resources-promo .col-sm-3 {
+    margin-bottom: 0px; }
+  .data-story-preview-container {
+    margin-bottom: 0px; }
+  .data-stories-rail {
+    margin-bottom: 60px; }
   .data-story-preview-container .preview-text h5 {
     font-size: 0.9em; }
   .data-story-preview-container .preview-text .preview-desc {
