@@ -88,39 +88,39 @@ layout: front
 
 <div class="container-fluid made-data">
   <div class="container">
-    <div class="col-12 homepage-data-stories">
+    <div class="col-12 homepage-trends">
       <h2>See trends</h2>
-        <div class="row data-stories-rail">
-              {% assign story = 0 %}
-              {% for data_story in site.data.data_stories %}
-                {% if data_story.featured == true %}
-                    {% assign story_modulo = story | modulo:3 %}
-                    {% if story_modulo == 0 and story != 0 %}
+        <div class="row trends-rail">
+              {% assign trend_ct = 0 %}
+              {% for trend in site.data.trends %}
+                {% if trend.featured == true %}
+                    {% assign trend_modulo = trend_ct | modulo:3 %}
+                    {% if trend_modulo == 0 and trend_ct != 0 %}
                       </div>
-                      <div class="row data-stories-rail">
+                      <div class="row trends-rail">
                     {% endif %}
-                        <div class="col-sm-4 data-story-preview-container">
-                          <a href="{{ data_story.url }}"
-                              class="data-story-link" title="{{ data_story.title }}">
-                          {% if data_story.img and data_story.img != empty %}
-                              <img src="{{ data_story.img }}" alt="{{ data_story.title }}">
+                        <div class="col-sm-4 trend-preview-container">
+                          <a href="{{ trend.url }}"
+                              class="trend-link" title="{{ trend.title }}">
+                          {% if trend.img and trend.img != empty %}
+                              <img src="{{ trend.img }}" alt="{{ trend.title }}">
                           {% endif %}
                           </a>
                           <div class="preview-text">
                             <h5>
-                              <a href="{{ data_story.url }}" title="{{ data_story.title }}">
-                                {{ data_story.title }}
+                              <a href="{{ trend.url }}" title="{{ trend.title }}">
+                                {{ trend.title }}
                               </a>
                             </h5>
                             <p class="preview-desc">
-                              {{ data_story.intro }}
+                              {{ trend.intro }}
                             </p>
                           </div>
                         </div>
-                    {% assign story = story | plus: 1 %}
+                    {% assign trend_ct = trend_ct | plus: 1 %}
                 {% endif %}
               {% endfor %}
           </div><!--row-->
-      </div><!--data-stories-->
+      </div><!--trends-->
     </div>
 </div>
