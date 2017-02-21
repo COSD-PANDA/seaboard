@@ -48,8 +48,6 @@ schema: default
 navigation:
   - title: Browse Data
     url: /datasets/
-  - title: Learn More
-    url: /about/
   - title: Blog
     url: /stories/
 
