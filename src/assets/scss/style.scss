@@ -122,11 +122,32 @@ span.badge {
 }
 
 .resources-promo {
-	background-color: $s_orange_lt;
+	background-color: $white;
+	/*background-color: $s_orange_lt;*/
 	cursor: pointer;
 
 	ul {
 		padding-top: 7.2857px;
+	}
+
+	.col-sm-3 {
+		height: 150px;
+
+		.resources-box {
+			height: 150px;
+			background: linear-gradient($s_green_mid, rgba(86,164,148,1));
+			
+			
+			font-size: 1em;
+			text-align: center;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			p {
+				@include vertical-align;
+				color: $white;
+			}
+		}
 	}
 
 }

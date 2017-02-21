@@ -523,10 +523,25 @@ span.badge {
   padding-right: 0px !important; }
 
 .resources-promo {
-  background-color: #ffb652;
+  background-color: white;
+  /*background-color: $s_orange_lt;*/
   cursor: pointer; }
   .resources-promo ul {
     padding-top: 7.2857px; }
+  .resources-promo .col-sm-3 {
+    height: 150px; }
+    .resources-promo .col-sm-3 .resources-box {
+      height: 150px;
+      background: linear-gradient(#009581, #56a494);
+      font-size: 1em;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase; }
+      .resources-promo .col-sm-3 .resources-box p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white; }
 
 .data-stories-rail {
   padding-top: 7.2857px; }
