@@ -555,7 +555,7 @@ span.badge {
   .resources-promo .col-sm-3:last-child {
     margin-bottom: 0px; }
 
-.data-stories-rail {
+.trends-rail {
   padding-top: 7.2857px; }
 
 .data-search, .resources-promo, .made-data {
@@ -582,19 +582,19 @@ span.badge {
   .paper-autocomplete-suggestions-0 .autocomplete-suggestions-result {
     color: #37424a; }
 
-.data-story-preview-container {
+.trend-preview-container {
   margin-bottom: 60px; }
-  .data-story-preview-container .preview-text h5 {
+  .trend-preview-container .preview-text h5 {
     font-size: 0.8em;
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Source Sans Pro", sans-serif; }
-  .data-story-preview-container .preview-text .preview-desc {
+  .trend-preview-container .preview-text .preview-desc {
     font-size: 0.9em;
     line-height: 1.5;
     font-family: "Merriweather",Helvetica, Arial, sans-serif; }
 
-.data-story-link {
+.trend-link {
   display: block;
   padding: 4px;
   margin-bottom: 21px;
@@ -603,7 +603,7 @@ span.badge {
   border: 1px solid #dddddd;
   border-radius: 0;
   transition: border .2s ease-in-out; }
-  .data-story-link img {
+  .trend-link img {
     width: 100%; }
 
 .main-footer-container {
@@ -1086,6 +1086,13 @@ h4.bottom-box-head {
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
+<<<<<<< HEAD
+=======
+  .trend-preview-container {
+    margin-bottom: 0px; }
+  .trends-rail {
+    margin-bottom: 60px; }
+>>>>>>> origin/master
   .main-footer-container .right-footer-col {
     border-right: 1px dotted #747678; }
   .main-footer-container ul.link-list {
@@ -1098,6 +1105,7 @@ h4.bottom-box-head {
   .sd-navbar-top.navbar-default .navbar-header {
     height: 0px;
     float: right; }
+<<<<<<< HEAD
   .resources-promo .col-sm-3 {
     margin-bottom: 0px; }
   .data-story-preview-container {
@@ -1105,8 +1113,11 @@ h4.bottom-box-head {
   .data-stories-rail {
     margin-bottom: 60px; }
   .data-story-preview-container .preview-text h5 {
+=======
+  .trend-story-preview-container .preview-text h5 {
+>>>>>>> origin/master
     font-size: 0.9em; }
-  .data-story-preview-container .preview-text .preview-desc {
+  .trend-story-preview-container .preview-text .preview-desc {
     font-size: 0.9em; }
   .article-thumb {
     max-width: 250px;

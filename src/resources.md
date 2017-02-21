@@ -37,3 +37,5 @@ But even then -- we don't own all the data in the country, or even the region.  
 ### Finding Unpublished City Data.
 Hey -- here's a little secret a lot of people don't know.  The California Public Records Act gives you, the citizen, the right to request government records.  And the City of San Diego has gone out of the way to make the process easy and smooth.  The [San Diego Open Public Records Portal](http://sandiego.nextrequest.com/) lets you search previous requests and responses to them, as well as make a brand new request.   
 
+### Open Data Policy
+Curious what makes us tick and guides us?  Check out the [Open Data Policy](http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846).

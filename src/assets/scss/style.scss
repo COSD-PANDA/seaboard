@@ -166,7 +166,7 @@ span.badge {
 
 }
 
-.data-stories-rail {
+.trends-rail {
 	padding-top: 7.2857px;
 }
 
@@ -214,7 +214,7 @@ span.badge {
 }
 
 
-.data-story-preview-container {
+.trend-preview-container {
 
 	margin-bottom: 60px;
 
@@ -238,7 +238,7 @@ span.badge {
 
 }
 
-.data-story-link {
+.trend-link {
 
     display: block;
     padding: 4px;
@@ -936,7 +936,13 @@ article.full-post {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-	
+
+	.trend-preview-container {
+		margin-bottom: 0px;
+	}
+	.trends-rail {
+		margin-bottom: 60px;
+	}
 
 	.main-footer-container {
 
@@ -978,7 +984,7 @@ article.full-post {
 	}
 
 
-	.data-story-preview-container {
+	.trend-story-preview-container {
 
     .preview-text {
 
@@ -1007,7 +1013,7 @@ article.full-post {
 	.page.container .page-content {
 		padding:50px;
 	}
-	
+
 
 	#datasd-logo-container {
 		margin-top: -2px;

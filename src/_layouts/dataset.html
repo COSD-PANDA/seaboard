@@ -16,9 +16,8 @@ layout: default
     <div class="col-sm-12">
       <h2>
         <span property="dct:title">{{ page.title }}</span>
-        <a href="?view=edit" class="pull-right btn btn-default admin-only" data-hook="edit-dataset-btn">Edit</a>
       </h2>
-      <p property="dct:description" class="el-margin">{{ page.notes }}</p>
+      <p property="dct:description" class="el-margin">{{ page.content }}</p>
 
       <template is="dom-bind">
         <script>
@@ -117,7 +116,7 @@ layout: default
           <p class="dataset-preview-msg"><i>This is a preview.  If you would like to view the full resource, please download it above.</i></p>
           <px-spinner class="resource-preview-loading-spinner" finished="{% raw %}[[!tableloading]]{% endraw %}" size="50"></px-spinner>
           <px-data-table table-data="{% raw %}[[jsondata]]{% endraw %}" striped="true" filterable="true" show-column-chooser="true" hide-pagination-control="true"></px-data-table>
-            
+
         </div>
 
       </template>

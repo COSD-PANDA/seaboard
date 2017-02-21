@@ -2,13 +2,9 @@
 schema: default
 title: Monitoring of Select Chemical Parameters in Drinking Water
 department: Public Utilities
-notes: >-
-  Results of tests on drinking water for alkalinity, color, turbidity, hardness,
-  conductivity, total dissolved solids, and for selected anions. These results
-  are reported monthly to the Safe Drinking Water Information System managed by
-  the State of California. This dataset does not include <a
-  href="/dataset/monitoring-indicator-bacteria-drinking-water/"
-  target="_blank">microbiological parameters</a>.
+category:
+  - Energy and Environment
+  - City Infrastructure
 resources:
   - name: Drinking Water Tests
     url: >-
@@ -23,9 +19,14 @@ resources:
       https://datasd-prod.s3.amazonaws.com/water_testing/parameter_defs_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-category:
-  - Energy and Environment
-  - City Infrastructure
+date_issued: '2016-05-11'
+date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Results of tests on drinking water for alkalinity, color, turbidity, hardness,
+conductivity, total dissolved solids, and for selected anions.
+<!--more-->
+These results are reported monthly to the Safe Drinking Water Information
+System managed by the State of California. This dataset does not include
+<a href="/dataset/monitoring-indicator-bacteria-drinking-water/" target="_blank">microbiological parameters</a>.
