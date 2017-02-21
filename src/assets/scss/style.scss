@@ -60,6 +60,18 @@ span.badge {
 
 }
 
+.default-page-container {
+
+	margin-top: 130px;
+	
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: $p_black;
+}
+
+
+
 /* Front page */
 
 .front-page-container {
@@ -133,15 +145,20 @@ span.badge {
 .resources-promo {
 	background-color: $white;
 	/*background-color: $s_orange_lt;*/
-	cursor: pointer;
 
 	ul {
 		padding-top: 7.2857px;
 	}
 
-	.col-sm-3 {
+	.col-sm-4 {
 		height: 150px;
 		margin-bottom: 60px;
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 
 		.resources-box {
 			height: 150px;
@@ -470,6 +487,8 @@ th {
 
 .datasets-submenu {
 
+	padding-right: 30px;
+
 	.list-group {
 
 		margin-bottom: 60px;
@@ -497,7 +516,7 @@ th {
 }
 
 .datasets-main-listing {
-	padding-left: 60px;
+	padding-left: 30px;
 }
 
 dataset {
@@ -614,14 +633,12 @@ article.full-post {
 	}
 }
 
+
+
 /* Everything else */
 
 .homepage-categories .thumbnail img {
 	height: 120px;
-}
-
-.default-page-container {
-	margin-top: 150px;
 }
 
 .page-header {

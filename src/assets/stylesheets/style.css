@@ -468,6 +468,12 @@ span.badge {
     .breadcrumb a:visited {
       color: #005bbb; }
 
+.default-page-container {
+  margin-top: 130px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #37424a; }
+
 /* Front page */
 .front-page-container {
   margin-top: 84.4px; }
@@ -533,21 +539,22 @@ span.badge {
 
 .resources-promo {
   background-color: white;
-  /*background-color: $s_orange_lt;*/
-  cursor: pointer; }
+  /*background-color: $s_orange_lt;*/ }
   .resources-promo ul {
     padding-top: 7.2857px; }
-  .resources-promo .col-sm-3 {
+  .resources-promo .col-sm-4 {
     height: 150px;
     margin-bottom: 60px; }
-    .resources-promo .col-sm-3 .resources-box {
+    .resources-promo .col-sm-4 a:hover {
+      text-decoration: none; }
+    .resources-promo .col-sm-4 .resources-box {
       height: 150px;
       background: linear-gradient(#009581, #56a494);
       font-size: 1em;
       text-align: center;
       font-weight: 700;
       text-transform: uppercase; }
-      .resources-promo .col-sm-3 .resources-box p {
+      .resources-promo .col-sm-4 .resources-box p {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -759,21 +766,23 @@ th {
   color: #00549f; }
 
 /* Datasets landing page */
-.datasets-submenu .list-group {
-  margin-bottom: 60px; }
-  .datasets-submenu .list-group a.list-group-item {
-    color: #00549f; }
-    .datasets-submenu .list-group a.list-group-item .list-group-item-truncate {
-      font-size: 0.9em; }
-    .datasets-submenu .list-group a.list-group-item:hover {
-      color: #5eb6e4;
-      text-decoration: underline; }
-      .datasets-submenu .list-group a.list-group-item:hover .list-group-item-truncate {
+.datasets-submenu {
+  padding-right: 30px; }
+  .datasets-submenu .list-group {
+    margin-bottom: 60px; }
+    .datasets-submenu .list-group a.list-group-item {
+      color: #00549f; }
+      .datasets-submenu .list-group a.list-group-item .list-group-item-truncate {
+        font-size: 0.9em; }
+      .datasets-submenu .list-group a.list-group-item:hover {
         color: #5eb6e4;
         text-decoration: underline; }
+        .datasets-submenu .list-group a.list-group-item:hover .list-group-item-truncate {
+          color: #5eb6e4;
+          text-decoration: underline; }
 
 .datasets-main-listing {
-  padding-left: 60px; }
+  padding-left: 30px; }
 
 dataset {
   padding-bottom: 40px;
@@ -848,9 +857,6 @@ article.full-post section.post-content {
 /* Everything else */
 .homepage-categories .thumbnail img {
   height: 120px; }
-
-.default-page-container {
-  margin-top: 150px; }
 
 .page-header {
   font-weight: bold;

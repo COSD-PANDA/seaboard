@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Entreprise System Information
+title: Enterprise System Information
 department: Information Technology
 category:
   - City Management
