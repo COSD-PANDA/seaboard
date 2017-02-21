@@ -97,17 +97,26 @@ span.badge {
 }
 
 .data-search-img-0 {
-    background: url('/assets/img/front/midview-historical.png') no-repeat center center;
+    background-image: url('/assets/img/front/midview-historical.png');
+    background-size: auto 300px; 
+    background-repeat: no-repeat; 
+    background-position: center center;
     opacity: 0.3;
 }
 
 .data-search-img-1 {
-    background: url('/assets/img/front/midview-historical.png') no-repeat center center;
+    background-image: url('/assets/img/front/midview-historical.png');
+    background-size: auto 300px; 
+    background-repeat: no-repeat; 
+    background-position: center center;
     opacity: 0.3;
 }
 
 .data-search-img-2 {
-    background: url('/assets/img/front/midview-historical.png') no-repeat center center;
+    background-image: url('/assets/img/front/midview-historical.png');
+    background-size: auto 300px; 
+    background-repeat: no-repeat; 
+    background-position: center center;
     opacity: 0.3;
 }
 
@@ -122,11 +131,37 @@ span.badge {
 }
 
 .resources-promo {
-	background-color: $s_orange_lt;
+	background-color: $white;
+	/*background-color: $s_orange_lt;*/
 	cursor: pointer;
 
 	ul {
 		padding-top: 7.2857px;
+	}
+
+	.col-sm-3 {
+		height: 150px;
+		margin-bottom: 60px;
+
+		.resources-box {
+			height: 150px;
+			background: linear-gradient($s_green_mid, rgba(86,164,148,1));
+			
+			
+			font-size: 1em;
+			text-align: center;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			p {
+				@include vertical-align;
+				color: $white;
+			}
+		}
+	}
+
+	.col-sm-3:last-child {
+		margin-bottom: 0px;
 	}
 
 }
@@ -421,6 +456,10 @@ th {
 		color: $s_blue_lt;
 	}
 
+}
+
+.px-data-table-cell-0 .ddviewing.px-data-table-cell, .px-data-table-cell-0 .viewing.px-data-table-cell {
+	max-height: none;
 }
 
 .px-dropdown-chevron-0 iron-icon.px-dropdown-chevron {
@@ -896,15 +935,12 @@ article.full-post {
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
-	#mc_embed_signup_box h4.bottom-box-head {
-		padding-top:10px;
-	}
-
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
 	.trend-preview-container {
 		margin-bottom: 0px;
 	}
@@ -936,6 +972,19 @@ article.full-post {
 	.sd-navbar-top.navbar-default .navbar-header {
 		height:0px;
 		float: right;
+	}
+
+	.resources-promo {
+	 .col-sm-3 {
+	 	margin-bottom: 0px;
+	 }
+	}
+
+	.data-story-preview-container {
+		margin-bottom: 0px;
+	}
+	.data-stories-rail {
+		margin-bottom: 60px;
 	}
 
 
