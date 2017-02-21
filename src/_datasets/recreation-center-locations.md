@@ -1,15 +1,9 @@
 ---
 schema: default
-title: 'Recreation Center Locations '
+title: 'Recreation Center Locations'
 department: GIS
-notes: >-
-  Recreation centers operated by the City of San Diego Park and Recreation
-  Department for active and passive recreational opportunities. The data
-  includes the address of each recreation center, the San Diego community it is
-  located in and the various facilities within the recreation center. For
-  programming information, visit the City of San Diego Park and Recreation
-  Department <a href="http://www.sandiego.gov/park-and-recreation/"
-  target="_blank">web page</a>.
+category:
+  - Culture and Recreation
 resources:
   - name: Recreation Centers (Shapefile)
     url: >-
@@ -28,8 +22,16 @@ resources:
       https://datasd-prod.s3.amazonaws.com/sde/rec_centers/CITY.REC_CENTERS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-category:
-  - Culture and Recreation
+date_issued: '2016-06-16'
+date_modified: '2016-07-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Recreation centers operated by the City of San Diego Park and Recreation
+Department for active and passive recreational opportunities.
+<!--more-->
+The data includes the address of each recreation center, the San Diego
+community it is located in and the various facilities within the recreation
+center. For programming information, visit the City of San Diego Park and
+Recreation Department <a href="http://www.sandiego.gov/park-and-recreation/"
+target="_blank">web page</a>.

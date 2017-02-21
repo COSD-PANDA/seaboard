@@ -2,9 +2,9 @@
 schema: default
 title: Community Planning District Boundaries
 department: GIS
-notes: >-
-  Represents the geographic boundaries for the City of San Diego community land
-  use policy plans specific to these geographic areas.
+category:
+  - City Management
+  - Economy and Community
 resources:
   - name: Community Planning District Boundaries
     url: >-
@@ -19,9 +19,10 @@ resources:
       https://datasd-prod.s3.amazonaws.com/sde/cmty_plan/CITY.CMTY_PLAN_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-category:
-  - City Management
-  - Economy and Community
+date_issued: '2016-05-09'
+date_modified: '2017-02-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+Represents the geographic boundaries for the City of San Diego community land
+use policy plans specific to these geographic areas.
