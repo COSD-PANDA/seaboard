@@ -1,0 +1,32 @@
+- title: Budget data since 2011
+  intro: >-
+    Compare budgets with actual expenditures and revenue for the City's annual Operating and Capital budgets
+  author: City of San Diego Financial Management Department
+  url: >-
+    https://sandiegoca.opengov.com/transparency#/8082/accountType=expenses&breakdown=8f5df8ff-b23a-4abb-8ed8-bb74d0fb05a3&currentYearAmount=cumulative&currentYearPeriod=years&graph=bar&legendSort=desc&proration=true&saved_view=null&selection=DB4A19AB062076E9294E8D05282259B6&year=NaN&fiscal_start=earliest&fiscal_end=latest
+  featured: true
+  img: '/assets/img/stories/open-gov.png'
+- title: Parking meter revenue
+  intro: >-
+    See how much each of the City's smart parking meters made last year
+  author: Jonathan Carey
+  url: >-
+    https://medium.com/datasd/explore-parking-meter-transactions-in-2015-1b464b0a61e#.9ts60p9o5
+  featured: true
+  img: '/assets/img/stories/meters.png'
+- title: Solar permits issued
+  intro: >-
+    Explore planned solar installations
+  author: Cody Hooven
+  url: >-
+    http://data.sandiego.gov/story/see-solar-permits-issued-2016
+  featured: true
+  img: '/assets/img/stories/solar-permits.png'
+- title: Street repair work
+  intro: >-
+    Get a condition rating for each street in the City's network, plus view current and future street repair work
+  author: Cody Hooven
+  url: >-
+    http://streets.sandiego.gov/
+  featured: true
+  img: '/assets/img/stories/streets.png'
