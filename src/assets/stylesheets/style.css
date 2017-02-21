@@ -752,6 +752,9 @@ th {
   .px-dropdown-0 .dropcell.px-dropdown:hover .px-dropdown-text-0 {
     color: #5eb6e4; }
 
+.px-data-table-cell-0 .ddviewing.px-data-table-cell, .px-data-table-cell-0 .viewing.px-data-table-cell {
+  max-height: none; }
+
 .px-dropdown-chevron-0 iron-icon.px-dropdown-chevron {
   color: #00549f; }
 
@@ -1086,13 +1089,10 @@ h4.bottom-box-head {
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-<<<<<<< HEAD
-=======
   .trend-preview-container {
     margin-bottom: 0px; }
   .trends-rail {
     margin-bottom: 60px; }
->>>>>>> origin/master
   .main-footer-container .right-footer-col {
     border-right: 1px dotted #747678; }
   .main-footer-container ul.link-list {
@@ -1105,17 +1105,13 @@ h4.bottom-box-head {
   .sd-navbar-top.navbar-default .navbar-header {
     height: 0px;
     float: right; }
-<<<<<<< HEAD
   .resources-promo .col-sm-3 {
     margin-bottom: 0px; }
   .data-story-preview-container {
     margin-bottom: 0px; }
   .data-stories-rail {
     margin-bottom: 60px; }
-  .data-story-preview-container .preview-text h5 {
-=======
   .trend-story-preview-container .preview-text h5 {
->>>>>>> origin/master
     font-size: 0.9em; }
   .trend-story-preview-container .preview-text .preview-desc {
     font-size: 0.9em; }

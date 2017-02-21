@@ -458,6 +458,10 @@ th {
 
 }
 
+.px-data-table-cell-0 .ddviewing.px-data-table-cell, .px-data-table-cell-0 .viewing.px-data-table-cell {
+	max-height: none;
+}
+
 .px-dropdown-chevron-0 iron-icon.px-dropdown-chevron {
 	color: $s_blue_dk;
 }
