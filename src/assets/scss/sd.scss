@@ -259,7 +259,9 @@ a .hidden-link-text {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+  #footer-bar {
+      height: inherit;
+  }
 }
 
 /* Extra Small Devices, Phones */
