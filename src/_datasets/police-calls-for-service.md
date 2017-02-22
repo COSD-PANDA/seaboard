@@ -8,13 +8,14 @@ resources:
   - name: Police Calls for Service (year-to-date)
     url: >-
       http://seshat.datasd.org.s3.amazonaws.com/pd/pd_calls_for_service_2017_datasd.csv
+    format: csv
   - name: Police Calls for Service (2016)
     url: >-
-
+      http://seshat.datasd.org.s3.amazonaws.com/pd/pd_calls_for_service_2016_datasd.csv
     format: csv
   - name: Police Calls for Service (2015)
     url: >-
-
+      http://seshat.datasd.org.s3.amazonaws.com/pd/pd_calls_for_service_2015_datasd.csv
     format: csv
   - name: Police Calls for Service Dictionary
     url: >-
@@ -41,5 +42,4 @@ maintainer_email: data@sandiego.gov
 Calls dispatched by the San Diego Police Department's communications
 dispatch center. Data regarding sensitive incidents including domestic
 violence, child abuse, suicide, sex crimes and stalking are excluded.
-Priority Definitions are provided in
-<a href="http://seshat.datasd.org.s3.amazonaws.com/pd/pd_cfs_priority_defs_datasd.pdf">PDF</a>.
+Priority Definitions are provided in [this PDF file]('http://seshat.datasd.org.s3.amazonaws.com/pd/pd_cfs_priority_defs_datasd.pdf'){:taget='_blank'}.
