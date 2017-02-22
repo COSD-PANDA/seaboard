@@ -1,8 +1,9 @@
 ---
 schema: default
-title: Parking Meter Transactions
+title: Parking Meters Transactions
 department: City Treasurer
 category:
+  - City Infrastructure
   - Transportation
 resources:
   - name: Parking meters transactions - Year-to-date (raw)
@@ -25,13 +26,9 @@ resources:
     url: >-
       http://datasd-prod.s3.amazonaws.com/parking_meters/treas_parking_payments_2015_datasd.csv
     format: csv
-  - name: Parking meters locations
-    url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/treas_parking_meters_loc_datasd.csv
-    format: csv
   - name: Parking Meter Transactions Data Dictionary
     url: >-
-
+      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/meters_transactions_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'
