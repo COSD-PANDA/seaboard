@@ -40,9 +40,10 @@ cloudfront_distribution_config:
     #default_cache_behavior:
     #min_TTL: <%= 60 * 60 * 24 %>
   aliases:
-    quantity: 1
+    quantity: 2
     items:
       - data.sandiego.gov
+      - seaboard.datasd.org
 
 cloudfront_invalidate_root: true
 
