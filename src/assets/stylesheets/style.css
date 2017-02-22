@@ -321,8 +321,7 @@ img.logo {
   margin-bottom: 0px; }
   .sd-navbar-top.navbar-default .navbar-header {
     margin-top: 0px;
-    /*height:50px;*/
-    float: right;
+    height: 50px;
     width: 100%; }
   .sd-navbar-top.navbar-default .navbar-brand {
     padding: 0px;
@@ -336,7 +335,8 @@ img.logo {
     font-size: 1.3em;
     font-weight: 400; }
   .sd-navbar-top.navbar-default .navbar-collapse {
-    background: #37424a; }
+    background: #37424a;
+    width: 100%; }
   .sd-navbar-top.navbar-default li.active a:hover {
     background-color: #37424a; }
   .sd-navbar-top.navbar-default li a {
@@ -411,6 +411,10 @@ a .hidden-link-text {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  #footer-bar {
+    height: inherit; } }
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   .jumbo-intro {
@@ -421,8 +425,7 @@ a .hidden-link-text {
   .jumbo-intro {
     padding-bottom: 0px; }
   .sd-navbar-top.navbar-default .navbar-header {
-    width: auto; }
-  .sd-navbar-top.navbar-default .navbar-brand {
+    width: auto;
     float: right; } }
 
 /* Medium Devices, Desktops */
@@ -818,6 +821,9 @@ dataset {
   padding-bottom: 20px;
   padding-top: 20px; }
 
+.post-header a.title-link:hover {
+  text-decoration: none; }
+
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -1132,8 +1138,8 @@ h4.bottom-box-head {
 /* Small Devices, Tablets */
 @media only screen and (min-width: 767px) {
   .sd-navbar-top.navbar-default .navbar-header {
-    height: 0px;
-    float: right; }
+    /*height:0px;*/
+    /*float: right;*/ }
   .resources-promo .col-sm-3 {
     margin-bottom: 0px; }
   .data-story-preview-container {
@@ -1168,6 +1174,8 @@ h4.bottom-box-head {
     background-position-y: 0px; } }
 
 @media (max-width: 767px) {
+  .find-data-icon {
+    display: none; }
   .navbar-header {
     float: none; }
   .navbar-left, .navbar-right {
