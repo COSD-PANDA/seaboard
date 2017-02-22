@@ -63,7 +63,7 @@ span.badge {
 .default-page-container {
 
 	margin-top: 130px;
-	
+
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -110,24 +110,24 @@ span.badge {
 
 .data-search-img-0 {
     background-image: url('/assets/img/front/midview-historical.png');
-    background-size: auto 300px; 
-    background-repeat: no-repeat; 
+    background-size: auto 300px;
+    background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.3;
 }
 
 .data-search-img-1 {
     background-image: url('/assets/img/front/midview-historical.png');
-    background-size: auto 300px; 
-    background-repeat: no-repeat; 
+    background-size: auto 300px;
+    background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.3;
 }
 
 .data-search-img-2 {
     background-image: url('/assets/img/front/midview-historical.png');
-    background-size: auto 300px; 
-    background-repeat: no-repeat; 
+    background-size: auto 300px;
+    background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.3;
 }
@@ -163,8 +163,8 @@ span.badge {
 		.resources-box {
 			height: 150px;
 			background: linear-gradient($s_green_mid, rgba(86,164,148,1));
-			
-			
+
+
 			font-size: 1em;
 			text-align: center;
 			font-weight: 700;
@@ -1057,6 +1057,9 @@ article.full-post {
 }
 
 @media (max-width: 767px) {
+    .find-data-icon {
+        display: none
+    }
     .navbar-header {
         float: none;
     }
