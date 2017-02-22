@@ -139,8 +139,7 @@ img.logo {
 
   .navbar-header {
     margin-top: 0px;
-    /*height:50px;*/
-    float: right;
+    height:50px;
     width: 100%;
   }
   .navbar-brand {
@@ -159,6 +158,7 @@ img.logo {
 
   .navbar-collapse {
     background: $p_black;
+    width: 100%;
   }
 
   li.active {
@@ -167,7 +167,7 @@ img.logo {
         background-color: $p_black;
       }
     }
-    
+
   }
 
   li a {
@@ -234,7 +234,7 @@ img.logo {
   border-color: rgba(0, 0, 0, 0);
   top:50px - 37px - 5px;
 }
-.navbar-toggle { 
+.navbar-toggle {
     background-color: rgba(0, 0, 0, 0);
   margin-top: 0;
   margin-bottom: 0;
@@ -257,12 +257,14 @@ a .hidden-link-text {
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-    
+  #footer-bar {
+      height: inherit;
+  }
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
   .jumbo-intro{
     padding-bottom:0px;
@@ -275,10 +277,8 @@ a .hidden-link-text {
     padding-bottom:0px;
   }
   .sd-navbar-top.navbar-default {
-    .navbar-header { 
+    .navbar-header {
       width: auto;
-    }
-    .navbar-brand {
       float: right;
     }
   }
