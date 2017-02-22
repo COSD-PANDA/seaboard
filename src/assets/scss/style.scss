@@ -987,11 +987,12 @@ article.full-post {
 @media only screen and (min-width : 767px) {
 
 	.sd-navbar-top.navbar-default .navbar-header {
-		height:0px;
-		float: right;
+		/*height:0px;*/
+		/*float: right;*/
 	}
 
-	.resources-promo {
+
+        .resources-promo {
 	 .col-sm-3 {
 	 	margin-bottom: 0px;
 	 }
