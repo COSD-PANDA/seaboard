@@ -558,6 +558,9 @@ dataset {
 	padding-top: 20px;
 }
 
+.post-header a.title-link:hover {
+    text-decoration: none;
+}
 .post-date {
   display: block;
   margin-top: -.5rem;
