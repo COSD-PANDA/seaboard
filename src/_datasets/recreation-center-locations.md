@@ -3,7 +3,7 @@ schema: default
 title: 'Recreation Center Locations'
 department: GIS
 category:
-  - Culture and Recreation
+  - Culture & Recreation
 resources:
   - name: Recreation Centers (Shapefile)
     url: >-

@@ -3,7 +3,7 @@ schema: default
 title: Library Locations in San Diego County
 department: GIS
 category:
-  - Culture and Recreation
+  - Culture & Recreation
   - City Infrastructure
 resources:
   - name: Library Locations (Shapefile)

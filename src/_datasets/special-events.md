@@ -3,7 +3,7 @@ schema: default
 title: Special Events
 department: Special Events & Filming
 category:
-  - Culture and Recreation
+  - Culture & Recreation
 resources:
   - name: Special Events List
     url: >-

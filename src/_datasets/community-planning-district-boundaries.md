@@ -4,7 +4,7 @@ title: Community Planning District Boundaries
 department: GIS
 category:
   - City Management
-  - Economy and Community
+  - Economy & Community
 resources:
   - name: Community Planning District Boundaries
     url: >-

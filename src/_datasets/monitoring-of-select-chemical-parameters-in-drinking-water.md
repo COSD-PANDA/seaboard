@@ -3,7 +3,7 @@ schema: default
 title: Monitoring of Select Chemical Parameters in Drinking Water
 department: Public Utilities
 category:
-  - Energy and Environment
+  - Energy & Environment
   - City Infrastructure
 resources:
   - name: Drinking Water Tests

@@ -3,7 +3,7 @@ schema: default
 title: Park Locations
 department: GIS
 category:
-  - Culture and Recreation
+  - Culture & Recreation
   - City Infrastructure
 resources:
   - name: Park Locations

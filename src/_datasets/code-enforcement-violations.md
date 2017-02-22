@@ -2,7 +2,7 @@
 schema: default
 title: Code Enforcement Violations
 department: Development Services
-category: Economy and Community
+category: Economy & Community
 resources:
   - name: Code Enforcement Cases (past 6 months)
     url: >-

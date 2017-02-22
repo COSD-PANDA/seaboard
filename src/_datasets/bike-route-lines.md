@@ -4,7 +4,7 @@ title: Bike Route Lines
 department: GIS
 category:
   - Transportation
-  - Energy and Environment
+  - Energy & Environment
 resources:
   - name: Bike Route Lines
     url: >-

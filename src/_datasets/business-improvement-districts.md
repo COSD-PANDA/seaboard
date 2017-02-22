@@ -4,7 +4,7 @@ title: Business Improvement Districts
 department: GIS
 category:
   - City Management
-  - Economy and Community
+  - Economy & Community
 resources:
   - name: Business Improvement Districts Boundaries
     url: >-
