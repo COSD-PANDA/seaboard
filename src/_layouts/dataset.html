@@ -28,7 +28,7 @@ layout: default
             title_el = document.querySelector('.preview-resource-title');
             var params = {
               'datasetUrl': url,
-              'numRows': '10'
+              'numRows': '25'
             }
             // Reset the table for new dataset.
             if (table_el) {
@@ -104,8 +104,8 @@ layout: default
 
         <iron-ajax
         auto
-        url="https://8kf9rxn2x1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview"
-        params={% raw %}'{"datasetUrl": "{% endraw %}{{ first_resource_url }}{% raw %}", "numRows": "10"}'{% endraw %}
+        url="{{ site.ds_preview_url }}"
+        params={% raw %}'{"datasetUrl": "{% endraw %}{{ first_resource_url }}{% raw %}", "numRows": "25"}'{% endraw %}
         handle-as="json"
         last-response="{% raw %}{{ jsondata }}{% endraw %}"
         loading="{% raw %}{{ tableloading }}{% endraw %}"
