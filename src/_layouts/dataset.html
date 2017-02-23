@@ -21,7 +21,11 @@ layout: default
 
       <template is="dom-bind">
         <script>
-          preview_url = function(url, title) {
+        var kClient = new Keen({
+            projectId: settings.NEEK_PROJECT_ID,
+            writeKey: settings.NEEK_WKEY
+        });
+        preview_url = function(url, title) {
             ajax_el = document.querySelector('iron-ajax');
             table_el = document.querySelector('aha-table');
             button_els = document.querySelectorAll('.resource-table-button');
@@ -42,7 +46,15 @@ layout: default
 
             title_el.textContent = title;
             ajax_el.set('params', params);
+            // Log Event in Keen
+            var previewEvent = {
+                type: 'ds_preview',
+                target: title
+            }
+
+            //client.addEvent("ds_events"
           }
+
         </script>
 
       <h3>Resources</h3>
@@ -70,7 +82,7 @@ layout: default
               </td>
               <td class="table-content-centered">
                 {% if resource.format %}
-                  <div class="resource-type">
+                  <div class="resource-type" property='dcat:mediaType'>
                   <!--<paper-button class="resource-table-button" toggles="true" disabled="true">
                   <span class="label label-default" property='dcat:mediaType'>-->
                   {{ resource.format}}
@@ -83,7 +95,6 @@ layout: default
                     <a title="Download {{ resource.name }}" href="{{ resource.url }}" property='dcat:accessURL'>
                         <paper-button class="resource-table-button">
                             <i class="fa fa-arrow-circle-down"></i>
-                            <!--<iron-icon icon="visibility"></iron-icon>-->
                         </paper-button>
                     </a>
                 </td>
