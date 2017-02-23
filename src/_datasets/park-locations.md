@@ -3,20 +3,20 @@ schema: default
 title: Park Locations
 department: GIS
 category:
-  - Culture and Recreation
+  - Culture & Recreation
   - City Infrastructure
 resources:
   - name: Park Locations
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/parks/CITY.PARKS_datasd.zip
+      http://seshat.datasd.org/sde/parks/CITY.PARKS_datasd.zip
     format: shp
   - name: Park Locations Dictionary
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/parks/CITY.PARKS_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/parks/CITY.PARKS_dictionary_datasd.csv
     format: csv
   - name: Park Locations Metadata
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/parks/CITY.PARKS_metadata_datasd.csv
+      http://seshat.datasd.org/sde/parks/CITY.PARKS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-17'

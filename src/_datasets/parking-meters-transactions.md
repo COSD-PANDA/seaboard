@@ -1,21 +1,22 @@
 ---
 schema: default
-title: Parking Meter Transactions
+title: Parking Meters Transactions
 department: City Treasurer
 category:
+  - City Infrastructure
   - Transportation
 resources:
   - name: Parking meters transactions - Year-to-date (raw)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/treas_parking_payments_2017_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_parking_payments_2017_datasd.csv
     format: csv
   - name: Parking meters transactions - Year-to-date (aggregated by day)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/treas_meters_2017_pole_by_mo_day_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_meters_2017_pole_by_mo_day_datasd.csv
     format: csv
   - name: Parking meters transactions - Year-to-date (aggregated by month)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/treas_meters_2017_pole_by_month_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_meters_2017_pole_by_month_datasd.csv
     format: csv
   - name: Parking meters transactions - 2016 (raw)
     url: >-
@@ -25,13 +26,9 @@ resources:
     url: >-
       http://datasd-prod.s3.amazonaws.com/parking_meters/treas_parking_payments_2015_datasd.csv
     format: csv
-  - name: Parking meters locations
-    url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/treas_parking_meters_loc_datasd.csv
-    format: csv
   - name: Parking Meter Transactions Data Dictionary
     url: >-
-
+      http://seshat.datasd.org/parking_meters/meters_transactions_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'

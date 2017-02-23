@@ -8,11 +8,11 @@ category:
 resources:
   - name: Repair Line Segments
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/tsw/CG_STREETS_DATASD.zip
+      http://seshat.datasd.org/tsw/CG_STREETS_DATASD.zip
     format: shp
   - name: Repair Line Segments Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/tsw/repair_segment_lines_dictionary_datasd.csv
+      http://seshat.datasd.org/tsw/repair_segment_lines_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'

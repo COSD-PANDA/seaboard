@@ -7,11 +7,11 @@ category:
 resources:
   - name: Traffic Counts
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/traffic_counts/traffic_counts_datasd.csv
+      http://seshat.datasd.org/traffic_counts/traffic_counts_datasd.csv
     format: csv
   - name: Traffic Counts Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/traffic_counts/traffic_counts_dictionary_datasd.csv
+      http://seshat.datasd.org/traffic_counts/traffic_counts_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-17'

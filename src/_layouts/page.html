@@ -4,7 +4,7 @@ layout: default
 {% include breadcrumbs.html parent="Pages" %}
 
 <div data-component="view-switcher">
-  <div class="row" data-hook="view" data-view="display">
+  <div class="row pages-main" data-hook="view" data-view="display">
     {% if page.logo and page.logo != empty %}
     <div class="col-sm-3">
       <a href="{{ page.logo }}" class="thumbnail"><img src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
