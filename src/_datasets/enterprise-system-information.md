@@ -6,7 +6,8 @@ category:
   - City Management
 resources:
   - name: SB 272 Catalog
-    url: 'https://datasd-prod.s3.amazonaws.com/sb272_catalog/it_sb272_datasd.csv'
+    url: >-
+      http://seshat.datasd.org/sb272_catalog/it_sb272_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-08-01'

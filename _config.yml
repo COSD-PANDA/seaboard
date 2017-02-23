@@ -55,7 +55,7 @@ schema: default
 navigation:
   - title: Browse Data
     url: /datasets/
-  - title: Blog
+  - title: Stories
     url: /stories/
 
 # Collections

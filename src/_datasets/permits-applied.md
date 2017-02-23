@@ -7,7 +7,7 @@ category:
 resources:
   - name: Permits Applied (year-to-date)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/apps_received_ytd_datasd.csv
+      http://seshat.datasd.org/dsd/apps_received_ytd_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-01-08'

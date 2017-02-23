@@ -8,15 +8,15 @@ category:
 resources:
   - name: Street Sweeping Schedule
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/street_sweeping/routes_all_datasd.csv
+      http://seshat.datasd.org/street_sweeping/routes_all_datasd.csv
     format: csv
   - name: Street Sweeping Possible Routes
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/street_sweeping/street_sweeping_possible_routes_datasd.csv
+      http://seshat.datasd.org/street_sweeping/street_sweeping_possible_routes_datasd.csv
     format: csv
   - name: Street Sweeping Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/street_sweeping/street_sweeping_dictionary_datasd.csv
+      http://seshat.datasd.org/street_sweeping/street_sweeping_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-18'

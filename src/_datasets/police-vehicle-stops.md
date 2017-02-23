@@ -7,40 +7,40 @@ category:
 resources:
   - name: Vehicle Stops (2016)
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_2016_datasd.csv
   - name: Vehicle Stops Search Details (2016)
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_search_details_2016_datasd.csv
     format: csv
   - name: Vehicle Stops (2015)
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_2015_datasd.csv
   - name: Vehicle Stops Search Details (2015)
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_search_details_2015_datasd.csv
     format: csv
   - name: Vehicle Stops (2014)
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_2014_datasd.csv
   - name: Vehicle Stops Search Details (2014)
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_search_details_2014_datasd.csv
     format: csv
   - name: Vehicle Stops Dictionary
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_dictionary.csv
     format: csv
   - name: Vehicle Stops Race Codes
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_race_codes.csv
     format: csv
   - name: Vehicle Stops Search Details Dictionary
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_search_details_dictionary.csv
     format: csv
   - name: Vehicle Stops Search Details Description List
     url: >-
-
+      http://seshat.datasd.org/pd/vehicle_stops_search_details_description_list.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-11-14'
