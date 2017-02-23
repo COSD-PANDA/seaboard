@@ -24,7 +24,7 @@ deployment:
     branch: master
     commands:
       - gulp publish
-      -  surge --project ./site --domain seaboard-stage.surge.sh
+      - surge --project ./site --domain seaboard-stage.surge.sh
   production:
     branch: production
     commands:

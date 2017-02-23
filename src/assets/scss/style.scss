@@ -150,9 +150,17 @@ span.badge {
 		padding-top: 7.2857px;
 	}
 
-	.col-sm-4 {
-		height: 150px;
-		margin-bottom: 60px;
+	.intro-box {
+		@include merriweather;
+		font-size: 0.9em;
+		text-align: justify;
+		text-align-last: left;
+	}
+
+
+	.resources-col {
+		margin-bottom: 0px;
+		margin-top: 20px;
 
 		a {
 			&:hover {
@@ -161,14 +169,14 @@ span.badge {
 		}
 
 		.resources-box {
-			height: 150px;
-			background: linear-gradient($s_green_mid, rgba(86,164,148,1));
 
-
+			height: 120px;
+			background: linear-gradient(rgba(86,164,148,1), $s_green_mid, $s_green_mid, rgba(86,164,148,1));
 			font-size: 1em;
 			text-align: center;
 			font-weight: 700;
 			text-transform: uppercase;
+			border-radius: 3px;
 
 			p {
 				@include vertical-align;
@@ -187,9 +195,13 @@ span.badge {
 	padding-top: 7.2857px;
 }
 
+.made-data {
+	background-color: #f7f6f5;
+}
+
 .data-search, .resources-promo, .made-data {
 
-	padding-bottom: 60px;
+	padding-bottom: 0px;
 	padding-top: 30px;
 
 	h2 {
@@ -636,6 +648,35 @@ article.full-post {
 	}
 }
 
+/* Pages */
+
+.pages-main {
+
+	h1, h2, h3, h4, h5, table {
+		@include sourcesans;
+		margin-bottom: 15px;
+	}
+
+	p {
+		@include merriweather;
+		line-height: 1.5;
+		font-size: 0.9em;
+		margin: 0 0 1em;
+	}
+
+	h4 {
+		line-height: 2.3;
+		margin-top: 20px;
+	}
+
+	margin-bottom: 60px;
+
+
+}
+
+a.resources-page-link {
+	@include sourcesans
+}
 
 
 /* Everything else */
