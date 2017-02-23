@@ -19,4 +19,4 @@ date_modified: '2016-06-28'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Police department beats.
+San Diego Police Department beats.

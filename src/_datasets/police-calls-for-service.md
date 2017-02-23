@@ -21,14 +21,6 @@ resources:
     url: >-
       http://seshat.datasd.org/pd/calls_for_service_dictionary_datasd.csv
     format: csv
-  - name: Police Calls Disposition Codes
-    url: >-
-      http://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv
-    format: csv
-  - name: Police Calls Disposition Codes Description
-    url: >-
-      http://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'
 date_modified: '2017-01-20'
@@ -41,3 +33,8 @@ dispatch center.
 Data regarding sensitive incidents including domestic
 violence, child abuse, suicide, sex crimes and stalking are excluded.
 Priority Definitions are provided in [this PDF file](http://seshat.datasd.org/pd/pd_cfs_priority_defs_datasd.pdf){:target='_blank'}.
+
+
+Data regarding the disposition codes used by the Police Department can be
+found [here](/datasets/police-calls-disposition-codes/){:target='_blank'}, while data about the SDPD Police beats
+can be found [here](/datasets/police-beats/){:target='_blank'}.

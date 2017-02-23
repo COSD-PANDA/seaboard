@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Financial Support for Candidates and Ballot Measures up for Election
-department: City Clerck
+department: City Clerk
 category:
   - Economy & Community
 resources:
