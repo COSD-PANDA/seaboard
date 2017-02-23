@@ -8,11 +8,11 @@ category:
 resources:
   - name: Parking Meters Locations
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/treas_parking_meters_loc_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_parking_meters_loc_datasd.csv
     format: csv
   - name: Parking Meters Locations Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/parking_meters/meters_locations_dictionary_datasd.csv
+      http://seshat.datasd.org/parking_meters/meters_locations_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-18'

@@ -7,19 +7,19 @@ category:
 resources:
   - name: Transit Stops Locations (Shapefile)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/sde/transit_stops_gtfs/CITY.TRANSIT_STOPS_GTFS_datasd.zip
+      http://seshat.datasd.org/sde/transit_stops_gtfs/CITY.TRANSIT_STOPS_GTFS_datasd.zip
     format: shp
   - name: Transit Stops Locations (csv)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/sde/transit_stops_gtfs/CITY.TRANSIT_STOPS_GTFS_datasd.csv
+      http://seshat.datasd.org/sde/transit_stops_gtfs/CITY.TRANSIT_STOPS_GTFS_datasd.csv
     format: csv
   - name: Transit Stops Locations Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/sde/transit_stops_gtfs/transit_stops_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_dictionary_datasd.csv
     format: csv
   - name: Transit Stops Locations Metadata
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/sde/transit_stops_gtfs/CITY.TRANSIT_STOPS_GTFS_metadata_datasd.csv
+      http://seshat.datasd.org/sde/transit_stops_gtfs/CITY.TRANSIT_STOPS_GTFS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

@@ -8,19 +8,19 @@ category:
 resources:
   - name: Library Locations (Shapefile)
     url: >-
-      http://datasd-prod.s3.amazonaws.com/sde/library/CITY.LIBRARY_datasd.zip
+      http://seshat.datasd.org/sde/library/CITY.LIBRARY_datasd.zip
     format: shp
   - name: Library Locations (csv)
     url: >-
-      http://datasd-prod.s3.amazonaws.com/sde/library/CITY.LIBRARY_datasd.csv
+      http://seshat.datasd.org/sde/library/CITY.LIBRARY_datasd.csv
     format: csv
   - name: Library Locations Dictionary
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/library/CITY.LIBRARY_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/library/CITY.LIBRARY_dictionary_datasd.csv
     format: csv
   - name: Library Locations Metadata
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/library/CITY.LIBRARY_metadata_datasd.csv
+      http://seshat.datasd.org/sde/library/CITY.LIBRARY_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

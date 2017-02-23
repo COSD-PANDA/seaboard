@@ -7,19 +7,19 @@ category:
 resources:
   - name: Recreation Centers (Shapefile)
     url: >-
-      http://datasd-prod.s3.amazonaws.com/sde/rec_centers/CITY.REC_CENTERS_datasd.zip
+      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_datasd.zip
     format: shp
   - name: Recreation Centers (csv)
     url: >-
-      http://datasd-prod.s3.amazonaws.com/sde/rec_centers/CITY.REC_CENTERS_datasd.csv
+      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_datasd.csv
     format: csv
   - name: Recreation Centers Dictionary
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/rec_centers/CITY.REC_CENTERS_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_dictionary_datasd.csv
     format: csv
   - name: Recreation Centers Metadata
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/rec_centers/CITY.REC_CENTERS_metadata_datasd.csv
+      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-16'

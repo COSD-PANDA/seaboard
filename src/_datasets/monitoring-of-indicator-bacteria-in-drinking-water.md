@@ -6,17 +6,17 @@ category:
   - Energy & Environment
   - City Infrastructure
 resources:
-  - name: Drinking Water Tests
+  - name: Latest Drinking Water Tests (Bacteria)
     url: >-
-      https://datasd-prod.s3.amazonaws.com/water_testing/parameter_tests_datasd.csv
+      http://seshat.datasd.org/water_testing/latest_indicator_bac_tests_datasd.csv
     format: csv
-  - name: Drinking Water Tests Dictionary
+  - name: All Drinking Water Tests (Bacteria)
     url: >-
-      https://datasd-prod.s3.amazonaws.com/water_testing/parameter_tests_dictionary_datasd.csv
+      http://seshat.datasd.org/water_testing/indicator_bacteria_tests_datasd.csv
     format: csv
-  - name: Chemical Parameters Definition
+  - name: Drinking Water Tests (Bacteria) Dictionary
     url: >-
-      https://datasd-prod.s3.amazonaws.com/water_testing/parameter_defs_datasd.csv
+      http://seshat.datasd.org/water_testing/indicator_bacteria_tests_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-11'

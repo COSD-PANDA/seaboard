@@ -8,15 +8,15 @@ category:
 resources:
   - name: Bike Route Lines
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/bike_route/CITY.BIKE_ROUTE_datasd.zip
+      http://seshat.datasd.org/sde/bike_route/CITY.BIKE_ROUTE_datasd.zip
     format: shp
   - name: Bike Route Lines Metadata
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/bike_route/CITY.BIKE_ROUTE_metadata_datasd.csv
+      http://seshat.datasd.org/sde/bike_route/CITY.BIKE_ROUTE_metadata_datasd.csv
     format: csv
   - name: Bike Route Lines Dictionary
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/bike_route/CITY.BIKE_ROUTE_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/bike_route/CITY.BIKE_ROUTE_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

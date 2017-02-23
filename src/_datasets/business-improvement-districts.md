@@ -8,15 +8,15 @@ category:
 resources:
   - name: Business Improvement Districts Boundaries
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_datasd.zip
+      http://seshat.datasd.org/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_datasd.zip
     format: shp
   - name: Business Improvement Districts Boundaries Dictionary
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_dictionary_datasd.csv
     format: csv
   - name: Business Improvement Districts Boundaries Metadata
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_metadata_datasd.csv
+      http://seshat.datasd.org/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
