@@ -19,4 +19,8 @@ date_modified: '2016-07-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-
+This dataset comprises SITUS address points (as opposed to owner or mailing addresses)
+for jurisdictions within the County of San Diego.
+<!--more-->
+Addresses include the corresponding Assessor Parcel Number (APN),
+address type, placement location, and US National Grid (USNG) value.
