@@ -658,7 +658,7 @@ article.full-post {
 		margin-bottom: 15px;
 	}
 
-	p {
+	p, ul, ol {
 		@include merriweather;
 		line-height: 1.5;
 		font-size: 0.9em;
@@ -677,6 +677,13 @@ article.full-post {
 
 a.resources-page-link {
 	@include sourcesans
+}
+
+.instruct-video {
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+	margin-top: 20px;
 }
 
 
