@@ -21,7 +21,25 @@ layout: default
 
       <template is="dom-bind">
         <script>
-          preview_url = function(url, title) {
+        download_url = function(rs_title,
+                rs_url,
+                rs_format,
+                ds_title = '{{ page.title }}',
+                ds_url = '{{ page.url }}') {
+            var dl_event = {
+                'event_type': 'resource_dl',
+                'ds_title': ds_title,
+                'ds_url': ds_url,
+                'rs_title': rs_title,
+                'rs_url': rs_url,
+                'rs_format': rs_format,
+                'dt': new Date().toISOString()
+            }
+            window.keenWebAutoCollector.tracker.recordEvent('seaboard_dataset_events', dl_event);
+            window.location.href = rs_url;
+        }
+
+        preview_url = function(url, title) {
             ajax_el = document.querySelector('iron-ajax');
             table_el = document.querySelector('aha-table');
             button_els = document.querySelectorAll('.resource-table-button');
@@ -43,6 +61,7 @@ layout: default
             title_el.textContent = title;
             ajax_el.set('params', params);
           }
+
         </script>
 
       <h3>Resources</h3>
@@ -70,22 +89,17 @@ layout: default
               </td>
               <td class="table-content-centered">
                 {% if resource.format %}
-                  <div class="resource-type">
-                  <!--<paper-button class="resource-table-button" toggles="true" disabled="true">
-                  <span class="label label-default" property='dcat:mediaType'>-->
+                  <div class="resource-type" property='dcat:mediaType'>
                   {{ resource.format}}
                   </div>
-                  <!--</span>
-                  </paper-button>-->
                 {% endif %}
               </td>
               <td class="table-content-centered">
-                    <a title="Download {{ resource.name }}" href="{{ resource.url }}" property='dcat:accessURL'>
-                        <paper-button class="resource-table-button">
-                            <i class="fa fa-arrow-circle-down"></i>
-                            <!--<iron-icon icon="visibility"></iron-icon>-->
-                        </paper-button>
-                    </a>
+                    <paper-button class="resource-table-button"
+                                  onclick="download_url('{{ resource.name }}', '{{ resource.url }}' , '{{ resource.format }}')"
+                                    property='dcat:accessURL'>
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </paper-button>
                 </td>
               <td class="table-content-centered">
                 {% if resource.format == 'csv' %}

@@ -143,7 +143,7 @@ span.badge {
 }
 
 .resources-promo {
-	background-color: $white;
+	background-color: white;
 	/*background-color: $s_orange_lt;*/
 
 	ul {
@@ -201,7 +201,7 @@ span.badge {
 
 .data-search, .resources-promo, .made-data {
 
-	padding-bottom: 0px;
+	padding-bottom: 60px;
 	padding-top: 30px;
 
 	h2 {
@@ -373,6 +373,7 @@ th {
     min-width:1em;
     min-height:1em;
     border-radius: 50%;
+    color: #00549f;
 
     .preview-check {
 		width: 17px;

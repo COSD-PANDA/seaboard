@@ -578,7 +578,7 @@ span.badge {
   background-color: #f7f6f5; }
 
 .data-search, .resources-promo, .made-data {
-  padding-bottom: 0px;
+  padding-bottom: 60px;
   padding-top: 30px; }
   .data-search h2, .resources-promo h2, .made-data h2 {
     margin-bottom: 15px; }
@@ -689,7 +689,8 @@ th {
   padding: 0px;
   min-width: 1em;
   min-height: 1em;
-  border-radius: 50%; }
+  border-radius: 50%;
+  color: #00549f; }
   .resource-table-button .preview-check {
     width: 17px;
     height: 17px;
