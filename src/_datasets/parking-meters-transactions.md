@@ -20,11 +20,27 @@ resources:
     format: csv
   - name: Parking meters transactions - 2016 (raw)
     url: >-
-      http://datasd-prod.s3.amazonaws.com/parking_meters/treas_parking_payments_2016_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_parking_payments_2016_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2016 (aggregated by day)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2016_pole_by_mo_day_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2016 (aggregated by month)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2016_pole_by_month_datasd.csv
     format: csv
   - name: Parking meter transactions - 2015 (raw)
     url: >-
-      http://datasd-prod.s3.amazonaws.com/parking_meters/treas_parking_payments_2015_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_parking_payments_2015_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2015 (aggregated by day)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2015_pole_by_mo_day_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2015 (aggregated by month)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2015_pole_by_month_datasd.csv
     format: csv
   - name: Parking Meter Transactions Data Dictionary
     url: >-
