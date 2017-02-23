@@ -351,9 +351,6 @@ img.logo {
       color: #e0e1dd;
       text-decoration: underline;
       background-color: #37424a; }
-  .sd-navbar-top.navbar-default .container {
-    padding-right: 0px;
-    padding-left: 0px; }
 
 #footer-bar {
   font-family: "Source Sans Pro", sans-serif;
@@ -422,6 +419,9 @@ a .hidden-link-text {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .sd-navbar-top.navbar-default .container {
+    padding-right: 0px;
+    padding-left: 0px; }
   .jumbo-intro {
     padding-bottom: 0px; }
   .sd-navbar-top.navbar-default .navbar-header {
@@ -881,7 +881,11 @@ article.full-post section.post-content {
     font-size: 0.9em;
     margin: 0 0 1em; }
   .pages-main h4 {
-    line-height: 2.3; }
+    line-height: 2.3;
+    margin-top: 20px; }
+
+a.resources-page-link {
+  font-family: "Source Sans Pro", sans-serif; }
 
 /* Everything else */
 .homepage-categories .thumbnail img {

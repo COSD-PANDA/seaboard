@@ -666,9 +666,16 @@ article.full-post {
 
 	h4 {
 		line-height: 2.3;
+		margin-top: 20px;
 	}
 
 	margin-bottom: 60px;
+
+
+}
+
+a.resources-page-link {
+	@include sourcesans
 }
 
 
