@@ -2,7 +2,7 @@
 layout: front
 ---
 
-<template is="dom-bind">
+<!--<template is="dom-bind">-->
     <div class="container-fluid data-search data-search-color-layer">
         <div class="data-search-img-layer">
         </div>
@@ -13,50 +13,7 @@ layout: front
                     Find data
                 </h2>
                 <!--<div class="row">-->
-                    <script>
-                            var searchIndex;
-                            var findData = document.querySelector('#find-data');
-                            var findDataIcon = document.querySelector('.find-data-icon');
-                            findData.addEventListener('autocomplete-selected', onSelect);
-                            findData.addEventListener('autocomplete-change', onChange);
-
-                            // Switch Backgrounds:
-                            document.querySelector('.data-search-img-layer').classList.add('data-search-img-' + Math.floor(Math.random() * 2));
-
-                            var noResults = {
-                                "title": "Sorry, we couldn't find anything",
-                                "type": "No Result",
-                                "url": "none"
-                            }
-                            function onSelect(event) {
-                                    var selected = event.detail.text;
-                                    if (event.detail.value !== 'none')
-                                      window.location.href = event.detail.value;
-                            }
-
-                            function onChange(event) {
-                                    var search = event.detail.option.text.toLowerCase();
-                                    findDataIcon.classList.add('hidden')
-                                    var searchIndexURL = "{{ settings.BASE_URL }}/searchindex.json";
-                                    if (!searchIndex) {
-                                            $.getJSON(searchIndexURL, function(data){
-                                                    searchIndex = data;
-                                            })
-                                            return;
-                                    }
-
-                                    suggestionsList = searchIndex.filter(function(obj){
-                                                        return obj[findData.textProperty].toLowerCase().indexOf(search) !== -1;
-                                                });
-
-                                    if (suggestionsList.length == 0)
-                                        suggestionsList = Array(noResults);
-
-                                                findData.suggestions(suggestionsList)
-                                        }
-                    </script>
-
-                    <paper-autocomplete
+                     <paper-autocomplete
                         label='Search by dataset name, topic or City department' id="find-data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
                         <template autocomplete-custom-template>
                             <paper-item on-tap="_onSelect" id$="[[_getSuggestionId(index)]]" role="option" aria-selected="false">
@@ -70,7 +27,51 @@ layout: front
             </div>
         </div>
     </div>
-</template>
+
+<script>
+    var searchIndex;
+    var findData = document.querySelector('#find-data');
+    var findDataIcon = document.querySelector('.find-data-icon');
+    findData.addEventListener('autocomplete-selected', onSelect);
+    findData.addEventListener('autocomplete-change', onChange);
+
+    var noResults = {
+        "title": "Sorry, we couldn't find anything",
+        "type": "No Result",
+        "url": "none"
+    }
+    // Switch Backgrounds:
+    document.querySelector('.data-search-img-layer').classList.add('data-search-img-' + Math.floor(Math.random() * 2));
+
+
+    function onSelect(event) {
+            var selected = event.detail.text;
+            if (event.detail.value !== 'none')
+                window.location.href = event.detail.value;
+    }
+
+    function onChange(event) {
+            var search = event.detail.option.text.toLowerCase();
+            findDataIcon.classList.add('hidden')
+            var searchIndexURL = "{{ settings.BASE_URL }}/searchindex.json";
+            if (!searchIndex) {
+                    $.getJSON(searchIndexURL, function(data){
+                            searchIndex = data;
+                    })
+                    return;
+            }
+
+            suggestionsList = searchIndex.filter(function(obj){
+                                return obj[findData.textProperty].toLowerCase().indexOf(search) !== -1;
+                        });
+
+            if (suggestionsList.length == 0)
+                suggestionsList = Array(noResults);
+
+                        findData.suggestions(suggestionsList)
+                }
+</script>
+<!--</template>-->
 
 <div class="container-fluid resources-promo">
   <div class="container">
@@ -80,13 +81,6 @@ layout: front
       <b>DataSD</b> is the official portal for City of San Diego Open Data. Here, you'll find data about City operations, including public safety, street repairs, public facilities, code enforcement, business licensing, etc. If you can’t find what you’re looking for, we might <a>still be working on publishing it</a>, or it might come from <a>another agency</a>.
     </p>
       <div class="row">
-        <!--<div class="col-sm-3 resources-col">
-            <div class="intro-box">
-              <p>
-                This portal contains data about City of San Diego operations, including public safety, street repairs, public facilities, code enforcement, business licensing, etc. If you can’t find what you’re looking for, we might <a>still be working on publishing it</a>, or it might come from <a>another agency</a>.
-              </p>
-            </div>
-        </div>-->
         <div class="col-sm-4 resources-col">
           <a href="/get-started/">
             <div class="resources-box">
@@ -108,7 +102,7 @@ layout: front
             </div>
           </a>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 </div>
