@@ -34,7 +34,7 @@ resources:
     url: >-
       http://seshat.datasd.org/parking_meters/treas_parking_payments_2015_datasd.csv
     format: csv
-    - name: Parking meters transactions - 2015 (aggregated by day)
+  - name: Parking meters transactions - 2015 (aggregated by day)
     url: >-
       http://seshat.datasd.org/parking_meters/treas_meters_2015_pole_by_mo_day_datasd.csv
     format: csv
