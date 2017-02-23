@@ -5,9 +5,13 @@ department: Police
 category:
   - Public Safety
 resources:
-  - name: Police Beats
+  - name: Police Beats (Shapefile)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/pd/pd_beat_neighborhoods_datasd.csv
+      http://seshat.datasd.org/pd/SDPD_BEATS_datasd.zip
+    format: shp
+  - name: Police Beats (csv)
+    url: >-
+      http://seshat.datasd.org/pd/pd_beat_neighborhoods_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-15'
