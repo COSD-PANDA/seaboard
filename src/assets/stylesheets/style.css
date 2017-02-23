@@ -569,7 +569,7 @@ span.badge {
   padding-top: 7.2857px; }
 
 .data-search, .resources-promo, .made-data {
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   padding-top: 30px; }
   .data-search h2, .resources-promo h2, .made-data h2 {
     margin-bottom: 15px; }
