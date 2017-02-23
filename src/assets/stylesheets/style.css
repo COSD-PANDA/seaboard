@@ -689,7 +689,8 @@ th {
   padding: 0px;
   min-width: 1em;
   min-height: 1em;
-  border-radius: 50%; }
+  border-radius: 50%;
+  color: #00549f; }
   .resource-table-button .preview-check {
     width: 17px;
     height: 17px;
