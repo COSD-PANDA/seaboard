@@ -3,15 +3,15 @@ schema: default
 title: Special Events
 department: Special Events & Filming
 category:
-  - Culture and Recreation
+  - Culture & Recreation
 resources:
   - name: Special Events List
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/special_events/special_events_list_datasd.csv
+      http://seshat.datasd.org/special_events/special_events_list_datasd.csv
     format: csv
   - name: Special Events Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/special_events/special_events_listings_dictionary.csv
+      http://seshat.datasd.org/special_events/special_events_listings_dictionary.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

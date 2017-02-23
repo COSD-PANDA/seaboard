@@ -7,19 +7,19 @@ category:
 resources:
   - name: Permits Completed (year-to-date)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/permits_completed_ytd_datasd.csv
+      http://seshat.datasd.org/dsd/permits_completed_ytd_datasd.csv
     format: csv
   - name: Permits Completed (2016)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/permits_completed_2016_datasd.csv
+      http://seshat.datasd.org/dsd/permits_completed_2016_datasd.csv
     format: csv
   - name: Permits Completed (2015)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/permits_completed_2015_datasd.csv
+      http://seshat.datasd.org/dsd/permits_completed_2015_datasd.csv
     format: csv
   - name: Permits Activity Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/permits_activity_dictionary_datasd.csv
+      http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-21'

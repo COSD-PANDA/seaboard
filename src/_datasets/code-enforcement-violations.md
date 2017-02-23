@@ -2,27 +2,27 @@
 schema: default
 title: Code Enforcement Violations
 department: Development Services
-category: Economy and Community
+category: Economy & Community
 resources:
   - name: Code Enforcement Cases (past 6 months)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/code_enf_past_6_mo_datasd.csv
+      http://seshat.datasd.org/dsd/code_enf_past_6_mo_datasd.csv
     format: csv
   - name: Code Enforcement Cases (past 3 years)
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/code_enf_past_3_yr_datasd.csv
+      http://seshat.datasd.org/dsd/code_enf_past_3_yr_datasd.csv
     format: csv
   - name: Code Enforcement Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/code_enforcement_dictionary_datasd.csv
+      http://seshat.datasd.org/dsd/code_enforcement_dictionary_datasd.csv
     format: csv
   - name: Complaint Type Codes
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/complaint_types_datasd.csv
+      http://seshat.datasd.org/dsd/complaint_types_datasd.csv
     format: csv
   - name: Code Enforcement Remedies
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/dsd/code_enf_remedies_datasd.csv
+      http://seshat.datasd.org/dsd/code_enf_remedies_datasd.csv
     format: csv
 date_issued: '2016-06-21'
 date_modified: '2017-02-10'

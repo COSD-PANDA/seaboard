@@ -4,19 +4,19 @@ title: Community Planning District Boundaries
 department: GIS
 category:
   - City Management
-  - Economy and Community
+  - Economy & Community
 resources:
   - name: Community Planning District Boundaries
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/cmty_plan/CITY.CMTY_PLAN_datasd.zip
+      http://seshat.datasd.org/sde/cmty_plan/CITY.CMTY_PLAN_datasd.zip
     format: shp
   - name: Community Planning District Boundaries Dictionary
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/cmty_plan/CITY.CMTY_PLAN_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/cmty_plan/CITY.CMTY_PLAN_dictionary_datasd.csv
     format: csv
   - name: Community Planning District Boundaries Metadata
     url: >-
-      https://datasd-prod.s3.amazonaws.com/sde/cmty_plan/CITY.CMTY_PLAN_metadata_datasd.csv
+      http://seshat.datasd.org/sde/cmty_plan/CITY.CMTY_PLAN_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

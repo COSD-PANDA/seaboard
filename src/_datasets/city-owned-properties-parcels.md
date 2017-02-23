@@ -7,11 +7,11 @@ category:
 resources:
   - name: City Owned Properties - Parcels
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/read/city_property_parcels_datasd.csv
+      http://seshat.datasd.org/read/city_property_parcels_datasd.csv
     format: csv
   - name: City Owned Properties - Parcels Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/read/city_property_parcels_dictionary_datasd.csv
+      http://seshat.datasd.org/read/city_property_parcels_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-01'

@@ -7,11 +7,11 @@ category:
 resources:
   - name: City Owned Properties - Leases
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/read/city_property_leases_datasd.csv
+      http://seshat.datasd.org/read/city_property_leases_datasd.csv
     format: csv
   - name: City Owned Properties - Leases Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/read/city_property_leases_dictionary_datasd.csv
+      http://seshat.datasd.org/read/city_property_leases_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-01'

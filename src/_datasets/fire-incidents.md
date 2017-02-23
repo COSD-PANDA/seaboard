@@ -7,11 +7,11 @@ category:
 resources:
   - name: Fire Incidents
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/fd_cad/fd_incidents_past_12_mo_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_past_12_mo_datasd.csv
     format: csv
   - name: Fire Incidents Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/fd_cad/fire_incidents_dictionary_datasd.csv
+      http://seshat.datasd.org/fd_cad/fire_incidents_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-26'
