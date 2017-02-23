@@ -188,10 +188,6 @@ img.logo {
 
   }
 
-  .container {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
 }
 
 #footer-bar {
@@ -273,6 +269,14 @@ a .hidden-link-text {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  
+.sd-navbar-top.navbar-default {
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
   .jumbo-intro{
     padding-bottom:0px;
   }

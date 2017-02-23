@@ -351,9 +351,6 @@ img.logo {
       color: #e0e1dd;
       text-decoration: underline;
       background-color: #37424a; }
-  .sd-navbar-top.navbar-default .container {
-    padding-right: 0px;
-    padding-left: 0px; }
 
 #footer-bar {
   font-family: "Source Sans Pro", sans-serif;
@@ -422,6 +419,9 @@ a .hidden-link-text {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .sd-navbar-top.navbar-default .container {
+    padding-right: 0px;
+    padding-left: 0px; }
   .jumbo-intro {
     padding-bottom: 0px; }
   .sd-navbar-top.navbar-default .navbar-header {
@@ -545,19 +545,25 @@ span.badge {
   /*background-color: $s_orange_lt;*/ }
   .resources-promo ul {
     padding-top: 7.2857px; }
-  .resources-promo .col-sm-4 {
-    height: 150px;
-    margin-bottom: 60px; }
-    .resources-promo .col-sm-4 a:hover {
+  .resources-promo .intro-box {
+    font-family: "Merriweather",Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    text-align: justify;
+    text-align-last: left; }
+  .resources-promo .resources-col {
+    margin-bottom: 0px;
+    margin-top: 20px; }
+    .resources-promo .resources-col a:hover {
       text-decoration: none; }
-    .resources-promo .col-sm-4 .resources-box {
-      height: 150px;
-      background: linear-gradient(#009581, #56a494);
+    .resources-promo .resources-col .resources-box {
+      height: 120px;
+      background: linear-gradient(#56a494, #009581, #009581, #56a494);
       font-size: 1em;
       text-align: center;
       font-weight: 700;
-      text-transform: uppercase; }
-      .resources-promo .col-sm-4 .resources-box p {
+      text-transform: uppercase;
+      border-radius: 3px; }
+      .resources-promo .resources-col .resources-box p {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -567,6 +573,9 @@ span.badge {
 
 .trends-rail {
   padding-top: 7.2857px; }
+
+.made-data {
+  background-color: #f7f6f5; }
 
 .data-search, .resources-promo, .made-data {
   padding-bottom: 0px;
@@ -859,6 +868,24 @@ article.full-post section.post-content {
     line-height: 2.3; }
   .post-excerpt .iframe-embed iframe.story-embed, .post-content .iframe-embed iframe.story-embed {
     margin: 60px 0 60px 0; }
+
+/* Pages */
+.pages-main {
+  margin-bottom: 60px; }
+  .pages-main h1, .pages-main h2, .pages-main h3, .pages-main h4, .pages-main h5, .pages-main table {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 15px; }
+  .pages-main p {
+    font-family: "Merriweather",Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 0.9em;
+    margin: 0 0 1em; }
+  .pages-main h4 {
+    line-height: 2.3;
+    margin-top: 20px; }
+
+a.resources-page-link {
+  font-family: "Source Sans Pro", sans-serif; }
 
 /* Everything else */
 .homepage-categories .thumbnail img {

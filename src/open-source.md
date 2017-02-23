@@ -3,57 +3,56 @@ layout: page
 title: Open Source
 permalink: /open-source/
 ---
-We could not do our jobs if we didn't have the support of the worldwide community of open source developers.  It truly would be impossible to list the myriad of open source projects, modules, and packages that we use, but we wanted to highlight some of the projects that we really couldn't live without.
+San Diego's Data & Analytics program relies on the worldwide community of open source developers. Below are projects that have been instrumental in the success of our program.
+
+### Publishing
 
 #### [Jekyll](https://github.com/jekyll/jekyll)
-We use Jekyll for a lot of things we build like [StreetsSD](http://streets.sandiego.gov), [PerformSD](http://performance.sandiego.gov), and of course, [DataSD](http://data.sandiego.gov].
+This data portal, plus the [StreetsSD](http://streets.sandiego.gov) and [PerformSD](http://performance.sandiego.gov) sites that feature City data, were built with Jekyll, a static-site generator.
 
 #### [JKAN](https://github.com/timwis/jkan)
-JKAN is a data portal project built on top of Jekyll and is a brainchiled of [Tim Wisniewski](http://github.com/timwis), the CDO of Philadelphia.  Multiple parts of this portal are based on his work, and we can't thank him enough for his contribution.
-
-#### [Airflow](https://github.com/apache/incubator-airflow)
-Airflow is a workflow automation solution that we use to automatically update data on the portal.  It's our main internal platform, and without it, we wouldn't be able to deliver data to you on a regular schedule.
-
-#### [Jupyter Notebooks](https://github.com/jupyter/notebook)
-We use Jupyter Notebooks to create and share documents that contain live code, equations, visualizations and explanatory text. We use to prototype airflow jobs, do data cleaning and transformation, numerical simulation, statistical modeling, machine learning and much more.
-
-####[Docker](https://github.com/docker/docker)
-Docker is how we maintain parity between local and production environments, and how we deploy applications.
-
-#### [R Studio](https://github.com/rstudio/rstudio)
-We use R and RStudio for various data analysis work and transformation.
-
-#### [Gitbook](https://github.com/GitbookIO/gitbook)
-Do you like how our [reports to council](http://tiny.cc/odreport16) work and look?  Like how they're [open source](https://github.com/cityofsandiego/datasd_council_report_2016) too? We have gitbook to thank for that.  We use this tool to build and publish various reports and publications.
-
-#### [Carto](http://carto.com)
-Carto helps us build dynamic and interactive maps that we can publish to the portal.  It's also how we build [StreetsSD](https://github.com/cityofsandiego/datasd_council_report_2016) and various other projects.
-
-#### [Plot.ly](http://plot.ly)
-We use Plot.ly for interactive charts and visualizations within Jupyter, [PerformSD](http://performance.sandiego.gov) and various other places.
-
-#### [D3](https://github.com/d3/d3)
-We use D3 for building custom interactive visualizations, charts and graphs.
+JKAN is a data portal project built on top of Jekyll. Multiple parts of this data portal are based on JKAN, a brainchiled of [Tim Wisniewski](http://github.com/timwis), the CDO of Philadelphia. Thank you, Tim, for your contribution!
 
 #### [Serverless](https://github.com/serverless/serverless)
-We use serverless to provide a backend for those data previews you see on the dataset pages.
+Serverless provides a backend for the dataset previews on this portal.
 
 #### [Polymer](https://github.com/polymer/polymer)
-We use Polymer components for those same previews, once the data comes back from Lambda.
+Polymer components display the dataset previews on this portal.
 
-# Open Source we Publish
+#### [Gitbook](https://github.com/GitbookIO/gitbook)
+Most government publications are available in PDF, but Gitbook instead publishes the content as books in the browser that readers can navigate just like a web page. Gitbook is the publishing medium for the annual [reports to council](http://tiny.cc/odreport16) required by the City's Open Data Policy.
+
+#### [D3](https://github.com/d3/d3)
+D3 is a JavaScript library for building custom interactive data visualizations.
+
+### Data
+
+#### [Jupyter Notebooks](https://github.com/jupyter/notebook)
+Jupyter Notebooks allow the creation and sharing of documents that pull in data, perform equations and visualize results along with explanatory text. Jupyter Notebooks facilitated the prototyping of Airflow jobs. It is also used for data cleaning and transformation, numerical simulation, statistical modeling, machine learning, and much more.
+
+#### [R Studio](https://github.com/rstudio/rstudio)
+The R programming language and RStudio application can also be used for data cleaning, analysis, and transformation.
+
+### Workflow
+
+#### [Airflow](https://github.com/apache/incubator-airflow)
+Airflow is a workflow automation solution that automatically updates the data on this portal.  This platform is otherwise a key component of the Data & Analytics program because data delivered on a regular schedule improves City processes and makes data-driven decisions possible.
+
+####[Docker](https://github.com/docker/docker)
+Docker maintains parity between local and production environments and is how we deploy applications.
+
+### Our open source code
 
 #### [StreetsSD](https://github.com/cityofsandiego/streetsSD)
 An explorer for street paving and street conditions in San Diego
 
 #### [Docker-Airflow](https://github.com/mrmaksimize/docker-airflow)
-Docker orchestration for running Airflow on docker containers.  Originally based on [puckel's version](https://github.com/puckel/docker-airflow) we ended up diverging quiet a bit because of our unique technology requirements.
+Docker orchestration for running Airflow on docker containers.  Originally based on [puckel's version](https://github.com/puckel/docker-airflow), our version accommodates our unique technology requirements.
 
 #### [This Portal](https://github.com/cityofsandiego/seaboard)
-Well, yeah
 
 #### [Other Stuff](https://github.com/cityofsandiego)
-We publish a lot of various small open source projects as well that would probably be overkill to list here.  Follow us on Github to stay up to date with what we're up to!
+Check out the City's Github for all of our smaller projects, and follow the team to stay updated on our work!
 
 * [City of San Diego](https://github.com/cityofsandiego)
 * [Maksim Pecherskiy](https://github.com/mrmaksimize)
