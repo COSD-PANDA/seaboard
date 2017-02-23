@@ -541,7 +541,7 @@ span.badge {
   padding-right: 0px !important; }
 
 .resources-promo {
-  background-color: #f7f6f5;
+  background-color: white;
   /*background-color: $s_orange_lt;*/ }
   .resources-promo ul {
     padding-top: 7.2857px; }
@@ -578,7 +578,7 @@ span.badge {
   background-color: #f7f6f5; }
 
 .data-search, .resources-promo, .made-data {
-  padding-bottom: 0px;
+  padding-bottom: 60px;
   padding-top: 30px; }
   .data-search h2, .resources-promo h2, .made-data h2 {
     margin-bottom: 15px; }
