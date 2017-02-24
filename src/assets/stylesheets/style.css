@@ -578,7 +578,7 @@ span.badge {
   background-color: #f7f6f5; }
 
 .data-search, .resources-promo, .made-data {
-  padding-bottom: 0px;
+  padding-bottom: 60px;
   padding-top: 30px; }
   .data-search h2, .resources-promo h2, .made-data h2 {
     margin-bottom: 15px; }
@@ -689,31 +689,37 @@ th {
   padding: 0px;
   min-width: 1em;
   min-height: 1em;
-  border-radius: 50%; }
+  border-radius: 50%;
+  color: #00549f; }
   .resource-table-button .preview-check {
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 14px;
     background-color: #e0e1dd;
-    border: 1px solid white;
+    border: 2px solid #747678;
     border-radius: 50%;
-    color: white; }
-    .resource-table-button .preview-check .fa-check-circle {
-      width: 17px;
-      height: 17px;
-      display: block;
-      line-height: 1;
-      padding: 0;
-      margin-top: -0.5px;
-      margin-left: -1px; }
+    color: #adafaf; }
+    .resource-table-button .preview-check .fa-check-circle-o {
+      width: 0px;
+      height: 0px;
+      display: none; }
 
 .paper-button-0 {
   min-width: initial; }
 
 .resource-table-button[toggles][active] .preview-check {
   background-color: white;
-  color: #00549f; }
+  color: #00549f;
+  border: 0px; }
   .resource-table-button[toggles][active] .preview-check:hover {
     color: #005bbb; }
+  .resource-table-button[toggles][active] .preview-check .fa-check-circle-o {
+    width: 17px;
+    height: 17px;
+    display: block;
+    line-height: 1;
+    padding: 0;
+    margin-top: -0.5px;
+    margin-left: -1px; }
 
 .resource-preview-loading-spinner {
   margin-left: auto;
@@ -875,7 +881,7 @@ article.full-post section.post-content {
   .pages-main h1, .pages-main h2, .pages-main h3, .pages-main h4, .pages-main h5, .pages-main table {
     font-family: "Source Sans Pro", sans-serif;
     margin-bottom: 15px; }
-  .pages-main p {
+  .pages-main p, .pages-main ul, .pages-main ol {
     font-family: "Merriweather",Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-size: 0.9em;
@@ -886,6 +892,12 @@ article.full-post section.post-content {
 
 a.resources-page-link {
   font-family: "Source Sans Pro", sans-serif; }
+
+.instruct-video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 20px; }
 
 /* Everything else */
 .homepage-categories .thumbnail img {
