@@ -44,7 +44,7 @@ Resources are the actual files, APIs or links that we are sharing. We only provi
 * xml
 * API
 
-Organzing the data into resources contained in datasets allows us to offer the same data in different formats or at different granularities.
+Organizing the data into resources contained in datasets allows us to offer the same data in different formats or at different granularities.
 
 #### Data dictionaries
 
