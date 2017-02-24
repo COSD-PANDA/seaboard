@@ -9,6 +9,10 @@ resources:
     url: >-
       http://seshat.datasd.org/dsd/apps_received_ytd_datasd.csv
     format: csv
+  - name: Permits Activity Dictionary
+    url: >-
+      http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-01-08'
 date_modified: '2017-02-24'
