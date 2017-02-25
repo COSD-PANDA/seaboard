@@ -376,21 +376,17 @@ th {
     color: #00549f;
 
     .preview-check {
-		width: 17px;
-		height: 17px;
+		width: 14px;
+		height: 14px;
 		background-color: $s_gray_lt;
-		border: 1px solid $white;
+		border: 2px solid $s_gray_dk;
 		border-radius: 50%;
-		color: white;
+		color: $s_gray_mid;
 
-		.fa-check-circle {
-			width: 17px;
-			height: 17px;
-			display: block;
-			line-height: 1;
-			padding: 0;
-			margin-top: -0.5px;
-			margin-left: -1px;
+		.fa-check-circle-o {
+			width: 0px;
+			height: 0px;
+			display: none;
 		}
 
 	}
@@ -406,10 +402,22 @@ th {
 	.preview-check {
 		background-color: $white;
 		color: $s_blue_dk;
+		border: 0px;
 
 		&:hover {
 			color: $s_blue_mid;
 		}
+
+		.fa-check-circle-o {
+			width: 17px;
+			height: 17px;
+			display: block;
+			line-height: 1;
+			padding: 0;
+			margin-top: -0.5px;
+			margin-left: -1px;
+		}
+
 	}
 }
 

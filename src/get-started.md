@@ -44,7 +44,7 @@ Resources are the actual files, APIs or links that we are sharing. We only provi
 * xml
 * API
 
-Organzing the data into resources contained in datasets allows us to offer the same data in different formats or at different granularities.
+Organizing the data into resources contained in datasets allows us to offer the same data in different formats or at different granularities.
 
 #### Data dictionaries
 
@@ -67,10 +67,9 @@ If you have a topical keyword in mind, try using this to find a dataset by title
 3.  Preview the results on the screen
 4.  Download the data as a CSV file
 
-<video class="instruct-video" autoplay loop muted controls>
-  <source src="/assets/find_data.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="instruct-video">
+<iframe width="853" height="480" src="https://www.youtube.com/embed/K0K5IsAy5rU?rel=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
+</div>
 
 If you don’t have a topical keyword in mind but have a good idea which City department publishes the data, try searching for that department. Below is an instructional video guide, in which we:
 
@@ -79,10 +78,10 @@ If you don’t have a topical keyword in mind but have a good idea which City de
 3.  Preview the results on the screen
 4.  Download the data as a CSV file
 
-<video class="instruct-video" autoplay loop muted controls>
-  <source src="/assets/dept_search.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+<div class="instruct-video">
+<iframe width="853" height="480" src="https://www.youtube.com/embed/2jSccxSmVYc?rel=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 #### Data stories
