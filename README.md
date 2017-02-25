@@ -1,1 +1,1 @@
-## Better Readme Coming Soon!
+DataSD is the official portal for City of San Diego Open Data. Here, you'll find data about City operations, including public safety, street repairs, public facilities, code enforcement, business licensing, etc. If you can’t find what you’re looking for, we might still be working on publishing it, or it might come from another agency.
