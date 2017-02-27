@@ -859,6 +859,10 @@ article.full-post section.share {
 
 article.full-post section.post-content {
   margin-bottom: 80px; }
+  article.full-post section.post-content p img {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px; }
 
 .post-excerpt, .post-content {
   font-family: "Merriweather",Helvetica, Arial, sans-serif;
