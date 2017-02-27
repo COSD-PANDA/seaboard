@@ -5,33 +5,38 @@ permalink: /stories/
 ---
 {% include breadcrumbs.html %}
 
-{% for story in site.stories %}
+
+{% assign sortedposts = site.stories | sort:"date" | reverse %}
+
+{% for post in sortedposts %}
+
+
 
 <article class="post datasd-article" itemscope itemtype="http://schema.org/BlogPosting" role="article">
 
         <header class="post-header">
-            <a class="title-link" href="{{ story.url }}" title="{{ story.title }}"><h2 class="post-title" itemprop="name">{{ story.title }}</h2></a>
+            <a class="title-link" href="{{ post.url }}" title="{{ post.title }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
         </header>
         <div class="row">
             <div class="article-item col-sm-12">
                 <div class="post-meta">
-                    Posted <time datetime="{{ story.date | date: '%B %d, %Y' }}">{{
-                        story.date | date: '%B %d, %Y' }}</time>{% if story.author.name
-                    %} by {{ story.author.name }}{% endif %}
+                    Posted <time datetime="{{ post.date | date: '%B %d, %Y' }}">{{ post.date | date: '%B %d, %Y' }}</time>
+                        {% if post.author.name %} by {{ post.author.name }} {% endif %}
+
                 </div>
                 <div class="article-thumb">
-                    <a href="{{ story.url }}" title="{{ story.title }}"><img src="{{ story.thumbnail }}" width="100%"
-                                                                                                         alt="{{ story.title }} image" /></a>
+                    <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.thumbnail }}" width="100%"></a>
                 </div>
                 <section class="post-excerpt" itemprop="description">
-                    <p>{{ story.excerpt }}</p>
+                    <p>{{ post.excerpt }}</p>
                 </section>
 
                 <div class="post-more">
-                    <p><a href="{{ story.url }}">Read more</a></p>
+                    <p><a href="{{ post.url }}">Read more</a></p>
                 </div>
             </div>
         </div>
 </article>
+
 
 {% endfor %}
