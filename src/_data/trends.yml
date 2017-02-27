@@ -1,3 +1,10 @@
+- title: This data portal
+  intro: >-
+    We built our own high-tech data portal. Here's why.
+  url: /stories/portal-refresh
+  featured: false
+  img: '/assets/img/stories/portal-compare.png'
+
 - title: Parking meter revenue
   intro: >-
     See how much each of the City's smart parking meters made last year
