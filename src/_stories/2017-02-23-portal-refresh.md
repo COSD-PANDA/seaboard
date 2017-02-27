@@ -25,17 +25,17 @@ Ready-made portal products are more geared toward a manual update process, so wh
 
 Normally, a client uploads a dataset to its cloud, and then that dataset is available for download, for preview in the browser, and through its data API.
 
-But we were not hosting our data in the cloud service our portal provider offered. We used Amazon’s S3 cloud service to host our data and then linked the files to the portal. Not using a direct upload limited our ability to show a preview in the browser or make the data API available without manual intervention. We also couldn’t trigger a change in the extremely important metadata field of “Date Updated” without a manual upload.
+But we were not hosting our data in the cloud service our portal provider offered. We uploaded to a different cloud service and then linked the files to the portal. Not using a direct upload limited our ability to show a preview in the browser or make the data API available without manual intervention. We also couldn’t trigger a change in the extremely important metadata field of “Date Updated” without a manual upload.
 
 Although a ready-made portal product is convenient, it is also expensive. Adding functionality and features as we sought continuous improvement in our program would end up costing taxpayers money that could be better spent. 
 
-Taking all of these factors together, we decided to take San Diego’s open data program to another level and build a portal ourselves. We have an amazing team with the technical expertise to run our own data portal, so we went for it!
+Taking all of these factors together, we decided to take San Diego’s open data program to another level and build a portal ourselves. We have a team with the technical expertise to run our own data portal, so we went for it!
 
 ### Today
 
 ![Screenshot of San Diego's new open data portal](/assets/img/stories/new-portal.png)
 
-At a minimum, a data portal is just a website. All it really needs is a page with a list of datasets (the catalog) and individual pages for each dataset that contain links to download the data. A ready-made portal product is a website with an admin interface that makes it easy for just about anybody to manually update data. But driven by our desire to be a government as innovative as the people we serve, our expectations far exceed the minimum.
+At a minimum, a data portal is just a website. All it really needs is a page with a list of datasets (the catalog) and individual pages for each dataset that contain links to download the data. A ready-made portal product is a website with an admin interface that makes it easy for just about anybody to manually update data.
 
 The reality is that some open data programs do depend on employees to upload data manually. This is because open data became a thing long after government and technology were invented. In fact, doing open data well is very, very, very complex (did we say very?). Not all departments and divisions of a government use the same database technology. Government information is housed in hundreds of different systems or even on spreadsheets in shared drives. Some data even comes from third-parties that are contracted to provide services on behalf of a government, and therefore maintain data on their own servers.
 
@@ -49,7 +49,7 @@ Moving forward, this data portal is the new hub for all open data and analytics 
 
 If you are intrigued by the work we’ve done, our portal is also open-source! [Check out our code](https://github.com/cityofsandiego/seaboard), copy it, and make your own data portal, aka website with a catalog. We use [Jekyll](https://jekyllrb.com/docs/home/), a static site generator, to manage all the files and pages of our portal.
 
-You also need to check out our [automation process](https://github.com/mrmaksimize/docker-airflow). We are using Airflow, another open-source tool, [originally developed by AirBnB](http://nerds.airbnb.com/airflow/) to improve workflow for employees who crunch data. 
+You also need to check out our [automation process](https://github.com/mrmaksimize/docker-airflow). We are using [Airflow](https://github.com/apache/incubator-airflow), another open-source tool, originally developed to improve workflow for employees of companies that crunch data. 
 
 Basically, each little task that we need to complete when we extract and transform data is handled with bits of Python code. Examples of these tasks include connecting to a database, pulling a file from one of the City’s shared drives, detecting the current date and using that to grab the correct time interval of data, etc.
 
