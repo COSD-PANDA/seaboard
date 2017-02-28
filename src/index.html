@@ -73,6 +73,17 @@ layout: front
 </script>
 <!--</template>-->
 
+<div class="container-fluid the-latest">
+  <div class="container">
+    <div class="col-12">
+    <strong>The latest: </strong>
+    <a href="/stories/2017-02-23-portal-refresh">We redesigned this site!</a>
+    <div id="poseidon-yesterday"></div>
+
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid resources-promo">
   <div class="container">
     <div class="col-12">
@@ -147,3 +158,33 @@ layout: front
       </div><!--trends-->
     </div>
 </div>
+
+<script>
+var client = new Keen({
+  projectId: "585483998db53dfda8a7c33d",
+  readKey: "D7EC1F7B1405D3898CDF480D09299A2CAFF53D3E5DADD5F0A6B53FB2944B27F8"
+});
+  
+Keen.ready(function(){
+  
+  var query = new Keen.Query("maximum", {
+    event_collection: "poseidon_prod_taskinstance_events",
+    group_by: [
+    "dag_id"
+],
+    target_property: "run_date",
+    timeframe: "this_4_weeks",
+    timezone: "UTC"
+  });
+  
+  client.run(query, function(err, res) {
+    if (err) {
+      console.log("error");
+    } else {
+      console.log(res);
+    }
+  });
+  
+  
+});
+</script>

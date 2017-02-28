@@ -540,6 +540,13 @@ span.badge {
   padding-left: 0px !important;
   padding-right: 0px !important; }
 
+.the-latest {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.9em;
+  line-height: 1.5;
+  background-color: #e0e1dd; }
+
 .resources-promo {
   background-color: white;
   /*background-color: $s_orange_lt;*/ }
