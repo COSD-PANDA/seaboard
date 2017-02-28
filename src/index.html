@@ -75,10 +75,28 @@ layout: front
 
 <div class="container-fluid the-latest">
   <div class="container">
-    <div class="col-12">
-    <strong>The latest: </strong>
-    <a href="/stories/2017-02-23-portal-refresh">We redesigned this site!</a>
-    <div id="poseidon-yesterday"></div>
+    <div class="col-12 latest-rail">
+      <div class="latest-rail-item">
+        <strong>The latest </strong>
+        <div class="rail-spacer">&rarr;</div>
+      </div>
+      <div class="latest-rail-item">
+        <a href="/stories/2017-02-23-portal-refresh">We redesigned this site!</a>
+        <div class="rail-spacer">&bull;</div>
+      </div>
+      
+      <div class="latest-rail-item">
+        <div>Resources updated yesterday:&nbsp;</div>
+        <div id="poseidon-yesterday-count"></div>
+        <div class="rail-spacer">&bull;</div>
+      </div>
+
+      <div class="latest-rail-item">
+        <div>Megabytes of data prepared in the last week:&nbsp;</div>
+        <div><span class="fa fa-cutlery"></span></div>
+        <div id="poseidon-yesterday-size"></div>
+      </div>
+      
 
     </div>
   </div>
@@ -168,28 +186,41 @@ var client = new KeenFull({
 
 KeenFull.ready(function(){
 
-  var query = new KeenFull.Query("count_unique", {
-    event_collection: "s3_seshat.datasd.org_logs",
-    filters: [
-    {
-        "operator": "eq",
-        "property_name": "log.operation",
-        "property_value": "REST.PUT.OBJECT"
+    var queries = {
+      'poseidon-yesterday-count': new KeenFull.Query('count_unique', {
+        event_collection: "s3_seshat.datasd.org_logs",
+        filters:[{
+          "operator": "eq",
+          "property_name": "log.operation",
+          "property_value": "REST.PUT.OBJECT"
+          }],
+        interval: "daily",
+        target_property: "log.key",
+        timeframe: "previous_1_days",
+        timezone: "UTC",
+        div_id: "poseidon-yesterday-count"
+      }),
+      'poseidon-yesterday-size': new KeenFull.Query('sum', {
+        event_collection: "s3_seshat.datasd.org_logs",
+        interval: "weekly",
+        target_property: "log.bytes_sent",
+        timeframe: "previous_1_weeks",
+        timezone: "UTC",
+        div_id: "poseidon-yesterday-size"
+      })
     }
-],
-    interval: "daily",
-    target_property: "log.key",
-    timeframe: "previous_1_days",
-    timezone: "UTC"
-  });
 
-  client.run(query, function(err, res) {
-    if (err) {
-      console.log("error");
-    } else {
-      console.log(res);
+    for (var i in queries) {
+      var run = client.run(queries[i], function(err, res) {
+        if (this.queries[0].params.div_id === 'poseidon-yesterday-size') {
+          var finalResult = Math.round(res.result[0].value/1048576);
+        } else {
+          var finalResult = res.result[0].value;
+        }
+
+        document.getElementById(this.queries[0].params.div_id).innerHTML = finalResult;
+      });
     }
-  });
 
 });
 

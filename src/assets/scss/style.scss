@@ -203,6 +203,33 @@ span.badge {
 	padding-top: 7.2857px;
 }
 
+.latest-rail {
+
+	.latest-rail-item {
+		display: block;
+
+		div {
+			display: inline-block;
+		}
+
+		.fa {
+				font-size: 0.85em;
+				color: $s_gray_dk;
+			}
+
+		.rail-spacer {
+			visibility: hidden;
+			padding: 0px 0px 0 0px;
+		}
+	}
+
+	#poseidon-yesterday-count, #poseidon-yesterday-size {
+		font-weight: bold;
+	}
+
+
+}
+
 .made-data {
 	background-color: #f7f6f5;
 }
@@ -1055,6 +1082,19 @@ a.resources-page-link {
 	    	text-align: left;
 	    }
 
+	}
+
+	.latest-rail {
+
+		.latest-rail-item {
+
+			display: inline-block;
+
+			.rail-spacer {
+				visibility: visible;
+				padding: 0px 20px 0 20px;
+			}
+		}
 	}
 
 }
