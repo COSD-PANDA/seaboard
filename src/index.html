@@ -160,14 +160,14 @@ layout: front
 </div>
 
 <script>
-var client = new Keen({
+var client = new KeenFull({
   projectId: "585483998db53dfda8a7c33d",
   readKey: "D7EC1F7B1405D3898CDF480D09299A2CAFF53D3E5DADD5F0A6B53FB2944B27F8"
 });
-  
+
 Keen.ready(function(){
-  
-  var query = new Keen.Query("maximum", {
+
+  var query = new KeenFull.Query("maximum", {
     event_collection: "poseidon_prod_taskinstance_events",
     group_by: [
     "dag_id"
@@ -176,7 +176,7 @@ Keen.ready(function(){
     timeframe: "this_4_weeks",
     timezone: "UTC"
   });
-  
+
   client.run(query, function(err, res) {
     if (err) {
       console.log("error");
@@ -184,7 +184,7 @@ Keen.ready(function(){
       console.log(res);
     }
   });
-  
-  
+
+
 });
 </script>
