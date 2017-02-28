@@ -160,20 +160,25 @@ layout: front
 </div>
 
 <script>
-var client = new Keen({
-  projectId: "585483998db53dfda8a7c33d",
-  readKey: "D7EC1F7B1405D3898CDF480D09299A2CAFF53D3E5DADD5F0A6B53FB2944B27F8"
+var client = new Keen2({
+  projectId: "58b083098db53dfda8a88bcf",
+  readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
 });
   
-Keen.ready(function(){
+Keen2.ready(function(){
   
-  var query = new Keen.Query("maximum", {
-    event_collection: "poseidon_prod_taskinstance_events",
-    group_by: [
-    "dag_id"
+  var query = new Keen2.Query("count_unique", {
+    event_collection: "s3_seshat.datasd.org_logs",
+    filters: [
+    {
+        "operator": "eq",
+        "property_name": "log.operation",
+        "property_value": "REST.PUT.OBJECT"
+    }
 ],
-    target_property: "run_date",
-    timeframe: "this_4_weeks",
+    interval: "daily",
+    target_property: "log.key",
+    timeframe: "previous_1_days",
     timezone: "UTC"
   });
   
@@ -185,6 +190,6 @@ Keen.ready(function(){
     }
   });
   
-  
 });
+
 </script>
