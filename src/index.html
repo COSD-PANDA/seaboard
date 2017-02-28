@@ -160,14 +160,15 @@ layout: front
 </div>
 
 <script>
-var client = new Keen2({
+
+var client = new KeenFull({
   projectId: "58b083098db53dfda8a88bcf",
   readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
 });
-  
-Keen2.ready(function(){
-  
-  var query = new Keen2.Query("count_unique", {
+
+KeenFull.ready(function(){
+
+  var query = new KeenFull.Query("count_unique", {
     event_collection: "s3_seshat.datasd.org_logs",
     filters: [
     {
@@ -181,7 +182,7 @@ Keen2.ready(function(){
     timeframe: "previous_1_days",
     timezone: "UTC"
   });
-  
+
   client.run(query, function(err, res) {
     if (err) {
       console.log("error");
@@ -189,7 +190,7 @@ Keen2.ready(function(){
       console.log(res);
     }
   });
-  
+
 });
 
 </script>
