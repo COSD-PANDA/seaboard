@@ -81,19 +81,18 @@ layout: front
         <div class="rail-spacer">&rarr;</div>
       </div>
       <div class="latest-rail-item">
-        <a href="/stories/2017-02-23-portal-refresh">We redesigned this site!</a>
+        <a href="/stories/portal-refresh">We redesigned this site!</a>
         <div class="rail-spacer">&bull;</div>
       </div>
 
       <div class="latest-rail-item">
-        <div>Resources updated yesterday:&nbsp;</div>
+        <div><a href="/get-started/">Resources</a> updated yesterday:&nbsp;</div>
         <div id="poseidon-yesterday-count"></div>
         <div class="rail-spacer">&bull;</div>
       </div>
 
       <div class="latest-rail-item">
-        <div>GB of data prepared in the last week:&nbsp;</div>
-        <div><span class="fa fa-cutlery"></span></div>
+        <div>GB updated yesterday:&nbsp;</div>
         <div id="poseidon-yesterday-size"></div>
       </div>
 
@@ -184,48 +183,15 @@ var client = new KeenFull({
   readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
 });
 
-KeenFull.ready(function(){
+client.run("bytes-yesterday", function(err, response) {
 
-    var queries = {
-      'poseidon-yesterday-count': new KeenFull.Query('count_unique', {
-        event_collection: "s3_seshat.datasd.org_logs",
-        filters:[{
-          "operator": "in",
-          "property_name": "log.operation",
-          "property_value": ["REST.PUT.OBJECT", "REST.PUT.PART", "REST.POST.UPLOAD", "REST.POST.UPLOADS", "REST.PUT.WEBSITE"]
-          }],
-        interval: "daily",
-        target_property: "log.key",
-        timeframe: "previous_1_days",
-        timezone: "UTC",
-        div_id: "poseidon-yesterday-count"
-      }),
-      'poseidon-yesterday-size': new KeenFull.Query('sum', {
-        event_collection: "s3_seshat.datasd.org_logs",
-        interval: "daily",
-        target_property: "log.object_size",
-        timeframe: "previous_1_days",
-        timezone: "UTC",
-        filters:[{
-          "operator": "in",
-          "property_name": "log.operation",
-          "property_value": ["REST.PUT.OBJECT", "REST.PUT.PART", "REST.POST.UPLOAD", "REST.POST.UPLOADS", "REST.PUT.WEBSITE"]
-        }],
-        div_id: "poseidon-yesterday-size"
-      })
-    }
+  document.getElementById("poseidon-yesterday-size").innerHTML = Math.round(response.result/1073741824 * 100) / 100;
 
-    for (var i in queries) {
-      var run = client.run(queries[i], function(err, res) {
-        if (this.queries[0].params.div_id === 'poseidon-yesterday-size') {
-          var finalResult = Math.round(res.result[0].value/1073741824 * 100) / 100;
-        } else {
-          var finalResult = res.result[0].value;
-        }
+});
 
-        document.getElementById(this.queries[0].params.div_id).innerHTML = finalResult;
-      });
-    }
+client.run("resources-yesterday", function(err, response) {
+
+  document.getElementById("poseidon-yesterday-count").innerHTML = response.result[0].value;
 
 });
 
