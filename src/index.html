@@ -176,23 +176,26 @@ layout: front
     </div>
 </div>
 
-<script>
+<script defer>
 
 var client = new KeenFull({
   projectId: "58b083098db53dfda8a88bcf",
   readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
 });
 
-client.run("bytes-yesterday", function(err, response) {
+KeenFull.ready(function(){
 
-  document.getElementById("poseidon-yesterday-size").innerHTML = Math.round(response.result/1073741824 * 100) / 100;
+    client.run("bytes-yesterday", function(err, response) {
 
-});
+    document.getElementById("poseidon-yesterday-size").innerHTML = Math.round(response.result/1073741824 * 100) / 100;
 
-client.run("resources-yesterday", function(err, response) {
+    });
 
-  document.getElementById("poseidon-yesterday-count").innerHTML = response.result[0].value;
+    client.run("resources-yesterday", function(err, response) {
 
+    document.getElementById("poseidon-yesterday-count").innerHTML = response.result[0].value;
+
+    });
 });
 
 </script>
