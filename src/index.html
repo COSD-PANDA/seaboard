@@ -184,6 +184,21 @@ var client = new KeenFull({
   readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
 });
 
+client.run("log-events-base", function(err, response) {
+
+  document.getElementById("poseidon-yesterday-size").innerHTML = response.result;
+
+
+});
+
+
+/*
+
+var client = new KeenFull({
+  projectId: "58b083098db53dfda8a88bcf",
+  readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
+});
+
 KeenFull.ready(function(){
 
     var queries = {
@@ -223,5 +238,7 @@ KeenFull.ready(function(){
     }
 
 });
+
+*/
 
 </script>
