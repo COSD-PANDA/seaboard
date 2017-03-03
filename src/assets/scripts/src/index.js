@@ -12,6 +12,7 @@ import {queryByComponent, setParams} from './util'
 
 const params = $.deparam(window.location.search.substr(1))
 
+
 // Check for these components on the page and initialize them
 const components = [
   {tag: 'dataset-display', class: DatasetDisplay},
@@ -25,11 +26,11 @@ for (let component of components) {
     // If the component depends on datasets.json, fetch it first (once per page) and pass it
     if (component.usesDatasets) {
       getDatasets().then((datasets) => {
-        els.each((index, el) => new component.class({el: $(el), user, params, datasets})) // eslint-disable-line
+        els.each((index, el) => new component.class({el: $(el), params, datasets})) // eslint-disable-line
       })
     // Otherwise simply initialize the component
     } else {
-      els.each((index, el) => new component.class({el: $(el), user, params})) // eslint-disable-line
+      els.each((index, el) => new component.class({el: $(el), params})) // eslint-disable-line
     }
   }
 }

@@ -16,15 +16,8 @@ lsi: false
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 1
 
-# Site theme
-jkan_theme: Cosmo
-
 # Dataset Previews
 ds_preview_url: https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview
-
-# Authentication
-github_client_id: 3cd6423406e0360b4be7
-gatekeeper_host: https://jkansd.herokuapp.com
 
 ## Neek
 neek_project_id: 58ae0bd08db53dfda8a88883
@@ -107,12 +100,6 @@ google_analytics:
 google_gtm:
   enabled: false
   code: "GTM-KDXK7NN"
-
-# US Digital Analytics Program - https://analytics.usa.gov
-digital_analytics_program:
-  enabled: false
-  agency: ""
-  subagency: ""
 
 # Twitter
 twittercard:
