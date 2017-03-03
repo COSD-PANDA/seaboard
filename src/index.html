@@ -73,6 +73,34 @@ layout: front
 </script>
 <!--</template>-->
 
+<div class="container-fluid the-latest">
+  <div class="container">
+    <div class="col-12 latest-rail">
+      <div class="latest-rail-item">
+        <strong>The latest </strong>
+        <div class="rail-spacer">&rarr;</div>
+      </div>
+      <div class="latest-rail-item">
+        <a href="/stories/portal-refresh">We redesigned this site!</a>
+        <div class="rail-spacer">&bull;</div>
+      </div>
+
+      <div class="latest-rail-item">
+        <div><a href="/get-started/">Resources</a> updated yesterday:&nbsp;</div>
+        <div id="poseidon-yesterday-count"></div>
+        <div class="rail-spacer">&bull;</div>
+      </div>
+
+      <div class="latest-rail-item">
+        <div>GB updated yesterday:&nbsp;</div>
+        <div id="poseidon-yesterday-size"></div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid resources-promo">
   <div class="container">
     <div class="col-12">
@@ -147,3 +175,24 @@ layout: front
       </div><!--trends-->
     </div>
 </div>
+
+<script>
+
+var client = new KeenFull({
+  projectId: "58b083098db53dfda8a88bcf",
+  readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
+});
+
+client.run("bytes-yesterday", function(err, response) {
+
+  document.getElementById("poseidon-yesterday-size").innerHTML = Math.round(response.result/1073741824 * 100) / 100;
+
+});
+
+client.run("resources-yesterday", function(err, response) {
+
+  document.getElementById("poseidon-yesterday-count").innerHTML = response.result[0].value;
+
+});
+
+</script>

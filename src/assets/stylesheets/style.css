@@ -540,6 +540,13 @@ span.badge {
   padding-left: 0px !important;
   padding-right: 0px !important; }
 
+.the-latest {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.9em;
+  line-height: 1.5;
+  background-color: #e0e1dd; }
+
 .resources-promo {
   background-color: white;
   /*background-color: $s_orange_lt;*/ }
@@ -573,6 +580,20 @@ span.badge {
 
 .trends-rail {
   padding-top: 7.2857px; }
+
+.latest-rail .latest-rail-item {
+  display: block; }
+  .latest-rail .latest-rail-item div {
+    display: inline-block; }
+  .latest-rail .latest-rail-item .fa {
+    font-size: 0.85em;
+    color: #747678; }
+  .latest-rail .latest-rail-item .rail-spacer {
+    visibility: hidden;
+    padding: 0px 0px 0 0px; }
+
+.latest-rail #poseidon-yesterday-count, .latest-rail #poseidon-yesterday-size {
+  font-weight: bold; }
 
 .made-data {
   background-color: #f7f6f5; }
@@ -1153,7 +1174,12 @@ h4.bottom-box-head {
   .main-footer-container ul.link-list {
     text-align: right; }
   .main-footer-container ul.social-link-list {
-    text-align: left; } }
+    text-align: left; }
+  .latest-rail .latest-rail-item {
+    display: inline-block; }
+    .latest-rail .latest-rail-item .rail-spacer {
+      visibility: visible;
+      padding: 0px 20px 0 20px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 767px) {
