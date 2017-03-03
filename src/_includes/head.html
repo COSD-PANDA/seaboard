@@ -20,17 +20,53 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notie/3.0.0/notie.min.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- Polymer -->
-   <script src="{{ site.baseurl }}/assets/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/polymer/polymer.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-data-table/px-data-table.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-spinner/px-spinner.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-ajax/iron-ajax.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/iron-icons.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/maps-icons.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/image-icons.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-button/paper-button.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-autocomplete/paper-autocomplete.html">
+   <!--<script src="{{ site.baseurl }}/assets/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>-->
+
+<!--
+      Fast bootstrapping of the webcomponents-lite library. Only loads the library
+      if the browser doesn't natively support web components.
+    -->
+    <script type="text/javascript">
+    (function() {
+      'use strict';
+
+      var onload = function() {
+        // For native Imports, manually fire WebComponentsReady so user code
+        // can use the same code path for native and polyfill'd imports.
+        if (!window.HTMLImports) {
+          document.dispatchEvent(
+            new CustomEvent('WebComponentsReady', {bubbles: true})
+          );
+        }
+      };
+
+      var webComponentsSupported = (
+        'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template')
+      );
+
+      if (!webComponentsSupported) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '/assets//bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        script.onload = onload;
+        document.head.appendChild(script);
+      } else {
+        onload();
+      }
+    })();
+    </script>
+
+
+
+   <link rel="import" href="{{site.baseurl}}/assets/bower_components/polymer/polymer-micro.html">
+  <!--<link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/px-data-table/px-data-table.html">
+  <link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/px-spinner/px-spinner.html">-->
+  <link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/iron-ajax/iron-ajax.html">
+  <!--<link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/iron-icons.html">
+  <link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/maps-icons.html">
+  <link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/image-icons.html">
+  <link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/paper-button/paper-button.html">-->
+  <link async defer rel="import" href="{{site.baseurl}}/assets/bower_components/paper-autocomplete/paper-autocomplete.html">
 
   <!-- build:css /assets/stylesheets/vendor.min.css -->
   <!-- endbuild -->
@@ -51,17 +87,6 @@
 src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.7.min.js"
 onload="initKeenWebAutoCollector()"></script>
   {% endif %}
-  {% if site.digital_analytics_program.enabled == true %}
-    <!-- US Digital Analytics Program - see https://analytics.usa.gov for data-->
-    <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency={{ site.digital_analytics_program.agency }}&subagency={{ site.digital_analytics_program.subagency }}"></script>
-  {% endif %}
-
-  {% if site.google_analytics.enabled == true %}
-    <!-- Google Analytics -->
-    {% include addons/google-analytics.html %}
-  {% endif %}
-
-
   {% if site.google_gtm.enabled == true %}
     <!-- Google GTM -->
     {% include addons/gtm-head.html %}
