@@ -9,17 +9,8 @@ import Navigation from './components/navigation'
 import DatasetsList from './components/datasets-list'
 import CategoriesFilter from './components/categories-filter'
 import departmentsFilter from './components/departments-filter'
-import Form from './components/form'
-import DatasetForm from './components/dataset-form'
-import AdminForm from './components/admin-form'
-import CategoriesForm from './components/categories-form'
-import DataStoriesForm from './components/data-stories-form'
-import LicensesForm from './components/licenses-form'
 import DatasetDisplay from './components/dataset-display'
-import DeletePageButton from './components/delete-page-button'
-import EditableList from './components/editable-list'
 import ViewSwitcher from './components/view-switcher'
-import ThemeGallery from './components/theme-gallery'
 import {queryByComponent, setParams} from './util'
 
 const params = $.deparam(window.location.search.substr(1))
@@ -52,17 +43,8 @@ user.on('change', (changedUser) => {
 // Check for these components on the page and initialize them
 const components = [
   {tag: 'navigation', class: Navigation},
-  {tag: 'form', class: Form},
-  {tag: 'dataset-form', class: DatasetForm},
-  {tag: 'admin-form', class: AdminForm},
-  {tag: 'categories-form', class: CategoriesForm},
-  {tag: 'data-stories-form', class: DataStoriesForm},
-  {tag: 'licenses-form', class: LicensesForm},
   {tag: 'dataset-display', class: DatasetDisplay},
-  {tag: 'delete-page-button', class: DeletePageButton},
-  {tag: 'editable-list', class: EditableList},
   {tag: 'view-switcher', class: ViewSwitcher},
-  {tag: 'theme-gallery', class: ThemeGallery},
   {tag: 'datasets-list', class: DatasetsList, usesDatasets: true},
   {tag: 'categories-filter', class: CategoriesFilter, usesDatasets: true},
   {tag: 'departments-filter', class: departmentsFilter, usesDatasets: true}

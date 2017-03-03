@@ -56,7 +56,7 @@ layout: default
 
             // Remove active from all other buttons
             for (var i = 0; i < button_els.length; i++)
-            button_els[i].set('active', false);
+                button_els[i].set('active', false);
 
             title_el.textContent = title;
             ajax_el.set('params', params);
@@ -171,17 +171,6 @@ layout: default
           {% endunless %}
         {% endfor %}
       </table>
-
-
-      <div class="row" data-hook="view" data-view="edit">
-        <div class="col-sm-8 col-sm-offset-2">
-          {% include dataset-form.html dataset=page %}
-        </div>
-        <div class="col-sm-2">
-          <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>

@@ -10,7 +10,6 @@ layout: default
         <div class="col-sm-12">
         <h2>
           {{ page.title }}
-          <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
         </h2>
         <p>{{ page.description }}</p>
         </div>
@@ -23,15 +22,6 @@ layout: default
         <span class="badge">{{dataset_count}}</span>
         <div data-hook="datasets-items"></div>
       </div>
-    </div>
-  </div>
-
-  <div class="row" data-hook="view" data-view="edit">
-    <div class="col-sm-8 col-sm-offset-2">
-      {% include department-form.html department=page %}
-    </div>
-    <div class="col-sm-2">
-      <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
     </div>
   </div>
 </div>
