@@ -84,7 +84,7 @@ layout: front
         <a href="/stories/2017-02-23-portal-refresh">We redesigned this site!</a>
         <div class="rail-spacer">&bull;</div>
       </div>
-      
+
       <div class="latest-rail-item">
         <div>Resources updated yesterday:&nbsp;</div>
         <div id="poseidon-yesterday-count"></div>
@@ -92,11 +92,11 @@ layout: front
       </div>
 
       <div class="latest-rail-item">
-        <div>Megabytes of data prepared in the last week:&nbsp;</div>
+        <div>GB of data prepared in the last week:&nbsp;</div>
         <div><span class="fa fa-cutlery"></span></div>
         <div id="poseidon-yesterday-size"></div>
       </div>
-      
+
 
     </div>
   </div>
@@ -205,9 +205,9 @@ KeenFull.ready(function(){
       'poseidon-yesterday-count': new KeenFull.Query('count_unique', {
         event_collection: "s3_seshat.datasd.org_logs",
         filters:[{
-          "operator": "eq",
+          "operator": "in",
           "property_name": "log.operation",
-          "property_value": "REST.PUT.OBJECT"
+          "property_value": ["REST.PUT.OBJECT", "REST.PUT.PART", "REST.POST.UPLOAD", "REST.POST.UPLOADS", "REST.PUT.WEBSITE"]
           }],
         interval: "daily",
         target_property: "log.key",
@@ -217,10 +217,15 @@ KeenFull.ready(function(){
       }),
       'poseidon-yesterday-size': new KeenFull.Query('sum', {
         event_collection: "s3_seshat.datasd.org_logs",
-        interval: "weekly",
-        target_property: "log.bytes_sent",
-        timeframe: "previous_1_weeks",
+        interval: "daily",
+        target_property: "log.object_size",
+        timeframe: "previous_1_days",
         timezone: "UTC",
+        filters:[{
+          "operator": "in",
+          "property_name": "log.operation",
+          "property_value": ["REST.PUT.OBJECT", "REST.PUT.PART", "REST.POST.UPLOAD", "REST.POST.UPLOADS", "REST.PUT.WEBSITE"]
+        }],
         div_id: "poseidon-yesterday-size"
       })
     }
@@ -228,7 +233,7 @@ KeenFull.ready(function(){
     for (var i in queries) {
       var run = client.run(queries[i], function(err, res) {
         if (this.queries[0].params.div_id === 'poseidon-yesterday-size') {
-          var finalResult = Math.round(res.result[0].value/1048576);
+          var finalResult = Math.round(res.result[0].value/1073741824 * 100) / 100;
         } else {
           var finalResult = res.result[0].value;
         }
