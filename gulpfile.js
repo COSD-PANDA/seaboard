@@ -15,6 +15,29 @@ var merge = require("merge-stream");
 var reload = browserSync.reload;
 // And define a variable that BrowserSync uses in it"s function
 var bs;
+var path = require('path');
+
+/*******************************************************************************
+ * SERVICE WORKER
+ *
+ * Builds (or rebuilds) a service worker to cache files on the site's app shell.
+ * Rebuilding the service worker invalidates the user's cache on the next
+ * visit to the site ensuring they get new files.
+ ******************************************************************************/
+
+ gulp.task('generate-service-worker', function(callback) {
+   var swPrecache = require('sw-precache'),
+       rootDir =  './site';
+
+   swPrecache.write(path.join(rootDir, '/service-worker.js'), {
+     staticFileGlobs: [rootDir + '/*.html',
+                       rootDir + '/assets/**',
+                       rootDir + '/*.json'],
+     stripPrefix: rootDir,
+     maximumFileSizeToCacheInBytes: 6000000, //this needed so hydrolysis is cached...
+     templateFilePath: rootDir + '/sw.tmpl'
+   }, callback);
+ });
 
 // Deletes the directory that is used to serve the site during development
 gulp.task("clean:dev", del.bind(null, ["serve"]));
@@ -73,7 +96,7 @@ gulp.task("fonts", function () {
 
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
-  return gulp.src(["serve/*.txt", "serve/*.xml", "serve/*.json", "src/CNAME", "src/.surgeignore"])
+  return gulp.src(["serve/*.txt", "serve/*.xml", "serve/*.json", "src/CNAME", "src/.surgeignore", "src/sw.tmpl"])
     .pipe(gulp.dest("site"))
     .pipe($.size({ title: "xml, txt, json" }))
 });
@@ -195,7 +218,7 @@ gulp.task("build", ["jekyll:prod", "styles"], function () {});
 
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
-gulp.task("publish", ["build"], function () {
-  gulp.start("html", "bower_components", "copy", "images", "fonts", "webpack:prod");
+gulp.task("publish", ["build", "html", "bower_components", "images", "fonts", "copy", "webpack:prod"], function () {
+  gulp.start("generate-service-worker");
 });
 
