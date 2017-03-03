@@ -55,6 +55,6 @@ Basically, each little task that we need to complete when we extract and transfo
 
 Airflow keeps all these bits organized into a hierarchy of jobs, and we get alerts if anything fails. We can also use Airflow to schedule automatic kick-off of jobs, which is one of the major headaches of automation. Keep an eye on this blog for more in-depth and technical explanations of how we are using Airflow.
 
-If you are a person who was using the data API from our previous portal, you will have to instead have to work with the link to the csv. We also had to change how we stored data in our cloud, so please plan on updating any previous links to csv files by the end of March. You can get updated links by checking the dataset pages on this new portal.
+If you are a person who was using the data API from our previous portal, you will instead have to work with the link to the csv. We also had to change how we stored data in our cloud, so please plan on updating any previous links to csv files by the end of March. You can get updated links by checking the dataset pages on this new portal.
 
 We hope you love this new portal, and we especially hope you love having automatically updated data!  Let us know what you think.

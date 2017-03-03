@@ -318,7 +318,9 @@ img.logo {
 .sd-navbar-top.navbar-default {
   margin-top: 33.4px;
   background-color: #37424a;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  border-color: black;
+  border-width: 0 0 1px; }
   .sd-navbar-top.navbar-default .navbar-header {
     margin-top: 0px;
     height: 50px;
@@ -438,8 +440,13 @@ a .hidden-link-text {
   #footer-bar {
     height: 30px; } }
 
+/* General */
 body {
-  color: #37424a; }
+  color: #37424a;
+  font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  background-color: #ffffff; }
   body a {
     color: #005bbb;
     text-decoration: none;
@@ -450,6 +457,13 @@ body {
     body a:visited {
       color: #005bbb;
       text-decoration: none; }
+
+p {
+  margin: 0 0 1.3em; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 35px;
+  margin-bottom: 15px; }
 
 .breadcrumb > .active {
   color: #747678; }
@@ -544,7 +558,6 @@ span.badge {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 0.9em;
-  line-height: 1.5;
   background-color: #e0e1dd; }
 
 .resources-promo {
@@ -631,14 +644,12 @@ span.badge {
     font-family: "Source Sans Pro", sans-serif; }
   .trend-preview-container .preview-text .preview-desc {
     font-size: 0.9em;
-    line-height: 1.5;
     font-family: "Merriweather",Helvetica, Arial, sans-serif; }
 
 .trend-link {
   display: block;
   padding: 4px;
   margin-bottom: 21px;
-  line-height: 1.42857143;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 0;
@@ -681,9 +692,8 @@ span.badge {
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 15px; }
 
-.dataset-main p {
+.dataset-main p, .dataset-main ul, .dataset-main ol {
   font-family: "Merriweather",Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-size: 0.9em; }
 
 .dataset-main p.dataset-preview-msg {
@@ -830,6 +840,9 @@ dataset {
     color: #5eb6e4;
     text-decoration: underline; }
 
+dataset:last-child {
+  border-bottom: none; }
+
 /* Departments landing page */
 .department-listing {
   display: block;
@@ -887,10 +900,7 @@ article.full-post section.post-content {
 
 .post-excerpt, .post-content {
   font-family: "Merriweather",Helvetica, Arial, sans-serif;
-  font-size: 0.95em;
-  line-height: 1.3547; }
-  .post-excerpt p, .post-content p {
-    margin: 0 0 1em; }
+  font-size: 0.95em; }
   .post-excerpt ul, .post-content ul {
     margin: 0 0 1em; }
     .post-excerpt ul li, .post-content ul li {
@@ -908,7 +918,6 @@ article.full-post section.post-content {
     margin-bottom: 15px; }
   .pages-main p, .pages-main ul, .pages-main ol {
     font-family: "Merriweather",Helvetica, Arial, sans-serif;
-    line-height: 1.5;
     font-size: 0.9em;
     margin: 0 0 1em; }
   .pages-main h4 {

@@ -5,9 +5,15 @@ The main SCSS file for everything, yep
 @import "main";
 @import "sd";
 
+/* General */
+
 body {
 
 	color: $p_black;
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    background-color: #ffffff;
 
 	a {
 		color: $s_blue_mid;
@@ -26,6 +32,15 @@ body {
 	}
 
 
+}
+
+p {
+	margin: 0 0 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 35px;
+	margin-bottom: 15px;
 }
 
 .breadcrumb>.active {
@@ -146,7 +161,6 @@ span.badge {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-size: 0.9em;
-	line-height: 1.5;
 	background-color: $s_gray_lt;
 }
 
@@ -293,7 +307,6 @@ span.badge {
 
     	.preview-desc {
     		font-size: 0.9em;
-    		line-height: 1.5;
     		@include merriweather;
     	}
 
@@ -307,7 +320,6 @@ span.badge {
     display: block;
     padding: 4px;
     margin-bottom: 21px;
-    line-height: 1.42857143;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 0;
@@ -372,9 +384,8 @@ span.badge {
 		margin-bottom: 15px;
 	}
 
-	p {
+	p, ul, ol {
 		@include merriweather;
-		line-height: 1.5;
 		font-size: 0.9em;
 	}
 
@@ -590,6 +601,10 @@ dataset {
 	}
 }
 
+dataset:last-child {
+		border-bottom: none;
+	}
+
 /* Departments landing page */
 
 .department-listing {
@@ -673,11 +688,6 @@ article.full-post {
 
 	@include merriweather;
 	font-size: 0.95em;
-	line-height: 1.3547;
-
-	p {
-		margin: 0 0 1em;
-	}
 
 	ul {
 
@@ -711,7 +721,6 @@ article.full-post {
 
 	p, ul, ol {
 		@include merriweather;
-		line-height: 1.5;
 		font-size: 0.9em;
 		margin: 0 0 1em;
 	}

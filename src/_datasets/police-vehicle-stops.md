@@ -53,13 +53,13 @@ Vehicle Stops files contain all vehicle stops for a given year.
 
 <!--more-->
 
-- Field descriptions for this data are available in the <b>Vehicle Stops Dictionary</b>,
+Field descriptions for this data are available in the <b>Vehicle Stops Dictionary</b>,
 and race codes are documented in the <b>Vehicle Stops Race Codes</b> file.
 
-- In certain cases a search is conducted following a vehicle stop.
+In certain cases a search is conducted following a vehicle stop.
 Details about these searches are available in the <b>Vehicle Stops Search Details</b> files.
 Field descriptions for this data are available in the <b>Vehicle Stops Search Details Dictionary</b>.
 The stop outcomes are also listed in the <b>Vehicle Stops Search Details</b> files.
 
-- <b>NOTE</b>: Both Vehicle Stops and Vehicle Stops Search Details datasets
+<b>NOTE</b>: Both Vehicle Stops and Vehicle Stops Search Details datasets
 can be joined using the common `stop_id` field. There could be one more than one `search_id` per `stop_id`.
