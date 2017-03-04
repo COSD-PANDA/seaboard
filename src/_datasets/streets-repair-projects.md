@@ -16,7 +16,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'
-date_modified: '2017-03-02'
+date_modified: '2017-03-03'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
@@ -34,7 +34,7 @@ Totals for miles paved are in repair miles. This data is displayed on
 <a href="https://www.streets.sandiego.gov" target="_blank">streets.sandiego.gov</a>.
 
 
-<b>Types of street repair:</b>
+<h4>Types of street repair</h4>
 
 - Asphalt Paving / Overlay / Inlay - Placement of a new layer of asphalt
 at a thickness of 1.5 to 3 inches over an old worn-out street surface or

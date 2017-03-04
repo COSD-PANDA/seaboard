@@ -8,7 +8,11 @@
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <style>
+  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+  </style>
+ <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!--
       Fast bootstrapping of the webcomponents-lite library. Only loads the library
@@ -104,12 +108,9 @@ onload="initKeenWebAutoCollector()"></script>
     BASE_URL: {{ site.baseurl | jsonify }},
     PAGE_URL: {{ page.url | jsonify }},
     REPO_BRANCH: {{ site.github.repo_branch | jsonify }},
-    //REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
     REPO_OWNER: {{ site.github.owner_name | jsonify }},
     REPO_ORG: {{ site.github.repo_org | jsonify }},
     REPO_NAME: {{ site.github.project_title | jsonify }},
-    GITHUB_CLIENT_ID: {{ site.github_client_id | jsonify }},
-    GATEKEEPER_HOST: {{ site.gatekeeper_host | jsonify }},
     NEEK_PROJECT_ID: {{ site.neek_project_id | jsonify }},
     NEEK_WKEY: {{ site.neek_wkey | jsonify }}
   }
