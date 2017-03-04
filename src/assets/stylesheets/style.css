@@ -7452,7 +7452,7 @@ img.logo {
     color: #e0e1dd;
     font-size: 1em;
     display: inline-block;
-    font-weight: 700; }
+    font-weight: 400; }
     .sd-navbar-top.navbar-default li a:visited {
       color: #e0e1dd;
       background-color: #37424a; }
@@ -7551,7 +7551,7 @@ a .hidden-link-text {
 body {
   color: #37424a;
   font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.55;
   background-color: #ffffff; }
   body a {
