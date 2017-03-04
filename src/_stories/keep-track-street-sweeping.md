@@ -2,7 +2,7 @@
 schema: default
 title: Keep Track of Street Sweeping
 date: 2016-07-15 00:00:00
-thumbnail: http://mrm-screen.s3.amazonaws.com/featurestreetsweeper.jpg
+thumbnail: '/assets/img/stories/featurestreetsweeper.jpg'
 author:
     name: Andrell Bower
 ---

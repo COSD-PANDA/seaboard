@@ -31,14 +31,14 @@
   intro: Use this map of the sampling sites where the City’s Public Utilities Department tests for indicator bacteria.
   url: /stories/get-water-testing-results/
   featured: true
-  img: http://mrm-screen.s3.amazonaws.com/water-kitchen-black-design.jpg
+  img: '/assets/img/stories/water-kitchen-black-design.jpg'
 
 
 - title: Keep track of street sweeping
   intro: The City’s street sweeping schedule might not be the first thing on your mind when you’re looking for a parking spot - unless you’ve gotten one of those parking tickets.
   url: /stories/keep-track-street-sweeping/
   featured: true
-  img: http://mrm-screen.s3.amazonaws.com/featurestreetsweeper.jpg
+  img: '/assets/img/stories/featurestreetsweeper.jpg'
 
 
 
