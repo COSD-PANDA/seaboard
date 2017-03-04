@@ -5,9 +5,15 @@ The main SCSS file for everything, yep
 @import "main";
 @import "sd";
 
+/* General */
+
 body {
 
 	color: $p_black;
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    background-color: #ffffff;
 
 	a {
 		color: $s_blue_mid;
@@ -26,6 +32,15 @@ body {
 	}
 
 
+}
+
+p {
+	margin: 0 0 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 35px;
+	margin-bottom: 15px;
 }
 
 .breadcrumb>.active {
@@ -142,6 +157,13 @@ span.badge {
     padding-right: 0px !important;
 }
 
+.the-latest {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0.9em;
+	background-color: $s_gray_lt;
+}
+
 .resources-promo {
 	background-color: white;
 	/*background-color: $s_orange_lt;*/
@@ -193,6 +215,33 @@ span.badge {
 
 .trends-rail {
 	padding-top: 7.2857px;
+}
+
+.latest-rail {
+
+	.latest-rail-item {
+		display: block;
+
+		div {
+			display: inline-block;
+		}
+
+		.fa {
+				font-size: 0.85em;
+				color: $s_gray_dk;
+			}
+
+		.rail-spacer {
+			visibility: hidden;
+			padding: 0px 0px 0 0px;
+		}
+	}
+
+	#poseidon-yesterday-count, #poseidon-yesterday-size {
+		font-weight: bold;
+	}
+
+
 }
 
 .made-data {
@@ -258,7 +307,6 @@ span.badge {
 
     	.preview-desc {
     		font-size: 0.9em;
-    		line-height: 1.5;
     		@include merriweather;
     	}
 
@@ -272,7 +320,6 @@ span.badge {
     display: block;
     padding: 4px;
     margin-bottom: 21px;
-    line-height: 1.42857143;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 0;
@@ -337,9 +384,8 @@ span.badge {
 		margin-bottom: 15px;
 	}
 
-	p {
+	p, ul, ol {
 		@include merriweather;
-		line-height: 1.5;
 		font-size: 0.9em;
 	}
 
@@ -555,6 +601,10 @@ dataset {
 	}
 }
 
+dataset:last-child {
+		border-bottom: none;
+	}
+
 /* Departments landing page */
 
 .department-listing {
@@ -638,11 +688,6 @@ article.full-post {
 
 	@include merriweather;
 	font-size: 0.95em;
-	line-height: 1.3547;
-
-	p {
-		margin: 0 0 1em;
-	}
 
 	ul {
 
@@ -676,7 +721,6 @@ article.full-post {
 
 	p, ul, ol {
 		@include merriweather;
-		line-height: 1.5;
 		font-size: 0.9em;
 		margin: 0 0 1em;
 	}
@@ -1047,6 +1091,19 @@ a.resources-page-link {
 	    	text-align: left;
 	    }
 
+	}
+
+	.latest-rail {
+
+		.latest-rail-item {
+
+			display: inline-block;
+
+			.rail-spacer {
+				visibility: visible;
+				padding: 0px 20px 0 20px;
+			}
+		}
 	}
 
 }
