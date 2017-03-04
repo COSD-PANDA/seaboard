@@ -7446,8 +7446,14 @@ img.logo {
   .sd-navbar-top.navbar-default .navbar-collapse {
     background: #37424a;
     width: 100%; }
-  .sd-navbar-top.navbar-default li.active a:hover {
-    background-color: #37424a; }
+  .sd-navbar-top.navbar-default li.active a {
+    color: #e0e1dd; }
+    .sd-navbar-top.navbar-default li.active a:hover {
+      background-color: #37424a;
+      color: #e0e1dd; }
+    .sd-navbar-top.navbar-default li.active a:visited {
+      color: #e0e1dd;
+      background-color: #37424a; }
   .sd-navbar-top.navbar-default li a {
     color: #e0e1dd;
     font-size: 1em;

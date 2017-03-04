@@ -165,9 +165,17 @@ img.logo {
 
   li.active {
     a {
+      color: $s_gray_lt;
       &:hover {
         background-color: $p_black;
+        color: $s_gray_lt;
       }
+
+      &:visited {
+        color: $s_gray_lt;
+        background-color: $p_black;
+      }
+
     }
 
   }
