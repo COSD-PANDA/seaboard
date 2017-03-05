@@ -52,7 +52,7 @@
       if (!webComponentsSupported) {
         var script = document.createElement('script');
         script.async = true;
-        script.src = '/assets//bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        script.src = '{{ site.baseurl }}/assets/bower_components/webcomponentsjs/webcomponents-lite.min.js';
         script.onload = onload;
         document.head.appendChild(script);
       } else {
@@ -119,7 +119,7 @@
   <!-- endbuild -->
 
 
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/scripts/dist/keen.min.js", onload="aliasKeen()"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/bower_components/keen-js/dist/keen.min.js", onload="aliasKeen()"></script>
     {% if site.neek.enabled %}
     <script defer type="text/javascript">
         function
