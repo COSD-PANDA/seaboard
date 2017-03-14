@@ -28,7 +28,7 @@ You may also be looking for data that belongs to another agency or that compleme
 #### County data
 
 <p>
-	<a href="http://datasurfer.sandag.org/" target="_blank" class="resources-page-link">San Diego County</a> <br>
+	<a href="http://www.sandiegocounty.gov/" target="_blank" class="resources-page-link">San Diego County</a> <br>
 
 	The County keeps health statistics, property records and parcel maps, and air quality data, among other information.
 </p>
@@ -44,7 +44,7 @@ You may also be looking for data that belongs to another agency or that compleme
 	San Diego Geographic Information Source is a repository of GIS data for the city and county of San Diego. The data is free, but a login is required for access.
 </p>
 <p>
-	<a href="http://www.openstreetmap.org" target="_blank" class="resources-page-link">ARJIS</a> <br>
+	<a href="http://crimestats.arjis.org/" target="_blank" class="resources-page-link">ARJIS</a> <br>
 
 	Automated Regional Justice Information System collects crime data from police agencies in San Diego and Imperial counties. The crime data available here is monthly totals by agency of property and violent crimes as defined by the <a href="https://ucr.fbi.gov/" target="_blank">FBI's Uniform Crime Reporting Program</a>.
 </p>
