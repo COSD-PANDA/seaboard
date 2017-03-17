@@ -5,6 +5,8 @@
 # Overrides the default URL, needed for your atom feed and sitemap
 baseurl:
 
+env: prod
+
 # Hides your drafts and future posts
 future: false
 show_drafts: false

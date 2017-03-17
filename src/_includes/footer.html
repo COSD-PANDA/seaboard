@@ -60,6 +60,7 @@
       Attempt to register a service worker with the correct scope. Fail quietly
       if this doesn't work, but log the result to the console.
     -->
+    {% if site.env == 'prod' %}
     <script type="text/javascript">
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
@@ -71,5 +72,6 @@
         });
       }
     </script>
+    {% endif %}
 
 </footer>
