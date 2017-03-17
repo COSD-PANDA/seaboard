@@ -62,7 +62,7 @@
       // Keen alias hack.
       window.aliasKeen = function() { window.KeenFull = window.Keen; }
 
-      /*var loadElement = function(url) {
+      var loadElement = function(url) {
         var link = document.createElement('link')
         link.rel = "import";
         link.href = url;
@@ -92,7 +92,7 @@
                 console.log(i);
             }
           }
-      })*/
+      })
     })();
     </script>
 
@@ -101,10 +101,13 @@
    <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-ajax/iron-ajax.html">
 
    <!-- Conditionally Load Elements directly, based on page -->
-   <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-autocomplete/paper-autocomplete.html">
-   <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-spinner/px-spinner.html">
-   <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-data-table/px-data-table.html">
-   <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-button/paper-button.html">
+   {% if page.url == '/' %}
+       <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-autocomplete/paper-autocomplete.html">
+   {% elsif page.url contains 'dataset' %}
+        <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-spinner/px-spinner.html">
+        <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-data-table/px-data-table.html">
+        <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-button/paper-button.html">
+   {% endif %}
 
 
 
