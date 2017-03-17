@@ -25,6 +25,7 @@
     "webcomponentsjs": "^0.7.24",
     "px-spinner": "^0.5.3",
     "paper-autocomplete": "^2.3.1",
-    "keen-js": "^3.4.1"
+    "keen-js": "^3.4.1",
+    "jQuery": "2.2.0"
   }
 }
