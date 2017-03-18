@@ -23,7 +23,7 @@ date_modified: '2016-07-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-The [San Diego Regional Revolving Loan Fund]('https://www.sandiego.gov/economic-development/business/financing/'){:target="_blank" rel="nooper"}
+The [San Diego Regional Revolving Loan Fund]('https://www.sandiego.gov/economic-development/business/financing/'){:target="_blank" rel="noopener"}
 operates in San Diego and Chula Vista to provide small business assistance
 and generate neighborhood commercial district revitalization.
 <!--more-->

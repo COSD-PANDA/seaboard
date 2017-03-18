@@ -34,4 +34,4 @@ The data includes the address of each recreation center, the San Diego
 community it is located in and the various facilities within the recreation
 center. For programming information, visit the City of San Diego Park and
 Recreation Department <a href="http://www.sandiego.gov/park-and-recreation/"
-target="_blank" rel="nooper">web page</a>.
+target="_blank" rel="noopener">web page</a>.

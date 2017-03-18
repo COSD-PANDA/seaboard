@@ -28,51 +28,51 @@ You may also be looking for data that belongs to another agency or that compleme
 #### County data
 
 <p>
-	<a href="http://www.sandiegocounty.gov/" target="_blank" rel="nooper" class="resources-page-link">San Diego County</a> <br>
+	<a href="http://www.sandiegocounty.gov/" target="_blank" rel="noopener" class="resources-page-link">San Diego County</a> <br>
 
 	The County keeps health statistics, property records and parcel maps, and air quality data, among other information.
 </p>
 <p>
-	<a href="http://datasurfer.sandag.org/" target="_blank" rel="nooper" class="resources-page-link">SANDAG</a> <br>
+	<a href="http://datasurfer.sandag.org/" target="_blank" rel="noopener" class="resources-page-link">SANDAG</a> <br>
 
 	San Diego Association of Governments has demographic, transportation and crime data for the San Diego region.
 
 </p>
 <p>
-	<a href="http://www.openstreetmap.org" target="_blank" rel="nooper" class="resources-page-link">SanGIS</a> <br>
+	<a href="http://www.openstreetmap.org" target="_blank" rel="noopener" class="resources-page-link">SanGIS</a> <br>
 
 	San Diego Geographic Information Source is a repository of GIS data for the city and county of San Diego. The data is free, but a login is required for access.
 </p>
 <p>
-	<a href="http://crimestats.arjis.org/" target="_blank" rel="nooper" class="resources-page-link">ARJIS</a> <br>
+	<a href="http://crimestats.arjis.org/" target="_blank" rel="noopener" class="resources-page-link">ARJIS</a> <br>
 
-	Automated Regional Justice Information System collects crime data from police agencies in San Diego and Imperial counties. The crime data available here is monthly totals by agency of property and violent crimes as defined by the <a href="https://ucr.fbi.gov/" target="_blank" rel="nooper">FBI's Uniform Crime Reporting Program</a>.
+	Automated Regional Justice Information System collects crime data from police agencies in San Diego and Imperial counties. The crime data available here is monthly totals by agency of property and violent crimes as defined by the <a href="https://ucr.fbi.gov/" target="_blank" rel="noopener">FBI's Uniform Crime Reporting Program</a>.
 </p>
 
 #### State data
 
 <p>
-	<a href="https://data.ca.gov/" target="_blank" rel="nooper" class="resources-page-link">California Open Data Portal</a><br>
+	<a href="https://data.ca.gov/" target="_blank" rel="noopener" class="resources-page-link">California Open Data Portal</a><br>
 </p>
 <p>
-	<a href="https://openjustice.doj.ca.gov/" target="_blank" rel="nooper" class="resources-page-link">Open Justice</a><br>
+	<a href="https://openjustice.doj.ca.gov/" target="_blank" rel="noopener" class="resources-page-link">Open Justice</a><br>
 	The California Department of Justice publishes crime statistics and a dashboard here.
 </p>
 <p>
-	<a href="http://iswitrs.chp.ca.gov/Reports/jsp/CollisionReports.jsp" target="_blank" rel="nooper" class="resources-page-link">Traffic records</a><br>
+	<a href="http://iswitrs.chp.ca.gov/Reports/jsp/CollisionReports.jsp" target="_blank" rel="noopener" class="resources-page-link">Traffic records</a><br>
 	The California Highway Patrol collects collision data from all agencies in California.
 </p>
 
 #### National and international data
 
-<p><a href="http://www.openstreetmap.org" target="_blank" rel="nooper" class="resources-page-link">OpenStreetMap</a></p>
-<p><a href="http://www.arcgis.com/" target="_blank" rel="nooper" class="resources-page-link">ArcGIS.com</a></p>
-<p><a href="http://www.data.gov/" target="_blank" rel="nooper" class="resources-page-link">Data.gov</a></p>
-<p><a href="http://www.policymap.com/" target="_blank" rel="nooper" class="resources-page-link">PolicyMap</a></p>
-<p><a href="http://nationalmap.gov/viewer.html" target="_blank" rel="nooper" class="resources-page-link">USGS National Map</a></p>
-<p><a href="http://factfinder.census.gov/" target="_blank" rel="nooper" class="resources-page-link">U.S. Census Bureau American FactFinder</a></p>
-<p><a href="http://censusreporter.org/" target="_blank" rel="nooper" class="resources-page-link">Census Reporter</a></p>
-<p><a href="http://data.worldbank.org/" target="_blank" rel="nooper" class="resources-page-link">World Bank</a></p>
+<p><a href="http://www.openstreetmap.org" target="_blank" rel="noopener" class="resources-page-link">OpenStreetMap</a></p>
+<p><a href="http://www.arcgis.com/" target="_blank" rel="noopener" class="resources-page-link">ArcGIS.com</a></p>
+<p><a href="http://www.data.gov/" target="_blank" rel="noopener" class="resources-page-link">Data.gov</a></p>
+<p><a href="http://www.policymap.com/" target="_blank" rel="noopener" class="resources-page-link">PolicyMap</a></p>
+<p><a href="http://nationalmap.gov/viewer.html" target="_blank" rel="noopener" class="resources-page-link">USGS National Map</a></p>
+<p><a href="http://factfinder.census.gov/" target="_blank" rel="noopener" class="resources-page-link">U.S. Census Bureau American FactFinder</a></p>
+<p><a href="http://censusreporter.org/" target="_blank" rel="noopener" class="resources-page-link">Census Reporter</a></p>
+<p><a href="http://data.worldbank.org/" target="_blank" rel="noopener" class="resources-page-link">World Bank</a></p>
 
 ### Requesting unpublished city data
 The [California Public Records Act](http://ag.ca.gov/publications/summary_public_records_act.pdf) gives citizens the right to request government records. The City of San Diego has made the process easier by offering a way to [request records online](http://sandiego.nextrequest.com/). You can also search previous requests for documents that have already been released.

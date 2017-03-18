@@ -28,7 +28,7 @@ The City performs street condition surveys and assigns an Overall Condition
 Index (OCI) number to each street. OCI is only one of many factors to determine
 the order of street repairs. OCI is not available for private or military streets
 or streets the City was unable to survey due to closures.
-This data is displayed on <a href="http://www.streets.sandiego.gov" target="_blank" rel="nooper">
+This data is displayed on <a href="http://www.streets.sandiego.gov" target="_blank" rel="noopener">
 streets.sandiego.gov</a>.
 <!--more-->
 

@@ -23,7 +23,7 @@ maintainer_email: data@sandiego.gov
 Shapefile of the City's street network. This shapefile contains the street
 segments identified in our streets repair projects and Overall Condition Index datasets.
 This data is displayed on
-[streets.sandiego.gov](http://streets.sandiego.gov){:target="_blank" rel="nooper"}.
+[streets.sandiego.gov](http://streets.sandiego.gov){:target="_blank" rel="noopener"}.
 
 
 

@@ -31,5 +31,5 @@ maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
 Requests for service made by residents via the
-<a href="https://www.sandiego.gov/get-it-done" target="_blank" rel="nooper">
+<a href="https://www.sandiego.gov/get-it-done" target="_blank" rel="noopener">
 Get It Done applications</a>.
