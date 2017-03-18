@@ -14,7 +14,7 @@ layout: front
                 </h2>
                 <!--<div class="row">-->
                      <paper-autocomplete
-                        label='Search by dataset name, topic or City department' id="find-data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
+                        label='Search by dataset name, topic or City department' id="find-data" aria-label="Find data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
                         <template autocomplete-custom-template>
                             <paper-item on-tap="_onSelect" id$="[[_getSuggestionId(index)]]" role="option" aria-selected="false">
                             <span class="autocomplete-suggestions-type">[[item.type]]:</span> <span class="autocomplete-suggestions-result">[[item.title]]</span>
