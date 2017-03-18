@@ -28,4 +28,4 @@ maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
 Permits completed as provided by Development Services Department's
-<a href="https://www.sandiego.gov/development-services/opendsd" target="_blank">OpenDSD</a>.
+<a href="https://www.sandiego.gov/development-services/opendsd" target="_blank" rel="nooper">OpenDSD</a>.

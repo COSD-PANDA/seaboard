@@ -21,4 +21,4 @@ This is <strong>not</strong> a list of datasets currently published, and we stil
 a lot of work ahead of us to extract and structure these.
 To read more about the inventory and the process, please see the
 <a href="https://datasd.gitbooks.io/open-data-implementation-update-2016/content/main/prioritization.html"
-target="_blank">Open Data Implementation Update Report</a>.
+target="_blank" rel="nooper">Open Data Implementation Update Report</a>.

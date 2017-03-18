@@ -32,16 +32,16 @@ maintainer_email: data@sandiego.gov
 ---
 Code Enforcement Violations as provided by Development Services Department's
 <a href="https://www.sandiego.gov/development-services/opendsd"
-target="_blank">OpenDSD</a>.
+target="_blank" rel="nooper">OpenDSD</a>.
 <!--more-->
 For more information and to be able to
 search code enforcement cases, please visit
 <a href="https://www.sandiego.gov/development-services/opendsd"
-target="_blank">OpenDSD</a>. To download a zipped XML please see
+target="_blank" rel="nooper">OpenDSD</a>. To download a zipped XML please see
 <a href="https://www.sandiego.gov/development-services/opendsd/codenforcement"
-target="_blank"> OpenDSD's Code Enforcement Activity Reports</a>.
+target="_blank" rel="nooper"> OpenDSD's Code Enforcement Activity Reports</a>.
 Alternatively, you can use DSD's
 <a href="https://www.sandiego.gov/development-services/opendsd/developers"
-target="_blank">API</a> directly. To learn more about the process,
+target="_blank" rel="nooper">API</a> directly. To learn more about the process,
 please see <a href="https://www.sandiego.gov/development-services/opendsd/codeenfreports"
-target="_blank">Code Enforcement Reports</a>.
+target="_blank" rel="nooper">Code Enforcement Reports</a>.
