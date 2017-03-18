@@ -110,7 +110,7 @@ gulp.task("styles", function () {
 
 // Optimizes the images that exists
 gulp.task("images", function () {
-  return gulp.src("src/assets/img/**")
+  return gulp.src("src/assets/img/**/*")
     .pipe($.changed("site/assets/img"))
     .pipe($.imagemin({
       // Lossless conversion to progressive JPGs
