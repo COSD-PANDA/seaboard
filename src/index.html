@@ -179,7 +179,7 @@ layout: front
 <script defer>
     (function() {
       'use strict';
-
+      var getStats = function() {
         var client = new KeenFull({
             projectId: "58b083098db53dfda8a88bcf",
             readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
@@ -192,6 +192,15 @@ layout: front
         client.run("resources-yesterday", function(err, response) {
             document.getElementById("poseidon-yesterday-count").innerHTML = response.result[0].value;
         });
+      }
+
+      // Because IE
+      if (typeof KeenFull == 'undefined') {
+        setTimeout(getStats, 3000);
+      }
+      else {
+        getStats();
+      }
 
     })();
 

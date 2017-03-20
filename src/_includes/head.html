@@ -1,6 +1,6 @@
 <head>
-  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google" content="notranslate">
   <meta http-equiv="Content-Language" content="en">
@@ -60,7 +60,10 @@
       }
 
       // Keen alias hack.
-      window.aliasKeen = function() { window.KeenFull = window.Keen; }
+      window.aliasKeen = function() {
+          var KeenFull = window.Keen;
+          window.KeenFull = KeenFull;
+      }
 
       var loadElement = function(url) {
         var link = document.createElement('link')
