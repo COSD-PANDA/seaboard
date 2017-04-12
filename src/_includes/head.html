@@ -1,39 +1,119 @@
 <head>
-  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google" content="notranslate">
   <meta http-equiv="Content-Language" content="en">
 
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="theme-color" content="#37424a">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  {% assign theme_name = site.jkan_theme | default: 'Default' %}
-  {% assign theme = site.data.themes | where:'name', theme_name | first %}
-  <!--{% if theme and theme.src and theme.src != empty %}
-    <link rel="stylesheet" href="{{ theme.src }}">
-  {% endif %}-->
-  <style>
-  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
-  </style>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notie/3.0.0/notie.min.css">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+ <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+ <link rel='shortcut icon' type='image/x-icon' href='{{ site.baseurl }}/assets/img/favicon.ico' />
+ <link rel="manifest" href="/manifest.json">
+ <script>
+   var settings = {
+     BASE_URL: {{ site.baseurl | jsonify }},
+     PAGE_URL: {{ page.url | jsonify }},
+     REPO_BRANCH: {{ site.github.repo_branch | jsonify }},
+     REPO_OWNER: {{ site.github.owner_name | jsonify }},
+     REPO_ORG: {{ site.github.repo_org | jsonify }},
+     REPO_NAME: {{ site.github.project_title | jsonify }},
+     NEEK_PROJECT_ID: {{ site.neek_project_id | jsonify }},
+     NEEK_WKEY: {{ site.neek_wkey | jsonify }}
+    }
+ </script>
 
-  <!-- Polymer -->
-   <script src="{{ site.baseurl }}/assets/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/polymer/polymer.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-data-table/px-data-table.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-spinner/px-spinner.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-ajax/iron-ajax.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/iron-icons.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/maps-icons.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-icons/image-icons.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-button/paper-button.html">
-  <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-autocomplete/paper-autocomplete.html">
+
+    <!--
+      Fast bootstrapping of the webcomponents-lite library. Only loads the library
+      if the browser doesn't natively support web components.
+    -->
+    <script type="text/javascript">
+    (function() {
+      'use strict';
+
+      var onload = function() {
+        // For native Imports, manually fire WebComponentsReady so user code
+        // can use the same code path for native and polyfill'd imports.
+        if (!window.HTMLImports) {
+          document.dispatchEvent(
+            new CustomEvent('WebComponentsReady', {bubbles: true})
+          );
+        }
+      };
+
+      var webComponentsSupported = (
+        'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template')
+      );
+
+      if (!webComponentsSupported) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '{{ site.baseurl }}/assets/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        script.onload = onload;
+        document.head.appendChild(script);
+      } else {
+        onload();
+      }
+
+      // Keen alias hack.
+      window.aliasKeen = function() {
+          var KeenFull = window.Keen;
+          window.KeenFull = KeenFull;
+      }
+
+      var loadElement = function(url) {
+        var link = document.createElement('link')
+        link.rel = "import";
+        link.href = url;
+        document.head.appendChild(link);
+      }
+
+
+
+      document.addEventListener('DOMContentLoaded', function(e) {
+          // Conditionally lazy-load elements based on page
+          var lazy_els = {
+              'paper-autocomplete': "{{site.baseurl}}/assets/bower_components/paper-autocomplete/paper-autocomplete.html",
+              'px-spinner': "{{site.baseurl}}/assets/bower_components/px-spinner/px-spinner.html",
+              'px-data-table': "{{site.baseurl}}/assets/bower_components/px-data-table/px-data-table.html",
+              'paper-button': "{{site.baseurl}}/assets/bower_components/paper-button/paper-button.html"
+          }
+          if (settings.PAGE_URL == '/') {
+            loadElement(lazy_els['paper-autocomplete']);
+          }
+          else if (settings.PAGE_URL.includes('dataset')) {
+            loadElement(lazy_els['px-spinner']);
+            loadElement(lazy_els['px-data-table']);
+            loadElement(lazy_els['paper-button']);
+          }
+          else {
+            for (var i in lazy_els) {
+                console.log(i);
+            }
+          }
+      })
+    })();
+    </script>
+
+    <!-- Elements we always need to have -->
+   <link rel="import" href="{{site.baseurl}}/assets/bower_components/polymer/polymer-micro.html">
+   <link rel="import" href="{{site.baseurl}}/assets/bower_components/iron-ajax/iron-ajax.html">
+
+   <!-- Conditionally Load Elements directly, based on page -->
+   {% if page.url == '/' %}
+       <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-autocomplete/paper-autocomplete.html">
+   {% elsif page.url contains 'dataset' %}
+        <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-spinner/px-spinner.html">
+        <link rel="import" href="{{site.baseurl}}/assets/bower_components/px-data-table/px-data-table.html">
+        <link rel="import" href="{{site.baseurl}}/assets/bower_components/paper-button/paper-button.html">
+   {% endif %}
+
+
+
 
   <!-- build:css /assets/stylesheets/vendor.min.css -->
   <!-- endbuild -->
@@ -41,30 +121,17 @@
   <link rel="stylesheet" href="/assets/stylesheets/style.css">
   <!-- endbuild -->
 
-  {% if site.neek_project_id %}
-    <script src="https://d26b395fwzu5fz.cloudfront.net/3.4.1/keen.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        window.KeenFull = window.Keen;
-    </script>
-    <script type="text/javascript">
+
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/bower_components/keen-js/dist/keen.min.js", onload="aliasKeen()"></script>
+    {% if site.neek.enabled %}
+    <script defer type="text/javascript">
         function
         createKeenWebAutoCollector(){window.keenWebAutoCollector=window.KeenWebAutoCollector.create({projectId:'{{ site.neek_project_id }}',writeKey:'{{ site.neek_wkey }}',onloadCallbacks:window.keenWebAutoCollector.onloadCallbacks}),window.keenWebAutoCollector.loaded()}function initKeenWebAutoCollector(){window.keenWebAutoCollector.domReady()?window.createKeenWebAutoCollector():document.addEventListener("readystatechange",function(){window.keenWebAutoCollector.domReady()&&window.createKeenWebAutoCollector()})}window.keenWebAutoCollector={onloadCallbacks:[],onload:function(a){this.onloadCallbacks.push(a)},domReady:function(){return["ready","complete"].indexOf(document.readyState)>-1}};
       </script>
-      <script async type="text/javascript"
+      <script defer type="text/javascript"
 src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.7.min.js"
 onload="initKeenWebAutoCollector()"></script>
   {% endif %}
-  {% if site.digital_analytics_program.enabled == true %}
-    <!-- US Digital Analytics Program - see https://analytics.usa.gov for data-->
-    <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency={{ site.digital_analytics_program.agency }}&subagency={{ site.digital_analytics_program.subagency }}"></script>
-  {% endif %}
-
-  {% if site.google_analytics.enabled == true %}
-    <!-- Google Analytics -->
-    {% include addons/google-analytics.html %}
-  {% endif %}
-
-
   {% if site.google_gtm.enabled == true %}
     <!-- Google GTM -->
     {% include addons/gtm-head.html %}
@@ -81,19 +148,8 @@ onload="initKeenWebAutoCollector()"></script>
     {% include addons/twittercard.html %}
   {% endif %}
 
-  <script>
-  var settings = {
-    BASE_URL: {{ site.baseurl | jsonify }},
-    PAGE_URL: {{ page.url | jsonify }},
-    REPO_BRANCH: {{ site.github.repo_branch | jsonify }},
-    //REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
-    REPO_OWNER: {{ site.github.owner_name | jsonify }},
-    REPO_ORG: {{ site.github.repo_org | jsonify }},
-    REPO_NAME: {{ site.github.project_title | jsonify }},
-    GITHUB_CLIENT_ID: {{ site.github_client_id | jsonify }},
-    GATEKEEPER_HOST: {{ site.gatekeeper_host | jsonify }},
-    NEEK_PROJECT_ID: {{ site.neek_project_id | jsonify }},
-    NEEK_WKEY: {{ site.neek_wkey | jsonify }}
-  }
-  </script>
+
+
+
+
 </head>

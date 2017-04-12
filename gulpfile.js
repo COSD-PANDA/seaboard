@@ -15,6 +15,64 @@ var merge = require("merge-stream");
 var reload = browserSync.reload;
 // And define a variable that BrowserSync uses in it"s function
 var bs;
+var path = require('path');
+
+/*******************************************************************************
+ * SERVICE WORKER
+ *
+ * Builds (or rebuilds) a service worker to cache files on the site's app shell.
+ * Rebuilding the service worker invalidates the user's cache on the next
+ * visit to the site ensuring they get new files.
+ ******************************************************************************/
+
+ gulp.task('generate-service-worker', function(callback) {
+   var swPrecache = require('sw-precache'),
+       rootDir =  './site';
+
+   swPrecache.write(path.join(rootDir, '/service-worker.js'), {
+       staticFileGlobs: [rootDir + '/about/**/*',
+                       rootDir + '/*.html',
+                       rootDir + '/datasets/**/*',
+                       rootDir + '/departments/**/*',
+                       rootDir + '/get-started/**/*',
+                       rootDir + '/open-source/**/*',
+                       rootDir + '/resources/**/*',
+                       rootDir + '/stories/**/*',
+                       rootDir + '/terms-use/**/*',
+                       rootDir + '/tools/**/*',
+                       rootDir + '/datasets/**/*',
+                       rootDir + '/assets/fonts/*',
+                       rootDir + '/assets/img/**/*',
+                       rootDir + '/assets/img/*',
+                       rootDir + '/assets/scripts/dist/bundle.js',
+                       rootDir + '/assets/stylesheets/*.css',
+                       rootDir + '/assets/bower_components/paper-*/*.html',
+                       rootDir + '/assets/bower_components/paper-*/css/*',
+                       rootDir + '/assets/bower_components/px-*/*.html',
+                       rootDir + '/assets/bower_components/px-*/css/*',
+                       rootDir + '/assets/bower_components/iron-*/*.html',
+                       rootDir + '/assets/bower_components/iron-*/css/*',
+                       /*rootDir + '/assets/bower_components/',
+                       rootDir + '/assets/bower_components/',
+                       rootDir + '/assets/bower_components/',
+                       rootDir + '/assets/bower_components/',
+                       rootDir + '/assets/bower_components/',*/
+                       rootDir + '/assets/bower_components/JQuery/dist/jquery.min.js',
+                       rootDir + '/assets/bower_components/keen-js/dist/keen.min.js',
+                       rootDir + '/assets/bower_components/px-data-table/css/*',
+                       rootDir + '/assets/bower_components/font-awesome/fonts/fontawesome*',
+                       rootDir + '/assets/bower_components/polymer/polymer*.html',
+                       rootDir + '/assets/bower_components/webcomponentsjs/webcomponents-lite.js',
+                       rootDir + '/assets/bower_components/webcomponentsjs/webcomponents-lite.min.js',
+                       rootDir + '/assets/bower_components/promise-polyfill/promise-polyfill-lite.html',
+                       rootDir + '/assets/bower_components/promise-polyfill/Promise.js',
+                       rootDir + '/assets/bower_components/px-polymer-font-awesome/*polymer-font-awesome.html',
+                       rootDir + '/*.json'],
+     stripPrefix: rootDir,
+     maximumFileSizeToCacheInBytes: 6000000, //this needed so hydrolysis is cached...
+     templateFilePath: rootDir + '/sw.tmpl'
+   }, callback);
+ });
 
 // Deletes the directory that is used to serve the site during development
 gulp.task("clean:dev", del.bind(null, ["serve"]));
@@ -52,7 +110,7 @@ gulp.task("styles", function () {
 
 // Optimizes the images that exists
 gulp.task("images", function () {
-  return gulp.src("src/assets/img/**")
+  return gulp.src("src/assets/img/**/*")
     .pipe($.changed("site/assets/img"))
     .pipe($.imagemin({
       // Lossless conversion to progressive JPGs
@@ -73,7 +131,7 @@ gulp.task("fonts", function () {
 
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
-  return gulp.src(["serve/*.txt", "serve/*.xml", "serve/*.json", "src/CNAME", "src/.surgeignore"])
+  return gulp.src(["serve/*.txt", "serve/*.xml", "serve/*.json", "src/CNAME", "src/sw.tmpl"])
     .pipe(gulp.dest("site"))
     .pipe($.size({ title: "xml, txt, json" }))
 });
@@ -195,7 +253,7 @@ gulp.task("build", ["jekyll:prod", "styles"], function () {});
 
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
-gulp.task("publish", ["build"], function () {
-  gulp.start("html", "bower_components", "copy", "images", "fonts", "webpack:prod");
+gulp.task("publish", ["build", "html", "bower_components", "images", "fonts", "copy", "webpack:prod"], function () {
+  gulp.start("generate-service-worker");
 });
 

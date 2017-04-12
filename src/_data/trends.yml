@@ -3,7 +3,7 @@
     We built our own high-tech data portal. Here's why.
   url: /stories/portal-refresh
   featured: false
-  img: '/assets/img/stories/portal-compare.png'
+  img: '/assets/img/stories/portal-compare.jpg'
 
 - title: Parking meter revenue
   intro: >-
@@ -17,7 +17,7 @@
     Explore planned solar installations
   url: /stories/solar-permits-2016/
   featured: true
-  img: '/assets/img/stories/solar-permits.png'
+  img: '/assets/img/stories/solar-permits.jpg'
 
 - title: Street repair work
   intro: >-
@@ -25,20 +25,20 @@
   url: >-
     http://streets.sandiego.gov/
   featured: true
-  img: '/assets/img/stories/streets.png'
+  img: '/assets/img/stories/streets.jpg'
 
 - title: Get water testing results
   intro: Use this map of the sampling sites where the City’s Public Utilities Department tests for indicator bacteria.
   url: /stories/get-water-testing-results/
   featured: true
-  img: http://mrm-screen.s3.amazonaws.com/water-kitchen-black-design.jpg
+  img: '/assets/img/stories/water-kitchen-black-design.jpg'
 
 
 - title: Keep track of street sweeping
   intro: The City’s street sweeping schedule might not be the first thing on your mind when you’re looking for a parking spot - unless you’ve gotten one of those parking tickets.
   url: /stories/keep-track-street-sweeping/
   featured: true
-  img: http://mrm-screen.s3.amazonaws.com/featurestreetsweeper.jpg
+  img: '/assets/img/stories/featurestreetsweeper.jpg'
 
 
 
@@ -48,5 +48,5 @@
   url: >-
     https://sandiegoca.opengov.com/transparency#/8082/accountType=expenses&breakdown=8f5df8ff-b23a-4abb-8ed8-bb74d0fb05a3&currentYearAmount=cumulative&currentYearPeriod=years&graph=bar&legendSort=desc&proration=true&saved_view=null&selection=DB4A19AB062076E9294E8D05282259B6&year=NaN&fiscal_start=earliest&fiscal_end=latest
   featured: true
-  img: '/assets/img/stories/open-gov.png'
+  img: '/assets/img/stories/open-gov.jpg'
 

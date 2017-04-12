@@ -3,6 +3,8 @@ greeting:
 description: Empowering San Diegans by making data usable.
 baseurl:
 
+env: dev
+
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: serve
@@ -16,19 +18,16 @@ lsi: false
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 1
 
-# Site theme
-jkan_theme: Cosmo
-
 # Dataset Previews
 ds_preview_url: https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview
 
-# Authentication
-github_client_id: 3cd6423406e0360b4be7
-gatekeeper_host: https://jkansd.herokuapp.com
 
 ## Neek
-neek_project_id: 58ae0bd08db53dfda8a88883
-neek_wkey: CBDFBC82DD8C99133FD1D00206D97E9A9B0769F4165E76D0BAEE44C161D31F8654A75803E4B92605902F95C3E1BB66326E66C2AEF653DE1D22A734BBF5F286A301C659F5240F78F47DA6899FBFF280080011DF0DDD0ADE14D88F5DFF5626C663
+neek:
+    enabled: false
+    project_id: 58ae0bd08db53dfda8a88883
+    wkey: CBDFBC82DD8C99133FD1D00206D97E9A9B0769F4165E76D0BAEE44C161D31F8654A75803E4B92605902F95C3E1BB66326E66C2AEF653DE1D22A734BBF5F286A301C659F5240F78F47DA6899FBFF280080011DF0DDD0ADE14D88F5DFF5626C663
+
 
 github:
     owner_name: MrMaksimize
@@ -107,12 +106,6 @@ google_analytics:
 google_gtm:
   enabled: false
   code: "GTM-KDXK7NN"
-
-# US Digital Analytics Program - https://analytics.usa.gov
-digital_analytics_program:
-  enabled: false
-  agency: ""
-  subagency: ""
 
 # Twitter
 twittercard:

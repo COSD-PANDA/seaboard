@@ -26,8 +26,8 @@ maintainer_email: data@sandiego.gov
 Public transit routes covering the County of San Diego.
 <!--more-->
 Bus, commuter and light rail, and trolley routes managed by the San Diego
-County Metropolitan Transit System ([SDMTS]('https://www.sdmts.com/'){:target="_blank"})
-and the North County Transit District ([NCTD](http://www.gonctd.com/){:target="_blank"}).
+County Metropolitan Transit System ([SDMTS]('https://www.sdmts.com/'){:target="_blank" rel="noopener"})
+and the North County Transit District ([NCTD](http://www.gonctd.com/){:target="_blank" rel="noopener"}).
 Data is developed from the General Transit Feed Specification (GTFS) data
 available from the GTFS Data Exchange. Layer is updated quarterly and
 may not reflect most current route information.

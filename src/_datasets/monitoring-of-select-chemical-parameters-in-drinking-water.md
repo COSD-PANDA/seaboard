@@ -29,4 +29,4 @@ conductivity, total dissolved solids, and for selected anions.
 <!--more-->
 These results are reported monthly to the Safe Drinking Water Information
 System managed by the State of California. This dataset does not include
-<a href="/datasets/monitoring-of-indicator-bacteria-in-drinking-water/" target="_blank">microbiological parameters</a>.
+<a href="/datasets/monitoring-of-indicator-bacteria-in-drinking-water/" target="_blank" rel="noopener">microbiological parameters</a>.

@@ -14,7 +14,7 @@ layout: front
                 </h2>
                 <!--<div class="row">-->
                      <paper-autocomplete
-                        label='Search by dataset name, topic or City department' id="find-data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
+                        label='Search by dataset name, topic or City department' id="find-data" aria-label="Find data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
                         <template autocomplete-custom-template>
                             <paper-item on-tap="_onSelect" id$="[[_getSuggestionId(index)]]" role="option" aria-selected="false">
                             <span class="autocomplete-suggestions-type">[[item.type]]:</span> <span class="autocomplete-suggestions-result">[[item.title]]</span>
@@ -108,7 +108,7 @@ layout: front
     <p class="intro-box">
       <b>DataSD</b> is the official portal for City of San Diego Open Data. Here, you'll find data about City
       operations, including public safety, street repairs, public facilities, code enforcement, business licensing, etc.
-      If you can’t find what you’re looking for, we might <a href="/datasets/data-inventory/" target="_blank" title="Data Inventory">still be working on publishing it</a>, or it might come from <a href="/resources" title="Resources">another agency</a>.
+      If you can’t find what you’re looking for, we might <a href="/datasets/data-inventory/" target="_blank" rel="noopener" title="Data Inventory">still be working on publishing it</a>, or it might come from <a href="/resources" title="Resources">another agency</a>.
     </p>
       <div class="row">
         <div class="col-sm-4 resources-col">
@@ -176,23 +176,34 @@ layout: front
     </div>
 </div>
 
-<script>
+<script defer>
+    (function() {
+      'use strict';
+      var getStats = function() {
+        var client = new KeenFull({
+            projectId: "58b083098db53dfda8a88bcf",
+            readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
+        });
 
-var client = new KeenFull({
-  projectId: "58b083098db53dfda8a88bcf",
-  readKey: "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
-});
+        client.run("bytes-yesterday", function(err, response) {
+            document.getElementById("poseidon-yesterday-size").innerHTML = Math.round(response.result/1073741824 * 100) / 100;
+        });
 
-client.run("bytes-yesterday", function(err, response) {
+        client.run("resources-yesterday", function(err, response) {
+            document.getElementById("poseidon-yesterday-count").innerHTML = response.result[0].value;
+        });
+      }
 
-  document.getElementById("poseidon-yesterday-size").innerHTML = Math.round(response.result/1073741824 * 100) / 100;
+      // Because IE
+      if (typeof KeenFull == 'undefined') {
+        setTimeout(getStats, 3000);
+      }
+      else {
+        getStats();
+      }
 
-});
+    })();
 
-client.run("resources-yesterday", function(err, response) {
 
-  document.getElementById("poseidon-yesterday-count").innerHTML = response.result[0].value;
-
-});
 
 </script>

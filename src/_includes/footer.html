@@ -1,6 +1,6 @@
 <!-- general behavior -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/assets/scripts/dist/bundle.js"></script>
+<script defer src="{{ site.baseurl }}/assets/bower_components/JQuery/dist/jquery.min.js"></script>
+<script defer src="{{ site.baseurl }}/assets/scripts/dist/bundle.js"></script>
 
 
 <footer>
@@ -11,11 +11,11 @@
           <ul class="link-list">
             <li><a title="Stories" href="/stories">Stories</a></li>
             <li><a title="Get Started" href="/get-started">Get started</a></li>
-            <li><a title="P and A" href="http://sandiego.gov/pad" target="_blank">PandA</a></li>
+            <li><a title="P and A" href="http://sandiego.gov/pad" target="_blank" rel="noopener">PandA</a></li>
             <li><a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
-                    target="_blank">Open data policy</a></li>
+                    target="_blank" rel="noopener">Open data policy</a></li>
             <li><a title="Latest council update" href="http://tiny.cc/odreport16"
-                    target="_blank">Latest council update</a></li>
+                    target="_blank" rel="noopener">Latest council update</a></li>
             <li><a title="Open source" href="/open-source">Open source</a></li>
             <li><a title="Resource" href="/resources">Resources</a></li>
             <li><a title="Contact us" href="/contact-datasd.html">Contact Us</a></li>
@@ -27,17 +27,17 @@
         <div class="col-sm-6 left-footer-col">
           <ul class="social-link-list">
             <li>
-                <a href="https://twitter.com/CityofSanDiego" target="_blank" title="City of San Diego Twitter">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank" rel="noopener" title="City of San Diego Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
             <li>
-                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange">
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" rel="noopener" title="Open Data Stack Exchange">
                     <i class="fa fa-stack-overflow"></i>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github">
+                <a href="https://github.com/cityofsandiego" target="_blank" rel="noopener" title="City of San Diego Github">
                     <i class="fa fa-github-alt"></i>
                 </a>
             </li>
@@ -49,11 +49,29 @@
     <div id="footer-bar">
         <div class="row">
             <div class="col-md-12">
-                <a href="https://github.com/cityofsandiego/seaboard" target="_blank" title="NOT contracted">Crafted</a>
+                <a href="https://github.com/cityofsandiego/seaboard" target="_blank" rel="noopener" title="NOT contracted">Crafted</a>
                  with <i class="fa fa-heartbeat"></i>, just like San Diego's <i class="fa fa-beer"></i> by <a
-                     href="http://www.sandiego.gov/pad" target="_blank">PandA</a>
+                     href="http://www.sandiego.gov/pad" target="_blank" rel="noopener">PandA</a>
             </div>
         </div>
     </div>
+
+    <!--
+      Attempt to register a service worker with the correct scope. Fail quietly
+      if this doesn't work, but log the result to the console.
+    -->
+    {% if site.env == 'prod' %}
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      }
+    </script>
+    {% endif %}
 
 </footer>

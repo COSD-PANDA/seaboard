@@ -2,7 +2,7 @@
 schema: default
 title: Keep Track of Street Sweeping
 date: 2016-07-15 00:00:00
-thumbnail: http://mrm-screen.s3.amazonaws.com/featurestreetsweeper.jpg
+thumbnail: '/assets/img/stories/featurestreetsweeper.jpg'
 author:
     name: Andrell Bower
 ---
@@ -55,4 +55,4 @@ North Park and La Jolla residents have to remember to park carefully four specif
 
 If you're like me, you probably still manage to mess up sometimes and be that lone car parked on the block during street sweeping, often with a little yellow envelope on your windshield.
 
-Mobile apps and messaging services exist to alert people to street sweeping schedules when they park. One option is to sign up for alerts through <a href="http://sweepingalerts.com/" target="_blank">Sweeping Alerts</a>. Another option is an app called <a href="http://www.spotangels.com/" target="_blank">Spot Angels</a>.
+Mobile apps and messaging services exist to alert people to street sweeping schedules when they park. One option is to sign up for alerts through <a href="http://sweepingalerts.com/" target="_blank" rel="noopener">Sweeping Alerts</a>. Another option is an app called <a href="http://www.spotangels.com/" target="_blank" rel="noopener">Spot Angels</a>.

@@ -31,7 +31,7 @@ which are asphalt streets. The City uses center-line miles to describe
 the distance of our street network. “Repair-miles” are used to describe
 repair work and account for both the length and width of our streets.
 Totals for miles paved are in repair miles. This data is displayed on
-<a href="https://www.streets.sandiego.gov" target="_blank">streets.sandiego.gov</a>.
+<a href="https://www.streets.sandiego.gov" target="_blank" rel="noopener">streets.sandiego.gov</a>.
 
 
 <h4>Types of street repair</h4>

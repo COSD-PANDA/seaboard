@@ -52,10 +52,6 @@ dataset {
   color: red;
 }
 
-[data-component~=view-switcher] [data-hook~=view] {
-  display: none;
-}
-
 .homepage-categories,
 .theme-gallery {
   text-align: justify;

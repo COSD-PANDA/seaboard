@@ -24,7 +24,8 @@ deployment:
     branch: master
     commands:
       - gulp publish
-      - surge --project ./site --domain seaboard-stage.surge.sh
+      - netlify deploy --path ./site --site-id performer-hare-68626 --access-token ${NETLIFY_TOKEN}
+
   production:
     branch: production
     commands:
