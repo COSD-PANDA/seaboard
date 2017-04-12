@@ -2,16 +2,16 @@
 schema: default
 title: See Solar Permits Issued in 2016
 date: 2016-07-15 00:00:00
-thumbnail: http://mrm-screen.s3.amazonaws.com/solar-energy-868663_960_720.jpg
+thumbnail: '/assets/img/stories/solar-energy.jpg'
 author:
     name: Cody Hooven
 ---
 
 
 
-The City of San Diego is not only a smart city, it's a solar friendly city.  Our 2015 <a href="https://www.sandiego.gov/sustainability" target="_blank">Climate Action Plan</a> sets an ambitious goal to achieve 100% clean and renewable electricity in the city by 2035. If 2016 is an indicator, we're well on our way to reaching our goals.
+The City of San Diego is not only a smart city, it's a solar friendly city.  Our 2015 <a href="https://www.sandiego.gov/sustainability" target="_blank" rel="noopener">Climate Action Plan</a> sets an ambitious goal to achieve 100% clean and renewable electricity in the city by 2035. If 2016 is an indicator, we're well on our way to reaching our goals.
 
-Even before City Council passed Mayor Faulconer's Climate Action Plan, our Development Services Department was ahead of the game and began <a href="https://www.sandiego.gov/development-services/streamlining-residential-solar-panel-systems-permitting" target="_blank">expediting solar permits</a> several years ago. This is also thanks to supportive <a href="http://energycenter.org/policy/property-assessed-clean-energy-pace" target="_blank"> financing programs such as PACE</a> and other incentives.
+Even before City Council passed Mayor Faulconer's Climate Action Plan, our Development Services Department was ahead of the game and began <a href="https://www.sandiego.gov/development-services/streamlining-residential-solar-panel-systems-permitting" target="_blank" rel="noopener">expediting solar permits</a> several years ago. This is also thanks to supportive <a href="http://energycenter.org/policy/property-assessed-clean-energy-pace" target="_blank" rel="noopener"> financing programs such as PACE</a> and other incentives.
 
 <!--more-->
 

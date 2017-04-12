@@ -3,20 +3,18 @@ layout: default
 ---
 {% include breadcrumbs.html parent="Pages" %}
 
-<div data-component="view-switcher">
-  <div class="row pages-main" data-hook="view" data-view="display">
+<div class="row pages-main" data-hook="view" data-view="display">
     {% if page.logo and page.logo != empty %}
     <div class="col-sm-3">
-      <a href="{{ page.logo }}" class="thumbnail"><img src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
+        <a href="{{ page.logo }}" class="thumbnail"><img src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
     </div>
     <div class="col-sm-9">
     {% else %}
     <div class="col-sm-12">
     {% endif %}
-      <h1>
+        <h1>
         {{ page.title }}
-      </h1>
-      {{ page.content}}
+        </h1>
+        {{ page.content}}
     </div>
-  </div>
 </div>

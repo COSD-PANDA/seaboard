@@ -2,7 +2,7 @@
 schema: default
 title: A better open data portal
 date: 2017-02-23 00:00:00
-thumbnail: /assets/img/stories/portal-compare.png
+thumbnail: /assets/img/stories/portal-compare.jpg
 author:
     name: Andrell Bower
 ---
@@ -15,7 +15,7 @@ The portal has a fresh look, but more importantly, we rebuilt the technology beh
 
 ### Just yesterday
 
-![Screenshot of San Diego's old open data portal](/assets/img/stories/old-portal.png)
+![Screenshot of San Diego's old open data portal](/assets/img/stories/old-portal.jpg)
 
 We initially launched our data portal by buying a ready-made portal product from a company. As our team was newer, this made a lot of sense, and the portal the vendor made for us was exactly what we needed at that time.
 
@@ -27,13 +27,13 @@ Normally, a client uploads a dataset to its cloud, and then that dataset is avai
 
 But we were not hosting our data in the cloud service our portal provider offered. We uploaded to a different cloud service and then linked the files to the portal. Not using a direct upload limited our ability to show a preview in the browser or make the data API available without manual intervention. We also couldn’t trigger a change in the extremely important metadata field of “Date Updated” without a manual upload.
 
-Although a ready-made portal product is convenient, it is also expensive. Adding functionality and features as we sought continuous improvement in our program would end up costing taxpayers money that could be better spent. 
+Although a ready-made portal product is convenient, it is also expensive. Adding functionality and features as we sought continuous improvement in our program would end up costing taxpayers money that could be better spent.
 
 Taking all of these factors together, we decided to take San Diego’s open data program to another level and build a portal ourselves. We have a team with the technical expertise to run our own data portal, so we went for it!
 
 ### Today
 
-![Screenshot of San Diego's new open data portal](/assets/img/stories/new-portal.png)
+![Screenshot of San Diego's new open data portal](/assets/img/stories/new-portal.jpg)
 
 At a minimum, a data portal is just a website. All it really needs is a page with a list of datasets (the catalog) and individual pages for each dataset that contain links to download the data. A ready-made portal product is a website with an admin interface that makes it easy for just about anybody to manually update data.
 
@@ -49,7 +49,7 @@ Moving forward, this data portal is the new hub for all open data and analytics 
 
 If you are intrigued by the work we’ve done, our portal is also open-source! [Check out our code](https://github.com/cityofsandiego/seaboard), copy it, and make your own data portal, aka website with a catalog. We use [Jekyll](https://jekyllrb.com/docs/home/), a static site generator, to manage all the files and pages of our portal.
 
-You also need to check out our [automation process](https://github.com/mrmaksimize/docker-airflow). We are using [Airflow](https://github.com/apache/incubator-airflow), another open-source tool, originally developed to improve workflow for employees of companies that crunch data. 
+You also need to check out our [automation process](https://github.com/mrmaksimize/docker-airflow). We are using [Airflow](https://github.com/apache/incubator-airflow), another open-source tool, originally developed to improve workflow for employees of companies that crunch data.
 
 Basically, each little task that we need to complete when we extract and transform data is handled with bits of Python code. Examples of these tasks include connecting to a database, pulling a file from one of the City’s shared drives, detecting the current date and using that to grab the correct time interval of data, etc.
 

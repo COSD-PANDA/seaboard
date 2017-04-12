@@ -165,9 +165,17 @@ img.logo {
 
   li.active {
     a {
+      color: $s_gray_lt;
       &:hover {
         background-color: $p_black;
+        color: $s_gray_lt;
       }
+
+      &:visited {
+        color: $s_gray_lt;
+        background-color: $p_black;
+      }
+
     }
 
   }
@@ -176,7 +184,7 @@ img.logo {
     color: $s_gray_lt;
     font-size: 1em;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 400;
 
     &:visited {
       color: $s_gray_lt;
@@ -271,7 +279,7 @@ a .hidden-link-text {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  
+
 .sd-navbar-top.navbar-default {
   .container {
     padding-right: 0px;

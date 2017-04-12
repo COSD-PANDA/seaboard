@@ -1,6 +1,9 @@
 /*
 The main SCSS file for everything, yep
 */
+@import "bootstrap";
+@import "font-awesome/font-awesome";
+@import "source_sans";
 @import "syntax";
 @import "main";
 @import "sd";
@@ -9,9 +12,9 @@ The main SCSS file for everything, yep
 
 body {
 
-	color: $p_black;
-	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-    font-size: 15px;
+    color: $p_black;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 17px;
     line-height: 1.55;
     background-color: #ffffff;
 
