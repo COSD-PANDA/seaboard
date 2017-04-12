@@ -131,7 +131,7 @@ gulp.task("fonts", function () {
 
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
-  return gulp.src(["serve/*.txt", "serve/*.xml", "serve/*.json", "src/CNAME", "src/.surgeignore", "src/sw.tmpl"])
+  return gulp.src(["serve/*.txt", "serve/*.xml", "serve/*.json", "src/CNAME", "src/sw.tmpl"])
     .pipe(gulp.dest("site"))
     .pipe($.size({ title: "xml, txt, json" }))
 });
