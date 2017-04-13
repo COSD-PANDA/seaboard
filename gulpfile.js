@@ -57,7 +57,7 @@ var path = require('path');
                        rootDir + '/assets/bower_components/',
                        rootDir + '/assets/bower_components/',
                        rootDir + '/assets/bower_components/',*/
-                       rootDir + '/assets/bower_components/JQuery/dist/jquery.min.js',
+                       rootDir + '/assets/bower_components/jQuery/dist/jquery.min.js',
                        rootDir + '/assets/bower_components/keen-js/dist/keen.min.js',
                        rootDir + '/assets/bower_components/px-data-table/css/*',
                        rootDir + '/assets/bower_components/font-awesome/fonts/fontawesome*',
