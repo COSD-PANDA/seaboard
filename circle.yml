@@ -1,6 +1,6 @@
 machine:
   pre:
-    - mkdir ~/.yarn-cache
+    - mkdir -p ~/.cache/yarn
   node:
     version: stable
   environment:
@@ -9,8 +9,9 @@ dependencies:
   pre:
     - curl -o- -L https://yarnpkg.com/install.sh | bash
   cache_directories:
-     - ~/.yarn-cache
+     - ~/.cache/yarn
   override:
+    - yarn cache clean
     - bundle install
     - yarn install
     - bower install
