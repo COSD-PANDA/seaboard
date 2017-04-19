@@ -64,6 +64,7 @@
     "js-yaml": "^3.5.5",
     "lodash": "^4.6.1",
     "netlify-cli": "^1.2.2",
+    "node-sass": "^4.5.2",
     "notie": "github:timwis/notie#string-types",
     "select2": "^4.0.2",
     "sw-precache": "^5.0.0"
