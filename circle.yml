@@ -1,7 +1,6 @@
 machine:
   pre:
     - mkdir -p ~/.cache/yarn
-    - rm -rf ${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules
   node:
     version: stable
   environment:
@@ -12,6 +11,7 @@ dependencies:
   cache_directories:
      - ~/.cache/yarn
   override:
+    - rm -rf ${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules
     - yarn cache clean
     - bundle install
     - yarn install
