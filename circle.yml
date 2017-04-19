@@ -9,7 +9,7 @@ dependencies:
   override:
     - yarn cache clean
     - bundle install
-    - yarn install
+    - yarn install --force
     - bower install
 general:
   branches:
