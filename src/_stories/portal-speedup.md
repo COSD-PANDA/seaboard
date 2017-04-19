@@ -40,7 +40,7 @@ We implemented https and service workers (for security and offline browsing and 
 
 I'm not going to go into too much detail, but you can [see the pull request here](https://github.com/cityofsandiego/seaboard/pull/140).  We tested again and got a score of 96:
 
-![New Lighthouse](http://take.ms/hdEyV)
+![New Lighthouse](/assets/img/stories/lighthouse-report-final.jpg)
 
 [See full report](http://theia.datasd.org.s3.amazonaws.com/data.sandiego.gov_2017-04-12_18-17-58.html)
 
