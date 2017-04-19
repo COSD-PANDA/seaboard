@@ -15,6 +15,7 @@ dependencies:
     - bundle install
     - yarn install
     - bower install
+    - yarn add node-sass
 general:
   branches:
     only:
