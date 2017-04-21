@@ -5,10 +5,44 @@
   <meta name="google" content="notranslate">
   <meta http-equiv="Content-Language" content="en">
 
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% capture pg_description %}
+  {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+  {% endcapture %}
+
+  {% capture pg_img %}
+    {% if page.thumbnail %}
+        {{ page.thumbnail }}
+    {% else %}
+        {{ site.share_img }}
+    {% endif %}
+  {% endcapture %}
+
+  <meta name="description" content="pg_description">
   <meta name="theme-color" content="#37424a">
 
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="description" content="{{ pg_description }}">
+    <meta itemprop="image" content="{{ pg_img }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="{{ pg_img }}">
+    <meta name="twitter:site" content="@MrMaksimize">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ pg_description }}">
+    <meta name="twitter:creator" content="@MrMaksimize">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="{{ pg_description }}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.base_url }}" />
+    <meta property="og:image" content="{{ pg_img }}" />
+    <meta property="og:description" content="{{ pg_description }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
  <link rel='shortcut icon' type='image/x-icon' href='{{ site.baseurl }}/assets/img/favicon.ico' />
