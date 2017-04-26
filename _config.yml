@@ -3,6 +3,7 @@ greeting:
 description: Empowering San Diegans by making data usable.
 baseurl:
 
+share_img: /assets/img/sdlogo_share.jpg
 env: dev
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
