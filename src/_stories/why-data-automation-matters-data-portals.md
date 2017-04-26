@@ -2,12 +2,14 @@
 schema: default
 title: Why data automation matters for open data portals.
 date: 2017-04-27 00:00:00
-thumbnail: /assets/img/stories/lighthouse-report-final.jpg
+thumbnail: /assets/img/stories/airflow-dsd-approvals.jpg
 author:
     name: Maksim Pecherskiy
 ---
 
 Be honest. When you read the words data automation you get a sudden rush of melatonin to your brain, your eyelids get heavy, and you get an uncontrollable urge to fall asleep. Don't be ashamed; you are reacting to these words in a similar manner to 99.5% of people on the planet. Bear with me though for just a few paragraphs while I try to explain why it matters, and how we do it here at the City of San Diego.
+
+<!--more-->
 
 Before we get started, let me promise to not use any of the following:
 
