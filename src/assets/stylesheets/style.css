@@ -8076,9 +8076,11 @@ article.full-post section.share {
 article.full-post section.post-content {
   margin-bottom: 80px; }
   article.full-post section.post-content p img {
-    max-width: 100%;
+    max-width: 70%;
     margin-top: 40px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    margin-left: 15%;
+    margin-right: 15%; }
 
 .post-excerpt, .post-content {
   font-family: "Merriweather",Helvetica, Arial, sans-serif;
