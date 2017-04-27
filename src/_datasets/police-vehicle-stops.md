@@ -5,6 +5,13 @@ department: Police
 category:
   - Public Safety
 resources:
+  - name: Vehicle Stops (year-to-date)
+    url: >-
+      http://seshat.datasd.org/pd/vehicle_stops_2017_datasd.csv
+  - name: Vehicle Stops Search Details (year-to-date)
+    url: >-
+      http://seshat.datasd.org/pd/vehicle_stops_search_details_2017_datasd.csv
+    format: csv
   - name: Vehicle Stops (2016)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2016_datasd.csv
