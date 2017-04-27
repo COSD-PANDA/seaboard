@@ -80,8 +80,10 @@ layout: front
         <strong>The latest </strong>
         <div class="rail-spacer">&rarr;</div>
       </div>
+
+      {% assign latestpost = site.stories | sort:"date" | reverse | first %}
       <div class="latest-rail-item">
-        <a href="/stories/portal-speedup">A speedier portal!</a>
+          <a href="{{ latestpost.url }}">{{ latestpost.title }}</a>
         <div class="rail-spacer">&bull;</div>
       </div>
 

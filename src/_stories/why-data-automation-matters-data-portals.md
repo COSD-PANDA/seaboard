@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Why data automation matters for open data portals.
+title: Why data automation matters for open data portals
 date: 2017-04-27 00:00:00
 thumbnail: /assets/img/stories/airflow-dsd-approvals.jpg
 author:
