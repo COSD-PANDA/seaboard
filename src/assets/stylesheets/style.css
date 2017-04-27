@@ -8065,20 +8065,23 @@ dataset:last-child {
 .post-title {
   color: #37424a; }
 
-article.full-post .post-meta {
-  margin: 42px 0 30px 0; }
-
-article.full-post section.share {
-  font-size: 1.3em;
-  line-height: 1;
-  margin-bottom: 15px; }
-
-article.full-post section.post-content {
-  margin-bottom: 80px; }
-  article.full-post section.post-content p img {
-    max-width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px; }
+article.full-post {
+  margin-left: 10%;
+  margin-right: 10%; }
+  article.full-post .post-meta {
+    margin: 42px 0 30px 0; }
+  article.full-post section.share {
+    font-size: 1.3em;
+    line-height: 1;
+    margin-bottom: 15px; }
+  article.full-post section.post-content {
+    margin-bottom: 80px; }
+    article.full-post section.post-content p img {
+      max-width: 70%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 15%;
+      margin-right: 15%; }
 
 .post-excerpt, .post-content {
   font-family: "Merriweather",Helvetica, Arial, sans-serif;
