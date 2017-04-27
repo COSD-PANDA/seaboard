@@ -8,6 +8,7 @@ resources:
   - name: Vehicle Stops (year-to-date)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2017_datasd.csv
+    format: csv
   - name: Vehicle Stops Search Details (year-to-date)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_search_details_2017_datasd.csv
@@ -15,6 +16,7 @@ resources:
   - name: Vehicle Stops (2016)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2016_datasd.csv
+    format: csv
   - name: Vehicle Stops Search Details (2016)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_search_details_2016_datasd.csv
@@ -22,6 +24,7 @@ resources:
   - name: Vehicle Stops (2015)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2015_datasd.csv
+    format: csv
   - name: Vehicle Stops Search Details (2015)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_search_details_2015_datasd.csv
@@ -29,6 +32,7 @@ resources:
   - name: Vehicle Stops (2014)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2014_datasd.csv
+    format: csv
   - name: Vehicle Stops Search Details (2014)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_search_details_2014_datasd.csv
