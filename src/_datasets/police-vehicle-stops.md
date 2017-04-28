@@ -5,9 +5,18 @@ department: Police
 category:
   - Public Safety
 resources:
+  - name: Vehicle Stops (year-to-date)
+    url: >-
+      http://seshat.datasd.org/pd/vehicle_stops_2017_datasd.csv
+    format: csv
+  - name: Vehicle Stops Search Details (year-to-date)
+    url: >-
+      http://seshat.datasd.org/pd/vehicle_stops_search_details_2017_datasd.csv
+    format: csv
   - name: Vehicle Stops (2016)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2016_datasd.csv
+    format: csv
   - name: Vehicle Stops Search Details (2016)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_search_details_2016_datasd.csv
@@ -15,6 +24,7 @@ resources:
   - name: Vehicle Stops (2015)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2015_datasd.csv
+    format: csv
   - name: Vehicle Stops Search Details (2015)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_search_details_2015_datasd.csv
@@ -22,6 +32,7 @@ resources:
   - name: Vehicle Stops (2014)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_2014_datasd.csv
+    format: csv
   - name: Vehicle Stops Search Details (2014)
     url: >-
       http://seshat.datasd.org/pd/vehicle_stops_search_details_2014_datasd.csv
@@ -44,7 +55,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-11-14'
-date_modified: '2017-01-31'
+date_modified: '2017-04-27'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
