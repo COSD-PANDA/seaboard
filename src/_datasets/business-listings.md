@@ -1,21 +1,25 @@
 ---
 schema: default
-title: Business Listings
+title: Active Businesses
 department: City Treasurer
 category:
   - Economy & Community
 resources:
-  - name: Active Business Listings
+  - name: Listing of Active Businesses
     url: >-
       http://seshat.datasd.org/ttcs/sd_active_businesses_datasd.csv
     format: csv
-  - name: Active Business Listings (opened during the last quarter)
+  - name: Listing of Active Businesses (created during the last 3 months)
     url: >-
-      http://seshat.datasd.org/ttcs/bus_start_last_q_datasd.csv
+      http://seshat.datasd.org/ttcs/bus_start_last_3mo_datasd.csv
     format: csv
-  - name: Active Business Dictionary
+  - name: Listing of Active Businesses (created during the last 6 months)
     url: >-
-      http://seshat.datasd.org/ttcs/business_listings_dictionary_datasd.csv
+      http://seshat.datasd.org/ttcs/bus_start_last_6mo_datasd.csv
+    format: csv
+  - name: Listing of Active Businesses Dictionary
+    url: >-
+      http://seshat.datasd.org/ttcs/listing_businesses_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
