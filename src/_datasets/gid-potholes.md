@@ -12,8 +12,8 @@ resources:
     url: >-
       http://seshat.datasd.org/get_it_done_311/potholes_requests_dictionary_datasd.csv
     format: csv
-date_issued: '2016-05-26'
-date_modified: '2017-06-12'
+date_issued: '2017-06-13'
+date_modified: '2017-06-13'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
