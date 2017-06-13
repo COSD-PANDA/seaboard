@@ -6,7 +6,7 @@ category: City Management
 resources:
   - name: Abandoned Vehicles Removal Requests
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_abandoned_vehicle_requests_datasd.csv
+      http://seshat.datasd.org/get_it_done_311/get_it_done_311_abandoned_vehicle_requests_datasd.csv
     format: csv
   - name: Abandoned Vehicles Removal Requests Data Dictionary
     url: >-
@@ -20,4 +20,4 @@ maintainer_email: data@sandiego.gov
 ---
 Requests for abandoned vehicle removal made by residents via the
 <a href="https://www.sandiego.gov/get-it-done" target="_blank" rel="noopener">
-Get It Done applications and phone.</a>.
+Get It Done applications</a> and phone.
