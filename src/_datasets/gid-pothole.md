@@ -1,14 +1,14 @@
 ---
 schema: default
-title: Potholes Repair Requests
+title: Pothole Repair Requests
 department: Performance & Analytics
 category: City Management
 resources:
-  - name: Potholes Repair Requests
+  - name: Pothole Repair Requests
     url: >-
       http://seshat.datasd.org/get_it_done_311/get_it_done_311_pothole_requests_datasd.csv
     format: csv
-  - name: Potholes Repair Requests Data Dictionary
+  - name: Pothole Repair Requests Data Dictionary
     url: >-
       http://seshat.datasd.org/get_it_done_311/potholes_requests_dictionary_datasd.csv
     format: csv
@@ -18,6 +18,6 @@ license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Requests for potholes repair made by residents via the
+Requests for pothole repair made by residents via the
 <a href="https://www.sandiego.gov/get-it-done" target="_blank" rel="noopener">
 Get It Done applications</a> and phone.

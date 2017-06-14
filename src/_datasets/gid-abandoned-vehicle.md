@@ -1,14 +1,14 @@
 ---
 schema: default
-title: Abandoned Vehicles Removal Requests
+title: Abandoned Vehicle Removal Requests
 department: Performance & Analytics
 category: City Management
 resources:
-  - name: Abandoned Vehicles Removal Requests
+  - name: Abandoned Vehicle Removal Requests
     url: >-
       http://seshat.datasd.org/get_it_done_311/get_it_done_311_abandoned_vehicle_requests_datasd.csv
     format: csv
-  - name: Abandoned Vehicles Removal Requests Data Dictionary
+  - name: Abandoned Vehicle Removal Requests Data Dictionary
     url: >-
       http://seshat.datasd.org/get_it_done_311/abandoned_vehicle_requests_dictionary_datasd.csv
     format: csv
