@@ -21,7 +21,7 @@ deployment:
     branch: master
     commands:
       - gulp build && gulp publish
-      - netlify deploy --path ./site --site-id performer-hare-68626 --access-token ${NETLIFY_TOKEN}
+      - netlify deploy --path ./site --site-id seaboard-stage --access-token ${NETLIFY_TOKEN}
 
   production:
     branch: production
