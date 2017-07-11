@@ -15,6 +15,7 @@ general:
   branches:
     only:
       - master
+      - stage_for_approval
       - production
 deployment:
   staging:
