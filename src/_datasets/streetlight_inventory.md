@@ -12,7 +12,7 @@ resources:
     url: >-
       http://seshat.datasd.org/streetlight_inventory/streetlight_locations_dictionary_datasd.csv
     format: csv
-date_issued: '2016-05-03'
+date_issued: '2017-05-03'
 date_modified: '2017-05-03'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
