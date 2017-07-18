@@ -13,7 +13,11 @@ resources:
       http://seshat.datasd.org/get_it_done_311/street_light_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
+<<<<<<< HEAD
 date_modified: '2017-07-17'
+=======
+date_modified: '2017-07-18'
+>>>>>>> origin
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov

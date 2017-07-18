@@ -25,7 +25,11 @@ resources:
       http://san-diego.spotreporters.com/open311/v2/services.json
     format: json
 date_issued: '2016-05-26'
+<<<<<<< HEAD
 date_modified: '2017-07-17'
+=======
+date_modified: '2017-07-18'
+>>>>>>> origin
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
