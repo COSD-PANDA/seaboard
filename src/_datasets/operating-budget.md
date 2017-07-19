@@ -9,6 +9,10 @@ resources:
     url: >-
       http://seshat.datasd.org/budget/operating_budget_adopted_FY18_datasd.csv
     format: csv
+  - name: Adopted Operating Budget dictionary
+    url: >-
+      http://seshat.datasd.org/budget/operating_budget_dictionary_datasd.csv
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
 date_modified: '2017-07-14'

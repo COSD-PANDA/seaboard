@@ -9,6 +9,10 @@ resources:
     url: >-
       http://seshat.datasd.org/budget/budget_reference_funds_datasd.csv
     format: csv
+  - name: Funds hierarchy dictionary
+    url: >-
+      http://seshat.datasd.org/budget/budget_reference_funds_dictionary_datasd.csv
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
 date_modified: '2017-07-14'

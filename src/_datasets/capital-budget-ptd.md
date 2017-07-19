@@ -7,7 +7,11 @@ category:
 resources:
   - name: FY18 project-to-date CIP Budget
     url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY18_datasd.csv
+      http://seshat.datasd.org/budget/capital_budget_ptd_FY16_datasd.csv
+    format: csv
+  - name: Project-to-date CIP Budget dictionary
+    url: >-
+      http://seshat.datasd.org/budget/capital_budget_ptd_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
