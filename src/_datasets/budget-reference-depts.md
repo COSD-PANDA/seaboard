@@ -15,7 +15,7 @@ date_modified: '2017-07-14'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-This dataset provides additional information about departments in the City's annual budget. Use this to supplement the [Operating](operating-budget.md) budget dataset. 
+This dataset provides additional information about departments in the City's annual budget. Use this to supplement the [Operating](/datasets/operating-budget/) budget dataset. 
 <!--more-->
 
-[Read our explanation](../budget-topic.html) on how to join the reference datasets to the budget datasets.
+[Read our explanation](/budget-topic/) on how to join the reference datasets to the budget datasets.

@@ -14,18 +14,18 @@ The corresponding information available in the datasets is meant to help data us
 
 ### Funds
 
-The fund information in both the capital and operating datasets is fund type. You can get even more specific fund information by joining the **fund_number** column for either of those datasets with **fund_number** in the [Funds reference dataset](/datasets/budget_reference_funds/).
+The fund information in both the capital and operating datasets is fund type. You can get even more specific fund information by joining the **fund_number** column for either of those datasets with **fund_number** in the [Funds reference dataset](/datasets/budget-reference-funds/).
 
 ### Departments
 
-The [Departments reference dataset](/datasets/budget_reference_depts/) has the same department column that is available in the Operating Budget dataset, but it also includes the department group, division, section, and fund center.
+The [Departments reference dataset](/datasets/budget-reference-depts/) has the same department column that is available in the Operating Budget dataset, but it also includes the department group, division, section, and fund center.
 
 The hierarchy in this reference dataset is ***department_group > department > division > section > fund_center***.
 
 ### Items
 
-The item description already available in the capital and operating budgets is as low-level as you can get it. But, if you want to roll up items, you can join on **item_number** with the [Items reference dataset](/datasets/budget_reference_items/). The hierarchy here is ***type > class > group > description***.
+The item description already available in the capital and operating budgets is as low-level as you can get it. But, if you want to roll up items, you can join on **item_number** with the [Items reference dataset](/datasets/budget-reference-items/). The hierarchy here is ***type > class > group > description***.
 
 ### Projects
 
-In the capital budgets, two project variables are already included: the project department and the project description. But by joining on **project_number** with the [Projects reference dataset](/datasets/budget_reference_projects/), you can roll the item up from description to project type or asset type. Putting owning_department aside, the hierarchy for the remaining columns is ***asset_type_project > asset_type > project_description***.
+In the capital budgets, two project variables are already included: the project department and the project description. But by joining on **project_number** with the [Projects reference dataset](/datasets/budget-reference-projects/), you can roll the item up from description to project type or asset type. Putting owning_department aside, the hierarchy for the remaining columns is ***asset_type_project > asset_type > project_description***.
