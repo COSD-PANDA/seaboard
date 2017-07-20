@@ -5,7 +5,7 @@ department: Financial Management
 category:
   - City Management
 resources:
-  - name: FY18 project-to-date CIP Budget
+  - name: FY16 project-to-date CIP Budget
     url: >-
       http://seshat.datasd.org/budget/capital_budget_ptd_FY16_datasd.csv
     format: csv
