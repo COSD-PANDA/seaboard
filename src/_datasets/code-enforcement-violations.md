@@ -25,7 +25,7 @@ resources:
       http://seshat.datasd.org/dsd/code_enf_remedies_datasd.csv
     format: csv
 date_issued: '2016-06-21'
-date_modified: '2017-07-24'
+date_modified: '2017-07-25'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
