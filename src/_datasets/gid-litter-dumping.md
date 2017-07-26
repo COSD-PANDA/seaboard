@@ -13,7 +13,7 @@ resources:
       http://seshat.datasd.org/get_it_done_311/litter_dumping_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
-date_modified: '2017-07-20'
+date_modified: '2017-07-26'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
