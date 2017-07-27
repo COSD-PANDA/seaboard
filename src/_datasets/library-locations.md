@@ -6,14 +6,22 @@ category:
   - Culture & Recreation
   - City Infrastructure
 resources:
-  - name: Library Locations (Shapefile)
+  - name: Library Locations
     url: >-
-      http://seshat.datasd.org/sde/library/CITY.LIBRARY_datasd.zip
+      http://seshat.datasd.org/sde/library/libraries_datasd.zip
     format: shp
-  - name: Library Locations (csv)
+  - name: Library Locations
     url: >-
-      http://seshat.datasd.org/sde/library/CITY.LIBRARY_datasd.csv
-    format: csv
+      http://seshat.datasd.org/sde/library/libraries_datasd.pbf
+    format: pbf
+  - name: Library Locations
+    url: >-
+      http://seshat.datasd.org/sde/library/libraries_datasd.topojson
+    format: topojson
+  - name: Library Locations
+    url: >-
+      http://seshat.datasd.org/sde/library/libraries_datasd.geojson
+    format: geojson
   - name: Library Locations Dictionary
     url: >-
       http://seshat.datasd.org/sde/library/CITY.LIBRARY_dictionary_datasd.csv

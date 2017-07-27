@@ -7,8 +7,20 @@ category:
 resources:
   - name: General Plan Land Use
     url: >-
-      http://seshat.datasd.org/sde/gp_land_use/CITY.GENERAL_PLAN_LAND_USE_datasd.zip
+      http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.zip
     format: shp
+  - name: General Plan Land Use
+    url: >-
+      http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.pbf
+    format: pbf
+  - name: General Plan Land Use
+    url: >-
+      http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.topojson
+    format: topojson
+  - name: General Plan Land Use
+    url: >-
+      http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.geojson
+    format: geojson
   - name: General Plan Land Use Dictionary
     url: >-
       http://seshat.datasd.org/sde/gp_land_use/land_use_dictionary_datasd.csv

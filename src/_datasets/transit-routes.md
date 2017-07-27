@@ -7,8 +7,20 @@ category:
 resources:
   - name: Transit Routes Lines
     url: >-
-      http://seshat.datasd.org/sde/transit_routes_gtfs/CITY.TRANSIT_ROUTES_GTFS_datasd.zip
+      http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.zip
     format: shp
+  - name: Transit Routes Lines
+    url: >-
+      http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.pbf
+    format: pbf
+  - name: Transit Routes Lines
+    url: >-
+      http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.topojson
+    format: topojson
+  - name: Transit Routes Lines
+    url: >-
+      http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.geojson
+    format: geojson
   - name: Transit Routes Lines Dictionary
     url: >-
       http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_dictionary_datasd.csv

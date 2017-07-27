@@ -8,8 +8,20 @@ category:
 resources:
   - name: Park Locations
     url: >-
-      http://seshat.datasd.org/sde/parks/CITY.PARKS_datasd.zip
+      http://seshat.datasd.org/sde/parks/parks_datasd.zip
     format: shp
+  - name: Park Locations
+    url: >-
+      http://seshat.datasd.org/sde/parks/parks_datasd.pbf
+    format: pbf
+  - name: Park Locations
+    url: >-
+      http://seshat.datasd.org/sde/parks/parks_datasd.topojson
+    format: topojson
+  - name: Park Locations
+    url: >-
+      http://seshat.datasd.org/sde/parks/parks_datasd.geojson
+    format: geojson
   - name: Park Locations Dictionary
     url: >-
       http://seshat.datasd.org/sde/parks/CITY.PARKS_dictionary_datasd.csv
