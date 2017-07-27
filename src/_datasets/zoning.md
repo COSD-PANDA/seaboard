@@ -7,8 +7,20 @@ category:
 resources:
   - name: Zoning
     url: >-
-      http://seshat.datasd.org/sde/zoning/CITY.ZONING_SD_datasd.zip
+      http://seshat.datasd.org/sde/zoning/zoning_datasd.zip
     format: shp
+  - name: Zoning
+    url: >-
+      http://seshat.datasd.org/sde/zoning/zoning_datasd.pbf
+    format: pbf
+  - name: Zoning
+    url: >-
+      http://seshat.datasd.org/sde/zoning/zoning_datasd.topojson
+    format: topojson
+  - name: Zoning
+    url: >-
+      http://seshat.datasd.org/sde/zoning/zoning_datasd.geojson
+    format: geojson
   - name: Zoning Dictionary
     url: >-
       http://seshat.datasd.org/sde/zoning/zoning_dictionary_datasd.csv

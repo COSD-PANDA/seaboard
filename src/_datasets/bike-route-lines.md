@@ -8,8 +8,20 @@ category:
 resources:
   - name: Bike Route Lines
     url: >-
-      http://seshat.datasd.org/sde/bike_route/CITY.BIKE_ROUTE_datasd.zip
+      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip
     format: shp
+  - name: Bike Route Lines
+    url: >-
+      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.pbf
+    format: pbf
+  - name: Bike Route Lines
+    url: >-
+      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topojson
+    format: topojson
+  - name: Bike Route Lines
+    url: >-
+      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson
+    format: geojson
   - name: Bike Route Lines Metadata
     url: >-
       http://seshat.datasd.org/sde/bike_route/CITY.BIKE_ROUTE_metadata_datasd.csv
