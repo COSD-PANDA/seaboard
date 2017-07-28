@@ -22,13 +22,9 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.geojson
     format: geojson
-  - name: Business Improvement Districts Boundaries Metadata
-    url: >-
-      http://seshat.datasd.org/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_metadata_datasd.csv
-    format: csv
   - name: Business Improvement Districts Boundaries Dictionary
     url: >-
-      http://seshat.datasd.org/sde/bus_improvement_districts/CITY.BUS_IMPROVEMENT_DISTRICTS_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/bus_improvement_districts/bids_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

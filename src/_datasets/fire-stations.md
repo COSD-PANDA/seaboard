@@ -21,17 +21,9 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.geojson
     format: geojson
-  - name: Fire Stations Locations (csv)
-    url: >-
-      http://seshat.datasd.org/sde/fire_stations/CITY.FIRE_STATION_datasd.csv
-    format: csv
   - name: Fire Stations Locations Dictionary
     url: >-
       http://seshat.datasd.org/sde/fire_stations/fire_stations_dictionary_datasd.csv
-    format: csv
-  - name: Fire Stations Locations Metadata
-    url: >-
-      http://seshat.datasd.org/sde/fire_stations/CITY.FIRE_STATION_metadata_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

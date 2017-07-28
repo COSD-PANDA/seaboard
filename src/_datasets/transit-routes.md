@@ -25,10 +25,6 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_dictionary_datasd.csv
     format: csv
-  - name: Transit Routes Lines Metadata
-    url: >-
-      http://seshat.datasd.org/sde/transit_routes_gtfs/CITY.TRANSIT_ROUTES_GTFS_metadata_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
 date_modified: '2016-07-05'
