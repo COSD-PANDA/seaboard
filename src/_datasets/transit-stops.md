@@ -25,10 +25,6 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_dictionary_datasd.csv
     format: csv
-  - name: Transit Stops Locations Metadata
-    url: >-
-      http://seshat.datasd.org/sde/transit_stops_gtfs/CITY.TRANSIT_STOPS_GTFS_metadata_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
 date_modified: '2016-07-05'

@@ -25,10 +25,6 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/right_of_way/right_of_way_dictionary_datasd.csv
     format: csv
-  - name: Right-of-way parcels Metadata
-    url: >-
-      http://seshat.datasd.org/sde/right_of_way/right_of_way_metadata_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
 date_modified: '2017-02-17'

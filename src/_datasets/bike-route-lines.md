@@ -22,13 +22,9 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson
     format: geojson
-  - name: Bike Route Lines Metadata
-    url: >-
-      http://seshat.datasd.org/sde/bike_route/CITY.BIKE_ROUTE_metadata_datasd.csv
-    format: csv
   - name: Bike Route Lines Dictionary
     url: >-
-      http://seshat.datasd.org/sde/bike_route/CITY.BIKE_ROUTE_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/bike_route/bike_routes_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

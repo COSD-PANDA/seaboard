@@ -24,11 +24,7 @@ resources:
     format: geojson
   - name: Library Locations Dictionary
     url: >-
-      http://seshat.datasd.org/sde/library/CITY.LIBRARY_dictionary_datasd.csv
-    format: csv
-  - name: Library Locations Metadata
-    url: >-
-      http://seshat.datasd.org/sde/library/CITY.LIBRARY_metadata_datasd.csv
+      http://seshat.datasd.org/sde/library/libraries_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

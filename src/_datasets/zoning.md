@@ -25,10 +25,6 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/zoning/zoning_dictionary_datasd.csv
     format: csv
-  - name: Zoning Metadata
-    url: >-
-      http://seshat.datasd.org/sde/zoning/CITY.ZONING_SD_metadata_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-16'
 date_modified: '2016-07-05'

@@ -23,11 +23,7 @@ resources:
     format: geojson
   - name: General Plan Land Use Dictionary
     url: >-
-      http://seshat.datasd.org/sde/gp_land_use/land_use_dictionary_datasd.csv
-    format: csv
-  - name: General Plan Land Use Metadata
-    url: >-
-      http://seshat.datasd.org/sde/gp_land_use/CITY.GENERAL_PLAN_LAND_USE_metadata_datasd.csv
+      http://seshat.datasd.org/sde/gp_land_use/gp_land_use_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
