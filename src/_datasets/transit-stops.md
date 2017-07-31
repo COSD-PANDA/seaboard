@@ -5,19 +5,19 @@ department: GIS
 category:
   - Transportation
 resources:
-  - name: Transit Stops Locations (Shapefile)
+  - name: Transit Stops Locations
     url: >-
       http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.zip
     format: shp
-  - name: Transit Stops Locations (Shapefile)
+  - name: Transit Stops Locations
     url: >-
       http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.pbf
     format: pbf
-  - name: Transit Stops Locations (Shapefile)
+  - name: Transit Stops Locations
     url: >-
       http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.topojson
     format: topojson
-  - name: Transit Stops Locations (Shapefile)
+  - name: Transit Stops Locations
     url: >-
       http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.geojson
     format: geojson

@@ -22,10 +22,6 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson
     format: geojson
-  - name: Community Planning District Boundaries
-    url: >-
-      http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.zip
-    format: shp
   - name: Community Planning District Boundaries Dictionary
     url: >-
       http://seshat.datasd.org/sde/cmty_plan/cmty_plan_dictionary_datasd.csv
