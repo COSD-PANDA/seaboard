@@ -7,11 +7,23 @@ category:
 resources:
   - name: Roads Lines
     url: >-
-      http://seshat.datasd.org/sde/roads_all/CITY.ROADS_ALL_datasd.zip
+      http://seshat.datasd.org/sde/roads_all/roads_datasd.zip
     format: shp
+  - name: Roads Lines
+    url: >-
+      http://seshat.datasd.org/sde/roads_all/roads_datasd.pbf
+    format: pbf
+  - name: Roads Lines
+    url: >-
+      http://seshat.datasd.org/sde/roads_all/roads_datasd.topojson
+    format: topojson
+  - name: Roads Lines
+    url: >-
+      http://seshat.datasd.org/sde/roads_all/roads_datasd.geojson
+    format: geojson
   - name: Roads Lines Dictionary
     url: >-
-      http://seshat.datasd.org/sde/roads_all/roads_lines_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/roads_all/roads_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
