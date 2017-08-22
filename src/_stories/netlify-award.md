@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Netlify Site of the Week
-date: 2017-08-16 00:00:00
+date: 2017-08-21 00:00:00
 thumbnail: /assets/img/stories/netlify-logo.jpg
 author:
     name: Sydney Yockey
