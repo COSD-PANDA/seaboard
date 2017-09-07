@@ -23,7 +23,7 @@ resources:
     format: geojson
   - name: Roads Lines Dictionary
     url: >-
-      http://seshat.datasd.org/sde/roads_all/roads_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/roads_all/roads_lines_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
