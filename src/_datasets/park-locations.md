@@ -8,19 +8,27 @@ category:
 resources:
   - name: Park Locations
     url: >-
-      http://seshat.datasd.org/sde/parks/CITY.PARKS_datasd.zip
+      http://seshat.datasd.org/sde/parks/parks_datasd.zip
     format: shp
+  - name: Park Locations
+    url: >-
+      http://seshat.datasd.org/sde/parks/parks_datasd.pbf
+    format: pbf
+  - name: Park Locations
+    url: >-
+      http://seshat.datasd.org/sde/parks/parks_datasd.topojson
+    format: topojson
+  - name: Park Locations
+    url: >-
+      http://seshat.datasd.org/sde/parks/parks_datasd.geojson
+    format: geojson
   - name: Park Locations Dictionary
     url: >-
-      http://seshat.datasd.org/sde/parks/CITY.PARKS_dictionary_datasd.csv
-    format: csv
-  - name: Park Locations Metadata
-    url: >-
-      http://seshat.datasd.org/sde/parks/CITY.PARKS_metadata_datasd.csv
+      http://seshat.datasd.org/sde/parks/parks_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-17'
-date_modified: '2017-02-17'
+date_modified: '2017-09-12'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

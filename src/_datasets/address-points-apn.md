@@ -7,15 +7,27 @@ category:
 resources:
   - name: Address Points
     url: >-
-      http://seshat.datasd.org/sde/addrapn/CITY.ADDRAPN_datasd.zip
+      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.zip
     format: shp
+  - name: Address Points
+    url: >-
+      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.pbf
+    format: pbf
+  - name: Address Points
+    url: >-
+      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.topojson
+    format: topojson
+  - name: Address Points
+    url: >-
+      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.geojson
+    format: geojson
   - name: Address Points Dictionary
     url: >-
       http://seshat.datasd.org/sde/addrapn/address_apn_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2016-07-05'
+date_modified: '2017-09-12'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

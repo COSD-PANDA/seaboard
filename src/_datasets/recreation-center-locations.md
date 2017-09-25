@@ -5,25 +5,29 @@ department: GIS
 category:
   - Culture & Recreation
 resources:
-  - name: Recreation Centers (Shapefile)
+  - name: Recreation Centers
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_datasd.zip
+      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.zip
     format: shp
-  - name: Recreation Centers (csv)
+  - name: Recreation Centers
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_datasd.csv
-    format: csv
+      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.pbf
+    format: pbf
+  - name: Recreation Centers
+    url: >-
+      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.topojson
+    format: topojson
+  - name: Recreation Centers
+    url: >-
+      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.geojson
+    format: geojson
   - name: Recreation Centers Dictionary
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_dictionary_datasd.csv
-    format: csv
-  - name: Recreation Centers Metadata
-    url: >-
-      http://seshat.datasd.org/sde/rec_centers/CITY.REC_CENTERS_metadata_datasd.csv
+      http://seshat.datasd.org/sde/rec_centers/rec_centers_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-16'
-date_modified: '2016-07-05'
+date_modified: '2017-09-12'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
