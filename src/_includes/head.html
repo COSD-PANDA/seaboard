@@ -47,6 +47,7 @@
  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
  <link rel='shortcut icon' type='image/x-icon' href='{{ site.baseurl }}/assets/img/favicon.ico' />
  <link rel="manifest" href="/manifest.json">
+ <link href="{{ site.baseurl }}/feed.xml" type="application/rss+xml" rel="alternate" title="Latest stories (atom)" />
  <script>
    var settings = {
      BASE_URL: {{ site.baseurl | jsonify }},
