@@ -1,38 +1,35 @@
 ---
 schema: default
-title: Address Points to APN
+title: Multi-Habitat Planning Areas
 department: GIS
 category:
-  - Economy & Community
+  - Energy & Environment
 resources:
-  - name: Address Points
+  - name: MHPA
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.zip
+      http://seshat.datasd.org/sde/mhpa/mhpa_datasd.zip
     format: shp
-  - name: Address Points
+  - name: MHPA
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.pbf
+      http://seshat.datasd.org/sde/mhpa/mhpa_datasd.pbf
     format: pbf
-  - name: Address Points
+  - name: MHPA
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.topojson
+      http://seshat.datasd.org/sde/mhpa/mhpa_datasd.topojson
     format: topojson
-  - name: Address Points
+  - name: MHPA
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.geojson
+      http://seshat.datasd.org/sde/mhpa/mhpa_datasd.geojson
     format: geojson
-  - name: Address Points Dictionary
+  - name: MHPA Dictionary
     url: >-
-      http://seshat.datasd.org/sde/addrapn/address_apn_dictionary_datasd.csv
+      http://seshat.datasd.org/sde/mhpa/mhpa_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-date_issued: '2016-05-09'
-date_modified: '2017-08-29'
+date_issued: '2017-06-30'
+date_modified: '2017-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-This dataset comprises SITUS address points (as opposed to owner or mailing addresses)
-for jurisdictions within the County of San Diego.
+The Multi-Habitat Planning Area is planned habitat preserve. Of the 56,831 acres, 90 percent is targeted for preservation. Within this area, development is limited, but the public is allowed access in many areas for recreational activities.
 <!--more-->
-Addresses include the corresponding Assessor Parcel Number (APN),
-address type, placement location, and US National Grid (USNG) value.

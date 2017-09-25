@@ -32,6 +32,6 @@ date_modified: '2017-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Areas where an agreement exists between the City of San Diego and another agency, usually a school district, to allow public access to recreational areas.
+Joint use facilities are intended to provide active and passive recreational opportunities for school children when school is in session and the general public when school is not in session.
 <!--more-->
-
+Each joint use site is governed by a joint use agreement between the City of San Diego and applicable school district. These agreements outline the responsibilities of each agency.
