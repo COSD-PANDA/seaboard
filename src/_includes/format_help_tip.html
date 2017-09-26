@@ -1,0 +1,14 @@
+<span class="resource-format">{{ include.format}}</span>
+<span class="help-tip">
+    <p>
+    {% case include.format %}
+        {% when "csv" %}
+            Tabular data on our portal comes in CSV form. Excel, Google Docs, LibreOffice Calc or any plain text editor
+            will work with this format.
+            <br>
+            <a href="{{ site.baseurl }}/resources/#working-with-tabular-data" target="_blank">Learn More</a>
+        {% else %}
+            No support available yet. Figure it out.
+    {% endcase %}
+    </p>
+</span>

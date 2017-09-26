@@ -442,6 +442,104 @@ th {
 
 }
 
+div.resource-type {
+  text-align: center;
+}
+span.resource-format {
+}
+.help-tip{
+    text-align: center;
+    background-color: #00549F;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    font-size: 12px;
+    line-height: 13px;
+    cursor: default;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: $p_black;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+    z-index: 9999999999;
+}
+
+.help-tip p a, .help-tip p a:visited, .help-top p a:hover {
+  color: #e0e1dd;
+}
+
+.help-tip p a:before {
+  content: '>> ';
+  font-weight: bold;
+  color: #e0e1dd;
+}
+
+.help-tip p:before{ /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:10px;
+    top:-12px;
+}
+
+.help-tip p:after{ /* Prevents the tooltip from being hidden */
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+
 .paper-button-0 {
 	min-width: initial;
 }
