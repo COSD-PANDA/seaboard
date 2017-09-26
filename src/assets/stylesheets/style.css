@@ -7919,25 +7919,6 @@ th {
 div.resource-type {
   text-align: center; }
 
-/*.help-tip{
-    text-align: center;
-    background-color: #00549F;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    font-size: 12px;
-    line-height: 13px;
-    cursor: default;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-
-.help-tip:before{
-    content:'?';
-    font-weight: bold;
-    color:#fff;
-}*/
 .help-tip {
   text-align: center;
   cursor: help;
@@ -7959,11 +7940,12 @@ div.resource-type {
   position: absolute;
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  right: 0px;
+  right: 25px;
   color: #FFF;
   font-size: 13px;
   line-height: 1.4;
-  z-index: 9999999999; }
+  z-index: 9999999999;
+  opacity: 0.95; }
 
 .help-tip p a, .help-tip p a:visited, .help-top p a:hover {
   color: #e0e1dd; }

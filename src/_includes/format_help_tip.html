@@ -5,11 +5,21 @@
             {% when 'csv' %}
                 Tabular data on our portal comes in CSV form. Excel, Google Docs, LibreOffice Calc or any plain text editor
                 will work with this format.
-                <br/><a href="{{ site.baseurl }}/resources/#working-with-tabular-data" target="_blank">Learn More</a>
-
-            {% else %}
-                hi
+                <br/><a title="Learn about working with Tabular Data" href="{{ site.baseurl }}/resources/#working-with-tabular-data" target="_blank">Learn More</a>
+            {% when 'shp' %}
+                Shapefiles are one of the formats in which we provide geospatial data. It's a very common format and
+                will work with most closed and open source geospatial software.
+                <br/><a title="Learn more about Shapefiles" href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">Learn More</a>
+            {% when 'pbf' %}
+                Geobuf is a compact binary encoding for geographic data. Geobuf provides lossless compression of GeoJSON data into protocol buffers.
+                <br/><a title="Learn more about Geobuf" href="https://github.com/mapbox/geobuf" target="_blank">Learn More</a>
+            {% when 'geojson' %}
+                GeoJSON is an open standard format designed for representing simple geographical features, along with
+                their non-spatial attributes, based on JavaScript Object Notation.
+                <br/><a title="Learn more about GeoJSON" href="https://geojson.io" target="_blank">Learn More</a>
+            {% when 'topojson' %}
+                TopoJSON is an extension of GeoJSON that encodes topology.
+                <br/><a title="Leanr more about TopoJSON" href="https://github.com/topojson/topojson" target="_blank">Learn More</a>
         {% endcase %}
-
     </p>
 </div>
