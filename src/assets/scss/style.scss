@@ -447,7 +447,7 @@ div.resource-type {
 }
 span.resource-format {
 }
-.help-tip{
+/*.help-tip{
     text-align: center;
     background-color: #00549F;
     border-radius: 50%;
@@ -460,11 +460,21 @@ span.resource-format {
     padding-right: 4px;
 }
 
+
 .help-tip:before{
     content:'?';
     font-weight: bold;
     color:#fff;
+}*/
+
+.help-tip{
+    text-align: center;
+    cursor: help;
+    text-decoration: underline !important;
+    font-weight: normal;
 }
+
+
 
 .help-tip:hover p{
     display:block;
@@ -484,7 +494,7 @@ span.resource-format {
     position: absolute;
     border-radius: 3px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    right: -4px;
+    right: 0px;
     color: #FFF;
     font-size: 13px;
     line-height: 1.4;
@@ -501,16 +511,6 @@ span.resource-format {
   color: #e0e1dd;
 }
 
-.help-tip p:before{ /* The pointer of the tooltip */
-    position: absolute;
-    content: '';
-    width:0;
-    height: 0;
-    border:6px solid transparent;
-    border-bottom-color:#1E2021;
-    right:10px;
-    top:-12px;
-}
 
 .help-tip p:after{ /* Prevents the tooltip from being hidden */
     width:100%;
