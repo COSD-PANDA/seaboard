@@ -21,14 +21,14 @@ layout: default
         <template is="dom-bind">
         <script>
 
-        preview_url = function(url, title) {
+        preview_url = function(url, title, preview_rows) {
             ajax_el = document.querySelector('iron-ajax');
             table_el = document.querySelector('aha-table');
             button_els = document.querySelectorAll('.resource-table-button');
             title_el = document.querySelector('.preview-resource-title');
             var params = {
                 'datasetUrl': url,
-                'numRows': '15'
+                'numRows': preview_rows
             }
             // Reset the table for new dataset.
             if (table_el) {
@@ -42,7 +42,7 @@ layout: default
 
             title_el.textContent = title;
             ajax_el.set('params', params);
-            }
+        }
 
         </script>
 
@@ -58,6 +58,7 @@ layout: default
         {% for resource in page.resources %}
             {% if first_resource_url == '' and resource.url contains '.csv' %}
                 {% capture first_resource_url %}{{ resource.url }}{% endcapture %}
+                {% capture first_resource_rows %}{{ resource.preview_rows | default: site.default_preview_rows }}{% endcapture %}
                 {% capture first_resource_title %}{{ resource.name }}{% endcapture %}
                 {% assign preview-is-active = 'active' %}
             {% else %}
@@ -83,7 +84,8 @@ layout: default
                 </td>
                 <td class="table-content-centered">
                 {% if resource.format == 'csv' %}
-                    <paper-button class="resource-table-button" {{ preview-is-active }} toggles="true" onclick="preview_url('{{ resource.url }}', '{{ resource.name }}')">
+                    <paper-button class="resource-table-button" {{ preview-is-active }} toggles="true"
+                                  onclick="preview_url('{{ resource.url }}', '{{ resource.name }}', '{{ resource.preview_rows | default: site.default_preview_rows }}')">
                     <div class="preview-check">
                     <span class="fa fa-check-circle-o"></span>
                     </div>
@@ -98,7 +100,7 @@ layout: default
         <iron-ajax
         auto
         url="{{ site.ds_preview_url }}"
-        params={% raw %}'{"datasetUrl": "{% endraw %}{{ first_resource_url }}{% raw %}", "numRows": "15"}'{% endraw %}
+        params={% raw %}'{"datasetUrl": "{% endraw %}{{ first_resource_url }}{% raw %}", "numRows": "{% endraw %}{{ first_resource_rows }}{% raw %}"}'{% endraw %}
         handle-as="json"
         last-response="{% raw %}{{ jsondata }}{% endraw %}"
         loading="{% raw %}{{ tableloading }}{% endraw %}"

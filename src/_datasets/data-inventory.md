@@ -9,6 +9,7 @@ resources:
     url: >-
       http://seshat.datasd.org/inventory/inventory_datasd.csv
     format: csv
+    preview_rows: 11
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2015-05-23'
 date_modified: '2017-04-01'
