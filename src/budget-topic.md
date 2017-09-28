@@ -28,7 +28,7 @@ The hierarchy in this reference dataset is ***dept_group > dept_name > dept_divi
 
 ### Accounts
 
-The account number and name is already available in the capital and operating budgets and is as low-level as you can get it. But, if you want to roll up items, you can join on **account_number** with the [Accounts reference dataset](/datasets/budget-reference-items/). The hierarchy here is ***account_type > account_class > account_group > account***.
+The account number and name is already available in the capital and operating budgets and is as low-level as you can get it. But, if you want to roll up items, you can join on **account_number** with the [Accounts reference dataset](/datasets/budget-reference-accounts/). The hierarchy here is ***account_type > account_class > account_group > account***.
 
 ### Projects
 
