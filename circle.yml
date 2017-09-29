@@ -14,22 +14,8 @@ dependencies:
 general:
   branches:
     only:
-      - master
-      - stage_for_approval
       - production
 deployment:
-  staging:
-    branch: master
-    commands:
-      - gulp build && gulp publish
-      - netlify deploy --path ./site --site-id seaboard-stage --access-token ${NETLIFY_TOKEN}
-
-  approval_staging:
-    branch: stage_for_approval
-    commands:
-      - gulp build && gulp publish
-      - netlify deploy --path ./site --site-id seaboard-approvals --access-token ${NETLIFY_TOKEN}
-
   production:
     branch: production
     commands:
