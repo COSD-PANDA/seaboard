@@ -1,8 +1,9 @@
 ---
 schema: default
 title: San Diego city boundary
-department: GIS
+department: SanGIS
 category:
+  - GIS
   - City Management
 resources:
   - name: San Diego boundary 
@@ -28,7 +29,7 @@ resources:
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
 date_modified: '2017-09-05'
-maintainer: City of San Diego
+maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---
 Polygon representing the City of San Diego administrative boundary.

@@ -1,27 +1,28 @@
 ---
 schema: default
 title: Community Development Block Grant (CDBG) areas
-department: GIS
+department: Economic Development
 category:
+  - GIS
   - Economy & Community
 resources:
-  - name: CDBG areas
+  - name: Census tracts eligible for CDBG
     url: >-
       http://seshat.datasd.org/sde/block_grants/block_grants_datasd.zip
     format: shp
-  - name: CDBG areas
+  - name: Census tracts eligible for CDBG
     url: >-
       http://seshat.datasd.org/sde/block_grants/block_grants_datasd.pbf
     format: pbf
-  - name: CDBG areas
+  - name: Census tracts eligible for CDBG
     url: >-
       http://seshat.datasd.org/sde/block_grants/block_grants_datasd.topojson
     format: topojson
-  - name: CDBG areas
+  - name: Census tracts eligible for CDBG
     url: >-
       http://seshat.datasd.org/sde/block_grants/block_grants_datasd.geojson
     format: geojson
-  - name: CDBG areas Dictionary
+  - name: Census tracts eligible for CDBG dictionary
     url: >-
       http://seshat.datasd.org/sde/block_grants/block_grants_dictionary_datasd.csv
     format: csv

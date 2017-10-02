@@ -1,27 +1,28 @@
 ---
 schema: default
 title: Police neighborhoods
-department: GIS
+department: Police
 category:
+  - GIS
   - Public Safety
 resources:
-  - name: Police neighborhood areas
+  - name: Police neighborhoods
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip
     format: shp
-  - name: Police neighborhood areas
+  - name: Police neighborhoods
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.pbf
     format: pbf
-  - name: Police neighborhood areas
+  - name: Police neighborhoods
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.topojson
     format: topojson
-  - name: Police neighborhood areas
+  - name: Police neighborhoods
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.geojson
     format: geojson
-  - name: Police neighborhood areas dictionary
+  - name: Police neighborhoods dictionary
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_dictionary_datasd.csv
     format: csv

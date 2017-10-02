@@ -1,27 +1,28 @@
 ---
 schema: default
 title: Lifeguard station point locations
-department: GIS
+department: Fire-Rescue
 category:
+  - GIS
   - Public Safety
 resources:
-  - name: Lifeguard stations
+  - name: Lifeguard station points
     url: >-
       http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.zip
     format: shp
-  - name: Lifeguard stations
+  - name: Lifeguard station points
     url: >-
       http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.pbf
     format: pbf
-  - name: Lifeguard stations
+  - name: Lifeguard station points
     url: >-
       http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.topojson
     format: topojson
-  - name: Lifeguard stations
+  - name: Lifeguard station points
     url: >-
       http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.geojson
     format: geojson
-  - name: Lifeguard stations dictionary
+  - name: Lifeguard station points dictionary
     url: >-
       http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_dictionary_datasd.csv
     format: csv

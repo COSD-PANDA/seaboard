@@ -1,8 +1,9 @@
 ---
 schema: default
 title: Promise Zone boundary
-department: GIS
+department: Economic Development
 category:
+  - GIS
   - Economy & Community
 resources:
   - name: Promise Zone boundary

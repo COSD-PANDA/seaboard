@@ -1,28 +1,29 @@
 ---
 schema: default
-title: Joint Use areas
-department: GIS
+title: Joint use parks
+department: Park & Recreation
 category:
+  - GIS
   - Culture & Recreation
   - City Infrastructure
 resources:
-  - name: Joint Use areas
+  - name: Joint use parks
     url: >-
       http://seshat.datasd.org/sde/joint_use/joint_use_datasd.zip
     format: shp
-  - name: Joint Use areas
+  - name: Joint use parks
     url: >-
       http://seshat.datasd.org/sde/joint_use/joint_use_datasd.pbf
     format: pbf
-  - name: Joint Use areas
+  - name: Joint use parks
     url: >-
       http://seshat.datasd.org/sde/joint_use/joint_use_datasd.topojson
     format: topojson
-  - name: Joint Use areas
+  - name: Joint use parks
     url: >-
       http://seshat.datasd.org/sde/joint_use/joint_use_datasd.geojson
     format: geojson
-  - name: Joint Use areas Dictionary
+  - name: Joint use parks dictionary
     url: >-
       http://seshat.datasd.org/sde/joint_use/joint_use_dictionary_datasd.csv
     format: csv

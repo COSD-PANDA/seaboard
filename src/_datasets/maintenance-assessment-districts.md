@@ -1,27 +1,28 @@
 ---
 schema: default
-title: Maintenance Assessment Districts
-department: GIS
+title: Maintenance assessment districts
+department: Park & Recreation
 category:
+  - GIS
   - Economy & Community
 resources:
-  - name: Maintenance Assessment Districts
+  - name: Maintenance assessment districts
     url: >-
       http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.zip
     format: shp
-  - name: Maintenance Assessment Districts
+  - name: Maintenance assessment districts
     url: >-
       http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.pbf
     format: pbf
-  - name: Maintenance Assessment Districts
+  - name: Maintenance assessment districts
     url: >-
       http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.topojson
     format: topojson
-  - name: Maintenance Assessment Districts
+  - name: Maintenance assessment districts
     url: >-
       http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.geojson
     format: geojson
-  - name: Maintenance Assessment Districts dictionary
+  - name: Maintenance assessment districts dictionary
     url: >-
       http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_dictionary_datasd.csv
     format: csv

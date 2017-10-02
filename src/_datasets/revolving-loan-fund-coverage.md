@@ -1,27 +1,28 @@
 ---
 schema: default
 title: Revolving Loan Fund Coverage
-department: GIS
+department: Economic Development
 category:
+  - GIS
   - Economy & Community
 resources:
-  - name: Revolving Loan Fund Coverage Boundaries
+  - name: Revolving Loan Fund coverage boundaries
     url: >-
       http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.zip
     format: shp
-  - name: Revolving Loan Fund Coverage Boundaries
+  - name: Revolving Loan Fund coverage boundaries
     url: >-
       http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.pbf
     format: pbf
-  - name: Revolving Loan Fund Coverage Boundaries
+  - name: Revolving Loan Fund coverage boundaries
     url: >-
       http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.topojson
     format: topojson
-  - name: Revolving Loan Fund Coverage Boundaries
+  - name: Revolving Loan Fund coverage boundaries
     url: >-
       http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.geojson
     format: geojson
-  - name: Revolving Loan Fund Coverage Boundaries Dictionary
+  - name: Revolving Loan Fund coverage boundaries dictionary
     url: >-
       http://seshat.datasd.org/sde/sd_revloan/rev_loan_dictionary_datasd.csv
     format: csv
@@ -31,13 +32,7 @@ date_modified: '2017-09-19'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-The [San Diego Regional Revolving Loan Fund]('https://www.sandiego.gov/economic-development/business/financing/'){:target="_blank" rel="noopener"}
-operates in San Diego and Chula Vista to provide small business assistance
-and generate neighborhood commercial district revitalization.
+The <a href="https://www.sandiego.gov/economic-development/business/financing/" target="_blank" rel="noopener">San Diego Regional Revolving Loan Fund</a> operates in San Diego and Chula Vista to provide small business assistance and generate neighborhood commercial district revitalization.
 <!--more-->
 
-The fund includes a $1.5 million grant from the Economic Development
-Administration plus a matching amount from the two cities. The $3 million
-available to expanding businesses supplements private financing for the
-acquisition of new or rehabilitated buildings and fixed machinery and equipment,
-working capital and soft costs.
+The fund includes a $1.5 million grant from the Economic Development Administration plus a matching amount from the two cities. The $3 million available to expanding businesses supplements private financing for the acquisition of new or rehabilitated buildings and fixed machinery and equipment, working capital and soft costs.

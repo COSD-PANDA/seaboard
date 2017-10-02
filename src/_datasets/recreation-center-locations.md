@@ -1,27 +1,28 @@
 ---
 schema: default
-title: 'Recreation Center Locations'
-department: GIS
+title: Recreation Center Locations
+department: Park & Recreation
 category:
+  - GIS
   - Culture & Recreation
 resources:
-  - name: Recreation Centers
+  - name: Recreation center points
     url: >-
       http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.zip
     format: shp
-  - name: Recreation Centers
+  - name: Recreation center points
     url: >-
       http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.pbf
     format: pbf
-  - name: Recreation Centers
+  - name: Recreation center points
     url: >-
       http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.topojson
     format: topojson
-  - name: Recreation Centers
+  - name: Recreation center points
     url: >-
       http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.geojson
     format: geojson
-  - name: Recreation Centers Dictionary
+  - name: Recreation center points dictionary
     url: >-
       http://seshat.datasd.org/sde/rec_centers/rec_centers_dictionary_datasd.csv
     format: csv
@@ -31,11 +32,6 @@ date_modified: '2017-09-19'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Recreation centers operated by the City of San Diego Park and Recreation
-Department for active and passive recreational opportunities.
+Recreation centers operated by the City of San Diego Park and Recreation Department for active and passive recreational opportunities.
 <!--more-->
-The data includes the address of each recreation center, the San Diego
-community it is located in and the various facilities within the recreation
-center. For programming information, visit the City of San Diego Park and
-Recreation Department <a href="http://www.sandiego.gov/park-and-recreation/"
-target="_blank" rel="noopener">web page</a>.
+The data includes the address of each recreation center, the San Diego community it is located in and the various facilities within the recreation center. For programming information, visit the City of San Diego Park and Recreation Department <a href="http://www.sandiego.gov/park-and-recreation/" target="_blank" rel="noopener">web page</a>.

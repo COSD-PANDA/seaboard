@@ -1,8 +1,9 @@
 ---
 schema: default
 title: Multi-Habitat Planning Areas
-department: GIS
+department: Planning
 category:
+  - GIS
   - Energy & Environment
 resources:
   - name: MHPA
@@ -21,7 +22,7 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/mhpa/mhpa_datasd.geojson
     format: geojson
-  - name: MHPA Dictionary
+  - name: MHPA dictionary
     url: >-
       http://seshat.datasd.org/sde/mhpa/mhpa_dictionary_datasd.csv
     format: csv

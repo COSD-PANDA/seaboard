@@ -1,27 +1,28 @@
 ---
 schema: default
 title: Police divisions
-department: GIS
+department: Police
 category:
+  - GIS
   - Public Safety
 resources:
-  - name: Police division areas
+  - name: Police divisions
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip
     format: shp
-  - name: Police division areas
+  - name: Police divisions
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.pbf
     format: pbf
-  - name: Police division areas
+  - name: Police divisions
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.topojson
     format: topojson
-  - name: Police division areas
+  - name: Police divisions
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_datasd.geojson
     format: geojson
-  - name: Police division areas dictionary
+  - name: Police divisions dictionary
     url: >-
       http://seshat.datasd.org/sde/pd/pd_divisions_dictionary_datasd.csv
     format: csv

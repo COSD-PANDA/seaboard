@@ -1,8 +1,9 @@
 ---
 schema: default
-title: Bike master plan
-department: GIS
+title: Bike Master Plan
+department: Planning
 category:
+  - GIS
   - Transportation
   - Energy & Environment
 resources:

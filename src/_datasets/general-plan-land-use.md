@@ -1,27 +1,28 @@
 ---
 schema: default
 title: General Plan Land Use
-department: GIS
+department: Planning
 category:
+  - GIS
   - Economy & Community
 resources:
-  - name: General Plan Land Use
+  - name: General Plan polygons
     url: >-
       http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.zip
     format: shp
-  - name: General Plan Land Use
+  - name: General Plan polygons
     url: >-
       http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.pbf
     format: pbf
-  - name: General Plan Land Use
+  - name: General Plan polygons
     url: >-
       http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.topojson
     format: topojson
-  - name: General Plan Land Use
+  - name: General Plan polygons
     url: >-
       http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.geojson
     format: geojson
-  - name: General Plan Land Use Dictionary
+  - name: General Plan polygons dictionary
     url: >-
       http://seshat.datasd.org/sde/gp_land_use/gp_land_use_dictionary_datasd.csv
     format: csv
@@ -31,5 +32,4 @@ date_modified: '2017-09-19'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-This dataset represents adopted planned land use polygons for City of SD community
-planning areas.
+This dataset represents adopted planned land use polygons for City community planning areas.
