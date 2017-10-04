@@ -1,28 +1,29 @@
 ---
 schema: default
 title: Park Locations
-department: GIS
+department: Park & Recreation
 category:
+  - GIS
   - Culture & Recreation
   - City Infrastructure
 resources:
-  - name: Park Locations
+  - name: Park points
     url: >-
       http://seshat.datasd.org/sde/parks/parks_datasd.zip
     format: shp
-  - name: Park Locations
+  - name: Park points
     url: >-
       http://seshat.datasd.org/sde/parks/parks_datasd.pbf
     format: pbf
-  - name: Park Locations
+  - name: Park points
     url: >-
       http://seshat.datasd.org/sde/parks/parks_datasd.topojson
     format: topojson
-  - name: Park Locations
+  - name: Park points
     url: >-
       http://seshat.datasd.org/sde/parks/parks_datasd.geojson
     format: geojson
-  - name: Park Locations Dictionary
+  - name: Park points dictionary
     url: >-
       http://seshat.datasd.org/sde/parks/parks_dictionary_datasd.csv
     format: csv

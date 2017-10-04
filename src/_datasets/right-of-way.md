@@ -1,8 +1,9 @@
 ---
 schema: default
 title: Right-of-way parcels
-department: GIS
+department: SanGIS
 category:
+  - GIS
   - City Infrastructure
 resources:
   - name: Right-of-way parcels
@@ -21,7 +22,7 @@ resources:
     url: >-
       http://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.geojson
     format: geojson
-  - name: Right-of-way parcels Dictionary
+  - name: Right-of-way parcels dictionary
     url: >-
       http://seshat.datasd.org/sde/right_of_way/right_of_way_dictionary_datasd.csv
     format: csv
@@ -31,4 +32,4 @@ date_modified: '2017-09-26'
 maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---
-This is a subset of a countywide parcels dataset maintained by [SanGIS](http://www.sangis.org/). Right-of-way parcels are those that are legally dedicated to unhindered public travel. SanGIS uses county, state and federal sources to update this data.
+This is a subset of a countywide parcels dataset maintained by <a href="http://www.sangis.org/" target="_blank" rel="noopener">SanGIS</a>. Right-of-way parcels are those that are legally dedicated to unhindered public travel. SanGIS uses county, state and federal sources to update this data.

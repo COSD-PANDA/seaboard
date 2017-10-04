@@ -1,27 +1,28 @@
 ---
 schema: default
 title: Fire Stations
-department: GIS
+department: Fire-Rescue
 category:
+  - GIS
   - Public Safety
 resources:
-  - name: Fire Stations Locations
+  - name: Fire station points
     url: >-
       http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.zip
     format: shp
-  - name: Fire Stations Locations
+  - name: Fire station points
     url: >-
       http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.pbf
     format: pbf
-  - name: Fire Stations Locations
+  - name: Fire station points
     url: >-
       http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.topojson
     format: topojson
-  - name: Fire Stations Locations
+  - name: Fire station points
     url: >-
       http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.geojson
     format: geojson
-  - name: Fire Stations Locations Dictionary
+  - name: Fire station points dictionary
     url: >-
       http://seshat.datasd.org/sde/fire_stations/fire_stations_dictionary_datasd.csv
     format: csv
@@ -31,5 +32,4 @@ date_modified: '2017-09-26'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Data covering the location and status of incorporated and unincorporated
-Fire stations countywide.
+Data covering the location and status of incorporated and unincorporated Fire stations.
