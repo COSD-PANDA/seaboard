@@ -450,9 +450,13 @@ span.resource-format {
 
 .help-tip{
     text-align: center;
-    cursor: help;
+    cursor: pointer;
     text-decoration: underline !important;
     font-weight: normal;
+}
+
+.help-tip:hover {
+	font-weight: bold;
 }
 
 .help-tip:hover p{
@@ -464,30 +468,36 @@ span.resource-format {
 }
 
 .help-tip p{    /* The tooltip */
+    font-weight: normal;
     display: none;
     text-align: left;
-    background-color: $p_black;
-    padding: 20px;
+    background-color: $s_gray_lt;
+    padding: 15px;
     width: 300px;
     position: absolute;
     border-radius: 3px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    right: 25px;
-    color: #FFF;
-    font-size: 13px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    left: 60%;
+    margin-top: -20px;
+    color: $p_black;
+    font-size: 0.8em;
     line-height: 1.4;
     z-index: 9999999999;
     opacity: 0.95;
+    @include sourcesans;
 }
 
-.help-tip p a, .help-tip p a:visited, .help-top p a:hover {
-  color: #e0e1dd;
+.help-tip p a, .help-tip p a:visited {
+  color: $s_blue_dk;
+}
+
+.help-tip p a:hover {
+	text-decoration: underline;
 }
 
 .help-tip p a:before {
-  content: '>> ';
   font-weight: bold;
-  color: #e0e1dd;
+  color: $s_blue_dk;
 }
 
 

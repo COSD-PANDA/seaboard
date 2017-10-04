@@ -7921,9 +7921,12 @@ div.resource-type {
 
 .help-tip {
   text-align: center;
-  cursor: help;
+  cursor: pointer;
   text-decoration: underline !important;
   font-weight: normal; }
+
+.help-tip:hover {
+  font-weight: bold; }
 
 .help-tip:hover p {
   display: block;
@@ -7932,28 +7935,33 @@ div.resource-type {
 
 .help-tip p {
   /* The tooltip */
+  font-weight: normal;
   display: none;
   text-align: left;
-  background-color: #37424a;
-  padding: 20px;
+  background-color: #e0e1dd;
+  padding: 15px;
   width: 300px;
   position: absolute;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  right: 25px;
-  color: #FFF;
-  font-size: 13px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  left: 60%;
+  margin-top: -20px;
+  color: #37424a;
+  font-size: 0.8em;
   line-height: 1.4;
   z-index: 9999999999;
-  opacity: 0.95; }
+  opacity: 0.95;
+  font-family: "Source Sans Pro", sans-serif; }
 
-.help-tip p a, .help-tip p a:visited, .help-top p a:hover {
-  color: #e0e1dd; }
+.help-tip p a, .help-tip p a:visited {
+  color: #00549f; }
+
+.help-tip p a:hover {
+  text-decoration: underline; }
 
 .help-tip p a:before {
-  content: '>> ';
   font-weight: bold;
-  color: #e0e1dd; }
+  color: #00549f; }
 
 .help-tip p:after {
   /* Prevents the tooltip from being hidden */
