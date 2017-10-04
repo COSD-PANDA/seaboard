@@ -21,6 +21,7 @@ limit_posts: 1
 
 # Dataset Previews
 ds_preview_url: https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview
+default_preview_rows: 15
 
 
 ## Neek
