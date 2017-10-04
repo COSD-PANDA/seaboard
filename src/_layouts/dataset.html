@@ -73,7 +73,7 @@ layout: default
                 <td class="table-content-centered">
                 {% if resource.format %}
                     <div class="resource-type" property='dcat:mediaType'>
-                    {{ resource.format}}
+                        {% include format_help_tip.html format=resource.format %}
                     </div>
                 {% endif %}
                 </td>

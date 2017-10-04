@@ -52,11 +52,6 @@ var path = require('path');
                        rootDir + '/assets/bower_components/px-*/css/*',
                        rootDir + '/assets/bower_components/iron-*/*.html',
                        rootDir + '/assets/bower_components/iron-*/css/*',
-                       /*rootDir + '/assets/bower_components/',
-                       rootDir + '/assets/bower_components/',
-                       rootDir + '/assets/bower_components/',
-                       rootDir + '/assets/bower_components/',
-                       rootDir + '/assets/bower_components/',*/
                        rootDir + '/assets/bower_components/jQuery/dist/jquery.min.js',
                        rootDir + '/assets/bower_components/keen-js/dist/keen.min.js',
                        rootDir + '/assets/bower_components/px-data-table/css/*',
@@ -150,10 +145,6 @@ gulp.task("html", ["styles"], function () {
   return gulp.src(["serve/**/*.html", '!serve/assets/bower_components/**/*'])
     // Concatenate Files
     .pipe($.useref({searchPath: "serve" }))
-    // Only for JS, Uglify.
-    //.pipe(jsFilter)
-    //.pipe($.uglify({preserveComments: "some"}))
-    //.pipe(jsFilter.restore)
     // Only for CSS - Minify
     .pipe(cssFilter)
     .pipe($.cleanCss())
@@ -164,16 +155,6 @@ gulp.task("html", ["styles"], function () {
     .pipe(htmlFilter.restore)
     // Sub in new file names
     .pipe($.revReplace())
-    // Minify HTML
-    /*.pipe($.htmlmin({
-      removeComments: true,
-      removeCommentsFromCDATA: true,
-      removeCDATASectionsFromCDATA: true,
-      collapseWhitespace: true,
-      collapseBooleanAttributes: true,
-      removeAttributeQuotes: true,
-      removeRedundantAttributes: true
-    }))*/
     .pipe(gulp.dest("site"))
     .pipe($.size({title: "optimizations"}));
 });
@@ -242,11 +223,6 @@ gulp.task("serve:prod", function () {
 
 // Default task, run when just writing "gulp" in the terminal
 gulp.task("default", ["serve:dev", "watch"]);
-
-// Checks your CSS, JS and Jekyll for errors
-gulp.task("check", ["jslint", "doctor"], function () {
-  // Better hope nothing is wrong.
-});
 
 // Builds the site but doesn"t serve it to you
 gulp.task("build", ["jekyll:prod", "styles"], function () {});
