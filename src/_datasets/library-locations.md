@@ -1,37 +1,36 @@
 ---
 schema: default
 title: Library Locations
-department: GIS
+department: Library
 category:
+  - GIS
   - Culture & Recreation
   - City Infrastructure
 resources:
-  - name: Library Locations
+  - name: Library points
     url: >-
       http://seshat.datasd.org/sde/library/libraries_datasd.zip
     format: shp
-  - name: Library Locations
+  - name: Library points
     url: >-
       http://seshat.datasd.org/sde/library/libraries_datasd.pbf
     format: pbf
-  - name: Library Locations
+  - name: Library points
     url: >-
       http://seshat.datasd.org/sde/library/libraries_datasd.topojson
     format: topojson
-  - name: Library Locations
+  - name: Library points
     url: >-
       http://seshat.datasd.org/sde/library/libraries_datasd.geojson
     format: geojson
-  - name: Library Locations Dictionary
+  - name: Library points dictionary
     url: >-
       http://seshat.datasd.org/sde/library/libraries_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
 date_modified: '2017-09-19'
-maintainer: City of San Diego
+maintainer: County of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Point feature layer of library locations with associated website and contact
-information, created by the County of San Diego Department of Public Works
-GIS, in conjunction with San Diego County Library (SDCL).
+Point feature layer of City of San Diego library locations with associated website and contact information, created by the County of San Diego Department of Public Works GIS, in conjunction with San Diego County Library (SDCL).

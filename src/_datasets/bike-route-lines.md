@@ -1,28 +1,29 @@
 ---
 schema: default
-title: Bike Route Lines
-department: GIS
+title: Bike route lines
+department: Transportation & Storm Water
 category:
+  - GIS
   - Transportation
   - Energy & Environment
 resources:
-  - name: Bike Route Lines
+  - name: Existing bike route lines
     url: >-
       http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip
     format: shp
-  - name: Bike Route Lines
+  - name: Existing bike route lines
     url: >-
       http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.pbf
     format: pbf
-  - name: Bike Route Lines
+  - name: Existing bike route lines
     url: >-
       http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topojson
     format: topojson
-  - name: Bike Route Lines
+  - name: Existing bike route lines
     url: >-
       http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson
     format: geojson
-  - name: Bike Route Lines Dictionary
+  - name: Existing bike route lines dictionary
     url: >-
       http://seshat.datasd.org/sde/bike_route/bike_routes_dictionary_datasd.csv
     format: csv
@@ -32,6 +33,4 @@ date_modified: '2017-09-26'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Existing (2015) Bike facilities in the San Diego Region. This dataset was
-developed for the primary purpose of updating the SANDAG San Diego Regional
-Bike Map and the interactive bike map on the iCommute website.
+Existing (2015) Bike facilities in the San Diego Region. This dataset was developed for the primary purpose of updating the SANDAG San Diego Regional Bike Map and the interactive bike map on the iCommute website.
