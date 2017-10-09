@@ -182,6 +182,11 @@ span.badge {
 		text-align-last: left;
 	}
 
+	h3 {
+			text-align: center;
+			font-weight: normal;
+		}
+
 
 	.resources-col {
 		margin-bottom: 0px;
@@ -195,18 +200,24 @@ span.badge {
 
 		.resources-box {
 
-			height: 120px;
-			background: linear-gradient(rgba(86,164,148,1), $s_green_mid, $s_green_mid, rgba(86,164,148,1));
+			height: 140px;
+			/*background: linear-gradient(rgba(86,164,148,1), $s_green_mid, $s_green_mid, rgba(86,164,148,1));*/
 			font-size: 1em;
 			text-align: center;
 			font-weight: 700;
-			text-transform: uppercase;
+			/*text-transform: uppercase;*/
 			border-radius: 3px;
+			box-shadow: 0 0 30px 6px rgba(31,51,73,.1)!important;
+			transition: box-shadow .125s;
 
 			p {
 				@include vertical-align;
-				color: $white;
+				/*color: $s_green_mid;*/
 			}
+		}
+
+		.resources-box:hover {
+			box-shadow: 0 0 30px 6px rgba(31,51,73,.25)!important;
 		}
 	}
 
