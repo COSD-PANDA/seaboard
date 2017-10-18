@@ -18,7 +18,7 @@ body {
     line-height: 1.55;
     background-color: #ffffff;
 
-	a {
+	a, a:visited, a:active {
 		color: $s_blue_mid;
 		text-decoration: none;
 		font-weight: 700;
@@ -28,10 +28,6 @@ body {
 	    		text-decoration: underline;
 	    	}
 
-	    	&:visited {
-	    		color: $s_blue_mid;
-	    		text-decoration: none;
-	    	}
 	}
 
 
@@ -170,6 +166,10 @@ span.badge {
 .resources-promo {
 	background-color: white;
 
+	.mb60 {
+		margin-bottom: 60px;
+	}
+
 	.resources-container {
 
 		position: relative;
@@ -181,15 +181,8 @@ span.badge {
 			box-shadow: 0 0 30px 6px rgba(31,51,73,.1)!important;
 			transition: box-shadow .125s;
 
-			a {
-				&:hover {
-					text-decoration: none;
-				}
-			}
-
 			.resources-box {
 
-				/*background: linear-gradient(rgba(86,164,148,1), $s_green_mid, $s_green_mid, rgba(86,164,148,1));*/
 				height: 180px;
 				width: 100%;
 				font-size: 1em;
@@ -229,63 +222,6 @@ span.badge {
 				left: 50%;
 			}
 
-			.lbl-style-2 {
-				border-radius: 9999px;
-				top: -40px;
-				width: 80px;
-				height: 80px;
-				margin-left: -40px;
-				color: $p_black;
-				position: relative;
-				background-color: $s_gray_lt;
-
-				p {
-					@include vertical-align;
-					line-height: 1;
-					margin:0;
-					text-align: center;
-					font-weight: 700;
-				}
-
-				div, span {
-					width: 80px;
-					height: 80px;
-					top: 0;
-					left: 0;
-					position: absolute;
-					/* color: #f5f6f4;
-					color: #ececea;
-					color: #eff0ee; */
-				}
-
-				span.fa-comment-o {
-					width: 60px;
-					height: 60px;
-					top: 10px;
-					left: 10px;
-					position: absolute;
-					font-size: 60px;
-					color: $white;
-				}
-
-				span.fa-question {
-					width: 60px;
-					height: 60px;
-					top: 10px;
-					left: 20px;
-					position: absolute;
-					font-size: 60px;
-					color: $white;
-				}
-
-				.brain-icon {
-					background: url('/assets/img/brain-icon-01.png') no-repeat;
-					background-size: 60px;
-					background-position: center;
-				}
-
-
-			}
 
 			.lbl-style-3 {
 				border-radius: 9999px;
@@ -1378,8 +1314,8 @@ a.resources-page-link {
 	}
 
 
-        .resources-promo {
-	 .col-sm-3 {
+    .resources-promo {
+	 .mb60 {
 	 	margin-bottom: 0px;
 	 }
 	}

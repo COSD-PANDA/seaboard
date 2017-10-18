@@ -7629,16 +7629,13 @@ body {
   font-size: 17px;
   line-height: 1.55;
   background-color: #ffffff; }
-  body a {
+  body a, body a:visited, body a:active {
     color: #005bbb;
     text-decoration: none;
     font-weight: 700; }
-    body a:hover {
+    body a:hover, body a:visited:hover, body a:active:hover {
       color: #0098db;
       text-decoration: underline; }
-    body a:visited {
-      color: #005bbb;
-      text-decoration: none; }
 
 p {
   margin: 0 0 1.3em; }
@@ -7744,6 +7741,8 @@ span.badge {
 
 .resources-promo {
   background-color: white; }
+  .resources-promo .mb60 {
+    margin-bottom: 60px; }
   .resources-promo .resources-container {
     position: relative; }
     .resources-promo .resources-container .resources-col {
@@ -7752,10 +7751,7 @@ span.badge {
       border-radius: 3px;
       box-shadow: 0 0 30px 6px rgba(31, 51, 73, 0.1) !important;
       transition: box-shadow .125s; }
-      .resources-promo .resources-container .resources-col a:hover {
-        text-decoration: none; }
       .resources-promo .resources-container .resources-col .resources-box {
-        /*background: linear-gradient(rgba(86,164,148,1), $s_green_mid, $s_green_mid, rgba(86,164,148,1));*/
         height: 180px;
         width: 100%;
         font-size: 1em;
@@ -7784,52 +7780,6 @@ span.badge {
       .resources-promo .resources-container .resources-col .resources-lbl {
         position: absolute;
         left: 50%; }
-      .resources-promo .resources-container .resources-col .lbl-style-2 {
-        border-radius: 9999px;
-        top: -40px;
-        width: 80px;
-        height: 80px;
-        margin-left: -40px;
-        color: #37424a;
-        position: relative;
-        background-color: #e0e1dd; }
-        .resources-promo .resources-container .resources-col .lbl-style-2 p {
-          position: relative;
-          top: 50%;
-          transform: translateY(-50%);
-          line-height: 1;
-          margin: 0;
-          text-align: center;
-          font-weight: 700; }
-        .resources-promo .resources-container .resources-col .lbl-style-2 div, .resources-promo .resources-container .resources-col .lbl-style-2 span {
-          width: 80px;
-          height: 80px;
-          top: 0;
-          left: 0;
-          position: absolute;
-          /* color: #f5f6f4;
-					color: #ececea;
-					color: #eff0ee; */ }
-        .resources-promo .resources-container .resources-col .lbl-style-2 span.fa-comment-o {
-          width: 60px;
-          height: 60px;
-          top: 10px;
-          left: 10px;
-          position: absolute;
-          font-size: 60px;
-          color: white; }
-        .resources-promo .resources-container .resources-col .lbl-style-2 span.fa-question {
-          width: 60px;
-          height: 60px;
-          top: 10px;
-          left: 20px;
-          position: absolute;
-          font-size: 60px;
-          color: white; }
-        .resources-promo .resources-container .resources-col .lbl-style-2 .brain-icon {
-          background: url("/assets/img/brain-icon-01.png") no-repeat;
-          background-size: 60px;
-          background-position: center; }
       .resources-promo .resources-container .resources-col .lbl-style-3 {
         border-radius: 9999px;
         top: -40px;
@@ -8569,7 +8519,7 @@ h4.bottom-box-head {
   .sd-navbar-top.navbar-default .navbar-header {
     /*height:0px;*/
     /*float: right;*/ }
-  .resources-promo .col-sm-3 {
+  .resources-promo .mb60 {
     margin-bottom: 0px; }
   .data-story-preview-container {
     margin-bottom: 0px; }
