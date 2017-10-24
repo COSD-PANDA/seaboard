@@ -20,6 +20,7 @@ The data on the portal is updated automatically on a schedule, thanks to a syste
 Our analytics services help City departments answer questions or solve problems with data. So far, we've partnered with City Treasurer, Risk Management, Transportation and Stormwater, DSD, and Get It Done.
 
 Some examples of the work we’ve done:
+
 * Used OpenDSD data to evaluate historical changes in permit issue time.
 * Analyzed Risk Management data to understand patterns in public liability claims.
 * Displayed open and closed parking meters in the city on a map. This project is still under development and relies on data from a vendor that provides the City’s smart parking meters.
