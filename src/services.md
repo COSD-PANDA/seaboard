@@ -27,9 +27,10 @@ Some examples of the work we’ve done:
 
 ### Public speaking and consulting
 
-City governments around the world look to our data & analytics program for guidance on what a successful open data program looks like, how they can automate data updates, and how open sources tools can decrease program costs. Our team can speak about a range of topics, including smart cities, open data, data science in government, and civic tech, among others.
+City governments around the world look to our Data & Analytics program for guidance on what a successful open data program looks like, how they can automate data updates, and how open sources tools can decrease program costs. Our team can speak about a range of topics, including smart cities, open data, data science in government, and civic tech, among others.
 
 A few of our recent speaking engagements include:
+
 * [Harvard's Summit on Data-Smart Government](http://datasmart.ash.harvard.edu/)
 This summit is organized by the university's Civics Analytics Network, a group of government Chief Data Officers. San Diego's CDO Maksim Pecherskiy is a CAN member.
 * [Open Data Science Conference](https://odsc.com/california/speakers), on the topic of Building Data Science infrastructure at City of San Diego
@@ -38,4 +39,4 @@ This summit is organized by the university's Civics Analytics Network, a group o
 
 ### Workshops and classes
 
-
+We have also spent time in the classroom at UCSD and teaching workshops for groups such as Open San Diego, a Code for America brigade meetup.
