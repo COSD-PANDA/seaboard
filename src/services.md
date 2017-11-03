@@ -13,7 +13,7 @@ See the [data stories](/stories/) we've already published, or check out our popu
 
 ### Alerting
 
-The data on the portal is updated automatically on a schedule, thanks to a system we built to extract data from City sources and transform it for publication. We can use this same system to generate emails alerting you when the data is updated. We can also test for conditions within the data and send alerts that could help City staff make operational or policy decisions.
+The data on the portal is updated automatically on a schedule, thanks to a system we built to extract data from City sources and transform it for publication. We can use this same system to generate emails alerting you when the data is updated.
 
 ### Analytics
 
@@ -21,22 +21,23 @@ Our analytics services help City departments answer questions or solve problems 
 
 Some examples of the work we’ve done:
 
-* Used OpenDSD data to evaluate historical changes in permit issue time.
-* Analyzed Risk Management data to understand patterns in public liability claims.
-* Displayed open and closed parking meters in the city on a map. This project is still under development and relies on data from a vendor that provides the City’s smart parking meters.
-* Automated reporting and data delivery for Transportation & Storm Water Department’s Streets Division. City staff used to spend a large amount of time manually creating reports every month to load into IMCAT. Report creation is now automated, and staff get an email with updated files every day.
+* Used OpenDSD data to evaluate historical changes in permit issue time
+* Analyzed public liability claims data to understand patterns
+* Displayed open and closed parking meters in the city on a map. This project is still under development and relies on data from a vendor that provides the City’s smart parking meters
+* Automated reporting and data delivery for Transportation & Storm Water Department’s Streets Division. City staff used to spend a large amount of time manually creating reports every month. Report creation is now automated, and staff get an email with updated files every day.
 
-### Public speaking and consulting
+### Advising and presenting
 
-City governments around the world look to our Data & Analytics program for guidance on what a successful open data program looks like, how they can automate data updates, and how open sources tools can decrease program costs. Our team can speak about a range of topics, including smart cities, open data, data science in government, and civic tech, among others.
+City governments around the world look to our Data & Analytics program for guidance on what a successful open data program looks like, how they can automate data updates, and how open source tools can decrease program costs. Our team has presented on a range of topics, including smart cities, open data, data science in government, and civic tech, among others.
 
 A few of our recent speaking engagements include:
 
 * [Harvard's Summit on Data-Smart Government](http://datasmart.ash.harvard.edu/)
-This summit is organized by the university's Civics Analytics Network, a group of government Chief Data Officers. San Diego's CDO Maksim Pecherskiy is a CAN member.
+This summit is organized by the university's Civic Analytics Network (CAN), a group of government Chief Data Officers. San Diego's CDO Maksim Pecherskiy is a CAN member.
 * [Open Data Science Conference](https://odsc.com/california/speakers), on the topic of Building Data Science infrastructure at City of San Diego
 * [GE's Minds + Machines Industrial Internet conference](http://ge.cvent.com/events/minds-machines-2017/event-summary-9c358e5cf3ce42faa9742ca9f1ba8acb.aspx)
-* [Dear Fiscal Board](http://www.dearfiscalboard.com/dear-fiscal-board-series-information/)
+* Puerto Rico's [Dear Fiscal Board](http://www.dearfiscalboard.com/dear-fiscal-board-series-information/)
+* [World Council on City Data Global Cities Summit](http://www.dataforcities.org/summit/)
 
 ### Workshops and classes
 
