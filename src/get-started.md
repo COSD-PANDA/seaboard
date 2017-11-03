@@ -4,6 +4,10 @@ title: Get Started
 permalink: /get-started/
 ---
 
+<div class="instruct-video">
+<iframe width="853" height="480" src="https://www.youtube.com/embed/vUbNO2PeNeA?rel=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
 Open Data is a valuable resource meant for everyone. But let’s face it – using data is difficult, and using it correctly is even more difficult. Our goal is to empower all San Diego residents, from the most techy savvy to the least, to get and use the City’s data.
 
 We want to help our users by removing the roadblocks we have run into ourselves as data users. The first roadblock might be knowing how to use this data portal effectively. In this tutorial, you'll learn how the portal is organized, how to search for what you want, and how to access the data once you've found it.
