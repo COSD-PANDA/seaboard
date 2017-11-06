@@ -1,8 +1,10 @@
 ---
 ---
-[{% for dataset in site.datasets %}
+{% assign dsets = site.datasets | sort: 'date_modified' | reverse %}
+[{% for dataset in dsets %}
   {
     "title": {{ dataset.title | jsonify }},
+    "modified": {{ dataset.date_modified | jsonify }},
     "department": {{ dataset.department | jsonify }}{% if dataset.excerpt != "" %},
     "notes": {{ dataset.excerpt | jsonify }}{% endif %}{% if dataset.excerpt != "" %},
     "category": {{ dataset.category | jsonify }}{% endif %},
