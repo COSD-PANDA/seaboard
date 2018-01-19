@@ -15,10 +15,10 @@ permalink: /mobility-survey/
   <p class="hidden">
     <label>Don’t fill this out: <input name="bot-field"></label>
   </p>
-  
-  
+
+
   <div class="form-group">
-    <p> 
+    <p>
       Do you utilize any of the following means or methods of transportation to get to work?
     </p>
     <div class="form-check">
@@ -48,7 +48,7 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-group">
-    <p> 
+    <p>
       If you don't walk, bicycle or take transit to work, please indicate why not.
     </p>
     <div class="form-check">
@@ -94,8 +94,8 @@ permalink: /mobility-survey/
       </label>
     </div>
   </div>
-  
-  
+
+
   <div class="form-group">
     <p>
         Does your employer offer incentives for transportation means other than your personal vehicle?
@@ -121,7 +121,7 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-group">
-    <p> 
+    <p>
       What incentives/programs would encourage you take transit, bicycle, or walk to work?
     </p>
     <div class="form-check">
@@ -218,14 +218,14 @@ permalink: /mobility-survey/
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
-  
+
 </form>
 
 
 
 <script>
-      
-      
+
+
 
       var maps = []
 
@@ -240,7 +240,7 @@ permalink: /mobility-survey/
             center: new google.maps.LatLng(32.83,-117.1611)
           });
 
-          maps[i].data.loadGeoJson('https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
+          maps[i].data.loadGeoJson('https://s3.amazonaws.com/seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
           maps[i].data.setStyle({fillColor: '#d47600', strokeWeight: 1, strokeColor: '#747678'});
 
 
@@ -259,9 +259,9 @@ permalink: /mobility-survey/
 
       }
 
-      
-      
-            
+
+
+
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCriPrXEscfltWMEUM7lfRGl0HE_wASQhA&callback=initMap">
