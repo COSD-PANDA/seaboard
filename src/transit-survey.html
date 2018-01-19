@@ -11,7 +11,7 @@ permalink: /mobility-survey/
   Please take a moment to complete this survey. Your responses to the questions are voluntary. Any questions left unmarked will be recorded as ‘No Opinion.’ Thank you for your time!
 </p>
 
-<form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
+<form name="contact" netlify-honeypot="bot-field" action="/thank-you/" netlify>
   <p class="hidden">
     <label>Don’t fill this out: <input name="bot-field"></label>
   </p>
@@ -192,30 +192,31 @@ permalink: /mobility-survey/
     </div>
   </div>
 
-  <div class="form-group">
-    <p>
-      Select the area where your workplace is located
-    </p>
-    <div style="width:100%;height:500px;">
-      <div id="work-map" style="height:100%"></div>
-    </div>
-    <div class="form-check">
-      <input type="text" class="form-check-input position-static" name="map" value="Workplace area" id="work-area" disabled>
-    </div>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <p>
+          Select the area where your workplace is located
+        </p>
+        <div style="width:100%;height:500px;">
+          <div id="work-map" style="height:100%"></div>
+        </div>
+        <div class="form-check">
+          <input type="text" class="form-check-input position-static" name="map" value="" id="work-area" disabled>
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <p>
+          Select the area where your home is located
+        </p>
+        <div style="width:100%;height:500px;">
+          <div id="home-map" style="height:100%"></div>
+        </div>
+        <div class="form-check">
+          <input type="text" class="form-check-input position-static" name="map" value="" id="home-area" disabled>
+        </div>
+      </div>
   </div>
 
-  <div class="form-group">
-    <p>
-      Select the area where your home is located
-    </p>
-    <div style="width:100%;height:500px;">
-      <div id="home-map" style="height:100%"></div>
-    </div>
-    <div class="form-check">
-      <input type="text" class="form-check-input position-static" name="map" value="Home area" id="home-area" disabled>
-    </div>
-  </div>
-  
   <button type="submit" class="btn btn-primary">Submit</button>
   
 </form>
@@ -224,12 +225,39 @@ permalink: /mobility-survey/
 
 <script>
       
-      var map1;
-      var map2;
+      
 
-      var maps = [{map: map1, mapId: 'work-map', inputId: 'work-area'},{map: map2, mapId: 'home-map', inputId: 'home-area'}];
+      var maps = []
 
       function initMap() {
+
+        var mapIds = ['work','home'];
+
+        for (var i=0; i < mapIds.length; i++) {
+
+          maps[i] = new google.maps.Map(document.getElementById(mapIds[i]+'-map'), {
+            zoom: 10,
+            center: new google.maps.LatLng(32.83,-117.1611)
+          });
+
+          maps[i].data.loadGeoJson('http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
+          maps[i].data.setStyle({fillColor: '#d47600', strokeWeight: 1, strokeColor: '#747678'});
+
+
+          maps[i].data.addListener('click', function(event){
+            var cpname = event.feature.getProperty('cpname');
+            var mapID = this.map.__gm.S.id;
+            if (mapID === 'work-map') {
+              document.getElementById('work-area').value = cpname;
+            } else {
+              document.getElementById('home-area').value = cpname;
+            }
+          });
+
+
+        }
+
+        /*
 
         map1 = new google.maps.Map(document.getElementById(maps[0].mapId), {
             zoom: 10,
@@ -260,7 +288,7 @@ permalink: /mobility-survey/
             var cpname = event.feature.getProperty('cpname');
             document.getElementById(maps[1].inputId).value = cpname;
           });
-
+        */
         
       }
 
