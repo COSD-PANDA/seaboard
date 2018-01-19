@@ -240,7 +240,7 @@ permalink: /mobility-survey/
             center: new google.maps.LatLng(32.83,-117.1611)
           });
 
-          maps[i].data.loadGeoJson('http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
+          maps[i].data.loadGeoJson('https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
           maps[i].data.setStyle({fillColor: '#d47600', strokeWeight: 1, strokeColor: '#747678'});
 
 
@@ -257,39 +257,6 @@ permalink: /mobility-survey/
 
         }
 
-        /*
-
-        map1 = new google.maps.Map(document.getElementById(maps[0].mapId), {
-            zoom: 10,
-            center: new google.maps.LatLng(32.83,-117.1611)
-          });
-
-        map2 = new google.maps.Map(document.getElementById(maps[1].mapId), {
-            zoom: 10,
-            center: new google.maps.LatLng(32.83,-117.1611)
-          });
-
-        
-
-          map1.data.loadGeoJson('http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
-          map1.data.setStyle({fillColor: '#d47600', strokeWeight: 1, strokeColor: '#747678'});
-
-          map2.data.loadGeoJson('http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
-          map2.data.setStyle({fillColor: '#d47600', strokeWeight: 1, strokeColor: '#747678'});
-
-        
-
-        map1.data.addListener('click', function(event){
-            var cpname = event.feature.getProperty('cpname');
-            document.getElementById(maps[0].inputId).value = cpname;
-          });
-
-        map2.data.addListener('click', function(event){
-            var cpname = event.feature.getProperty('cpname');
-            document.getElementById(maps[1].inputId).value = cpname;
-          });
-        */
-        
       }
 
       
