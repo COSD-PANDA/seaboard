@@ -96,6 +96,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+label {
+  font-weight: normal;
+  padding-left: 3px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.pages-main .form-group p {
+  @include sourcesans;
+  font-size: 1.3em;
+  line-height: 2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+input[disabled] {
+  color: $s_gray_mid;
+}
+
 /** Navbar **/
 img.logo {
   background: $p_black;
