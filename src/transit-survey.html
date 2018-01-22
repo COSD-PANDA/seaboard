@@ -5,10 +5,7 @@ permalink: /mobility-survey/
 ---
 
 <p>
-  The way that we get around has a significant impact on climate change, and contributes to the well-being and quality of life of San Diegans. With the goal of creating a cleaner San Diego for future generations, the City of San Diego’s Climate Action Plan (CAP) calls for eliminating half of all greenhouse gas emissions by 2035, and helps achieve the greenhouse gas reduction targets set forth by the state of California. To help track our progress towards these goals, the City is conducting a commuter mode share survey.
-</p>
-<p>
-  Please take a moment to complete this survey. Your responses to the questions are voluntary. Any questions left unmarked will be recorded as ‘No Opinion.’ Thank you for your time!
+  The way we get around has a significant impact on our pocketbook, the environment, and contributes to the well-being and quality of life of San Diegans. With the goal of creating a cleaner San Diego for future generations, the City of San Diego’s Climate Action Plan calls for helping more people bike, walk, or take transit to get around the city. To help track our progress towards these goals, the City is conducting a survey to understand how people commute to and from work. Thank you in advance for your participation!
 </p>
 
 <form name="contact" netlify-honeypot="bot-field" action="/thank-you/" netlify>
@@ -16,11 +13,32 @@ permalink: /mobility-survey/
     <label>Don’t fill this out: <input name="bot-field"></label>
   </p>
 
+  <div class="form-group">
+    <p>
+      How many days per week do you travel to and from your workplace?
+    </p>
+    <div class="form-check">
+      <input type="text" class="form-check-input position-static" name="days-travel" value="">
+    </div>
+  </div>
+
 
   <div class="form-group">
     <p>
-      Do you utilize any of the following means or methods of transportation to get to work?
+      Which mode(s) of transportation do you take most frequently to and from work (check all that apply)?
     </p>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="means" value="walking">
+      <label class="form-check-label">
+        Walking
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="means" value="biking">
+      <label class="form-check-label">
+        Biking
+      </label>
+    </div>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="means" value="public-transit">
       <label class="form-check-label">
@@ -34,27 +52,48 @@ permalink: /mobility-survey/
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="walk">
+      <input type="checkbox" class="form-check-input" name="means" value="pool">
       <label class="form-check-label">
-        Walk
+        Vanpool/Carpool
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="bike">
+      <input type="checkbox" class="form-check-input" name="means" value="drive">
       <label class="form-check-label">
-        Bike
+        Driving alone
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="means" value="park-ride">
+      <label class="form-check-label">
+        Park and Ride
       </label>
     </div>
   </div>
 
   <div class="form-group">
     <p>
-      If you don't walk, bicycle or take transit to work, please indicate why not.
+      If you replied 'Driving alone' in the previous question, how many times per week do you drive yourself to and from work?
     </p>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="connectivity">
+      <input type="text" class="form-check-input position-static" name="days-drive-alone" value="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <p>
+      Are there any specific reasons that prevent you from utilizing biking, walking, or transit to get to work (check all that apply)?
+    </p>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="reason" value="time">
       <label class="form-check-label">
-        Connectivity from home or workplace to transit station/stop
+        Takes too long
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="reason" value="cost">
+      <label class="form-check-label">
+        Cost
       </label>
     </div>
     <div class="form-check">
@@ -64,21 +103,21 @@ permalink: /mobility-survey/
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="time">
+      <input type="checkbox" class="form-check-input" name="reason" value="reliability">
       <label class="form-check-label">
-        Time it takes
+        Reliability of transit service
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="condition">
+      <input type="checkbox" class="form-check-input" name="reason" value="connectivity">
       <label class="form-check-label">
-        Condition of infrastructure (e.g. streets, sidewalks, lighting) on path of travel
+        Distance from home or workplace to transit station/stop
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="safety">
+      <input type="checkbox" class="form-check-input" name="reason" value="facilities">
       <label class="form-check-label">
-        Safety concerns
+        Lack of bicycle storage and shower facilities at workplace
       </label>
     </div>
     <div class="form-check">
@@ -88,9 +127,27 @@ permalink: /mobility-survey/
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="facilities">
+      <input type="checkbox" class="form-check-input" name="reason" value="no-infra">
       <label class="form-check-label">
-        Lack of bicycle storage and shower facilities at workplace
+        Lack of transportation infrastructure (e.g. bike lanes, sidewalks, transit lines)
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="reason" value="poor-infra">
+      <label class="form-check-label">
+        Poor condition of transportation infrastructure (e.g. bike lanes, sidewalks, transit lines)
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="reason" value="safety">
+      <label class="form-check-label">
+        Safety concerns
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="reason" value="other">
+      <label class="form-check-label">
+        Other
       </label>
     </div>
   </div>
@@ -98,7 +155,7 @@ permalink: /mobility-survey/
 
   <div class="form-group">
     <p>
-        Does your employer offer incentives for transportation means other than your personal vehicle?
+        Does your employer offer incentives for taking alternative transportation (i.e. not driving alone) to work?
     </p>
     <div class="form-check">
       <input type="radio" class="form-check-input" name="incentives" value="yes">
@@ -122,7 +179,25 @@ permalink: /mobility-survey/
 
   <div class="form-group">
     <p>
-      What incentives/programs would encourage you take transit, bicycle, or walk to work?
+        If you replied “yes” to the previous question, do you utilize your employer offered incentives?
+    </p>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" name="incentives" value="yes">
+      <label class="form-check-label">
+        Yes
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" name="incentives" value="no">
+      <label class="form-check-label">
+        No
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <p>
+      What incentives/programs would encourage you take transit, bike, or walk to work (check all that apply)?
     </p>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="encourage" value="passes">
@@ -133,19 +208,25 @@ permalink: /mobility-survey/
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="encourage" value="shuttle">
       <label class="form-check-label">
-        Providing shuttle services to/from transit stations
+        Shuttle services to/from transit stations
       </label>
     </div>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="encourage" value="storage">
       <label class="form-check-label">
-        Providing bicycle storage facilities at workplace
+        Bike storage facilities
       </label>
     </div>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="encourage" value="shower">
       <label class="form-check-label">
-        Providing shower facilities at workplace
+        Showers and lockers at workplace
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" name="encourage" value="other">
+      <label class="form-check-label">
+        Other
       </label>
     </div>
   </div>
