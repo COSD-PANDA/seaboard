@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: form
 title: City of San Diego Commuter Survey
 permalink: /mobility-survey/
 ---
@@ -14,7 +14,7 @@ permalink: /mobility-survey/
   </p>
 
   <div class="form-group">
-    <p>
+    <p class="question">
       How many days per week do you travel to and from your workplace?
     </p>
     <div class="form-check">
@@ -24,8 +24,8 @@ permalink: /mobility-survey/
 
 
   <div class="form-group">
-    <p>
-      Which mode(s) of transportation do you take most frequently to and from work (check all that apply)?
+    <p class="question">
+      Which mode(s) of transportation do you take most frequently to and from work? <i>Check all that apply.</i>
     </p>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="means" value="walking">
@@ -72,7 +72,7 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-group">
-    <p>
+    <p class="question">
       If you replied 'Driving alone' in the previous question, how many times per week do you drive yourself to and from work?
     </p>
     <div class="form-check">
@@ -81,8 +81,8 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-group">
-    <p>
-      Are there any specific reasons that prevent you from utilizing biking, walking, or transit to get to work (check all that apply)?
+    <p class="question">
+      Are there any specific reasons that prevent you from biking, walking, or utilizing transit to get to work? <i>Check all that apply.</i>
     </p>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="reason" value="time">
@@ -149,12 +149,13 @@ permalink: /mobility-survey/
       <label class="form-check-label">
         Other
       </label>
+      <input type="text" class="form-check-input" name="reason" value="">
     </div>
   </div>
 
 
   <div class="form-group">
-    <p>
+    <p class="question">
         Does your employer offer incentives for taking alternative transportation (i.e. not driving alone) to work?
     </p>
     <div class="form-check">
@@ -178,8 +179,8 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-group">
-    <p>
-        If you replied “yes” to the previous question, do you utilize your employer offered incentives?
+    <p class="question">
+        If you replied “yes” to the previous question, do you utilize your employer-offered incentives?
     </p>
     <div class="form-check">
       <input type="radio" class="form-check-input" name="incentives" value="yes">
@@ -196,8 +197,8 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-group">
-    <p>
-      What incentives/programs would encourage you take transit, bike, or walk to work (check all that apply)?
+    <p class="question">
+      What incentives/programs would encourage you to take transit, bike, or walk to work? <i>Check all that apply.</i>
     </p>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="encourage" value="passes">
@@ -232,7 +233,7 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-group">
-    <p>
+    <p class="question">
         Which of the following best describes your age?
     </p>
     <div class="form-check">
@@ -275,10 +276,13 @@ permalink: /mobility-survey/
 
   <div class="form-row">
       <div class="form-group col-md-6">
-        <p>
-          Select the area where your workplace is located
+        <p class="question">
+          Do you work in the City of San Diego? 
         </p>
-        <div style="width:100%;height:500px;">
+        <p class="description">
+          If you work in the City of San Diego, select on the map the area where your primary workplace is located. If you do not work within the City, skip this question.
+        </p>
+        <div style="width:100%;height:520px;">
           <div id="work-map" style="height:100%"></div>
         </div>
         <div class="form-check">
@@ -286,10 +290,13 @@ permalink: /mobility-survey/
         </div>
       </div>
       <div class="form-group col-md-6">
-        <p>
-          Select the area where your home is located
+        <p class="question">
+          Do you live in the City of San Diego?
         </p>
-        <div style="width:100%;height:500px;">
+        <p class="description">
+          If you live in the City of San Diego, select on the map the area where your residence is located. If you do not live within the City, skip this question.
+        </p>
+        <div style="width:100%;height:520px;">
           <div id="home-map" style="height:100%"></div>
         </div>
         <div class="form-check">
@@ -322,7 +329,7 @@ permalink: /mobility-survey/
           });
 
           maps[i].data.loadGeoJson('https://s3.amazonaws.com/seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
-          maps[i].data.setStyle({fillColor: '#d47600', strokeWeight: 1, strokeColor: '#747678'});
+          maps[i].data.setStyle({fillColor: '#ffb652', strokeWeight: 1, strokeColor: '#adafaf'});
 
 
           maps[i].data.addListener('click', function(event){
@@ -335,6 +342,13 @@ permalink: /mobility-survey/
             }
           });
 
+          maps[i].data.addListener('mouseover', function(event){
+            this.map.data.overrideStyle(event.feature, {fillColor: '#ffa02f',fillOpacity: 0.65});
+          });
+
+          maps[i].data.addListener('mouseout', function(event){
+            this.map.data.revertStyle(event.feature);
+          });
 
         }
 

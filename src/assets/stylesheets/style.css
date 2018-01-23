@@ -7471,9 +7471,11 @@ label {
   margin-bottom: 30px; }
 
 .pages-main .form-group p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.pages-main .form-group p.question {
   font-size: 1.3em;
-  line-height: 2;
+  line-height: 1.6;
   margin-top: 20px;
   margin-bottom: 10px; }
 
@@ -7481,9 +7483,13 @@ input[disabled] {
   color: #adafaf; }
 
 /** Navbar **/
-img.logo {
+img.datasd-logo {
   background: #37424a;
   height: 40px; }
+
+img.cosd-logo {
+  background: #0098db;
+  height: 74px; }
 
 .panel {
   border-radius: 0px; }
@@ -7552,6 +7558,13 @@ img.logo {
       color: #e0e1dd;
       text-decoration: underline;
       background-color: #37424a; }
+
+.sd-navbar-top.navbar-alt {
+  margin-top: 0px;
+  background-color: #0098db;
+  border-color: #0098db; }
+  .sd-navbar-top.navbar-alt .navbar-header {
+    height: 84px; }
 
 #footer-bar {
   font-family: "Source Sans Pro", sans-serif;
