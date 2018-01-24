@@ -8,7 +8,7 @@ permalink: /mobility-survey/
   The way we get around has a significant impact on our pocketbook, the environment, and contributes to the well-being and quality of life of San Diegans. With the goal of creating a cleaner San Diego for future generations, the City of San Diego’s Climate Action Plan calls for helping more people bike, walk, or take transit to get around the city. To help track our progress towards these goals, the City is conducting a survey to understand how people commute to and from work. Thank you in advance for your participation!
 </p>
 
-<form name="contact" netlify-honeypot="bot-field" action="/thank-you/" netlify>
+<form name="mobility" netlify-honeypot="bot-field" action="/thank-you/" netlify>
   <p class="hidden">
     <label>Don’t fill this out: <input name="bot-field"></label>
   </p>
@@ -29,43 +29,43 @@ permalink: /mobility-survey/
     </p>
     <p class="description"><i>Check all that apply.</i></p>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="walking">
+      <input type="checkbox" class="form-check-input" name="modes-walking" value="1">
       <label class="form-check-label">
         Walking
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="biking">
+      <input type="checkbox" class="form-check-input" name="modes-biking" value="1">
       <label class="form-check-label">
         Biking
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="public-transit">
+      <input type="checkbox" class="form-check-input" name="modes-transit" value="1">
       <label class="form-check-label">
         Public transportation (e.g. train, trolley, bus)
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="shuttle">
+      <input type="checkbox" class="form-check-input" name="modes-shuttle" value="1">
       <label class="form-check-label">
         Workplace shuttle
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="pool">
+      <input type="checkbox" class="form-check-input" name="modes-pool" value="1">
       <label class="form-check-label">
         Vanpool/Carpool
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="drive">
+      <input type="checkbox" class="form-check-input" name="modes-drive" value="1">
       <label class="form-check-label">
         Driving alone
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="means" value="park-ride">
+      <input type="checkbox" class="form-check-input" name="modes-parkride" value="1">
       <label class="form-check-label">
         Park and Ride
       </label>
@@ -87,71 +87,71 @@ permalink: /mobility-survey/
     </p>
     <p class="description"><i>Check all that apply.</i></p>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="time">
+      <input type="checkbox" class="form-check-input" name="reason-time" value="1">
       <label class="form-check-label">
         Takes too long
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="cost">
+      <input type="checkbox" class="form-check-input" name="reason-cost" value="1">
       <label class="form-check-label">
         Cost
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="frequency">
+      <input type="checkbox" class="form-check-input" name="reason-frequency" value="1">
       <label class="form-check-label">
         Frequency of transit service
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="reliability">
+      <input type="checkbox" class="form-check-input" name="reason-reliability" value="1">
       <label class="form-check-label">
         Reliability of transit service
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="connectivity">
+      <input type="checkbox" class="form-check-input" name="reason-connectivity" value="1">
       <label class="form-check-label">
         Distance from home or workplace to transit station/stop
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="facilities">
+      <input type="checkbox" class="form-check-input" name="reason-facilities" value="1">
       <label class="form-check-label">
         Lack of bicycle storage and shower facilities at workplace
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="family">
+      <input type="checkbox" class="form-check-input" name="reason-family" value="1">
       <label class="form-check-label">
         Family care issues
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="no-infra">
+      <input type="checkbox" class="form-check-input" name="reason-noinfra" value="1">
       <label class="form-check-label">
         Lack of transportation infrastructure (e.g. bike lanes, sidewalks, transit lines)
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="poor-infra">
+      <input type="checkbox" class="form-check-input" name="reason-poorinfra" value="1">
       <label class="form-check-label">
         Poor condition of transportation infrastructure (e.g. bike lanes, sidewalks, transit lines)
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="safety">
+      <input type="checkbox" class="form-check-input" name="reason-safety" value="1">
       <label class="form-check-label">
         Safety concerns
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="reason" value="other">
+      <input type="checkbox" class="form-check-input" name="reason-other" value="1">
       <label class="form-check-label">
         Other
       </label>
-      <input type="text" class="form-check-input" name="reason" value="">
+      <input type="text" class="form-check-input" name="reason-othertext" value="">
     </div>
   </div>
 
@@ -161,19 +161,19 @@ permalink: /mobility-survey/
         Does your employer offer incentives for taking alternative transportation (i.e. not driving alone) to work?
     </p>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="incentives" value="yes">
+      <input type="radio" class="form-check-input" name="incentive-offered" value="1">
       <label class="form-check-label">
         Yes
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="incentives" value="no">
+      <input type="radio" class="form-check-input" name="incentive-offered" value="0">
       <label class="form-check-label">
         No
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="incentives" value="not-sure">
+      <input type="radio" class="form-check-input" name="incentive-offered" value="2">
       <label class="form-check-label">
         Not sure
       </label>
@@ -185,13 +185,13 @@ permalink: /mobility-survey/
         If you replied “yes” to the previous question, do you utilize your employer-offered incentives?
     </p>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="incentives" value="yes">
+      <input type="radio" class="form-check-input" name="incentive-used" value="1">
       <label class="form-check-label">
         Yes
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="incentives" value="no">
+      <input type="radio" class="form-check-input" name="incentive-used" value="0">
       <label class="form-check-label">
         No
       </label>
@@ -204,34 +204,35 @@ permalink: /mobility-survey/
     </p>
     <p class="description"><i>Check all that apply.</i></p>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="encourage" value="passes">
+      <input type="checkbox" class="form-check-input" name="incentive-passes" value="1">
       <label class="form-check-label">
         Subsidized transit passes
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="encourage" value="shuttle">
+      <input type="checkbox" class="form-check-input" name="incentive-shuttle" value="1">
       <label class="form-check-label">
         Shuttle services to/from transit stations
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="encourage" value="storage">
+      <input type="checkbox" class="form-check-input" name="incentive-storage" value="1">
       <label class="form-check-label">
         Bike storage facilities
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="encourage" value="shower">
+      <input type="checkbox" class="form-check-input" name="incentive-shower" value="1">
       <label class="form-check-label">
         Showers and lockers at workplace
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="encourage" value="other">
+      <input type="checkbox" class="form-check-input" name="incentive-other" value="1">
       <label class="form-check-label">
         Other
       </label>
+      <input type="text" class="form-check-input" name="incentive-othertext" value="">
     </div>
   </div>
 
@@ -289,7 +290,7 @@ permalink: /mobility-survey/
           <div id="work-map" style="height:100%"></div>
         </div>
         <div class="form-check">
-          <input type="text" class="form-check-input position-static" name="map" value="" id="work-area" disabled>
+          <input type="text" class="form-check-input position-static" name="map-work" value="" id="work-area" disabled>
         </div>
       </div>
       <div class="form-group col-md-6">
@@ -303,7 +304,7 @@ permalink: /mobility-survey/
           <div id="home-map" style="height:100%"></div>
         </div>
         <div class="form-check">
-          <input type="text" class="form-check-input position-static" name="map" value="" id="home-area" disabled>
+          <input type="text" class="form-check-input position-static" name="map-home" value="" id="home-area" disabled>
         </div>
       </div>
   </div>
@@ -343,6 +344,9 @@ permalink: /mobility-survey/
             } else {
               document.getElementById('home-area').value = cpname;
             }
+            this.map.data.revertStyle(event.feature);
+            this.map.data.overrideStyle(event.feature, {fillColor: '#ffa02f',fillOpacity: 0.65});
+
           });
 
           maps[i].data.addListener('mouseover', function(event){
