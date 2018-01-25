@@ -7473,7 +7473,7 @@ label {
 .pages-main .form-group p {
   font-family: "Source Sans Pro", sans-serif; }
 
-.pages-main .form-group p.question {
+.pages-main form p.question {
   font-size: 1.3em;
   line-height: 1.6;
   margin-top: 20px;

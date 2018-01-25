@@ -4,6 +4,41 @@ title: City of San Diego Commuter Survey
 permalink: /mobility-survey/
 ---
 
+<style>
+.search-panel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 29px;
+  width: 200px;
+  z-index: 2;
+}
+.search-panel input {
+  height: 29px;
+  padding: 8px;
+  width: 100%;
+  text-overflow: ellipsis;
+  font: 400 11px Roboto, Arial, sans-serif;
+}
+.search-panel .fa {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  padding-right: 4px;
+  line-height: 26px;
+  background-color: white;
+  cursor: pointer;
+}
+.form-map-container {
+  width:100%;
+  height:520px;
+  position: relative;
+}
+#home-map, #work-map {
+  height: 100%;
+}
+</style>
+
 <p>
   The way we get around has a significant impact on our pocketbook, the environment, and contributes to the well-being and quality of life of San Diegans. With the goal of creating a cleaner San Diego for future generations, the City of San Diego’s Climate Action Plan calls for helping more people bike, walk, or take transit to get around the city. To help track our progress towards these goals, the City is conducting a survey to understand how people commute to and from work. Thank you in advance for your participation!
 </p>
@@ -25,47 +60,52 @@ permalink: /mobility-survey/
 
   <div class="form-group">
     <p class="question">
-      Which mode(s) of transportation do you take most frequently to and from work?
+      What is your primary mode of transportation to work?
     </p>
-    <p class="description"><i>Check all that apply.</i></p>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="modes-walking" value="1">
+      <input type="radio" class="form-check-input" name="mode" value="walking">
       <label class="form-check-label">
         Walking
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="modes-biking" value="1">
+      <input type="radio" class="form-check-input" name="mode" value="biking">
       <label class="form-check-label">
         Biking
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="modes-transit" value="1">
+      <input type="radio" class="form-check-input" name="mode" value="transit">
       <label class="form-check-label">
         Public transportation (e.g. train, trolley, bus)
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="modes-shuttle" value="1">
+      <input type="radio" class="form-check-input" name="mode" value="shuttle">
       <label class="form-check-label">
         Workplace shuttle
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="modes-pool" value="1">
+      <input type="radio" class="form-check-input" name="mode" value="vanpool">
       <label class="form-check-label">
         Vanpool/Carpool
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="modes-drive" value="1">
+      <input type="radio" class="form-check-input" name="mode" value="rideshare">
+      <label class="form-check-label">
+        Ride Share (e.g. Lyft, Uber)
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" name="mode" value="drive">
       <label class="form-check-label">
         Driving alone
       </label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" name="modes-parkride" value="1">
+      <input type="radio" class="form-check-input" name="mode" value="parkride">
       <label class="form-check-label">
         Park and Ride
       </label>
@@ -279,29 +319,41 @@ permalink: /mobility-survey/
   </div>
 
   <div class="form-row">
+      <p class="question">
+          How close do you live to your workplace? 
+      </p>
+      <p class="description">
+          To help us understand the possible impact of commuting, we would like to know how far apart your primary residence and your workplace are. This information will not be shared or used for any other purpose.
+      </p>
       <div class="form-group col-md-6">
-        <p class="question">
-          Do you work in the City of San Diego? 
-        </p>
         <p class="description">
-          If you work in the City of San Diego, select on the map the area where your primary workplace is located. If you do not work within the City, skip this question.
+          Drop a point on the map below to represent your <b>workplace</b>. You can click on the map, or enter an address into the search bar. 
         </p>
-        <div style="width:100%;height:520px;">
-          <div id="work-map" style="height:100%"></div>
+        <div class="form-map-container">
+          <div class="search-panel">
+            <input type="text" id="work-address" placeholder="Search for an address">
+            <span id="work-search" class="fa fa-search"></span>
+          </div>
+          <div id="work-map">
+            
+          </div>
         </div>
         <div class="form-check">
           <input type="text" class="form-check-input position-static" name="map-work" value="" id="work-area" disabled>
         </div>
       </div>
       <div class="form-group col-md-6">
-        <p class="question">
-          Do you live in the City of San Diego?
-        </p>
         <p class="description">
-          If you live in the City of San Diego, select on the map the area where your residence is located. If you do not live within the City, skip this question.
+          Drop a point on the map below to represent your <b>residence</b>. You can click on the map, or enter an address into the search bar.
         </p>
-        <div style="width:100%;height:520px;">
-          <div id="home-map" style="height:100%"></div>
+        <div class="form-map-container">
+          <div class="search-panel">
+            <input type="text" id="home-address" placeholder="Search for an address">
+            <span id="home-search" class="fa fa-search"></span>
+          </div>
+          <div id="home-map">
+            
+          </div>
         </div>
         <div class="form-check">
           <input type="text" class="form-check-input position-static" name="map-home" value="" id="home-area" disabled>
@@ -319,45 +371,87 @@ permalink: /mobility-survey/
 
 
 
-      var maps = []
+      var maps = [];
+      var markers = [];
+      var searchBoxes = [];
+      var mapIds = ['work','home'];
 
       function initMap() {
 
-        var mapIds = ['work','home'];
+        
+        var geocoder = new google.maps.Geocoder();
 
         for (var i=0; i < mapIds.length; i++) {
 
           maps[i] = new google.maps.Map(document.getElementById(mapIds[i]+'-map'), {
             zoom: 10,
-            center: new google.maps.LatLng(32.83,-117.1611)
+            center: new google.maps.LatLng(32.83,-117.1611),
+            fullscreenControl: false,
+            streetViewControl: false 
           });
 
-          maps[i].data.loadGeoJson('https://s3.amazonaws.com/seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
-          maps[i].data.setStyle({fillColor: '#ffb652', strokeWeight: 1, strokeColor: '#adafaf'});
+          markers[i] = new google.maps.Marker({map: maps[i]});
 
+          getLocations(i);
 
-          maps[i].data.addListener('click', function(event){
-            var cpname = event.feature.getProperty('cpname');
-            var mapID = this.map.__gm.S.id;
-            if (mapID === 'work-map') {
-              document.getElementById('work-area').value = cpname;
-            } else {
-              document.getElementById('home-area').value = cpname;
-            }
-            this.map.data.revertStyle(event.feature);
-            this.map.data.overrideStyle(event.feature, {fillColor: '#ffa02f',fillOpacity: 0.65});
+          var searchButton = document.getElementById(mapIds[i]+'-search');
+          searchBoxes[i] = searchButton;
 
-          });
+          setUpSearch(geocoder,i);
 
-          maps[i].data.addListener('mouseover', function(event){
-            this.map.data.overrideStyle(event.feature, {fillColor: '#ffa02f',fillOpacity: 0.65});
-          });
-
-          maps[i].data.addListener('mouseout', function(event){
-            this.map.data.revertStyle(event.feature);
-          });
+          //maps[i].data.loadGeoJson('https://s3.amazonaws.com/seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
 
         }
+
+      }
+
+      function setUpSearch(gc,b) {
+
+        searchBoxes[b].addEventListener('click', function(e){
+          if (b === 0) {
+            var address = document.getElementById('work-address').value;
+          } else {
+            var address = document.getElementById('home-address').value;
+          }
+          geocodeAddress(gc, address, b);
+        });
+
+      }
+
+      function geocodeAddress(gc, address, m){
+        gc.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            placeMarker(results[0].geometry.location,m);
+            fillLocationInput(m,results[0].geometry.location.toString());
+          } else {
+            console.log('Geocode was not successful for the following reason: ' + status);
+          }
+        }); 
+      }
+
+
+      function getLocations(p) {
+
+        maps[p].addListener('click', function(event){
+          placeMarker(event.latLng,p);
+          fillLocationInput(p,event.latLng.toString());
+        });
+
+      }
+
+      function placeMarker(latLng,m) {
+
+        markers[m].setPosition(latLng);
+
+      }
+
+      function fillLocationInput(n,value){
+
+        if (n === 0) {
+            document.getElementById('work-area').value = value;
+          } else {
+            document.getElementById('home-area').value = value;
+          }
 
       }
 
@@ -366,5 +460,5 @@ permalink: /mobility-survey/
 
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCriPrXEscfltWMEUM7lfRGl0HE_wASQhA&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaCKe-2Y070-Q1GiuIIs4wGXHQe3yb8Sc&callback=initMap">
     </script>
