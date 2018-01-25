@@ -53,7 +53,7 @@ permalink: /mobility-survey/
       How many days per week do you travel to and from your workplace?
     </p>
     <div class="form-check">
-      <input type="text" class="form-check-input position-static" name="days-travel" value="">
+      <input type="number" class="form-check-input position-static" name="days-travel" min="0" max="7" pattern="\d+">
     </div>
   </div>
 
@@ -63,49 +63,49 @@ permalink: /mobility-survey/
       What is your primary mode of transportation to work?
     </p>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="walking">
+      <input type="radio" class="form-check-input" name="mode" value="walking" required>
       <label class="form-check-label">
         Walking
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="biking">
+      <input type="radio" class="form-check-input" name="mode" value="biking" required>
       <label class="form-check-label">
         Biking
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="transit">
+      <input type="radio" class="form-check-input" name="mode" value="transit" required>
       <label class="form-check-label">
         Public transportation (e.g. train, trolley, bus)
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="shuttle">
+      <input type="radio" class="form-check-input" name="mode" value="shuttle" required>
       <label class="form-check-label">
         Workplace shuttle
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="vanpool">
+      <input type="radio" class="form-check-input" name="mode" value="vanpool" required>
       <label class="form-check-label">
         Vanpool/Carpool
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="rideshare">
+      <input type="radio" class="form-check-input" name="mode" value="rideshare" required>
       <label class="form-check-label">
         Ride Share (e.g. Lyft, Uber)
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="drive">
+      <input type="radio" class="form-check-input" name="mode" value="drive" required>
       <label class="form-check-label">
         Driving alone
       </label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="mode" value="parkride">
+      <input type="radio" class="form-check-input" name="mode" value="parkride" required>
       <label class="form-check-label">
         Park and Ride
       </label>
@@ -117,7 +117,7 @@ permalink: /mobility-survey/
       If you replied 'Driving alone' in the previous question, how many times per week do you drive yourself to and from work?
     </p>
     <div class="form-check">
-      <input type="text" class="form-check-input position-static" name="days-drive-alone" value="">
+      <input type="number" class="form-check-input position-static" name="days-drive-alone" min="0" max="7" pattern="\d+">
     </div>
   </div>
 
@@ -191,7 +191,7 @@ permalink: /mobility-survey/
       <label class="form-check-label">
         Other
       </label>
-      <input type="text" class="form-check-input" name="reason-othertext" value="">
+      <input type="text" class="form-check-input" name="reason-othertext">
     </div>
   </div>
 
@@ -272,7 +272,7 @@ permalink: /mobility-survey/
       <label class="form-check-label">
         Other
       </label>
-      <input type="text" class="form-check-input" name="incentive-othertext" value="">
+      <input type="text" class="form-check-input" name="incentive-othertext">
     </div>
   </div>
 
@@ -369,12 +369,20 @@ permalink: /mobility-survey/
 
 <script>
 
-
-
       var maps = [];
       var markers = [];
       var searchBoxes = [];
       var mapIds = ['work','home'];
+
+      document.getElementById('home-address')
+        .addEventListener('keypress', function(event){
+          attachSubmitAddress(event);
+        });
+
+      document.getElementById('work-address')
+        .addEventListener('keypress', function(event){
+          attachSubmitAddress(event);
+        });
 
       function initMap() {
 
@@ -402,6 +410,15 @@ permalink: /mobility-survey/
           //maps[i].data.loadGeoJson('https://s3.amazonaws.com/seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson');
 
         }
+
+      }
+
+      function attachSubmitAddress(e) {
+        
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            this.nextElementSibling.click();
+          }
 
       }
 
