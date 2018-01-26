@@ -40,7 +40,7 @@ permalink: /mobility-survey/
 </style>
 
 <p>
-  The way we get around has a significant impact on our pocketbook, the environment, and contributes to the well-being and quality of life of San Diegans. With the goal of creating a cleaner San Diego for future generations, the City of San Diego’s Climate Action Plan calls for helping more people bike, walk, or take transit to get around the city. To help track our progress towards these goals, the City is conducting a survey to understand how people commute to and from work. Thank you in advance for your participation!
+  To create a cleaner environment for future generations, the City of San Diego’s Climate Action Plan calls for more people biking, walking or taking transit to get around.  In order to track our progress toward these goals, the City is conducting a survey to understand how people commute to, from, or within the city. Thank you in advance for your participation!
 </p>
 
 <form name="mobility" netlify-honeypot="bot-field" action="/thank-you/" netlify>
@@ -99,6 +99,12 @@ permalink: /mobility-survey/
       </label>
     </div>
     <div class="form-check">
+      <input type="radio" class="form-check-input" name="mode" value="rideshare" required>
+      <label class="form-check-label">
+        Bike Share (e.g. Discovery Bike)
+      </label>
+    </div>
+    <div class="form-check">
       <input type="radio" class="form-check-input" name="mode" value="drive" required>
       <label class="form-check-label">
         Driving alone
@@ -108,6 +114,12 @@ permalink: /mobility-survey/
       <input type="radio" class="form-check-input" name="mode" value="parkride" required>
       <label class="form-check-label">
         Park and Ride
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" name="mode" value="parkride" required checked>
+      <label class="form-check-label">
+        NA / Work from home
       </label>
     </div>
   </div>
@@ -327,7 +339,7 @@ permalink: /mobility-survey/
       </p>
       <div class="form-group col-md-6">
         <p class="description">
-          Drop a point on the map below to represent your <b>workplace</b>. You can click on the map, or enter an address into the search bar. 
+          Drop a pin on the map below to represent your <b>workplace</b>. You can click on the map (zoom in for better accuracy), or enter an address into the search bar. 
         </p>
         <div class="form-map-container">
           <div class="search-panel">
@@ -342,7 +354,7 @@ permalink: /mobility-survey/
       </div>
       <div class="form-group col-md-6">
         <p class="description">
-          Drop a point on the map below to represent your <b>residence</b>. You can click on the map, or enter an address into the search bar.
+          Drop a point on the map below to represent your <b>residence</b>. You can click on the map (zoom in for better accuracy), or enter an address into the search bar.
         </p>
         <div class="form-map-container">
           <div class="search-panel">
@@ -356,6 +368,19 @@ permalink: /mobility-survey/
         </div>
       </div>
   </div>
+
+  <div class="form-group">
+    <p class="question">
+      Enter to win a Discovery Bike membership
+    </p>
+    <p class="description">
+      Provide your email address for entry into a raffle to win a one-year Discovery Bike membership. Your email address will not be stored or used for any other purpose.
+    </p>
+    <div class="form-check">
+      <input type="email" class="form-check-input position-static" name="raffle-email">
+    </div>
+  </div>
+
 
   <button type="submit" class="btn btn-primary">Submit</button>
 
