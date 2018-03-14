@@ -96,10 +96,43 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+label {
+  font-weight: normal;
+  padding-left: 3px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.pages-main .form-group p {
+  @include sourcesans;
+}
+
+.pages-main form p.question {
+  font-size: 1.3em;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pages-main form p.description {
+
+}
+
+input[disabled] {
+  color: $s_gray_mid;
+}
+
 /** Navbar **/
-img.logo {
+img.datasd-logo {
   background: $p_black;
   height: 40px;
+}
+
+img.cosd-logo {
+  background: $p_blue;
+  height: 74px;
 }
 
 .panel {
@@ -131,6 +164,7 @@ img.logo {
   }
 
 }
+
 
 .sd-navbar-top.navbar-default {
   margin-top: 33.4px;
@@ -199,6 +233,18 @@ img.logo {
   }
 
 }
+
+.sd-navbar-top.navbar-alt {
+  margin-top: 0px;
+  background-color: $p_blue;
+  border-color: $p_blue;
+
+  .navbar-header {
+    height: 84px;
+  }
+}
+
+
 
 #footer-bar {
   @include sourcesans;
