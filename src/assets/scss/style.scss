@@ -780,25 +780,6 @@ dataset {
 			}
 		}
 	}
-
-	.dataset-modified {
-		font-size: 0.75em;
-		font-style: italic;
-	}
-
-	.dataset-tag {
-		font-size: 0.75em;
-
-		span {
-			padding: 5px;
-			text-align: center;
-			color: white;
-		}
-
-		.reference {
-			background-color: red;
-		}
-	}
 }
 
 dataset:last-child {

@@ -35,9 +35,6 @@ dataset_fields:
     label: Maintainer Email
     default: data@sandiego.gov
     datajson: contactPoint.hasEmail
-  - field_name: tags
-    label: tags
-    datajson: tags
 
 resource_fields:
   - field_name: name
