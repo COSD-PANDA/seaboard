@@ -9,6 +9,14 @@ resources:
     url: >-
       http://seshat.datasd.org/campaign_fin/financial_support_dictionary_datasd.csv
     format: csv
+  - name: Financial Transactions Reported by Election Committees Y-T-D
+    url: >-
+      http://seshat.datasd.org/campaign_fin/financial_support_2018_datasd.csv
+    format: csv
+  - name: Financial Transactions Reported by Election Committees (2017)
+    url: >-
+      http://seshat.datasd.org/campaign_fin/financial_support_2017_datasd.csv
+    format: csv
   - name: Financial Transactions Reported by Election Committees (2016)
     url: >-
       http://seshat.datasd.org/campaign_fin/financial_support_2016_datasd.csv
