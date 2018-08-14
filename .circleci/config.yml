@@ -1,19 +1,20 @@
 version: 2
 jobs:
   build:
-  working_directory:;; ~/seaboard
-  docker:
-    - image: circleci/node:6.14-jessie
-  steps:
-    - checkout
-    - run:
-      name: Install Yarn
-      command: |
-        curl -o- -L https://yarnpkg.com/install.sh | bash
-        yarn cache clean
-        bundle install
-        yarn install --force
-        bundle install
+    working_directory: ~/seaboard
+    docker:
+      - image:  starefossen/ruby-node:2-8
+    steps:
+      - checkout
+      - run:
+          name: Install Yarn
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash
+            npm install -g gulp
+            yarn cache clean
+            bundle install
+            yarn install --force
+            bundle install
 
   deploy:
     docker:
@@ -23,6 +24,7 @@ jobs:
       - run:
           name: 'Deploy'
           command: |
+            npm install -g gulp
             gulp build & gulp publish
             s3_website push
 
@@ -31,11 +33,12 @@ workflows:
   build_and_deploy:
     jobs:
       - build
-    deploy:
-      requires:
-        - build
-      filters:
-        branches:
-        only: master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+
 
 
