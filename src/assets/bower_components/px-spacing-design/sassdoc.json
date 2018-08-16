@@ -1,0 +1,522 @@
+[
+    {
+        "description": "Produce CSS for default margin sizes\n",
+        "commentRange": {
+            "start": 21,
+            "end": 23
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 24,
+                "end": 24
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for tiny margin sizes\n",
+        "commentRange": {
+            "start": 26,
+            "end": 28
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--tiny",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 29,
+                "end": 29
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for small margin sizes\n",
+        "commentRange": {
+            "start": 31,
+            "end": 33
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--small",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 34,
+                "end": 34
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for large margin sizes\n",
+        "commentRange": {
+            "start": 36,
+            "end": 38
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--large",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 39,
+                "end": 39
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for huge margin sizes\n",
+        "commentRange": {
+            "start": 41,
+            "end": 43
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--huge",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 44,
+                "end": 44
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for default negative margin sizes\n",
+        "commentRange": {
+            "start": 46,
+            "end": 48
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--negative",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 49,
+                "end": 49
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for tiny negative margin sizes\n",
+        "commentRange": {
+            "start": 51,
+            "end": 53
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--negative-tiny",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 54,
+                "end": 54
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for small negative margin sizes\n",
+        "commentRange": {
+            "start": 56,
+            "end": 58
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--negative-small",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 59,
+                "end": 59
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for large negative margin sizes\n",
+        "commentRange": {
+            "start": 61,
+            "end": 63
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--negative-large",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 64,
+                "end": 64
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for huge negative margin sizes\n",
+        "commentRange": {
+            "start": 66,
+            "end": 68
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--negative-huge",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 69,
+                "end": 69
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for swapping horizontal margins in RTL\n",
+        "commentRange": {
+            "start": 71,
+            "end": 73
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--rtl",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 74,
+                "end": 74
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for zero margins\n",
+        "commentRange": {
+            "start": 76,
+            "end": 78
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-margins--none",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 79,
+                "end": 79
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for default padding sizes\n",
+        "commentRange": {
+            "start": 81,
+            "end": 83
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-paddings",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 84,
+                "end": 84
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for tiny padding sizes\n",
+        "commentRange": {
+            "start": 86,
+            "end": 88
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-paddings--tiny",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 89,
+                "end": 89
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for small padding sizes\n",
+        "commentRange": {
+            "start": 91,
+            "end": 93
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-paddings--small",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 94,
+                "end": 94
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for large padding sizes\n",
+        "commentRange": {
+            "start": 96,
+            "end": 98
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-paddings--large",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 99,
+                "end": 99
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for huge padding sizes\n",
+        "commentRange": {
+            "start": 101,
+            "end": 103
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-paddings--huge",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 104,
+                "end": 104
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for swapping horizontal paddings in RTL\n",
+        "commentRange": {
+            "start": 106,
+            "end": 108
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-paddings--rtl",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 109,
+                "end": 109
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for zero paddings\n",
+        "commentRange": {
+            "start": 111,
+            "end": 113
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-paddings--none",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 114,
+                "end": 114
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    },
+    {
+        "description": "Prepend value for all generated classes\n",
+        "commentRange": {
+            "start": 16,
+            "end": 18
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-spacing-namespace",
+            "value": "$inuit-namespace",
+            "scope": "default",
+            "line": {
+                "start": 19,
+                "end": 19
+            }
+        },
+        "group": [
+            "px-spacing-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_trumps.spacing.scss",
+            "name": "_trumps.spacing.scss"
+        }
+    }
+]

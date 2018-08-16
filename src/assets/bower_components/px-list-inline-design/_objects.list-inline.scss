@@ -1,0 +1,45 @@
+////
+/// PX-LIST-INLINE-DESIGN
+/// The list-inline object simply displays a list of items in one line.
+/// @group px-list-inline-design
+////
+
+@import 'px-defaults-design/_settings.defaults.scss';
+
+/// Prepend value for all generated classes
+/// @group px-list-inline-design:variables:style
+/// @type String [default]
+$inuit-list-inline-namespace          : $inuit-namespace !default;
+
+/// Enable character to delimit list items?
+/// @group px-list-inline-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-list-inline--delimited  : false !default;
+
+/// Character to delimit list items
+/// @group px-list-inline-design:variables:style
+/// @type String [default]
+$inuit-list-inline-delimit-character  : "\00A0|\00A0" !default;
+
+/// Default list-inline
+.#{$inuit-list-inline-namespace}list-inline,
+%#{$inuit-list-inline-namespace}list-inline {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    > li {
+        display: inline-block;
+    }
+}
+
+/// Character delimited list-inline
+@if ($inuit-enable-list-inline--delimited == true) {
+    .#{$inuit-list-inline-namespace}list-inline--delimited,
+    %#{$inuit-list-inline-namespace}list-inline--delimited {
+        > li + li {
+            &:before {
+                content: "#{$inuit-list-inline-delimit-character}";
+            }
+        }
+    }
+}

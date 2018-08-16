@@ -1,0 +1,65 @@
+////
+/// PX-FUNCTIONS-DESIGN
+/// Defines Sass functions
+/// @group px-functions-design
+////
+
+//
+// NOTE: As of v1.0.0, importing the `px-functions-design` modules requires that
+// the $intuit-base-font-size variable already be defined.
+//
+// Rather than install the `px-functions-design` directly, it's recommended you
+// install `px-defaults-design` which includes this module as a dependency and
+// automatically defines $intuit-base-font-size. You'll have access to the functions
+// in this module if you install px-defaults-design.
+//
+// For more information, see this discussion in the `px-functions-design` repository
+// on Github: https://github.com/PredixDev/px-functions-design/pull/2
+//
+
+@import 'inuit-functions/_tools.functions.scss';
+
+/// Sets the project-wide base font size. Also used to calculate the base spacing unit. You should set this when you import `px-defaults-design`, but if you consume the functions module directly, you can set it here.
+///
+/// @group px-functions-design:variables:style
+/// @type Number [default]
+$inuit-base-font-size           : 15px !default;
+
+/// Takes a font-size value in pixels and converts it to rem.
+///
+/// @name calculateRem
+/// @param {Number} $size - font-size in pixels
+/// @return {Number} rem font-size equivalent
+@function calculateRem($size) {
+  $remSize: $size / $inuit-base-font-size;
+  $remUnit: 1rem;
+  @return $remSize * $remUnit;
+}
+
+/// Takes a font-size value in rem and converts it to pixels.
+///
+/// @name remToPX
+/// @param {Number} $size - font-size in rem
+/// @return {Number} pixel font-size equivalent
+@function remToPx($size) {
+  $remUnit: 1rem;
+  @return ($rem / $remUnit) * $inuit-base-font-size;
+}
+
+/// Takes a number and returns one third of that number.
+///
+/// @name third
+/// @param {Number} $inuit-number - value to be converted to a third
+/// @return {Number} value converted to a third
+@function third($inuit-number) {
+  @return round($inuit-number / 3);
+}
+
+/// Takes a number and returns three times that number.
+///
+/// @name triple
+/// @param {Number} $inuit-number - value to be tripled
+/// @return {Number} value tripled
+@function triple($inuit-number) {
+  @return round($inuit-number * 3);
+}

@@ -1,0 +1,68 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+  <!-- Common demo imports -->
+  <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+  <link rel="import" href="../css/px-defaults-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+  <!-- 0: Import the styles-->
+  <style include="px-defaults-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-defaults-design"
+  description="The defaults module contains variables and settings that are required for using nearly all Predix UI CSS modules. Use it to set the default font color, size, and vertical rhythm for your project."
+  layer="settings"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-functions-design"
+  ]'
+  hide-demo-container
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Provide Usage Info -->
+<section data-slot="usage">
+This module defines default style variables that many modules in your project will rely on.
+
+The defaults provided are a good starting point for most projects. To change any of the variables, override them in your project Sass file by adding the new definitions above your `@import` line.
+
+```
+<!-- Tiny base spacing unit -->
+<!-- 5px -->
+$inuit-base-spacing-unit--tiny
+
+
+<!-- Small base spacing unit -->
+<!-- 10px -->
+$inuit-base-spacing-unit--small
+
+
+<!-- Base spacing unit -->
+<!-- 15px -->
+$inuit-base-spacing-unit
+
+
+<!-- Large base spacing unit -->
+<!-- 20px -->
+$inuit-base-spacing-unit--large
+
+
+<!-- Huge base spacing unit -->
+<!-- 30px -->
+$inuit-base-spacing-unit--huge
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'local-element-demo'
+  });
+</script>
