@@ -19,9 +19,9 @@ jobs:
       - run: bundle install
       - run: npm run build
       - run: npm run publish
-      - run: mkdir -p /tmp/workspace
+      - run: mkdir -p ./workspace
       - persist_to_workspace:
-          root: /tmp/workspace
+          root: ./workspace
           paths:
             - site
             - node_modules
@@ -32,8 +32,8 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: /tmp/workspace
-      - run: mv /tmp/workspace/* .
+          at: ./workspace
+      - run: mv ./workspace/* .
       - run: ls
       - run: bundle install
       - run: s3_website push
