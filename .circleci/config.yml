@@ -1,30 +1,42 @@
+#https://circleci.com/docs/2.0/workflows/#using-workspaces-to-share-data-among-jobs
+
+# The following stanza defines a map named defaults with a variable that may be inserted using the YAML merge (<<: *) key
+# later in the file to save some typing. See http://yaml.org/type/merge.html for details.
+defaults: &defaults
+  working_directory: ~/seaboard
+  docker:
+    - image:  mrmaksimize/seaboard-build:latest
+
 version: 2
 jobs:
   build:
-    working_directory: ~/seaboard
-    docker:
-      - image:  mrmaksimize/seaboard-build:latest
+    <<: *defaults
     steps:
       - checkout
-      - run:
-          name: 'Build'
-          command: |
-            curl -o- -L https://yarnpkg.com/install.sh | bash
-            yarn cache clean
-            yarn install --force
-            bundle install
-            npm run build
-            npm run publish
+      - run: curl -o- -L https://yarnpkg.com/install.sh | bash
+      - run: yarn cache clean
+      - run: yarn install --force
+      - run: bundle install
+      - run: npm run build
+      - run: npm run publish
+      - run: mkdir -p /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - site
+            - node_modules
+
 
   deploy:
-    working_directory: ~/seaboard
-    docker:
-      - image:  mrmaksimize/seaboard-build:latest
+    <<: *defaults
     steps:
-      - run:
-          name: 'Deploy'
-          command: |
-            s3_website push
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: mv /tmp/workspace/* .
+      - run: ls
+      - run: bundle install
+      - run: s3_website push
 
 
 
