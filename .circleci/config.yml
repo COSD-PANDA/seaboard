@@ -1,13 +1,13 @@
 version: 2
 jobs:
-  build_deploy:
+  build:
     working_directory: ~/seaboard
     docker:
       - image:  mrmaksimize/seaboard-build:latest
     steps:
       - checkout
       - run:
-          name: 'Build & Deploy Job'
+          name: 'Build'
           command: |
             curl -o- -L https://yarnpkg.com/install.sh | bash
             yarn cache clean
@@ -16,13 +16,27 @@ jobs:
             bundle install
             npm run build
             npm run publish
-            s3_website push
+
+  deploy:
+    working_directory: ~/seaboard
+    docker:
+      - image:  mrmaksimize/seaboard-build:latest
+    steps:
+      - run:
+          name: 'Deploy'
+          command: |
+            s3_website_push
+
+
 
 workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - build_deploy:
+      - build
+      - deploy:
+          requires:
+            - build
           filters:
             branches:
               only: master
