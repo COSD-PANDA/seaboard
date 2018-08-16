@@ -1,0 +1,56 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs.
+-->
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="px-validator.html" />
+
+<!--
+Element providing built-in as well as developer supplied validation solutions
+
+##### Usage
+
+    <px-validation>
+      <px-validator validation-method="isNumber" import="px-example-validator.html"></px-validator>
+      <px-validator multi-step-validation='["isNumber", "isRed", "isBlue"]' import="px-example-validator.html"></px-validator>
+    </px-validation>
+
+@element px-validation
+@blurb Element providing built-in as well as developer supplied validation solutions
+@homepage index.html
+@demo demo.html
+-->
+<dom-module id="px-validation">
+  <template>
+    <content></content>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'px-validation',
+    /**
+     * This method loops through each validator and validates the content
+     *
+     * @method {validate}
+     * @param {value}
+     * @return {Boolean}
+     */
+    validate: function(value){
+      var result = {passedValidation : true};
+      var validationResult;
+      Polymer.dom(this).querySelectorAll('px-validator').forEach(function(validatorEl){
+        validatorEl.validators.every(function(validatorMethod){
+          validationResult = validatorMethod(value);
+          if (!validationResult.passedValidation){
+            result = validationResult;
+            return false;
+          }
+        });
+      });
+      return result;
+    }
+    
+  });
+</script>

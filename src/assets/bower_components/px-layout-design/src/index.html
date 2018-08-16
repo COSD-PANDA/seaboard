@@ -1,0 +1,437 @@
+<!-- build:remove -->
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=utf8>
+    <title>Layout</title>
+    <link rel=stylesheet href=css/style.css>
+  </head>
+  <body>
+    <section class="viewport u-mb++" role=region>
+      <!-- /build -->
+      <h1>Layout</h1>
+      <div class="flex flex--justify flex--wrap flex--baseline">
+        <p>
+          To use this module, follow the instructions in the
+          <a href=https://github.com/PredixDev/px-layout-design>README</a>.
+          <!-- build:remove -->
+          (For background on PXd, read the
+          <a href=https://github.com/PredixDev/px-getting-started>Getting Started</a>
+          documentation.)
+          <!-- /build -->
+        </p>
+        <a class="btn btn--primary" href=https://github.com/PredixDev/px-layout-design>
+          <i class="fa fa-github u-mr--"></i>
+          px-layout-design
+        </a>
+      </div>
+      <h2>How to Use</h2>
+      <p>Install via command line:</p>
+      <figure class="code u-mb+">
+        <code>
+          bower install --save https://github.com/PredixDev/px-layout-design.git
+        </code>
+      </figure>
+      <p>Add to component Sass file:</p>
+      <figure class="code u-mb++">
+        <code>
+          @import "px-layout-design/_objects.layout.scss";
+        </code>
+      </figure>
+      <h2>Auto sizing</h2>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class=layout&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&hellip;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class=layout>
+        <div class=layout__item>
+          <p>1</p>
+        </div>
+      </div>
+      <div class=layout>
+        <div class=layout__item>
+          <p>1/2</p>
+        </div>
+        <div class=layout__item>
+          <p>1/2</p>
+        </div> 
+      </div>
+      <div class=layout>
+        <div class=layout__item>
+          <p>1/3</p>
+        </div>
+        <div class=layout__item>
+          <p>1/3</p>
+        </div>
+        <div class=layout__item>
+          <p>1/3</p>
+        </div> 
+      </div>
+      <div class=layout>
+        <div class=layout__item>
+          <p>1/4</p>
+        </div>
+        <div class=layout__item>
+          <p>1/4</p>
+        </div>
+        <div class=layout__item>
+          <p>1/4</p>
+        </div>
+        <div class=layout__item>
+          <p>1/4</p>
+        </div> 
+      </div>
+      <div class=layout>
+        <div class=layout__item>
+          <p>1/6</p>
+        </div>
+        <div class=layout__item>
+          <p>1/6</p>
+        </div>
+        <div class=layout__item>
+          <p>1/6</p>
+        </div>
+        <div class=layout__item>
+          <p>1/6</p>
+        </div>
+        <div class=layout__item>
+          <p>1/6</p>
+        </div>
+        <div class=layout__item>
+          <p>1/6</p>
+        </div> 
+      </div>
+      <h2>Percentage-based and auto sizing mix</h2>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class=layout&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/3"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/4"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class=layout>
+        <div class="layout__item u-1/3">
+          <p>1/3</p>
+        </div>
+        <div class=layout__item>
+          <p>auto</p>
+        </div>
+      </div>
+      <div class=layout>
+        <div class="layout__item u-1/3">
+          <p>1/3</p>
+        </div>
+        <div class=layout__item>
+          <p>auto</p>
+        </div>
+        <div class=layout__item>
+          <p>auto</p>
+        </div>
+        <div class="layout__item u-1/4">
+          <p>1/4</p>
+        </div> 
+      </div>
+      <div class=layout>
+        <div class="layout__item u-1/6">
+          <p>1/6</p>
+        </div>
+        <div class=layout__item>
+          <p>auto</p>
+        </div>
+        <div class="layout__item u-1/4">
+          <p>1/4</p>
+        </div> 
+      </div>
+      <h2>Reverse (right to left) layout</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-layout--rev : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class="layout layout--rev"&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&hellip;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class="layout layout--rev">
+        <div class=layout__item>
+          <p>1st</p>
+        </div>
+        <div class=layout__item>
+          <p>2nd</p>
+        </div>
+        <div class=layout__item>
+          <p>3rd</p>
+        </div>
+        <div class=layout__item>
+          <p>4th</p>
+        </div>
+      </div>
+      <h2>Vertical centering</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-layout--middle : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class="layout layout--middle"&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&hellip;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class="layout layout--middle">
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <h2>Bottom aligned</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-layout--bottom : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class="layout layout--bottom"&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&hellip;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class="layout layout--bottom">
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <h2>Full height layout</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-layout--full : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class="layout layout--full"&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&hellip;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class="layout layout--full">
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <h2>Mixed vertical alignment</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-layout--full&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: true;
+          <br>
+          $inuit-enable-layout__item--center : true;
+          <br>
+          $inuit-enable-layout__item--bottom : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class="layout layout--full"&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class=layout__item&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item layout__item--center"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item layout__item--bottom"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class="layout layout--full">
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class=layout__item>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="layout__item layout__item--center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="layout__item layout__item--bottom">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <h2>Right aligned</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-layout--right : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class="layout layout--right"&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/6"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/6"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/6"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class="layout layout--right">
+        <div class="layout__item u-1/6">
+          <p>1/6</p>
+        </div>
+        <div class="layout__item u-1/6">
+          <p>1/6</p>
+        </div>
+        <div class="layout__item u-1/6">
+          <p>1/6</p>
+        </div>
+      </div>
+      <h2>Center aligned</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-layout--center : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <div class="code u-mb+">
+        <code>
+          &lt;div class="layout layout--center"&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/6"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/6"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &nbsp;&nbsp;&lt;div class="layout__item u-1/6"&gt;&hellip;&lt;/div&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <div class="layout layout--center">
+        <div class="layout__item u-1/6">
+          <p>1/6</p>
+        </div>
+        <div class="layout__item u-1/6">
+          <p>1/6</p>
+        </div>
+        <div class="layout__item u-1/6">
+          <p>1/6</p>
+        </div>
+      </div>
+    <!-- build:remove -->
+    </section>
+  </body>
+</html>
+<!-- /build -->

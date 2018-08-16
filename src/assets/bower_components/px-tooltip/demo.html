@@ -1,0 +1,199 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>px-tooltip Demo</title>
+        <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+        <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+        <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
+
+        <link rel="import" href="px-tooltip.html"/>
+        <style media="screen">
+            .sample-container {
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sample-container-relative {
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+            }
+            .sample-container-left {
+                width: 250px;
+            }
+            .sample-container-left-relative {
+                width: 250px;
+                position: relative;
+            }
+            .sample-container-right {
+                width: 250px;
+                float: right;
+            }
+            .sample-container-right-relative {
+                width: 250px;
+                float: right;
+                position: relative;
+            }
+            .hover-tooltip {
+                padding: 15px;
+                width: 200px;
+                background-color: gray;
+                color: white;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .test-el {
+                padding:10px;
+                text-align: center;
+                vertical-align: middle;
+                background-color: gray;
+            }
+            
+        </style>
+    </head>
+
+    <body unresolved>
+
+        <h3>Demo</h3>
+
+        <p>
+            Although related, examples are /not/ the same as the test fixtures.
+            Tests are tests, examples are examples.
+        </p>
+
+        <p>
+            Also see the <a href="index.html">documentation</a> and the <a href="test/fixture.html">UI test fixture</a>.
+        </p>
+
+        <p>
+            Hover over the boxes to see tooltips:
+        </p>
+
+        <!-- instance 1, "predix" theme -->
+        <div class="sample-container">
+            <div id="hoverDivTop" class="hover-tooltip">Hover for tooltip<br/><span>(top, 5 sec delay)</span></div>
+            <px-tooltip
+                for="hoverDivTop"
+                orientation="top"
+                delay="5000"
+                tooltip-message="Top tooltip">
+            </px-tooltip>
+            <p></p>
+            <div id="hoverDivBottom" class="hover-tooltip">Hover for tooltip<br/><span>(HTML element, bottom, default delay: 1 sec)</span></div>
+            <px-tooltip for="hoverDivBottom" orientation="bottom">
+                    Bottom tooltip<br>with html<br><div class='test-el'>HTML Div</div>
+            </px-tooltip>
+            <p></p>
+            <div id="hoverDivLeft" class="hover-tooltip">Hover for tooltip<br/><span>(left, delay: 3 sec)</span></div>
+            <px-tooltip
+                for="hoverDivLeft"
+                delay="3000"
+                orientation="left"
+                tooltip-message="Left tooltip">
+            </px-tooltip>
+            <p></p>
+            <div id="hoverDivRight" class="hover-tooltip">Hover for tooltip<br/><span>(right, default delay: 1 sec)</span></div>
+            <px-tooltip
+                for="hoverDivRight"
+                orientation="right"
+                tooltip-message="Right tooltip">
+            </px-tooltip>
+
+            <p></p>
+            <div id="hoverDivObj" class="hover-tooltip">For is an Element elsewhere in the dom
+            </div>
+
+            <p></p>
+            <div id="hoverDivTop6" class="hover-tooltip">Tooltip contains lots of text
+                <px-tooltip
+                    orientation="top"
+                    tooltip-message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet velit non risus pellentesque, id molestie velit varius. Integer ac nulla hendrerit, aliquet mauris vitae, varius augue. Nulla non turpis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur tincidunt tincidunt. Suspendisse vitae turpis libero.">
+                </px-tooltip>
+            </div>
+
+        </div>
+
+
+        <px-tooltip
+            id="elemTooltip"
+            smart-orientation
+            orientation="right"
+            tooltip-message="Element passed in as a for">
+        </px-tooltip>
+        <script>
+          document.addEventListener("WebComponentsReady", function() {
+            var target = Polymer.dom(document).querySelector('#hoverDivObj'),
+                tt = Polymer.dom(document).querySelector('#elemTooltip');
+            tt.set('for',target);
+          });
+        </script>
+
+        <div class="sample-container-left">
+            <div id="hoverDivTop2" class="hover-tooltip">Smart: Hover for tooltip
+                <px-tooltip
+                    smart-orientation
+                    orientation="top"
+                    tooltip-message="Top orientation would go off screen, so uses smart orientation">
+                </px-tooltip>
+            </div>
+        </div>
+
+        <div class="sample-container">
+            <div id="hoverDivTop3" class="hover-tooltip">Hover for tooltip
+                <px-tooltip
+                    smart-orientation
+                    orientation="top"
+                    tooltip-message="Tooltip is on screen, so stays with defined top orientation">
+                </px-tooltip>
+            </div>
+        </div>
+
+        <div class="sample-container-left">
+            <div id="hoverDivTop6" class="hover-tooltip">Smart: Hover for tooltip
+                <px-tooltip
+                    smart-orientation
+                    orientation="left"
+                    tooltip-message="Left orientation would go off screen, so uses smart orientation">
+                </px-tooltip>
+            </div>
+        </div>
+        
+
+        <div class="sample-container-right">
+            <div id="hoverDivTop4" class="hover-tooltip">Smart: Hover for tooltip
+                <px-tooltip
+                    smart-orientation
+                    orientation="top"
+                    tooltip-message="Smart: Top orientation would go off screen, so uses smart orientation">
+                </px-tooltip>
+            </div>
+        </div>
+
+        <div class="sample-container-right">
+            <div id="hoverDivTop5" class="hover-tooltip">Smart: Hover for tooltip
+                <px-tooltip
+                    smart-orientation
+                    orientation="right"
+                    tooltip-message="Right orientation would go off screen, so uses smart orientation">
+                </px-tooltip>
+            </div>
+        </div>
+
+        <p></p>
+        <div class="sample-container-left">
+            <div id="hoverDivTop7" class="hover-tooltip">Smart: Hover for big long text tooltip
+                    <px-tooltip
+                        smart-orientation
+                        orientation="right"
+                        tooltip-message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet velit non risus pellentesque, id molestie velit varius. Integer ac nulla hendrerit, aliquet mauris vitae, varius augue. Nulla non turpis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur tincidunt tincidunt. Suspendisse vitae turpis libero.">
+                    </px-tooltip>
+                </div>
+        </div>
+
+
+    </body>
+</html>

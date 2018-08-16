@@ -1,0 +1,141 @@
+[
+    {
+        "description": "",
+        "commentRange": {
+            "start": 10,
+            "end": 13
+        },
+        "context": {
+            "type": "mixin",
+            "name": "inuit-font-size",
+            "code": "\n    font-size: ($inuit-font-size / $inuit-base-font-size) * 1rem;\n\n    @if $inuit-line-height == auto {\n        line-height: ceil($inuit-font-size / $inuit-base-line-height) * ($inuit-base-line-height / $inuit-font-size);\n    }\n\n    @else {\n\n        @if (type-of($inuit-line-height) == number or $inuit-line-height == inherit or $inuit-line-height == normal) {\n            line-height: $inuit-line-height / $inuit-font-size;\n        }\n\n        @elseif ($inuit-line-height != none and $inuit-line-height != false) {\n            @warn \"D’oh! ‘#{$inuit-line-height}’ is not a valid value for `line-height`.\"\n        }\n\n    }\n\n",
+            "line": {
+                "start": 14,
+                "end": 33
+            }
+        },
+        "parameter": [
+            {
+                "type": "Number",
+                "name": "inuit-font-size",
+                "description": "Font size in pixels"
+            },
+            {
+                "type": "Number",
+                "name": "inuit-line-height",
+                "default": "auto",
+                "description": "Line height in pixels"
+            }
+        ],
+        "output": "Convert pixel font size into rem based, with appropriate line-height.",
+        "group": [
+            "px-mixins-design"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+            "path": "_tools.mixins.scss",
+            "name": "_tools.mixins.scss"
+        }
+    },
+    {
+        "description": "",
+        "commentRange": {
+            "start": 36,
+            "end": 41
+        },
+        "context": {
+            "type": "mixin",
+            "name": "border-right-left",
+            "code": "\n    border-#{$inuit-border-position}: $inuit-border-width $inuit-border-style $inuit-border-color;\n    &:last-child {\n      border-#{$inuit-border-position}-width: 0;\n    }\n    [dir=rtl] & {\n      &:first-child {\n        border-#{$inuit-border-position}-width: 0;\n      }\n      &:last-child {\n        border-#{$inuit-border-position}-width: $inuit-border-width;\n      }\n    }\n",
+            "line": {
+                "start": 42,
+                "end": 55
+            }
+        },
+        "parameter": [
+            {
+                "type": "String",
+                "name": "inuit-border-position",
+                "description": "Left or right border"
+            },
+            {
+                "type": "Color",
+                "name": "inuit-border-color",
+                "default": "inherit",
+                "description": "Border color"
+            },
+            {
+                "type": "Number",
+                "name": "inuit-border-width",
+                "default": "1px",
+                "description": "Border width"
+            },
+            {
+                "type": "String",
+                "name": "inuit-border-style",
+                "description": "CSS border style value"
+            }
+        ],
+        "output": "Switch around horizontal borders when `dir=rtl` in HTML",
+        "group": [
+            "px-mixins-design"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+            "path": "_tools.mixins.scss",
+            "name": "_tools.mixins.scss"
+        }
+    },
+    {
+        "description": "",
+        "commentRange": {
+            "start": 58,
+            "end": 63
+        },
+        "context": {
+            "type": "mixin",
+            "name": "font-face",
+            "code": "\n  @font-face {\n    font-family: $font-family;\n    font-weight: $weight;\n    font-style: $style;\n    src: url('#{$file-path}.eot');\n    src: url('#{$file-path}.eot?#iefix')               format('embedded-opentype'),\n         url('#{$file-path}.woff')                     format('woff'),\n         url('#{$file-path}.ttf')                      format('truetype'),\n         url('#{$file-path}.svg##{$font-family}')      format('svg');\n  }\n",
+            "line": {
+                "start": 64,
+                "end": 75
+            }
+        },
+        "parameter": [
+            {
+                "type": "String",
+                "name": "font-family",
+                "description": "Name of font family @font-face will use"
+            },
+            {
+                "type": "String",
+                "name": "file-path",
+                "description": "Path to webfont file"
+            },
+            {
+                "type": "String",
+                "name": "weight",
+                "default": "normal",
+                "description": "CSS Font weight value"
+            },
+            {
+                "type": "String",
+                "name": "style",
+                "default": "normal",
+                "description": "CSS Font style value"
+            }
+        ],
+        "output": "Generate various required paths etc for use with `@font-face`",
+        "group": [
+            "px-mixins-design"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+            "path": "_tools.mixins.scss",
+            "name": "_tools.mixins.scss"
+        }
+    }
+]

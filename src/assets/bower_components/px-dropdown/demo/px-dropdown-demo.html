@@ -1,0 +1,186 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+<link rel="import" href="../../px-polymer-font-awesome/px-polymer-font-awesome.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-demo/px-demo-header.html" />
+<link rel="import" href="../../px-demo/px-demo-api-viewer.html" />
+<link rel="import" href="../../px-demo/px-demo-footer.html" />
+<link rel="import" href="../../px-demo/px-demo-configs.html" />
+<link rel="import" href="../../px-demo/px-demo-props.html" />
+<link rel="import" href="../../px-demo/px-demo-interactive.html" />
+<link rel="import" href="../../px-demo/px-demo-component-snippet.html" />
+<link rel="import" href="../../px-demo/px-demo-code-editor.html" />
+<link rel="import" href="../../px-demo/css/px-demo-styles.html" />
+
+<!-- Imports for this componnent -->
+<link rel="import" href="../../px-demo/css/px-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="px-dropdown-demo">
+  <template>
+  <style include="px-demo-styles" is="custom-style"></style>
+
+    <!-- Header -->
+    <px-demo-header
+        module-name="px-dropdown"
+        description="Dropdowns have two primary use cases. First, as a form control, drop-down lists are ideal for a user to choose from a preconfigured list of options – ideally, between 5 and 15. If there are fewer than 5 options, consider using a radio button. For very large lists of options, consider adding typeahead functionality in addition to, or instead of, a drop-down. The second primary use case for a drop-down list is as a filter or navigation item, where invoking an option from the drop-down menu results in an action of some kind.">
+    </px-demo-header>
+
+    <!-- Interactive -->
+    <px-demo-interactive>
+      <!-- Configs -->
+      <px-demo-configs configs="[[configs]]" props="{{props}}" chosen-config="{{chosenConfig}}"></px-demo-configs>
+
+      <!-- Props -->
+      <px-demo-props props="{{props}}" config="[[chosenConfig]]"></px-demo-props>
+
+      <!-- Component ---------------------------------------------------------->
+      <px-demo-component>
+        <div style="width:250px;position:absolute;">
+          <px-dropdown
+            display-value="{{props.displayValue.value}}"
+            hide-chevron="{{props.hideChevron.value}}"
+            selected-key="{{props.selectedKey.value}}"
+            prevent-close-on-outside-click="{{props.preventCloseOnOutsideClick.value}}"
+            disabled="{{props.disabled.value}}">
+            <px-dropdown-content extend-dropdown="true" extend-dropdown-by="25" max-cont-character-width="10" items="{{dropdownItems}}" checkbox-mode="{{props.checkboxMode.value}}">
+            </px-dropdown-content>
+          </px-dropdown>
+        </div>
+      </px-demo-component>
+      <!-- END Component ------------------------------------------------------>
+
+      <px-demo-component-snippet
+          element-properties="{{props}}"
+          element-name="px-dropdown"
+          links-includes="[[linksIncludes]]">
+      </px-demo-component-snippet>
+    </px-demo-interactive>
+
+    <!-- API Viewer -->
+    <px-demo-api-viewer source="px-dropdown"></px-demo-api-viewer>
+
+    <!-- Footer -->
+    <px-demo-footer></px-demo-footer>
+
+  </template>
+
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-dropdown-demo',
+
+    properties: {
+      dropdownItems: {
+        type: Array,
+        value: function() {
+          return [
+              {"key":"1", "val": "iPhone"},
+              {"key":"2", "val": "Android"},
+              {"key":"3", "val": "Blackberry"},
+              {"key":"4", "val": "Windows Phone"},
+          {"key":"5", "val": "Flip Phone", "disabled": true}
+        ];
+        }
+      },
+      /**
+       * @property demoProps
+       * @type {Object}
+       */
+      props: {
+        type: Object,
+        value: function(){ return this.demoProps; }
+      },
+
+      /**
+       * @property demoProps
+       * @type {Array}
+       */
+      configs: {
+        type: Array,
+        value: function(){
+          var dropdownItems = [
+              {"key":"1", "val": "iPhone"},
+              {"key":"2", "val": "Android"},
+              {"key":"3", "val": "Blackberry"},
+              {"key":"4", "val": "Windows Phone"},
+              {"key":"5", "val": "Flip Phone", "disabled": true}
+        ];
+
+          return [
+              {
+                configName: "Default",
+                lightDomContent: "<px-dropdown-content extend-dropdown='true' extend-dropdown-by='25' max-cont-character-width='10' items='" + JSON.stringify(dropdownItems) + "'></px-dropdown-content>",
+                disabled: false,
+                checkboxMode: false
+              },
+              {
+                configName: "Checkbox Mode",
+                checkboxMode: true,
+                disabled: false,
+                lightDomContent: "<px-dropdown-content checkbox-mode='true' extend-dropdown='true' extend-dropdown-by='25' max-cont-character-width='10' items='" + JSON.stringify(dropdownItems) + "'></px-dropdown-content>"
+              },
+              {
+                configName: "Disabled",
+                disabled: true,
+                checkboxMode: false,
+                lightDomContent: "<px-dropdown-content checkbox-mode='true' extend-dropdown='true' extend-dropdown-by='25' max-cont-character-width='10' items='" + JSON.stringify(dropdownItems) + "'></px-dropdown-content>"
+              }
+          ];
+        }
+      }
+    },
+
+    /**
+     * A reference for `this.props`. Read the documentation there.
+     */
+    demoProps: {
+      displayValue:{
+        type: String,
+        defaultValue: "Select",
+        inputType: 'text',
+        inputDisabled: true,
+        inputHelpText: 'This value will automatically update when the dropdown selection is changed.'
+      },
+      selectedKey: {
+        type: Number,
+        defaultValue: '',
+        inputType: 'number',
+        inputDisabled: true,
+        inputHelpText: 'This value will automatically update when the dropdown selection is changed.'
+      },
+      disabled: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
+      },
+      above:{
+        type: Boolean,
+        defaultValue: false
+      },
+      hideChevron:{
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
+      },
+      preventCloseOnOutsideClick:{
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
+      },
+      checkboxMode: {
+        type: Boolean,
+        defaultValue: false
+      },
+      lightDomContent: {
+        type: String,
+        defaultValue: "<px-dropdown-content extend-dropdown='true' extend-dropdown-by='25' max-cont-character-width='10' items=\"[{'key':'1','val':'iPhone'},{'key':'2','val':'Android'},{'key':'3','val':'Blackberry'},{'key':'4','val':'Windows Phone'},{'key':'5','val':'Flip Phone','disabled':true}]\"></px-dropdown-content>"
+      }
+    },
+
+    ready: function () {
+
+    }
+  });
+</script>

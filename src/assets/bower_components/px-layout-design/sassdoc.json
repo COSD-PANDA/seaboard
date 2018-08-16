@@ -1,0 +1,444 @@
+[
+    {
+        "description": "Produce CSS for layout with tiny gutters between layout items?\n",
+        "commentRange": {
+            "start": 30,
+            "end": 32
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--tiny",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 33,
+                "end": 33
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for layout with small gutters between layout items?\n",
+        "commentRange": {
+            "start": 35,
+            "end": 37
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--small",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 38,
+                "end": 38
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for layout with large gutters between layout items?\n",
+        "commentRange": {
+            "start": 40,
+            "end": 42
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--large",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 43,
+                "end": 43
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for layout with huge gutters between layout items?\n",
+        "commentRange": {
+            "start": 45,
+            "end": 47
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--huge",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 48,
+                "end": 48
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for layout with no gutters between layout items?\n",
+        "commentRange": {
+            "start": 50,
+            "end": 52
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--flush",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 53,
+                "end": 53
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for layout items reversed?\n",
+        "commentRange": {
+            "start": 55,
+            "end": 57
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--rev",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 58,
+                "end": 58
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to align layout items to the vertical centers of each other?\n",
+        "commentRange": {
+            "start": 60,
+            "end": 62
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--middle",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 63,
+                "end": 63
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to align layout items to the vertical bottoms of each other?\n",
+        "commentRange": {
+            "start": 65,
+            "end": 67
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--bottom",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 68,
+                "end": 68
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to align layout items to all be the same height?\n",
+        "commentRange": {
+            "start": 70,
+            "end": 72
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--full",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 73,
+                "end": 73
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to make layout items fill up from the right hand side?\n",
+        "commentRange": {
+            "start": 75,
+            "end": 77
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--right",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 78,
+                "end": 78
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to make the layout items fill up from the center outward?\n",
+        "commentRange": {
+            "start": 80,
+            "end": 82
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout--center",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 83,
+                "end": 83
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to make an individual layout item fill up the height of its layout?\n",
+        "commentRange": {
+            "start": 85,
+            "end": 87
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout__item--full",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 88,
+                "end": 88
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to make an individual layout item fill up from the center vertically?\n",
+        "commentRange": {
+            "start": 90,
+            "end": 92
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout__item--center",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 93,
+                "end": 93
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Produce CSS to make an individual layout item fill up from the bottom up?\n",
+        "commentRange": {
+            "start": 95,
+            "end": 97
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-layout__item--bottom",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 98,
+                "end": 98
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Set a variable assuming that `box-sizing  : border-box;` is not set globally. If it has been previously been defined, the following variable will be overriden and will be set to `true`.\n",
+        "commentRange": {
+            "start": 100,
+            "end": 102
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-global-border-box",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 103,
+                "end": 103
+            }
+        },
+        "group": [
+            "px-layout-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Prepend value for all generated classes\n",
+        "commentRange": {
+            "start": 20,
+            "end": 22
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-layout-namespace",
+            "value": "$inuit-namespace",
+            "scope": "default",
+            "line": {
+                "start": 23,
+                "end": 23
+            }
+        },
+        "group": [
+            "px-layout-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    },
+    {
+        "description": "Minimum width of individual layout item\n",
+        "commentRange": {
+            "start": 25,
+            "end": 27
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-layout-min-width",
+            "value": "300px",
+            "scope": "default",
+            "line": {
+                "start": 28,
+                "end": 28
+            }
+        },
+        "group": [
+            "px-layout-design:variables:style"
+        ],
+        "type": "Number [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.layout.scss",
+            "name": "_objects.layout.scss"
+        }
+    }
+]
