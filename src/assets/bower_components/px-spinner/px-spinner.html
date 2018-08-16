@@ -1,0 +1,125 @@
+
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs
+    See https://github.com/jreichenberg/grunt-dep-serve#why-do-we-need-this
+-->
+<link rel="import" href="../polymer/polymer.html"/>
+
+
+<!--
+Px-Spinner is a Predix UI component used to indicate when data is being loaded,
+a view is changing, or any place a visual indication is needed to show that work
+is being done for an indefinite period of time.
+
+##### Usage
+
+    <px-spinner size="50" finished></px-spinner>
+
+### Styling
+The following custom properties are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--px-spinner-fill-color` | Fill color for the spinner | `$primary-blue`
+`--px-spinner-background-color` | Background color for the spinner | `$gray4`
+
+
+@element px-spinner
+@blurb Element providing an indication of data or a view loading.
+@homepage index.html
+@demo demo.html
+-->
+<link rel="import" href="css/px-spinner-styles.html">
+<dom-module id="px-spinner">
+  <template>
+    <style include="px-spinner-styles"></style>
+    
+    <div id="Wrapper" class="spinner"></div>
+  </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'px-spinner',
+
+        /**
+         * Properties block, expose attribute values to the DOM via 'reflect'
+         *
+         * @property properties
+         * @type Object
+         */
+        properties: {
+          /**
+           *
+           * This attribute hides the spinner
+           *
+           */
+            finished: {
+                type: Boolean,
+                value: false,
+                reflectToAttribute: true,
+                observer: '_finishedChanged'
+            },
+            /**
+             *
+             * The size, in pixels, of the spinner.
+             * Refers to the inner dimension of the circle - no units necessary.
+             *
+             */
+            size: {
+              type: Number,
+              value: 80,
+              notify: true,
+              observer: '_sizeComponent'
+            }
+        },
+        attached: function() {
+          this._sizeComponent();
+        },
+        /**
+         *
+         * sets the size of the component.
+         *
+         *@method _sizeComponent
+         */
+        _sizeComponent: function() {
+          this.$.Wrapper.style.width = this.size + 'px';
+          this.$.Wrapper.style.height = this.size + 'px';
+
+          // Styling the px-spinner elem so it can be positioned properly
+          this.style.width = this.size + 'px';
+          this.style.height = this.size + 'px';
+        },
+        /**
+         *
+         * This method checks whether the finished attribute is true,
+         * and if it is, hides the element. if it's false, it shows it
+         *
+         */
+        _finishedChanged: function(newValue, oldValue) {
+          (this.finished) ? this.hide() : this.show();
+        },
+
+        /**
+         * Shows the spinner
+         *
+         * @method show
+         */
+        show: function() {
+          // Setting display to '' instead of 'block' allows user defined css to still work
+          this.style.display = '';
+        },
+
+        /**
+         * Hides the spinner
+         *
+         * @method hide
+         */
+        hide: function () {
+          this.style.display = 'none';
+        }
+
+    });
+</script>

@@ -1,0 +1,41 @@
+{
+  "name": "px-meta-lists-design",
+  "version": "0.4.3",
+  "authors": [
+    "General Electric",
+    "Harry Roberts <harry@csswizardry.com>"
+  ],
+  "description": "Shortcut collection of list modules for Predix UI",
+  "main": "_meta.lists.scss",
+  "keywords": [
+    "px",
+    "sass",
+    "lists"
+  ],
+  "homepage": "https://github.com/PredixDev/px-meta-lists-design.git",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf",
+    "*.png"
+  ],
+  "dependencies": {
+    "px-list-bare-design": "^0.3.0",
+    "px-list-inline-design": "^0.3.0",
+    "px-list-ui-design": "^1.1.0"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.3"
+  }
+}

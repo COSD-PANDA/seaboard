@@ -1,0 +1,473 @@
+////
+/// PX-SPACING-DESIGN
+/// Defines micro level margin and padding
+/// @group px-spacing-design
+////
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.u-(m|p)(t|r|b|l|h|v)(-|+|0) {}` = utility - margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+@import "px-defaults-design/_settings.defaults.scss";
+
+/// Prepend value for all generated classes
+/// @group px-spacing-design:variables:style
+/// @type String [default]
+$inuit-spacing-namespace                : $inuit-namespace !default;
+
+/// Produce CSS for default margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins                   : false !default;
+
+/// Produce CSS for tiny margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--tiny             : false !default;
+
+/// Produce CSS for small margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--small            : false !default;
+
+/// Produce CSS for large margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--large            : false !default;
+
+/// Produce CSS for huge margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--huge             : false !default;
+
+/// Produce CSS for default negative margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--negative         : false !default;
+
+/// Produce CSS for tiny negative margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--negative-tiny    : false !default;
+
+/// Produce CSS for small negative margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--negative-small   : false !default;
+
+/// Produce CSS for large negative margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--negative-large   : false !default;
+
+/// Produce CSS for huge negative margin sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--negative-huge    : false !default;
+
+/// Produce CSS for swapping horizontal margins in RTL
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--rtl              : false !default;
+
+/// Produce CSS for zero margins
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-margins--none             : false !default;
+
+/// Produce CSS for default padding sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-paddings                  : false !default;
+
+/// Produce CSS for tiny padding sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-paddings--tiny            : false !default;
+
+/// Produce CSS for small padding sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-paddings--small           : false !default;
+
+/// Produce CSS for large padding sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-paddings--large           : false !default;
+
+/// Produce CSS for huge padding sizes
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-paddings--huge            : false !default;
+
+/// Produce CSS for swapping horizontal paddings in RTL
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-paddings--rtl             : false !default;
+
+/// Produce CSS for zero paddings
+/// @group px-spacing-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-paddings--none            : false !default;
+
+@if ($inuit-enable-margins == true) {
+
+    /**
+     * Margin helper classes.
+     *
+     * Add margins.
+     */
+
+    .#{$inuit-spacing-namespace}u-m       { margin:           $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-mt      { margin-top:       $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-mr      { margin-right:     $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-mb      { margin-bottom:    $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-ml      { margin-left:      $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-mh      { margin-right:     $inuit-base-spacing-unit !important; margin-left:      $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-mv      { margin-top:       $inuit-base-spacing-unit !important; margin-bottom:    $inuit-base-spacing-unit !important; }
+
+}
+
+
+@if ($inuit-enable-margins--tiny == true) {
+
+    /**
+     * Add tiny margins.
+     */
+
+    .#{$inuit-spacing-namespace}u-m--     { margin:           $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-mt--    { margin-top:       $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-mr--    { margin-right:     $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-mb--    { margin-bottom:    $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-ml--    { margin-left:      $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-mh--    { margin-right:     $inuit-base-spacing-unit--tiny !important; margin-left:     $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-mv--    { margin-top:       $inuit-base-spacing-unit--tiny !important; margin-bottom:   $inuit-base-spacing-unit--tiny !important; }
+
+}
+
+
+@if ($inuit-enable-margins--small == true) {
+
+    /**
+     * Add small margins.
+     */
+
+    .#{$inuit-spacing-namespace}u-m-      { margin:           $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-mt-     { margin-top:       $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-mr-     { margin-right:     $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-mb-     { margin-bottom:    $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-ml-     { margin-left:      $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-mh-     { margin-right:     $inuit-base-spacing-unit--small !important; margin-left:   $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-mv-     { margin-top:       $inuit-base-spacing-unit--small !important; margin-bottom: $inuit-base-spacing-unit--small !important; }
+
+}
+
+
+@if ($inuit-enable-margins--large == true) {
+
+    /**
+     * Add large margins.
+     */
+
+    .#{$inuit-spacing-namespace}u-m\00002b     { margin:           $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-mt\00002b    { margin-top:       $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-mr\00002b    { margin-right:     $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-mb\00002b    { margin-bottom:    $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-ml\00002b    { margin-left:      $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-mh\00002b    { margin-right:     $inuit-base-spacing-unit--large !important; margin-left:      $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-mv\00002b    { margin-top:       $inuit-base-spacing-unit--large !important; margin-bottom:    $inuit-base-spacing-unit--large !important; }
+
+}
+
+
+@if ($inuit-enable-margins--huge == true) {
+
+    /**
+     * Add huge margins.
+     */
+
+    .#{$inuit-spacing-namespace}u-m\00002b\00002b   { margin:           $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-mt\00002b\00002b  { margin-top:       $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-mr\00002b\00002b  { margin-right:     $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-mb\00002b\00002b  { margin-bottom:    $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-ml\00002b\00002b  { margin-left:      $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-mh\00002b\00002b  { margin-right:     $inuit-base-spacing-unit--huge !important; margin-left:   $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-mv\00002b\00002b  { margin-top:       $inuit-base-spacing-unit--huge !important; margin-bottom: $inuit-base-spacing-unit--huge !important; }
+
+}
+
+
+@if ($inuit-enable-margins--none == true) {
+
+    /**
+     * Remove margins.
+     */
+
+    .#{$inuit-spacing-namespace}u-m0      { margin:           0 !important; }
+    .#{$inuit-spacing-namespace}u-mt0     { margin-top:       0 !important; }
+    .#{$inuit-spacing-namespace}u-mr0     { margin-right:     0 !important; }
+    .#{$inuit-spacing-namespace}u-mb0     { margin-bottom:    0 !important; }
+    .#{$inuit-spacing-namespace}u-ml0     { margin-left:      0 !important; }
+    .#{$inuit-spacing-namespace}u-mh0     { margin-right:     0 !important; margin-left:      0 !important; }
+    .#{$inuit-spacing-namespace}u-mv0     { margin-top:       0 !important; margin-bottom:    0 !important; }
+
+}
+
+
+@if ($inuit-enable-margins--negative == true) {
+
+    /**
+     * Negative margins.
+     */
+
+    .#{$inuit-spacing-namespace}u--m      { margin:           -$inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u--mt     { margin-top:       -$inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u--mr     { margin-right:     -$inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u--mb     { margin-bottom:    -$inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u--ml     { margin-left:      -$inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u--mh     { margin-right:     -$inuit-base-spacing-unit !important; margin-left:      -$inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u--mv     { margin-top:       -$inuit-base-spacing-unit !important; margin-bottom:    -$inuit-base-spacing-unit !important; }
+
+}
+
+
+@if ($inuit-enable-margins--negative-tiny == true) {
+
+    /**
+     * Tiny negative margins.
+     */
+
+    .#{$inuit-spacing-namespace}u--m--    { margin:           -$inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u--mt--   { margin-top:       -$inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u--mr--   { margin-right:     -$inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u--mb--   { margin-bottom:    -$inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u--ml--   { margin-left:      -$inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u--mh--   { margin-right:     -$inuit-base-spacing-unit--tiny !important; margin-left:     -$inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u--mv--   { margin-top:       -$inuit-base-spacing-unit--tiny !important; margin-bottom:   -$inuit-base-spacing-unit--tiny !important; }
+
+}
+
+
+@if ($inuit-enable-margins--negative-small == true) {
+
+    /**
+     * Small negative margins.
+     */
+
+    .#{$inuit-spacing-namespace}u--m-     { margin:           -$inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u--mt-    { margin-top:       -$inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u--mr-    { margin-right:     -$inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u--mb-    { margin-bottom:    -$inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u--ml-    { margin-left:      -$inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u--mh-    { margin-right:     -$inuit-base-spacing-unit--small !important; margin-left:   -$inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u--mv-    { margin-top:       -$inuit-base-spacing-unit--small !important; margin-bottom: -$inuit-base-spacing-unit--small !important; }
+
+}
+
+
+@if ($inuit-enable-margins--negative-large == true) {
+
+    /**
+     * Large negative margins.
+     */
+
+    .#{$inuit-spacing-namespace}u--m\00002b    { margin:           -$inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u--mt\00002b   { margin-top:       -$inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u--mr\00002b   { margin-right:     -$inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u--mb\00002b   { margin-bottom:    -$inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u--ml\00002b   { margin-left:      -$inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u--mh\00002b   { margin-right:     -$inuit-base-spacing-unit--large !important; margin-left:      -$inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u--mv\00002b   { margin-top:       -$inuit-base-spacing-unit--large !important; margin-bottom:    -$inuit-base-spacing-unit--large !important; }
+
+}
+
+
+@if ($inuit-enable-margins--negative-huge == true) {
+
+    /**
+     * Huge negative margins.
+     */
+
+    .#{$inuit-spacing-namespace}u--m\00002b\00002b  { margin:           -$inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u--mt\00002b\00002b { margin-top:       -$inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u--mr\00002b\00002b { margin-right:     -$inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u--mb\00002b\00002b { margin-bottom:    -$inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u--ml\00002b\00002b { margin-left:      -$inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u--mh\00002b\00002b { margin-right:     -$inuit-base-spacing-unit--huge !important; margin-left:   -$inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u--mv\00002b\00002b { margin-top:       -$inuit-base-spacing-unit--huge !important; margin-bottom: -$inuit-base-spacing-unit--huge !important; }
+
+}
+
+
+@if ($inuit-enable-margins--rtl == true) {
+
+    /**
+     * Switch left and right margins when right-to-left language settings in use.
+     */
+
+    [dir=rtl] {
+      .#{$inuit-spacing-namespace}u-mr        { margin-right: 0 !important;
+                                              margin-left: $inuit-base-spacing-unit !important; }
+      .#{$inuit-spacing-namespace}u-ml        { margin-right: $inuit-base-spacing-unit !important;
+                                              margin-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-mr-       { margin-right: 0 !important;
+                                              margin-left: $inuit-base-spacing-unit--small !important; }
+      .#{$inuit-spacing-namespace}u-ml-       { margin-right: $inuit-base-spacing-unit--small !important;
+                                              margin-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-mr--      { margin-right: 0 !important;
+                                              margin-left: $inuit-base-spacing-unit--tiny !important; }
+      .#{$inuit-spacing-namespace}u-ml--      { margin-right: $inuit-base-spacing-unit--tiny !important;
+                                              margin-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-mr\00002b      { margin-right: 0 !important;
+                                              margin-left: $inuit-base-spacing-unit--large !important; }
+      .#{$inuit-spacing-namespace}u-ml\00002b      { margin-right: $inuit-base-spacing-unit--large !important;
+                                              margin-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-mr\00002b\00002b    { margin-right: 0 !important;
+                                              margin-left: $inuit-base-spacing-unit--huge !important; }
+      .#{$inuit-spacing-namespace}u-ml\00002b\00002b    { margin-right: $inuit-base-spacing-unit--huge !important;
+                                              margin-left: 0 !important; }
+    }
+
+}
+
+
+
+
+
+@if ($inuit-enable-paddings == true) {
+
+    /**
+     * Padding helper classes.
+     *
+     * Add paddings.
+     */
+
+    .#{$inuit-spacing-namespace}u-p       { padding:          $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-pt      { padding-top:      $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-pr      { padding-right:    $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-pb      { padding-bottom:   $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-pl      { padding-left:     $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-ph      { padding-right:    $inuit-base-spacing-unit !important; padding-left:    $inuit-base-spacing-unit !important; }
+    .#{$inuit-spacing-namespace}u-pv      { padding-top:      $inuit-base-spacing-unit !important; padding-bottom:  $inuit-base-spacing-unit !important; }
+
+}
+
+
+@if ($inuit-enable-paddings--tiny == true) {
+
+    /**
+     * Add tiny paddings.
+     */
+
+    .#{$inuit-spacing-namespace}u-p--     { padding:           $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-pt--    { padding-top:       $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-pr--    { padding-right:     $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-pb--    { padding-bottom:    $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-pl--    { padding-left:      $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-ph--    { padding-right:     $inuit-base-spacing-unit--tiny !important; padding-left:      $inuit-base-spacing-unit--tiny !important; }
+    .#{$inuit-spacing-namespace}u-pv--    { padding-top:       $inuit-base-spacing-unit--tiny !important; padding-bottom:    $inuit-base-spacing-unit--tiny !important; }
+
+}
+
+
+@if ($inuit-enable-paddings--small == true) {
+
+    /**
+     * Add small paddings.
+     */
+
+    .#{$inuit-spacing-namespace}u-p-      { padding:           $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-pt-     { padding-top:       $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-pr-     { padding-right:     $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-pb-     { padding-bottom:    $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-pl-     { padding-left:      $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-ph-     { padding-right:     $inuit-base-spacing-unit--small !important; padding-left:    $inuit-base-spacing-unit--small !important; }
+    .#{$inuit-spacing-namespace}u-pv-     { padding-top:       $inuit-base-spacing-unit--small !important; padding-bottom:  $inuit-base-spacing-unit--small !important; }
+
+}
+
+
+@if ($inuit-enable-paddings--large == true) {
+
+    /**
+     * Add large paddings.
+     */
+
+    .#{$inuit-spacing-namespace}u-p\00002b     { padding:           $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-pt\00002b    { padding-top:       $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-pr\00002b    { padding-right:     $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-pb\00002b    { padding-bottom:    $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-pl\00002b    { padding-left:      $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-ph\00002b    { padding-right:     $inuit-base-spacing-unit--large !important; padding-left:   $inuit-base-spacing-unit--large !important; }
+    .#{$inuit-spacing-namespace}u-pv\00002b    { padding-top:       $inuit-base-spacing-unit--large !important; padding-bottom: $inuit-base-spacing-unit--large !important; }
+
+}
+
+
+@if ($inuit-enable-paddings--huge == true) {
+
+    /**
+     * Add huge paddings.
+     */
+
+    .#{$inuit-spacing-namespace}u-p\00002b\00002b   { padding:           $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-pt\00002b\00002b  { padding-top:       $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-pr\00002b\00002b  { padding-right:     $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-pb\00002b\00002b  { padding-bottom:    $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-pl\00002b\00002b  { padding-left:      $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-ph\00002b\00002b  { padding-right:     $inuit-base-spacing-unit--huge !important; padding-left:    $inuit-base-spacing-unit--huge !important; }
+    .#{$inuit-spacing-namespace}u-pv\00002b\00002b  { padding-top:       $inuit-base-spacing-unit--huge !important; padding-bottom:  $inuit-base-spacing-unit--huge !important; }
+
+}
+
+
+@if ($inuit-enable-paddings--none == true) {
+
+    /**
+     * Remove paddings.
+     */
+
+    .#{$inuit-spacing-namespace}u-p0      { padding:          0 !important; }
+    .#{$inuit-spacing-namespace}u-pt0     { padding-top:      0 !important; }
+    .#{$inuit-spacing-namespace}u-pr0     { padding-right:    0 !important; }
+    .#{$inuit-spacing-namespace}u-pb0     { padding-bottom:   0 !important; }
+    .#{$inuit-spacing-namespace}u-pl0     { padding-left:     0 !important; }
+    .#{$inuit-spacing-namespace}u-ph0     { padding-right:    0 !important; padding-left:     0 !important; }
+    .#{$inuit-spacing-namespace}u-pv0     { padding-top:      0 !important; padding-bottom:   0 !important; }
+
+}
+
+
+@if ($inuit-enable-paddings--rtl == true) {
+
+    /**
+     * Switch left and right paddings when right-to-left language settings in use.
+     */
+
+    [dir=rtl] {
+      .#{$inuit-spacing-namespace}u-pr                  { padding-right: 0 !important;
+                                                        padding-left: $inuit-base-spacing-unit !important; }
+      .#{$inuit-spacing-namespace}u-pl                  { padding-right: $inuit-base-spacing-unit !important;
+                                                        padding-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-pr-                 { padding-right: 0 !important;
+                                                        padding-left: $inuit-base-spacing-unit--small !important; }
+      .#{$inuit-spacing-namespace}u-pl-                 { padding-right: $inuit-base-spacing-unit--small !important;
+                                                        padding-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-pr--                { padding-right: 0 !important;
+                                                        padding-left: $inuit-base-spacing-unit--tiny !important; }
+      .#{$inuit-spacing-namespace}u-pl--                { padding-right: $inuit-base-spacing-unit--tiny !important;
+                                                        padding-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-pr\00002b           { padding-right: 0 !important;
+                                                        padding-left: $inuit-base-spacing-unit--large !important; }
+      .#{$inuit-spacing-namespace}u-pl\00002b           { padding-right: $inuit-base-spacing-unit--large !important;
+                                                        padding-left: 0 !important; }
+      .#{$inuit-spacing-namespace}u-pr\00002b\00002b    { padding-right: 0 !important;
+                                                        padding-left: $inuit-base-spacing-unit--huge !important; }
+      .#{$inuit-spacing-namespace}u-pl\00002b\00002b    { padding-right: $inuit-base-spacing-unit--huge !important;
+                                                        padding-left: 0 !important; }
+    }
+
+}

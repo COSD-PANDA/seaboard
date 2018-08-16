@@ -1,0 +1,390 @@
+<script>
+var PxColorsBehavior = PxColorsBehavior || {};
+
+/*
+  Name:
+  PxColorsBehavior.baseColors
+
+  Description:
+  Polymer behavior that provides the basic color definitions
+
+  @polymerBehavior PxColorsBehavior.baseColors
+*/
+PxColorsBehavior.baseColors = {
+  properties: {
+    /**
+     * A key/value map of Predix UI color variable names to their RGB values.
+     *
+     * @property colors
+     * @type {Object}
+     */
+    colors: {
+      type: Object,
+      value: {
+        "black": "rgb(0,0,0)",
+        "grey10": "rgb(27,42,51)",
+        "grey9": "rgb(44,64,76)",
+        "grey8": "rgb(66,88,102)",
+        "grey7": "rgb(89,113,127)",
+        "grey6": "rgb(116,139,153)",
+        "grey5": "rgb(150,168,178)",
+        "grey4": "rgb(182,195,204)",
+        "grey3": "rgb(216,224,229)",
+        "grey2": "rgb(226,232,237)",
+        "grey1": "rgb(240,244,247)",
+        "gray10": "rgb(27,42,51)",
+        "gray9": "rgb(44,64,76)",
+        "gray8": "rgb(66,88,102)",
+        "gray7": "rgb(89,113,127)",
+        "gray6": "rgb(116,139,153)",
+        "gray5": "rgb(150,168,178)",
+        "gray4": "rgb(182,195,204)",
+        "gray3": "rgb(216,224,229)",
+        "gray2": "rgb(226,232,237)",
+        "gray1": "rgb(240,244,247)",
+        "white": "rgb(255,255,255)",
+        "graybg": "rgb(139,141,143)",
+        "primary-blue": "rgb(62,135,232)",
+        "primary-blue-hover": "rgb(53,115,197)",
+        "primary-blue-pressed": "rgb(43,94,162)",
+        "select-blue-default": "rgb(10,158,193)",
+        "select-blue-hover": "rgb(9,134,164)",
+        "select-blue-pressed": "rgb(8,110,135)",
+        "alert-red": "rgb(229,56,56)",
+        "alert-blue": "rgb(67,100,221)",
+        "alert-yellow": "rgb(232,167,54)",
+        "alert-orange": "rgb(221,107,31)",
+        "red": "rgb(227,37,51)",
+        "orange": "rgb(255,152,33)",
+        "yellow": "rgb(255,237,69)",
+        "green": "rgb(70,173,0)",
+        "blue": "rgb(0,92,185)",
+        "purple": "rgb(134,105,255)",
+        "red-light": "rgb(255,92,92)",
+        "orange-light": "rgb(255,187,102)",
+        "yellow-light": "rgb(255,249,141)",
+        "green-light": "rgb(117,216,53)",
+        "blue-light": "rgb(54,147,248)",
+        "purple-light": "rgb(156,151,255)",
+        "red-dark": "rgb(182,18,37)",
+        "yellow-dark": "rgb(255,207,69)",
+        "orange-dark": "rgb(229,92,0)",
+        "green-dark": "rgb(29,95,17)",
+        "blue-dark": "rgb(0,54,110)",
+        "purple-dark": "rgb(89,81,148)"
+      }
+    }
+  }
+};
+
+// Maintain backward compatability by also exporting mixin as `baseColors`
+var baseColors = PxColorsBehavior.baseColors;
+
+/*
+  Name:
+  PxColorsBehavior.dataVisColors
+
+  Description:
+  Polymer behavior that provides the dataVisColors and an order to use them
+
+  @polymerBehavior PxColorsBehavior.dataVisColors
+*/
+PxColorsBehavior.dataVisColors = {
+  properties: {
+    /**
+     * * A key/value map of Predix UI data vis specific color variable names to
+     * their RGB values.
+     *
+     * @property dataVisColors
+     * @type {Object}
+     */
+    dataVisColors: {
+      type: Object,
+      value: {
+        "dv-light-yellow": "rgb(237,221,70)",
+        "dv-dark-blue": "rgb(38,93,171)",
+        "dv-dark-purple": "rgb(123,58,150)",
+        "dv-basic-blue": "rgb(93,165,218)",
+        "dv-light-orange": "rgb(251,178,88)",
+        "dv-dark-orange": "rgb(223,92,36)",
+        "dv-basic-brown": "rgb(178,145,47)",
+        "dv-basic-red": "rgb(241,88,84)",
+        "dv-dark-green": "rgb(5,151,72)",
+        "dv-basic-grey": "rgb(77,77,77)",
+        "dv-light-brown": "rgb(191,165,84)",
+        "dv-dark-yellow": "rgb(199,180,46)",
+        "dv-basic-green": "rgb(96,189,104)",
+        "dv-light-pink": "rgb(246,170,201)",
+        "dv-basic-gray": "rgb(77,77,77)",
+        "dv-basic-orange": "rgb(250,164,58)",
+        "dv-light-green": "rgb(144,205,151)",
+        "dv-dark-pink": "rgb(229,18,111)",
+        "dv-basic-purple": "rgb(178,118,178)",
+        "dv-dark-red": "rgb(203,32,39)",
+        "dv-basic-pink": "rgb(241,124,176)",
+        "dv-light-gray": "rgb(140,140,140)",
+        "dv-light-red": "rgb(240,126,110)",
+        "dv-light-blue": "rgb(136,189,230)",
+        "dv-light-grey": "rgb(140,140,140)",
+        "dv-dark-brown": "rgb(157,114,42)",
+        "dv-light-purple": "rgb(188,153,199)",
+        "dv-basic-yellow": "rgb(222,207,63)",
+        "dv-dark-gray": "rgb(0,0,0)",
+        "dv-dark-grey": "rgb(0,0,0)"
+      }
+    },
+
+    /**
+     * Defines an order that colors should be used in for multiple series.
+     *
+     * @property seriesColorOrder
+     * @type {Array}
+     */
+    seriesColorOrder: {
+      type: Array,
+      value: [
+        "dv-basic-blue",
+        "dv-basic-orange",
+        "dv-basic-green",
+        "dv-basic-pink",
+        "dv-basic-brown",
+        "dv-basic-purple",
+        "dv-basic-yellow",
+        "dv-basic-red",
+        "dv-basic-gray",
+        "dv-light-blue",
+        "dv-light-orange",
+        "dv-light-green",
+        "dv-light-pink",
+        "dv-light-brown",
+        "dv-light-purple",
+        "dv-light-yellow",
+        "dv-light-red",
+        "dv-light-gray",
+        "dv-dark-blue",
+        "dv-dark-orange",
+        "dv-dark-green",
+        "dv-dark-pink",
+        "dv-dark-brown",
+        "dv-dark-purple",
+        "dv-dark-yellow",
+        "dv-dark-red"
+      ]
+    }
+  }
+};
+
+// Maintain backward compatability by also exporting mixin as `dataVisColors`
+var dataVisColors = PxColorsBehavior.dataVisColors;
+
+/*
+  Name:
+  PxColorsBehavior.commonColors
+
+  Description:
+  Polymer behavior that provides the basic color definitions. Colors match (and are generated from) px-colors-design SCSS.
+  This allows access to the color definitions in javascript for applications where CSS is not ideal.
+
+
+  @polymerBehavior PxColorsBehavior.commonColors
+*/
+PxColorsBehavior.commonColors = [PxColorsBehavior.dataVisColors, PxColorsBehavior.baseColors];
+
+// Maintain backward compatability by also exporting mixin as `commonColors`
+var commonColors = PxColorsBehavior.commonColors;
+
+/*
+  Name:
+  PxColorsBehavior.dataVisColorTheming
+
+  Description:
+  Attempts to read data vis color theme from CSS style variables or default
+  values and apply to the visualization element.
+
+  @polymerBehavior PxColorsBehavior.dataVisColorTheming
+*/
+PxColorsBehavior.dataVisColorTheming = [{
+    ready: function() {
+      // To access any available CSS theming variables, we need to wait for the
+      // first animation frame to complete
+      window.requestAnimationFrame(this.syncCSSTheme.bind(this));
+    },
+
+    /**
+     * Retrieves the CSS style variables set on this element and applies them
+     * to the appropriate properties, triggering a redraw.
+     *
+     * @method syncCSSTheme
+     */
+    syncCSSTheme: function() {
+      // FIXME Aggressive debounce for simple charts. Look in solving the issue so we can reduce/remove this debounce.
+      this.debounce('syncCSSTheme', this._debounceSyncCSSTheme, 100);
+    },
+
+    /**
+     * Debounced function call for `syncCSSTheme` method. Loops through available
+     * style variables to apply them to appropriate objects.
+     *
+     * @private
+     * @method _debounceSyncCSSTheme
+     */
+    _debounceSyncCSSTheme: function() {
+      var firstThemedColor = this.getComputedStyleValue('--px-vis-series-color-0');
+
+      // If there's a theme color set, attempt to get all CSS style variables
+      // and prepare to apply them.
+      if (firstThemedColor) {
+        this._applyStyleVariables();
+      }
+      // Otherwise, apply our default colors
+      else {
+        this._applyDefaultStyleVariables();
+      };
+
+      this.dispatchEvent(new CustomEvent('px-data-vis-colors-applied'));
+    },
+
+    /**
+     * Called when there is at least one style variable applied (the first is
+     * expected to be named `--px-vis-series-color-0`). Loops through each
+     * style variable in the format `--px-vis-series-color-[n]` and applies
+     * the resulting values and series color order to the element. Stops looping
+     * through style variables when it finds a gap.
+     *
+     * @private
+     * @method _applyStyleVariables
+     */
+    _applyStyleVariables: function() {
+      var variableBase = '--px-vis-series-color-';
+      var newColors = {};
+      var seriesColorOrder = [];
+      var index = 0;
+      var stop = false;
+      var currentColor;
+      var dataVisColorsKeys = Object.keys(this.dataVisColors);
+
+      //copy colors we already have
+      for (i = 0, length = dataVisColorsKeys.length; i < length; i++) {
+        newColors[dataVisColorsKeys[i]] = this.dataVisColors[dataVisColorsKeys[i]];
+      };
+
+      //check if the developer passed in their own seriesColorOrder
+      var devSet = this._checkIfDevSetSeriesColorOrder();
+
+      // Loop over style variables until a gap is found
+      while (!stop) {
+        currentColor = this.getComputedStyleValue('--px-vis-series-color-' + index);
+
+        if (!currentColor) {
+          // No more colors found, break out of while loop
+          stop = true;
+        };
+
+        if (currentColor) {
+          // Ensure the color is converted to RGB
+          currentColor = currentColor[0] === '#' ? this._colorHexToRgb(currentColor) : currentColor;
+
+          // Store values to set later
+          newColors['pxVisSeriesColor' + index] = currentColor;
+
+          if(!devSet) {
+            seriesColorOrder.push('pxVisSeriesColor' + index);
+          }
+        };
+
+        // Iterate index so we continue to get style variables
+        index++;
+      };
+
+      // Set properties on self to new values
+      // @TODO Use batch update in Polymer 2.0
+      this.set('dataVisColors', newColors);
+
+      if(!devSet) {
+        this.set('seriesColorOrder', seriesColorOrder);
+      }
+    },
+
+    /**
+     * Called when there are no style variables applied. Collects the default
+     * data vis colors and sets the `dataVisColors` and `seriesColorOrder`
+     * properties.
+     *
+     * @private
+     * @method _applyDefaultStyleVariables
+     */
+    _applyDefaultStyleVariables: function() {
+      var newColors = {};
+      var newOrder = [];
+      var dataVisColorsKeys = Object.keys(this.dataVisColors);
+      var i;
+      var length;
+
+      //check if the developer passed in their own seriesColorOrder
+      var devSet = this._checkIfDevSetSeriesColorOrder();
+
+      for (i = 0, length = dataVisColorsKeys.length; i < length; i++) {
+        newColors[dataVisColorsKeys[i]] = this.dataVisColors[dataVisColorsKeys[i]];
+        newColors['pxVisSeriesColor' + i] = this.dataVisColors[dataVisColorsKeys[i]];
+      };
+
+      if(!devSet) {
+        var updatedDataVisColorsKeys = Object.keys(newColors);
+        for (i = 0, length = this.seriesColorOrder.length; i < length; i++) {
+          var visIndex = dataVisColorsKeys.indexOf(this.seriesColorOrder[i]);
+          newOrder[i] = 'pxVisSeriesColor' + visIndex;
+        };
+
+        // Set properties on self to new values
+        // @TODO Use batch update in Polymer 2.0
+        this.set('seriesColorOrder', newOrder);
+      }
+
+      this.set('dataVisColors', newColors);
+    },
+
+    /**
+     * Converts a hex-format color to RGB.
+     *
+     * @private
+     * @method _colorHexToRgb
+     * @param {String} hex - A color in hex format
+     * @return {String} - A color in RGB format
+     */
+    _colorHexToRgb: function(hex) {
+      // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+      var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+      hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+        return r + r + g + g + b + b;
+      });
+      var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      return result ? 'rgb(' + parseInt(result[1], 16) + ',' +
+                               parseInt(result[2], 16)+ ',' +
+                               parseInt(result[3], 16) + ')' : null;
+    },
+
+    /**
+     * Compares seriesColorOrder property value to the seriesColorOrder to determine if the dev set their own override.
+     *
+     * @private
+     * @method _checkIfDevSetSeriesColorOrder
+     * @return {Boolean} - true if dev set seriesColorOrder
+     */
+    _checkIfDevSetSeriesColorOrder: function() {
+      var defaultOrder = dataVisColors.properties.seriesColorOrder.value;
+
+      if(defaultOrder.length !== this.seriesColorOrder.length) {
+        return true;
+      }
+
+      for(var i = 0; i < defaultOrder.length; i++) {
+        if(defaultOrder[i] !== this.seriesColorOrder[i]) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+
+}, PxColorsBehavior.commonColors];
+</script>

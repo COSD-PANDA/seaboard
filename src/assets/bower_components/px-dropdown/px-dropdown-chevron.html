@@ -1,0 +1,122 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs
+-->
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="../px-polymer-font-awesome/polymer-font-awesome.html" />
+
+
+<!--
+Element providing a chevron for the px-dropdown element.
+
+##### Usage
+
+```
+    <px-dropdown-chevron class="px-dropdown-chevron"></px-dropdown-chevron>
+```
+### Styling
+The following custom properties are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--px-dropdown-chevron-color` | chevron color  | `$black`
+`--px-dropdown-chevron-color--hover` | chevron color when hovered over | `$black`
+`--px-dropdown-chevron-color--pressed` | chevron color when pressed | `$black`
+`--px-dropdown-chevron-color--disabled` | chevron color when disabled | `$gray4`
+`--px-dropdown-chevron-color--opened` | chevron color when opened | `$black`
+
+@element px-dropdown-chevron
+@blurb Element which, when clicked, opens the px-dropdown-content element.
+@homepage index.html
+@demo demo.html
+-->
+<link rel="import" href="css/px-dropdown-chevron-styles.html">
+
+<dom-module id="px-dropdown-chevron">
+  <template>
+    <style include="px-dropdown-chevron-styles"></style>
+    <div class$="{{_chevronClass(hover, opened)}} px-dropdown-chevron" id="trigger">
+      <iron-icon icon="fa:fa-angle-down" class$="{{_chevronClass(hover, opened)}} angle-down"></iron-icon>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'px-dropdown-chevron',
+    properties:{
+      /**
+       * Boolean which reflects whether the chevron is being hovered over.
+       *
+       * @prop hover
+       * @type Boolean
+       * @default false
+       * @notify true
+       */
+      hover: {
+        type: Boolean,
+        value: false,
+        notify: true
+      },
+      /**
+       * Boolean which reflects whether the menu is open.
+       *
+       * @prop opened
+       * @type Boolean
+       * @default false
+       * @notify true
+       */
+      opened: {
+        type: Boolean,
+        value: false,
+        notify: true
+      }
+    },
+    listeners: {
+      'hoverOff': '_manipulateHoverOff',
+      'hoverOn': '_manipulateHoverOn',
+      'opened': '_manipulateOpened'
+    },
+    /**
+     * this function flips the opened flag, and changes the class for the component
+     *
+     *
+     * @method _manipulateOpened
+     */
+    _manipulateOpened: function(evt) {
+      evt.stopPropagation();
+      this.opened = !this.opened;
+    },
+    /**
+     * this function sets the hover flag to false, and changes the class for the component
+     *
+     * @method _manipulateHoverOff
+     */
+    _manipulateHoverOff: function(evt) {
+      evt.stopPropagation();
+      this.hover = false;
+    },
+    /**
+     * this function sets the hover flag to true, and changes the class for the component
+     *
+     * @method _manipulateHoverOn
+     */
+    _manipulateHoverOn: function(evt) {
+      evt.stopPropagation();
+      this.hover = true;
+    },
+    /**
+     * This method add either the opened or hover class.
+     *
+     * @method _chevronClass
+     */
+    _chevronClass: function() {
+      if (this.opened) {
+        return "opened";
+      } else if (this.hover) {
+        return "hover";
+      }
+    }
+  });
+</script>
