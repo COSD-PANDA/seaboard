@@ -59,9 +59,8 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-26'
-date_modified: '2016-09-16'
+date_modified: '2018-08-28'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Fire and EMS calls dispatched by the San Diego Fire Communications Center.
-This is a list of incidents only that they fire department has been dispatched to.
+Fire and EMS calls dispatched by the San Diego Fire Communications Center. This list includes a generalized problem description to protect patient information.
