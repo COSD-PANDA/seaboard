@@ -8,13 +8,25 @@ category:
 resources:
   - name: Parking meters transactions - Year-to-date (raw)
     url: >-
-      http://seshat.datasd.org/parking_meters/treas_parking_payments_2017_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_parking_payments_2018_datasd.csv
     format: csv
   - name: Parking meters transactions - Year-to-date (aggregated by day)
     url: >-
-      http://seshat.datasd.org/parking_meters/treas_meters_2017_pole_by_mo_day_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_mo_day_datasd.csv
     format: csv
   - name: Parking meters transactions - Year-to-date (aggregated by month)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_month_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2017 (raw)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_parking_payments_2017_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2017 (aggregated by day)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2017_pole_by_mo_day_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2017 (aggregated by month)
     url: >-
       http://seshat.datasd.org/parking_meters/treas_meters_2017_pole_by_month_datasd.csv
     format: csv
@@ -48,7 +60,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'
-date_modified: '2017-12-30'
+date_modified: '2018-09-10'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
