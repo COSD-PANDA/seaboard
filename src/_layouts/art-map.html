@@ -89,7 +89,7 @@ function drawMap(){
           artWork[i].artwork.sort(compare);
           for (j=0;j<noPieces;j++) {
             popupContent += '<p><i>'+artWork[i].artwork[j].name+'</i><br>'+artWork[i].artwork[j].artist;
-            if (artWork[i].artwork[j].add_location) {
+            if (artWork[i].artwork[j].add_location != '') {
               popupContent += '<br>'+artWork[i].artwork[j].add_location+'</p>';
             } else {
               popupContent += '</p>';
@@ -158,6 +158,7 @@ function drawMap(){
       }
 
       var facility_parts = facility.split(':');
+      
       var loc_details = "";
       var facility_name = facility_parts[2].trim();
       
@@ -174,7 +175,7 @@ function drawMap(){
     
       if (coordsCheck === -1) {
         coordsUnique.push(latlngStr);
-        art.push({location:facility_name,latlng:latlng,artwork:[{name:name, artist:artist, appt:apptDisplay}]});
+        art.push({location:facility_name,latlng:latlng,artwork:[{name:name, artist:artist, appt:apptDisplay, add_location: loc_details}]});
       } else {
         art[coordsCheck].artwork.push({name:name, artist:artist, appt:apptDisplay, add_location:loc_details});
       }
