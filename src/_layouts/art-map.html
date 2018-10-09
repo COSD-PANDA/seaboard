@@ -40,7 +40,7 @@
 <script defer src="{{ site.baseurl }}/assets/bower_components/bootstrap/js/collapse.js"></script>
 
 <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script src="https://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 
 <script>
   window.onload = function(){
@@ -157,19 +157,22 @@ function drawMap(){
         var apptDisplay = "No"
       }
 
-      var facility_parts = facility.split(':');
-      
-      var loc_details = "";
-      var facility_name = facility_parts[2].trim();
-      
-      if (facility_parts.length > 3) {
-        facility_name += '<br>'+facility_parts[3].trim();
-      }
+      if (facility != "") {
+        
+        var facility_parts = facility.split(':');
+        
+        var loc_details = "";
+        var facility_name = facility_parts[2].trim();
+        
+        if (facility_parts.length > 3) {
+          facility_name += '<br>'+facility_parts[3].trim();
+        }
 
-      if (facility_parts.length >= 4) {
-        for (f=4;f<facility_parts.length;f++){
-            loc_details += facility_parts[f].trim()
-            loc_details += '<br>'
+        if (facility_parts.length >= 4) {
+          for (f=4;f<facility_parts.length;f++){
+              loc_details += facility_parts[f].trim()
+              loc_details += '<br>'
+          }
         }
       }
     
