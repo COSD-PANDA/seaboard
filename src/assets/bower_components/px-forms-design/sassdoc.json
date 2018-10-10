@@ -1,0 +1,1016 @@
+[
+    {
+        "description": "Generates the CSS for one line form fields\n\n",
+        "commentRange": {
+            "start": 195,
+            "end": 198
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-inline-fields",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 199,
+                "end": 199
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Generates the CSS for bare text-inputs\n\n",
+        "commentRange": {
+            "start": 201,
+            "end": 204
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-text-input--bare",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 205,
+                "end": 205
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Generates the CSS for field validation\n\n",
+        "commentRange": {
+            "start": 207,
+            "end": 210
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-validation-states",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 211,
+                "end": 211
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Generates the CSS for tiny inputs\n\n",
+        "commentRange": {
+            "start": 213,
+            "end": 216
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-input--tiny",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 217,
+                "end": 217
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Generates the CSS for small inputs\n\n",
+        "commentRange": {
+            "start": 219,
+            "end": 222
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-input--small",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 223,
+                "end": 223
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Generates the CSS for regular inputs\n\n",
+        "commentRange": {
+            "start": 225,
+            "end": 228
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-input--regular",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 229,
+                "end": 229
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Generates the CSS for large inputs\n\n",
+        "commentRange": {
+            "start": 231,
+            "end": 234
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-input--large",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 235,
+                "end": 235
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Generates the CSS for huge inputs\n\n",
+        "commentRange": {
+            "start": 237,
+            "end": 240
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-input--huge",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 241,
+                "end": 241
+            }
+        },
+        "group": [
+            "px-forms-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets a prepended namespace for all generated classes.\n\n",
+        "commentRange": {
+            "start": 9,
+            "end": 12
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-namespace",
+            "value": "$inuit-namespace",
+            "scope": "default",
+            "line": {
+                "start": 13,
+                "end": 13
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "String [default] - Prepend value for all generated classes",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Font color\n\n",
+        "commentRange": {
+            "start": 15,
+            "end": 18
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-color",
+            "value": "$black",
+            "scope": "default",
+            "line": {
+                "start": 19,
+                "end": 19
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Placeholder font color\n\n",
+        "commentRange": {
+            "start": 21,
+            "end": 24
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-color--placeholder",
+            "value": "$gray5",
+            "scope": "default",
+            "line": {
+                "start": 25,
+                "end": 25
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default] -",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Background color\n\n",
+        "commentRange": {
+            "start": 27,
+            "end": 30
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-background",
+            "value": "$gray2",
+            "scope": "default",
+            "line": {
+                "start": 31,
+                "end": 31
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default] - Background color",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Inner border string\n\n",
+        "commentRange": {
+            "start": 33,
+            "end": 36
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-border--inner",
+            "value": "inset 0 0 0 1px $gray3",
+            "scope": "default",
+            "line": {
+                "start": 37,
+                "end": 37
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color | String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Outer border string\n\n",
+        "commentRange": {
+            "start": 39,
+            "end": 42
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-border--outer",
+            "value": "1px solid $gray5",
+            "scope": "default",
+            "line": {
+                "start": 43,
+                "end": 43
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color | String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Focused inner border string\n\n",
+        "commentRange": {
+            "start": 45,
+            "end": 48
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-border--inner--focused",
+            "value": "inset 0 0 0 1px $gray4",
+            "scope": "default",
+            "line": {
+                "start": 49,
+                "end": 49
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color | String [default] - Focused inner border string",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Focused outer border color\n\n",
+        "commentRange": {
+            "start": 51,
+            "end": 54
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-border--outer--focused",
+            "value": "$select-blue-default",
+            "scope": "default",
+            "line": {
+                "start": 55,
+                "end": 55
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Disable font color\n\n",
+        "commentRange": {
+            "start": 57,
+            "end": 60
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-color--disabled",
+            "value": "$gray5",
+            "scope": "default",
+            "line": {
+                "start": 61,
+                "end": 61
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Disabled backgroundn color\n\n",
+        "commentRange": {
+            "start": 63,
+            "end": 66
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-background--disabled",
+            "value": "$gray1",
+            "scope": "default",
+            "line": {
+                "start": 67,
+                "end": 67
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Disabled border string\n\n",
+        "commentRange": {
+            "start": 69,
+            "end": 72
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-border--disabled",
+            "value": "1px solid $gray3",
+            "scope": "default",
+            "line": {
+                "start": 73,
+                "end": 73
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color | String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Readonly font color\n\n",
+        "commentRange": {
+            "start": 75,
+            "end": 78
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-color--readonly",
+            "value": "$gray5",
+            "scope": "default",
+            "line": {
+                "start": 79,
+                "end": 79
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Readonnly background color\n\n",
+        "commentRange": {
+            "start": 81,
+            "end": 84
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-background--readonly",
+            "value": "$white",
+            "scope": "default",
+            "line": {
+                "start": 85,
+                "end": 85
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Readonly border string\n\n",
+        "commentRange": {
+            "start": 87,
+            "end": 90
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-border--readonly",
+            "value": "1px solid $gray3",
+            "scope": "default",
+            "line": {
+                "start": 91,
+                "end": 91
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color | String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Help font color\n\n",
+        "commentRange": {
+            "start": 93,
+            "end": 96
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-color--help",
+            "value": "$gray7",
+            "scope": "default",
+            "line": {
+                "start": 97,
+                "end": 97
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown background color\n\n",
+        "commentRange": {
+            "start": 99,
+            "end": 102
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-background",
+            "value": "$gray3",
+            "scope": "default",
+            "line": {
+                "start": 103,
+                "end": 103
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown font color\n\n",
+        "commentRange": {
+            "start": 105,
+            "end": 108
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-color",
+            "value": "$gray9",
+            "scope": "default",
+            "line": {
+                "start": 109,
+                "end": 109
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown chevron font color\n\n",
+        "commentRange": {
+            "start": 111,
+            "end": 114
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-color-svg",
+            "value": "\"#{$gray9}\"",
+            "scope": "default",
+            "line": {
+                "start": 115,
+                "end": 115
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown dark shadow\n\n",
+        "commentRange": {
+            "start": 117,
+            "end": 120
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-shadow--dark",
+            "value": "0 1px 0 rgba($black, .1)",
+            "scope": "default",
+            "line": {
+                "start": 121,
+                "end": 121
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color | String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown light shadow\n\n",
+        "commentRange": {
+            "start": 123,
+            "end": 126
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-shadow--light",
+            "value": "0 1px 0 rgba($black, .1)",
+            "scope": "default",
+            "line": {
+                "start": 127,
+                "end": 127
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color | String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown disabled font color\n\n",
+        "commentRange": {
+            "start": 129,
+            "end": 132
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-color--disabled",
+            "value": "$gray4",
+            "scope": "default",
+            "line": {
+                "start": 133,
+                "end": 133
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown disabled chevron font color\n\n",
+        "commentRange": {
+            "start": 135,
+            "end": 138
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-color-svg--disabled",
+            "value": "\"#{$gray4}\"",
+            "scope": "default",
+            "line": {
+                "start": 139,
+                "end": 139
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown disabled background color\n\n",
+        "commentRange": {
+            "start": 141,
+            "end": 144
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-background--disabled",
+            "value": "$white",
+            "scope": "default",
+            "line": {
+                "start": 145,
+                "end": 145
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown hover background color\n\n",
+        "commentRange": {
+            "start": 147,
+            "end": 150
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-background--hover",
+            "value": "$gray5",
+            "scope": "default",
+            "line": {
+                "start": 151,
+                "end": 151
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown hover border color\n\n",
+        "commentRange": {
+            "start": 153,
+            "end": 156
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-border--hover",
+            "value": "$gray6",
+            "scope": "default",
+            "line": {
+                "start": 157,
+                "end": 157
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown pressed background color\n\n",
+        "commentRange": {
+            "start": 159,
+            "end": 162
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-background--pressed",
+            "value": "$gray6",
+            "scope": "default",
+            "line": {
+                "start": 163,
+                "end": 163
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Select dropdown pressed border color\n\n",
+        "commentRange": {
+            "start": 165,
+            "end": 168
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-border--pressed",
+            "value": "$gray7",
+            "scope": "default",
+            "line": {
+                "start": 169,
+                "end": 169
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Multiple select background color\n\n",
+        "commentRange": {
+            "start": 171,
+            "end": 174
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-select-multiple-background",
+            "value": "$gray1",
+            "scope": "default",
+            "line": {
+                "start": 175,
+                "end": 175
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Validation warning color\n\n",
+        "commentRange": {
+            "start": 177,
+            "end": 180
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-validation-warning",
+            "value": "$alert-orange",
+            "scope": "default",
+            "line": {
+                "start": 181,
+                "end": 181
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Validation error color\n\n",
+        "commentRange": {
+            "start": 183,
+            "end": 186
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-validation-error",
+            "value": "$alert-red",
+            "scope": "default",
+            "line": {
+                "start": 187,
+                "end": 187
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    },
+    {
+        "description": "Sets the forms Validation success color\n\n",
+        "commentRange": {
+            "start": 189,
+            "end": 192
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-forms-validation-success",
+            "value": "$green",
+            "scope": "default",
+            "line": {
+                "start": 193,
+                "end": 193
+            }
+        },
+        "group": [
+            "px-forms-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.forms.scss",
+            "name": "_base.forms.scss"
+        }
+    }
+]

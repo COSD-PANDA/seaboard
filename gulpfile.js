@@ -107,12 +107,12 @@ gulp.task("styles", function () {
 gulp.task("images", function () {
   return gulp.src("src/assets/img/**/*")
     .pipe($.changed("site/assets/img"))
-    .pipe($.imagemin({
+    /*.pipe($.imagemin({
       // Lossless conversion to progressive JPGs
       progressive: true,
       // Interlace GIFs for progressive rendering
       interlaced: true
-    }))
+    }))*/
     .pipe(gulp.dest("site/assets/img"))
     .pipe($.size({title: "img"}));
 });

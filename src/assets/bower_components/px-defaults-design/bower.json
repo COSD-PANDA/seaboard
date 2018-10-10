@@ -1,0 +1,41 @@
+{
+  "name": "px-defaults-design",
+  "version": "1.0.6",
+  "authors": [
+    "General Electric",
+    "Harry Roberts"
+  ],
+  "description": "The defaults module contains variables and settings that are required for using nearly all Predix UI CSS modules.",
+  "main": "_settings.defaults.scss",
+  "keywords": [
+    "PXd",
+    "Sass",
+    "defaults"
+  ],
+  "homepage": "https://github.com/PredixDev/px-defaults-design.git",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf",
+    "*.png",
+    "CONTRIBUTING.md",
+    "LICENSE.md"
+  ],
+  "dependencies": {
+    "px-functions-design": "^1.0.0"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^1.0.0",
+    "px-sass-doc": "^1.0.0"
+  }
+}

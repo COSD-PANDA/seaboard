@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Working with AngularJS example</title>
+    <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link href="../polymer/polymer.html" rel="import">
+    <link rel="import" href="px-dropdown.html" />
+    <link rel="import" href="px-dropdown-chevron.html" />
+    <link rel="import" href="px-dropdown-content.html" />
+    <link rel="import" href="px-dropdown-text.html" />
+    <link rel="import" href="../px-theme/px-theme.html" />
+    <script data-require="angular.js@1.5.x" src="https://code.angularjs.org/1.5.3/angular.js" data-semver="1.4.9"></script>
+    <script src="https://rawgit.com/robdodson/angular-poly-grip/master/poly-grip.js"></script>
+    <script>
+      var app = angular.module('demo', ['robdodson.poly-grip']);
+
+      app.controller('MainCtrl', function() {
+        this.list = '[{"val": "One", "checked": "true"}, {"val": "Two"}, {"val": "Three", "checked": "true"}, {"val": "Four"}, {"val": "Five"}]';
+        this.selecteditem = '';
+      });
+    </script>
+  </head>
+
+  <body ng-controller="MainCtrl as main">
+    <px-dropdown poly-grip display-value="Bound to angular demo" value="{{main.selecteditem}}">
+      <px-dropdown-content  class="px-dropdown-content" extend-dropdown="true" extend-dropdown-by="25"
+                           max-cont-character-width="10" items="{{main.list}}">
+      </px-dropdown-content>
+    </px-dropdown>
+    <br />
+    <span>Selected item is: {{main.selecteditem}}</span>
+  </body>
+
+</html>

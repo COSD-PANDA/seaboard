@@ -1,0 +1,39 @@
+{
+  "name": "px-forms-design",
+  "version": "1.2.3",
+  "authors": [
+    "General Electric",
+    "Nathan Smith"
+  ],
+  "description": "Base form styles for Predix Experience",
+  "main": "_base.forms.scss",
+  "keywords": [
+    "px",
+    "sass",
+    "forms"
+  ],
+  "homepage": "https://github.com/PredixDev/px-forms-design.git",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf"
+  ],
+  "dependencies": {
+    "px-colors-design": "^0.3.0",
+    "px-defaults-design": "^1.0.2"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.3"
+  }
+}

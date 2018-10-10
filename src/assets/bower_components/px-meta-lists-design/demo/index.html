@@ -1,0 +1,49 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+<link rel="import" href="../css/px-meta-lists-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <!-- 0: Import the styles-->
+    <style include="px-meta-lists-design-demo-styles" is="custom-style"></style>
+
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-meta-lists-design"
+  description="The Meta Lists module is a shortcut collection of all Predix UI list related modules - that is, it automatically imports the three dependent libraries (list-bare, list-inline, and list-ui)."
+  layer="meta"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-list-bare-design",
+    "https://github.com/PredixDev/px-list-inline-design",
+    "https://github.com/PredixDev/px-list-ui-design"
+  ]'
+  selected-options="{{selectedOptions}}"
+  hide-demo-container="true">
+
+<!-- 2: Set Options -->
+<!-- N/A -->
+
+<!-- 3: Make HTML Demo -->
+<!-- N/A -->
+
+<!-- 4: Set Import Slot -->
+<!-- N/A -->
+
+<!-- 5: Set Usage HTML -->
+<!-- N/A -->
+
+</px-sass-doc>
+</template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'local-element-demo'
+  });
+</script>

@@ -1,0 +1,170 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+<link rel="import" href="../../px-polymer-font-awesome/px-polymer-font-awesome.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-demo/px-demo-header.html" />
+<link rel="import" href="../../px-demo/px-demo-api-viewer.html" />
+<link rel="import" href="../../px-demo/px-demo-footer.html" />
+<link rel="import" href="../../px-demo/px-demo-configs.html" />
+<link rel="import" href="../../px-demo/px-demo-props.html" />
+<link rel="import" href="../../px-demo/px-demo-interactive.html" />
+<link rel="import" href="../../px-demo/px-demo-component-snippet.html" />
+<link rel="import" href="../../px-demo/px-demo-code-editor.html" />
+<link rel="import" href="../../px-demo/css/px-demo-styles.html" />
+
+<!-- Imports for this component -->
+<link rel="import" href="../../px-demo/css/px-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="px-dropdown-content-demo">
+  <template>
+  <style include="px-demo-styles" is="custom-style"></style>
+
+    <!-- Header -->
+    <px-demo-header
+        module-name="px-dropdown-content"
+        description="px-dropdown-content is a sub-component of px-dropdown, and displays the list of items passed into the component."
+        hide-shields="true">
+    </px-demo-header>
+
+    <!-- Interactive -->
+    <px-demo-interactive>
+      <!-- Configs -->
+      <px-demo-configs configs="[[configs]]" props="{{props}}" chosen-config="{{chosenConfig}}"></px-demo-configs>
+
+      <!-- Props -->
+      <px-demo-props props="{{props}}" config="[[chosenConfig]]"></px-demo-props>
+
+      <!-- Component ---------------------------------------------------------->
+      <px-demo-component>
+        <div style="width:250px;">
+          <px-dropdown
+            display-value="Click Me">
+            <px-dropdown-content
+              extend-dropdown="{{props.extendDropdown.value}}"
+              extend-dropdown-by="{{props.extendDropdownBy.value}}"
+              allow-outside-scroll="{{props.allowOutsideScroll.value}}"
+              checkbox-mode="{{props.checkboxMode.value}}"
+              items="[[props.items.value]]">
+            </px-dropdown-content>
+          </px-dropdown>
+        </div>
+      </px-demo-component>
+      <!-- END Component ------------------------------------------------------>
+
+      <px-demo-component-snippet
+          element-properties="{{props}}"
+          element-name="px-dropdown-content"
+          links-includes="[[linksIncludes]]">
+      </px-demo-component-snippet>
+    </px-demo-interactive>
+
+    <!-- API Viewer -->
+    <px-demo-api-viewer source="px-dropdown-content"></px-demo-api-viewer>
+
+    <!-- Footer -->
+    <px-demo-footer></px-demo-footer>
+
+  </template>
+
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-dropdown-content-demo',
+
+    properties: {
+      /**
+       * @property demoProps
+       * @type {Object}
+       */
+      props: {
+        type: Object,
+        value: function(){ return this.demoProps; }
+      },
+
+      /**
+       * @property demoProps
+       * @type {Array}
+       */
+      configs: {
+        type: Array,
+        value: function(){
+          return [
+              {
+                configName: "Default",
+                configHideProps: ['extendDropdown', 'extendDropdownBy'],
+                configReset: true
+              },
+              {
+                configName: "Extend Dropdown",
+                extendDropdown: true,
+                extendDropdownBy: 30
+              }
+          ];
+        }
+      }
+    },
+
+    /**
+     * A reference for `this.props`. Read the documentation there.
+     */
+    demoProps: {
+      allowOutsideScroll: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
+      },
+      checkboxMode: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
+      },
+      extendDropdown: {
+        type: Boolean,
+        defaultValue: null,
+        inputType: 'toggle'
+      },
+      extendDropdownBy: {
+        type: Number,
+        defaultValue: null,
+        inputType: 'number'
+      },
+      items: {
+        type: Object,
+        defaultValue: [
+          {"key":"1", "val": "Rhino"},
+          {"key":"2", "val": "Giraffe"},
+          {"key":"3", "val": "Lion"},
+          {"key":"4", "val": "Dodo"},
+          {"key":"5", "val": "Hippopotamus"},
+          {"key":"6", "val": "Rhino"},
+          {"key":"7", "val": "Giraffe"},
+          {"key":"8", "val": "Lion"},
+          {"key":"9", "val": "Dodo"},
+          {"key":"10", "val": "Hippopotamus"},
+          {"key":"11", "val": "Rhino"},
+          {"key":"12", "val": "Giraffe"},
+          {"key":"13", "val": "Lion"},
+          {"key":"14", "val": "Dodo"},
+          {"key":"15", "val": "Hippopotamus"},
+          {"key":"16", "val": "Rhino", "disabled": true},
+          {"key":"17", "val": "Giraffe", "disabled": true},
+          {"key":"18", "val": "Lion", "disabled": true},
+          {"key":"19", "val": "Dodo", "disabled": true},
+          {"key":"20", "val": "Hippopotamus", "disabled": true}
+        ],
+        inputType: 'code:JSON'
+      },
+      parentComponent: {
+        type: Array,
+        defaultValue: ['<px-dropdown display-value="Click Me">','</px-dropdown>']
+      }
+
+    },
+
+    ready: function () {
+      this.linksIncludes = ['px-dropdown/px-dropdown.html'];
+    }
+  });
+</script>
