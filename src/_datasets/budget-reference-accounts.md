@@ -18,6 +18,7 @@ date_issued: '2017-06-30'
 date_modified: '2017-07-14'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
+tags: reference
 ---
 This dataset provides additional information about expense and revenue accounts in the City's annual budget. Use this to supplement the [Operating](/datasets/operating-budget/) and [CIP](/datasets/capital-budget-fy/) budget datasets. 
 <!--more-->

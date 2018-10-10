@@ -8181,6 +8181,17 @@ dataset {
   dataset h3 a:hover {
     color: #5eb6e4;
     text-decoration: underline; }
+  dataset .dataset-modified {
+    font-size: 0.75em;
+    font-style: italic; }
+  dataset .dataset-tag {
+    font-size: 0.75em; }
+    dataset .dataset-tag span {
+      padding: 5px;
+      text-align: center;
+      color: white; }
+    dataset .dataset-tag .reference {
+      background-color: red; }
 
 dataset:last-child {
   border-bottom: none; }
