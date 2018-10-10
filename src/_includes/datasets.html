@@ -1,6 +1,7 @@
 {% for dataset in include.datasets %}
 <dataset>
   <h3><a href="{{ site.baseurl }}{{ dataset.url }}">{{ dataset.title }}</a></h3>
+  <p>Last modified: {{ dataset.date_modified }}</p>
   {{ dataset.excerpt | truncate: 300, '...' }}
 </dataset>
 {% endfor %}
