@@ -4,6 +4,7 @@
 [{% for dataset in dsets %}
   {
     "title": {{ dataset.title | jsonify }},
+    "modify": {{ dataset.date_modified | jsonify }},
     "department": {{ dataset.department | jsonify }},
     "notes": {{ dataset.excerpt | jsonify }},
     "category": {{ dataset.category | jsonify }},
