@@ -8181,6 +8181,8 @@ dataset {
   dataset h3 a:hover {
     color: #5eb6e4;
     text-decoration: underline; }
+  dataset p.dataset-mod {
+    font-style: italic; }
 
 dataset:last-child {
   border-bottom: none; }
