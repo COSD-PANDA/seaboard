@@ -257,7 +257,7 @@ th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -7597,11 +7597,11 @@ img.cosd-logo {
 
 /*responsive menu */
 .navbar-default .navbar-toggle {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: transparent;
   top: 8px; }
 
 .navbar-toggle {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
@@ -7706,6 +7706,7 @@ span.badge {
 
 .data-search {
   background-color: #00549f;
+  z-index: 1000;
   position: relative;
   color: #e0e1dd;
   height: 300px; }
@@ -8181,6 +8182,9 @@ dataset {
   dataset h3 a:hover {
     color: #5eb6e4;
     text-decoration: underline; }
+  dataset p.item-date {
+    font-style: italic;
+    font-size: 0.9em; }
 
 dataset:last-child {
   border-bottom: none; }
