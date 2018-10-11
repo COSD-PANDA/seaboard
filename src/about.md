@@ -42,7 +42,7 @@ We have a talented City workforce that makes data-enabled decisions every day. I
 
 Check out this timeline of open data in the City of San Diego:
 
-<iframe src="http://cityofsandiego.github.io/tl.html" width="100%" height="500px"></iframe>
+<iframe src="https://cityofsandiego.github.io/tl.html" width="100%" height="500px"></iframe>
 
 
 
