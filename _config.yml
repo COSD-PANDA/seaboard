@@ -56,8 +56,10 @@ schema: default
 navigation:
   - title: Browse Data
     url: /datasets/
-  - title: Stories
-    url: /stories/
+    target: "_self"
+  - title: Blog
+    url: https://medium.com/datasd
+    target: "_blank"
 
 # Collections
 collections:

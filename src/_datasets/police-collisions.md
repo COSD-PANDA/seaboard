@@ -15,7 +15,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-05-03'
-date_modified: '2018-09-10'
+date_modified: '2018-10-09'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
@@ -24,4 +24,4 @@ Traffic collision reports within the City of San Diego.
 
 Generally a report is not taken for property damage-only collisions that do not involve hit & run or DUI.
 
-The California Highway Patrol is responsible for handling collisions occuring on the freeway.
+The California Highway Patrol is responsible for handling collisions occurring on the freeway.

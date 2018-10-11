@@ -74,7 +74,7 @@ We built a robust query to continuously pull data.  To do this, we used Alation 
 ![Built Query for Paving Data](/assets/img/stories/built_query.jpg)
 
 ### Built Query for Street Info
-![Built Query for Street Info](http://take.ms/r9EHi)
+![Built Query for Street Info](https://mrm-screen.s3.amazonaws.com/Streets_Base__Alation_Compose_2016-09-26_13-32-26.png)
 
 Going through this process gave us an enormous amount of knowledge of street paving information, which we have documented in Alation.  
 

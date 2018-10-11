@@ -31,9 +31,9 @@
     <ul class="nav navbar-nav navbar-left">
         {% for link in site.navigation %}
           {% if page.url contains link.url %}
-            <li class="active"><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a target="{{ link.target }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} <span class="sr-only">(current)</span></a></li>
           {% else %}
-            <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+          <li><a target="{{ link.target }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
