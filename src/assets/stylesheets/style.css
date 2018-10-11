@@ -7706,6 +7706,7 @@ span.badge {
 
 .data-search {
   background-color: #00549f;
+  z-index: 1000;
   position: relative;
   color: #e0e1dd;
   height: 300px; }

@@ -94,6 +94,7 @@ span.badge {
 
 .data-search {
 	background-color: $s_blue_dk;
+	z-index: 1000;
 	position: relative;
 	color: $s_gray_lt;
         height: 300px;
