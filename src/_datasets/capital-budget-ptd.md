@@ -5,6 +5,14 @@ department: Financial Management
 category:
   - City Management
 resources:
+  - name: FY19 project-to-date CIP Budget
+    url: >-
+      http://seshat.datasd.org/budget/capital_budget_ptd_FY19_datasd.csv
+    format: csv
+  - name: FY18 project-to-date CIP Budget
+    url: >-
+      http://seshat.datasd.org/budget/capital_budget_ptd_FY18_datasd.csv
+    format: csv
   - name: FY17 project-to-date CIP Budget
     url: >-
       http://seshat.datasd.org/budget/capital_budget_ptd_FY17_datasd.csv
@@ -39,7 +47,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2017-09-28'
+date_modified: '2018-10-10'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

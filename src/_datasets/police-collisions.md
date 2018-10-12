@@ -24,4 +24,4 @@ Traffic collision reports within the City of San Diego.
 
 Generally a report is not taken for property damage-only collisions that do not involve hit & run or DUI.
 
-The California Highway Patrol is responsible for handling collisions occuring on the freeway.
+The California Highway Patrol is responsible for handling collisions occurring on the freeway.
