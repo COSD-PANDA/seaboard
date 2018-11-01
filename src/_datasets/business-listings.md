@@ -27,5 +27,4 @@ date_modified: '2017-09-28'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Businesses in San Diego that are active according to the City Treasurer's
-business tax information.
+Businesses in San Diego that are active according to the City Treasurer's business tax information.
