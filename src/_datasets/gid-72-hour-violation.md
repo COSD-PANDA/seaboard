@@ -1,14 +1,14 @@
 ---
 schema: default
-title: Abandoned Vehicle Removal Requests
+title: 72-hour Parking Violation Notifications
 department: Performance & Analytics
 category: City Management
 resources:
-  - name: Abandoned Vehicle Removal Requests
+  - name: 72-hour Parking Violation Notifications
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_311_abandoned_vehicle_requests_datasd.csv
+      http://seshat.datasd.org/get_it_done_311/get_it_done_72_hour_violation_requests_datasd.csv
     format: csv
-  - name: Abandoned Vehicle Removal Requests Data Dictionary
+  - name: 72-hour Parking Violation Notifications Data Dictionary
     url: >-
       http://seshat.datasd.org/get_it_done_311/abandoned_vehicle_requests_dictionary_datasd.csv
     format: csv

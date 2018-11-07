@@ -4,9 +4,17 @@ title: Get It Done (311)
 department: Performance & Analytics
 category: City Management
 resources:
-  - name: Get It Done Requests
+  - name: Get It Done Requests year-to-date
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_datasd.csv
+      http://seshat.datasd.org/get_it_done_311/get_it_done_2018_requests_datasd.csv
+    format: csv
+  - name: Get It Done Requests 2017
+    url: >-
+      http://seshat.datasd.org/get_it_done_311/get_it_done_2017_requests_datasd.csv
+    format: csv
+  - name: Get It Done Requests 2016
+    url: >-
+      http://seshat.datasd.org/get_it_done_311/get_it_done_2016_requests_datasd.csv
     format: csv
   - name: Get It Done Requests Data Dictionary
     url: >-
