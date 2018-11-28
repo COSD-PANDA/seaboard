@@ -71,17 +71,9 @@ Vehicle stops made by the San Diego Police Department between 2014 and June 26, 
 
 <!--more-->
 
-For 2014 - 2016, all stops are contained in the vehicle stops files for each year. Additional information, including searches and stop outcomes, can be found in the vehicle stops search details dataset for that same year. These companion datasets can be joined using a common stop_id field.
+For 2014 - 2016, all vehicle stops for that year are contained in one file. Stops occuring during 2017 and 2018 (through June 26) are divided into two files: one that matches the format of previous years, and one that matches the format of a new database the department began using in October 2017. Stop IDs are only unique within each file.
 
-Beginning in October 2017, SDPD began using a second database to store vehicle stop information. Vehicle stops for the years 2017 and 2018 are combined and  
+In certain cases, a search is conducted following a vehicle stop. To get information on any searches Police conducted, as well as the outcome of the stop, refer to the accompanying search details datasets. Search details can be joined to vehicle stops using a common stop_id field. A single stop_id could occur multiple times in the details datasets if Police took more than one action following a stop.
 
 Field descriptions for this data are available in the <b>Vehicle Stops Dictionary</b>,
 and race codes are documented in the <b>Vehicle Stops Race Codes</b> file.
-
-In certain cases a search is conducted following a vehicle stop.
-Details about these searches are available in the <b>Vehicle Stops Search Details</b> files.
-Field descriptions for this data are available in the <b>Vehicle Stops Search Details Dictionary</b>.
-The stop outcomes are also listed in the <b>Vehicle Stops Search Details</b> files.
-
-<b>NOTE</b>: Both Vehicle Stops and Vehicle Stops Search Details datasets
-can be joined using the common `stop_id` field. There could be one more than one `search_id` per `stop_id`.
