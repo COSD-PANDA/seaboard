@@ -6,4 +6,5 @@ node_modules
 *.map
 serve
 site
+src/assets/bower_components
 .DS_Store

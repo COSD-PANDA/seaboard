@@ -7966,6 +7966,57 @@ span.badge {
       padding: 0;
       margin: 0; }
 
+/* Leaflet map */
+.map-wrapper {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px; }
+
+#map {
+  width: 100%;
+  height: 100%; }
+
+.popup {
+  font-family: 'Source Sans Pro';
+  max-height: 200px;
+  overflow-y: auto; }
+
+.popup > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000244; }
+
+.sm-circle {
+  background-color: #00549f;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Source Sans Pro';
+  opacity: 0.85;
+  border: 1px solid #ffffff; }
+
+.med-circle {
+  line-height: 20px;
+  background-color: #00549f;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Source Sans Pro';
+  opacity: 0.85;
+  border: 1px solid #ffffff;
+  color: #fcfcfc; }
+
+.big-circle {
+  line-height: 30px;
+  background-color: #00549f;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Source Sans Pro';
+  opacity: 0.85;
+  border: 1px solid #ffffff;
+  color: #fcfcfc; }
+
 /* Dataset page */
 .dataset-main h1, .dataset-main h2, .dataset-main h3, .dataset-main h4, .dataset-main h5, .dataset-main table {
   font-family: "Source Sans Pro", sans-serif;
@@ -8550,6 +8601,10 @@ h4.bottom-box-head {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 767px) {
+  .map-wrapper {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 60px; }
   .sd-navbar-top.navbar-default .navbar-header {
     /*height:0px;*/
     /*float: right;*/ }
