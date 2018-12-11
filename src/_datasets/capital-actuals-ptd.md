@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Capital Improvement Projects (CIP) Actuals project to date
-department: Financial Management
+department: Department of Finance
 category:
   - City Management
 resources:
@@ -24,6 +24,6 @@ This dataset includes the City's CIP expenses. This data is also visualized in o
 
 CIP Actuals are dollars spent to build and upgrade City infrastructure. Some CIP projects span multiple fiscal years.
 
-Rows in this dataset show actuals at the expense or revenue account level. Each row includes the corresponding project and fund type information, but additional corresponding information is available in separate reference datasets. [Read our explanation](/budget-topic/) on how to join the reference datasets to the actuals datasets.
+Rows in this dataset show actuals at the expense account level. Each row includes the corresponding project and fund type information, but additional corresponding information is available in separate reference datasets. [Read our explanation](/budget-topic/) on how to join the reference datasets to the actuals datasets.
 
 For the actuals that show how much the City spent to fund operations and services, see the dataset for the [Operating actuals](/datasets/operating-actuals/).

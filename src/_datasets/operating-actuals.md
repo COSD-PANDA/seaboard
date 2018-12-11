@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Operating Actuals
-department: Financial Management
+department: Department of Finance
 category:
   - City Management
 resources:
