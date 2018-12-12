@@ -7,7 +7,31 @@ category:
 resources:
   - name: FY17 Operating Actuals
     url: >-
-      http://seshat.datasd.org/budget/operating_actuals_FY17_datasd.csv
+      http://seshat.datasd.org/budget/actuals_operating_FY17_datasd.csv
+    format: csv
+  - name: FY16 Operating Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_operating_FY16_datasd.csv
+    format: csv
+  - name: FY15 Operating Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_operating_FY15_datasd.csv
+    format: csv
+  - name: FY14 Operating Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_operating_FY14_datasd.csv
+    format: csv
+  - name: FY13 Operating Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_operating_FY13_datasd.csv
+    format: csv
+  - name: FY12 Operating Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_operating_FY12_datasd.csv
+    format: csv
+  - name: FY11 Operating Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_operating_FY11_datasd.csv
     format: csv
   - name: Operating actuals dictionary
     url: >-

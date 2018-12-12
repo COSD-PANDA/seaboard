@@ -7,7 +7,31 @@ category:
 resources:
   - name: FY17 project-to-date CIP Actuals
     url: >-
-      http://seshat.datasd.org/budget/capital_actuals_ptd_FY17_datasd.csv
+      http://seshat.datasd.org/budget/actuals_capital_ptd_FY17_datasd.csv
+    format: csv
+  - name: FY16 p-t-d CIP Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_capital_ptd_FY16_datasd.csv
+    format: csv
+  - name: FY15 p-t-d CIP Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_capital_ptd_FY15_datasd.csv
+    format: csv
+  - name: FY14 p-t-d CIP Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_capital_ptd_FY14_datasd.csv
+    format: csv
+  - name: FY13 p-t-d CIP Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_capital_ptd_FY13_datasd.csv
+    format: csv
+  - name: FY12 p-t-d CIP Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_capital_ptd_FY12_datasd.csv
+    format: csv
+  - name: FY11 p-t-d CIP Actuals
+    url: >-
+      http://seshat.datasd.org/budget/actuals_capital_ptd_FY11_datasd.csv
     format: csv
   - name: Project-to-date CIP actuals dictionary
     url: >-
