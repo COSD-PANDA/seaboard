@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Operating budgets
-department: Financial Management
+department: Department of Finance
 category:
   - City Management
 resources:

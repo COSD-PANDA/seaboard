@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Departments in the City's annual budget
-department: Financial Management
+department: Department of Finance
 category:
   - City Management
 resources:

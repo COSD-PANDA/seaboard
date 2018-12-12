@@ -12,7 +12,9 @@ Citizens have a few ways of viewing the budget:
 * Interact with charts and graphs via an online budget tool at [budget.sandiego.gov](https://budget.sandiego.gov/transparency#/)
 * Download the datasets published on this portal. The datasets you can download here include the same data that is uploaded to the online budget tool.
 
-These datasets are at the account level. This means that each row in the dataset represents an expense or revenue account, and includes a dollar amount, an expense or revenue account number and name, and a fund type and fund number to categorize and specify the funding repository. Operating budget is further separated by a funds center number, indicating an organizational unit within a department, and the name of the responsible department. Capital budget is further separated by the department that owns the project (asset owning department).
+Checking budgeted amounts against actual dollars spent is part of the budget process. For this reason, we also have available [Operating Actuals](/datasets/operating-actuals/) and [CIP Actuals](/datasets/capital-actuals-fy/). These datasets are in the same format as their budget counterparts.
+
+Each dataset is at the account level. This means that each row in the dataset represents an expense or revenue account, and includes a dollar amount, an expense or revenue account number and name, and a fund type and fund number to categorize and specify the funding repository. Operating budget is further separated by a funds center number, indicating an organizational unit within a department, and the name of the responsible department. Capital budget is further separated by the department that owns the project (asset owning department).
 
 The information available in the datasets is meant to help data users be able to look through the data and know a little bit about each revenue or expense at-a-glance. However, anyone who wants to analyze the data should consider pulling in additional variables, or columns, that are available in some reference datasets we have also published.
 
