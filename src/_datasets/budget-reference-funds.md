@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Funds in the City's annual budget
-department: Financial Management
+department: Department of Finance
 category:
   - City Management
 resources:
@@ -15,7 +15,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2018-12-06'
+date_modified: '2018-12-16'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
