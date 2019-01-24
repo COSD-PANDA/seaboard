@@ -5,7 +5,11 @@ department: Fire-Rescue
 category:
   - Public Safety
 resources:
-  - name: Fire Incidents 2018 (Jan. 1 to date last updated)
+  - name: Fire Incidents year-to-date
+    url: >-
+      http://seshat.datasd.org/fd_cad/fd_incidents_2019_datasd.csv
+    format: csv
+  - name: Fire Incidents 2018
     url: >-
       http://seshat.datasd.org/fd_cad/fd_incidents_2018_datasd.csv
     format: csv
