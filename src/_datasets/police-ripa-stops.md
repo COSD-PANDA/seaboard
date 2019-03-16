@@ -7,19 +7,11 @@ category:
 resources:
   - name: RIPA stops (July to September 2018)
     url: >-
-      http://seshat.datasd.org/pd/pd_ripa_stops_datasd.csv
-    format: csv
-  - name: RIPA stops details (July to September 2018)
-    url: >-
-      http://seshat.datasd.org/pd/pd_ripa_details_datasd.csv
+      http://seshat.datasd.org/pd/ripa_stops_datasd.csv
     format: csv
   - name: RIPA stops dictionary
     url: >-
-      http://seshat.datasd.org/pd/pd_ripa_stops_dictionary_datasd.csv
-    format: csv
-  - name: RIPA stops details dictionary
-    url: >-
-      http://seshat.datasd.org/pd/pd_ripa_details_dictionary_datasd.csv
+      http://seshat.datasd.org/pd/ripa_stops_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2018-11-09'
@@ -31,10 +23,20 @@ RIPA stops made by the San Diego Police Department for a given year.  RIPA stops
 
 <!--more-->
 
-This data is divided into two datasets: one stops dataset and one stops details dataset.
+This dataset represents the basic stop data that is available. The file contains one row per person stopped by Police with both a `pid`, a unique identifier for the person stopped, and a `stop_id`, a unique identifier for the stop. A single stop may involve multiple people, so any given `stop_id` may have more than one associated `pid`.
 
-The stops dataset contains one row per person stopped by Police with information such as race, gender, age, stop reason, and stop result. Each row has a `pid` for the person stopped and a `stop_id` for the stop. Multiple people involved in the same stop have the same `stop_id`. Some of the person and stop attributes in this data had multiple values. In this case, the values are split into multiple columns with incrementing numbers appeneded. The total number of columns is equal to the number of values for the `pid` with the most, but not every `pid` will have a value for every column.
+To get additional details about the person stopped, such as the race, gender, and age , and about the stop, such as actions taken and reason for the stop, join this basic stop data to one of 12 other datasets available at the following links:
 
-The details dataset contains information about actions taken as a result of the stop, such as searches and arrests, and other details, such as search details, contraband or evidence found, and property seized. Each piece of detail has its own row, with the `stop_id` and `pid` in common with the main stops data.
+[Stops basic](/datasets/police-ripa-stops/)
+[Race](/datasets//)
+[Gender](/datasets//)
+[Disability](/datasets//)
+[Stop reason](/datasets//)
+[Stop result](/datasets//)
+[Actions taken](/datasets//)
+[Search basis](/datasets//)
+[Contraband/Evidence](/datasets//)
+[Property seized](/datasets//)
+[Property seizure basis](/datasets//)
 
 For more information about RIPA regulations, see the [California Code of Regulations final text](https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/stop-data-reg-final-text-110717.pdf?).
