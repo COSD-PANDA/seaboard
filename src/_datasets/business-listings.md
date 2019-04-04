@@ -5,11 +5,11 @@ department: City Treasurer
 category:
   - Economy & Community
 resources:
-  - name: Active certificates issued since 2008
+  - name: Active certificates issued since 2018
     url: >-
       http://seshat.datasd.org/ttcs/sd_businesses_active_since08_datasd.csv
     format: csv
-  - name: Active certificates issued before 2008
+  - name: Active certificates issued before 2018
     url: >-
       http://seshat.datasd.org/ttcs/sd_businesses_active_pre08_datasd.csv
     format: csv
@@ -59,7 +59,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2018-12-26'
+date_modified: '2019-04-03'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

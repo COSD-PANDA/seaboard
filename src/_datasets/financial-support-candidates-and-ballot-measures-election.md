@@ -9,7 +9,11 @@ resources:
     url: >-
       http://seshat.datasd.org/campaign_fin/financial_support_dictionary_datasd.csv
     format: csv
-  - name: Financial Transactions Reported by Election Committees Y-T-D
+  - name: Financial Transactions Reported by Election Committees year-to-date
+    url: >-
+      http://seshat.datasd.org/campaign_fin/financial_support_2019_datasd.csv
+    format: csv
+  - name: Financial Transactions Reported by Election Committees (2018)
     url: >-
       http://seshat.datasd.org/campaign_fin/financial_support_2018_datasd.csv
     format: csv
@@ -60,7 +64,7 @@ resources:
   
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-05'
-date_modified: '2018-12-26'
+date_modified: '2019-04-03'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
