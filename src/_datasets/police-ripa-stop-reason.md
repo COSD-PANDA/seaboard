@@ -19,11 +19,11 @@ date_modified: '2018-11-09'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-The primary reason(s) a person was stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.
+The primary reason a person was stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.
 
 <!--more-->
 
-The file contains one row per reason per person stopped by Police. An officer may have had more than one reason for stopping a person. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:
+The file contains one row per detailed reason per person stopped by Police. An officer may only record one primary reason for stopping a person; however additional details related to the primary reason may result in multiple rows per person stopped by Police. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:
 
 {% include ripa-list.html %}
 

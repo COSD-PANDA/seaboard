@@ -23,7 +23,7 @@ Basis for seizing property from persons stopped by the San Diego Police Departme
 
 <!--more-->
 
-The file contains one row per basis per person stopped by Police, if property were seized. Police may have seized multiple types of property per person stopped, or none. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:
+The file contains one row per property seizure basis per person stopped by police, if property were seized. Police may have seized multiple types of property per person stopped, or none. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:
 
 {% include ripa-list.html %}
 

@@ -23,7 +23,7 @@ The basis for any search conducted as part of stop by the San Diego Police Depar
 
 <!--more-->
 
-The file contains one row per search per person stopped by Police, if a search occurred. Police may have conducted multiple searches per person stopped, or no searches. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:
+The file contains one row for each reason a search was conducted per person stopped by police, if a search occurred. Police may not have conducted any searches during a stop, or police may have had more than one reason to search a stopped person and/or the person's property. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:
 
 {% include ripa-list.html %}
 
