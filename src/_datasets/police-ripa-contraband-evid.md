@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Contraband and/or evidence found as part of a stop by Police (RIPA reporting)
+title: RIPA: Contraband and/or evidence found as part of a stop by Police
 department: Police
 category:
   - Public Safety

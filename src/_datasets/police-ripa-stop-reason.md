@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Reason for stop for persons stopped by Police (RIPA reporting)
+title: RIPA: Reason for stop for persons stopped by Police
 department: Police
 category:
   - Public Safety

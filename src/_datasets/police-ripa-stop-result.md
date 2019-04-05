@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Result of stop for persons stopped by Police (RIPA reporting)
+title: RIPA: Result of stop for persons stopped by Police
 department: Police
 category:
   - Public Safety

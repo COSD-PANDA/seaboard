@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Police stop data basic details (RIPA reporting)  
+title: RIPA police stop data basic details
 department: Police
 category:
   - Public Safety
