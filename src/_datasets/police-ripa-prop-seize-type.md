@@ -1,6 +1,6 @@
 ---
 schema: default
-title: (RIPA) Property seized as part of a stop by Police
+title: RIPA police stop data - property seized
 department: Police
 category:
   - Public Safety

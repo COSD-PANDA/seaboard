@@ -1,6 +1,6 @@
 ---
 schema: default
-title: (RIPA) Race of persons stopped by Police (RIPA reporting)
+title: RIPA police stop data - race of persons stopped
 department: Police
 category:
   - Public Safety

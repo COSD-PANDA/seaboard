@@ -1,6 +1,6 @@
 ---
 schema: default
-title: (RIPA) Basis for property seizure as part of a stop by Police
+title: RIPA police stop data - basis for property seizure
 department: Police
 category:
   - Public Safety

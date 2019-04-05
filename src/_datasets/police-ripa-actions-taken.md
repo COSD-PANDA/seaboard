@@ -1,6 +1,6 @@
 ---
 schema: default
-title: (RIPA) Actions taken during a stop for persons stopped by Police
+title: RIPA police stop data - actions taken
 department: Police
 category:
   - Public Safety

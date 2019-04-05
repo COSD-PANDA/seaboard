@@ -1,6 +1,6 @@
 ---
 schema: default
-title: (RIPA) Gender of persons stopped by Police
+title: RIPA police stop data - gender of persons stopped
 department: Police
 category:
   - Public Safety

@@ -1,6 +1,6 @@
 ---
 schema: default
-title: (RIPA) Basis for searches conducted as part of a stop by Police
+title: RIPA police stop data - basis for searches conducted
 department: Police
 category:
   - Public Safety
