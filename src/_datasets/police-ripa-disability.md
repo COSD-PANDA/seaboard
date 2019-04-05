@@ -1,6 +1,6 @@
 ---
 schema: default
-title: RIPA: Disability of persons stopped by Police
+title: (RIPA) Disability of persons stopped by Police
 department: Police
 category:
   - Public Safety
