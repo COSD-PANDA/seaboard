@@ -14,8 +14,8 @@ resources:
       http://seshat.datasd.org/pd/ripa_actions_taken_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-date_issued: '2018-11-09'
-date_modified: '2018-11-09'
+date_issued: '2019-04-04'
+date_modified: '2019-04-04'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
