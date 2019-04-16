@@ -22,7 +22,7 @@ resources:
     format: csv
   - name: Get It Done Requests Data Dictionary
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
+      http://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
     format: csv
   - name: Get It Done Requests JSON API
     url: >-
