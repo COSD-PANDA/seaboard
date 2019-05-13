@@ -31,8 +31,13 @@ resources:
       http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
+<<<<<<< HEAD
 date_issued: '2019-01-28'
 date_modified: '2019-01-28'
+=======
+date_issued: '2017-03-03'
+date_modified: '2019-03-18'
+>>>>>>> origin/master
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
