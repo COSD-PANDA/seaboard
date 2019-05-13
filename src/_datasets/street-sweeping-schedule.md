@@ -8,7 +8,7 @@ category:
 resources:
   - name: Street Sweeping Schedule
     url: >-
-      http://seshat.datasd.org/street_sweeping/routes_all_datasd.csv
+      http://seshat.datasd.org/street_sweeping/street_sweeping_datasd.csv
     format: csv
   - name: Street Sweeping Possible Routes
     url: >-
