@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Complaints evaluated by the Community Review Board on Police Practices 
+title: Complaints Evaluated by the Community Review Board on Police Practices 
 department: Community Review Board on Police Practices
 category:
   - Public Safety
@@ -16,4 +16,5 @@ date_modified: '2019-04-18'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-The CRB reviews and evaluates complaints against San Diego Police Department officers as well as the administration of discipline from sustained complaints. The Board also reviews all officer-involved shootings and in-custody deaths. This dataset includes all cases the Board has finished investigating since the beginning of FY 2018.
+The Community Review Board on Police Practices, known as the CRB, was established by San Diego voters in 1988 to review and evaluate complaints filed by the public against members of the City of San Diego Police Department. The CRB reviews and evaluates the administration of discipline arising from sustained complaints, all officer-involved shootings, and all in-custody death cases.  In addition, the Board makes recommendations to the Chief of Police regarding the San Diego Police Department’s policies and procedures.
+This dataset includes all cases the CRB reviewed and closed out since the beginning of FY 2018.
