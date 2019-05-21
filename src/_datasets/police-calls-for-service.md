@@ -19,7 +19,7 @@ resources:
     format: csv
   - name: Police Calls for Service Dictionary
     url: >-
-      http://seshat.datasd.org/pd/calls_for_service_dictionary_datasd.csv
+      http://seshat.datasd.org/pd/pd_calls_for_service_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'
