@@ -55,7 +55,7 @@ resources:
     format: csv
   - name: Data dictionary
     url: >-
-      http://seshat.datasd.org/ttcs/listing_businesses_dictionary_datasd.csv
+      http://seshat.datasd.org/ttcs/sd_businesses_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
