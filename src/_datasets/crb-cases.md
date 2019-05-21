@@ -10,6 +10,10 @@ resources:
     url: >-
       http://seshat.datasd.org/crb/crb_cases_datasd.csv
     format: shp
+  - name: Dictionary
+    url: >-
+      http://seshat.datasd.org/crb/dictionary.csv
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-04-18'
 date_modified: '2019-04-18'
