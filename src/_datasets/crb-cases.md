@@ -9,7 +9,7 @@ resources:
   - name: Complaints FY18 - FY19
     url: >-
       http://seshat.datasd.org/crb/crb_cases_datasd.csv
-    format: shp
+    format: csv
   - name: Dictionary
     url: >-
       http://seshat.datasd.org/crb/dictionary.csv
