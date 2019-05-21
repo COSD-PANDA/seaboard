@@ -32,5 +32,5 @@ date_modified: '2019-04-30'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-San Diego Police Department divides the City into neighborhoods collected into one of 9 divisions.
+The City has 9 divisions for the purpose of law enforcement: Central, Northern, Northeastern, Northwestern, Southern, Southeastern, Easter, Western, and Mid-City. Each division is a combination of law beat areas within the division boundary. These are police divisions only and do not represent legal neighborhood or community boundaries.
 <!--more-->
