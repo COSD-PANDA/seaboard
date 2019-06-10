@@ -7,7 +7,7 @@ category:
 resources:
   - name: City Owned Properties - Leases
     url: >-
-      http://seshat.datasd.org/read/city_property_leases_datasd.csv
+      http://seshat.datasd.org/read/city_property_leases_datasd_v1.csv
     format: csv
   - name: City Owned Properties - Leases Dictionary
     url: >-
