@@ -7,7 +7,7 @@ category:
 resources:
   - name: Traffic Counts
     url: >-
-      http://seshat.datasd.org/traffic_counts/traffic_counts_datasd.csv
+      http://seshat.datasd.org/traffic_counts/traffic_counts_datasd_v1.csv
     format: csv
   - name: Traffic Counts Dictionary
     url: >-
