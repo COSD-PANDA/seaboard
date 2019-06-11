@@ -8,11 +8,11 @@ category:
 resources:
   - name: Latest Drinking Water Tests (Bacteria)
     url: >-
-      http://seshat.datasd.org/water_testing/latest_indicator_bac_tests_datasd.csv
+      http://seshat.datasd.org/water_testing/latest_indicator_bac_tests_datasd_v1.csv
     format: csv
   - name: All Drinking Water Tests (Bacteria)
     url: >-
-      http://seshat.datasd.org/water_testing/indicator_bacteria_tests_datasd.csv
+      http://seshat.datasd.org/water_testing/indicator_bacteria_tests_datasd_v1.csv
     format: csv
   - name: Drinking Water Tests (Bacteria) Dictionary
     url: >-
