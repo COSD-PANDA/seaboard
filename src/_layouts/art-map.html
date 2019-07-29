@@ -56,7 +56,7 @@ function drawMap(){
       {
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
       }).addTo(map);
-      var u = 'https://cityofsandiego-admin.carto.com/api/v2/sql?q=SELECT * FROM andrellbower.public_art_locations_datasd&api_key=0e5603ded008d02e844d5888e07e8f36e195fd93';
+      var u = 'https://cityofsandiego-admin.carto.com/api/v2/sql?q=SELECT * FROM andrellbower.public_art_locations_datasd_v1&api_key=0e5603ded008d02e844d5888e07e8f36e195fd93';
     function getGeom(callback){
       $.ajax({
         url: u,
@@ -70,6 +70,7 @@ function drawMap(){
       var length = artWork.length;
       var coordsBounds = [];
       for (i=0;i<length;i++) {
+        console.log(artWork[i]);
         coordsBounds.push(artWork[i].latlng);
         var facility = artWork[i].location;
         var noPieces = artWork[i].artwork.length;
@@ -141,9 +142,9 @@ function drawMap(){
   var art = [];
   if (results > 0){
     for (i=0;i<results;i++){
-      var latlng = L.latLng(data.rows[i].latitude,data.rows[i].longitude);
-      var latStr = String(data.rows[i].latitude);
-      var lngStr = String(data.rows[i].longitude);
+      var latlng = L.latLng(data.rows[i].lat,data.rows[i].lng);
+      var latStr = String(data.rows[i].lat);
+      var lngStr = String(data.rows[i].lng);
       var latlngStr = latStr+","+lngStr;
       var coordsCheck = arrayContains(latlngStr,coordsUnique);
       var name = data.rows[i].artwork_title;
