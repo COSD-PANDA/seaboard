@@ -10,7 +10,7 @@ resources:
     url: >-
       http://seshat.datasd.org/crb/crb_cases_datasd.csv
     format: csv
-  - name: Complaints and body worn camera details
+  - name: Body worn camera details
     url: >-
       http://seshat.datasd.org/crb/crb_cases_bwc_datasd.csv
     format: csv
@@ -25,6 +25,8 @@ maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
 The Community Review Board on Police Practices, known as the CRB, was established by San Diego voters in 1988 to review and evaluate complaints filed by the public against members of the City of San Diego Police Department. The CRB reviews and evaluates the administration of discipline arising from sustained complaints, all officer-involved shootings, and all in-custody death cases.  In addition, the Board makes recommendations to the Chief of Police regarding the San Diego Police Department’s policies and procedures.
+
+<!--more-->
 
 This dataset includes all cases the CRB reviewed and closed out since the beginning of FY 2019, identified by a unique case ID. A single case may involve multiple allegations and multiple officers. Each row in this data represents one allegation and finding per officer in the complaint. Each officer named in the complaint is assigned an anonymous person id in the pid field that is unique for that case ID.
 
