@@ -25,6 +25,14 @@ resources:
     url: >-
       http://seshat.datasd.org/dsd/dsd_permits_2015_datasd_v1.csv
     format: csv
+  - name: Development project permits (2014)
+  url: >-
+    http://seshat.datasd.org/dsd/dsd_permits_2014_datasd_v1.csv
+  format: csv
+  - name: Development project permits (2013)
+  url: >-
+    http://seshat.datasd.org/dsd/dsd_permits_2013_datasd_v1.csv
+  format: csv
   - name: Development project permits dictionary
     url: >-
       http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv
