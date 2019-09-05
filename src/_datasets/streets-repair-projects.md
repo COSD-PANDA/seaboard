@@ -8,15 +8,15 @@ category:
 resources:
   - name: Streets Repair Projects
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/tsw/sd_paving_datasd.csv
+      http://seshat.datasd.org/tsw/sd_paving_datasd_v1.csv
     format: csv
   - name: Streets Repair Projects Dictionary
     url: >-
-      http://seshat.datasd.org.s3.amazonaws.com/tsw/sd_paving_dictionary_datasd.csv
+      http://seshat.datasd.org/tsw/sd_paving_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'
-date_modified: '2019-05-12'
+date_modified: '2019-07-08'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

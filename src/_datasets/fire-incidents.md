@@ -59,11 +59,11 @@ resources:
     format: csv
   - name: Fire Incidents Dictionary
     url: >-
-      http://seshat.datasd.org/fd_cad/fire_incidents_dictionary_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-26'
-date_modified: '2019-05-12'
+date_modified: '2019-09-04'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

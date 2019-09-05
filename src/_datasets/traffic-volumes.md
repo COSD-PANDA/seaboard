@@ -7,7 +7,7 @@ category:
 resources:
   - name: Traffic Counts
     url: >-
-      http://seshat.datasd.org/traffic_counts/traffic_counts_datasd.csv
+      http://seshat.datasd.org/traffic_counts/traffic_counts_datasd_v1.csv
     format: csv
   - name: Traffic Counts Dictionary
     url: >-
@@ -15,7 +15,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-17'
-date_modified: '2019-04-07'
+date_modified: '2019-08-25'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

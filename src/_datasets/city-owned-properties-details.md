@@ -7,7 +7,7 @@ category:
 resources:
   - name: City Owned Properties - Details
     url: >-
-      http://seshat.datasd.org/read/city_property_details_datasd.csv
+      http://seshat.datasd.org/read/city_property_details_datasd_v1.csv
     format: csv
   - name: City Owned Properties - Details Dictionary
     url: >-
@@ -15,7 +15,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-01'
-date_modified: '2019-04-11'
+date_modified: '2019-09-04'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

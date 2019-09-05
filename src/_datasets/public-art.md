@@ -6,14 +6,14 @@ category: Culture & Recreation
 resources:
   - name: Locations of artwork
     url: >-
-      http://seshat.datasd.org/public_art/public_art_locations_datasd.csv
+      http://seshat.datasd.org/public_art/public_art_locations_datasd_v1.csv
     format: csv
   - name: Locations of artwork data dictionary
     url: >-
       http://seshat.datasd.org/public_art/public_art_locations_dictionary_datasd.csv
     format: csv
 date_issued: '2018-09-11'
-date_modified: '2019-05-12'
+date_modified: '2019-09-04'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
