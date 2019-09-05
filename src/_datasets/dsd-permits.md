@@ -4,6 +4,7 @@ title: Permits for development projects
 department: Development Services
 category:
   - Economy & Community
+  - Energy & Environment
 resources:
   - name: Development project permits (year-to-date)
     url: >-
@@ -44,7 +45,6 @@ maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
 Permit applications for private and public development projects.
-<!--more-->
 
 
 
