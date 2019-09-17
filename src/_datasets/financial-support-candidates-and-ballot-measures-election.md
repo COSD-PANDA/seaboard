@@ -5,63 +5,62 @@ department: City Clerk
 category:
   - Economy & Community
 resources:
-  - name: Financial Transactions Dictionary
-    url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_dictionary_datasd.csv
-    format: csv
   - name: Financial Transactions Reported by Election Committees year-to-date
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2019_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2019_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2018)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2018_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2018_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2017)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2017_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2017_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2016)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2016_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2016_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2015)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2015_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2015_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2014)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2014_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2014_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2013)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2013_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2013_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2012)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2012_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2012_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2011)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2011_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2011_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2010)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2010_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2010_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2009)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2009_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2009_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2008)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2008_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2008_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2007)
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_2007_datasd.csv
+      http://seshat.datasd.org/campaign_fin/financial_support_2007_datasd_v1.csv
     format: csv
-  
+  - name: Dictionary
+    url: >-
+      http://seshat.datasd.org/campaign_fin/financial_support_dictionary_datasd.csv
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-05'
 date_modified: '2019-09-15'

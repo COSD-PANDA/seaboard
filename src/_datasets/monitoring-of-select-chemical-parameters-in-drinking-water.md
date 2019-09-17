@@ -8,7 +8,7 @@ category:
 resources:
   - name: Drinking Water Tests (Chemical)
     url: >-
-      http://seshat.datasd.org/water_testing/parameter_tests_datasd.csv
+      http://seshat.datasd.org/water_testing/parameter_tests_datasd_v1.csv
     format: csv
   - name: Drinking Water Tests (Chemical) Dictionary
     url: >-

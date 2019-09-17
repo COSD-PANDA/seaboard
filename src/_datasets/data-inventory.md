@@ -7,7 +7,7 @@ category:
 resources:
   - name: DataSD.org Data Inventory
     url: >-
-      http://seshat.datasd.org/inventory/inventory_datasd.csv
+      http://seshat.datasd.org/inventory/inventory_datasd_v1.csv
     format: csv
     preview_rows: 11
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
