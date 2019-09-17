@@ -8,11 +8,11 @@ category:
 resources:
   - name: Solar Permits Issued (2016)
     url: >-
-      http://seshat.datasd.org/dsd/solar_permits_issued_2016_datasd.csv
+      http://seshat.datasd.org/dsd/solar_permits_issued_2016_datasd_v1.csv
     format: csv
   - name: Solar Permits Issued (2015)
     url: >-
-      http://seshat.datasd.org/dsd/solar_permits_issued_2015_datasd.csv
+      http://seshat.datasd.org/dsd/solar_permits_issued_2015_datasd_v1.csv
     format: csv
   - name: Permits Activity Dictionary
     url: >-

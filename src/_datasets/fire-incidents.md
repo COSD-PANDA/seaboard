@@ -7,55 +7,55 @@ category:
 resources:
   - name: Fire Incidents year-to-date
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2019_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2019_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2018
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2018_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2018_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2017
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2017_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2017_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2016
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2016_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2016_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2015
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2015_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2015_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2014
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2014_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2014_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2013
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2013_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2013_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2012
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2012_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2012_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2011
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2011_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2011_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2010
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2010_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2010_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2009
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2009_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2009_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2008
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2008_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2008_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2007
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_incidents_2007_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_incidents_2007_datasd_v1.csv
     format: csv
   - name: Fire Incidents Dictionary
     url: >-
