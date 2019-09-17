@@ -8,7 +8,7 @@ category:
 resources:
   - name: Parking Meters Locations
     url: >-
-      http://seshat.datasd.org/parking_meters/treas_parking_meters_loc_datasd.csv
+      http://seshat.datasd.org/parking_meters/treas_parking_meters_loc_datasd_v1.csv
     format: csv
   - name: Parking Meters Locations Dictionary
     url: >-
