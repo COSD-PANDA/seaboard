@@ -7,7 +7,7 @@ category:
 resources:
   - name: Fire incident problem counts 2016 through year-to-date
     url: >-
-      http://seshat.datasd.org/fd_cad/fd_problem_nature_agg_datasd.csv
+      http://seshat.datasd.org/fd_cad/fd_problem_nature_agg_datasd_v1.csv
     format: csv
   - name: Fire incidents problem counts dictionary
     url: >-
