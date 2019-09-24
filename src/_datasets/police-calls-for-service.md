@@ -7,15 +7,15 @@ category:
 resources:
   - name: Police Calls for Service 2017 through October
     url: >-
-      http://seshat.datasd.org/pd/pd_calls_for_service_2017_datasd.csv
+      http://seshat.datasd.org/pd/pd_calls_for_service_2017_datasd_v1.csv
     format: csv
   - name: Police Calls for Service 2016
     url: >-
-      http://seshat.datasd.org/pd/pd_calls_for_service_2016_datasd.csv
+      http://seshat.datasd.org/pd/pd_calls_for_service_2016_datasd_v1.csv
     format: csv
   - name: Police Calls for Service 2015
     url: >-
-      http://seshat.datasd.org/pd/pd_calls_for_service_2015_datasd.csv
+      http://seshat.datasd.org/pd/pd_calls_for_service_2015_datasd_v1.csv
     format: csv
   - name: Police Calls for Service Dictionary
     url: >-
