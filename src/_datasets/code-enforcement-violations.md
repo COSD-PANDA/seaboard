@@ -6,7 +6,7 @@ category: Economy & Community
 resources:
   - name: Code Enforcement Cases 2015 through 2018
     url: >-
-      http://seshat.datasd.org/dsd/code_enf_past_3_yr_datasd.csv
+      http://seshat.datasd.org/dsd/code_enf_past_3_yr_datasd_v1.csv
     format: csv
   - name: Code Enforcement Dictionary
     url: >-
