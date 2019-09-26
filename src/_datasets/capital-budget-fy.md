@@ -39,7 +39,7 @@ resources:
     format: csv
   - name: CIP Budget dictionary
     url: >-
-      http://seshat.datasd.org/budget/capital_budget_fy_dictionary_datasd.csv
+      http://seshat.datasd.org/budget/capital_budget_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
