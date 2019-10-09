@@ -5,7 +5,15 @@ department: Police
 category:
   - Public Safety
 resources:
-  - name: Police Calls for Service 2017 through October
+  - name: Police Calls for Service 2019
+    url: >-
+      http://seshat.datasd.org/pd/pd_calls_for_service_2019_datasd.csv
+    format: csv
+  - name: Police Calls for Service 2018
+    url: >-
+      http://seshat.datasd.org/pd/pd_calls_for_service_2018_datasd.csv
+    format: csv
+  - name: Police Calls for Service 2017
     url: >-
       http://seshat.datasd.org/pd/pd_calls_for_service_2017_datasd_v1.csv
     format: csv
