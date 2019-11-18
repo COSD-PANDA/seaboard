@@ -5,23 +5,23 @@ department: Development Services
 category:
   - Economy & Community
 resources:
-  - name: Active permits: rooftop solar, transportation, simple MEP, street tree, and news racks
+  - name: Active permits - rooftop solar, transportation, simple MEP, street tree, and news racks
     url: >-
       http://seshat.datasd.org/dsd/dsd_permits_accela_active_datasd.csv
     format: csv
-  - name: Active permits: every other permit type
+  - name: Active permits - every other permit type
     url: >-
       http://seshat.datasd.org/dsd/dsd_permits_active_datasd.csv
     format: csv
-  - name: Closed permits: rooftop solar, transportation, simple MEP, street tree, and news racks, since 2019
+  - name: Closed permits - rooftop solar, transportation, simple MEP, street tree, and news racks, since 2019
     url: >-
       http://seshat.datasd.org/dsd/dsd_permits_accela_closed_datasd.csv
     format: csv
-  - name: Closed permits: every other permit type, since 2019
+  - name: Closed permits - every other permit type, since 2019
     url: >-
       http://seshat.datasd.org/dsd/dsd_permits_closed_since19_datasd.csv
     format: csv
-  - name: Closed permits: every permit type, 2003 through 2018
+  - name: Closed permits - every permit type, 2003 through 2018
     url: >-
       http://seshat.datasd.org/dsd/dsd_permits_closed_03to18_datasd.csv
     format: csv
