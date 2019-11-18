@@ -5,42 +5,30 @@ department: Development Services
 category:
   - Economy & Community
 resources:
-  - name: Development project permits 2019
+  - name: Active permits: rooftop solar, transportation, simple MEP, street tree, and news racks
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_2019_datasd_v1.csv
+      http://seshat.datasd.org/dsd/dsd_permits_accela_active_datasd.csv
     format: csv
-  - name: Development project permits 2018
+  - name: Active permits: every other permit type
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_2018_datasd_v1.csv
+      http://seshat.datasd.org/dsd/dsd_permits_active_datasd.csv
     format: csv
-  - name: Development project permits 2017
+  - name: Closed permits: rooftop solar, transportation, simple MEP, street tree, and news racks, since 2019
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_2017_datasd_v1.csv
+      http://seshat.datasd.org/dsd/dsd_permits_accela_closed_datasd.csv
     format: csv
-  - name: Development project permits 2016
+  - name: Closed permits: every other permit type, since 2019
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_2016_datasd_v1.csv
+      http://seshat.datasd.org/dsd/dsd_permits_closed_since19_datasd.csv
     format: csv
-  - name: Development project permits 2015
+  - name: Closed permits: every permit type, 2003 through 2018
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_2015_datasd_v1.csv
-    format: csv
-  - name: Development project permits 2014
-    url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_2014_datasd_v1.csv
-    format: csv
-  - name: Development project permits 2013
-    url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_2013_datasd_v1.csv
-    format: csv
-  - name: Dictionary
-    url: >-
-      http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv
+      http://seshat.datasd.org/dsd/dsd_permits_closed_03to18_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-09-03'
-date_modified: '2019-11-11'
+date_modified: '2019-11-17'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Permit applications for land development projects.
+Permits for building projects.
