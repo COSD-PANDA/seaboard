@@ -6,6 +6,10 @@ category: City Management
 resources:
   - name: Get It Done Requests year-to-date
     url: >-
+      http://seshat.datasd.org/get_it_done_311/get_it_done_2020_requests_datasd_v1.csv
+    format: csv
+  - name: Get It Done Requests 2019
+    url: >-
       http://seshat.datasd.org/get_it_done_311/get_it_done_2019_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2018

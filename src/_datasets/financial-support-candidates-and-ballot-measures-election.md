@@ -7,6 +7,10 @@ category:
 resources:
   - name: Financial Transactions Reported by Election Committees year-to-date
     url: >-
+      http://seshat.datasd.org/campaign_fin/financial_support_2020_datasd_v1.csv
+    format: csv
+  - name: Financial Transactions Reported by Election Committees (2019)
+    url: >-
       http://seshat.datasd.org/campaign_fin/financial_support_2019_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2018)
@@ -63,7 +67,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-05'
-date_modified: '2020-01-15'
+date_modified: '2020-01-16'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
