@@ -5,11 +5,11 @@ department: City Treasurer
 category:
   - Economy & Community
 resources:
-  - name: Active certificates issued since 2018
+  - name: Active certificates issued since 2008
     url: >-
       http://seshat.datasd.org/ttcs/sd_businesses_active_since08_datasd_v1.csv
     format: csv
-  - name: Active certificates issued before 2018
+  - name: Active certificates issued before 2008
     url: >-
       http://seshat.datasd.org/ttcs/sd_businesses_active_pre08_datasd_v1.csv
     format: csv

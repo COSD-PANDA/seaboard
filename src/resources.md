@@ -11,7 +11,7 @@ Just a warning here - we're going to keep it simple and to the point.  There is 
 ### Working with geospatial data
 We're a city, so a lot of the data you are seeing us publish is geospatial data.  Geospatial data is different than most other kinds of data because it's inherently multidimentional.
 
-We have used Carto to build complex applications like [StreetsSD](http://streets.sandiego.gov) and [simple visualizations that you see on the portal](data.sandiego.gov).  It's our tool of choice for quick geospatial work, and we think it's perfect for beginners.
+We have used Carto to build complex applications like [StreetsSD](http://streets.sandiego.gov) and simple visualizations that you see on this portal.  It's our tool of choice for quick geospatial work, and we think it's perfect for beginners.
 
 If you're not digging the web interface, or don't want to make yet another account somehwere else, check out [QGis](http://www2.qgis.org/en/site/).  It's an open source desktop software that lets you work with geospatial data.  ESRI also provides a [Geo Data Explorer](http://www.esri.com/software/arcgis/explorer/).
 
