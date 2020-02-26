@@ -7,11 +7,11 @@ category:
 resources:
   - name: Active permits
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_accela_active_datasd.csv
+      http://seshat.datasd.org/dsd/permits_set2_active_datasd.csv
     format: csv
   - name: Closed permits
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_accela_closed_datasd.csv
+      http://seshat.datasd.org/dsd/permits_set2_closed_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-04-04'
