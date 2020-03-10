@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Development Project Tags
+title: Development Services Department Project Tags
 department: Development Services
 category:
   - Economy & Community
@@ -19,13 +19,8 @@ date_modified: '2020-04-04'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Tags associated with development projects. Join tags to any [development permits (set 1)](/datasets/development-permits-set1/) dataset to get additional characteristics about the project the permit was issued for.
+Tags associated with Development Services Department projects. Join tags to any [DSD project approvals (set 1)](/datasets/development-permits-set1/) dataset to get additional characteristics about the project for which the approval was issued.
 
 <!-- more -->
 
-Some of the tags included in this dataset are:
-
-- Utility company name
-- Watershed name
-- Affordable housing
-- Telecom
+Tags are not required and are added at the discretion of DSD staff. They are for informational purposes only and should not be used for official reporting purposes.

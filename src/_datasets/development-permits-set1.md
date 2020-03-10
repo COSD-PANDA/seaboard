@@ -1,19 +1,19 @@
 ---
 schema: default
-title: Development Project Permits By Status, set 1 of 2
+title: Development Services Department Project Approvals by Status, set 1 of 2
 department: Development Services
 category:
   - Economy & Community
 resources:
-  - name: Active permits
+  - name: Active approvals
     url: >-
       http://seshat.datasd.org/dsd/permits_set1_active_datasd.csv
     format: csv
-  - name: Closed permits, since 2019
+  - name: Closed approvals, since 2019
     url: >-
       http://seshat.datasd.org/dsd/permits_set1_closed_datasd.csv
     format: csv
-  - name: Closed permits, 2003 through 2018
+  - name: Closed approvals, 2003 through 2018
     url: >-
       http://seshat.datasd.org/dsd/permits_set1_closed_historical_datasd.csv
     format: csv
