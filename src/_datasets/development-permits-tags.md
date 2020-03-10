@@ -23,4 +23,4 @@ Tags associated with Development Services Department projects. Join tags to any 
 
 <!-- more -->
 
-Tags are not required and are added at the discretion of DSD staff. They are for informational purposes only and should not be used for official reporting purposes.
+Tags are for informational purposes only and should not be used for official reporting purposes.
