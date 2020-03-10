@@ -7,6 +7,10 @@ category:
 resources:
   - name: Fire Incidents year-to-date
     url: >-
+      http://seshat.datasd.org/fd_cad/fd_incidents_2020_datasd_v1.csv
+    format: csv
+  - name: Fire Incidents 2019
+    url: >-
       http://seshat.datasd.org/fd_cad/fd_incidents_2019_datasd_v1.csv
     format: csv
   - name: Fire Incidents 2018
@@ -63,7 +67,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-26'
-date_modified: '2019-11-17'
+date_modified: '2020-03-09'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

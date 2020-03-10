@@ -13,6 +13,10 @@ resources:
     url: >-
       http://seshat.datasd.org/dsd/permits_set2_closed_datasd.csv
     format: csv
+  - name: Dictionary
+    url: >-
+      http://seshat.datasd.org/dsd/permits_set2_datasd_dict.csv
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-04-04'
 date_modified: '2020-04-04'

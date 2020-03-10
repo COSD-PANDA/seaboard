@@ -6,6 +6,10 @@ category: City Management
 resources:
   - name: Get It Done Requests year-to-date
     url: >-
+      http://seshat.datasd.org/get_it_done_311/get_it_done_2020_requests_datasd_v1.csv
+    format: csv
+  - name: Get It Done Requests 2019
+    url: >-
       http://seshat.datasd.org/get_it_done_311/get_it_done_2019_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2018
@@ -37,7 +41,7 @@ resources:
       http://san-diego.spotreporters.com/open311/v2/services.json
     format: json
 date_issued: '2016-05-26'
-date_modified: '2019-11-18'
+date_modified: '2020-03-10'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
