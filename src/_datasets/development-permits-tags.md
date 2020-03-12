@@ -14,8 +14,8 @@ resources:
       http://seshat.datasd.org/dsd/permits_set1_project_tags_datasd_dict.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-date_issued: '2020-04-04'
-date_modified: '2020-04-04'
+date_issued: '2020-03-10'
+date_modified: '2020-03-10'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
