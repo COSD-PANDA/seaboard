@@ -5,53 +5,13 @@ department: Department of Finance
 category:
   - City Management
 resources:
-  - name: FY19 Operating Budget 
+  - name: Operating Budget 
     url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY19_datasd.csv
-    format: csv
-  - name: FY18 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY18_datasd.csv
-    format: csv
-  - name: FY18 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY18_datasd.csv
-    format: csv
-  - name: FY17 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY17_datasd.csv
-    format: csv
-  - name: FY16 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY16_datasd.csv
-    format: csv
-  - name: FY15 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY15_datasd.csv
-    format: csv
-  - name: FY14 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY14_datasd.csv
-    format: csv
-  - name: FY13 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY13_datasd.csv
-    format: csv
-  - name: FY12 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY12_datasd.csv
-    format: csv
-  - name: FY11 Operating Budget 
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_FY11_datasd.csv
-    format: csv
-  - name: Operating Budget dictionary
-    url: >-
-      http://seshat.datasd.org/budget/operating_budget_dictionary_datasd.csv
+      http://seshat.datasd.org/budget/budget_operating_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-03-15'
+date_modified: '2020-02-18'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
