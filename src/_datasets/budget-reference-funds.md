@@ -7,7 +7,7 @@ category:
 resources:
   - name: Funds hierarchy
     url: >-
-      http://seshat.datasd.org/budget/budget_reference_funds_datasd.csv
+      http://seshat.datasd.org/budget/budget_reference_funds_datasd_v1.csv
     format: csv
   - name: Funds hierarchy dictionary
     url: >-

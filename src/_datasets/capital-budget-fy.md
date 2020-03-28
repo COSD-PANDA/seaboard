@@ -5,45 +5,13 @@ department: Department of Finance
 category:
   - City Management
 resources:
-  - name: FY18 Adopted CIP Budget
+  - name: CIP Budget
     url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY18_datasd.csv
-    format: csv
-  - name: FY17 Adopted CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY17_datasd.csv
-    format: csv
-  - name: FY16 Adopted CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY16_datasd.csv
-    format: csv
-  - name: FY15 Adopted CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY15_datasd.csv
-    format: csv
-  - name: FY14 Adopted CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY14_datasd.csv
-    format: csv
-  - name: FY13 Adopted CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY13_datasd.csv
-    format: csv
-  - name: FY12 Adopted CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY12_datasd.csv
-    format: csv
-  - name: FY11 Adopted CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_FY11_datasd.csv
-    format: csv
-  - name: CIP Budget dictionary
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_dictionary_datasd.csv
+      http://seshat.datasd.org/budget/budget_capital_fy_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2018-12-05'
+date_modified: '2020-02-18'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

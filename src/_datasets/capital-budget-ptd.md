@@ -5,41 +5,9 @@ department: Department of Finance
 category:
   - City Management
 resources:
-  - name: FY19 project-to-date CIP Budget
+  - name: Project-to-date CIP Budget
     url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY19_datasd.csv
-    format: csv
-  - name: FY18 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY18_datasd.csv
-    format: csv
-  - name: FY17 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY17_datasd.csv
-    format: csv
-  - name: FY16 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY16_datasd.csv
-    format: csv
-  - name: FY15 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY15_datasd.csv
-    format: csv
-  - name: FY14 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY14_datasd.csv
-    format: csv
-  - name: FY13 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY13_datasd.csv
-    format: csv
-  - name: FY12 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY12_datasd.csv
-    format: csv
-  - name: FY11 project-to-date CIP Budget
-    url: >-
-      http://seshat.datasd.org/budget/capital_budget_ptd_FY11_datasd.csv
+      http://seshat.datasd.org/budget/budget_capital_ptd_datasd.csv
     format: csv
   - name: Project-to-date CIP Budget dictionary
     url: >-
@@ -47,7 +15,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-03-15'
+date_modified: '2020-02-18'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
