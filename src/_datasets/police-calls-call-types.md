@@ -7,11 +7,11 @@ category:
 resources:
   - name: Call Types, current
     url: >-
-      http://seshat.datasd.org/pd/pd_dispo_codes_historical_datasd.csv
+      http://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv
     format: csv
   - name: Call Types, prior to October 17, 2017
     url: >-
-      http://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv
+      http://seshat.datasd.org/pd/pd_cfs_calltypes_historical_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'
@@ -19,5 +19,5 @@ date_modified: '2020-05-03'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Calls type codes used by the San Diego Police Department's communications
+Call type codes used by the San Diego Police Department's communications
 dispatch center. This is a reference dataset for [Police Calls for Service](/datasets/police-calls-for-service/).
