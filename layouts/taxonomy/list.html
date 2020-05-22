@@ -1,0 +1,33 @@
+{{ define "main" }}
+	{{ partial "navbar" . }}
+	<div class="container default-page-container">
+		<div class="row">
+			{{ partial "breadcrumbs" . }}
+		</div>
+		<div class="row mb-4">
+			<div class="col">
+				<h1>{{ .Title }}</h1>
+				<p>Choose a department to view the list of datasets published.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<ul class="list-group">
+					{{ $type := .Type }}
+				    {{ range $key, $value := .Data.Terms.Alphabetical }}
+				        {{ $name := .Name }}
+				        {{ $count := .Count }}
+				        {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+				            <li class="list-group-item">
+				            	<a class="pr-2" href="{{ .Permalink }}">{{ .Title }}</a> 
+				            	<p class="filter-count rounded-circle">{{ $count }}</p>
+				            </li>
+				        {{ end }}
+				    {{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+{{ end }}
+  
+  

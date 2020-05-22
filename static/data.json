@@ -1,0 +1,40 @@
+---
+---
+{
+  "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+  "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+  "@id": "http://data.sandiego.gov/data.json",
+  "@type": "dcat:Catalog",
+  "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+  "dataset": [
+    {{ range where .Site.Pages "Section" "datasets" }}
+      {
+        "@type": "dcat:Dataset",
+        "title": {{ .Title }}
+        "description": {{  }}
+        "issued":
+        "keyword":
+        "modified":
+        "publisher":
+        "contactPoint":
+        "identifier":
+        "accessLevel":
+        "bureauCode":
+        "programCode":
+        "license": {{ .License }}
+        "distribution": [
+          {{ range $index, $element := .distributions }}
+          "title": {{ .Title }}
+          "description":
+          "issued": {{ .Issued }}
+          "modified": {{ .Modified }}
+          "accessURL": {{ .AccessURL }}
+          "downloadURL": {{ .DownloadURL }}
+          "byteSize": {{ .ByteSize }}
+          "format": {{ .Format }}
+          {{ end }}
+        ]
+      }
+    {{ end }}
+  ]
+}

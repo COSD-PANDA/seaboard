@@ -1,0 +1,25 @@
+{{ define "main" }}
+	{{ partial "navbar" . }}
+	<div class="container default-page-container">
+		<div class="row">
+			{{ partial "breadcrumbs" . }}
+		</div>
+		<div class="row mb-4">
+			<div class="col">
+				<h1>{{ .Title }} data</h1>
+				<p>Browse {{ .Title }} data on this page, use the filtering options below, or view the full <a href="/datasets/">catalog</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				{{ partial "filters" . }}
+			</div>
+		</div>
+		{{ range sort .Pages "Params.date_modified" "desc"}}
+				{{ partial "dataset-list-item" . }}
+  			{{ end }}
+	</div>
+{{ end }}
+  
+  
+  

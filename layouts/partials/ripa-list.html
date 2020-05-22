@@ -1,0 +1,9 @@
+{{- $scratch := newScratch }}
+{{- $scratch.Set "pageTitle" .Title -}}
+<ul>
+{{- range .Pages "section" "datasets" -}}
+	{{- if and (in .Title "RIPA") (ne .Title $scratch.Get "pageTitle") -}}
+	<li><a href="{{ .RelPermalink }}">{{ .Title }}</li>
+	{{- end -}}
+{{- end -}}
+</ul>

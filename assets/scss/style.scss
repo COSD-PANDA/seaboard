@@ -1,0 +1,229 @@
+/*
+The main SCSS file for everything, yep
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+@mixin merriweather {
+  font-family: "Merriweather",Helvetica, Arial, sans-serif;
+}
+
+@mixin opensans{
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+@mixin sourcesans{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+
+/* Mixin */
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Classic Pallete */
+/*http://take.ms/7Sv5Z*/
+
+$off_white: #f6f6f6;
+$table_dark: #E4E9EB;
+$table_light: transparent;
+
+$trans_light: rgba(0,0,0,0.35);
+$trans_dark: rgba(0,0,0,0.5);
+
+$bg_opacity: 0.95;
+
+$footer_dark: #21282d;
+
+$p_blue: #0098db;
+$p_green: #00c7b2;
+$p_orange: #ffa02f;
+$p_yellow: #fce281;
+$p_white: #000000;
+$p_black: #37424a;
+$p_beige: #dad7cb;
+
+$s_black_dk: #1b242a;
+$s_black_mid: #5d676f;
+$s_black_lt: #d1d4d3;
+
+$s_beige_dk: #bdb1a6;
+$s_beige_mid: #cac0b6;
+$s_beige_lt: #dad7cb;
+
+$s_gray_dk: #747678;
+$s_gray_mid: #adafaf;
+$s_gray_lt: #e0e1dd;
+
+$s_blue_dk: #00549f;
+$s_blue_mid: #005bbb;
+$s_blue_lt: #5eb6e4;
+
+$s_green_dk: #007b69;
+$s_green_mid: #009581;
+$s_green_lt: #80e0d3;
+
+$s_orange_dk: #9c6114;
+$s_orange_mid: #d47600;
+$s_orange_lt: #ffb652;
+
+$s_yellow_dk: #d7a900;
+$s_yellow_mid: #fed100;
+$s_yellow_lt: #f3ec7a;
+
+$nav_strip: white;
+
+$primary: #00857c;
+
+@import "bootstrap-4.4.1/scss/bootstrap";
+
+body {
+  width: 100%;
+  height:100%;
+  @include opensans;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  @include merriweather;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Bootstrap class overrides */
+
+.navbar-brand {
+  line-height: 1rem;
+  margin-top: 2.5rem;
+  display: block;
+}
+
+.breadcrumb {
+  font-weight: 400;
+	a {
+		color:inherit;
+	}
+}
+
+
+
+/* header.html */
+
+.sd-bar {
+  height: 1.6rem;
+  font-weight: 400;
+}
+
+.sd-bar a, .sd-bar a:hover, .sd-bar a:visited {
+  color: black;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+
+.sd-navbar-top {
+  margin-top: 1.6rem;
+  height: 4.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.brand-contain {
+  display:block;
+  height: 4.5rem;
+}
+
+img.nav-logo {
+    height: 3rem;
+    width: auto;
+    margin-top: 0.75rem;
+    vertical-align: baseline;
+  }
+
+/* breadcrumbs.html */
+
+
+
+/* page containers */
+
+.default-page-container {
+  margin-top: 6.1rem;
+  padding-top: 3rem;
+}
+
+/* footer.html */
+
+.info-links, .social-links {
+  a {
+    display:block;
+  }
+}
+
+.top-links {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: left;
+}
+
+.bottom-links {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: left;
+}
+
+.sd-footer {
+  font-weight: 400;
+  margin-top: 50px;
+	a {
+		color: white;
+	}
+}
+
+/* datasets/list.html */
+
+
+/* datasets/single.html */
+
+#dataPreview table {
+  font-size: 0.85em;
+}
+
+#dataPreview table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#dataPreview {
+  overflow-x: auto;
+}
+
+/* taxonomy/list.html */
+
+.filter-count {
+  display:inline-block;
+  width: 20px;
+  height:20px;
+  line-height:20px;
+  text-align:center;
+  font-size: 0.65rem;
+  font-weight:bold;
+  background-color: $gray-400;
+  color: $gray-700;
+}

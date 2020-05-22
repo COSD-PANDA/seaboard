@@ -1,0 +1,27 @@
+<head>
+  {{ partialCached "gtm-head.html" . }}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>

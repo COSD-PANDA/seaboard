@@ -1,0 +1,173 @@
+{{ define "main" }}
+{{ partial "navbar" . }}
+<div class="container default-page-container">
+	<div class="row mb-5">
+		{{ partial "breadcrumbs" . }}
+	</div>
+	<div class="row mb-5">
+		<div class="col">
+			<h1 class="mb-3">
+				<span>
+					{{ .Title }}
+				</span>
+			</h1>
+			<div>
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+	<div class="row mb-5">
+		<div class="col">
+			<h2 class="mb-3">Downloads</h2>
+			<table class="table table-striped table-sm">
+				<tr>
+					<th>Resource</th>
+					<th class="table-content-centered">File type</th>
+					<th class="table-content-centered"></th>
+					<th class="table-content-centered"></th>
+				</tr>
+				{{- $scratch := newScratch -}}
+				{{- $scratch.Set "previewPath" "null" -}}
+				{{ range $index, $element := .Params.resources }}
+				{{- if and (eq "null" ($scratch.Get "previewPath")) (eq .format "csv") -}}
+				{{- $scratch.Set "previewPath" .url -}}
+				{{- end -}}
+				<tr>
+					<td>
+						<span>
+							{{ .name }}
+						</span>
+					</td>
+					<td class="table-content-centered">
+						<span>
+							{{ .format }}
+						</span>
+					</td>
+					<td class="table-content-centered">
+						<a class="btn btn-primary btn-sm" href="{{ .url }}" role="button">Download</a>
+					</td>
+					<td class="table-content-centered">
+						{{- if eq ($scratch.Get "previewPath") .url -}}
+						<button class="btn btn-secondary btn-sm preview-button" disabled>Show preview</button>
+						{{- else -}}
+						<button class="btn btn-secondary btn-sm preview-button">Show preview</button>
+						{{- end -}}
+					</td>
+				</tr>
+				{{ end }}
+			</table>
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col">
+			<h2 class="mb-3">Preview</h2>
+			<div id="dataPreview">
+				<p>Preview is loading ...</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col">
+			<h2 class="mb-3">Additional Info</h2>
+			<table class="table table-striped">
+				<tr>
+					<th>License</th>
+					<td>
+						<a href="{{ .Params.license }}">
+							Open Data Commons Public Domain Dedication and Licence (PDDL)
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<th>Publisher</th>
+					<td>
+						<span>{{ .Params.departments }}</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Date issued</th>
+					<td>
+						<span>{{ .Params.date_issued }}</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Date modified</th>
+					<td>
+						<span>{{ .Params.date_modified }}</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Category</th>
+					<td>
+						<span>
+							{{ .Params.categories }}
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Maintainer</th>
+					<td>
+						<span>{{ .Params.maintainer }}</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Maintainer email</th>
+					<td>
+						<span>{{ .Params.maintainer_email }}</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script>
+	const baseURL = 'https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview';
+	let initialURL = baseURL+'?datasetUrl={{ $scratch.Get "previewPath" }}';
+	initialURL += '&numRows=15';
+	
+    (function() {
+      'use strict';
+
+      document.addEventListener('DOMContentLoaded', function(e) {
+        
+        getDataPreview(initialURL);
+        
+        const prevButtons = document.getElementsByClassName("preview-button");
+
+        const changePreview = function () {
+        	if (this.hasAttribute("disabled")) {
+        		console.log("This is disabled");
+        	} else {
+        		let parent = this.parentNode;
+        		let urlSibling = parent.previousElementSibling;
+        		let typeSibling = urlSibling.previousElementSibling;
+        		console.log(typeSibling)
+        		if (typeSibling.firstElementChild.innerText === "csv") {
+        			console.log("Found csv file");
+        			let urlTarget = urlSibling.firstElementChild.href;
+					let previewURL = baseURL+'?datasetUrl='+urlTarget;
+					previewURL += '&numRows=15';
+					togglePreviewButtons(this);
+					document.getElementById('dataPreview').innerHTML = "<p>Preview is loading ...</p>";
+					getDataPreview(previewURL);
+				} else {
+					togglePreviewButtons(this);
+					document.getElementById('dataPreview').innerHTML = '<p class="font-weight-bold">Preview is not available</p>';
+				}
+        	}
+			
+        }
+
+        Array.from(prevButtons).forEach(function(element) {
+        	element.addEventListener('click', changePreview);
+        });
+
+
+      })
+    })();
+</script>
+
+{{ end }}

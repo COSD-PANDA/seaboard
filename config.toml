@@ -1,0 +1,17 @@
+baseURL = "https://dataportal.netlify.app/"
+languageCode = "en-us"
+title = "City of San Diego Open Data Portal"
+relativeURLS = true
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[params]
+
+	dataSections = ["city-management","recreation","public-safety","infrastructure","environment","transportation","gis","economy"]
+
+[taxonomies]
+	category = "categories"
+	department = "departments"
+
+preserveTaxonomyNames = true
