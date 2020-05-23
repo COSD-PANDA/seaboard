@@ -1,7 +1,8 @@
 ---
-layout: page
 title: About DataSD
-permalink: /about/
+date: 2017-02-21 00:00:00
+url: /about/
+
 ---
 
 DataSD is the information site for the Open Data Program run by the City of San Diego Performance & Analytics Department.

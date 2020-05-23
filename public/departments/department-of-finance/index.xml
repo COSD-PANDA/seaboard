@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Department of Finance on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/department-of-finance/</link>
+    <description>Recent content in Department of Finance on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/department-of-finance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accounts in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-accounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-accounts/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about expense and revenue accounts in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; and &lt;a href=&#34;../../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget datasets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Actuals by fiscal year</title>
+      <link>https://dataportal.netlify.app/datasets/capital-actuals-fy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-actuals-fy/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s CIP actuals. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Actuals project to date</title>
+      <link>https://dataportal.netlify.app/datasets/capital-actuals-ptd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-actuals-ptd/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s CIP expenses. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Budget by fiscal year</title>
+      <link>https://dataportal.netlify.app/datasets/capital-budget-fy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-budget-fy/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s adopted CIP budgets from fiscal year 2011 to the most current. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Budget project to date</title>
+      <link>https://dataportal.netlify.app/datasets/capital-budget-ptd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-budget-ptd/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s budgeted CIP expenses from fiscal year 2011 to the most current. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Departments in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-depts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-depts/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about departments in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; budget dataset.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Funds in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-funds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-funds/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about funds in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; and &lt;a href=&#34;../../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget datasets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Operating Actuals</title>
+      <link>https://dataportal.netlify.app/datasets/operating-actuals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/operating-actuals/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s operating actuals. This data is also visualized by our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Operating budgets</title>
+      <link>https://dataportal.netlify.app/datasets/operating-budget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/operating-budget/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s operating budgets from fiscal year 2011 to the most current. This data is also visualized by our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Projects in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-projects/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about projects in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget dataset.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,8 @@
 ---
-layout: page
 title: Budget data on this portal
-permalink: /budget-topic/
+date: 2018-10-15 00:00:00
+url: /budget-topic/
+
 ---
 
 The City's annual budget allocates or appropriates expenses and revenues for each fiscal year. Budget items related to City operations and services are found in the [Operating Budget](/datasets/operating-budget/). Budget items related to building and upgrading City infrastructure are found in the [Capital Improvement Projects (CIP) Budget](/datasets/capital-budget-fy/). 

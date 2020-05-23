@@ -33,8 +33,44 @@
 
 <script defer src="/assets/jquery.slim.min.js"></script>
 <script defer src="/assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="/assets/main.js"></script>
+
+{{ if .IsHome}}
+<script type="text/javascript">
+(function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {
+    console.log("Front page loaded");
+    document.getElementById("searchSubmit").addEventListener("click", searchSubmit);
+  })
+})();
+</script>
 <script defer src="/assets/fuse.min.js"></script>
 <script defer src="/assets/mark.min.js"></script>
 <script defer src="/assets/search.js"></script>
-<script defer src="/assets/main.js"></script>
+
+{{ else if eq .Section "datasets"}}
+
 <script defer src="/assets/data-preview.js"></script>
+
+{{ else if eq .Title "Explore the Civic Art Collection" }}
+
+<script type="text/javascript">
+(function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {
+    console.log("Art map page loaded");
+    drawMap();
+  })
+})();
+</script>
+
+<script defer src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+<script defer src="https://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script defer src="/assets/art-map.js"></script>
+
+{{ end }}
+
+

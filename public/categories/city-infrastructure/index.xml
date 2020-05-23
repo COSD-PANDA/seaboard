@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>City Infrastructure on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/categories/city-infrastructure/</link>
+    <description>Recent content in City Infrastructure on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/categories/city-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>City Owned Properties - Details</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-details/</guid>
+      <description>Data about property the City of San Diego owns, including the cost, month and year of purchase and the acreage and usage of the site.</description>
+    </item>
+    
+    <item>
+      <title>City Owned Properties - Leases</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-leases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-leases/</guid>
+      <description>Data about leases for City-owned property, including lessee, rent amount and how the property is used.</description>
+    </item>
+    
+    <item>
+      <title>City Owned Properties - Parcels</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-parcels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-parcels/</guid>
+      <description>Site codes for City-owned property in relation to each parcel that was donated or sold to the City. City sites as identified by site code may comprise multiple parcels.</description>
+    </item>
+    
+    <item>
+      <title>Drinking Water Sample Sites</title>
+      <link>https://dataportal.netlify.app/datasets/drinking-water-sample-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/drinking-water-sample-sites/</guid>
+      <description>Locations of sampling sites for the drinking water system. These locations exist to fulfill the federal Total Coliform Rule.</description>
+    </item>
+    
+    <item>
+      <title>Joint use parks</title>
+      <link>https://dataportal.netlify.app/datasets/joint-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/joint-use/</guid>
+      <description>&lt;p&gt;Joint use facilities are intended to provide active and passive recreational opportunities for school children when school is in session and the general public when school is not in session.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Library Locations</title>
+      <link>https://dataportal.netlify.app/datasets/library-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/library-locations/</guid>
+      <description>Point feature layer of City of San Diego library locations with associated website and contact information, created by the County of San Diego Department of Public Works GIS, in conjunction with San Diego County Library (SDCL).</description>
+    </item>
+    
+    <item>
+      <title>Monitoring of Indicator Bacteria in Drinking Water</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-of-indicator-bacteria-in-drinking-water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-of-indicator-bacteria-in-drinking-water/</guid>
+      <description>&lt;p&gt;Here are individual test results from the water monitoring database,
+plus the monthly totals reported to the state to demonstrate MCL compliance.
+This dataset does not include results of tests for chemical parameters.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monitoring of Select Chemical Parameters in Drinking Water</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-of-select-chemical-parameters-in-drinking-water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-of-select-chemical-parameters-in-drinking-water/</guid>
+      <description>&lt;p&gt;Results of tests on drinking water for alkalinity, color, turbidity, hardness,
+conductivity, total dissolved solids, and for selected anions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Park Locations</title>
+      <link>https://dataportal.netlify.app/datasets/park-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/park-locations/</guid>
+      <description>Properties managed by the City of San Diego Parks &amp;amp; Recreation Department.</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Locations</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-locations/</guid>
+      <description>Locations of parking meters with corresponding parking zones and areas.</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Transactions</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-transactions/</guid>
+      <description>All transactions for all parking meters. The raw datasets are large and may be difficult to work with. Aggregated versions are also available.Please note that data for 2019 is missing transactions for some days. We are working to get complete data.</description>
+    </item>
+    
+    <item>
+      <title>Right-of-way parcels</title>
+      <link>https://dataportal.netlify.app/datasets/right-of-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/right-of-way/</guid>
+      <description>This is a subset of a countywide parcels dataset maintained by SanGIS. Right-of-way parcels are those that are legally dedicated to unhindered public travel. SanGIS uses county, state and federal sources to update this data.</description>
+    </item>
+    
+    <item>
+      <title>Street Sweeping Schedule</title>
+      <link>https://dataportal.netlify.app/datasets/street-sweeping-schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/street-sweeping-schedule/</guid>
+      <description>&lt;p&gt;This schedule includes the time and date for street sweeping by block.
+The City&amp;rsquo;s goal is to sweep residential streets at least once per month
+and commercial streets at least once per week.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streetlight point locations</title>
+      <link>https://dataportal.netlify.app/datasets/streetlight_inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streetlight_inventory/</guid>
+      <description>&lt;p&gt;The City has more than 60,000 outdoor lights, which include streetlights, pedestrian lighting, sports lighting, parking lot lighting and specialty lighting, the majority of which are Induction lights that emit an energy efficient broad spectrum light source. This dataset includes coordinates for each light.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streets Overall Condition Index (OCI)</title>
+      <link>https://dataportal.netlify.app/datasets/streets-overall-condition-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-overall-condition-index/</guid>
+      <description>&lt;p&gt;The City performs street condition surveys and assigns an Overall Condition
+Index (OCI) number to each street. OCI is only one of many factors to determine
+the order of street repairs. OCI is not available for private or military streets
+or streets the City was unable to survey due to closures.
+This data is displayed on &lt;a href=&#34;http://www.streets.sandiego.gov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+streets.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streets Repair Line Segments</title>
+      <link>https://dataportal.netlify.app/datasets/streets-repair-segments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-repair-segments/</guid>
+      <description>Shapefile of the City&amp;rsquo;s street network. This shapefile contains the street segments identified in our streets repair projects and Overall Condition Index datasets. This data is displayed on streets.sandiego.gov{:target=&amp;rdquo;_blank&amp;rdquo; rel=&amp;quot;noopener&amp;rdquo;}.</description>
+    </item>
+    
+    <item>
+      <title>Streets Repair Projects</title>
+      <link>https://dataportal.netlify.app/datasets/streets-repair-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-repair-projects/</guid>
+      <description>&lt;p&gt;Repair projects include City streets that have been repaired since
+July 1, 2013 (first full fiscal year comprehensive street repair data
+is readily available) and those that are currently scheduled for repair.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

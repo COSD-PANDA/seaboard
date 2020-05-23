@@ -15,3 +15,7 @@ unsafe= true
 	department = "departments"
 
 preserveTaxonomyNames = true
+
+[outputs]
+	home = ["HTML", "JSON"]
+	section = ["HTML","JSON"]

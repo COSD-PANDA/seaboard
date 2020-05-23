@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
+      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+	<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
+  <div class="container">
+    
+      <div class="float-right">
+        <a href="../../">
+            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
+        </a>
+      </div>
+
+     
+    </div>
+    
+</nav>
+	<div class="container default-page-container">
+		<div class="row"><nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.app/posts'>Posts</a>
+              </li><li class="breadcrumb-item active">
+                The building blocks of an Open Data portal
+              </li></ol>
+</nav></div>
+		<div class="row"><p>When I wrote about <a href="https://data.sandiego.gov/stories/portal-refresh/">how we launched a homemade Open Data portal</a>, I made the claim that a data portal is just a website with a catalog of datasets.</p>
+<p>A few companies sell expensive portal products to governments. These companies take care of hosting the datasets and running that website I’m referring to, where people visit to download the data. Some of these portals also give users limited ability to search, filter, and chart data without downloading it.</p>
+<p>We wanted to have more control over our portal. We had ideas for how it should look and how it should work. Some of these ideas are included in a <a href="http://datasmart.ash.harvard.edu/news/article/an-open-letter-to-the-open-data-community-988">piece of guidance the Civic Analytics Network wrote</a> for Open Data programs.</p>
+<p>We could also save the City of San Diego money, so we figured we would make our own website and find a place to host our datasets. We used a bunch of tools to make accomplishing these simple objectives even easier. What follows is an overview of those tools.</p>
+<h3 id="github-stores-our-code-allows-us-to-collaborate">Github: Stores our code, allows us to collaborate</h3>
+<p>Our team of three collaborated on content and code for the portal. Our codebase lives in this <a href="https://github.com/cityofsandiego/seaboard">Github repo</a>. Team members can pull down the code, add to it and change it, then submit the changes where the whole team can review and incorporate them.</p>
+<p>When we push to certain Github branches, we trigger <a href="http://circleci.com/">Circle CI</a> to deploy a new copy of the site to either staging or production. We use the staging site for internal review, for example when we have a new dataset to publish and need to run it by someone in the owning City department. Once we have production-ready code, that goes live on our server.</p>
+<h3 id="jekyll-static-site-builder">Jekyll: static site builder</h3>
+<p><a href="http://jekyllrb.com/">Jekyll</a> is a major tool we use to create the website. With Jekyll, we can put content into a mix of different file types —  HTML, Markdown, YAML  —  and easily compile them all into a static website. We don’t require a database backing up our site, and we don’t have to have a <a href="https://en.wikipedia.org/wiki/Content_management_system">Content Management System</a> like WordPress.</p>
+<h3 id="circle-ci-deploys-our-code">Circle CI: Deploys our code</h3>
+<p><a href="http://circleci.com/">Circle CI</a> makes deployment simpler and reduces potential for human error. Circle CI deploys to Amazon S3. Depending upon which Github branch we push to, Circle CI can figure out whether to deploy to our staging site or our production site.</p>
+<h3 id="amazon-s3-hosts-our-content">Amazon S3: Hosts our content</h3>
+<p><a href="https://aws.amazon.com/s3/">Amazon S3</a> hosts our portal in two buckets: 1. The bucket for our static site files, and 2. The bucket for our dataset files. This way, each dataset has its own url that developers can build applications off of, knowing that the data will always be updated there and it won’t suddenly become unavailable if the City’s network or the portal go down for some reason.</p>
+<h3 id="cloudfront-serves-our-static-site">Cloudfront: Serves our static site</h3>
+<p>Amazon’s <a href="http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">Cloudfront</a> distributes our static site content to each of multiple servers across the world, also known as Edges. So, when a user visits our portal from China, for example, she is routed to a server closest to her, making the portal experience faster.</p>
+<h3 id="lambda--polymer-create-data-previews">Lambda &amp; Polymer: Create data previews</h3>
+<p>Our datasets are updated often, some daily. But we needed a way to provide a fresh preview of the data each time a user visits a dataset page. We also didn’t want to load the entirety of a large dataset onto the page, because that would be slow.</p>
+<p>Our solution was to use a <a href="https://www.webcomponents.org/">Polymer component</a> built into the template of our dataset pages. It makes a request with the URL of the dataset as a parameter. A <a href="https://aws.amazon.com/lambda/">Lambda function</a> picks the request up, goes to S3, streams the first 10 rows and returns them as JSON. Then the Polymer component displays the resulting JSON.</p>
+<h3 id="keen-monitors-data-updates-and-tracks-portal-usage">Keen: Monitors data updates and tracks portal usage</h3>
+<p>Lambda makes another appearance here. We have a function that checks log files in our Amazon buckets and sends information to <a href="https://keen.io/">Keen.io</a>. We then use Keen to track specific events of interest taken out of the log information, like when a dataset is uploaded, or when someone visits a page on the portal.</p>
+<p>We use Keen’s API to put metrics for daily dataset updates on the portal homepage. But that’s just the beginning.</p>
+<p>We offer this overview because we want you to be able to copy our work. Open source code is important to us  —  after all, our work IS taxpayer funded. Please, visit our <a href="https://github.com/cityofsandiego/seaboard">Github repo</a> where you can copy our data portal and use it as a basis for your own. But know that copying those files is only part of the work involved. Knowledge of the extra tools and processes will help you get the job done.</p></div>
+	</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../../assets/jquery.slim.min.js"></script>
+<script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/main.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

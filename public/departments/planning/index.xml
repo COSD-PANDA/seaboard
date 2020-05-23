@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planning on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/planning/</link>
+    <description>Recent content in Planning on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/planning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bike Master Plan</title>
+      <link>https://dataportal.netlify.app/datasets/bike-master-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/bike-master-plan/</guid>
+      <description>&lt;p&gt;Major infrastructure in the Bike Master Plan adopted in January 2014.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Community planning districts</title>
+      <link>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</guid>
+      <description>Represents the geographic boundaries for the City of San Diego community land use policy plans specific to these geographic areas.</description>
+    </item>
+    
+    <item>
+      <title>General Plan Land Use</title>
+      <link>https://dataportal.netlify.app/datasets/general-plan-land-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/general-plan-land-use/</guid>
+      <description>This dataset represents adopted planned land use polygons for City community planning areas.</description>
+    </item>
+    
+    <item>
+      <title>Multi-Habitat Planning Areas</title>
+      <link>https://dataportal.netlify.app/datasets/mhpa-areas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/mhpa-areas/</guid>
+      <description>&lt;p&gt;The Multi-Habitat Planning Area is planned habitat preserve. Of the 56,831 acres, 90 percent is targeted for preservation. Within this area, development is limited, but the public is allowed access in many areas for recreational activities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zoning</title>
+      <link>https://dataportal.netlify.app/datasets/zoning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/zoning/</guid>
+      <description>This dataset is a collection of the current base zone designations applied to property in the City of San Diego, as per the Official Zoning Map adopted by the City Council on February 28, 2006, and all subsequent updates.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-	{{ partialCached "head.html" . }}
+	{{ partial "head.html" . }}
 
   <body>
 
-	{{ partialCached "header.html" . }}
+	{{ partial "header.html" . }}
 
     {{ block "main" . }}
     {{ end }}
 
-	{{ partialCached "footer.html" . }}
+	{{ partial "footer.html" . }}
 
   </body>
   

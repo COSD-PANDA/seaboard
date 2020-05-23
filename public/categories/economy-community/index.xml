@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Economy &amp; community on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/categories/economy-community/</link>
+    <description>Recent content in Economy &amp; community on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/categories/economy-community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Business improvement districts</title>
+      <link>https://dataportal.netlify.app/datasets/business-improvement-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-improvement-districts/</guid>
+      <description>A BID provides a business area with the resources to develop marketing campaigns, increase awareness and lobbying efforts, secure additional funding and enhance public improvement and beautification projects in partnership with the City.</description>
+    </item>
+    
+    <item>
+      <title>Business Tax Certificates</title>
+      <link>https://dataportal.netlify.app/datasets/business-listings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-listings/</guid>
+      <description>&lt;p&gt;Businesses that operate within San Diego must get a business tax certificate issued by the City Treasurer. This dataset includes all active and inactive business tax certificates issued since 1990.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Candidates and Ballot Measures Receiving Financial Support</title>
+      <link>https://dataportal.netlify.app/datasets/candidates-and-ballot-measures-election/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/candidates-and-ballot-measures-election/</guid>
+      <description>&lt;p&gt;Included here are election committees and candidates for office who received donations, goods and services, or loans, or had money spent independently in support, according to campaign finance data reported to the City Clerk. This is a companion dataset to the &lt;a href=&#34;https://data.sandiego.gov/datasets/financial-support-candidates-and-ballot-measures-election/&#34;&gt;campaign finance transactions dataset&lt;/a&gt; and was created by compiling the unique recipients from all years of financial transactions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Code Enforcement Violations</title>
+      <link>https://dataportal.netlify.app/datasets/code-enforcement-violations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/code-enforcement-violations/</guid>
+      <description>&lt;p&gt;Code Enforcement Violations that were reported to the Development Services Department prior to January 2018 and were and closed out between 2015 and 2018.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Community Development Block Grant (CDBG) areas</title>
+      <link>https://dataportal.netlify.app/datasets/community-block-grants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-block-grants/</guid>
+      <description>&lt;p&gt;Census Tract Block Groups where at least 51 percent of residents are considered low and moderate income, according to the U.S. Housing and Urban Development&amp;rsquo;s Office of Community Planning and Development. CDBG funds are awarded for activities that benefit low- and moderate-income people.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Community planning districts</title>
+      <link>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</guid>
+      <description>Represents the geographic boundaries for the City of San Diego community land use policy plans specific to these geographic areas.</description>
+    </item>
+    
+    <item>
+      <title>Complaint Type Codes</title>
+      <link>https://dataportal.netlify.app/datasets/complaint-type-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/complaint-type-codes/</guid>
+      <description>This is a list of all &amp;ldquo;Complaint Type Codes&amp;rdquo; used by Development Services. These are classifications of complaints. This list is updated as codes are added or removed. Codes are updated no more than quarterly. Please see Code Enforcement{:target=&amp;rsquo;_blank&amp;rsquo;} for more information.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Approvals by Status, set 1 of 2</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-set1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-set1/</guid>
+      <description>Select permit types organized by permit status.This larger set of permit types includes all other permits that are not in set 2.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Approvals by Status, set 2 of 2</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-set2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-set2/</guid>
+      <description>Select permit types organized by permit status.This smaller set of types includes simple permits for no-plan mechanical, electrical, and plumbing work, as well as certain photovoltaic, newsrack, transportation, and traffic control permits. To see data on the remaining permit types, please visit the page for set 1.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Tags</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-tags/</guid>
+      <description>Tags associated with Development Services Department projects. Join tags to any DSD project approvals (set 1) dataset to get additional characteristics about the project for which the approval was issued.Tags are for informational purposes only and should not be used for official reporting purposes.</description>
+    </item>
+    
+    <item>
+      <title>Financial Support for Candidates and Ballot Measures up for Election</title>
+      <link>https://dataportal.netlify.app/datasets/financial-support-candidates-and-ballot-measures-election/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/financial-support-candidates-and-ballot-measures-election/</guid>
+      <description>&lt;p&gt;This dataset contains transactions between election committees and financial
+supporters, including loans, contributions of money, contributions of goods
+and services, and money spent independently to support a candidate or ballot measure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fire battalion districts</title>
+      <link>https://dataportal.netlify.app/datasets/fire-battalion-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-battalion-districts/</guid>
+      <description>&lt;p&gt;Fire Battalion districts have a chief that oversees 6 to 7 fire stations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>General Plan Land Use</title>
+      <link>https://dataportal.netlify.app/datasets/general-plan-land-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/general-plan-land-use/</guid>
+      <description>This dataset represents adopted planned land use polygons for City community planning areas.</description>
+    </item>
+    
+    <item>
+      <title>Historical districts</title>
+      <link>https://dataportal.netlify.app/datasets/historic-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/historic-districts/</guid>
+      <description>&lt;p&gt;Historical districts contain multiple properties and/or objects that share historical significance. The City&amp;rsquo;s Historical Resources Board can establish a district if the contributing resources meet one of six criteria.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maintenance assessment districts</title>
+      <link>https://dataportal.netlify.app/datasets/maintenance-assessment-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/maintenance-assessment-districts/</guid>
+      <description>&lt;p&gt;A Maintenance Assessment District pays additional taxes to receive services beyond the general services the City provides to other areas. These services include landscape, lighting, and hardscape maintenance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Promise Zone boundary</title>
+      <link>https://dataportal.netlify.app/datasets/promise-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/promise-zone/</guid>
+      <description>&lt;p&gt;Promise Zone is a federal designation for an area of San Diego that has high unemployment, poverty, low educational attainment, insufficient access to healthcare and healthy foods, rising crime rates, and the least affordable housing in the country.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Revolving Loan Fund Coverage</title>
+      <link>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.sandiego.gov/economic-development/business/financing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;San Diego Regional Revolving Loan Fund&lt;/a&gt; operates in San Diego and Chula Vista to provide small business assistance and generate neighborhood commercial district revitalization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zoning</title>
+      <link>https://dataportal.netlify.app/datasets/zoning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/zoning/</guid>
+      <description>This dataset is a collection of the current base zone designations applied to property in the City of San Diego, as per the Official Zoning Map adopted by the City Council on February 28, 2006, and all subsequent updates.</description>
+    </item>
+    
+  </channel>
+</rss>

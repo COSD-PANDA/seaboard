@@ -1,0 +1,38 @@
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "includename" (.Get "name") -}}
+{{- $scratch.Set "includecols" (.Get "nos") -}}
+<div class="row">
+	{{- range .Site.Data.highlights.boxes -}}
+    {{- if eq .name ($scratch.Get "includename") -}}
+    {{- range .values -}}
+	<div class="col-sm-12 col-md-3 apps_boxes">
+        <h4 class="chart-title text-center">
+            {{- if ne .link "" -}}
+            <a href="{{ .link }}" target="_blank"  class="cat{{ .cat }}">{{ .title }}</a>
+            {{- else -}}
+            {{ .title }}
+            {{- end -}}
+        </h4>
+        <p class="icon_bar">
+        	{{- $scratch.Set "iconcat" .cat -}}
+        	{{- if ne "" .iconfa -}}
+            <span class='fa fa-{{ .iconfa }} app_icon cat{{ $scratch.Get "iconcat" }}'></span>
+        	{{- else if ne "" .iconimg -}}
+        	<span class='fa app_icon'><img src='/assets/images/{{ .iconimg }}.png'></span>
+        	{{- else -}}
+        	<span></span>
+        	{{- end -}}
+        </p>
+        <div class="app_txt">
+            {{- if eq ($scratch.Get "includename") "comm_policing" -}}
+            <p><span class="app_txt_big cat2">{{ .number }}</span><br>
+            {{- else -}}
+            <p>{{ .number }}<br>
+            {{- end -}}
+            <span class="launch_txt">{{ .txt1 }}</span></p>
+        </div>
+    </div> 
+    {{- end -}}
+    {{- end -}}
+    {{- end -}}   
+</div>

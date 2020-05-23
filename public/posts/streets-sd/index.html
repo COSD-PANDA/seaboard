@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
+      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+	<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
+  <div class="container">
+    
+      <div class="float-right">
+        <a href="../../">
+            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
+        </a>
+      </div>
+
+     
+    </div>
+    
+</nav>
+	<div class="container default-page-container">
+		<div class="row"><nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.app/posts'>Posts</a>
+              </li><li class="breadcrumb-item active">
+                Behind the Scenes of StreetsSD
+              </li></ol>
+</nav></div>
+		<div class="row"><p><a href="http://streets.sandiego.gov">StreetsSD</a> was an interesting project us from an organizational and technical perspective.  Let&rsquo;s peek behind the scenes to see how this all came together.</p>
+<h1 id="overall-architecture">Overall Architecture</h1>
+<h2 id="jekyll">Jekyll</h2>
+<p>Overall, <a href="http://streets.sandiego.gov">StreetsSD</a> is a <a href="https://jekyllrb.com/">Jekyll</a> site.  This allows us to avoid maintenance costs, performance issues, and complexity associated with running database-driven sites.  We host it using Github Pages for the wonderful price of $0.</p>
+<p><img src="../../assets/img/stories/sdstreets_outline.jpg" alt="Jekyll Outline"></p>
+<p>Everything you see outlined in pink above is Jekyll and custom JS. We used the <a href="www.sandiego.gov/communications/design/index.shtml">San Diego Style Guide</a> for colors and layouts.  The charts on the bottom, the layers, and the text in the explainer boxes are controlled by the <a href="https://github.com/cityofsandiego/streetsSD/blob/master/src/_data/views.yml">views.yml</a> in the repo.</p>
+<p>All the dynamic components you see from the layers (FY14, FY15, etc) to the charts and totals are populated through custom SQL queries against data in Carto. They are constructed using the <a href="https://hiddentao.com/squel/">squel library</a> in the <a href="https://github.com/cityofsandiego/streetsSD/blob/master/src/assets/javascript/sqlBuilder.js">sqlBuilder</a> file.</p>
+<p>As an example, when you click on the &ldquo;Work in FY-2016&rdquo; layer, an event is sent that constructs and sends the query to Carto to display results on a map.  Based on the <a href="https://github.com/cityofsandiego/streetsSD/blob/master/src/_data/views.yml">views.yml</a> file, we know that layer has WorkType and WorkByMonth charts, so one more query is constructed and sent to Carto.  After additional JS data processing, we are able to display the charts.</p>
+<h2 id="carto">Carto</h2>
+<p>The interactive map itself is all Carto.  Most of the visual components (e.g. line styles, legends, hovers) are stored in Carto as well.  We don&rsquo;t love that, because those should be stored in code, but we have an issue on the backlog to address it.</p>
+<p><img src="../../assets/img/stories/carto_editor.jpg" alt="Carto editor"></p>
+<p>The map in Carto has two &ldquo;layers&rdquo; - one for OCI and one for Streetwork, both based off <code>sdstreets_query</code> table.  Carto&rsquo;s model for associating layers to datasets ties them together permanently.  By having a virtual dataset that we can impose queries on, we are eliminating the tie between a dataset and a map, giving us more flexibility to flip out the underlying datasets if we need to change schemas.</p>
+<p>Then why two layers from one table?  Because OCI layers and streetwork layers have slightly different fields and labels. Carto&rsquo;s interactive UI is tied to a layer, and we had to separate the two. Then, we impose the queries on the layer accordingly.  We can probably condense this to one layer using more advanced conditional logic, but we&rsquo;ll stay away from that for now.</p>
+<h2 id="deployment">Deployment</h2>
+<p>We use the <code>master</code> branch as the bleeding edge.  That gets deployed to a staging site continuously by CircleCI.  The <code>production</code> branch gets deployed to the <code>gh-pages</code> branch, which is what feeds <a href="http://streets.sandiego.gov">StreetsSD</a>.  We get notifications about each step.</p>
+<h2 id="datasets">Datasets</h2>
+<p>#####<code>cg_streets_combined</code>
+We created this dataset by merging the City&rsquo;s official street file geographies with essential data from the City&rsquo;s Pavement Management System.  Every other set of data is joined against <code>cg_streets_combined</code> by <code>segment_id</code> to derive the geometries and street names.</p>
+<p>#####<code>sd_paving_datasd</code>
+This is the full work layer, encompassing work done from the beginning of FY14. We&rsquo;ll talk about the specifics in the data delivery section.  This has no geospatial data.  As layers get selected, SQL is generated, applied to this layer, and joined against <code>cg_streets_combined</code>.</p>
+<p>#####<code>oci_2011_datasd</code> and <code>oci_2015_datasd</code><br>
+These were created using historical data provided in the Pavement Management System and the new OCI numbers we received from latest run of the most recent vendor.  These also have no geospatial data.  As layers get selected, SQL is generated, applied to this layer, and joined against <code>cg_streets_combined</code>.</p>
+<h2 id="data-discovery">Data Discovery</h2>
+<p>We partnered with the <a href="https://www.sandiego.gov/tsw">Transportation and Storm Water Department</a> to build the map.  However, we quickly ran into some challenges with understanding the data, and the calculations performed for reporting.</p>
+<p>The PVM (let&rsquo;s use that as the acronym for the Pavement Management System) is an application that is built on top of SQL server using queries and stored procedures.  Every month, the streets team has to update IMCAT.  IMCAT is a system the City uses to coordinate street work across departments. This way we can avoid the same segment being dug up multiple times in a short time span.  The streets team pull a report from the PVM generated by a query and a stored procedure).  Then, it&rsquo;s manually cleaned in Excel (we counted 32 steps), joined with a streets shapefile, and uploaded it to IMCAT.</p>
+<p>This is where we started.  The data that gets uploaded to IMCAT has to be in a particular format with certain columns, so we couldn&rsquo;t directly trace that dataset to the query running against PVM.  And we couldn&rsquo;t just guess the query and match the result either - PVM has 319 tables.</p>
+<p>A few months ago, the City invested in a tool called Alation exactly for this type of use case.  We wanted to be able to maintain data catalogs and keep documentation on the data that we have, allowing data users to be better informed.  This database is the first one we connected with Alation.</p>
+<p>We built a robust query to continuously pull data.  To do this, we used Alation to trace the query the PVM application was running.  However, we had no visibility into the stored procedure.  To bypass this, we combined information from using the query, the streets team and Alation&rsquo;s query logs.</p>
+<h3 id="query-log">Query Log</h3>
+<p><img src="../../assets/img/stories/alation_query_log.jpg" alt="Query Log"></p>
+<h3 id="tables">Tables</h3>
+<p><img src="../../assets/img/stories/alation_tables.jpg" alt="Tables"></p>
+<h3 id="table-internal-view--our-notes">Table Internal View + Our Notes</h3>
+<p><img src="../../assets/img/stories/alation_table_internal.jpg" alt="Table Internal View + Our Notes"></p>
+<h3 id="built-query-for-paving-data">Built Query for Paving Data</h3>
+<p><img src="../../assets/img/stories/built_query.jpg" alt="Built Query for Paving Data"></p>
+<h3 id="built-query-for-street-info">Built Query for Street Info</h3>
+<p><img src="https://mrm-screen.s3.amazonaws.com/Streets_Base__Alation_Compose_2016-09-26_13-32-26.png" alt="Built Query for Street Info"></p>
+<p>Going through this process gave us an enormous amount of knowledge of street paving information, which we have documented in Alation.</p>
+<p>However, we weren&rsquo;t done yet.  We still needed to build the ETL for Street Map Data, IMCAT data (because friends don&rsquo;t let friends clean data over and over manually), and the <code>CG_STREETS_COMBINED</code> file.</p>
+<h2 id="data-delivery">Data Delivery</h2>
+<p>We have two main queries that pull data without doing much cleaning.  We wanted to stay away from cleaning in SQL as a best practice.</p>
+<p><code>streets_base</code> gets pulled by FME, combined with the geospatial base file, and outputs as a shapefile to S3.  Carto syncs it down from there:</p>
+<p><img src="../../assets/img/stories/cg_fme.jpg" alt="Streets Base ETL"></p>
+<p>R pulls <code>Pavement Ex</code> in using Alation&rsquo;s API and the <a href="https://github.com/mattwg/alation">Alation R Package</a>, completes the 32 manual steps the department normally has to do (with some conditional forks for IMCAT), and then outputs the <code>sd_paving_datasd.csv</code> file into S3.  We also make sure to standardize the outgoing data according to our <a href="https://datasd.gitbooks.io/open-data-implementation-update-2016/content/main/technical-guidelines.html">Technical Guidelines</a>.  At the same time, we output the IMCAT file to be ingested for the conflict mitigation map.</p>
+<h2 id="verifying-calculations">Verifying Calculations</h2>
+<p>So, how in the world do we know that our constructed SQL on the client side is doing the right thing and making the right calculations? We use R to verify that the calculations are correct by pulling the data straight from Alation, and duplicating the calculations that the SQL does on Streets Map.</p>
+<h1 id="whats-next">What&rsquo;s next?</h1>
+<p>This is an alpha project, and we plan to continue working on it.  We will work in sprints As people submit feature or bug requests, we will prioritize them according to what we think we can do during the time allotted. Critical bugs always get fixed first.</p>
+<p>Of course, we are more than open to Pull Requests.  If there is a feature you really want and we&rsquo;re just unable to get to it, feel free to discuss it with us in the <a href="https://github.com/cityofsandiego/streetsSD/issues">issue queues</a>, fork the code, and make a Pull Request.</p></div>
+	</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../../assets/jquery.slim.min.js"></script>
+<script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/main.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

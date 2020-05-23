@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
+      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+	<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
+  <div class="container">
+    
+      <div class="float-right">
+        <a href="../../">
+            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
+        </a>
+      </div>
+
+     
+    </div>
+    
+</nav>
+	<div class="container default-page-container">
+		<div class="row"><nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.app/posts'>Posts</a>
+              </li><li class="breadcrumb-item active">
+                A Faster Data Portal
+              </li></ol>
+</nav></div>
+		<div class="row"><p>Hey San Diego!  Your open data portal just got a LOT faster!</p>
+<p>One of the reasons we wanted to <a href="https://data.sandiego.gov/stories/portal-refresh">run our own data portal</a> is the flexibility we have to change it and add functionality.</p>
+<p>Today, we&rsquo;re putting the pedal to the metal on those desires.  We initially launched the portal based on JKAN,  but with modified schemas, layouts, and branding.  Because of how fast we moved, we put off thinking about speed and performance.</p>
+<p>Since the dust settled a bit, we had a chance to do that.</p>
+<p><a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> is a tool developed by Google to test web pages for performance, accessibility, and more.  The first time we ran it against our portal, here&rsquo;s what we got:
+<img src="../../assets/img/stories/lighthouse-previous.jpg" alt="Click to see full report"></p>
+<p><a href="http://theia.datasd.org.s3.amazonaws.com/data.sandiego.gov_2017-03-02_19-26-42.html">See full report</a></p>
+<p>30 out of 100, with a lot of marks against the portal due to loading speed.  Time to first paint is a metric that measures when the primary content of a page is visible. That number means it took 5.3 seconds after you navigated to the portal for anything to show up.</p>
+<p>We did badly on plenty of other metrics, including SSL encryption (HTTPS) and offline browsing.</p>
+<p>So why does this matter (besides our obsessive perfectionism)?  KissMetrics has a <a href="https://blog.kissmetrics.com/loading-time/?wide=1">great infographic about this</a>:</p>
+<p><img src="../../assets/img/stories/kissmetrics-loading.jpg" alt="Loading Time"></p>
+<p>In short, we were losing an estimated 25 percent of portal users because of the page loading speed.  Not good.</p>
+<p>My friend and former Code for America co-fellow <a href="http://twitter.com/davidleonardii">David Leonard</a> (who also got me into Polymer components that the <a href="https://data.sandiego.gov/stories/portal-refresh">portal heavily uses</a> ) helped me analyze where the bottlenecks were in our page loading time and gave me some tips about how to speed up the portal.</p>
+<p>We implemented https and service workers (for security and offline browsing and caching) and optimized how components load. The portal is now encrypted, and you can browse it offline.</p>
+<p>I&rsquo;m not going to go into too much detail, but you can <a href="https://github.com/cityofsandiego/seaboard/pull/140">see the pull request here</a>.  We tested again and got a score of 96:</p>
+<p><img src="../../assets/img/stories/lighthouse-report-final.jpg" alt="New Lighthouse"></p>
+<p><a href="http://theia.datasd.org.s3.amazonaws.com/data.sandiego.gov_2017-04-12_18-17-58.html">See full report</a></p>
+<p>Let me use a few buzzwords to describe what happened here, for those fond of them:</p>
+<p><em><strong>We used an agile process to iterate on the technology underlying the performance, availability, and scalability of our portal architecture to decrease page loading speed, increase cybersecurity, and improve an already great product with enhanced user experience.</strong></em></p>
+<p>Or in English:</p>
+<p><em><strong>We did a thing that most organizations do: we improved something we launched, because no one ever gets everything right the first time.  We&rsquo;ll do it again, and again, and again. This is just the first of many changes and enhancements we will be making.</strong></em></p>
+<p>Enjoy your [faster] portal, San Diego!</p></div>
+	</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../../assets/jquery.slim.min.js"></script>
+<script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/main.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

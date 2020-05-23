@@ -24,14 +24,14 @@
           
             {{- if eq (add $index 1) (sub $len 1) -}}
               <li class="breadcrumb-item">
-                <a href='/datasets/'>Data Catalog</a>
+                <a href='./datasets/'>Data Catalog</a>
               </li>
               <li class="breadcrumb-item active">
                 {{ $thisTitle }}
               </li>
             {{- else -}}
               <li class="breadcrumb-item">
-                <a href='/datasets/'>Data Catalog</a>
+                <a href='./datasets/'>Data Catalog</a>
               </li>
               <li class="breadcrumb-item">
                 <a href='{{ $.Scratch.Get "path" }}'>{{ humanize . }}</a>

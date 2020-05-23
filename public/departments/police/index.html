@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
+      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+	<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
+  <div class="container">
+    
+      <div class="float-right">
+        <a href="../../">
+            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
+        </a>
+      </div>
+
+     
+    </div>
+    
+</nav>
+	<div class="container default-page-container">
+		<div class="row">
+			<nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item">
+                <a href='./datasets/'>Data Catalog</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.app/departments'>Departments</a>
+              </li><li class="breadcrumb-item active">
+                Police
+              </li></ol>
+</nav>
+		</div>
+		<div class="row mb-4">
+			<div class="col">
+				<h1>Police data</h1>
+				<p>Browse Police data on this page, use the filtering options below, or view the full <a href="../../datasets/">catalog</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filtersNav" aria-controls="filtersNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="filtersNav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        	
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/city-infrastructure/">
+	  				City Infrastructure
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/city-management/">
+	  				City Management
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/culture-recreation/">
+	  				Culture &amp; Recreation
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/economy-community/">
+	  				Economy &amp; community
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/energy-environment/">
+	  				Energy &amp; environment
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/gis/">
+	  				GIS
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/public-safety/">
+	  				Public safety
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/transportation/">
+	  				Transportation
+	  			</a>
+	  			
+  			
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Departments
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        	
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/city-clerk/">
+	  				City Clerk
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/city-treasurer/">
+	  				City Treasurer
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/commission-for-arts-and-culture/">
+	  				Commission for Arts &amp; Culture
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/community-review-board-on-police-practices/">
+	  				Community Review Board on Police Practices
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/department-of-finance/">
+	  				Department of Finance
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/department-of-it/">
+	  				Department of IT
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/development-services/">
+	  				Development Services
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/economic-development/">
+	  				Economic Development
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/environmental-services/">
+	  				Environmental Services
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/fire-rescue/">
+	  				Fire-Rescue
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/information-technology/">
+	  				Information Technology
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/library/">
+	  				Library
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/park-recreation/">
+	  				Park &amp; Recreation
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/performance-analytics/">
+	  				Performance &amp; Analytics
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/planning/">
+	  				Planning
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/police/">
+	  				Police
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/public-utilities/">
+	  				Public Utilities
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/public-works/">
+	  				Public Works
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/real-estate-assets/">
+	  				Real Estate Assets
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/sangis/">
+	  				SanGIS
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/special-events-filming/">
+	  				Special Events &amp; Filming
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/transportation-storm-water/">
+	  				Transportation &amp; Storm Water
+	  			</a>
+	  			
+  			
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+			</div>
+		</div>
+		
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-collisions/'>Traffic collisions</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-18</p>
+			<p><p>Traffic collision reports within the City of San Diego.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-calls-for-service/'>Police Calls for Service</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-18</p>
+			<p><p>Calls dispatched by the San Diego Police Department&rsquo;s communications
+dispatch center.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-beats/'>Police Beats</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>San Diego Police Department beats.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/pd-divisions/'>Police divisions</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>The City has 9 divisions for the purpose of law enforcement: Central, Northern, Northeastern, Northwestern, Southern, Southeastern, Easter, Western, and Mid-City. Each division is a combination of law beat areas within the division boundary. These are police divisions only and do not represent legal neighborhood or community boundaries.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/pd-neighborhoods/'>Police neighborhoods</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Law beat areas for the purpose of law enforcement within the City. These combine into larger police divisions. These boundaries are for law enforcement only and do not represent legal neighborhood or community boundaries.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-calls-call-types/'>Police Calls for Service Call Types</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-03</p>
+			<p>Call type codes used by the San Diego Police Department&rsquo;s communications dispatch center. This is a reference dataset for Police Calls for Service.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-calls-disposition-codes/'>Police Calls for Service Disposition Codes</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-03</p>
+			<p>Call disposition codes used by the San Diego Police Department&rsquo;s communications dispatch center. This is a reference dataset for Police Calls for Service.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-stops/'>RIPA police stop data - basic details</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>All stops made by the San Diego Police Department. Data collected from these stops conforms to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953). RIPA stops data collection began on July 1, 2018. Data on stops made before July is limited to vehicle stops and can be found in the <a href="../../datasets/police-vehicle-stops/">police vehicle stops dataset</a></p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-stop-reason/'>RIPA police stop data - reason for stop</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>The primary reason a person was stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-actions-taken/'>RIPA police stop data - actions taken</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>Actions an officer took toward a person stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-stop-result/'>RIPA police stop data - result of stop</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>The outcome(s) of a stop for a person stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-prop-seize-basis/'>RIPA police stop data - basis for property seizure</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>Basis for seizing property from persons stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-search-basis/'>RIPA police stop data - basis for searches conducted</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>The basis for any search conducted as part of stop by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-contraband-evid/'>RIPA police stop data - contraband and/or evidence found</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>Type of contraband or evidence found during a stop by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-disability/'>RIPA police stop data - disability of persons stopped</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>Whether a person stopped by the San Diego Police Department displayed signs of deafness, speech impairment, blindness, a mental health condition, intellectual or developmental disability, or another disability categorized as &ldquo;other.&rdquo; This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-gender/'>RIPA police stop data - gender of persons stopped</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>The gender of persons stopped by the San Diego Police Department, as perceived by the officer conducting the stop. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-prop-seize-type/'>RIPA police stop data - property seized</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>Type of property seized from persons stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-ripa-race/'>RIPA police stop data - race of persons stopped</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-03-06</p>
+			<p><p>The race of persons stopped by the San Diego Police Department, as perceived by the officer conducting the stop. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-hate-crimes/'>Hate Crimes</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-02-06</p>
+			<p><p>Hate crimes reported to the San Diego Police Department.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-vehicle-stops-search-details/'>Police Vehicle Stops Search Details</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2019-04-16</p>
+			<p><p>Details on searches conducted during vehicle stops as well as outcomes for stops made by the San Diego Police Department between 2014 and June 26, 2018. For stops made after June 26, 2018, please see the <a href="../../datasets/police-ripa-stops/">Police RIPA Stops datasets</a>.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-vehicle-stops/'>Police Vehicle Stops</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2019-04-16</p>
+			<p><p>Vehicle stops made by the San Diego Police Department between 2014 and June 26, 2018. For stops made after June 26, 2018, please see the <a href="../../datasets/police-ripa-stops/">Police RIPA Stops dataset</a>.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+	</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../../assets/jquery.slim.min.js"></script>
+<script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/main.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>City Treasurer on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/city-treasurer/</link>
+    <description>Recent content in City Treasurer on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/city-treasurer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Business Tax Certificates</title>
+      <link>https://dataportal.netlify.app/datasets/business-listings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-listings/</guid>
+      <description>&lt;p&gt;Businesses that operate within San Diego must get a business tax certificate issued by the City Treasurer. This dataset includes all active and inactive business tax certificates issued since 1990.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Locations</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-locations/</guid>
+      <description>Locations of parking meters with corresponding parking zones and areas.</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Transactions</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-transactions/</guid>
+      <description>All transactions for all parking meters. The raw datasets are large and may be difficult to work with. Aggregated versions are also available.Please note that data for 2019 is missing transactions for some days. We are working to get complete data.</description>
+    </item>
+    
+  </channel>
+</rss>

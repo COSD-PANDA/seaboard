@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Environmental Services on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/environmental-services/</link>
+    <description>Recent content in Environmental Services on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/environmental-services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Streetlight point locations</title>
+      <link>https://dataportal.netlify.app/datasets/streetlight_inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streetlight_inventory/</guid>
+      <description>&lt;p&gt;The City has more than 60,000 outdoor lights, which include streetlights, pedestrian lighting, sports lighting, parking lot lighting and specialty lighting, the majority of which are Induction lights that emit an energy efficient broad spectrum light source. This dataset includes coordinates for each light.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

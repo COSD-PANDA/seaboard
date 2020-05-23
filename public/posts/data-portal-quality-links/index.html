@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
+      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+	<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
+  <div class="container">
+    
+      <div class="float-right">
+        <a href="../../">
+            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
+        </a>
+      </div>
+
+     
+    </div>
+    
+</nav>
+	<div class="container default-page-container">
+		<div class="row"><nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.app/posts'>Posts</a>
+              </li><li class="breadcrumb-item active">
+                Dataset download links have changed
+              </li></ol>
+</nav></div>
+		<div class="row"><p>Most of the data published on this portal is updated via our automation system, which allows us to provide daily updates to hundreds of files. This would not be possible if we manually updated the data. The other side of this coin is that because we are not manually updating data, we are not manually checking the quality. Things happen to the data that we don&rsquo;t always catch until someone in the community spots the problem and lets us know.</p>
+<p>We&rsquo;ve been working on a project to build quality checks into our automation process so that this happens less frequently. As a result of this, we&rsquo;ve had to make some changes across all of our data files, including standardizing field names.</p>
+<p>We know that changing field names could cause scripts that pull our data to break, so starting June 10, 2019, we are outputting the updated data files with file names that have a version number added to the end. The old files will still be available under the existing file names, but the data will not be updated at that location.</p>
+<p>If you normally download our data by clicking the little blue arrow button on the dataset pages, then you don&rsquo;t need to worry about this! However, if you ingest our data by making a request via URL, you will need to update your scripts. The links to all of our data files will have &ldquo;_v1&rdquo; appended to indicate they are version 1. If we ever need to make changes to the schemas in the future, we will increase the version number for that data file.</p>
+<p>Some of the quality issues we will be addressing by the end of the project include unexpected missing values, dates that are outside of the temporal coverage for that file, geocodes that are outside of the bounding box for that file, numeric values that are suddenly much higher or much lower than the average or median, and many others. The automation system will alert us when it finds these problems, and we&rsquo;ll look into it and fix it if needed.</p>
+</div>
+	</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../../assets/jquery.slim.min.js"></script>
+<script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/main.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community Review Board on Police Practices on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/community-review-board-on-police-practices/</link>
+    <description>Recent content in Community Review Board on Police Practices on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/community-review-board-on-police-practices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Complaints Evaluated by the Community Review Board on Police Practices</title>
+      <link>https://dataportal.netlify.app/datasets/crb-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/crb-cases/</guid>
+      <description>&lt;p&gt;The Community Review Board on Police Practices, known as the CRB, was established by San Diego voters in 1988 to review and evaluate complaints filed by the public against members of the City of San Diego Police Department. The CRB reviews and evaluates the administration of discipline arising from sustained complaints, all officer-involved shootings, and all in-custody death cases.  In addition, the Board makes recommendations to the Chief of Police regarding the San Diego Police Department’s policies and procedures.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

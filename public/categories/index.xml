@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/categories/</link>
+    <description>Recent content in Categories on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>City Infrastructure</title>
+      <link>https://dataportal.netlify.app/categories/city-infrastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/city-infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>City Management</title>
+      <link>https://dataportal.netlify.app/categories/city-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/city-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Culture &amp; Recreation</title>
+      <link>https://dataportal.netlify.app/categories/culture-recreation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/culture-recreation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economy &amp; community</title>
+      <link>https://dataportal.netlify.app/categories/economy-community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/economy-community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy &amp; environment</title>
+      <link>https://dataportal.netlify.app/categories/energy-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/energy-environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS</title>
+      <link>https://dataportal.netlify.app/categories/gis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public safety</title>
+      <link>https://dataportal.netlify.app/categories/public-safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/public-safety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transportation</title>
+      <link>https://dataportal.netlify.app/categories/transportation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/categories/transportation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
+      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+	<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
+  <div class="container">
+    
+      <div class="float-right">
+        <a href="../../">
+            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
+        </a>
+      </div>
+
+     
+    </div>
+    
+</nav>
+	<div class="container default-page-container">
+		<div class="row">
+			<nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item">
+                <a href='./datasets/'>Data Catalog</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.app/categories'>Categories</a>
+              </li><li class="breadcrumb-item active">
+                GIS
+              </li></ol>
+</nav>
+		</div>
+		<div class="row mb-4">
+			<div class="col">
+				<h1>GIS data</h1>
+				<p>Browse GIS data on this page, use the filtering options below, or view the full <a href="../../datasets/">catalog</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filtersNav" aria-controls="filtersNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="filtersNav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        	
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/city-infrastructure/">
+	  				City Infrastructure
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/city-management/">
+	  				City Management
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/culture-recreation/">
+	  				Culture &amp; Recreation
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/economy-community/">
+	  				Economy &amp; community
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/energy-environment/">
+	  				Energy &amp; environment
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/gis/">
+	  				GIS
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/public-safety/">
+	  				Public safety
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/categories/transportation/">
+	  				Transportation
+	  			</a>
+	  			
+  			
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Departments
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        	
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/city-clerk/">
+	  				City Clerk
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/city-treasurer/">
+	  				City Treasurer
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/commission-for-arts-and-culture/">
+	  				Commission for Arts &amp; Culture
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/community-review-board-on-police-practices/">
+	  				Community Review Board on Police Practices
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/department-of-finance/">
+	  				Department of Finance
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/department-of-it/">
+	  				Department of IT
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/development-services/">
+	  				Development Services
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/economic-development/">
+	  				Economic Development
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/environmental-services/">
+	  				Environmental Services
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/fire-rescue/">
+	  				Fire-Rescue
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/information-technology/">
+	  				Information Technology
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/library/">
+	  				Library
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/park-recreation/">
+	  				Park &amp; Recreation
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/performance-analytics/">
+	  				Performance &amp; Analytics
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/planning/">
+	  				Planning
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/police/">
+	  				Police
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/public-utilities/">
+	  				Public Utilities
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/public-works/">
+	  				Public Works
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/real-estate-assets/">
+	  				Real Estate Assets
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/sangis/">
+	  				SanGIS
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/special-events-filming/">
+	  				Special Events &amp; Filming
+	  			</a>
+	  			
+  			
+	  			
+	  			<a class="dropdown-item" href="https://dataportal.netlify.app/departments/transportation-storm-water/">
+	  				Transportation &amp; Storm Water
+	  			</a>
+	  			
+  			
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+			</div>
+		</div>
+		
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/address-points-apn/'>Address Points to APN</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>This dataset comprises SITUS address points (as opposed to owner or mailing addresses) for jurisdictions within the County of San Diego.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/bike-master-plan/'>Bike Master Plan</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Major infrastructure in the Bike Master Plan adopted in January 2014.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/bike-route-lines/'>Bike route lines</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>Existing (2015) Bike facilities in the San Diego Region. This dataset was developed for the primary purpose of updating the SANDAG San Diego Regional Bike Map and the interactive bike map on the iCommute website.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/business-improvement-districts/'>Business improvement districts</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>A BID provides a business area with the resources to develop marketing campaigns, increase awareness and lobbying efforts, secure additional funding and enhance public improvement and beautification projects in partnership with the City.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/city-council-districts/'>City Council districts</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>City of San Diego Council Districts Boundaries (adopted August 25, 2011).</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/community-block-grants/'>Community Development Block Grant (CDBG) areas</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Census Tract Block Groups where at least 51 percent of residents are considered low and moderate income, according to the U.S. Housing and Urban Development&rsquo;s Office of Community Planning and Development. CDBG funds are awarded for activities that benefit low- and moderate-income people.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/community-planning-district-boundaries/'>Community planning districts</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>Represents the geographic boundaries for the City of San Diego community land use policy plans specific to these geographic areas.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/fire-battalion-districts/'>Fire battalion districts</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Fire Battalion districts have a chief that oversees 6 to 7 fire stations.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/fire-stations/'>Fire Stations</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>Data covering the location and status of incorporated and unincorporated Fire stations.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/general-plan-land-use/'>General Plan Land Use</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>This dataset represents adopted planned land use polygons for City community planning areas.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/historic-districts/'>Historical districts</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Historical districts contain multiple properties and/or objects that share historical significance. The City&rsquo;s Historical Resources Board can establish a district if the contributing resources meet one of six criteria.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/transit-stops/'>Transit Stops Locations</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Public transit stops and stations covering the County of San Diego.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/transit-routes/'>Transit Routes Lines</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Public transit routes covering the County of San Diego.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/lifeguard-stations/'>Lifeguard station point locations</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Point locations for lifeguard stations on San Diego beaches. The City has nine permanent stations in Ocean Beach, Mission Beach, Pacific Beach, La Jolla, and Black&rsquo;s Beach as well as stations operated seasonally.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/maintenance-assessment-districts/'>Maintenance assessment districts</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>A Maintenance Assessment District pays additional taxes to receive services beyond the general services the City provides to other areas. These services include landscape, lighting, and hardscape maintenance.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/mhpa-areas/'>Multi-Habitat Planning Areas</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>The Multi-Habitat Planning Area is planned habitat preserve. Of the 56,831 acres, 90 percent is targeted for preservation. Within this area, development is limited, but the public is allowed access in many areas for recreational activities.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/park-locations/'>Park Locations</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>Properties managed by the City of San Diego Parks &amp; Recreation Department.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/police-beats/'>Police Beats</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>San Diego Police Department beats.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/pd-divisions/'>Police divisions</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>The City has 9 divisions for the purpose of law enforcement: Central, Northern, Northeastern, Northwestern, Southern, Southeastern, Easter, Western, and Mid-City. Each division is a combination of law beat areas within the division boundary. These are police divisions only and do not represent legal neighborhood or community boundaries.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/pd-neighborhoods/'>Police neighborhoods</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Law beat areas for the purpose of law enforcement within the City. These combine into larger police divisions. These boundaries are for law enforcement only and do not represent legal neighborhood or community boundaries.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/promise-zone/'>Promise Zone boundary</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Promise Zone is a federal designation for an area of San Diego that has high unemployment, poverty, low educational attainment, insufficient access to healthcare and healthy foods, rising crime rates, and the least affordable housing in the country.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/recreation-center-locations/'>Recreation Center Locations</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Recreation centers operated by the City of San Diego Park and Recreation Department for active and passive recreational opportunities.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/revolving-loan-fund-coverage/'>Revolving Loan Fund Coverage</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>The <a href="https://www.sandiego.gov/economic-development/business/financing/" target="_blank" rel="noopener">San Diego Regional Revolving Loan Fund</a> operates in San Diego and Chula Vista to provide small business assistance and generate neighborhood commercial district revitalization.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/streets-repair-segments/'>Streets Repair Line Segments</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>Shapefile of the City&rsquo;s street network. This shapefile contains the street segments identified in our streets repair projects and Overall Condition Index datasets. This data is displayed on streets.sandiego.gov{:target=&rdquo;_blank&rdquo; rel=&quot;noopener&rdquo;}.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/roads-lines/'>Roads Lines</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>This dataset comprises centerline segments for roads (both active and inactive, public and private, constructed or of record) in San Diego County based on data received from all official jurisdictions within the County (the County and 18 cities).</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/san-diego-boundary/'>San Diego city boundary</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p><p>Polygon representing the City of San Diego administrative boundary.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/zoning/'>Zoning</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-05-12</p>
+			<p>This dataset is a collection of the current base zone designations applied to property in the City of San Diego, as per the Official Zoning Map adopted by the City Council on February 28, 2006, and all subsequent updates.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/library-locations/'>Library Locations</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2020-04-28</p>
+			<p>Point feature layer of City of San Diego library locations with associated website and contact information, created by the County of San Diego Department of Public Works GIS, in conjunction with San Diego County Library (SDCL).</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/right-of-way/'>Right-of-way parcels</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2019-09-17</p>
+			<p>This is a subset of a countywide parcels dataset maintained by SanGIS. Right-of-way parcels are those that are legally dedicated to unhindered public travel. SanGIS uses county, state and federal sources to update this data.</p>
+		</dataset>
+	</div>
+</div>
+  			
+				<div class="row my-5">
+	<div class="col">
+		<dataset>
+			<h3>
+				<a href='../../datasets/joint-use/'>Joint use parks</a>
+			</h3>
+			<p class="font-italic font-weight-normal">Last modified: 2019-09-17</p>
+			<p><p>Joint use facilities are intended to provide active and passive recreational opportunities for school children when school is in session and the general public when school is not in session.</p></p>
+		</dataset>
+	</div>
+</div>
+  			
+	</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../../assets/jquery.slim.min.js"></script>
+<script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/main.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

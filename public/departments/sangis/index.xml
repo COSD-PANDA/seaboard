@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SanGIS on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/sangis/</link>
+    <description>Recent content in SanGIS on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/sangis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Address Points to APN</title>
+      <link>https://dataportal.netlify.app/datasets/address-points-apn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/address-points-apn/</guid>
+      <description>&lt;p&gt;This dataset comprises SITUS address points (as opposed to owner or mailing addresses) for jurisdictions within the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Right-of-way parcels</title>
+      <link>https://dataportal.netlify.app/datasets/right-of-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/right-of-way/</guid>
+      <description>This is a subset of a countywide parcels dataset maintained by SanGIS. Right-of-way parcels are those that are legally dedicated to unhindered public travel. SanGIS uses county, state and federal sources to update this data.</description>
+    </item>
+    
+    <item>
+      <title>Roads Lines</title>
+      <link>https://dataportal.netlify.app/datasets/roads-lines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/roads-lines/</guid>
+      <description>This dataset comprises centerline segments for roads (both active and inactive, public and private, constructed or of record) in San Diego County based on data received from all official jurisdictions within the County (the County and 18 cities).</description>
+    </item>
+    
+    <item>
+      <title>San Diego city boundary</title>
+      <link>https://dataportal.netlify.app/datasets/san-diego-boundary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/san-diego-boundary/</guid>
+      <description>&lt;p&gt;Polygon representing the City of San Diego administrative boundary.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transit Routes Lines</title>
+      <link>https://dataportal.netlify.app/datasets/transit-routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-routes/</guid>
+      <description>&lt;p&gt;Public transit routes covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transit Stops Locations</title>
+      <link>https://dataportal.netlify.app/datasets/transit-stops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-stops/</guid>
+      <description>&lt;p&gt;Public transit stops and stations covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dataportal.netlify.app/</loc>
+    <lastmod>2019-06-10T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/data-portal-quality-links/</loc>
+    <lastmod>2019-06-10T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/</loc>
+    <lastmod>2019-06-10T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/portal-architecture/</loc>
+    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/aws-finalist/</loc>
+    <lastmod>2017-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/why-data-automation-matters-data-portals/</loc>
+    <lastmod>2017-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/portal-speedup/</loc>
+    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/streets-sd/</loc>
+    <lastmod>2016-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/get-water-testing-results/</loc>
+    <lastmod>2016-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/keep-track-street-sweeping/</loc>
+    <lastmod>2016-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/solar-permits-2016/</loc>
+    <lastmod>2016-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/posts/parking-meters/</loc>
+    <lastmod>2015-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/topics/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/budget-reference-accounts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/address-points-apn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/bike-master-plan/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/bike-route-lines/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/topics/budget-topic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/business-improvement-districts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/business-listings/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/candidates-and-ballot-measures-election/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/capital-actuals-fy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/capital-actuals-ptd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/capital-budget-fy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/capital-budget-ptd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/city-clerk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/city-council-districts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/city-infrastructure/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/city-management/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/index.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/city-owned-properties-details/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/city-owned-properties-leases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/city-owned-properties-parcels/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/city-treasurer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/code-enforcement-violations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/commission-for-arts-and-culture/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/community-block-grants/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/community-review-board-on-police-practices/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/complaint-type-codes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/crb-cases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/culture-recreation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/data-inventory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/department-of-finance/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/department-of-it/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/budget-reference-depts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/development-services/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/development-permits-set1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/development-permits-set2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/development-permits-tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/drinking-water-sample-sites/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/economic-development/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/economy-community/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/energy-environment/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/enterprise-system-information/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/environmental-services/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/facilities-assessment/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/financial-support-candidates-and-ballot-measures-election/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/fire-battalion-districts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/fire-incident-problem-agg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/fire-incidents/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/fire-stations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/fire-rescue/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/budget-reference-funds/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/general-plan-land-use/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/gis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/gid-graffiti-removal/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-hate-crimes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/historic-districts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/gid-illegal-dumping/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/information-technology/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/joint-use/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/library/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/library-locations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/lifeguard-stations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/public-art/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/maintenance-assessment-districts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/monitoring-of-indicator-bacteria-in-drinking-water/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/monitoring-of-select-chemical-parameters-in-drinking-water/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/mhpa-areas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/operating-actuals/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/operating-budget/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/park-recreation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/park-locations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/parking-meters-locations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/parking-meters-transactions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/performance-analytics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/planning/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/police/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-beats/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-calls-for-service/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-calls-call-types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-calls-disposition-codes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/pd-divisions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/pd-neighborhoods/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-vehicle-stops/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-vehicle-stops-search-details/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/gid-pothole/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/budget-reference-projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/promise-zone/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/public-safety/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/public-utilities/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/public-works/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/real-estate-assets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/recreation-center-locations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/get-it-done-311/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/resident-satisfaction-survey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/right-of-way/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-actions-taken/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-stops/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-prop-seize-basis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-search-basis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-contraband-evid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-disability/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-gender/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-prop-seize-type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-race/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-stop-reason/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-ripa-stop-result/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/roads-lines/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/san-diego-boundary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/sangis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/special-events/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/special-events-filming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/street-sweeping-schedule/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/streetlight_inventory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/streets-overall-condition-index/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/streets-repair-segments/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/streets-repair-projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/topics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/police-collisions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/traffic-volumes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/transit-routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/transit-stops/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/categories/transportation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/departments/transportation-storm-water/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/true/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/datasets/zoning/</loc>
+  </url>
+  
+</urlset>

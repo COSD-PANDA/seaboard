@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
+      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+	<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
+  <div class="container">
+    
+      <div class="float-right">
+        <a href="../../">
+            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
+        </a>
+      </div>
+
+     
+    </div>
+    
+</nav>
+	<div class="container default-page-container">
+		<div class="row"><nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.app/posts'>Posts</a>
+              </li><li class="breadcrumb-item active">
+                Why data automation matters for open data portals
+              </li></ol>
+</nav></div>
+		<div class="row"><p>Be honest. When you read the words data automation you get a sudden rush of melatonin to your brain, your eyelids get heavy, and you get an uncontrollable urge to fall asleep. Don&rsquo;t be ashamed; you are reacting to these words in a similar manner to 99.5% of people on the planet. Bear with me though for just a few paragraphs while I try to explain why it matters, and how we do it here at the City of San Diego.</p>
+<p>Before we get started, let me promise to not use any of the following:</p>
+<ul>
+<li>Mathematics (or any subset thereof)</li>
+<li>Buzzwords</li>
+<li>Tech Jargon</li>
+</ul>
+<h3 id="the-quick-win">The Quick Win</h3>
+<p>One of the best case studies to make obvious the benefits of data automation is <a href="http://streets.sandiego.gov">StreetsSD</a>. We started working on this project with the City&rsquo;s Transportation and Stormwater Department (TSW). They asked us to build a map of paving projects. We got a spreadsheet of data from the department, loaded it into <a href="http://carto.com">our mapping tool</a> and wrote some code. Boom, we had a map.</p>
+<p><img src="../../assets/img/stories/carto_editor.jpg" alt="Carto"></p>
+<h3 id="the-ugly-loss">The Ugly Loss</h3>
+<p>Most web maps, charts, and data visualizations you see in newspapers, and even those created by a lot of cities, usually stop there. That&rsquo;s actually OK because a lot of these things don&rsquo;t need to be updated automatically.   However, the goal of StreetsSD is to provide an up-to-date status of work to city employees and residents. Keeping the map updated is important.</p>
+<p>The typical City approach in these situations is to have someone &ldquo;run a report&rdquo; and upload it somewhere to update the map.  Most of the time, &ldquo;running a report&rdquo; actually means this:</p>
+<ul>
+<li>Extract data from a database, using a query (that could change, resulting in different data).</li>
+<li>Complete 1-40 manual steps in Excel to clean the data.  These steps are usually not documented anywhere and could easily vary for each run of the report.</li>
+<li>Send it or upload it somewhere.</li>
+</ul>
+<p>This approach inherently has several problems:</p>
+<ul>
+<li>Data is inconsistent, meaning source of truth is inconsistent</li>
+<li>Bad data potentially causes bugs in the application</li>
+<li>City employees waste a HUGE amount of time</li>
+<li>People might forget to actually run the report</li>
+<li>We can&rsquo;t expect someone to run a report every day (or with any kind of frequency that a continously update data source needs).</li>
+</ul>
+<p>Needless to say, this sucks. And even though we&rsquo;re creating a great operational tool, we&rsquo;re costing people time and risking the release of wrong information.</p>
+<p>At this point, being the wise reader you are, you might be thinking that the outcome would definitely be worth the cost in the case of just one map. To which I&rsquo;ll respond with:</p>
+<p><img src="../../assets/img/stories/systemic_issue.jpg" alt="Systemic issue"></p>
+<p>This is not a problem with just one map. It would occur with any dataset we provide as open data on the portal, anything we build on top of those datasets, and any internal or external reports we regularly generate.  Therefore, this is a problem that needs to be solved at a systemic level.</p>
+<h3 id="redemption">Redemption</h3>
+<p>Our philosophy has always been to let machines do what they do best - updating data, re-running things, keeping track of things - and humans do what they do best - making those fuzzy decisions that only our brains can.</p>
+<p>We needed a flexible and extensible solution that could scale across the organization as a whole.</p>
+<p><img src="../../assets/img/stories/sd_sources.jpg" alt="CSD Data Sources"></p>
+<p>We turned to an open source project called <a href="https://github.com/apache/incubator-airflow/">Airflow</a>. It has become the tool of choice for Spotify, IFTTT, Lyft, AirBnB and many others for solving this exact set of problems.  Airflow has several advantages:</p>
+<ul>
+<li>Built in Python - so it&rsquo;s extensible with any of thousands of Python open-source packages</li>
+<li>Modular - new connections to different data sources are easy to write</li>
+<li>Open source with a strong community - so there&rsquo;s plenty of support and continuous updates</li>
+<li>Scalable - as we need to do more and more, Airflow easily scales</li>
+</ul>
+<p>We called our Airflow deployment Poseidon because codenames are cool, San Diego is on the Ocean, and Poseidon rules the sea. Plus, we get to use images like these:
+<img src="../../assets/img/stories/poseidon-hero.jpg" alt="Poseidon"></p>
+<p>The basic idea of Poseidon is this:</p>
+<p><img src="../../assets/img/stories/simple_etl.jpg" alt="Basic ETL"></p>
+<ul>
+<li>Get data from a source (database, spreadsheet, map, website)</li>
+<li>Do some stuff to it (geocode it, aggregate it, clean it)</li>
+<li>Upload it (put it on the cloud that is backing our portal and a variety of other applications)</li>
+<li>Run it on a schedule (once every 5 minutes, OR once every day, OR on every odd day of the month at 3:02 PM)</li>
+</ul>
+<p>Simple, right?</p>
+<p>We&rsquo;re now doing this for all of our datasets (way harder to implement than explain). This means we&rsquo;re also doing it for everything built on top of our data, such as StreetsSD, the portal, and various other visualizations.</p>
+<h3 id="the-open-sea">The Open Sea</h3>
+<p>Now you&rsquo;re probably thinking: whoop-de-doo, I&rsquo;m a resident and I don&rsquo;t know data, so I really don&rsquo;t care that you now have automated data.</p>
+<p>We know. That&rsquo;s why we pushed it further.</p>
+<p>Look back at the diagram above. Those are just dependent pieces that run in a defined cycle. What if we flipped out some of those pieces and got this?</p>
+<p><img src="../../assets/img/stories/adv_flow_diagram.jpg" alt="Adv Flow"></p>
+<p>Automated data is now starting to get interesting. Because of Poseidon&rsquo;s flexibility, and the fact that it&rsquo;s just a bunch of coordinated tasks, we can send automatic notifications, alerts based on thresholds, and all kinds of other cool stuff that would never have been possible without automation.</p>
+<p>But if I told you what we were planning next, I&rsquo;d ruin the surprise. You&rsquo;ll just have to wait and see.</p></div>
+	</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../../assets/jquery.slim.min.js"></script>
+<script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/main.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

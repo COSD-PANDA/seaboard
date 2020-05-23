@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="jumbotron jumbotron-fluid dp-jumbotron">
+	<div class="jumbotron-img-layer jumbotron-img-0"></div>
+	<div class="jumbotron-content-layer">
+		<div class="dp-jumbotron-content">
+			<h1 class="mb-4">Find data</h1>  
+		    <div class="container-fluid">
+		        <div class="data-search-box-layer">
+		            <div class="container find-data-autocomplete">
+		                <div class="col-12">
+		                    {{ partial "search" . }}
+		                </div>
+		            </div>
+		        </div>
+		        <h4 class="font-weight-bold">
+			    	<a href="/datasets/">Or explore the full City of San Diego data catalog<i class="fa fa-angle-right pl-2"></i></a>
+			    </h4>
+		    </div>
+		</div>
+	</div>
+</div>
+{{ end }}

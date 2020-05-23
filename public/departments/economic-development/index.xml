@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Economic Development on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/economic-development/</link>
+    <description>Recent content in Economic Development on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/economic-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Business improvement districts</title>
+      <link>https://dataportal.netlify.app/datasets/business-improvement-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-improvement-districts/</guid>
+      <description>A BID provides a business area with the resources to develop marketing campaigns, increase awareness and lobbying efforts, secure additional funding and enhance public improvement and beautification projects in partnership with the City.</description>
+    </item>
+    
+    <item>
+      <title>Community Development Block Grant (CDBG) areas</title>
+      <link>https://dataportal.netlify.app/datasets/community-block-grants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-block-grants/</guid>
+      <description>&lt;p&gt;Census Tract Block Groups where at least 51 percent of residents are considered low and moderate income, according to the U.S. Housing and Urban Development&amp;rsquo;s Office of Community Planning and Development. CDBG funds are awarded for activities that benefit low- and moderate-income people.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Promise Zone boundary</title>
+      <link>https://dataportal.netlify.app/datasets/promise-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/promise-zone/</guid>
+      <description>&lt;p&gt;Promise Zone is a federal designation for an area of San Diego that has high unemployment, poverty, low educational attainment, insufficient access to healthcare and healthy foods, rising crime rates, and the least affordable housing in the country.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Revolving Loan Fund Coverage</title>
+      <link>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.sandiego.gov/economic-development/business/financing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;San Diego Regional Revolving Loan Fund&lt;/a&gt; operates in San Diego and Chula Vista to provide small business assistance and generate neighborhood commercial district revitalization.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

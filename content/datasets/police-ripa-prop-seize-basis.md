@@ -18,4 +18,10 @@ date_modified: '2020-03-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Basis for seizing property from persons stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.<!--more-->The file contains one row per property seizure basis per person stopped by police, if property were seized. Police may have seized multiple types of property per person stopped, or none. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:{% include ripa-list.html %}For more information about RIPA regulations, see the [California Code of Regulations final text](https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/stop-data-reg-final-text-110717.pdf?).
+Basis for seizing property from persons stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.
+
+<!--more-->
+
+The file contains one row per property seizure basis per person stopped by police, if property were seized. Police may have seized multiple types of property per person stopped, or none. The person stopped is uniquely identified in the `pid` field, and the stop is uniquely identified in the `stop_id` field. These two fields can be used to join this dataset to the [other RIPA datasets]().
+
+For more information about RIPA regulations, see the [California Code of Regulations final text](https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/stop-data-reg-final-text-110717.pdf?).

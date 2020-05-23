@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transportation on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/categories/transportation/</link>
+    <description>Recent content in Transportation on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/categories/transportation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bike Master Plan</title>
+      <link>https://dataportal.netlify.app/datasets/bike-master-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/bike-master-plan/</guid>
+      <description>&lt;p&gt;Major infrastructure in the Bike Master Plan adopted in January 2014.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bike route lines</title>
+      <link>https://dataportal.netlify.app/datasets/bike-route-lines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/bike-route-lines/</guid>
+      <description>Existing (2015) Bike facilities in the San Diego Region. This dataset was developed for the primary purpose of updating the SANDAG San Diego Regional Bike Map and the interactive bike map on the iCommute website.</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Locations</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-locations/</guid>
+      <description>Locations of parking meters with corresponding parking zones and areas.</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Transactions</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-transactions/</guid>
+      <description>All transactions for all parking meters. The raw datasets are large and may be difficult to work with. Aggregated versions are also available.Please note that data for 2019 is missing transactions for some days. We are working to get complete data.</description>
+    </item>
+    
+    <item>
+      <title>Roads Lines</title>
+      <link>https://dataportal.netlify.app/datasets/roads-lines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/roads-lines/</guid>
+      <description>This dataset comprises centerline segments for roads (both active and inactive, public and private, constructed or of record) in San Diego County based on data received from all official jurisdictions within the County (the County and 18 cities).</description>
+    </item>
+    
+    <item>
+      <title>Street Sweeping Schedule</title>
+      <link>https://dataportal.netlify.app/datasets/street-sweeping-schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/street-sweeping-schedule/</guid>
+      <description>&lt;p&gt;This schedule includes the time and date for street sweeping by block.
+The City&amp;rsquo;s goal is to sweep residential streets at least once per month
+and commercial streets at least once per week.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streets Overall Condition Index (OCI)</title>
+      <link>https://dataportal.netlify.app/datasets/streets-overall-condition-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-overall-condition-index/</guid>
+      <description>&lt;p&gt;The City performs street condition surveys and assigns an Overall Condition
+Index (OCI) number to each street. OCI is only one of many factors to determine
+the order of street repairs. OCI is not available for private or military streets
+or streets the City was unable to survey due to closures.
+This data is displayed on &lt;a href=&#34;http://www.streets.sandiego.gov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+streets.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streets Repair Line Segments</title>
+      <link>https://dataportal.netlify.app/datasets/streets-repair-segments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-repair-segments/</guid>
+      <description>Shapefile of the City&amp;rsquo;s street network. This shapefile contains the street segments identified in our streets repair projects and Overall Condition Index datasets. This data is displayed on streets.sandiego.gov{:target=&amp;rdquo;_blank&amp;rdquo; rel=&amp;quot;noopener&amp;rdquo;}.</description>
+    </item>
+    
+    <item>
+      <title>Streets Repair Projects</title>
+      <link>https://dataportal.netlify.app/datasets/streets-repair-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-repair-projects/</guid>
+      <description>&lt;p&gt;Repair projects include City streets that have been repaired since
+July 1, 2013 (first full fiscal year comprehensive street repair data
+is readily available) and those that are currently scheduled for repair.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traffic Volumes</title>
+      <link>https://dataportal.netlify.app/datasets/traffic-volumes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/traffic-volumes/</guid>
+      <description>&lt;p&gt;The census count of vehicles on city streets is normally reported in the form
+of Average Daily Traffic (ADT) counts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transit Routes Lines</title>
+      <link>https://dataportal.netlify.app/datasets/transit-routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-routes/</guid>
+      <description>&lt;p&gt;Public transit routes covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transit Stops Locations</title>
+      <link>https://dataportal.netlify.app/datasets/transit-stops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-stops/</guid>
+      <description>&lt;p&gt;Public transit stops and stations covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

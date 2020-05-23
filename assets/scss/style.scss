@@ -2,7 +2,7 @@
 The main SCSS file for everything, yep
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
 
 @mixin merriweather {
   font-family: "Merriweather",Helvetica, Arial, sans-serif;
@@ -21,10 +21,10 @@ The main SCSS file for everything, yep
 /* Mixin */
 @mixin vertical-align {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 50vh;
+  -webkit-transform: translateY(-50vh);
+  -ms-transform: translateY(-50vh);
+  transform: translateY(-50vh);
 }
 
 /* Classic Pallete */
@@ -81,6 +81,8 @@ $nav_strip: white;
 
 $primary: #00857c;
 
+$trans_calc: calc(50vh+6.1rem);
+
 @import "bootstrap-4.4.1/scss/bootstrap";
 
 body {
@@ -92,10 +94,18 @@ body {
 h1, 
 h2, 
 h3, 
-h4, 
-h5, 
-h6 {
+ {
   @include merriweather;
+}
+
+h4,
+h5,
+h6 {
+  @include opensans;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
@@ -105,6 +115,17 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.default-page-container {
+  p {
+    margin-top:1rem;
+  }
 }
 
 /* Bootstrap class overrides */
@@ -156,15 +177,81 @@ img.nav-logo {
     vertical-align: baseline;
   }
 
-/* breadcrumbs.html */
-
-
-
 /* page containers */
 
 .default-page-container {
   margin-top: 6.1rem;
   padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* jumbotron */
+
+.dp-jumbotron {
+  margin-top: 6.1rem;
+  margin-bottom: 0;
+  text-align: center;
+  height: calc(100vh - 6.1rem);
+  min-height: 300px;
+  padding: 0;
+  position:relative;
+
+  .dp-jumbotron-content {
+    grid-row-start: 2;
+    /*margin-top: 6.1rem;*/
+    height: 11.3rem;
+    /*3.2+1.5+1+0.375+0.375+3+1.25+0.5=11.3 */
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .data-search-box-layer {
+    margin-bottom: 3rem;
+  }
+
+  
+}
+
+.jumbotron-content-layer {
+  width: 100%;
+  height: calc(100vh - 6.1rem);
+  display: grid;
+  grid-template-rows: auto 11.3rem auto;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.jumbotron-img-layer {
+  height: calc(100vh - 6.1rem);
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.jumbotron-img-0 {
+  /* 1400px 144ppi */
+  background-image: url(/assets/images/sd-downtown-1400-144-bw.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .25;
+}
+
+/* Front page search */
+
+div.dropdown-menu.search-dropdown {
+  width: 100%;
+  max-height: calc(9.5rem + 3px);
+  overflow-y: auto;
+  /* 0.75 + 0.75 + 1px */
+}
+
+.search-result-catalog-link {
+  padding-left: 1.25rem;
 }
 
 /* footer.html */
@@ -189,7 +276,6 @@ img.nav-logo {
 
 .sd-footer {
   font-weight: 400;
-  margin-top: 50px;
 	a {
 		color: white;
 	}
@@ -226,4 +312,51 @@ img.nav-logo {
   font-weight:bold;
   background-color: $gray-400;
   color: $gray-700;
+}
+@media
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+
+    /* 1400px 300ppi */
+    .jumbotron-img-0 {
+      background-image: url(/assets/images/sd-downtown-1400-300-bw.jpg);
+    }
+
+  }
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {
+
+  /* 1200px 144ppi */
+  .jumbotron-img-0 {
+    background-image: url(/assets/images/sd-downtown-1200-144-bw.jpg);
+  }
+
+}
+@media
+(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), 
+(min-width: 768px) and (min-resolution: 192dpi) { 
+
+  /* 1200px 300ppi */
+  .jumbotron-img-0 {
+    background-image: url(/assets/images/sd-downtown-1200-300-bw.jpg);
+  }
+
+}
+@media screen and (min-width: 992px) {  
+
+  /* 2000px 144ppi */
+  .jumbotron-img-0 {
+    background-image: url(/assets/images/sd-downtown-2000-144-bw.jpg);
+  }
+
+}
+@media
+(min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), 
+(min-width: 992px) and (min-resolution: 192dpi) { 
+
+  /* 4100px 300ppi */
+  .jumbotron-img-0 {
+    background-image: url(/assets/images/sd-downtown-4100-300-bw.jpg);
+  }
+
 }

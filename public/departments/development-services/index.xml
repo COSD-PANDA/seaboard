@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development Services on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/development-services/</link>
+    <description>Recent content in Development Services on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/development-services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code Enforcement Violations</title>
+      <link>https://dataportal.netlify.app/datasets/code-enforcement-violations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/code-enforcement-violations/</guid>
+      <description>&lt;p&gt;Code Enforcement Violations that were reported to the Development Services Department prior to January 2018 and were and closed out between 2015 and 2018.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Complaint Type Codes</title>
+      <link>https://dataportal.netlify.app/datasets/complaint-type-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/complaint-type-codes/</guid>
+      <description>This is a list of all &amp;ldquo;Complaint Type Codes&amp;rdquo; used by Development Services. These are classifications of complaints. This list is updated as codes are added or removed. Codes are updated no more than quarterly. Please see Code Enforcement{:target=&amp;rsquo;_blank&amp;rsquo;} for more information.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Approvals by Status, set 1 of 2</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-set1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-set1/</guid>
+      <description>Select permit types organized by permit status.This larger set of permit types includes all other permits that are not in set 2.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Approvals by Status, set 2 of 2</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-set2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-set2/</guid>
+      <description>Select permit types organized by permit status.This smaller set of types includes simple permits for no-plan mechanical, electrical, and plumbing work, as well as certain photovoltaic, newsrack, transportation, and traffic control permits. To see data on the remaining permit types, please visit the page for set 1.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Tags</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-tags/</guid>
+      <description>Tags associated with Development Services Department projects. Join tags to any DSD project approvals (set 1) dataset to get additional characteristics about the project for which the approval was issued.Tags are for informational purposes only and should not be used for official reporting purposes.</description>
+    </item>
+    
+    <item>
+      <title>Historical districts</title>
+      <link>https://dataportal.netlify.app/datasets/historic-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/historic-districts/</guid>
+      <description>&lt;p&gt;Historical districts contain multiple properties and/or objects that share historical significance. The City&amp;rsquo;s Historical Resources Board can establish a district if the contributing resources meet one of six criteria.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

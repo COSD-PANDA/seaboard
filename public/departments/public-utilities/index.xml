@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Public Utilities on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/public-utilities/</link>
+    <description>Recent content in Public Utilities on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/public-utilities/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Drinking Water Sample Sites</title>
+      <link>https://dataportal.netlify.app/datasets/drinking-water-sample-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/drinking-water-sample-sites/</guid>
+      <description>Locations of sampling sites for the drinking water system. These locations exist to fulfill the federal Total Coliform Rule.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring of Indicator Bacteria in Drinking Water</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-of-indicator-bacteria-in-drinking-water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-of-indicator-bacteria-in-drinking-water/</guid>
+      <description>&lt;p&gt;Here are individual test results from the water monitoring database,
+plus the monthly totals reported to the state to demonstrate MCL compliance.
+This dataset does not include results of tests for chemical parameters.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monitoring of Select Chemical Parameters in Drinking Water</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-of-select-chemical-parameters-in-drinking-water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-of-select-chemical-parameters-in-drinking-water/</guid>
+      <description>&lt;p&gt;Results of tests on drinking water for alkalinity, color, turbidity, hardness,
+conductivity, total dissolved solids, and for selected anions.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

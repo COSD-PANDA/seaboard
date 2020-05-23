@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performance &amp; Analytics on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/performance-analytics/</link>
+    <description>Recent content in Performance &amp; Analytics on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/performance-analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>72-hour Parking Violation Notifications</title>
+      <link>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</guid>
+      <description>Requests for abandoned vehicle removal made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Data Inventory</title>
+      <link>https://dataportal.netlify.app/datasets/data-inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/data-inventory/</guid>
+      <description>&lt;p&gt;Inventory of datasets targeted for release on the Open Data Portal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Graffiti Removal Requests</title>
+      <link>https://dataportal.netlify.app/datasets/gid-graffiti-removal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-graffiti-removal/</guid>
+      <description>Requests for graffiti removal made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Illegal Dumping Notifications</title>
+      <link>https://dataportal.netlify.app/datasets/gid-illegal-dumping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-illegal-dumping/</guid>
+      <description>Notifications for illegal dumping made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Pothole Repair Requests</title>
+      <link>https://dataportal.netlify.app/datasets/gid-pothole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-pothole/</guid>
+      <description>Requests for pothole repair made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Reports of non-emergency problems submitted by users of Get It Done</title>
+      <link>https://dataportal.netlify.app/datasets/get-it-done-311/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/get-it-done-311/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.sandiego.gov/get-it-done&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Get It Done program&lt;/a&gt; allows residents and visitors to report certain types of non-emergency problems to the City using the Get It Done mobile app, web app, or by telephone. This dataset contains all Get It Done reports the City has received since the program launched in May 2016.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resident Satisfaction survey results</title>
+      <link>https://dataportal.netlify.app/datasets/resident-satisfaction-survey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/resident-satisfaction-survey/</guid>
+      <description>&lt;p&gt;To promote a customer-focused culture, the City of San Diego conducted a Resident Satisfaction Survey in 2015. The survey assessed satisfaction with the delivery of City programs, services, and City staff and preferences about how City officials should prioritize programs and services.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

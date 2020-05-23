@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ partial "navbar" . }}
 <div class="container default-page-container">
 	<div class="row mb-5">
 		{{ partial "breadcrumbs" . }}
@@ -7,9 +6,7 @@
 	<div class="row mb-5">
 		<div class="col">
 			<h1 class="mb-3">
-				<span>
-					{{ .Title }}
-				</span>
+				{{ .Title }}
 			</h1>
 			<div>
 				{{ .Content }}
@@ -31,6 +28,7 @@
 				{{ range $index, $element := .Params.resources }}
 				{{- if and (eq "null" ($scratch.Get "previewPath")) (eq .format "csv") -}}
 				{{- $scratch.Set "previewPath" .url -}}
+				{{- $scratch.Set "previewTitle" .name -}}
 				{{- end -}}
 				<tr>
 					<td>
@@ -61,7 +59,8 @@
 
 	<div class="row mb-5">
 		<div class="col">
-			<h2 class="mb-3">Preview</h2>
+			<h2 id="dataPreviewTitle" class="mb-3">Preview: {{ $scratch.Get "previewTitle" }}</h2>
+			<p class="font-italic font-weight-normal text-primary">This is a preview. If you would like to view the full resource, please download it above.</p>
 			<div id="dataPreview">
 				<p>Preview is loading ...</p>
 			</div>
@@ -144,6 +143,7 @@
         		let parent = this.parentNode;
         		let urlSibling = parent.previousElementSibling;
         		let typeSibling = urlSibling.previousElementSibling;
+        		let titleSibling = typeSibling.previousElementSibling;
         		console.log(typeSibling)
         		if (typeSibling.firstElementChild.innerText === "csv") {
         			console.log("Found csv file");
@@ -153,6 +153,9 @@
 					togglePreviewButtons(this);
 					document.getElementById('dataPreview').innerHTML = "<p>Preview is loading ...</p>";
 					getDataPreview(previewURL);
+					let dataPreviewTitle = titleSibling.firstElementChild.innerText
+					document.getElementById('dataPreviewTitle').innerText = 'Preview: '+dataPreviewTitle;
+
 				} else {
 					togglePreviewButtons(this);
 					document.getElementById('dataPreview').innerHTML = '<p class="font-weight-bold">Preview is not available</p>';
