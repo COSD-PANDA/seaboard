@@ -1,3 +1,13 @@
+function checkSearchDropdown(){
+  let dropdownBox = document.getElementById('searchResults');
+  console.log(dropdownBox.style);
+  if (dropdownBox.style.display === "none") {
+    return true
+  } else {
+    return false
+  }
+}
+
 function searchSubmit(){
   console.log("Button clicked");
   var summaryInclude=60;
@@ -58,12 +68,12 @@ function populateResults(result,term){
   }
   var output = '';
   for (var i=0; i < return_results; i++) {
-    var templateDefinition = $('#search-result-template').html();
+    var templateDefinition = $('#searchResultTemplate').html();
     var contents = result[i].item.contents;
     output += render(templateDefinition,{key:i,section:result[i].item.section,title:result[i].item.title,link:result[i].item.permalink});
   }
-  var resultBox = document.getElementById("search-results");
-  var resultList = document.getElementById("search-results-list");
+  var resultBox = document.getElementById("searchResults");
+  var resultList = document.getElementById("searchResultsList");
   resultList.innerHTML = output;
   //$('.dropdown-toggle').dropdown();
   markResults(term);
@@ -71,7 +81,7 @@ function populateResults(result,term){
 
 function markResults(term) {
 
-  var markInstance = new Mark(document.getElementById("search-results"));
+  var markInstance = new Mark(document.getElementById("searchResults"));
   var keyword = term;
   markInstance.unmark({
     done: function(){

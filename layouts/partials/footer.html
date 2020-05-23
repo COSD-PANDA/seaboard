@@ -32,7 +32,7 @@
 </div>
 
 <script defer src="/assets/jquery.slim.min.js"></script>
-<script defer src="/assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="/assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
 <script defer src="/assets/main.js"></script>
 
 
@@ -44,11 +44,22 @@
   document.addEventListener('DOMContentLoaded', function(e) {
     console.log("Front page loaded");
 
+    let ddHidden = true;
+
+    $('#searchResults').on('show.bs.dropdown', function () {
+        ddHidden = false;
+    }).on('hide.bs.dropdown', function () {
+        ddHidden = true;
+    });
+    
+
     document.getElementById("searchSubmit").addEventListener("click", searchSubmit);
     document.getElementById("searchQuery").addEventListener('keyup', (event) => {
 
         if (event.keyCode === 13) {
-            $('#searchSubmit').dropdown();
+            if (ddHidden) {
+                $('#searchSubmit').dropdown('toggle');
+            }
             searchSubmit();
         }
     }, false);
