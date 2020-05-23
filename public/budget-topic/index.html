@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand py-0" href="../">
+        <img src="../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+        <span class="navbar-brand-text ml-2 float-left">Open Data</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-dark" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../datasets/">Browse Data</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../topics/">Topics</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../get-started/">Get Started</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../resources/">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+<div class="container default-page-container">
+	<div class="row mb-5">
+		<nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item active">
+                Budget data on this portal
+              </li></ol>
+</nav>
+	</div>
+	<div class="row mb-5">
+		<div class="col">
+			<h1 class="mb-3">
+				Budget data on this portal
+			</h1>
+			<div>
+				<p>The City&rsquo;s annual budget allocates or appropriates expenses and revenues for each fiscal year. Budget items related to City operations and services are found in the <a href="../datasets/operating-budget/">Operating Budget</a>. Budget items related to building and upgrading City infrastructure are found in the <a href="../datasets/capital-budget-fy/">Capital Improvement Projects (CIP) Budget</a>.</p>
+<p>Citizens have a few ways of viewing the budget:</p>
+<ul>
+<li>Read a PDF of the published budget document with narratives at <a href="https://www.sandiego.gov/fm">sandiego.gov/fm</a></li>
+<li>Interact with charts and graphs via an online budget tool at <a href="https://budget.sandiego.gov/transparency#/">budget.sandiego.gov</a></li>
+<li>Download the datasets published on this portal. The datasets you can download here include the same data that is uploaded to the online budget tool.</li>
+</ul>
+<p>Checking budgeted amounts against actual dollars spent is part of the budget process. For this reason, we also have available <a href="../datasets/operating-actuals/">Operating Actuals</a> and <a href="../datasets/capital-actuals-fy/">CIP Actuals</a>. These datasets are in the same format as their budget counterparts.</p>
+<p>Each dataset is at the account level. This means that each row in the dataset represents an expense or revenue account, and includes a dollar amount, an expense or revenue account number and name, and a fund type and fund number to categorize and specify the funding repository. Operating budget is further separated by a funds center number, indicating an organizational unit within a department, and the name of the responsible department. Capital budget is further separated by the department that owns the project (asset owning department).</p>
+<p>The information available in the datasets is meant to help data users be able to look through the data and know a little bit about each revenue or expense at-a-glance. However, anyone who wants to analyze the data should consider pulling in additional variables, or columns, that are available in some reference datasets we have also published.</p>
+<h3 id="funds">Funds</h3>
+<p>Fund number and fund type are included in both the capital and operating datasets. You can get a fund description by joining the <strong>fund_number</strong> column for either of those datasets with <strong>fund_number</strong> in the <a href="../datasets/budget-reference-funds/">Funds reference dataset</a>.</p>
+<h3 id="departments">Departments</h3>
+<p>The <a href="../datasets/budget-reference-depts/">Departments reference dataset</a> has the same department name column that is available in the Operating Budget dataset, but it also includes the department group, division, section, and funds center. The funds center represents the lowest level of organizational detail within a department. Department group, name, division, and section represent groupings of funds centers. Join on <strong>funds_center_number</strong>.</p>
+<p>The hierarchy in this reference dataset is <em><strong>dept_group &gt; dept_name &gt; dept_division &gt; dept_section &gt; funds_center</strong></em>.</p>
+<h3 id="accounts">Accounts</h3>
+<p>The account number and name is already available in the capital and operating budgets and is as low-level as you can get it. But, if you want to roll up items, you can join on <strong>account_number</strong> with the <a href="../datasets/budget-reference-accounts/">Accounts reference dataset</a>. The hierarchy here is <em><strong>account_type &gt; account_class &gt; account_group &gt; account</strong></em>.</p>
+<h3 id="projects">Projects</h3>
+<p>In the capital budgets, two project variables are already included: the project department, also known as the asset-owning department, and the project name. But by joining on <strong>project_number</strong> with the <a href="../datasets/budget-reference-projects/">Projects reference dataset</a>, you can roll the account up from name to type of project, or asset type. Putting asset-owning department aside, the hierarchy for the remaining columns is <em><strong>asset_type &gt; asset_subtype &gt; project_name</strong></em>.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../assets/jquery.slim.min.js"></script>
+<script defer src="../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../assets/main.js"></script>
+
+
+
+
+
+
+
+  </body>
+  
+</html>

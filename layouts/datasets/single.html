@@ -25,6 +25,7 @@
 				</tr>
 				{{- $scratch := newScratch -}}
 				{{- $scratch.Set "previewPath" "null" -}}
+				{{- $scratch.Set "dataId" .Title -}}
 				{{ range $index, $element := .Params.resources }}
 				{{- if and (eq "null" ($scratch.Get "previewPath")) (eq .format "csv") -}}
 				{{- $scratch.Set "previewPath" .url -}}
@@ -94,7 +95,7 @@
 				<tr>
 					<th>Date modified</th>
 					<td>
-						<span>{{ .Params.date_modified }}</span>
+						<span id="dateModified">{{ .Params.date_modified }}</span>
 					</td>
 				</tr>
 				<tr>
@@ -126,6 +127,7 @@
 	const baseURL = 'https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview';
 	let initialURL = baseURL+'?datasetUrl={{ $scratch.Get "previewPath" }}';
 	initialURL += '&numRows=15';
+	let dataID = '{{ $scratch.Get "dataId" }}';
 	
     (function() {
       'use strict';
@@ -133,6 +135,7 @@
       document.addEventListener('DOMContentLoaded', function(e) {
         
         getDataPreview(initialURL);
+        getDataDates(dataID);
         
         const prevButtons = document.getElementsByClassName("preview-button");
 

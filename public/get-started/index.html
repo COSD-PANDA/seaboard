@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand py-0" href="../">
+        <img src="../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+        <span class="navbar-brand-text ml-2 float-left">Open Data</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-dark" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../datasets/">Browse Data</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../topics/">Topics</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../get-started/">Get Started</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../resources/">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+<div class="container default-page-container">
+	<div class="row mb-5">
+		<nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item active">
+                Get Started
+              </li></ol>
+</nav>
+	</div>
+	<div class="row mb-5">
+		<div class="col">
+			<h1 class="mb-3">
+				Get Started
+			</h1>
+			<div>
+				
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vUbNO2PeNeA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Open Data is a valuable resource meant for everyone. But let’s face it – using data is difficult, and using it correctly is even more difficult. Our goal is to empower all San Diego residents, from the most techy savvy to the least, to get and use the City’s data.</p>
+<p>We want to help our users by removing the roadblocks we have run into ourselves as data users. The first roadblock might be knowing how to use this data portal effectively. In this tutorial, you&rsquo;ll learn how the portal is organized, how to search for what you want, and how to access the data once you&rsquo;ve found it.</p>
+<h3 id="" class="mt-5 mb-3">What kinds of information can I find on this portal? </h3>
+<p>The main feature of this portal is a catalog of City data. The catalog contains hundreds of downloadable files, most of which are in a tabular format that can be opened in spreadsheet software such as Microsoft Excel.</p>
+<p>Each of these downloadable files - called resources - has rows and rows of records. A record could be the transaction that occurs when a single business pays the City Treasurer for its license, or a record could be an incident that the Police responded to. A payment transaction and a police incident are very different events, so each of the records for those events will have different details. For example, one will have the name of the business as a detail, and one will have a name of a street where a public safety incident occurred. These details fill out the columns in the downloadable files.</p>
+<p>Files with many rows can start to get large and difficult to work with. For this reason, the same kinds of records might be divided into multiple files according to year. Or, we may create a secondary file that aggregates the individual records into counts or sums by day or month. Files with the same kinds of records are grouped into a collection, called a dataset. The list of datasets is what you&rsquo;ll see if you browse data in the catalog, but know that any given dataset may have many resources.</p>
+<h3 id="" class="mt-5 mb-3">How the portal is organized</h3>
+<p>To organize our data, we follow the Catalog &gt; Dataset &gt; Resource model briefly described above. This model is the standard for government open data portals and is published by the World Wide Web Consortium.</p>
+<h4 id="catalog">Catalog</h4>
+<p>The portal’s <a href="../datasets">catalog</a> is essentially a list of datasets.</p>
+<h4 id="dataset">Dataset</h4>
+<p>A dataset is a bucket for multiple views and formats of a single set of data, as well as a place to provide data dictionaries. Each of those permutations and formats is a resource, and all resources are linked from the same dataset page.</p>
+<h4 id="resources">Resources</h4>
+<p>Resources are the actual files, APIs or links that we are sharing. We only provide resources that are machine-readable and in an open format. Resource types include:</p>
+<ul>
+<li>csv</li>
+<li>json</li>
+<li>geojson</li>
+<li>zip</li>
+<li>txt</li>
+<li>xml</li>
+<li>API</li>
+</ul>
+<p>Organizing the data into resources contained in datasets allows us to offer the same data in different formats or at different granularities.</p>
+<h4 id="data-dictionaries">Data dictionaries</h4>
+<p>If you need help interpreting the field descriptions, each resource has a corresponding dictionary available for download or preview from within the dataset.</p>
+<h3 id="" class="mt-5 mb-3">How to navigate the portal</h3>
+<h4 id="available-datasets">Available datasets</h4>
+<p>To view all the datasets currently available, navigate to the  DataSD home page, and click on the <a href="../datasets">Browse Data</a> menu tab at the top of the page.</p>
+<h4 id="searching">Searching</h4>
+<p>With the search bar on the homepage, users can search for data based on keywords in the dataset title or the name of the publishing City department. Simply click on the Find Data search field, and key in your desired search term.</p>
+<p>If you have a topical keyword in mind, try using this to find a dataset by title. Below is an instructional video guide, in which we:</p>
+<ol>
+<li>Conduct a sample search for the dataset <em>Get It Done (311)</em></li>
+<li>Filter the results to include only those related to Potholes</li>
+<li>Preview the results on the screen</li>
+<li>Download the data as a CSV file</li>
+</ol>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/K0K5IsAy5rU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>If you don’t have a topical keyword in mind but have a good idea which City department publishes the data, try searching for that department. Below is an instructional video guide, in which we:</p>
+<ol>
+<li>Conduct a sample search for the Police department</li>
+<li>Select the Police Beats category results</li>
+<li>Preview the results on the screen</li>
+<li>Download the data as a CSV file</li>
+</ol>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/2jSccxSmVYc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../assets/jquery.slim.min.js"></script>
+<script defer src="../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../assets/main.js"></script>
+
+
+
+
+
+
+
+  </body>
+  
+</html>

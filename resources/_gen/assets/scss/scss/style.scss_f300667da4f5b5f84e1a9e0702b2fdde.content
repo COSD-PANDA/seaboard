@@ -7178,11 +7178,6 @@ h4 {
   margin-top: 1rem; }
 
 /* Bootstrap class overrides */
-.navbar-brand {
-  line-height: 1rem;
-  margin-top: 2.5rem;
-  display: block; }
-
 .breadcrumb {
   font-weight: 400; }
   .breadcrumb a {
@@ -7208,10 +7203,16 @@ h4 {
   display: block;
   height: 4.5rem; }
 
+.navbar-brand-text {
+  line-height: 4.5rem;
+  /*line-height: 1rem;
+  margin-top: 2.5rem;*/
+  display: block; }
+
 img.nav-logo {
-  height: 3rem;
+  height: 2.5rem;
   width: auto;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   vertical-align: baseline; }
 
 /* page containers */
@@ -7228,7 +7229,10 @@ img.nav-logo {
   height: calc(100vh - 6.1rem);
   min-height: 300px;
   padding: 0;
-  position: relative; }
+  position: relative;
+  background-color: white;
+  /*background-color: rgba(0,133,124,1);*/
+  /*background-color: rgba(136,209,207,1);*/ }
   .dp-jumbotron .dp-jumbotron-content {
     grid-row-start: 2;
     /*margin-top: 6.1rem;*/
@@ -7261,7 +7265,7 @@ img.nav-logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: .25; }
+  opacity: 1; }
 
 /* Front page search */
 div.dropdown-menu.search-dropdown {
@@ -7340,4 +7344,4 @@ div.dropdown-menu.search-dropdown {
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 992px) and (min-resolution: 192dpi) {
   /* 4100px 300ppi */
   .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-4100-300-bw.jpg); } }
+    background-image: url(/assets/images/sd-downtown-4100-300.jpg); } }

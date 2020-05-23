@@ -35,6 +35,7 @@
 <script defer src="/assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="/assets/main.js"></script>
 
+
 {{ if .IsHome}}
 <script type="text/javascript">
 (function() {
@@ -42,7 +43,16 @@
 
   document.addEventListener('DOMContentLoaded', function(e) {
     console.log("Front page loaded");
+
     document.getElementById("searchSubmit").addEventListener("click", searchSubmit);
+    document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+        if (event.keyCode === 13) {
+            $('#searchSubmit').dropdown();
+            searchSubmit();
+        }
+    }, false);
+
   })
 })();
 </script>

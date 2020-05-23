@@ -3,71 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dataportal.netlify.app/budget-topic/</loc>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dataportal.netlify.app/</loc>
-    <lastmod>2019-06-10T14:00:00+00:00</lastmod>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dataportal.netlify.app/posts/data-portal-quality-links/</loc>
-    <lastmod>2019-06-10T14:00:00+00:00</lastmod>
+    <loc>https://dataportal.netlify.app/topics/</loc>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dataportal.netlify.app/posts/</loc>
-    <lastmod>2019-06-10T14:00:00+00:00</lastmod>
+    <loc>https://dataportal.netlify.app/public-art/</loc>
+    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dataportal.netlify.app/posts/portal-architecture/</loc>
-    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
+    <loc>https://dataportal.netlify.app/about/</loc>
+    <lastmod>2017-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dataportal.netlify.app/posts/aws-finalist/</loc>
-    <lastmod>2017-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/posts/why-data-automation-matters-data-portals/</loc>
-    <lastmod>2017-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/posts/portal-speedup/</loc>
-    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/posts/streets-sd/</loc>
-    <lastmod>2016-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/posts/get-water-testing-results/</loc>
+    <loc>https://dataportal.netlify.app/topics/get-water-testing-results/</loc>
     <lastmod>2016-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dataportal.netlify.app/posts/keep-track-street-sweeping/</loc>
+    <loc>https://dataportal.netlify.app/topics/keep-track-street-sweeping/</loc>
     <lastmod>2016-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dataportal.netlify.app/posts/solar-permits-2016/</loc>
-    <lastmod>2016-07-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/posts/parking-meters/</loc>
+    <loc>https://dataportal.netlify.app/topics/parking-meters/</loc>
     <lastmod>2015-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/topics/about/</loc>
   </url>
   
   <url>
@@ -84,10 +60,6 @@
   
   <url>
     <loc>https://dataportal.netlify.app/datasets/bike-route-lines/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/topics/budget-topic/</loc>
   </url>
   
   <url>
@@ -136,10 +108,6 @@
   
   <url>
     <loc>https://dataportal.netlify.app/categories/city-management/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dataportal.netlify.app/index.html</loc>
   </url>
   
   <url>
@@ -283,11 +251,19 @@
   </url>
   
   <url>
+    <loc>https://dataportal.netlify.app/resources/</loc>
+  </url>
+  
+  <url>
     <loc>https://dataportal.netlify.app/datasets/budget-reference-funds/</loc>
   </url>
   
   <url>
     <loc>https://dataportal.netlify.app/datasets/general-plan-land-use/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/get-started/</loc>
   </url>
   
   <url>
@@ -551,7 +527,7 @@
   </url>
   
   <url>
-    <loc>https://dataportal.netlify.app/topics/</loc>
+    <loc>https://dataportal.netlify.app/terms-use/</loc>
   </url>
   
   <url>

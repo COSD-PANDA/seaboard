@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+	<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <meta name="description" content="">
+
+  <title>City of San Diego Open Data Portal</title>
+
+  <script type="text/javascript">
+  (function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {})
+  })();
+  </script>
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script src="https://use.fontawesome.com/026a71e77f.js"></script>
+
+
+</head>
+
+
+  <body>
+
+	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
+  </p>
+  <p class="float-right mb-0">
+    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
+    <span class="px-2">|</span>
+  </p>
+</div>
+<div class="container-fluid fixed-top sd-navbar-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="brand-contain clearfix">
+      <a class="navbar-brand py-0" href="../">
+        <img src="../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+        <span class="navbar-brand-text ml-2 float-left">Open Data</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-dark" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../datasets/">Browse Data</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../topics/">Topics</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../get-started/">Get Started</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../resources/">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+    
+<div class="container default-page-container">
+	<div class="row mb-5">
+		<nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-white">
+  <li class="breadcrumb-item">
+    <a href="../">
+      <i class="fa fa-home" aria-label="Home"></i>
+    </a>
+  </li><li class="breadcrumb-item active">
+                Explore the Civic Art Collection
+              </li></ol>
+</nav>
+	</div>
+	<div class="row mb-5">
+		<div class="col">
+			<h1 class="mb-3">
+				Explore the Civic Art Collection
+			</h1>
+			<div>
+				<p>Managed by the City of San Diego Commission for Arts and Culture, the Civic Art Collection has grown since 1909 to include paintings, sculptures, works on paper and prints that are exhibited primarily in the working environments of municipal buildings. The Civic Art Collection is further distinguished by integrated artworks in the City’s libraries, parks, public safety facilities, civic buildings and other public spaces throughout San Diego. Use this map to plan your own tour of civic artwork in San Diego.  Further information about the Civic Art Collection can be found at <a href="https://www.sdcivicartcollection.com">www.sdcivicartcollection.com</a>.</p>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,700');
+</style>
+<div class="row">
+    <div class="map-wrapper">
+        <div id="map"></div>
+    </div>
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="container-fluid bg-dark sd-footer">
+<footer>
+    <div class="container footer-links py-4">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="info-links clearfix">
+            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
+            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
+                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
+            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
+            <a title="Terms of Use" href="../terms-use" class="float-md-left pr-md-4">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="social-links clearfix">
+                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</div>
+
+<script defer src="../assets/jquery.slim.min.js"></script>
+<script defer src="../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../assets/main.js"></script>
+
+
+
+
+<script type="text/javascript">
+(function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {
+    console.log("Art map page loaded");
+    drawMap();
+  })
+})();
+</script>
+
+<script defer src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+<script defer src="https://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script defer src="../assets/art-map.js"></script>
+
+
+
+
+
+
+  </body>
+  
+</html>

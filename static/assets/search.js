@@ -18,7 +18,7 @@ function searchSubmit(){
     ]
   };
 
-  var searchTerm = document.getElementById("search-query").value;
+  var searchTerm = document.getElementById("searchQuery").value;
   console.log("Looking for "+searchTerm);
   var pages = loadDatasets(function(response) {
   // Parse JSON string into object

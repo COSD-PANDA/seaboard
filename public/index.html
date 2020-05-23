@@ -42,19 +42,30 @@
     <span class="px-2">|</span>
   </p>
 </div>
-<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+<div class="container-fluid fixed-top sd-navbar-top bg-dark">
   <nav class="navbar navbar-expand-md navbar-dark py-0">
     <div class="brand-contain clearfix">
-      <a class="navbar-brand mr-1 py-0 float-left" href="./">Data</a>
-      <img src="./assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+      <a class="navbar-brand py-0" href="./">
+        <img src="./assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+        <span class="navbar-brand-text ml-2 float-left">Open Data</span>
+      </a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+    <div class="collapse navbar-collapse bg-dark" id="navbarText">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active pl-2">
-          <a class="nav-link" href="./datasets/">Browse Data <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="./datasets/">Browse Data</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="./topics/">Topics</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="./get-started/">Get Started</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="./resources/">Resources</a>
         </li>
       </ul>
     </div>
@@ -62,38 +73,27 @@
 </div>
 
     
-<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
-  <div class="container">
-    
-      <div class="float-right">
-        <a href="./">
-            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
-        </a>
-      </div>
-
-     
-    </div>
-    
-</nav>
 <div class="jumbotron jumbotron-fluid dp-jumbotron">
-	<div class="dp-jumbotron-content">
-		<h1 class="mb-4">Find data</h1>  
-	    <div class="container-fluid">
-	        <div class="data-search-box-layer">
-	            <div class="container find-data-autocomplete">
-	                <div class="col-12">
-	                    <div class="row" >
+	<div class="jumbotron-img-layer jumbotron-img-0"></div>
+	<div class="jumbotron-content-layer">
+		<div class="dp-jumbotron-content">
+			<h1 class="mb-4">Find data</h1>  
+		    <div class="container-fluid">
+		        <div class="data-search-box-layer">
+		            <div class="container find-data-autocomplete">
+		                <div class="col-12">
+		                    <div class="row" >
 	<div class="input-group">
 	  
 	  <div class="input-group-prepend">
 	    <button id="searchSubmit" class="btn btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></button>
 	    <div class="dropdown-menu search-dropdown" id="search-results">
-	      <ul class="list-group mb-2" id="search-results-list"></ul>
+	      <ul class="list-group list-group-flush mb-4" id="search-results-list"></ul>
 	      
-	      <a href="./datasets/" class="search-result-catalog-link"><i>Didn't find what you need? Browse the <b>full catalog</b></i></a>
+	      <a href="./datasets/" class="search-result-catalog-link pb-4"><i>Didn't find what you need? Browse the <b>full catalog</b></i></a>
 	    </div>
 	  </div>
-	  <input type="text" id="search-query" class="form-control" aria-label="Search for data">
+	  <input type="text" id="searchQuery" class="form-control" aria-label="Search for data">
 	</div>
 </div>
 
@@ -102,13 +102,14 @@
     	${section}: <a id="summary-${key}" href="${link}">${title}</a>
     </li>
 </script>
-	                </div>
-	            </div>
-	        </div>
-	        <h5>
-		    	<a href="./datasets/">Or explore the full City of San Diego data catalog<i class="fa fa-angle-right pl-2"></i></a>
-		    </h5>
-	    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <h4 class="font-weight-bold">
+			    	<a href="./datasets/">Or explore the full City of San Diego data catalog<i class="fa fa-angle-right pl-2"></i></a>
+			    </h4>
+		    </div>
+		</div>
 	</div>
 </div>
 
@@ -151,13 +152,23 @@
 <script defer src="./assets/main.js"></script>
 
 
+
 <script type="text/javascript">
 (function() {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function(e) {
     console.log("Front page loaded");
+
     document.getElementById("searchSubmit").addEventListener("click", searchSubmit);
+    document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+        if (event.keyCode === 13) {
+            $('#searchSubmit').dropdown();
+            searchSubmit();
+        }
+    }, false);
+
   })
 })();
 </script>

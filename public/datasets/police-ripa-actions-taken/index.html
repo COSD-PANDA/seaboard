@@ -41,19 +41,30 @@
     <span class="px-2">|</span>
   </p>
 </div>
-<div class="container-fluid fixed-top sd-navbar-top bg-primary">
+<div class="container-fluid fixed-top sd-navbar-top bg-dark">
   <nav class="navbar navbar-expand-md navbar-dark py-0">
     <div class="brand-contain clearfix">
-      <a class="navbar-brand mr-1 py-0 float-left" href="../../">Data</a>
-      <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+      <a class="navbar-brand py-0" href="../../">
+        <img src="../../assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
+        <span class="navbar-brand-text ml-2 float-left">Open Data</span>
+      </a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse bg-primary" id="navbarText">
+    <div class="collapse navbar-collapse bg-dark" id="navbarText">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active pl-2">
-          <a class="nav-link" href="../../datasets/">Browse Data <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../../datasets/">Browse Data</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../topics/">Topics</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../get-started/">Get Started</a>
+        </li>
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="../../resources/">Resources</a>
         </li>
       </ul>
     </div>
@@ -61,19 +72,6 @@
 </div>
 
     
-<nav id="sd-top-nav" class="sd-navbar-top fixed-top" role="navigation">
-  <div class="container">
-    
-      <div class="float-right">
-        <a href="../../">
-            <img class="datasd-logo" src="https://dataportal.netlify.app/assets/img/datasd_logo-01.svg" alt="">
-        </a>
-      </div>
-
-     
-    </div>
-    
-</nav>
 <div class="container default-page-container">
 	<div class="row mb-5">
 		<nav aria-label="breadcrumb">
@@ -98,13 +96,12 @@
 	<div class="row mb-5">
 		<div class="col">
 			<h1 class="mb-3">
-				<span>
-					RIPA police stop data - actions taken
-				</span>
+				RIPA police stop data - actions taken
 			</h1>
 			<div>
 				<p>Actions an officer took toward a person stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.</p>
-<p>The file contains one row per action per person stopped by Police. An officer may have taken more than one action toward a person. The person stopped is uniquely identified in the <code>pid</code> field, and the stop is uniquely identified in the <code>stop_id</code> field. These two fields can be used to join this dataset to the other RIPA datasets available at the following links:{% include ripa-list.html %}For more information about RIPA regulations, see the <a href="https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/stop-data-reg-final-text-110717.pdf?">California Code of Regulations final text</a>.</p>
+<p>The file contains one row per action per person stopped by Police. An officer may have taken more than one action toward a person. The person stopped is uniquely identified in the <code>pid</code> field, and the stop is uniquely identified in the <code>stop_id</code> field. These two fields can be used to join this dataset to the <a href="">other RIPA datasets</a>.</p>
+<p>For more information about RIPA regulations, see the <a href="https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/stop-data-reg-final-text-110717.pdf?">California Code of Regulations final text</a>.</p>
 			</div>
 		</div>
 	</div>
@@ -191,7 +188,7 @@
 				<tr>
 					<th>Date modified</th>
 					<td>
-						<span>2020-03-06</span>
+						<span id="dateModified">2020-03-06</span>
 					</td>
 				</tr>
 				<tr>
@@ -223,6 +220,7 @@
 	const baseURL = 'https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview';
 	let initialURL = baseURL+'?datasetUrl=http:\/\/seshat.datasd.org\/pd\/ripa_actions_taken_datasd.csv';
 	initialURL += '&numRows=15';
+	let dataID = 'RIPA police stop data - actions taken';
 	
     (function() {
       'use strict';
@@ -230,6 +228,7 @@
       document.addEventListener('DOMContentLoaded', function(e) {
         
         getDataPreview(initialURL);
+        getDataDates(dataID);
         
         const prevButtons = document.getElementsByClassName("preview-button");
 
@@ -308,6 +307,7 @@
 <script defer src="../../assets/jquery.slim.min.js"></script>
 <script defer src="../../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="../../assets/main.js"></script>
+
 
 
 
