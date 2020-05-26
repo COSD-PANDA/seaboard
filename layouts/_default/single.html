@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "header.html" . }}
 <div class="container default-page-container">
 	<div class="row mb-5">
 		{{ partial "breadcrumbs" . }}
@@ -14,4 +15,5 @@
 		</div>
 	</div>
 </div>
+{{ partial "footer.html" . }}
 {{ end }}

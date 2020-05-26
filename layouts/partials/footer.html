@@ -37,39 +37,6 @@
 
 
 {{ if .IsHome}}
-<script type="text/javascript">
-(function() {
-  'use strict';
-
-  document.addEventListener('DOMContentLoaded', function(e) {
-    console.log("Front page loaded");
-
-    let ddHidden = true;
-
-    $('#searchResults').on('show.bs.dropdown', function () {
-        ddHidden = false;
-    }).on('hide.bs.dropdown', function () {
-        ddHidden = true;
-    });
-    
-
-    document.getElementById("searchSubmit").addEventListener("click", searchSubmit);
-    document.getElementById("searchQuery").addEventListener('keyup', (event) => {
-
-        if (event.keyCode === 13) {
-            if (ddHidden) {
-                $('#searchSubmit').dropdown('toggle');
-            }
-            searchSubmit();
-        }
-    }, false);
-
-  })
-})();
-</script>
-<script defer src="/assets/fuse.min.js"></script>
-<script defer src="/assets/mark.min.js"></script>
-<script defer src="/assets/search.js"></script>
 
 {{ else if eq .Section "datasets"}}
 

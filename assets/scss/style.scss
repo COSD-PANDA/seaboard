@@ -85,7 +85,7 @@ $trans_calc: calc(50vh+6.1rem);
 
 @import "bootstrap-4.4.1/scss/bootstrap";
 
-body {
+html, body {
   width: 100%;
   height:100%;
   @include opensans;
@@ -189,69 +189,158 @@ img.nav-logo {
 /* jumbotron */
 
 .dp-jumbotron {
-  margin-top: 6.1rem;
   margin-bottom: 0;
-  text-align: center;
-  height: calc(100vh - 6.1rem);
-  min-height: 300px;
+  height: 100vh;
   padding: 0;
-  position:relative;
-  background-color: white;
-  /*background-color: rgba(0,133,124,1);*/
-  /*background-color: rgba(136,209,207,1);*/
+
+  .jumbotron-content-layer {
+    width: 100%;
+    height: 100%;
+  }
 
   .dp-jumbotron-content {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr 1fr;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    
+  }
+
+  .intro-hed {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  .intro-block-contain {
+    grid-column-start: 1;
     grid-row-start: 2;
-    /*margin-top: 6.1rem;*/
-    height: 11.3rem;
-    /*3.2+1.5+1+0.375+0.375+3+1.25+0.5=11.3 */
+    place-self: end start;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+  }
+  .intro-menu {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    place-self: start end;
+    padding-top: 3rem;
+    padding-right: 3rem;
+  }
+  .intro-go {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    place-self: end end;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .intro-menu {
+    img {
+      width: 35px;
+      height: auto;
+    }
+  }
+
+  .intro-go {
+    img {
+      height: 45px;
+      width: auto;
+    }
+
   }
 
   h1 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
+    @include opensans;
+    font-weight: 700;
   }
 
-  .data-search-box-layer {
-    margin-bottom: 3rem;
+  .intro-block {
+    display:inline;
+    box-sizing: content-box;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .dp-jumbotron-searchbox {
+    width: auto;
+    display: inline-flex;
+    
+    .dp-jumbotron-input {
+      
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom:  none;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: inherit;
+      line-height: 1;
+      padding:0;
+      text-decoration: underline;
+      @include opensans;
+      opacity: 1;
+      height: auto;
+      flex: 1 1 content;
+      max-width: 75px; /* This must change with font size */
+      transition: max-width 2s;
+
+    }
+
+    ::-webkit-input-placeholder { /* Edge */
+      color: inherit;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: inherit;
+    }
+
+    ::placeholder {
+      color: inherit;
+      opacity: 1;
+    }
+
+    p#searchSubmit {
+      display: inline-block;
+      font-weight: 400;
+      color: black;
+      text-align: center;
+      cursor: pointer;
+      vertical-align: middle;
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+      line-height: 2.25rem;
+
+    }
+
+    .search-submit-invisible {
+      width: 0;
+    }
+
+
+
+
   }
 
   
-}
-
-.jumbotron-content-layer {
-  width: 100%;
-  height: calc(100vh - 6.1rem);
-  display: grid;
-  grid-template-rows: auto 11.3rem auto;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
-.jumbotron-img-layer {
-  height: calc(100vh - 6.1rem);
-  width: 100%;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
-.jumbotron-img-0 {
-  /* 1400px 144ppi */
-  background-image: url(/assets/images/sd-downtown-1400-144-bw.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 1;
 }
 
 /* Front page search */
 
 div.dropdown-menu.search-dropdown {
   width: 100%;
+  /* This is based on dropdown content */
   max-height: calc(9.5rem + 3px);
   overflow-y: auto;
   /* 0.75 + 0.75 + 1px */
+  opacity: 0.9;
 }
 
 .search-result-catalog-link {
@@ -317,50 +406,77 @@ div.dropdown-menu.search-dropdown {
   background-color: $gray-400;
   color: $gray-700;
 }
-@media
-  (-webkit-min-device-pixel-ratio: 2), 
-  (min-resolution: 192dpi) { 
 
-    /* 1400px 300ppi */
-    .jumbotron-img-0 {
-      background-image: url(/assets/images/sd-downtown-1400-300-bw.jpg);
+/* Small devices (landscape phones, 576px and up) */
+/* Changing slightly to work with content */
+@media (min-width: 600px) {
+
+  .dp-jumbotron {
+    
+    .intro-menu {
+      img { width: 40px; }
     }
 
-  }
-@media screen and (min-width: 576px) {}
-@media screen and (min-width: 768px) {
+    .intro-go {
+      img { height: 50px; }
+    }
 
-  /* 1200px 144ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-1200-144-bw.jpg);
-  }
+    h1 { font-size: 3.5rem; }
 
-}
-@media
-(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), 
-(min-width: 768px) and (min-resolution: 192dpi) { 
+    .intro-block {
+      font-size: 2rem;
+    }
 
-  /* 1200px 300ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-1200-300-bw.jpg);
-  }
+    .dp-jumbotron-searchbox {
 
-}
-@media screen and (min-width: 992px) {  
+      .dp-jumbotron-input { 
+        max-width: 112px;
+        font-size: 2rem;
+      }
 
-  /* 2000px 144ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-2000-144-bw.jpg);
+      p#searchSubmit {
+        line-height: 3rem;
+      }
+
+    }
   }
 
 }
-@media
-(min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), 
-(min-width: 992px) and (min-resolution: 192dpi) { 
 
-  /* 4100px 300ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-4100-300.jpg);
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .dp-jumbotron {
+
+
+    .intro-block {
+      font-size: 2.3rem;
+    }
+
+    .dp-jumbotron-searchbox {
+
+      .dp-jumbotron-input { 
+        max-width: 112px;
+        font-size: 2.3rem;
+      }
+
+      p#searchSubmit {
+        line-height: 3.45rem;
+      }
+
+    }
   }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 
 }

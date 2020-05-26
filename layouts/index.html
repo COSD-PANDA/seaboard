@@ -1,22 +1,121 @@
 {{ define "main" }}
-<div class="jumbotron jumbotron-fluid dp-jumbotron">
-	<div class="jumbotron-img-layer jumbotron-img-0"></div>
+<div class="jumbotron jumbotron-fluid dp-jumbotron" id="dpJumbotron">
 	<div class="jumbotron-content-layer">
-		<div class="dp-jumbotron-content">
-			<h1 class="mb-4">Find data</h1>  
-		    <div class="container-fluid">
-		        <div class="data-search-box-layer">
-		            <div class="container find-data-autocomplete">
-		                <div class="col-12">
-		                    {{ partial "search" . }}
-		                </div>
-		            </div>
-		        </div>
-		        <h4 class="font-weight-bold">
-			    	<a href="/datasets/">Or explore the full City of San Diego data catalog<i class="fa fa-angle-right pl-2"></i></a>
-			    </h4>
-		    </div>
+		<div id="dpJumbotronContent" class="dp-jumbotron-content">
+			<h1 class="intro-hed">San Diego Open Data</h1>
+			<div class="intro-block-contain">
+				<div class="intro-block">
+					This is the official Open Data Portal for the. City of San Diego.
+				</div>  
+				<div class="intro-block">
+			     	{{ partial "search" . }}
+			    </div>
+			    <div class="intro-block">
+			     	or <a>browse</a> for data about topics like <a href="/datasets/traffic-volumes/">traffic</a>, the <a href="/budget-topic/">City budget</a>, <a href="/departments/police/">police activity</a>, <a href="/datasets/business-listings/">local businesses</a>, and <a href="/datasets/">more</a>.
+			    </div>
+			</div>
+			<div class="intro-menu">
+				<a><img src="/assets/images/plus-02.svg" /></a>
+			</div>
+			<div class="intro-go">
+				<a href="/datasets/"><img src="/assets/images/arrow-01.svg" /></a>
+			</div>
 		</div>
 	</div>
 </div>
+
+<script defer src="/assets/jquery.slim.min.js"></script>
+<script defer src="/assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
+<script defer src="/assets/main.js"></script>
+<script type="text/javascript">
+
+let colorArray = []
+
+{{ range $.Site.Data.colors.palette }}
+ colorArray.push({{.}});
+{{ end }}
+
+(function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function(e) {
+    
+    console.log("Front page loaded");
+
+    // Randomize colors
+
+    let textColor = getRandomColor(colorArray);
+    let textColorIndex = colorArray.indexOf(textColor)
+    if (textColorIndex > -1) {
+    	colorArray.splice(textColorIndex, 1)
+    }
+    let bgColor = getRandomColor(colorArray);
+    setNewColors([textColor,bgColor]);
+
+    // Dropdown var for testing
+
+    let ddHidden = true;
+
+    $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+        ddHidden = false;
+    }).on('hide.bs.dropdown', function () {
+        ddHidden = true;
+    });
+    
+    // Button event listener for search submit
+
+    document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+    	
+    	// When search button clicked, prevent default to avoid
+    	// moving focus and deactivating search
+    	// but submit the search
+
+    	event.preventDefault();
+    	searchSubmit();
+    });
+
+    // Keyboard event listener for search
+
+    document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+    	// Check if key pressed is enter
+        if (event.keyCode === 13) {
+        	// If the dropdown is hidden, show it
+            if (ddHidden) {
+            	
+                $('#searchSubmit').dropdown('toggle');
+            }
+            // Either way, run the search
+            searchSubmit();
+        } else {
+        	// If key is any other, check to see if
+        	// user has backspaced input clear
+        	if (event.target.value === "") {
+        		// If so, check if dropdown is showing
+        		if (ddHidden === false) {
+        			// If so, hide it
+        			$('#searchSubmit').dropdown('toggle');
+        		}
+        	}
+        }
+    }, false);
+
+    // Listener to activate search element
+
+    document.getElementById("searchQuery").addEventListener("focus", (event) => {
+    	activateSearch(event.target);
+    })
+
+    // Listener to deactivate search element
+
+    document.getElementById("searchQuery").addEventListener("blur", (event) => {
+    	deActivateSearch(event.target,ddHidden);
+    });
+
+  })
+})();
+</script>
+<script defer src="/assets/fuse.min.js"></script>
+<script defer src="/assets/mark.min.js"></script>
+<script defer src="/assets/search.js"></script>
 {{ end }}

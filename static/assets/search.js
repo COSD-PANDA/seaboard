@@ -9,7 +9,6 @@ function checkSearchDropdown(){
 }
 
 function searchSubmit(){
-  console.log("Button clicked");
   var summaryInclude=60;
   var fuseOptions = {
     shouldSort: true,
@@ -29,13 +28,11 @@ function searchSubmit(){
   };
 
   var searchTerm = document.getElementById("searchQuery").value;
-  console.log("Looking for "+searchTerm);
   var pages = loadDatasets(function(response) {
   // Parse JSON string into object
     var actual_JSON = JSON.parse(response);
     var fuse = new Fuse(actual_JSON, fuseOptions);
     var result = fuse.search(searchTerm);
-    console.log({"matches":result})
     if(result.length > 0){
       populateResults(result,searchTerm);
     } else {
@@ -114,6 +111,5 @@ function render(templateString, data) {
     re = new RegExp(find, 'g');
     templateString = templateString.replace(re, data[key]);
   }
-  console.log(templateString);
   return templateString;
 }

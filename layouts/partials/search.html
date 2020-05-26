@@ -1,21 +1,12 @@
-<div class="row" >
-	<div class="input-group">
-	  
-	  <div class="input-group-prepend">
-	    <button id="searchSubmit" class="btn btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></button>
-	    <div class="dropdown-menu search-dropdown" id="searchResults">
-	      <ul class="list-group list-group-flush mb-4" id="searchResultsList"></ul>
-	      <!--<div class="dropdown-divider"></div>
-	      <ul class="list-group" id="search-results-list">
-	      	<li class="list-group-item">
-		    	<a href="/datasets/"><i>Browse the <b>full catalog</b></i></a>
-		    </li>
-	      </ul>-->
-	      <a href="/datasets/" class="search-result-catalog-link pb-4"><i>Didn't find what you need? Browse the <b>full catalog</b></i></a>
-	    </div>
-	  </div>
-	  <input type="text" id="searchQuery" class="form-control" aria-label="Search for data">
-	</div>
+<div class="input-group dp-jumbotron-searchbox" id="searchQueryContain">
+  <input type="text" id="searchQuery" class="dp-jumbotron-input" aria-label="Search for data" placeholder="Search" autocomplete="off">
+  <div class="input-group-append" id="dropdownMenuParent">
+    <p id="searchSubmit" class="invisible search-submit-invisible" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,0" data-flip="false"><i class="fa fa-search"></i></p>
+    <div class="dropdown-menu search-dropdown dropdown-menu-right" id="searchResults">
+      <ul class="list-group list-group-flush mb-4" id="searchResultsList"></ul>
+      <a href="/datasets/" class="search-result-catalog-link pb-4"><i>Didn't find what you need? Browse the <b>full catalog</b></i></a>
+    </div>
+  </div>
 </div>
 <!-- this template is sucked in by search.js and appended to the search-results div above. So editing here will adjust style -->
 <script id="searchResultTemplate" type="text/x-js-template">
