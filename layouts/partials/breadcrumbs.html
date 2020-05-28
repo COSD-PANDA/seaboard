@@ -11,9 +11,10 @@
       <i class="fa fa-home" aria-label="Home"></i>
     </a>
   </li>
+
       
       {{- range $index, $element := $list -}}
-        
+
         {{- $.Scratch.Add "path" $element -}}
 
         {{- if ne $element "" -}}
@@ -21,18 +22,14 @@
           <!-- Need to add /datasets/ in front of datasets filters -->
 
           {{- if or (eq $element "categories") (eq $element "departments") -}}
-          
+            <li class="breadcrumb-item">
+              <a href='./datasets/'>Data Catalog</a>
+            </li>
             {{- if eq (add $index 1) (sub $len 1) -}}
-              <li class="breadcrumb-item">
-                <a href='./datasets/'>Data Catalog</a>
-              </li>
               <li class="breadcrumb-item active">
                 {{ $thisTitle }}
               </li>
             {{- else -}}
-              <li class="breadcrumb-item">
-                <a href='./datasets/'>Data Catalog</a>
-              </li>
               <li class="breadcrumb-item">
                 <a href='{{ $.Scratch.Get "path" }}'>{{ humanize . }}</a>
               </li>
