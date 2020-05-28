@@ -137,7 +137,20 @@ h4 {
 	}
 }
 
+.modal-backdrop.show {
+  opacity: 1;
+}
 
+/* Netlify color voting form */
+
+.color-vote-form {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 31px;
+  width: 32px;
+  overflow: hidden;
+}
 
 /* header.html */
 
@@ -215,29 +228,29 @@ img.nav-logo {
   .intro-hed {
     grid-column-start: 1;
     grid-row-start: 1;
-    padding-top: 3rem;
-    padding-left: 3rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
   }
   .intro-block-contain {
     grid-column-start: 1;
     grid-row-start: 2;
-    place-self: end start;
-    padding-left: 3rem;
-    padding-bottom: 3rem;
+    place-self: start start;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .intro-menu {
     grid-column-start: 2;
     grid-row-start: 1;
     place-self: start end;
-    padding-top: 3rem;
-    padding-right: 3rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
   }
   .intro-go {
     grid-column-start: 2;
     grid-row-start: 2;
     place-self: end end;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .intro-menu {
@@ -259,6 +272,7 @@ img.nav-logo {
     font-size: 2.5rem;
     @include opensans;
     font-weight: 700;
+    margin-bottom: 0;
   }
 
   .intro-block {
@@ -273,7 +287,7 @@ img.nav-logo {
     display: inline-flex;
     
     .dp-jumbotron-input {
-      
+      outline: none;
       border-top: none;
       border-left: none;
       border-right: none;
@@ -287,9 +301,9 @@ img.nav-logo {
       @include opensans;
       opacity: 1;
       height: auto;
-      flex: 1 1 content;
+      flex: 0 0 0;
       max-width: 75px; /* This must change with font size */
-      transition: max-width 2s;
+      transition: max-width 3s;
 
     }
 
@@ -330,6 +344,65 @@ img.nav-logo {
   }
 
   
+}
+
+/* Front page modal overlay */
+
+#fpOverlay {
+  width: 100%;
+  height: 100vh;
+
+  .fp-modal-dialog {
+
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 5.5rem auto;
+
+    .modal-hed {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      padding-top: 1.5rem;
+      padding-left: 1.5rem;
+      place-self: start start;
+    }
+    .modal-close {
+      grid-column-start: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      place-self: start end;
+      padding-top: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .modal-site-nav {
+      text-align: center;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      place-self: start center;
+      width: auto;
+      height: 16rem;
+      list-style: none;
+      padding:0;
+      a {
+        color: inherit;
+      }
+      
+    }
+    svg#modalCloseTimes {
+      stroke: white;
+      stroke-width: 2px;
+      width: 35px;
+      height: auto;
+    }
+
+  }
 }
 
 /* Front page search */
@@ -412,6 +485,23 @@ div.dropdown-menu.search-dropdown {
 @media (min-width: 600px) {
 
   .dp-jumbotron {
+
+    .intro-hed {
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  .intro-block-contain {
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+  }
+  .intro-menu {
+    padding-top: 3rem;
+    padding-right: 3rem;
+  }
+  .intro-go {
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
     
     .intro-menu {
       img { width: 40px; }
@@ -438,6 +528,24 @@ div.dropdown-menu.search-dropdown {
         line-height: 3rem;
       }
 
+    }
+  }
+
+  #fpOverlay {
+    .fp-modal-dialog {
+      font-size: 2.5rem;
+      grid-template-rows: 6.5rem auto;
+      .modal-hed {
+        padding-top: 3rem;
+        padding-left: 3rem;
+      }
+      .modal-close {
+        padding-top: 3rem;
+        padding-right: 3rem;
+      }
+      svg#modalCloseTimes {
+        width: 40px;
+      }
     }
   }
 

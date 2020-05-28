@@ -33,141 +33,213 @@
 
   <body>
 
-	<div class="container-fluid fixed-top sd-bar clearfix bg-light">  
-  <p class="float-right mb-0">
-    <a href="http://sandiego.gov/mayor" target="_blank" title="San Diego Mayor Faulconer">Mayor Kevin L. Faulconer</a>
-  </p>
-  <p class="float-right mb-0">
-    <a href="http://sandiego.gov" target="_blank" title="San Diego Main Site">City of San Diego</a>
-    <span class="px-2">|</span>
-  </p>
-</div>
-<div class="container-fluid fixed-top sd-navbar-top bg-dark">
-  <nav class="navbar navbar-expand-md navbar-dark py-0">
-    <div class="brand-contain clearfix">
-      <a class="navbar-brand py-0" href="./">
-        <img src="./assets/images/cosd-logo-initials-white-300ppi.png" class="nav-logo float-left"/>
-        <span class="navbar-brand-text ml-2 float-left">Open Data</span>
-      </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse bg-dark" id="navbarText">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active pl-2">
-          <a class="nav-link" href="./datasets/">Browse Data</a>
-        </li>
-        <li class="nav-item active pl-2">
-          <a class="nav-link" href="./topics/">Topics</a>
-        </li>
-        <li class="nav-item active pl-2">
-          <a class="nav-link" href="./get-started/">Get Started</a>
-        </li>
-        <li class="nav-item active pl-2">
-          <a class="nav-link" href="./resources/">Resources</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
     
-<div class="jumbotron jumbotron-fluid dp-jumbotron">
-	<div class="jumbotron-img-layer jumbotron-img-0"></div>
+<div class="jumbotron jumbotron-fluid dp-jumbotron" id="dpJumbotron">
 	<div class="jumbotron-content-layer">
-		<div class="dp-jumbotron-content">
-			<h1 class="mb-4">Find data</h1>  
-		    <div class="container-fluid">
-		        <div class="data-search-box-layer">
-		            <div class="container find-data-autocomplete">
-		                <div class="col-12">
-		                    <div class="row" >
-	<div class="input-group">
-	  
-	  <div class="input-group-prepend">
-	    <button id="searchSubmit" class="btn btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></button>
-	    <div class="dropdown-menu search-dropdown" id="search-results">
-	      <ul class="list-group list-group-flush mb-4" id="search-results-list"></ul>
-	      
-	      <a href="./datasets/" class="search-result-catalog-link pb-4"><i>Didn't find what you need? Browse the <b>full catalog</b></i></a>
-	    </div>
-	  </div>
-	  <input type="text" id="searchQuery" class="form-control" aria-label="Search for data">
-	</div>
+		<div id="dpJumbotronContent" class="dp-jumbotron-content">
+			<h1 class="intro-hed">San Diego Open Data</h1>
+			<div class="intro-block-contain">
+				<div class="intro-block pr-1">
+					This is the official Open Data Portal for the City of San Diego.
+				</div>  
+				<div class="intro-block pr-1">
+			     	<div class="input-group dp-jumbotron-searchbox" id="searchQueryContain">
+  <input type="text" id="searchQuery" class="dp-jumbotron-input" aria-label="Search for data" placeholder="Search" autocomplete="off">
+  <div class="input-group-append" id="dropdownMenuParent">
+    <p id="searchSubmit" class="invisible search-submit-invisible" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,0" data-flip="false"><i class="fa fa-search"></i></p>
+    <div class="dropdown-menu search-dropdown dropdown-menu-right" id="searchResults">
+      <ul class="list-group list-group-flush mb-4" id="searchResultsList"></ul>
+      <a href="./datasets/" class="search-result-catalog-link pb-4"><i>Didn't find what you need? Browse the <b>full catalog</b></i></a>
+    </div>
+  </div>
 </div>
 
-<script id="search-result-template" type="text/x-js-template">
+<script id="searchResultTemplate" type="text/x-js-template">
     <li class="list-group-item">
     	${section}: <a id="summary-${key}" href="${link}">${title}</a>
     </li>
 </script>
-		                </div>
-		            </div>
-		        </div>
-		        <h4 class="font-weight-bold">
-			    	<a href="./datasets/">Or explore the full City of San Diego data catalog<i class="fa fa-angle-right pl-2"></i></a>
-			    </h4>
-		    </div>
+			    </div>
+			    <div class="intro-block">
+			     	or <a>browse</a> for data about topics like <a href="./datasets/traffic-volumes/">traffic</a>, the <a href="./budget-topic/">City budget</a>, <a href="./departments/police/">police activity</a>, <a href="./datasets/business-listings/">local businesses</a>, and <a href="./datasets/">more</a>.
+			    </div>
+			</div>
+			<div class="intro-menu">
+				<a data-toggle="modal" data-target="#fpOverlay"><img src="./assets/images/plus-02.svg" /></a>
+			</div>
+			<div class="intro-go">
+				<a href="./datasets/"><img src="./assets/images/arrow-01.svg" /></a>
+			</div>
 		</div>
 	</div>
+	<div class="modal" tabindex="-1" role="dialog" id="fpOverlay">
+  <div class="fp-modal-dialog" role="document">
+      <h1 class="modal-hed">San Diego Open Data</h1>
+      <ul class="modal-site-nav mt-auto mb-auto">
+        <li>
+          <a href="./datasets/">Browse Data</a>
+        </li>
+        <li>
+          <a href="./topics/">Topics</a>
+        </li>
+        <li>
+          <a href="./get-started/">Get Started</a>
+        </li>
+        <li>
+          <a href="./resources/">Resources</a>
+        </li>
+      </ul>
+      <div class="modal-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <svg id="modalCloseTimes" data-name="modal-close"viewBox="0 0 30.41 30.41">
+                <line class="cls-1" x1="4.45" y1="4.45" x2="25.96" y2="25.96"/><line class="cls-1" x1="4.45" y1="25.96" x2="25.96" y2="4.45"/>
+              </svg>
+          </button>
+      </div>
+  </div>
 </div>
-
-
-	<div class="container-fluid bg-dark sd-footer">
-<footer>
-    <div class="container footer-links py-4">
-    <div class="row mb-3">
-        <div class="col">
-            <div class="info-links clearfix">
-            <a title="P and A" href="http://sandiego.gov/pad" target="_blank" class="float-md-left pr-md-4">Performance & Analytics Department</a>
-            <a title="Open data policy" href="http://dockets.sandiego.gov/sirepub/view.aspx?cabinet=published_meetings&fileid=757846"
-                    target="_blank" class="float-md-left pr-md-4">Open data policy</a>
-            <a title="Contact us" href="mailto:data@sandiego.gov" class="float-md-left pr-md-4">Contact Us</a>
-            <a title="Terms of Use" href="./terms-use" class="float-md-left pr-md-4">Terms of Use</a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="social-links clearfix">
-                <a href="https://twitter.com/CityofSanDiego" target="_blank"title="City of San Diego Twitter" class="float-sm-left pr-sm-4">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="http://opendata.stackexchange.com/search?q=san+diego" target="_blank" title="Open Data Stack Exchange" class="float-sm-left pr-sm-4">
-                    <i class="fa fa-stack-overflow"></i>
-                </a>
-                <a href="https://github.com/cityofsandiego" target="_blank" title="City of San Diego Github" class="float-sm-left pr-sm-4">
-                    <i class="fa fa-github-alt"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
-</footer>
 </div>
 
 <script defer src="./assets/jquery.slim.min.js"></script>
-<script defer src="./assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="./assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
 <script defer src="./assets/main.js"></script>
-
-
-
 <script type="text/javascript">
+
+let colorArray = []
+
+
+ colorArray.push("#0098db");
+
+ colorArray.push("#00c7b2");
+
+ colorArray.push("#ffa02f");
+
+ colorArray.push("#fcd900");
+
+ colorArray.push("#ffffff");
+
+ colorArray.push("#37424a");
+
+ colorArray.push("#dad7cb");
+
+ colorArray.push("#dad7cb");
+
+ colorArray.push("#005bbb");
+
+ colorArray.push("#5eb6e4");
+
+ colorArray.push("#007b69");
+
+ colorArray.push("#009581");
+
+ colorArray.push("#80e0d3");
+
+ colorArray.push("#9c6114");
+
+ colorArray.push("#d47600");
+
+ colorArray.push("#ffb652");
+
+ colorArray.push("#d7a900");
+
+ colorArray.push("#fed100");
+
+ colorArray.push("#f3ec7a");
+
+ colorArray.push("#bdb1a6");
+
+ colorArray.push("#cac0b6");
+
+ colorArray.push("#eoe1dd");
+
+ colorArray.push("#d1d4d3");
+
+ colorArray.push("#adafaf");
+
+ colorArray.push("#5d676f");
+
+ colorArray.push("#747678");
+
+ colorArray.push("#1b242a");
+
+
 (function() {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function(e) {
+    
     console.log("Front page loaded");
 
-    document.getElementById("searchSubmit").addEventListener("click", searchSubmit);
+    
+
+    let textColor = getRandomColor(colorArray);
+    let textColorIndex = colorArray.indexOf(textColor)
+    if (textColorIndex > -1) {
+    	colorArray.splice(textColorIndex, 1)
+    }
+    let bgColor = getRandomColor(colorArray);
+    setNewColors([textColor,bgColor]);
+
+    
+
+    let ddHidden = true;
+
+    $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+        ddHidden = false;
+    }).on('hide.bs.dropdown', function () {
+        ddHidden = true;
+    });
+    
+    
+
+    document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+    	
+    	
+    	
+    	
+
+    	event.preventDefault();
+    	searchSubmit();
+    });
+
+    
+
     document.getElementById("searchQuery").addEventListener('keyup', (event) => {
 
+    	
         if (event.keyCode === 13) {
-            $('#searchSubmit').dropdown();
+        	
+            if (ddHidden) {
+            	
+                $('#searchSubmit').dropdown('toggle');
+            }
+            
             searchSubmit();
+        } else {
+        	
+        	
+        	if (event.target.value === "") {
+        		
+        		if (ddHidden === false) {
+        			
+        			$('#searchSubmit').dropdown('toggle');
+        		}
+        	}
         }
     }, false);
+
+    
+
+    document.getElementById("searchQuery").addEventListener("focus", (event) => {
+    	activateSearch(event.target);
+    })
+
+    
+
+    document.getElementById("searchQuery").addEventListener("blur", (event) => {
+    	deActivateSearch(event.target,ddHidden);
+    });
 
   })
 })();
@@ -175,10 +247,6 @@
 <script defer src="./assets/fuse.min.js"></script>
 <script defer src="./assets/mark.min.js"></script>
 <script defer src="./assets/search.js"></script>
-
-
-
-
 
 
   </body>

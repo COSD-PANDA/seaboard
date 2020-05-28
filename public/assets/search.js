@@ -1,5 +1,14 @@
+function checkSearchDropdown(){
+  let dropdownBox = document.getElementById('searchResults');
+  console.log(dropdownBox.style);
+  if (dropdownBox.style.display === "none") {
+    return true
+  } else {
+    return false
+  }
+}
+
 function searchSubmit(){
-  console.log("Button clicked");
   var summaryInclude=60;
   var fuseOptions = {
     shouldSort: true,
@@ -19,13 +28,11 @@ function searchSubmit(){
   };
 
   var searchTerm = document.getElementById("searchQuery").value;
-  console.log("Looking for "+searchTerm);
   var pages = loadDatasets(function(response) {
   // Parse JSON string into object
     var actual_JSON = JSON.parse(response);
     var fuse = new Fuse(actual_JSON, fuseOptions);
     var result = fuse.search(searchTerm);
-    console.log({"matches":result})
     if(result.length > 0){
       populateResults(result,searchTerm);
     } else {
@@ -58,12 +65,12 @@ function populateResults(result,term){
   }
   var output = '';
   for (var i=0; i < return_results; i++) {
-    var templateDefinition = $('#search-result-template').html();
+    var templateDefinition = $('#searchResultTemplate').html();
     var contents = result[i].item.contents;
     output += render(templateDefinition,{key:i,section:result[i].item.section,title:result[i].item.title,link:result[i].item.permalink});
   }
-  var resultBox = document.getElementById("search-results");
-  var resultList = document.getElementById("search-results-list");
+  var resultBox = document.getElementById("searchResults");
+  var resultList = document.getElementById("searchResultsList");
   resultList.innerHTML = output;
   //$('.dropdown-toggle').dropdown();
   markResults(term);
@@ -71,7 +78,7 @@ function populateResults(result,term){
 
 function markResults(term) {
 
-  var markInstance = new Mark(document.getElementById("search-results"));
+  var markInstance = new Mark(document.getElementById("searchResults"));
   var keyword = term;
   markInstance.unmark({
     done: function(){
@@ -104,6 +111,5 @@ function render(templateString, data) {
     re = new RegExp(find, 'g');
     templateString = templateString.replace(re, data[key]);
   }
-  console.log(templateString);
   return templateString;
 }

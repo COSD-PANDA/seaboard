@@ -7143,7 +7143,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-body {
+html, body {
   width: 100%;
   height: 100%;
   font-family: "Open Sans",Helvetica, Arial, sans-serif;
@@ -7182,6 +7182,9 @@ h4 {
   font-weight: 400; }
   .breadcrumb a {
     color: inherit; }
+
+.modal-backdrop.show {
+  opacity: 1; }
 
 /* header.html */
 .sd-bar {
@@ -7223,56 +7226,161 @@ img.nav-logo {
 
 /* jumbotron */
 .dp-jumbotron {
-  margin-top: 6.1rem;
   margin-bottom: 0;
-  text-align: center;
-  height: calc(100vh - 6.1rem);
-  min-height: 300px;
-  padding: 0;
-  position: relative;
-  background-color: white;
-  /*background-color: rgba(0,133,124,1);*/
-  /*background-color: rgba(136,209,207,1);*/ }
+  height: 100vh;
+  padding: 0; }
+  .dp-jumbotron .jumbotron-content-layer {
+    width: 100%;
+    height: 100%; }
   .dp-jumbotron .dp-jumbotron-content {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr 1fr; }
+    .dp-jumbotron .dp-jumbotron-content a {
+      color: inherit;
+      text-decoration: underline; }
+  .dp-jumbotron .intro-hed {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem; }
+  .dp-jumbotron .intro-block-contain {
+    grid-column-start: 1;
     grid-row-start: 2;
-    /*margin-top: 6.1rem;*/
-    height: 11.3rem;
-    /*3.2+1.5+1+0.375+0.375+3+1.25+0.5=11.3 */ }
+    place-self: start start;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .dp-jumbotron .intro-menu {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    place-self: start end;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem; }
+  .dp-jumbotron .intro-go {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    place-self: end end;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .dp-jumbotron .intro-menu img {
+    width: 35px;
+    height: auto; }
+  .dp-jumbotron .intro-go img {
+    height: 45px;
+    width: auto; }
   .dp-jumbotron h1 {
-    font-size: 3.2rem; }
-  .dp-jumbotron .data-search-box-layer {
-    margin-bottom: 3rem; }
+    font-size: 2.5rem;
+    font-family: "Open Sans",Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-weight: 700;
+    margin-bottom: 0; }
+  .dp-jumbotron .intro-block {
+    display: inline;
+    box-sizing: content-box;
+    font-size: 1.5rem;
+    line-height: 1.5; }
+  .dp-jumbotron .dp-jumbotron-searchbox {
+    display: inline-flex;
+    flex-wrap: nowrap; }
+    .dp-jumbotron .dp-jumbotron-searchbox .dp-jumbotron-input {
+      outline: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: inherit;
+      line-height: 1;
+      padding: 0;
+      text-decoration: underline;
+      font-family: "Open Sans",Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      opacity: 1;
+      height: auto;
+      flex: 0 1 content;
+      max-width: 112px;
+      /* This must change with font size */
+      transition: max-width 3s; }
+    .dp-jumbotron .dp-jumbotron-searchbox ::-webkit-input-placeholder {
+      /* Edge */
+      color: inherit; }
+    .dp-jumbotron .dp-jumbotron-searchbox :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: inherit; }
+    .dp-jumbotron .dp-jumbotron-searchbox ::placeholder {
+      color: inherit;
+      opacity: 1; }
+    .dp-jumbotron .dp-jumbotron-searchbox p#searchSubmit {
+      display: inline-block;
+      font-weight: 400;
+      color: black;
+      text-align: center;
+      cursor: pointer;
+      vertical-align: middle;
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+      line-height: 2.25rem; }
+    .dp-jumbotron .dp-jumbotron-searchbox .search-submit-invisible {
+      width: 0; }
 
-.jumbotron-content-layer {
+/* Front page modal overlay */
+#fpOverlay {
   width: 100%;
-  height: calc(100vh - 6.1rem);
-  display: grid;
-  grid-template-rows: auto 11.3rem auto;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.jumbotron-img-layer {
-  height: calc(100vh - 6.1rem);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.jumbotron-img-0 {
-  /* 1400px 144ppi */
-  background-image: url(/assets/images/sd-downtown-1400-144-bw.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 1; }
+  height: 100vh; }
+  #fpOverlay .fp-modal-dialog {
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 5.5rem auto; }
+    #fpOverlay .fp-modal-dialog .modal-hed {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      padding-top: 1.5rem;
+      padding-left: 1.5rem;
+      place-self: start start; }
+    #fpOverlay .fp-modal-dialog .modal-close {
+      grid-column-start: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      place-self: start end;
+      padding-top: 1.5rem;
+      padding-right: 1.5rem; }
+    #fpOverlay .fp-modal-dialog .modal-site-nav {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      place-self: start center;
+      width: auto;
+      height: 16rem;
+      list-style: none;
+      padding: 0; }
+      #fpOverlay .fp-modal-dialog .modal-site-nav a {
+        color: inherit; }
+    #fpOverlay .fp-modal-dialog svg#modalCloseTimes {
+      stroke: white;
+      stroke-width: 2px;
+      width: 35px;
+      height: auto; }
 
 /* Front page search */
 div.dropdown-menu.search-dropdown {
   width: 100%;
+  /* This is based on dropdown content */
   max-height: calc(9.5rem + 3px);
   overflow-y: auto;
-  /* 0.75 + 0.75 + 1px */ }
+  /* 0.75 + 0.75 + 1px */
+  opacity: 0.9; }
 
 .search-result-catalog-link {
   padding-left: 1.25rem; }
@@ -7321,27 +7429,54 @@ div.dropdown-menu.search-dropdown {
   background-color: #ced4da;
   color: #495057; }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* 1400px 300ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-1400-300-bw.jpg); } }
+/* Small devices (landscape phones, 576px and up) */
+/* Changing slightly to work with content */
+@media (min-width: 600px) {
+  .dp-jumbotron .intro-hed {
+    padding-top: 3rem;
+    padding-left: 3rem; }
+  .dp-jumbotron .intro-block-contain {
+    padding-left: 3rem;
+    padding-bottom: 3rem; }
+  .dp-jumbotron .intro-menu {
+    padding-top: 3rem;
+    padding-right: 3rem; }
+  .dp-jumbotron .intro-go {
+    padding-right: 3rem;
+    padding-bottom: 3rem; }
+  .dp-jumbotron .intro-menu img {
+    width: 40px; }
+  .dp-jumbotron .intro-go img {
+    height: 50px; }
+  .dp-jumbotron h1 {
+    font-size: 3.5rem; }
+  .dp-jumbotron .intro-block {
+    font-size: 2rem; }
+  .dp-jumbotron .dp-jumbotron-searchbox .dp-jumbotron-input {
+    max-width: 112px;
+    font-size: 2rem; }
+  .dp-jumbotron .dp-jumbotron-searchbox p#searchSubmit {
+    line-height: 3rem; }
+  #fpOverlay .fp-modal-dialog {
+    grid-template-rows: 6.5rem auto; }
+    #fpOverlay .fp-modal-dialog .modal-hed {
+      padding-top: 3rem;
+      padding-left: 3rem; }
+    #fpOverlay .fp-modal-dialog .modal-close {
+      padding-top: 3rem;
+      padding-right: 3rem; }
+    #fpOverlay .fp-modal-dialog svg#modalCloseTimes {
+      width: 40px; } }
 
-@media screen and (min-width: 768px) {
-  /* 1200px 144ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-1200-144-bw.jpg); } }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .dp-jumbotron .intro-block {
+    font-size: 2.3rem; }
+  .dp-jumbotron .dp-jumbotron-searchbox .dp-jumbotron-input {
+    max-width: 112px;
+    font-size: 2.3rem; }
+  .dp-jumbotron .dp-jumbotron-searchbox p#searchSubmit {
+    line-height: 3.45rem; } }
 
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
-  /* 1200px 300ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-1200-300-bw.jpg); } }
-
-@media screen and (min-width: 992px) {
-  /* 2000px 144ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-2000-144-bw.jpg); } }
-
-@media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 992px) and (min-resolution: 192dpi) {
-  /* 4100px 300ppi */
-  .jumbotron-img-0 {
-    background-image: url(/assets/images/sd-downtown-4100-300.jpg); } }
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */

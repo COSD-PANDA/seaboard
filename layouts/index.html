@@ -4,24 +4,26 @@
 		<div id="dpJumbotronContent" class="dp-jumbotron-content">
 			<h1 class="intro-hed">San Diego Open Data</h1>
 			<div class="intro-block-contain">
-				<div class="intro-block">
-					This is the official Open Data Portal for the. City of San Diego.
+				<div class="intro-block pr-1">
+					This is the official Open Data Portal for the City of San Diego.
 				</div>  
-				<div class="intro-block">
+				<div class="intro-block pr-1">
 			     	{{ partial "search" . }}
 			    </div>
 			    <div class="intro-block">
-			     	or <a>browse</a> for data about topics like <a href="/datasets/traffic-volumes/">traffic</a>, the <a href="/budget-topic/">City budget</a>, <a href="/departments/police/">police activity</a>, <a href="/datasets/business-listings/">local businesses</a>, and <a href="/datasets/">more</a>.
+			     	or <a href="/datasets/">browse</a> for data about topics like <a href="/datasets/traffic-volumes/">traffic</a>, the <a href="/budget-topic/">City budget</a>, <a href="/departments/police/">police activity</a>, <a href="/datasets/business-listings/">local businesses</a>, and <a href="/datasets/">more</a>.
 			    </div>
 			</div>
 			<div class="intro-menu">
-				<a><img src="/assets/images/plus-02.svg" /></a>
+				<a data-toggle="modal" data-target="#fpOverlay"><img src="/assets/images/plus-02.svg" /></a>
 			</div>
 			<div class="intro-go">
 				<a href="/datasets/"><img src="/assets/images/arrow-01.svg" /></a>
 			</div>
 		</div>
 	</div>
+	{{ partial "fp-overlay" . }}
+	{{ partial "color-form" . }}
 </div>
 
 <script defer src="/assets/jquery.slim.min.js"></script>
@@ -51,6 +53,9 @@ let colorArray = []
     }
     let bgColor = getRandomColor(colorArray);
     setNewColors([textColor,bgColor]);
+
+    document.getElementById("inputBackground").value = bgColor;
+    document.getElementById("inputForeground").value = textColor;
 
     // Dropdown var for testing
 
@@ -109,7 +114,8 @@ let colorArray = []
     // Listener to deactivate search element
 
     document.getElementById("searchQuery").addEventListener("blur", (event) => {
-    	deActivateSearch(event.target,ddHidden);
+
+    	//deActivateSearch(event.target,ddHidden);
     });
 
   })

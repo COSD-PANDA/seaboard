@@ -13,6 +13,8 @@ function setNewColors(colors){
 }
 
 function activateSearch(e){
+	let currentWidth = e.style.maxWidth;
+	console.log(currentWidth);
 	e.style.maxWidth = "100%";
 	e.style.textDecoration = "none";
 	e.style.borderBottom = "2px solid black";
@@ -26,9 +28,9 @@ function deActivateSearch(e,ddState){
 		// If showing, hide it
 		$('#searchSubmit').dropdown('toggle');
 	}
-	e.style.maxWidth = "112px";
-	e.style.textDecoration = "underline";
-	e.style.borderBottom = "none";
+	e.style.maxWidth = "";
+	e.style.textDecoration = "";
+	e.style.borderBottom = "";
 	e.setAttribute("placeholder","Search");
 	e.value = ""
 	document.getElementById("searchSubmit").setAttribute("class","invisible search-submit-invisible");
