@@ -1,0 +1,14 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "Get Data Portal Dataset",
+  "main": "dataCall.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrell Bower",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.686.0"
+  }
+}
