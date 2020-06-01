@@ -12,14 +12,19 @@ function setNewColors(colors){
 	bgDiv.style.backgroundColor = colors[1];
 }
 
+function searchClick(e){
+	activateSearch(e.target);
+	document.getElementById("searchQuery").removeEventListener("focus", searchClick)
+
+}
+
 function activateSearch(e){
-	let currentWidth = e.style.maxWidth;
-	console.log(currentWidth);
-	e.style.maxWidth = "100%";
-	e.style.textDecoration = "none";
-	e.style.borderBottom = "2px solid black";
-	e.setAttribute("placeholder","");
-	document.getElementById("searchSubmit").setAttribute("class","");
+	let currentWidth = e.offsetWidth;
+	e.style.maxWidth = currentWidth*2.5 + "px";
+	//e.style.textDecoration = "none";
+	//e.style.borderBottom = "2px solid black";
+	//e.setAttribute("placeholder","");
+	//document.getElementById("searchSubmit").setAttribute("class","");
 }
 
 function deActivateSearch(e,ddState){
@@ -29,9 +34,9 @@ function deActivateSearch(e,ddState){
 		$('#searchSubmit').dropdown('toggle');
 	}
 	e.style.maxWidth = "";
-	e.style.textDecoration = "";
-	e.style.borderBottom = "";
+	//e.style.textDecoration = "";
+	//e.style.borderBottom = "";
 	e.setAttribute("placeholder","Search");
 	e.value = ""
-	document.getElementById("searchSubmit").setAttribute("class","invisible search-submit-invisible");
+	//document.getElementById("searchSubmit").setAttribute("class","invisible search-submit-invisible");
 }

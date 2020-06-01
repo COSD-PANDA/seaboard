@@ -28,15 +28,17 @@ function searchSubmit(){
   };
 
   var searchTerm = document.getElementById("searchQuery").value;
+  console.log("Looking for "+searchTerm);
   var pages = loadDatasets(function(response) {
   // Parse JSON string into object
     var actual_JSON = JSON.parse(response);
     var fuse = new Fuse(actual_JSON, fuseOptions);
     var result = fuse.search(searchTerm);
+    console.log(result.length)
     if(result.length > 0){
       populateResults(result,searchTerm);
     } else {
-      var resultList = document.getElementById("search-results-list");
+      var resultList = document.getElementById("searchResultsList");
       resultList.innerHTML = '<li class="list-group-item">No results found</li>';
     }
   });
@@ -46,7 +48,7 @@ function searchSubmit(){
 function loadDatasets(callback) {   
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'index.json', true);
+    xobj.open('GET', '/index.json', true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode

@@ -34,31 +34,87 @@
 <script defer src="/assets/jquery.slim.min.js"></script>
 <script defer src="/assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
 <script defer src="/assets/main.js"></script>
+<script defer src="/assets/fuse.min.js"></script>
+<script defer src="/assets/mark.min.js"></script>
+<script defer src="/assets/search.js"></script>
 
-
-{{ if .IsHome}}
-
-{{ else if eq .Section "datasets"}}
+{{ if eq .Section "datasets"}}
 
 <script defer src="/assets/data-preview.js"></script>
 
 {{ else if eq .Title "Explore the Civic Art Collection" }}
+
+<script defer src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+<script defer src="https://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script defer src="/assets/art-map.js"></script>
+
+{{ else }}
+
+
+{{ end }}
 
 <script type="text/javascript">
 (function() {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function(e) {
+    {{ if eq .Title "Explore the Civic Art Collection" }}
     console.log("Art map page loaded");
     drawMap();
+    {{ else }}
+    console.log("Inner page loaded")
+    {{ end }}
+
+    // Dropdown var for testing
+
+    let ddHidden = true;
+
+    $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+        console.log("Showing");
+        ddHidden = false;
+    }).on('hide.bs.dropdown', function () {
+        console.log("Hiding");
+        ddHidden = true;
+    });
+
+    // Button event listener for search submit
+
+    document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+        
+        // When search button clicked, prevent default to avoid
+        // moving focus and deactivating search
+        // but submit the search
+
+        searchSubmit();
+    });
+
+    // Keyboard event listener for search
+
+    document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+        // Check if key pressed is enter
+        if (event.keyCode === 13) {
+            // If the dropdown is hidden, show it
+            if (ddHidden) {
+                
+                $('#searchSubmit').dropdown('toggle');
+            }
+            // Either way, run the search
+            searchSubmit();
+        } else {
+            // If key is any other, check to see if
+            // user has backspaced input clear
+            if (event.target.value === "") {
+                // If so, check if dropdown is showing
+                if (ddHidden === false) {
+                    // If so, hide it
+                    $('#searchSubmit').dropdown('toggle');
+                }
+            }
+        }
+    }, false);
+
+
   })
 })();
 </script>
-
-<script defer src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-<script defer src="https://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-<script defer src="/assets/art-map.js"></script>
-
-{{ end }}
-
-

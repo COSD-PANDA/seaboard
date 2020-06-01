@@ -7246,7 +7246,7 @@ img.nav-logo {
     width: 100%;
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 1fr 1fr; }
+    grid-template-rows: 9.5rem auto; }
     .dp-jumbotron .dp-jumbotron-content a {
       color: inherit;
       text-decoration: underline; }
@@ -7258,9 +7258,8 @@ img.nav-logo {
   .dp-jumbotron .intro-block-contain {
     grid-column-start: 1;
     grid-row-start: 2;
-    place-self: start start;
-    padding-left: 1.5rem;
-    padding-bottom: 1.5rem; }
+    place-self: center start;
+    padding-left: 1.5rem; }
   .dp-jumbotron .intro-menu {
     grid-column-start: 2;
     grid-row-start: 1;
@@ -7270,15 +7269,24 @@ img.nav-logo {
   .dp-jumbotron .intro-go {
     grid-column-start: 2;
     grid-row-start: 2;
-    place-self: end end;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem; }
-  .dp-jumbotron .intro-menu img {
-    width: 35px;
-    height: auto; }
-  .dp-jumbotron .intro-go img {
+    place-self: center end;
+    padding-right: 1.5rem; }
+  .dp-jumbotron .intro-menu {
+    cursor: pointer; }
+    .dp-jumbotron .intro-menu #modalOpenPlus {
+      width: 35px;
+      height: auto;
+      fill: none;
+      stroke: #231f20;
+      stroke-miterlimit: 10;
+      stroke-width: 2px; }
+  .dp-jumbotron .intro-go #goArrow {
     height: 45px;
-    width: auto; }
+    width: auto;
+    fill: none;
+    stroke: #231f20;
+    stroke-miterlimit: 10;
+    stroke-width: 2.5px; }
   .dp-jumbotron h1 {
     font-size: 2.5rem;
     font-family: "Open Sans",Helvetica, Arial, sans-serif;
@@ -7298,19 +7306,20 @@ img.nav-logo {
       border-top: none;
       border-left: none;
       border-right: none;
-      border-bottom: none;
+      /*border-bottom:  none;*/
+      border-bottom: 2px solid black;
       background-color: transparent;
       font-size: 1.5rem;
       color: inherit;
       line-height: 1;
       padding: 0;
-      text-decoration: underline;
+      /*text-decoration: underline;*/
       font-family: "Open Sans",Helvetica, Arial, sans-serif;
       font-weight: 300;
       opacity: 1;
       height: auto;
       flex: 0 0 0;
-      max-width: 75px;
+      max-width: 90px;
       /* This must change with font size */
       transition: max-width 3s; }
     .dp-jumbotron .dp-jumbotron-searchbox ::-webkit-input-placeholder {
@@ -7349,7 +7358,7 @@ img.nav-logo {
     color: white;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 5.5rem auto; }
+    grid-template-rows: 4.7rem auto; }
     #fpOverlay .fp-modal-dialog .modal-hed {
       grid-column-start: 1;
       grid-column-end: 4;
@@ -7393,6 +7402,10 @@ div.dropdown-menu.search-dropdown {
 
 .search-result-catalog-link {
   padding-left: 1.25rem; }
+
+/* header search */
+li.inner-item {
+  font-size: 0.85rem; }
 
 /* footer.html */
 .info-links a, .social-links a {
@@ -7441,19 +7454,19 @@ div.dropdown-menu.search-dropdown {
 /* Small devices (landscape phones, 576px and up) */
 /* Changing slightly to work with content */
 @media (min-width: 600px) {
+  .dp-jumbotron .dp-jumbotron-content {
+    grid-template-rows: 7.2rem auto; }
   .dp-jumbotron .intro-hed {
     padding-top: 3rem;
     padding-left: 3rem; }
   .dp-jumbotron .intro-block-contain {
-    padding-left: 3rem;
-    padding-bottom: 3rem; }
+    padding-left: 3rem; }
   .dp-jumbotron .intro-menu {
     padding-top: 3rem;
     padding-right: 3rem; }
   .dp-jumbotron .intro-go {
-    padding-right: 3rem;
-    padding-bottom: 3rem; }
-  .dp-jumbotron .intro-menu img {
+    padding-right: 3rem; }
+  .dp-jumbotron .intro-menu #modalOpenPlus {
     width: 40px; }
   .dp-jumbotron .intro-go img {
     height: 50px; }
@@ -7468,7 +7481,7 @@ div.dropdown-menu.search-dropdown {
     line-height: 3rem; }
   #fpOverlay .fp-modal-dialog {
     font-size: 2.5rem;
-    grid-template-rows: 6.5rem auto; }
+    grid-template-rows: 7.2rem auto; }
     #fpOverlay .fp-modal-dialog .modal-hed {
       padding-top: 3rem;
       padding-left: 3rem; }
@@ -7483,7 +7496,7 @@ div.dropdown-menu.search-dropdown {
   .dp-jumbotron .intro-block {
     font-size: 2.3rem; }
   .dp-jumbotron .dp-jumbotron-searchbox .dp-jumbotron-input {
-    max-width: 112px;
+    max-width: 130px;
     font-size: 2.3rem; }
   .dp-jumbotron .dp-jumbotron-searchbox p#searchSubmit {
     line-height: 3.45rem; } }
