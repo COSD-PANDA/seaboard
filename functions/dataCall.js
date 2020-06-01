@@ -9,6 +9,8 @@ let s3Params = {
 
 exports.handler = function(event, context, callback) {
 
+	console.log("Handler function running");
+
 	s3Params.Key = 'budget/actuals_capital_FY17_datasd.csv';
     
 	s3.getObject(s3Params, function(err, data) {
