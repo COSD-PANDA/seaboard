@@ -20,6 +20,7 @@ maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
 Hate crimes reported to the San Diego Police Department.
+
 <!--more-->
 
 A hate crime is a criminal act or attempted criminal act motivated by hatred based on race, ethnicity, religion, gender, sexual orientation, national origin, physical or mental disability or association with a person or group with one or more of these actual or perceived characteristics.
