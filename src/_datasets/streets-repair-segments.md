@@ -7,14 +7,22 @@ category:
   - Transportation
   - City Infrastructure
 resources:
-  - name: Street repair road lines
+  - name: Street segment lines
     url: >-
-      http://seshat.datasd.org/tsw/CG_STREETS_DATASD.zip
+      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.zip
     format: shp
-  - name: Street repair road lines dictionary
+  - name: Street segment lines
     url: >-
-      http://seshat.datasd.org/tsw/repair_segment_lines_dictionary_datasd.csv
-    format: csv
+      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.pbf
+    format: pbf
+  - name: Street segment lines
+    url: >-
+      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.topojson
+    format: topojson
+  - name: Street segment lines
+    url: >-
+      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.geojson
+    format: geojson
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'
 date_modified: '2020-06-02'
