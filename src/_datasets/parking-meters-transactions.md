@@ -30,6 +30,18 @@ resources:
     url: >-
       http://seshat.datasd.org/parking_meters/treas_meters_2019_pole_by_month_datasd_v2.csv
     format: csv
+  - name: Parking meters transactions - 2018 (raw)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_parking_payments_2018_datasd_v1.csv
+    format: csv
+  - name: Parking meters transactions - 2018 (aggregated by day)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_mo_day_datasd_v1.csv
+    format: csv
+  - name: Parking meters transactions - 2018 (aggregated by month)
+    url: >-
+      http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_month_datasd_v1.csv
+    format: csv
   - name: Parking Meter Transactions Data Dictionary
     url: >-
       http://seshat.datasd.org/parking_meters/meters_transactions_dictionary_datasd.csv
@@ -44,5 +56,3 @@ All transactions for all parking meters. The raw datasets are large and
 may be difficult to work with. Aggregated versions are also available.
 
 <!-- more -->
-
-Please note that data for 2019 is missing transactions for some days. We are working to get complete data.
