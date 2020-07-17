@@ -7,7 +7,7 @@ category:
 resources:
   - name: Stop details
     url: >-
-      http://seshat.datasd.org/pd/ripa_stops_datasd_v1.csv
+      http://seshat.datasd.org/pd/ripa_stops_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
