@@ -1,25 +1,29 @@
 ---
 schema: default
-title: Monitoring of Chemical Parameters in Ocean Outfall Water
+title: Ocean water quality monitoring
 department: Public Utilities
 category:
   - Energy & Environment
 resources:
-  - name: Parameter Results, 1990 - 1999
+  - name: Parameter Results, 2011 - 2019
     url: >-
-      http://seshat.datasd.org/pud/clean_1990-1999_water-quality.csv
+      http://seshat.datasd.org/pud/omp/water_quality_2011_2019_datasd.csv
     format: csv
   - name: Parameter Results, 2000 - 2010
     url: >-
-      http://seshat.datasd.org/pud/clean_1999-2010_water-quality.csv
+      http://seshat.datasd.org/pud/omp/water_quality_2000_2010_datasd.csv
     format: csv
-  - name: Parameter Results, 2011 - 2019
+  - name: Parameter Results, 1990 - 1999
     url: >-
-      http://seshat.datasd.org/pud/clean_2011-2019_water-quality.csv
+      http://seshat.datasd.org/pud/omp/water_quality_1990_1999_datasd.csv
     format: csv
   - name: Parameter Testing Station Locations
     url: >-
-      http://seshat.datasd.org/pud/reference_stations_water_quality.csv
+      http://seshat.datasd.org/pud/omp/reference_stations_water_quality.csv
+    format: csv
+  - name: Dictionary
+    url: >-
+      http://seshat.datasd.org/pud/omp/water_quality_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'
@@ -27,7 +31,6 @@ date_modified: '2020-07-02'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Results of tests for various chemical parameters from water sampled from Point Loma and South Bay ocean outfalls.
+Ocean water quality data, including bacteriological sampling for fecal indicator bacteria as well as physical, chemical, and biological parameters observed throughout the region.
 <!--more-->
-Ocean water surrounding the wastewater discharge sites for Point Loma Wastewater Treatment Plant and South Bay Water Reclamation Plant is sampled and tested for the presence of various marine life and chemical parameters to meet reporting requirements to the San Diego Regional Water Quality Control Board. Data is updated after it is reported to the Board.
-
+Samples are collected as part of The City's Ocean Monitoring Program, which monitors the effects of treated wastewater effluent on the local marine environment. The OMP extends 340 square miles total from northern San Diego to northern Baja California, Mexico, and encompasses the shoreline seaward approximately 10 miles, to depths of over 500 meters.

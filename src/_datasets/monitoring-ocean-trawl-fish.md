@@ -1,21 +1,29 @@
 ---
 schema: default
-title: Monitoring of Fish in Ocean Outfall Water
+title: Ocean water Demersal Fishes monitoring (trawl caught)
 department: Public Utilities
 category:
   - Energy & Environment
 resources:
   - name: Fish Trawl Sample Results, class sizes
     url: >-
-      http://seshat.datasd.org/pud/clean_1991-2019_trawl-fish_raw-data.csv
+      http://seshat.datasd.org/pud/omp/trawl_fish_datasd.csv
     format: csv
   - name: Fish Trawl Sample Results, mean class sizes
     url: >-
-      http://seshat.datasd.org/pud/clean_1991-2019_trawl-fish_summary-data.csv
+      http://seshat.datasd.org/pud/omp/trawl_fish_summary_datasd.csv
     format: csv
   - name: Fish Trawl Sampling Station Locations
     url: >-
-      http://seshat.datasd.org/pud/reference_stations_fish_trawl.csv
+      http://seshat.datasd.org/pud/omp/reference_stations_fish_trawl.csv
+    format: csv
+  - name: Dictionary, class size
+    url: >-
+      http://seshat.datasd.org/pud/omp/trawl_fish_dictionary_datasd.csv
+    format: csv
+  - name: Dictionary, mean class size
+    url: >-
+      http://seshat.datasd.org/pud/omp/trawl_fish_summary_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'
@@ -23,7 +31,7 @@ date_modified: '2020-07-02'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Class sizes, abundance, and biomass of fish found in trawls from water sampled from Point Loma and South Bay ocean outfalls.
+Abundance, standard length, and biomass of fishes observed in trawls throughout the region.
 <!--more-->
-Ocean water surrounding the wastewater discharge sites for Point Loma Wastewater Treatment Plant and South Bay Water Reclamation Plant is sampled and tested for the presence of various marine life and chemical parameters to meet reporting requirements to the San Diego Regional Water Quality Control Board. Data is updated after it is reported to the Board.
+Samples are collected as part of The City's Ocean Monitoring Program, which monitors the effects of treated wastewater effluent on the local marine environment. The OMP extends 340 square miles total from northern San Diego to northern Baja California, Mexico, and encompasses the shoreline seaward approximately 10 miles, to depths of over 500 meters.
 
