@@ -7,7 +7,7 @@ category:
 resources:
   - name: Stop details
     url: >-
-      http://seshat.datasd.org/pd/ripa_stops_datasd_v1.csv
+      http://seshat.datasd.org/pd/ripa_stops_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
@@ -15,7 +15,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
-date_modified: '2020-05-21'
+date_modified: '2020-07-15'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
