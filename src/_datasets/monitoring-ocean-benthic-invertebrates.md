@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Ocean water Benthic Invertebrates monitoring
+title: Benthic Invertebrates - Ocean Monitoring Program
 department: Public Utilities
 category:
   - Energy & Environment

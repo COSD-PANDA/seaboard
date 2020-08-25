@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Ocean water Megabenthic Invertebrates monitoring (trawl caught)
+title: Megabenthic Invertebrates (trawl caught) - Ocean Monitoring Program
 department: Public Utilities
 category:
   - Energy & Environment

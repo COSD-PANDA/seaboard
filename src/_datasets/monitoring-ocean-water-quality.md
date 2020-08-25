@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Ocean water quality monitoring
+title: Water Quality - Ocean Monitoring Program
 department: Public Utilities
 category:
   - Energy & Environment
