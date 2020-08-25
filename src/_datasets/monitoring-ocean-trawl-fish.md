@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Ocean water Demersal Fishes monitoring (trawl caught)
+title: Demersal Fishes (trawl caught) - Ocean Monitoring Program
 department: Public Utilities
 category:
   - Energy & Environment
