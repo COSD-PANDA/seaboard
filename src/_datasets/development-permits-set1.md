@@ -9,13 +9,9 @@ resources:
     url: >-
       http://seshat.datasd.org/dsd/permits_set1_active_datasd.csv
     format: csv
-  - name: Closed approvals, since 2019
+  - name: Closed approvals, since 2003
     url: >-
       http://seshat.datasd.org/dsd/permits_set1_closed_datasd.csv
-    format: csv
-  - name: Closed approvals, 2003 through 2018
-    url: >-
-      http://seshat.datasd.org/dsd/permits_set1_closed_historical_datasd.csv
     format: csv
   - name: All approvals closed and active, 2003 to date last updated (large file)
     url: >-
