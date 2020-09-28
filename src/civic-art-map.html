@@ -8,7 +8,23 @@ permalink: /public-art/
 	<p>Managed by the City of San Diego Commission for Arts and Culture, the Civic Art Collection has grown since 1909 to include paintings, sculptures, works on paper and prints that are exhibited primarily in the working environments of municipal buildings. The Civic Art Collection is further distinguished by integrated artworks in the City’s libraries, parks, public safety facilities, civic buildings and other public spaces throughout San Diego. Use this map to plan your own tour of civic artwork in San Diego.  Further information about the Civic Art Collection can be found at <a href="https://www.sdcivicartcollection.com" target="_blank">www.sdcivicartcollection.com</a></p>
 </div>
 <div class="row">
-    <div class="map-wrapper">
-        <div id="map"></div>
+	<div class="map-wrapper">
+		<style>
+			.embed-container {
+				position: relative; padding-bottom: 51.28%; height: 0; max-width: 100%;
+			} 
+			.embed-container iframe, .embed-container object, .embed-container iframe{
+				position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-width: 1170px;
+			}
+			small{
+				position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;
+			}
+		</style>
+			<div class="embed-container">
+				<small>
+					<a href="//sandiego.maps.arcgis.com/apps/Embed/index.html?webmap=dd73c746cd534373bc42c36e87eaca13&extent=-117.4983,32.6245,-116.8227,32.9143&home=true&zoom=true&scale=true&search=true&searchextent=true&disable_scroll=true&theme=light" style="color:#0000FF;text-align:left" target="_blank">View larger map</a>
+				</small><br>
+				<iframe width="1170" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Civic Art Collection" src="//sandiego.maps.arcgis.com/apps/Embed/index.html?webmap=dd73c746cd534373bc42c36e87eaca13&extent=-117.8293,32.4546,-116.5096,33.0908&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&disable_scroll=true&theme=light"></iframe>
+			</div>
     </div>
 </div>
