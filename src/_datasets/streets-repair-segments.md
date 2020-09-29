@@ -25,7 +25,7 @@ resources:
     format: geojson
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'
-date_modified: '2020-09-22'
+date_modified: '2020-09-29'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
