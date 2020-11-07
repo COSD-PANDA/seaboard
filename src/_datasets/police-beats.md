@@ -6,6 +6,10 @@ category:
   - GIS
   - Public Safety
 resources:
+  - name: Police beats code-to-neighborhood list
+    url: >-
+      http://seshat.datasd.org/pd/pd_beat_codes_list_datasd.csv
+    format: csv
   - name: Police beats
     url: >-
       http://seshat.datasd.org/sde/pd/pd_beats_datasd.zip
@@ -28,7 +32,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-15'
-date_modified: '2020-11-03'
+date_modified: '2020-11-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
