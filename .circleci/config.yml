@@ -5,7 +5,7 @@
 defaults: &defaults
   working_directory: ~/seaboard
   docker:
-    - image:  mrmaksimize/seaboard-build:latest
+    - image:  cityofsandiego/seaboard:latest
 
 version: 2
 jobs:
