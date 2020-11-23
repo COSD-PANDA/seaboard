@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Monitoring of Select Chemical Parameters in Water Treatment Plant Effluent
+title: Monitoring of Select Chemical Parameters in Water Treatment Plant Effluents
 department: Public Utilities
 category:
   - Energy & Environment
@@ -24,5 +24,5 @@ date_modified: '2020-08-01'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Results of tests on water discharged from the City's water treatment plants for selected analytes, including turbidity, alkalinity, flouride, hardness, and lead.
+Results of tests on water produced from the City's water treatment plants for selected analytes, including turbidity, alkalinity, flouride, hardness, and lead.
 <!--more-->

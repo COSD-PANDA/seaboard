@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Monitoring of Select Chemical Parameters in Drinking Water
+title: Monitoring of Select Chemical Parameters in Water Distribution System
 department: Public Utilities
 category:
   - Energy & Environment
