@@ -6,14 +6,14 @@ category: City Management
 resources:
   - name: Illegal Dumping Notifications
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_illegal_dumping_requests_datasd_v1.csv
+      http://seshat.datasd.org/get_it_done_311/illegal_dumping_requests_datasd_v1.csv
     format: csv
   - name: Illegal Dumping Notifications Data Dictionary
     url: >-
       http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
-date_modified: '2020-08-20'
+date_modified: '2020-11-22'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
