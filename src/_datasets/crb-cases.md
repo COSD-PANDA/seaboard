@@ -6,13 +6,21 @@ category:
   - Public Safety
   - City Management
 resources:
-  - name: Complaints FY19 to current
+  - name: Complaints FY20
     url: >-
-      http://seshat.datasd.org/crb/crb_cases_datasd.csv
+      http://seshat.datasd.org/crb/crb_cases_fy2020_datasd.csv
     format: csv
-  - name: Body worn camera details
+  - name: Body worn camera details FY20
     url: >-
-      http://seshat.datasd.org/crb/crb_cases_bwc_datasd.csv
+      http://seshat.datasd.org/crb/crb_cases_bwc_fy2020_datasd.csv
+    format: csv
+  - name: Complaints FY19
+    url: >-
+      http://seshat.datasd.org/crb/crb_cases_fy19_datasd.csv
+    format: csv
+  - name: Body worn camera details FY19
+    url: >-
+      http://seshat.datasd.org/crb/crb_cases_bwc_fy19_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
