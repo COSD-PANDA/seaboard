@@ -13,7 +13,7 @@ resources:
       http://seshat.datasd.org/public_art/public_art_locations_dictionary_datasd.csv
     format: csv
 date_issued: '2018-09-11'
-date_modified: '2020-11-26'
+date_modified: '2020-11-27'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
