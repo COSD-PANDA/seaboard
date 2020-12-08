@@ -6,15 +6,19 @@ category:
   - Public Safety
   - City Management
 resources:
-  - name: Complaints FY20
+  - name: Cases FY20
     url: >-
       http://seshat.datasd.org/crb/crb_cases_fy2020_datasd.csv
+    format: csv
+  - name: Allegations FY20
+    url: >-
+      http://seshat.datasd.org/crb/crb_allegations_fy2020_datasd.csv
     format: csv
   - name: Body worn camera details FY20
     url: >-
       http://seshat.datasd.org/crb/crb_cases_bwc_fy2020_datasd.csv
     format: csv
-  - name: Complaints FY19
+  - name: Cases and allegations, FY19
     url: >-
       http://seshat.datasd.org/crb/crb_cases_fy19_datasd.csv
     format: csv
@@ -36,6 +40,6 @@ The Community Review Board on Police Practices, known as the CRB, was establishe
 
 <!--more-->
 
-This dataset includes all cases the CRB reviewed and closed out since the beginning of FY 2019, identified by a unique case ID. A single case may involve multiple allegations and multiple officers. Each row in this data represents one allegation and finding per officer in the complaint. Each officer named in the complaint is assigned an anonymous person id in the pid field that is unique for that case ID.
+This dataset includes all cases the CRB reviewed and closed out since the beginning of FY 2019, identified by a unique case `id` and case number. A single case may involve multiple allegations and multiple officers. In the FY2019 file, each row represents one allegation and finding per officer in the complaint. Each officer named in the complaint is assigned an anonymous person id in the `pid` field that is unique for that case `id`. Starting in FY2020, cases and allegation are in separate files that can be joined on the `id` and `case_number` fields.
 
-The body worn camera details file included with this dataset lists each officer (pid) per complaint and whether that officer had a body worn camera on or off during the incident under review.
+The body worn camera details file included with this dataset lists each officer (`pid`) per complaint and whether that officer had a body worn camera on or off during the incident under review.
