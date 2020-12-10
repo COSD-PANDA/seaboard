@@ -54,12 +54,59 @@
               'paper-button': "{{ .Site.BaseURL }}assets/bower_components/paper-button/paper-button.html"
           }
           
-            loadElement(lazy_els['paper-autocomplete']);
+          loadElement(lazy_els['paper-autocomplete']);
+        
+          loadElement(lazy_els['px-spinner']);
+          loadElement(lazy_els['px-data-table']);
+          loadElement(lazy_els['paper-button']);
+
+          // Dropdown var for testing
+
+          let ddHidden = true;
+
+          $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+              ddHidden = false;
+          }).on('hide.bs.dropdown', function () {
+              ddHidden = true;
+          });
           
-            loadElement(lazy_els['px-spinner']);
-            loadElement(lazy_els['px-data-table']);
-            loadElement(lazy_els['paper-button']);
-          
+          // Button event listener for search submit
+
+          document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+            
+            // When search button clicked, prevent default to avoid
+            // moving focus and deactivating search
+            // but submit the search
+
+            event.preventDefault();
+            searchSubmit();
+          });
+
+          // Keyboard event listener for search
+
+          document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+            // Check if key pressed is enter
+              if (event.keyCode === 13) {
+                // If the dropdown is hidden, show it
+                  if (ddHidden) {
+                    
+                      $('#searchSubmit').dropdown('toggle');
+                  }
+                  // Either way, run the search
+                  searchSubmit();
+              } else {
+                // If key is any other, check to see if
+                // user has backspaced input clear
+                if (event.target.value === "") {
+                  // If so, check if dropdown is showing
+                  if (ddHidden === false) {
+                    // If so, hide it
+                    $('#searchSubmit').dropdown('toggle');
+                  }
+                }
+              }
+          }, false);
           
       })
     })();
