@@ -1,0 +1,102 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+<link rel="import" href="../css/px-list-inline-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <!-- 0: Import the styles-->
+    <style include="px-list-inline-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-list-inline-design"
+  description="The Predix UI List Inline module simply displays a list as one horizontal row."
+  layer="objects"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-defaults-design"
+  ]'
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Set Options -->
+<px-sass-doc-option
+  option-name="Delimited"
+  choose-with="boolean">
+</px-sass-doc-option>
+
+<!-- 3: Make HTML Demo -->
+<section data-slot="demoHTML">
+<ul class$="{{listClass}}">
+  <li>List Item</li>
+  <li>List Item</li>
+  <li>List Item</li>
+</ul>
+</section>
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+{{importCode}}
+</section>
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="usage">
+```
+<!-- List Inline -->
+<ul class="list-inline">
+  <li>...</li>
+</ul>
+
+
+<!-- Delimited -->
+<ul class="list-inline list-inline--delimited">
+  <li>...</li>
+</ul>
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  Polymer({
+    is: 'local-element-demo',
+
+    attached : function(){
+      var boundHandler = this._handleOptionsUpdated.bind(this);
+      this.addEventListener('px-sass-doc-options-updated', boundHandler)
+    },
+
+    detached : function(){
+      this.removeEventListener('px-sass-doc-options-updated', boundHandler);
+    },
+
+    _handleOptionsUpdated : function(evt) {
+      //call functions created below
+      this.importCode = this._importCode();
+      this.listClass = this._listClass();
+
+      // Wait, then tell the highlighter to run after dom-if restamps
+      this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
+    },
+
+    _listClass : function() {
+      var opts = this.selectedOptions || {}, strings = [];
+      if (opts.Delimited === true)    strings.push("list-inline--delimited");
+      return ("list-inline " + strings.join(" ")).trim();
+    },
+
+    _importCode : function() {
+      var opts = this.selectedOptions || {}, strings = [];
+      if (opts.Delimited === true)    strings.push("$inuit-enable-list-inline--delimited : true;");
+      return (strings.join("\n") + "\n@import 'px-list-inline-design/_objects.list-inline.scss';").trim();
+    },
+
+  });
+</script>

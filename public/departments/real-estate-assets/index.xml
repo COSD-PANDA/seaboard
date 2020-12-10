@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real Estate Assets on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/real-estate-assets/</link>
+    <description>Recent content in Real Estate Assets on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/real-estate-assets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>City Owned Properties - Details</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-details/</guid>
+      <description>Data about property the City of San Diego owns, including the cost, month and year of purchase and the acreage and usage of the site.</description>
+    </item>
+    
+    <item>
+      <title>City Owned Properties - Leases</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-leases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-leases/</guid>
+      <description>Data about leases for City-owned property, including lessee, rent amount and how the property is used.</description>
+    </item>
+    
+    <item>
+      <title>City Owned Properties - Parcels</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-parcels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-parcels/</guid>
+      <description>Site codes for City-owned property in relation to each parcel that was donated or sold to the City. City sites as identified by site code may comprise multiple parcels.</description>
+    </item>
+    
+  </channel>
+</rss>

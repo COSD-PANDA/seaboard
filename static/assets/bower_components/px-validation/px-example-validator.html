@@ -1,0 +1,25 @@
+
+<script>
+    PxValidators = {
+    errorObject : function() {
+      return {passedValidation: false,
+      failedValidationFunctionName: '',
+      failedValidationErrorMessage: ''};
+    },
+    isNumber: function(value) {
+      var errObj = PxValidators.errorObject();
+      errObj.failedValidationFunctionName = 'isNumber';
+      errObj.failedValidationErrorMessage = 'Enter a numeric value';
+      errObj.passedValidation = ((value || value === 0) && value.toString() !== "true") ? (+value === +value) : false;
+      return errObj;
+    },
+    alwaysFails: function(value) {
+      var errObj = PxValidators.errorObject();
+      errObj.failedValidationFunctionName = 'alwaysFails';
+      errObj.failedValidationErrorMessage = 'Nope';
+      errObj.passedValidation = false;
+      return errObj;
+    }
+  };
+
+</script>

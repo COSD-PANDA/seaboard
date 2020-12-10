@@ -1,0 +1,397 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+  <!-- Common demo imports -->
+  <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+  <link rel="import" href="../css/px-spacing-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+  <!-- 0: Import the styles-->
+  <style include="px-spacing-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-spacing-design"
+  description="The Predix UI Spacing module is a collection of helper classes for spacings like margin and padding."
+  layer="trumps"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-defaults-design"
+  ]'
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Set Options -->
+<px-sass-doc-option
+  option-name="Margin Size"
+  choose-with="dropdown"
+  choices='[
+    "tiny",
+    "small",
+    "regular (default)",
+    "large",
+    "huge",
+    "none",
+    "negative-tiny",
+    "negative-small",
+    "negative-regular",
+    "negative-large",
+    "negative-huge"
+  ]'
+  default-choice="regular (default)">
+</px-sass-doc-option>
+
+<px-sass-doc-option
+  option-name="Margin Direction"
+  choose-with="dropdown"
+  choices='[
+    "all (default)",
+    "top",
+    "right",
+    "bottom",
+    "left",
+    "vertical",
+    "horizontal"
+  ]'
+  default-choice="all (default)">
+</px-sass-doc-option>
+
+<px-sass-doc-option
+  option-name="Padding Size"
+  choose-with="dropdown"
+  choices='[
+    "none",
+    "tiny",
+    "small",
+    "regular (default)",
+    "large",
+    "huge"
+  ]'
+  default-choice="regular (default)">
+</px-sass-doc-option>
+
+<px-sass-doc-option
+  option-name="Padding Direction"
+  choose-with="dropdown"
+  choices='[
+    "all (default)",
+    "top",
+    "right",
+    "bottom",
+    "left",
+    "vertical",
+    "horizontal"
+  ]'
+  default-choice="all (default)">
+</px-sass-doc-option>
+
+<px-sass-doc-option
+  option-name="Reverse RTL"
+  choose-with="boolean">
+</px-sass-doc-option>
+
+<!-- 3: Make HTML Demo -->
+<section id="demoHTML" class="demoBox" data-slot="demoHTML" dir="{{direction}}">
+<div class$="parent {{spacingClasses}}">
+  <div class="child"></div>
+</div>
+</section>
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+{{importCode}}
+</section>
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="intro">
+
+</section>
+
+<section data-slot="usage">
+The conventions used for the classes in the spacing module are as follows:
+- <strong>type:</strong> <code class="code code--inline">m</code> Margin, or <code class="code code--inline">p</code> Padding
+- <strong>direction:</strong> <code class="code code--inline">t</code> Top, <code class="code code--inline">r</code> Right, <code class="code code--inline">b</code> Bottom, <code class="code code--inline">l</code> Left, <code class="code code--inline">h</code> Horizontal (left and right), <code class="code code--inline">v</code> Vertical (top and bottom), or omitted for All directions
+- <strong>size:</strong> can be <code class="code code--inline">0</code> None, <code class="code code--inline">--</code> Tiny, <code class="code code--inline">-</code> Small, omitted for regular, <code class="code code--inline">+</code> Large, or <code class="code code--inline">++</code> Huge
+- <strong>negative:</strong> can either be a <code class="code code--inline">-</code> Negative, or omitted for positive (note: paddings must always be positive)
+
+The values for [size] are assigned in the dependent library [px-defaults-design](https://github.com/PredixDev/px-defaults-design) and are based on the `$inuit-base-font-size` variable.
+
+<br/>
+<strong>Margins</strong>
+```
+<!-- These flags enable the classes below them -->
+
+$inuit-enable-margins:
+u-m   <!-- add default margins to all sides -->
+u-mt  <!-- add default margin top -->
+u-mr  <!-- add default margin right -->
+u-mb  <!-- add default margin bottom -->
+u-ml  <!-- add default margin left -->
+u-mh  <!-- add default margins right and left -->
+u-mv  <!-- add default margins top and bottom -->
+
+
+$inuit-enable-margins--tiny:
+u-m--   <!-- add tiny margins to all sides -->
+u-mt--  <!-- add tiny margin top -->
+u-mr--  <!-- add tiny margin right -->
+u-mb--  <!-- add tiny margin bottom -->
+u-ml--  <!-- add tiny margin left -->
+u-mh--  <!-- add tiny margins right and left -->
+u-mv--  <!-- add tiny margins top and bottom -->
+
+
+$inuit-enable-margins--small:
+u-m-    <!-- add small margins to all sides -->
+u-mt-   <!-- add small margin top -->
+u-mr-   <!-- add small margin right -->
+u-mb-   <!-- add small margin bottom -->
+u-ml-   <!-- add small margin left -->
+u-mh-   <!-- add small margins right and left -->
+u-mv-   <!-- add small margins top and bottom -->
+
+
+$inuit-enable-margins--large:
+u-m+   <!-- add large margins to all sides -->
+u-mt+  <!-- add large margin top -->
+u-mr+  <!-- add large margin right -->
+u-mb+  <!-- add large margin bottom -->
+u-ml+  <!-- add large margin left -->
+u-mh+  <!-- add large margins right and left -->
+u-mv+  <!-- add large margins top and bottom -->
+
+
+$inuit-enable-margins--huge:
+u-m++   <!-- add huge margins to all sides -->
+u-mt++  <!-- add huge margin top -->
+u-mr++  <!-- add huge margin right -->
+u-mb++  <!-- add huge margin bottom -->
+u-ml++  <!-- add huge margin left -->
+u-mh++  <!-- add huge margins right and left -->
+u-mv++  <!-- add huge margins top and bottom -->
+
+
+$inuit-enable-margins--negative:
+u--m   <!-- add default negative margins to all sides -->
+u--mt  <!-- add default negative margin top -->
+u--mr  <!-- add default negative margin right -->
+u--mb  <!-- add default negative margin bottom -->
+u--ml  <!-- add default negative margin left -->
+u--mh  <!-- add default negative margins right and left -->
+u--mv  <!-- add default negative margins top and bottom -->
+
+
+$inuit-enable-margins--negative-tiny:
+u--m--   <!-- add tiny negative margins to all sides -->
+u--mt--  <!-- add tiny negative margin top -->
+u--mr--  <!-- add tiny negative margin right -->
+u--mb--  <!-- add tiny negative margin bottom -->
+u--ml--  <!-- add tiny negative margin left -->
+u--mh--  <!-- add tiny negative margins right and left -->
+u--mv--  <!-- add tiny negative margins top and bottom -->
+
+
+$inuit-enable-margins--negative-small:
+u--m-   <!-- add small negative margins to all sides -->
+u--mt-  <!-- add small negative margin top -->
+u--mr-  <!-- add small negative margin right -->
+u--mb-  <!-- add small negative margin bottom -->
+u--ml-  <!-- add small negative margin left -->
+u--mh-  <!-- add small negative margins right and left -->
+u--mv-  <!-- add small negative margins top and bottom -->
+
+
+$inuit-enable-margins--negative-large:
+u--m+   <!-- add large negative margins to all sides -->
+u--mt+  <!-- add large negative margin top -->
+u--mr+  <!-- add large negative margin right -->
+u--mb+  <!-- add large negative margin bottom -->
+u--ml+  <!-- add large negative margin left -->
+u--mh+  <!-- add large negative margins right and left -->
+u--mv+  <!-- add large negative margins top and bottom -->
+
+
+$inuit-enable-margins--negative-huge:
+u--m++   <!-- add huge negative margins to all sides -->
+u--mt++  <!-- add huge negative margin top -->
+u--mr++  <!-- add huge negative margin right -->
+u--mb++  <!-- add huge negative margin bottom -->
+u--ml++  <!-- add huge negative margin left -->
+u--mh++  <!-- add huge negative margins right and left -->
+u--mv++  <!-- add huge negative margins top and bottom -->
+
+
+$inuit-enable-margins--none:
+u-m0   <!-- remove margins -->
+u-mt0  <!-- remove margin top -->
+u-mr0  <!-- remove margin right -->
+u-mb0  <!-- remove margin bottom -->
+u-ml0  <!-- remove margin left -->
+u-mh0  <!-- remove margins right and left -->
+u-mv0  <!-- remove margins top and bottom -->
+```
+<br/>
+<strong>Paddings</strong>
+```
+<!-- These flags enable the classes below them -->
+
+$inuit-enable-paddings:
+u-p   <!-- add default padding to all sides -->
+u-pt  <!-- add default padding top -->
+u-pr  <!-- add default padding right -->
+u-pb  <!-- add default padding bottom -->
+u-pl  <!-- add default padding left -->
+u-ph  <!-- add default padding right and left -->
+u-pv  <!-- add default padding top and bottom -->
+
+
+$inuit-enable-paddings--tiny:
+u-p--   <!-- add tiny padding to all sides -->
+u-pt--  <!-- add tiny padding top -->
+u-pr--  <!-- add tiny padding right -->
+u-pb--  <!-- add tiny padding bottom -->
+u-pl--  <!-- add tiny padding left -->
+u-ph--  <!-- add tiny padding right and left -->
+u-pv--  <!-- add tiny padding top and bottom -->
+
+
+$inuit-enable-paddings--small:
+u-p-   <!-- add small padding to all sides -->
+u-pt-  <!-- add small padding top -->
+u-pr-  <!-- add small padding right -->
+u-pb-  <!-- add small padding bottom -->
+u-pl-  <!-- add small padding left -->
+u-ph-  <!-- add small padding right and left -->
+u-pv-  <!-- add small padding top and bottom -->
+
+
+$inuit-enable-paddings--large:
+u-p+   <!-- add large padding to all sides -->
+u-pt+  <!-- add large padding top -->
+u-pr+  <!-- add large padding right -->
+u-pb+  <!-- add large padding bottom -->
+u-pl+  <!-- add large padding left -->
+u-ph+  <!-- add large padding right and left -->
+u-pv+  <!-- add large padding top and bottom -->
+
+
+$inuit-enable-paddings--huge:
+u-p++   <!-- add huge padding to all sides -->
+u-pt++  <!-- add huge padding top -->
+u-pr++  <!-- add huge padding right -->
+u-pb++  <!-- add huge padding bottom -->
+u-pl++  <!-- add huge padding left -->
+u-ph++  <!-- add huge padding right and left -->
+u-pv++  <!-- add huge padding top and bottom -->
+
+
+$inuit-enable-paddings--none:
+u-p0   <!-- remove padding -->
+u-pt0  <!-- remove padding top -->
+u-pr0  <!-- remove padding right -->
+u-pb0  <!-- remove padding bottom -->
+u-pl0  <!-- remove padding left -->
+u-ph0  <!-- remove padding right and left -->
+u-pv0  <!-- remove padding top and bottom -->
+
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  Polymer({
+  is: 'local-element-demo',
+
+    attached : function(){
+      var boundHandler = this._handleOptionsUpdated.bind(this);
+      this.addEventListener('px-sass-doc-options-updated', boundHandler)
+    },
+
+    detached : function(){
+      this.removeEventListener('px-sass-doc-options-updated', boundHandler);
+    },
+
+    _handleOptionsUpdated : function(evt) {
+      //call functions created below
+      this.spacingClasses = this._spacingClasses();
+      this.importCode = this._importCode();
+      this.direction = this._direction();
+
+      // Wait, then tell the highlighter to run after dom-if restamps
+      this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
+    },
+
+    _spacingClasses : function() {
+      var opts = this.selectedOptions || {}, strings = [], margin="u-", padding="u-p";
+      if(opts["Margin Size"].indexOf('negative') > -1)  margin+="-";
+                                                        margin+="m";
+      if(opts["Margin Direction"] === "top")            margin+="t";
+      if(opts["Margin Direction"] === "right")          margin+="r";
+      if(opts["Margin Direction"] === "bottom")         margin+="b";
+      if(opts["Margin Direction"] === "left")           margin+="l";
+      if(opts["Margin Direction"] === "vertical")       margin+="v";
+      if(opts["Margin Direction"] === "horizontal")     margin+="h";
+      if(opts["Margin Size"] === "none")                margin+="0";
+      if(opts["Margin Size"].indexOf('tiny') > -1)      margin+="--";
+      if(opts["Margin Size"].indexOf('small') > -1)     margin+="-";
+      if(opts["Margin Size"].indexOf('large') > -1)     margin+="+";
+      if(opts["Margin Size"].indexOf('huge') > -1)      margin+="++";
+      if(opts["Padding Direction"] === "top")           padding+="t";
+      if(opts["Padding Direction"] === "right")         padding+="r";
+      if(opts["Padding Direction"] === "bottom")        padding+="b";
+      if(opts["Padding Direction"] === "left")          padding+="l";
+      if(opts["Padding Direction"] === "vertical")      padding+="v";
+      if(opts["Padding Direction"] === "horizontal")    padding+="h";
+      if(opts["Padding Size"] === "none")               padding+="0";
+      if(opts["Padding Size"] === 'tiny')               padding+="--";
+      if(opts["Padding Size"] === 'small')              padding+="-";
+      if(opts["Padding Size"] === 'large')              padding+="+";
+      if(opts["Padding Size"] === 'huge')               padding+="++";
+
+      strings.push(margin);
+      strings.push(padding);
+      return strings.join(" ").trim();
+    },
+
+    _importCode : function() {
+      var opts = this.selectedOptions || {}, strings = [];
+      if (opts["Margin Size"] === "negative-huge")      strings.push("$inuit-enable-margins--negative-huge : true;");
+      if (opts["Margin Size"] === "negative-large")     strings.push("$inuit-enable-margins--negative-large : true;");
+      if (opts["Margin Size"] === "negative")           strings.push("$inuit-enable-margins--negative : true;");
+      if (opts["Margin Size"] === "negative-small")     strings.push("$inuit-enable-margins--negative-small : true;");
+      if (opts["Margin Size"] === "negative-tiny")      strings.push("$inuit-enable-margins--negative-tiny : true;");
+      if (opts["Margin Size"] === "none")               strings.push("$inuit-enable-margins--none : true;");
+      if (opts["Margin Size"] === "tiny")               strings.push("$inuit-enable-margins--tiny : true;");
+      if (opts["Margin Size"] === "small")              strings.push("$inuit-enable-margins--small : true;");
+      if (opts["Margin Size"] === "regular (default)")  strings.push("$inuit-enable-margins : true;");
+      if (opts["Margin Size"] === "large")              strings.push("$inuit-enable-margins--large : true;");
+      if (opts["Margin Size"] === "huge")               strings.push("$inuit-enable-margins--huge : true;");
+      if (opts["Reverse RTL"] === true)                 strings.push("$inuit-enable-margins--rtl : true;");
+      if (opts["Padding Size"] === "none")              strings.push("$inuit-enable-paddings--none : true;");
+      if (opts["Padding Size"] === "tiny")              strings.push("$inuit-enable-paddings--tiny : true;");
+      if (opts["Padding Size"] === "small")             strings.push("$inuit-enable-paddings--small : true;");
+      if (opts["Padding Size"] === "regular (default)") strings.push("$inuit-enable-paddings : true;");
+      if (opts["Padding Size"] === "large")             strings.push("$inuit-enable-paddings--large : true;");
+      if (opts["Padding Size"] === "huge")              strings.push("$inuit-enable-paddings--huge : true;");
+      if (opts["Reverse RTL"] === true)                 strings.push("$inuit-enable-paddings--rtl : true;");
+      return (strings.join("\n") + "\n@import 'px-spacing-design/_trumps.spacing.scss';").trim();
+    },
+
+    _direction : function() {
+      var opts = this.selectedOptions || {};
+      if(opts["Reverse RTL"] === true) {
+        return 'rtl';
+      }
+      else {
+        return 'ltr';
+      }
+    },
+
+  });
+</script>

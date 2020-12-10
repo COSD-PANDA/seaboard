@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>City Management on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/categories/city-management/</link>
+    <description>Recent content in City Management on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/categories/city-management/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>72-hour Parking Violation Notifications</title>
+      <link>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</guid>
+      <description>Requests for abandoned vehicle removal made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Accounts in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-accounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-accounts/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about expense and revenue accounts in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; and &lt;a href=&#34;../../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget datasets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Business improvement districts</title>
+      <link>https://dataportal.netlify.app/datasets/business-improvement-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-improvement-districts/</guid>
+      <description>A BID provides a business area with the resources to develop marketing campaigns, increase awareness and lobbying efforts, secure additional funding and enhance public improvement and beautification projects in partnership with the City.</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Actuals by fiscal year</title>
+      <link>https://dataportal.netlify.app/datasets/capital-actuals-fy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-actuals-fy/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s CIP actuals. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Actuals project to date</title>
+      <link>https://dataportal.netlify.app/datasets/capital-actuals-ptd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-actuals-ptd/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s CIP expenses. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Budget by fiscal year</title>
+      <link>https://dataportal.netlify.app/datasets/capital-budget-fy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-budget-fy/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s adopted CIP budgets from fiscal year 2011 to the most current. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Budget project to date</title>
+      <link>https://dataportal.netlify.app/datasets/capital-budget-ptd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-budget-ptd/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s budgeted CIP expenses from fiscal year 2011 to the most current. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>City Council districts</title>
+      <link>https://dataportal.netlify.app/datasets/city-council-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-council-districts/</guid>
+      <description>City of San Diego Council Districts Boundaries (adopted August 25, 2011).</description>
+    </item>
+    
+    <item>
+      <title>Community planning districts</title>
+      <link>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</guid>
+      <description>Represents the geographic boundaries for the City of San Diego community land use policy plans specific to these geographic areas.</description>
+    </item>
+    
+    <item>
+      <title>Complaints Evaluated by the Community Review Board on Police Practices</title>
+      <link>https://dataportal.netlify.app/datasets/crb-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/crb-cases/</guid>
+      <description>&lt;p&gt;The Community Review Board on Police Practices, known as the CRB, was established by San Diego voters in 1988 to review and evaluate complaints filed by the public against members of the City of San Diego Police Department. The CRB reviews and evaluates the administration of discipline arising from sustained complaints, all officer-involved shootings, and all in-custody death cases.  In addition, the Board makes recommendations to the Chief of Police regarding the San Diego Police Department’s policies and procedures.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Inventory</title>
+      <link>https://dataportal.netlify.app/datasets/data-inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/data-inventory/</guid>
+      <description>&lt;p&gt;Inventory of datasets targeted for release on the Open Data Portal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Departments in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-depts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-depts/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about departments in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; budget dataset.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enterprise System Information</title>
+      <link>https://dataportal.netlify.app/datasets/enterprise-system-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/enterprise-system-information/</guid>
+      <description>Pursuant to SB 272 - The California Public Records Act, the City of San Diego is providing a catalog of its enterprise systems.</description>
+    </item>
+    
+    <item>
+      <title>Facility Condition Index ratings for City buildings</title>
+      <link>https://dataportal.netlify.app/datasets/facilities-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/facilities-assessment/</guid>
+      <description>&lt;p&gt;More than 700 City facilities have been assessed for current and anticipated maintenance and capital needs. Each facility was given an FCI rating. This rating offers an idea of the overall building condition and takes into account the cost of the backlog for both maintenance and capital needs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Funds in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-funds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-funds/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about funds in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; and &lt;a href=&#34;../../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget datasets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Graffiti Removal Requests</title>
+      <link>https://dataportal.netlify.app/datasets/gid-graffiti-removal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-graffiti-removal/</guid>
+      <description>Requests for graffiti removal made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Illegal Dumping Notifications</title>
+      <link>https://dataportal.netlify.app/datasets/gid-illegal-dumping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-illegal-dumping/</guid>
+      <description>Notifications for illegal dumping made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Operating Actuals</title>
+      <link>https://dataportal.netlify.app/datasets/operating-actuals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/operating-actuals/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s operating actuals. This data is also visualized by our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Operating budgets</title>
+      <link>https://dataportal.netlify.app/datasets/operating-budget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/operating-budget/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s operating budgets from fiscal year 2011 to the most current. This data is also visualized by our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pothole Repair Requests</title>
+      <link>https://dataportal.netlify.app/datasets/gid-pothole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-pothole/</guid>
+      <description>Requests for pothole repair made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Projects in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-projects/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about projects in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget dataset.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reports of non-emergency problems submitted by users of Get It Done</title>
+      <link>https://dataportal.netlify.app/datasets/get-it-done-311/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/get-it-done-311/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.sandiego.gov/get-it-done&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Get It Done program&lt;/a&gt; allows residents and visitors to report certain types of non-emergency problems to the City using the Get It Done mobile app, web app, or by telephone. This dataset contains all Get It Done reports the City has received since the program launched in May 2016.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resident Satisfaction survey results</title>
+      <link>https://dataportal.netlify.app/datasets/resident-satisfaction-survey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/resident-satisfaction-survey/</guid>
+      <description>&lt;p&gt;To promote a customer-focused culture, the City of San Diego conducted a Resident Satisfaction Survey in 2015. The survey assessed satisfaction with the delivery of City programs, services, and City staff and preferences about how City officials should prioritize programs and services.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>San Diego city boundary</title>
+      <link>https://dataportal.netlify.app/datasets/san-diego-boundary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/san-diego-boundary/</guid>
+      <description>&lt;p&gt;Polygon representing the City of San Diego administrative boundary.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

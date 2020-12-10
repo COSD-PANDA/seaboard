@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datasets on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/datasets/</link>
+    <description>Recent content in Datasets on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/datasets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>72-hour Parking Violation Notifications</title>
+      <link>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-72-hour-violation/</guid>
+      <description>Requests for abandoned vehicle removal made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Accounts in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-accounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-accounts/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about expense and revenue accounts in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; and &lt;a href=&#34;../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget datasets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Address Points to APN</title>
+      <link>https://dataportal.netlify.app/datasets/address-points-apn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/address-points-apn/</guid>
+      <description>&lt;p&gt;This dataset comprises SITUS address points (as opposed to owner or mailing addresses) for jurisdictions within the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Benthic Invertebrates - Ocean Monitoring Program</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-ocean-benthic-invertebrates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-ocean-benthic-invertebrates/</guid>
+      <description>&lt;p&gt;Abundance of invertebrates (approximately &amp;lt; 1 cm in size) found in sediment samples collected throughout the region.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bike Master Plan</title>
+      <link>https://dataportal.netlify.app/datasets/bike-master-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/bike-master-plan/</guid>
+      <description>&lt;p&gt;Major infrastructure in the Bike Master Plan adopted in January 2014.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bike route lines</title>
+      <link>https://dataportal.netlify.app/datasets/bike-route-lines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/bike-route-lines/</guid>
+      <description>Existing (2015) Bike facilities in the San Diego Region. This dataset was developed for the primary purpose of updating the SANDAG San Diego Regional Bike Map and the interactive bike map on the iCommute website.</description>
+    </item>
+    
+    <item>
+      <title>Business improvement districts</title>
+      <link>https://dataportal.netlify.app/datasets/business-improvement-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-improvement-districts/</guid>
+      <description>A BID provides a business area with the resources to develop marketing campaigns, increase awareness and lobbying efforts, secure additional funding and enhance public improvement and beautification projects in partnership with the City.</description>
+    </item>
+    
+    <item>
+      <title>Business Tax Certificates</title>
+      <link>https://dataportal.netlify.app/datasets/business-listings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-listings/</guid>
+      <description>&lt;p&gt;Businesses that operate within San Diego must get a business tax certificate issued by the City Treasurer. This dataset includes all active and inactive business tax certificates issued since 1990.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Candidates and Ballot Measures Receiving Financial Support</title>
+      <link>https://dataportal.netlify.app/datasets/candidates-and-ballot-measures-election/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/candidates-and-ballot-measures-election/</guid>
+      <description>&lt;p&gt;Included here are election committees and candidates for office who received donations, goods and services, or loans, or had money spent independently in support, according to campaign finance data reported to the City Clerk. This is a companion dataset to the &lt;a href=&#34;https://data.sandiego.gov/datasets/financial-support-candidates-and-ballot-measures-election/&#34;&gt;campaign finance transactions dataset&lt;/a&gt; and was created by compiling the unique recipients from all years of financial transactions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Actuals by fiscal year</title>
+      <link>https://dataportal.netlify.app/datasets/capital-actuals-fy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-actuals-fy/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s CIP actuals. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Actuals project to date</title>
+      <link>https://dataportal.netlify.app/datasets/capital-actuals-ptd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-actuals-ptd/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s CIP expenses. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Budget by fiscal year</title>
+      <link>https://dataportal.netlify.app/datasets/capital-budget-fy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-budget-fy/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s adopted CIP budgets from fiscal year 2011 to the most current. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capital Improvement Projects (CIP) Budget project to date</title>
+      <link>https://dataportal.netlify.app/datasets/capital-budget-ptd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/capital-budget-ptd/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s budgeted CIP expenses from fiscal year 2011 to the most current. This data is also visualized in our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>City Council districts</title>
+      <link>https://dataportal.netlify.app/datasets/city-council-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-council-districts/</guid>
+      <description>City of San Diego Council Districts Boundaries (adopted August 25, 2011).</description>
+    </item>
+    
+    <item>
+      <title>City Owned Properties - Details</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-details/</guid>
+      <description>Data about property the City of San Diego owns, including the cost, month and year of purchase and the acreage and usage of the site.</description>
+    </item>
+    
+    <item>
+      <title>City Owned Properties - Leases</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-leases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-leases/</guid>
+      <description>Data about leases for City-owned property, including lessee, rent amount and how the property is used.</description>
+    </item>
+    
+    <item>
+      <title>City Owned Properties - Parcels</title>
+      <link>https://dataportal.netlify.app/datasets/city-owned-properties-parcels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-owned-properties-parcels/</guid>
+      <description>Site codes for City-owned property in relation to each parcel that was donated or sold to the City. City sites as identified by site code may comprise multiple parcels.</description>
+    </item>
+    
+    <item>
+      <title>Code Enforcement Violations</title>
+      <link>https://dataportal.netlify.app/datasets/code-enforcement-violations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/code-enforcement-violations/</guid>
+      <description>&lt;p&gt;Code Enforcement Violations that were reported to the Development Services Department prior to January 2018 and were and closed out between 2015 and 2018.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Community Development Block Grant (CDBG) areas</title>
+      <link>https://dataportal.netlify.app/datasets/community-block-grants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-block-grants/</guid>
+      <description>&lt;p&gt;Census Tract Block Groups where at least 51 percent of residents are considered low and moderate income, according to the U.S. Housing and Urban Development&amp;rsquo;s Office of Community Planning and Development. CDBG funds are awarded for activities that benefit low- and moderate-income people.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Community planning districts</title>
+      <link>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</guid>
+      <description>Represents the geographic boundaries for the City of San Diego community land use policy plans specific to these geographic areas.</description>
+    </item>
+    
+    <item>
+      <title>Complaint Type Codes</title>
+      <link>https://dataportal.netlify.app/datasets/complaint-type-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/complaint-type-codes/</guid>
+      <description>This is a list of all &amp;ldquo;Complaint Type Codes&amp;rdquo; used by Development Services. These are classifications of complaints. This list is updated as codes are added or removed. Codes are updated no more than quarterly. Please see Code Enforcement{:target=&amp;rsquo;_blank&amp;rsquo;} for more information.</description>
+    </item>
+    
+    <item>
+      <title>Complaints Evaluated by the Community Review Board on Police Practices</title>
+      <link>https://dataportal.netlify.app/datasets/crb-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/crb-cases/</guid>
+      <description>&lt;p&gt;The Community Review Board on Police Practices, known as the CRB, was established by San Diego voters in 1988 to review and evaluate complaints filed by the public against members of the City of San Diego Police Department. The CRB reviews and evaluates the administration of discipline arising from sustained complaints, all officer-involved shootings, and all in-custody death cases.  In addition, the Board makes recommendations to the Chief of Police regarding the San Diego Police Department’s policies and procedures.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Inventory</title>
+      <link>https://dataportal.netlify.app/datasets/data-inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/data-inventory/</guid>
+      <description>&lt;p&gt;Inventory of datasets targeted for release on the Open Data Portal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Demersal Fishes (trawl caught) - Ocean Monitoring Program</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-ocean-trawl-fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-ocean-trawl-fish/</guid>
+      <description>&lt;p&gt;Abundance, standard length, and biomass of fishes observed in trawls throughout the region.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Departments in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-depts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-depts/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about departments in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; budget dataset.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Approvals by Status, set 1 of 2</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-set1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-set1/</guid>
+      <description>Select permit types organized by permit status.
+This larger set of permit types includes all other permits that are not in set 2.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Approvals by Status, set 2 of 2</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-set2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-set2/</guid>
+      <description>Select permit types organized by permit status.
+This smaller set of types includes simple permits for no-plan mechanical, electrical, and plumbing work, as well as certain photovoltaic, newsrack, transportation, and traffic control permits. To see data on the remaining permit types, please visit the page for set 1.</description>
+    </item>
+    
+    <item>
+      <title>Development Services Department Project Tags</title>
+      <link>https://dataportal.netlify.app/datasets/development-permits-tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/development-permits-tags/</guid>
+      <description>Tags associated with Development Services Department projects. Join tags to any DSD project approvals (set 1) dataset to get additional characteristics about the project for which the approval was issued.
+Tags are for informational purposes only and should not be used for official reporting purposes.</description>
+    </item>
+    
+    <item>
+      <title>Drinking Water Sample Sites</title>
+      <link>https://dataportal.netlify.app/datasets/drinking-water-sample-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/drinking-water-sample-sites/</guid>
+      <description>Locations of sampling sites for the drinking water system. These locations exist to fulfill the federal Total Coliform Rule.</description>
+    </item>
+    
+    <item>
+      <title>Enterprise System Information</title>
+      <link>https://dataportal.netlify.app/datasets/enterprise-system-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/enterprise-system-information/</guid>
+      <description>Pursuant to SB 272 - The California Public Records Act, the City of San Diego is providing a catalog of its enterprise systems.</description>
+    </item>
+    
+    <item>
+      <title>Facility Condition Index ratings for City buildings</title>
+      <link>https://dataportal.netlify.app/datasets/facilities-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/facilities-assessment/</guid>
+      <description>&lt;p&gt;More than 700 City facilities have been assessed for current and anticipated maintenance and capital needs. Each facility was given an FCI rating. This rating offers an idea of the overall building condition and takes into account the cost of the backlog for both maintenance and capital needs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Financial Support for Candidates and Ballot Measures up for Election</title>
+      <link>https://dataportal.netlify.app/datasets/financial-support-candidates-and-ballot-measures-election/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/financial-support-candidates-and-ballot-measures-election/</guid>
+      <description>&lt;p&gt;This dataset contains transactions between election committees and financial
+supporters, including loans, contributions of money, contributions of goods
+and services, and money spent independently to support a candidate or ballot measure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fire battalion districts</title>
+      <link>https://dataportal.netlify.app/datasets/fire-battalion-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-battalion-districts/</guid>
+      <description>&lt;p&gt;Fire Battalion districts have a chief that oversees 6 to 7 fire stations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fire Incident Problem Counts</title>
+      <link>https://dataportal.netlify.app/datasets/fire-incident-problem-agg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-incident-problem-agg/</guid>
+      <description>Monthly totals of problem types for Fire and EMS calls dispatched by the San Diego Fire Communications Center. The problem description is not available per incident in the Fire Incidents dataset to protect patient information.</description>
+    </item>
+    
+    <item>
+      <title>Fire Incidents</title>
+      <link>https://dataportal.netlify.app/datasets/fire-incidents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-incidents/</guid>
+      <description>Fire and EMS calls dispatched by the San Diego Fire Communications Center. This list includes a generalized problem description to protect patient information. Monthly totals for more detailed problem descriptions can be found in the Fire Incident Problem Counts dataset.</description>
+    </item>
+    
+    <item>
+      <title>Fire Stations</title>
+      <link>https://dataportal.netlify.app/datasets/fire-stations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-stations/</guid>
+      <description>Data covering the location and status of incorporated and unincorporated Fire stations.</description>
+    </item>
+    
+    <item>
+      <title>Funds in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-funds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-funds/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about funds in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../datasets/operating-budget/&#34;&gt;Operating&lt;/a&gt; and &lt;a href=&#34;../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget datasets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>General Plan Land Use</title>
+      <link>https://dataportal.netlify.app/datasets/general-plan-land-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/general-plan-land-use/</guid>
+      <description>This dataset represents adopted planned land use polygons for City community planning areas.</description>
+    </item>
+    
+    <item>
+      <title>Graffiti Removal Requests</title>
+      <link>https://dataportal.netlify.app/datasets/gid-graffiti-removal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-graffiti-removal/</guid>
+      <description>Requests for graffiti removal made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Hate Crimes</title>
+      <link>https://dataportal.netlify.app/datasets/police-hate-crimes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-hate-crimes/</guid>
+      <description>&lt;p&gt;Hate crimes reported to the San Diego Police Department.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Historical districts</title>
+      <link>https://dataportal.netlify.app/datasets/historic-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/historic-districts/</guid>
+      <description>&lt;p&gt;Historical districts contain multiple properties and/or objects that share historical significance. The City&amp;rsquo;s Historical Resources Board can establish a district if the contributing resources meet one of six criteria.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Illegal Dumping Notifications</title>
+      <link>https://dataportal.netlify.app/datasets/gid-illegal-dumping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-illegal-dumping/</guid>
+      <description>Notifications for illegal dumping made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Joint use parks</title>
+      <link>https://dataportal.netlify.app/datasets/joint-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/joint-use/</guid>
+      <description>&lt;p&gt;Joint use facilities are intended to provide active and passive recreational opportunities for school children when school is in session and the general public when school is not in session.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Library Locations</title>
+      <link>https://dataportal.netlify.app/datasets/library-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/library-locations/</guid>
+      <description>Point feature layer of City of San Diego library locations with associated website and contact information, created by the County of San Diego Department of Public Works GIS, in conjunction with San Diego County Library (SDCL).</description>
+    </item>
+    
+    <item>
+      <title>Lifeguard station point locations</title>
+      <link>https://dataportal.netlify.app/datasets/lifeguard-stations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/lifeguard-stations/</guid>
+      <description>&lt;p&gt;Point locations for lifeguard stations on San Diego beaches. The City has nine permanent stations in Ocean Beach, Mission Beach, Pacific Beach, La Jolla, and Black&amp;rsquo;s Beach as well as stations operated seasonally.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Locations of artwork in the Civic Art Collection</title>
+      <link>https://dataportal.netlify.app/datasets/public-art/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/public-art/</guid>
+      <description>&lt;p&gt;Point locations of artwork in the collection.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maintenance assessment districts</title>
+      <link>https://dataportal.netlify.app/datasets/maintenance-assessment-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/maintenance-assessment-districts/</guid>
+      <description>&lt;p&gt;A Maintenance Assessment District pays additional taxes to receive services beyond the general services the City provides to other areas. These services include landscape, lighting, and hardscape maintenance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Megabenthic Invertebrates (trawl caught) - Ocean Monitoring Program</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-ocean-trawl-invertebrates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-ocean-trawl-invertebrates/</guid>
+      <description>&lt;p&gt;Abundance of invertebrates (approximately &amp;gt;1 cm in size) observed in trawls throughout the region.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monitoring of Indicator Bacteria in Drinking Water</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-of-indicator-bacteria-in-drinking-water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-of-indicator-bacteria-in-drinking-water/</guid>
+      <description>&lt;p&gt;Here are individual test results from the water monitoring database,
+plus the monthly totals reported to the state to demonstrate MCL compliance.
+This dataset does not include results of tests for chemical parameters.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monitoring of Select Chemical Parameters in Drinking Water</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-of-select-chemical-parameters-in-drinking-water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-of-select-chemical-parameters-in-drinking-water/</guid>
+      <description>&lt;p&gt;Results of tests on drinking water for alkalinity, color, turbidity, hardness,
+conductivity, total dissolved solids, and for selected anions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multi-Habitat Planning Areas</title>
+      <link>https://dataportal.netlify.app/datasets/mhpa-areas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/mhpa-areas/</guid>
+      <description>&lt;p&gt;The Multi-Habitat Planning Area is planned habitat preserve. Of the 56,831 acres, 90 percent is targeted for preservation. Within this area, development is limited, but the public is allowed access in many areas for recreational activities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Operating Actuals</title>
+      <link>https://dataportal.netlify.app/datasets/operating-actuals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/operating-actuals/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s operating actuals. This data is also visualized by our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Operating budgets</title>
+      <link>https://dataportal.netlify.app/datasets/operating-budget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/operating-budget/</guid>
+      <description>&lt;p&gt;This dataset includes the City&amp;rsquo;s operating budgets from fiscal year 2011 to the most current. This data is also visualized by our online budget tool at &lt;a href=&#34;https://budget.sandiego.gov/transparency#/&#34;&gt;budget.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Park Locations</title>
+      <link>https://dataportal.netlify.app/datasets/park-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/park-locations/</guid>
+      <description>Properties managed by the City of San Diego Parks &amp;amp; Recreation Department.</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Locations</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-locations/</guid>
+      <description>Locations of parking meters with corresponding parking zones and areas.</description>
+    </item>
+    
+    <item>
+      <title>Parking Meters Transactions</title>
+      <link>https://dataportal.netlify.app/datasets/parking-meters-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/parking-meters-transactions/</guid>
+      <description>All transactions for all parking meters. The raw datasets are large and may be difficult to work with. Aggregated versions are also available.</description>
+    </item>
+    
+    <item>
+      <title>Police Beats</title>
+      <link>https://dataportal.netlify.app/datasets/police-beats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-beats/</guid>
+      <description>San Diego Police Department beats.</description>
+    </item>
+    
+    <item>
+      <title>Police Calls for Service</title>
+      <link>https://dataportal.netlify.app/datasets/police-calls-for-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-calls-for-service/</guid>
+      <description>&lt;p&gt;Calls dispatched by the San Diego Police Department&amp;rsquo;s communications
+dispatch center.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Police Calls for Service Call Types</title>
+      <link>https://dataportal.netlify.app/datasets/police-calls-call-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-calls-call-types/</guid>
+      <description>Call type codes used by the San Diego Police Department&amp;rsquo;s communications dispatch center. This is a reference dataset for Police Calls for Service.</description>
+    </item>
+    
+    <item>
+      <title>Police Calls for Service Disposition Codes</title>
+      <link>https://dataportal.netlify.app/datasets/police-calls-disposition-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-calls-disposition-codes/</guid>
+      <description>Call disposition codes used by the San Diego Police Department&amp;rsquo;s communications dispatch center. This is a reference dataset for Police Calls for Service.</description>
+    </item>
+    
+    <item>
+      <title>Police divisions</title>
+      <link>https://dataportal.netlify.app/datasets/pd-divisions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/pd-divisions/</guid>
+      <description>&lt;p&gt;The City has 9 divisions for the purpose of law enforcement: Central, Northern, Northeastern, Northwestern, Southern, Southeastern, Easter, Western, and Mid-City. Each division is a combination of law beat areas within the division boundary. These are police divisions only and do not represent legal neighborhood or community boundaries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Police neighborhoods</title>
+      <link>https://dataportal.netlify.app/datasets/pd-neighborhoods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/pd-neighborhoods/</guid>
+      <description>&lt;p&gt;Law beat areas for the purpose of law enforcement within the City. These combine into larger police divisions. These boundaries are for law enforcement only and do not represent legal neighborhood or community boundaries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Police Vehicle Stops</title>
+      <link>https://dataportal.netlify.app/datasets/police-vehicle-stops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-vehicle-stops/</guid>
+      <description>&lt;p&gt;Vehicle stops made by the San Diego Police Department between 2014 and June 26, 2018. For stops made after June 26, 2018, please see the &lt;a href=&#34;../datasets/police-ripa-stops/&#34;&gt;Police RIPA Stops dataset&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Police Vehicle Stops Search Details</title>
+      <link>https://dataportal.netlify.app/datasets/police-vehicle-stops-search-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-vehicle-stops-search-details/</guid>
+      <description>&lt;p&gt;Details on searches conducted during vehicle stops as well as outcomes for stops made by the San Diego Police Department between 2014 and June 26, 2018. For stops made after June 26, 2018, please see the &lt;a href=&#34;../datasets/police-ripa-stops/&#34;&gt;Police RIPA Stops datasets&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pothole Repair Requests</title>
+      <link>https://dataportal.netlify.app/datasets/gid-pothole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/gid-pothole/</guid>
+      <description>Requests for pothole repair made by residents via the Get It Done applications and phone.</description>
+    </item>
+    
+    <item>
+      <title>Projects in the City&#39;s annual budget</title>
+      <link>https://dataportal.netlify.app/datasets/budget-reference-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/budget-reference-projects/</guid>
+      <description>&lt;p&gt;This dataset provides additional information about projects in the City&amp;rsquo;s annual budget. Use this to supplement the &lt;a href=&#34;../datasets/capital-budget-fy/&#34;&gt;CIP&lt;/a&gt; budget dataset.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Promise Zone boundary</title>
+      <link>https://dataportal.netlify.app/datasets/promise-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/promise-zone/</guid>
+      <description>&lt;p&gt;Promise Zone is a federal designation for an area of San Diego that has high unemployment, poverty, low educational attainment, insufficient access to healthcare and healthy foods, rising crime rates, and the least affordable housing in the country.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Recreation Center Locations</title>
+      <link>https://dataportal.netlify.app/datasets/recreation-center-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/recreation-center-locations/</guid>
+      <description>&lt;p&gt;Recreation centers operated by the City of San Diego Park and Recreation Department for active and passive recreational opportunities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reports of non-emergency problems submitted by users of Get It Done</title>
+      <link>https://dataportal.netlify.app/datasets/get-it-done-311/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/get-it-done-311/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.sandiego.gov/get-it-done&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Get It Done program&lt;/a&gt; allows residents and visitors to report certain types of non-emergency problems to the City using the Get It Done mobile app, web app, or by telephone. This dataset contains all Get It Done reports the City has received since the program launched in May 2016.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resident Satisfaction survey results</title>
+      <link>https://dataportal.netlify.app/datasets/resident-satisfaction-survey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/resident-satisfaction-survey/</guid>
+      <description>&lt;p&gt;To promote a customer-focused culture, the City of San Diego conducted a Resident Satisfaction Survey in 2015. The survey assessed satisfaction with the delivery of City programs, services, and City staff and preferences about how City officials should prioritize programs and services.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Revolving Loan Fund Coverage</title>
+      <link>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.sandiego.gov/economic-development/business/financing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;San Diego Regional Revolving Loan Fund&lt;/a&gt; operates in San Diego and Chula Vista to provide small business assistance and generate neighborhood commercial district revitalization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Right-of-way parcels</title>
+      <link>https://dataportal.netlify.app/datasets/right-of-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/right-of-way/</guid>
+      <description>This is a subset of a countywide parcels dataset maintained by SanGIS. Right-of-way parcels are those that are legally dedicated to unhindered public travel. SanGIS uses county, state and federal sources to update this data.</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - actions taken</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-actions-taken/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-actions-taken/</guid>
+      <description>&lt;p&gt;Actions an officer took toward a person stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - basic details</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-stops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-stops/</guid>
+      <description>&lt;p&gt;All stops made by the San Diego Police Department. Data collected from these stops conforms to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953). RIPA stops data collection began on July 1, 2018. Data on stops made before July is limited to vehicle stops and can be found in the &lt;a href=&#34;../datasets/police-vehicle-stops/&#34;&gt;police vehicle stops dataset&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - basis for property seizure</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-prop-seize-basis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-prop-seize-basis/</guid>
+      <description>&lt;p&gt;Basis for seizing property from persons stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - basis for searches conducted</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-search-basis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-search-basis/</guid>
+      <description>&lt;p&gt;The basis for any search conducted as part of stop by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - contraband and/or evidence found</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-contraband-evid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-contraband-evid/</guid>
+      <description>&lt;p&gt;Type of contraband or evidence found during a stop by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - disability of persons stopped</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-disability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-disability/</guid>
+      <description>&lt;p&gt;Whether a person stopped by the San Diego Police Department displayed signs of deafness, speech impairment, blindness, a mental health condition, intellectual or developmental disability, or another disability categorized as &amp;ldquo;other.&amp;rdquo; This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - gender of persons stopped</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-gender/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-gender/</guid>
+      <description>&lt;p&gt;The gender of persons stopped by the San Diego Police Department, as perceived by the officer conducting the stop. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - property seized</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-prop-seize-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-prop-seize-type/</guid>
+      <description>&lt;p&gt;Type of property seized from persons stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - race of persons stopped</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-race/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-race/</guid>
+      <description>&lt;p&gt;The race of persons stopped by the San Diego Police Department, as perceived by the officer conducting the stop. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - reason for stop</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-stop-reason/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-stop-reason/</guid>
+      <description>&lt;p&gt;The primary reason a person was stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RIPA police stop data - result of stop</title>
+      <link>https://dataportal.netlify.app/datasets/police-ripa-stop-result/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-ripa-stop-result/</guid>
+      <description>&lt;p&gt;The outcome(s) of a stop for a person stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Roads Lines</title>
+      <link>https://dataportal.netlify.app/datasets/roads-lines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/roads-lines/</guid>
+      <description>This dataset comprises centerline segments for roads (both active and inactive, public and private, constructed or of record) in San Diego County based on data received from all official jurisdictions within the County (the County and 18 cities).</description>
+    </item>
+    
+    <item>
+      <title>San Diego city boundary</title>
+      <link>https://dataportal.netlify.app/datasets/san-diego-boundary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/san-diego-boundary/</guid>
+      <description>&lt;p&gt;Polygon representing the City of San Diego administrative boundary.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Special Events</title>
+      <link>https://dataportal.netlify.app/datasets/special-events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/special-events/</guid>
+      <description>Details on events from Special Event Permit Applications.</description>
+    </item>
+    
+    <item>
+      <title>Street Sweeping Schedule</title>
+      <link>https://dataportal.netlify.app/datasets/street-sweeping-schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/street-sweeping-schedule/</guid>
+      <description>&lt;p&gt;This schedule includes the time and date for street sweeping by block.
+The City&amp;rsquo;s goal is to sweep residential streets at least once per month
+and commercial streets at least once per week.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streetlight point locations</title>
+      <link>https://dataportal.netlify.app/datasets/streetlight_inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streetlight_inventory/</guid>
+      <description>&lt;p&gt;The City has more than 60,000 outdoor lights, which include streetlights, pedestrian lighting, sports lighting, parking lot lighting and specialty lighting, the majority of which are Induction lights that emit an energy efficient broad spectrum light source. This dataset includes coordinates for each light.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streets Overall Condition Index (OCI)</title>
+      <link>https://dataportal.netlify.app/datasets/streets-overall-condition-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-overall-condition-index/</guid>
+      <description>&lt;p&gt;The City performs street condition surveys and assigns an Overall Condition
+Index (OCI) number to each street. OCI is only one of many factors to determine
+the order of street repairs. OCI is not available for private or military streets
+or streets the City was unable to survey due to closures.
+This data is displayed on &lt;a href=&#34;http://www.streets.sandiego.gov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+streets.sandiego.gov&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streets Repair Line Segments</title>
+      <link>https://dataportal.netlify.app/datasets/streets-repair-segments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-repair-segments/</guid>
+      <description>Shapefile of the City&amp;rsquo;s street network. This shapefile contains the street segments identified in our streets repair projects and Overall Condition Index datasets. This data is displayed on streets.sandiego.gov{:target=&amp;rdquo;_blank&amp;rdquo; rel=&amp;quot;noopener&amp;rdquo;}.</description>
+    </item>
+    
+    <item>
+      <title>Streets Repair Projects</title>
+      <link>https://dataportal.netlify.app/datasets/streets-repair-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-repair-projects/</guid>
+      <description>&lt;p&gt;Repair projects include City streets that have been repaired since
+July 1, 2013 (first full fiscal year comprehensive street repair data
+is readily available) and those that are currently scheduled for repair.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traffic collisions - basic reports</title>
+      <link>https://dataportal.netlify.app/datasets/police-collisions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-collisions/</guid>
+      <description>&lt;p&gt;Traffic collision reports recorded by the San Diego Police Department.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traffic collisions - people and vehicles involved</title>
+      <link>https://dataportal.netlify.app/datasets/police-collisions-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-collisions-details/</guid>
+      <description>&lt;p&gt;Traffic collision reports recorded by the San Diego Police Department with additional details on people and vehicles involved.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traffic Volumes</title>
+      <link>https://dataportal.netlify.app/datasets/traffic-volumes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/traffic-volumes/</guid>
+      <description>&lt;p&gt;The census count of vehicles on city streets is normally reported in the form
+of Average Daily Traffic (ADT) counts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transit Routes Lines</title>
+      <link>https://dataportal.netlify.app/datasets/transit-routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-routes/</guid>
+      <description>&lt;p&gt;Public transit routes covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transit Stops Locations</title>
+      <link>https://dataportal.netlify.app/datasets/transit-stops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-stops/</guid>
+      <description>&lt;p&gt;Public transit stops and stations covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Water Quality - Ocean Monitoring Program</title>
+      <link>https://dataportal.netlify.app/datasets/monitoring-ocean-water-quality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/monitoring-ocean-water-quality/</guid>
+      <description>&lt;p&gt;Ocean water quality data, including bacteriological sampling for fecal indicator bacteria as well as physical, chemical, and biological parameters observed throughout the region.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zoning</title>
+      <link>https://dataportal.netlify.app/datasets/zoning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/zoning/</guid>
+      <description>This dataset is a collection of the current base zone designations applied to property in the City of San Diego, as per the Official Zoning Map adopted by the City Council on February 28, 2006, and all subsequent updates.</description>
+    </item>
+    
+  </channel>
+</rss>

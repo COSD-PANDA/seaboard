@@ -1,0 +1,15 @@
+{{ define "main" }}
+	{{ partial "header" . }}
+	<div class="container default-page-container">
+		<div class="row">{{ partial "breadcrumbs" . }}</div>
+		<div class="row">{{.Content}}</div>
+		<div class="row">
+			{{ range .Pages }}
+  				{{.Title}}<br>
+  			{{ end }}
+		</div>
+	</div>
+{{ end }}
+  
+  
+  

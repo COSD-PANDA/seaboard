@@ -1,0 +1,628 @@
+////
+/// PX-FORMS-DESIGN
+/// Defines base form styles
+/// @group px-forms-design
+////
+
+@import "px-defaults-design/_settings.defaults.scss";
+@import "px-colors-design/_settings.colors.scss";
+/// Sets a prepended namespace for all generated classes.
+///
+/// @group px-forms-design:variables:style
+/// @type String [default] - Prepend value for all generated classes
+$inuit-forms-namespace                      : $inuit-namespace !default;
+
+/// Sets the forms Font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-color                          : var(--px-input-text-color, $black) !default;
+
+/// Sets the forms Placeholder font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default] -
+$inuit-forms-color--placeholder             : var(--px-input-text-color--placeholder, $gray5) !default;
+
+/// Sets the forms Background color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default] - Background color
+$inuit-forms-background                     : var(--px-input-background-color, $gray2) !default;
+
+/// Sets the forms Inner border string
+///
+/// @group px-forms-design:variables:style
+/// @type Color | String [default]
+$inuit-forms-border--inner                  : inset 0 0 0 1px var(--px-input-border-color--inner, $gray3) !default;
+
+/// Sets the forms Outer border string
+///
+/// @group px-forms-design:variables:style
+/// @type Color | String [default]
+$inuit-forms-border--outer                  : 1px solid var(--px-input-border-color--outer, $gray5) !default;
+
+/// Sets the forms Focused inner border string
+///
+/// @group px-forms-design:variables:style
+/// @type Color | String [default] - Focused inner border string
+$inuit-forms-border--inner--focused         : inset 0 0 0 1px var(--px-input-border-color--inner--focused, $gray4) !default;
+
+/// Sets the forms Focused outer border color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-border--outer--focused         : var(--px-input-border-color--outer--focused, $select-blue-default) !default;
+
+/// Sets the forms Disable font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-color--disabled                : var(--px-input-text-color--disabled, $gray5) !default;
+
+/// Sets the forms Disabled backgroundn color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-background--disabled           : var(--px-input-background-color--disabled, $gray1) !default;
+
+/// Sets the forms Disabled border string
+///
+/// @group px-forms-design:variables:style
+/// @type Color | String [default]
+$inuit-forms-border--disabled               : 1px solid var(--px-input-border-color--disabled, $gray3) !default;
+
+/// Sets the forms Readonly font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-color--readonly                : var(--px-input-text-color--readonly, $gray5) !default;
+
+/// Sets the forms Readonnly background color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-background--readonly           : var(--px-input-background-color--readonly, $white) !default;
+
+/// Sets the forms Readonly border string
+///
+/// @group px-forms-design:variables:style
+/// @type Color | String [default]
+$inuit-forms-border--readonly               : 1px solid var(--px-input-border-color--readonly, $gray3) !default;
+
+/// Sets the forms Help font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-color--help                    : var(--px-input-text-color--help, $gray7) !default;
+
+/// Sets the forms Select dropdown background color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-background              : var(--px-select-background-color, $gray3) !default;
+
+/// Sets the forms Select dropdown font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-color                   : var(--px-select-text-color, $gray9) !default;
+
+/// Sets the forms Select dropdown chevron font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-color-svg                   : #{$gray9} !default;
+
+/// Sets the forms Select dropdown dark shadow
+///
+/// @group px-forms-design:variables:style
+/// @type Color | String [default]
+$inuit-forms-select-shadow--dark            : 0 1px 0 var(--px-select-shadow-color--dark, rgba($black, .1)) !default;
+
+/// Sets the forms Select dropdown light shadow
+///
+/// @group px-forms-design:variables:style
+/// @type Color | String [default]
+$inuit-forms-select-shadow--light           : 0 1px 0 var(--px-select-shadow-color--light, rgba($black, .1)) !default;
+
+/// Sets the forms Select dropdown disabled font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-color--disabled         : var(--px-select-text-color--disabled, $gray4) !default;
+
+/// Sets the forms Select dropdown disabled chevron font color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-color-svg--disabled         :  #{$gray4} !default;
+
+/// Sets the forms Select dropdown disabled background color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-background--disabled    : var(--px-select-background-color--disabled, $white) !default;
+
+/// Sets the forms Select dropdown hover background color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-background--hover       : var(--px-select-background-color--hover, $gray5) !default;
+
+/// Sets the forms Select dropdown hover border color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-border--hover           : var(--px-select-border-color--hover, $gray6) !default;
+
+/// Sets the forms Select dropdown pressed background color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-background--pressed     : var(--px-select-background-color--pressed, $gray6) !default;
+
+/// Sets the forms Select dropdown pressed border color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-border--pressed         : var(--px-select-border-color--pressed, $gray7) !default;
+
+/// Sets the forms Multiple select background color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-select-multiple-background     : var(--px-multiselect-background-color, $gray1) !default;
+
+/// Sets the forms Validation warning color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-validation-warning             : var(--px-validation-warning-text-color, $alert-orange) !default;
+
+/// Sets the forms Validation error color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-validation-error               : var(--px-validation-error-text-color, $alert-red) !default;
+
+/// Sets the forms Validation success color
+///
+/// @group px-forms-design:variables:style
+/// @type Color [default]
+$inuit-forms-validation-success             : var(--px-validation-success-text-color, $green) !default;
+
+/// Generates the CSS for one line form fields
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-inline-fields                 : false !default;
+
+/// Generates the CSS for bare text-inputs
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-text-input--bare              : false !default;
+
+/// Generates the CSS for field validation
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-validation-states             : false !default;
+
+/// Generates the CSS for tiny inputs
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-input--tiny                   : false !default;
+
+/// Generates the CSS for small inputs
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-input--small                  : false !default;
+
+/// Generates the CSS for regular inputs
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-input--regular                : false !default;
+
+/// Generates the CSS for large inputs
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-input--large                  : false !default;
+
+/// Generates the CSS for huge inputs
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-input--huge                   : false !default;
+
+/// Generates the CSS for input field with search icon
+///
+/// @group px-forms-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-input--search                 : false !default;
+
+
+fieldset {
+  margin: 0;
+  &, legend {
+    border: 0;
+    padding: 0;
+  }
+}
+
+legend {
+  margin-bottom: $inuit-base-spacing-unit--large;
+  font-weight: bold;
+}
+
+.#{$inuit-forms-namespace}form-field,
+%#{$inuit-forms-namespace}form-field {
+  margin-bottom: $inuit-base-spacing-unit--large;
+  &:last-child {
+    margin-bottom: $inuit-base-spacing-unit--large * 2;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: $inuit-base-spacing-unit--tiny;
+  cursor: pointer;
+}
+
+.#{$inuit-forms-namespace}label--inline,
+%#{$inuit-forms-namespace}label--inline {
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1;
+  + {
+    .#{$inuit-forms-namespace}text-input,
+    %#{$inuit-forms-namespace}text-input {
+      margin-left: $inuit-base-spacing-unit--small;
+    }
+  }
+}
+
+.#{$inuit-forms-namespace}text-input,
+%#{$inuit-forms-namespace}text-input,
+textarea, select {
+  margin: 0;
+  border: $inuit-forms-border--outer;
+  font: inherit;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.#{$inuit-forms-namespace}text-input,
+%#{$inuit-forms-namespace}text-input,
+textarea {
+  width: 100%;
+  padding: 0 $inuit-base-spacing-unit--small;
+  box-shadow: $inuit-forms-border--inner;
+  background-color: $inuit-forms-background;
+  color: $inuit-forms-color;
+  &[readonly], &[disabled] {
+    box-shadow: none;
+  }
+  &[readonly] {
+    border: $inuit-forms-border--readonly;
+    background-color: $inuit-forms-background--readonly;
+    color: $inuit-forms-color--readonly;
+  }
+  &:disabled {
+    border: $inuit-forms-border--disabled;
+    box-shadow: none;
+    background-color: $inuit-forms-background--disabled;
+    color: $inuit-forms-color--disabled;
+  }
+  &:focus {
+    border-color: $inuit-forms-border--outer--focused;
+    box-shadow: $inuit-forms-border--inner--focused;
+  }
+  &::-webkit-input-placeholder {
+    color: $inuit-forms-color--placeholder;
+  }
+  &:-moz-placeholder {
+    color: $inuit-forms-color--placeholder;
+  }
+  &:disabled::-webkit-input-placeholder {
+    color: $inuit-forms-color--disabled;
+  }
+  &:disabled:-moz-placeholder {
+    color: $inuit-forms-color--disabled;
+  }
+}
+
+select {
+  border-radius: 3px;
+  padding: 0 3em 0 1em;
+  box-shadow: $inuit-forms-select-shadow--light;
+  line-height: calc(2em - 2px);
+  height: calc(2em);
+  cursor: pointer;
+  background-color: $inuit-forms-select-background;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20viewBox%3D%220%200%20658%201024%22%3E%3Cpath%20fill%3D%22%23#{str-slice($inuit-forms-select-color-svg,2)}%22%20d%3D%22M614.286%20420.571q0%207.429-5.714%2013.143l-266.286%20266.286q-5.714%205.714-13.143%205.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l28.571-28.571q5.714-5.714%2013.143-5.714t13.143%205.714l224.571%20224.571%20224.571-224.571q5.714-5.714%2013.143-5.714t13.143%205.714l28.571%2028.571q5.714%205.714%205.714%2013.143z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: calc(100% - #{$inuit-base-spacing-unit--small}) 37.5%;
+  color: $inuit-forms-select-color;
+  &:hover, &:focus {
+    border: 1px solid $inuit-forms-select-border--hover;
+    box-shadow: $inuit-forms-select-shadow--dark;
+    background-color: $inuit-forms-select-background--hover;
+  }
+  &:active {
+    border: 1px solid $inuit-forms-select-border--pressed;
+    box-shadow: $inuit-forms-select-shadow--dark;
+    background-color: $inuit-forms-select-background--pressed;
+  }
+  &:disabled {
+    border: 1px solid $inuit-forms-select-color--disabled;
+    box-shadow: none;
+    background-color: $inuit-forms-select-background--disabled;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20viewBox%3D%220%200%20658%201024%22%3E%3Cpath%20fill%3D%22%23#{str-slice($inuit-forms-select-color-svg--disabled,2)}%22%20d%3D%22M614.286%20420.571q0%207.429-5.714%2013.143l-266.286%20266.286q-5.714%205.714-13.143%205.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l28.571-28.571q5.714-5.714%2013.143-5.714t13.143%205.714l224.571%20224.571%20224.571-224.571q5.714-5.714%2013.143-5.714t13.143%205.714l28.571%2028.571q5.714%205.714%205.714%2013.143z%22%2F%3E%3C%2Fsvg%3E');
+    color: $inuit-forms-select-color--disabled;
+  }
+  &[multiple] {
+    border: $inuit-forms-border--outer;
+    padding: $inuit-base-spacing-unit--tiny;
+    cursor: pointer;
+    background: $inuit-forms-select-multiple-background;
+  }
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+@-moz-document url-prefix() {
+    select {
+        padding-top: .4em;
+        padding-bottom: .4em;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  select {
+    padding-top: .4em;
+    padding-bottom: .4em;
+  }
+}
+
+.#{$inuit-forms-namespace}text-input,
+%#{$inuit-forms-namespace}text-input {
+  height: 2em;
+  line-height: 1;
+  + {
+    [type=checkbox], [type=radio] {
+      margin-left: $inuit-base-spacing-unit--large;
+    }
+    .label--inline {
+      margin-left: $inuit-base-spacing-unit--small;
+    }
+  }
+  &[type=search] {
+    -webkit-appearance: none;
+    padding: 0 $inuit-base-spacing-unit--huge 0 $inuit-base-spacing-unit--small;
+  }
+  &::-webkit-input-placeholder {
+    padding-top: 1px;
+  }
+  &:-moz-placeholder {
+    padding-top: 1px;
+  }
+}
+
+.#{$inuit-forms-namespace}text-input,
+%#{$inuit-forms-namespace}text-input,
+.#{$inuit-forms-namespace}label--inline,
+%#{$inuit-forms-namespace}label--inline {
+  + [type=submit], [type=cancel] {
+    margin-left: $inuit-base-spacing-unit--large;
+  }
+}
+
+textarea {
+  overflow: auto;
+  min-height: calc(#{$inuit-base-line-height * 6} + #{$inuit-base-spacing-unit--tiny * 2});
+  padding: $inuit-base-spacing-unit--tiny $inuit-base-spacing-unit--small;
+  resize: vertical;
+}
+
+[type=checkbox], [type=radio] {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05em;
+  cursor: pointer;
+  &[disabled] {
+    cursor: not-allowed;
+    + {
+      .#{$inuit-forms-namespace}label--inline,
+      %#{$inuit-forms-namespace}label--inline {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+[type=checkbox] + {
+  .#{$inuit-forms-namespace}label--inline,
+  %#{$inuit-forms-namespace}label--inline {
+    padding-left: 5px;
+  }
+}
+
+[type=radio] + {
+  .#{$inuit-forms-namespace}label--inline,
+  %#{$inuit-forms-namespace}label--inline {
+    padding-left: 3px;
+  }
+}
+
+.form-field__help {
+  display: inline-block;
+  margin-top: $inuit-base-spacing-unit--tiny;
+  font-size: 1rem;
+  line-height: inherit;
+  color: $inuit-forms-color--help;
+}
+
+@if ($inuit-enable-input--tiny == true) {
+
+  .#{$inuit-forms-namespace}input--tiny,
+  %#{$inuit-forms-namespace}input--tiny {
+    max-width: calculateRem(106px);
+  }
+
+}
+
+
+
+@if ($inuit-enable-input--small == true) {
+
+  .#{$inuit-forms-namespace}input--small,
+  %#{$inuit-forms-namespace}input--small {
+    max-width: calculateRem(212px);
+  }
+
+}
+
+
+
+@if ($inuit-enable-input--regular == true) {
+
+  .#{$inuit-forms-namespace}input--regular,
+  %#{$inuit-forms-namespace}input--regular {
+    max-width: calculateRem(318px);
+  }
+
+}
+
+
+
+@if ($inuit-enable-input--large == true) {
+
+  .#{$inuit-forms-namespace}input--large,
+  %#{$inuit-forms-namespace}input--large {
+    max-width: calculateRem(424px);
+  }
+
+}
+
+
+
+@if ($inuit-enable-input--huge == true) {
+
+  .#{$inuit-forms-namespace}input--huge,
+  %#{$inuit-forms-namespace}input--huge {
+    max-width: calculateRem(530px);
+  }
+
+}
+
+
+
+@if ($inuit-enable-inline-fields == true) {
+
+  /**
+   * Styles for one line forms.
+   */
+
+  .#{$inuit-forms-namespace}form-field--inline,
+  %#{$inuit-forms-namespace}form-field--inline {
+    .text-input {
+      margin-bottom: $inuit-base-spacing-unit--large;
+    }
+    &:last-child {
+      margin-bottom: $inuit-base-spacing-unit--large;
+    }
+  }
+
+}
+
+
+
+@if ($inuit-enable-text-input--bare == true) {
+
+  /**
+   * Text inputs with no styles.
+   */
+
+  .#{$inuit-forms-namespace}text-input--bare,
+  %#{$inuit-forms-namespace}text-input--bare {
+    border: 0!important;
+  }
+
+}
+
+
+
+@if ($inuit-enable-validation-states == true) {
+
+  /**
+   * Styles for validation states
+   */
+
+  .#{$inuit-forms-namespace}validation-warning,
+  %#{$inuit-forms-namespace}validation-warning {
+    color: $inuit-forms-validation-warning;
+  }
+
+  .#{$inuit-forms-namespace}validation-error,
+  %#{$inuit-forms-namespace}validation-error {
+    color: $inuit-forms-validation-error;
+  }
+
+  .#{$inuit-forms-namespace}validation-success,
+  %#{$inuit-forms-namespace}validation-success {
+    color: $inuit-forms-validation-success;
+  }
+
+  .#{$inuit-forms-namespace}text-input,
+  %#{$inuit-forms-namespace}text-input {
+    &.validation-warning {
+      border-color: $inuit-forms-validation-warning;
+      color: inherit;
+    }
+  }
+
+  .#{$inuit-forms-namespace}text-input,
+  %#{$inuit-forms-namespace}text-input {
+    &.validation-error {
+      border-color: $inuit-forms-validation-error;
+      color: inherit;
+    }
+  }
+
+  .#{$inuit-forms-namespace}text-input,
+  %#{$inuit-forms-namespace}text-input {
+    &.validation-success {
+      border-color: $inuit-forms-validation-success;
+      color: inherit;
+    }
+  }
+
+}
+
+@if ($inuit-enable-input--search == true) {
+    .#{$inuit-forms-namespace}input--search,
+    %#{$inuit-forms-namespace}input--search {
+      -webkit-appearance: none;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMnB4IiB2aWV3Qm94PSIwIDAgMTIgMTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0ic2VhcmNoaWNvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNOC4zMDc2OTIzMSw1LjA3NjkyMzA4IEM4LjMwNzY5MjMxLDQuMTg3NSA3Ljk5MTU4NjU0LDMuNDI2NjgyNjkgNy4zNTkzNzUsMi43OTQ0NzExNSBDNi43MjcxNjM0NiwyLjE2MjI1OTYyIDUuOTY2MzQ2MTUsMS44NDYxNTM4NSA1LjA3NjkyMzA4LDEuODQ2MTUzODUgQzQuMTg3NSwxLjg0NjE1Mzg1IDMuNDI2NjgyNjksMi4xNjIyNTk2MiAyLjc5NDQ3MTE1LDIuNzk0NDcxMTUgQzIuMTYyMjU5NjIsMy40MjY2ODI2OSAxLjg0NjE1Mzg1LDQuMTg3NSAxLjg0NjE1Mzg1LDUuMDc2OTIzMDggQzEuODQ2MTUzODUsNS45NjYzNDYxNSAyLjE2MjI1OTYyLDYuNzI3MTYzNDYgMi43OTQ0NzExNSw3LjM1OTM3NSBDMy40MjY2ODI2OSw3Ljk5MTU4NjU0IDQuMTg3NSw4LjMwNzY5MjMxIDUuMDc2OTIzMDgsOC4zMDc2OTIzMSBDNS45NjYzNDYxNSw4LjMwNzY5MjMxIDYuNzI3MTYzNDYsNy45OTE1ODY1NCA3LjM1OTM3NSw3LjM1OTM3NSBDNy45OTE1ODY1NCw2LjcyNzE2MzQ2IDguMzA3NjkyMzEsNS45NjYzNDYxNSA4LjMwNzY5MjMxLDUuMDc2OTIzMDggTDguMzA3NjkyMzEsNS4wNzY5MjMwOCBaIE0xMiwxMS4wNzY5MjMxIEMxMiwxMS4zMjY5MjMxIDExLjkwODY1MzgsMTEuNTQzMjY5MiAxMS43MjU5NjE1LDExLjcyNTk2MTUgQzExLjU0MzI2OTIsMTEuOTA4NjUzOCAxMS4zMjY5MjMxLDEyIDExLjA3NjkyMzEsMTIgQzEwLjgxNzMwNzcsMTIgMTAuNjAwOTYxNSwxMS45MDg2NTM4IDEwLjQyNzg4NDYsMTEuNzI1OTYxNSBMNy45NTQzMjY5Miw5LjI1OTYxNTM4IEM3LjA5Mzc1LDkuODU1NzY5MjMgNi4xMzQ2MTUzOCwxMC4xNTM4NDYyIDUuMDc2OTIzMDgsMTAuMTUzODQ2MiBDNC4zODk0MjMwOCwxMC4xNTM4NDYyIDMuNzMxOTcxMTUsMTAuMDIwNDMyNyAzLjEwNDU2NzMxLDkuNzUzNjA1NzcgQzIuNDc3MTYzNDYsOS40ODY3Nzg4NSAxLjkzNjI5ODA4LDkuMTI2MjAxOTIgMS40ODE5NzExNSw4LjY3MTg3NSBDMS4wMjc2NDQyMyw4LjIxNzU0ODA4IDAuNjY3MDY3MzA4LDcuNjc2NjgyNjkgMC40MDAyNDAzODUsNy4wNDkyNzg4NSBDMC4xMzM0MTM0NjIsNi40MjE4NzUgMCw1Ljc2NDQyMzA4IDAsNS4wNzY5MjMwOCBDMCw0LjM4OTQyMzA4IDAuMTMzNDEzNDYyLDMuNzMxOTcxMTUgMC40MDAyNDAzODUsMy4xMDQ1NjczMSBDMC42NjcwNjczMDgsMi40NzcxNjM0NiAxLjAyNzY0NDIzLDEuOTM2Mjk4MDggMS40ODE5NzExNSwxLjQ4MTk3MTE1IEMxLjkzNjI5ODA4LDEuMDI3NjQ0MjMgMi40NzcxNjM0NiwwLjY2NzA2NzMwOCAzLjEwNDU2NzMxLDAuNDAwMjQwMzg1IEMzLjczMTk3MTE1LDAuMTMzNDEzNDYyIDQuMzg5NDIzMDgsMCA1LjA3NjkyMzA4LDAgQzUuNzY0NDIzMDgsMCA2LjQyMTg3NSwwLjEzMzQxMzQ2MiA3LjA0OTI3ODg1LDAuNDAwMjQwMzg1IEM3LjY3NjY4MjY5LDAuNjY3MDY3MzA4IDguMjE3NTQ4MDgsMS4wMjc2NDQyMyA4LjY3MTg3NSwxLjQ4MTk3MTE1IEM5LjEyNjIwMTkyLDEuOTM2Mjk4MDggOS40ODY3Nzg4NSwyLjQ3NzE2MzQ2IDkuNzUzNjA1NzcsMy4xMDQ1NjczMSBDMTAuMDIwNDMyNywzLjczMTk3MTE1IDEwLjE1Mzg0NjIsNC4zODk0MjMwOCAxMC4xNTM4NDYyLDUuMDc2OTIzMDggQzEwLjE1Mzg0NjIsNi4xMzQ2MTUzOCA5Ljg1NTc2OTIzLDcuMDkzNzUgOS4yNTk2MTUzOCw3Ljk1NDMyNjkyIEwxMS43MzMxNzMxLDEwLjQyNzg4NDYgQzExLjkxMTA1NzcsMTAuNjA1NzY5MiAxMiwxMC44MjIxMTU0IDEyLDExLjA3NjkyMzEgTDEyLDExLjA3NjkyMzEgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjNTk3MTdmIi8+CiAgICA8L2c+Cjwvc3ZnPg==');
+      background-repeat: no-repeat;
+      background-position: calc(100% - #{$inuit-base-spacing-unit--small}) 42%;
+      padding: 0 $inuit-base-spacing-unit--huge 0 $inuit-base-spacing-unit--small;
+      &:disabled {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMnB4IiB2aWV3Qm94PSIwIDAgMTIgMTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0ic2VhcmNoaWNvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNOC4zMDc2OTIzMSw1LjA3NjkyMzA4IEM4LjMwNzY5MjMxLDQuMTg3NSA3Ljk5MTU4NjU0LDMuNDI2NjgyNjkgNy4zNTkzNzUsMi43OTQ0NzExNSBDNi43MjcxNjM0NiwyLjE2MjI1OTYyIDUuOTY2MzQ2MTUsMS44NDYxNTM4NSA1LjA3NjkyMzA4LDEuODQ2MTUzODUgQzQuMTg3NSwxLjg0NjE1Mzg1IDMuNDI2NjgyNjksMi4xNjIyNTk2MiAyLjc5NDQ3MTE1LDIuNzk0NDcxMTUgQzIuMTYyMjU5NjIsMy40MjY2ODI2OSAxLjg0NjE1Mzg1LDQuMTg3NSAxLjg0NjE1Mzg1LDUuMDc2OTIzMDggQzEuODQ2MTUzODUsNS45NjYzNDYxNSAyLjE2MjI1OTYyLDYuNzI3MTYzNDYgMi43OTQ0NzExNSw3LjM1OTM3NSBDMy40MjY2ODI2OSw3Ljk5MTU4NjU0IDQuMTg3NSw4LjMwNzY5MjMxIDUuMDc2OTIzMDgsOC4zMDc2OTIzMSBDNS45NjYzNDYxNSw4LjMwNzY5MjMxIDYuNzI3MTYzNDYsNy45OTE1ODY1NCA3LjM1OTM3NSw3LjM1OTM3NSBDNy45OTE1ODY1NCw2LjcyNzE2MzQ2IDguMzA3NjkyMzEsNS45NjYzNDYxNSA4LjMwNzY5MjMxLDUuMDc2OTIzMDggTDguMzA3NjkyMzEsNS4wNzY5MjMwOCBaIE0xMiwxMS4wNzY5MjMxIEMxMiwxMS4zMjY5MjMxIDExLjkwODY1MzgsMTEuNTQzMjY5MiAxMS43MjU5NjE1LDExLjcyNTk2MTUgQzExLjU0MzI2OTIsMTEuOTA4NjUzOCAxMS4zMjY5MjMxLDEyIDExLjA3NjkyMzEsMTIgQzEwLjgxNzMwNzcsMTIgMTAuNjAwOTYxNSwxMS45MDg2NTM4IDEwLjQyNzg4NDYsMTEuNzI1OTYxNSBMNy45NTQzMjY5Miw5LjI1OTYxNTM4IEM3LjA5Mzc1LDkuODU1NzY5MjMgNi4xMzQ2MTUzOCwxMC4xNTM4NDYyIDUuMDc2OTIzMDgsMTAuMTUzODQ2MiBDNC4zODk0MjMwOCwxMC4xNTM4NDYyIDMuNzMxOTcxMTUsMTAuMDIwNDMyNyAzLjEwNDU2NzMxLDkuNzUzNjA1NzcgQzIuNDc3MTYzNDYsOS40ODY3Nzg4NSAxLjkzNjI5ODA4LDkuMTI2MjAxOTIgMS40ODE5NzExNSw4LjY3MTg3NSBDMS4wMjc2NDQyMyw4LjIxNzU0ODA4IDAuNjY3MDY3MzA4LDcuNjc2NjgyNjkgMC40MDAyNDAzODUsNy4wNDkyNzg4NSBDMC4xMzM0MTM0NjIsNi40MjE4NzUgMCw1Ljc2NDQyMzA4IDAsNS4wNzY5MjMwOCBDMCw0LjM4OTQyMzA4IDAuMTMzNDEzNDYyLDMuNzMxOTcxMTUgMC40MDAyNDAzODUsMy4xMDQ1NjczMSBDMC42NjcwNjczMDgsMi40NzcxNjM0NiAxLjAyNzY0NDIzLDEuOTM2Mjk4MDggMS40ODE5NzExNSwxLjQ4MTk3MTE1IEMxLjkzNjI5ODA4LDEuMDI3NjQ0MjMgMi40NzcxNjM0NiwwLjY2NzA2NzMwOCAzLjEwNDU2NzMxLDAuNDAwMjQwMzg1IEMzLjczMTk3MTE1LDAuMTMzNDEzNDYyIDQuMzg5NDIzMDgsMCA1LjA3NjkyMzA4LDAgQzUuNzY0NDIzMDgsMCA2LjQyMTg3NSwwLjEzMzQxMzQ2MiA3LjA0OTI3ODg1LDAuNDAwMjQwMzg1IEM3LjY3NjY4MjY5LDAuNjY3MDY3MzA4IDguMjE3NTQ4MDgsMS4wMjc2NDQyMyA4LjY3MTg3NSwxLjQ4MTk3MTE1IEM5LjEyNjIwMTkyLDEuOTM2Mjk4MDggOS40ODY3Nzg4NSwyLjQ3NzE2MzQ2IDkuNzUzNjA1NzcsMy4xMDQ1NjczMSBDMTAuMDIwNDMyNywzLjczMTk3MTE1IDEwLjE1Mzg0NjIsNC4zODk0MjMwOCAxMC4xNTM4NDYyLDUuMDc2OTIzMDggQzEwLjE1Mzg0NjIsNi4xMzQ2MTUzOCA5Ljg1NTc2OTIzLDcuMDkzNzUgOS4yNTk2MTUzOCw3Ljk1NDMyNjkyIEwxMS43MzMxNzMxLDEwLjQyNzg4NDYgQzExLjkxMTA1NzcsMTAuNjA1NzY5MiAxMiwxMC44MjIxMTU0IDEyLDExLjA3NjkyMzEgTDEyLDExLjA3NjkyMzEgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjYjZjM2NjIi8+CiAgICA8L2c+Cjwvc3ZnPg==');
+      }
+    }
+    /* remove IE's clear text button */
+    input::-ms-clear { display: none; }
+  }

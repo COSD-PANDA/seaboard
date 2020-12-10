@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fire-Rescue on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/fire-rescue/</link>
+    <description>Recent content in Fire-Rescue on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/fire-rescue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fire battalion districts</title>
+      <link>https://dataportal.netlify.app/datasets/fire-battalion-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-battalion-districts/</guid>
+      <description>&lt;p&gt;Fire Battalion districts have a chief that oversees 6 to 7 fire stations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fire Incident Problem Counts</title>
+      <link>https://dataportal.netlify.app/datasets/fire-incident-problem-agg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-incident-problem-agg/</guid>
+      <description>Monthly totals of problem types for Fire and EMS calls dispatched by the San Diego Fire Communications Center. The problem description is not available per incident in the Fire Incidents dataset to protect patient information.</description>
+    </item>
+    
+    <item>
+      <title>Fire Incidents</title>
+      <link>https://dataportal.netlify.app/datasets/fire-incidents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-incidents/</guid>
+      <description>Fire and EMS calls dispatched by the San Diego Fire Communications Center. This list includes a generalized problem description to protect patient information. Monthly totals for more detailed problem descriptions can be found in the Fire Incident Problem Counts dataset.</description>
+    </item>
+    
+    <item>
+      <title>Fire Stations</title>
+      <link>https://dataportal.netlify.app/datasets/fire-stations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-stations/</guid>
+      <description>Data covering the location and status of incorporated and unincorporated Fire stations.</description>
+    </item>
+    
+    <item>
+      <title>Lifeguard station point locations</title>
+      <link>https://dataportal.netlify.app/datasets/lifeguard-stations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/lifeguard-stations/</guid>
+      <description>&lt;p&gt;Point locations for lifeguard stations on San Diego beaches. The City has nine permanent stations in Ocean Beach, Mission Beach, Pacific Beach, La Jolla, and Black&amp;rsquo;s Beach as well as stations operated seasonally.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

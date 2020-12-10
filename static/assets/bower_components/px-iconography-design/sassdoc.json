@@ -1,0 +1,28 @@
+[
+    {
+        "description": "Path to FontAwesome fonts\n",
+        "commentRange": {
+            "start": 7,
+            "end": 9
+        },
+        "context": {
+            "type": "variable",
+            "name": "fa-font-path",
+            "value": "\"../font-awesome/fonts\"",
+            "scope": "default",
+            "line": {
+                "start": 10,
+                "end": 10
+            }
+        },
+        "group": [
+            "px-iconography-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.iconography.scss",
+            "name": "_base.iconography.scss"
+        }
+    }
+]

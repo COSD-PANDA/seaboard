@@ -1,0 +1,168 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+<link rel="import" href="../../px-polymer-font-awesome/polymer-font-awesome.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-demo/px-demo-header.html" />
+<link rel="import" href="../../px-demo/px-demo-api-viewer.html" />
+<link rel="import" href="../../px-demo/px-demo-footer.html" />
+<link rel="import" href="../../px-demo/px-demo-configs.html" />
+<link rel="import" href="../../px-demo/px-demo-props.html" />
+<link rel="import" href="../../px-demo/px-demo-interactive.html" />
+<link rel="import" href="../../px-demo/px-demo-component-snippet.html" />
+
+<!-- Imports for this componnent -->
+<link rel="import" href="../../px-demo/css/px-demo-styles.html" />
+<link rel="import" href="../px-validation.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <style include="px-demo-styles" is="custom-style"></style>
+
+    <!-- Header -->
+    <px-demo-header
+        module-name="px-validation"
+        description="Px-validation is a component that provides one or more built-in or developer-supplied validation methods for form elements, data table entries, etc. This component only handles the validation logic and return success/error object - see px-forms-design or px-data-table to see how this logic is then handled by the UI of the individual components.
+        Be sure to click the link below to view the API documentation for the child component, px-validator.">
+    </px-demo-header>
+
+    <!-- Interactive -->
+    <px-demo-interactive>
+      <!-- Configs -->
+      <px-demo-configs configs="[[configs]]" props="{{props}}" chosen-config="{{chosenConfig}}"></px-demo-configs>
+
+      <!-- Props -->
+      <px-demo-props props="{{props}}" config="[[chosenConfig]]"></px-demo-props>
+
+      <!-- Component ---------------------------------------------------------->
+      <px-demo-component>
+
+        <px-validation id="validationEl">
+          <px-validator 
+            validation-method="{{props.validationMethod.value}}"
+            import="{{props.import.value}}">
+          </px-validator>
+        </px-validation>
+
+        <label id="label" for="example">Validation Method: <strong>{{props.validationMethod.value}}</strong></label>
+        <input id="example" class="text-input input--regular" type="text" placeholder="" on-keyup="isValid"/>
+        <br/>
+        <small id="validationWarning" class="form-field__help validation-error">{{errorMessage}}</small>
+
+      </px-demo-component>
+      <!-- END Component ------------------------------------------------------>
+
+      <px-demo-component-snippet
+        element-properties="{{props}}"
+        element-name="px-validator"
+        codepen-link="http://codepen.io/randyaskin/pen/dNyzzg/?editors=1001">
+      </px-demo-component-snippet>
+    </px-demo-interactive>
+
+
+    <!-- API Viewer -->
+    <px-demo-api-viewer source="px-validation"></px-demo-api-viewer>
+
+    <!-- Footer -->
+    <px-demo-footer></px-demo-footer>
+
+  </template>
+
+</dom-module>
+<script>
+  Polymer({
+    is: 'local-element-demo',
+
+    properties: {
+
+      /**
+       * Note: The actual data/values for `props` are placed in `this.demoProps`
+       * to create a static reference that Polymer shouldn't overwrite.
+       *
+       * On object containing all the properties the user can configure for this
+       * demo. Usually a pretty similar copy of the component's `properties` block
+       * with some additional sugar added to describe what kind of input the
+       * user will be shown and how that input should be configured.
+       *
+       * Note that `value` for each property is the default that will be set
+       * unless a config from `configs` is applied by default.
+       *
+       *
+       * @property props
+       * @type {Object}
+       */
+      props: {
+        type: Object,
+        value: function(){ return this.demoProps; }
+      },
+
+      /**
+       * An array of pre-configured `props` that can be used to provide the user
+       * with a set of common examples. These configs will be made available
+       * as a set of tabs the user can click that will automatically change
+       * the `props` to specific values.
+       *
+       * @property configs
+       * @type {Array}
+       */
+      configs: {
+        type: Array,
+        value: function(){
+          return [
+            { 
+              configName: "Default",
+              configReset: true 
+            }
+          ]
+        }
+      },
+      /**
+       * String that displays the failedValidationErrorMessage
+       *
+       * @property errorMessage
+       * @type Sring
+       */
+      errorMessage:{
+        type: String, 
+        value: ""
+      }
+    },
+
+    /**
+     * A reference for `this.props`. Read the documentation there.
+     */
+    demoProps: {
+      import: {
+        type: String,
+        defaultValue: 'px-example-validator.html',
+      },
+
+      validationMethod: {
+        type: String,
+        defaultValue: 'isNumber',
+        inputType: 'dropdown',
+        inputChoices: ['isNumber', 'alwaysFails']
+      }
+    },
+
+    isValid : function() {
+      var validator = Polymer.dom(this.root).querySelector("#validationEl"),
+          inputValue = Polymer.dom(this.root).querySelector('#example').value,
+          error = validator.validate(inputValue);
+      if(inputValue && !error.passedValidation) {
+        Polymer.dom(this.root).querySelector("#validationWarning").classList.remove("hidden");
+        Polymer.dom(this.root).querySelector("#example").classList.add("validation-error");
+        Polymer.dom(this.root).querySelector("#label").classList.add("validation-error");
+        this.set('errorMessage', error.failedValidationErrorMessage);
+      }
+      else {
+        Polymer.dom(this.root).querySelector("#validationWarning").classList.add("hidden");
+        Polymer.dom(this.root).querySelector("#example").classList.remove("validation-error");
+        Polymer.dom(this.root).querySelector("#label").classList.remove("validation-error");
+      }
+    }
+
+
+  });
+</script>

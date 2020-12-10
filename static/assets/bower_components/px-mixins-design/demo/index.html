@@ -1,0 +1,89 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+  <!-- Common demo imports -->
+  <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+  <link rel="import" href="../css/px-mixins-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+  <!-- 0: Import the styles-->
+  <style include="px-mixins-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-mixins-design"
+  description="The Predix UI Mixins module is a fork of the inuitcss Mixins Module and contains mixins for use across other Predix UI modules."
+  layer="tools"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "http://github.com/PredixDev/px-defaults-design"
+  ]'
+  selected-options="{{selectedOptions}}"
+  hide-demo-container="true">
+
+<!-- 2: Set Options -->
+<!-- N/A -->
+
+<!-- 3: Make HTML Demo -->
+<!-- N/A -->
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+@import "px-mixins-design/_tools.mixins.scss";
+</section>
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="usage">
+The following Sass mixins are provided:
+
+### inuit-font-size
+Generates rem sized fonts with line height from pixel sizes.<br/>
+Can take the following parameters:
+```
+<!-- @param {Number}  $inuit-font-size           - Font size in pixels -->
+<!-- @param {Number}  $inuit-line-height [auto]  - Line height in pixels -->
+
+@include inuit-font-size($inuit-font-size, $inuit-line-height: auto);
+```
+
+### border-right-left
+Swaps horizontal border placement if HTML direction switched to `dir=rtl`. <br/>
+Can take the following parameters:
+```
+<!-- @param {String}  $inuit-border-position         - Left or right border -->
+<!-- @param {Color}   $inuit-border-color [inherit]  - Border color -->
+<!-- @param {Number}  $inuit-border-width [1px]      - Border width -->
+<!-- @param {String}  $inuit-border-style            - CSS border style value -->
+
+@include border-right-left($inuit-border-position, $inuit-border-color: inherit, $inuit-border-width: 1px, $inuit-border-style: solid);
+```
+
+### font-face
+Generates webfont-friendly font families.<br/>
+Can take the following parameters:
+
+```
+<!-- @param {String}  $font-family      - Name of font family @font-face will use -->
+<!-- @param {String}  $file-path        - Path to webfont file -->
+<!-- @param {String}  $weight [normal]  - CSS Font weight value -->
+<!-- @param {String}  $style [normal]   - CSS Font style value -->
+
+@include font-face($font-family, $file-path, $weight: normal, $style: normal);
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<!-- N/A -->
+
+<script>
+  Polymer({
+    is: 'local-element-demo'
+  });
+</script>

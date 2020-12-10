@@ -1,0 +1,41 @@
+{
+  "name": "px-data-table",
+  "version": "1.15.21",
+  "main": [
+    "px-data-table.html"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "gulpfile.js",
+    "scripts",
+    ".github",
+    "sass",
+    "*.md",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf",
+    "*.png",
+    "npm-debug.log"
+  ],
+  "dependencies": {
+    "polymer": "^1.7.0",
+    "px-tooltip": "^0.10.0",
+    "px-theme": "^2.0.1",
+    "iron-a11y-keys-behavior": "~1.1.9",
+    "px-polymer-font-awesome": "^1.1.0",
+    "px-validation": "^0.4.0",
+    "px-dropdown": "^2.1.0"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "iron-ajax": "^1.4.3",
+    "px-toggle-design": "^1.1.0",
+    "px-code-design": "^1.1.0",
+    "px-demo": "^1.4.8",
+    "px-layout-design": "^0.4.5",
+    "px-tables-design": "^1.1.9",
+    "px-button-group-design": "^1.0.6"
+  }
+}

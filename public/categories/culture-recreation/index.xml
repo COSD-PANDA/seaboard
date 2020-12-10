@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Culture &amp; Recreation on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/categories/culture-recreation/</link>
+    <description>Recent content in Culture &amp; Recreation on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/categories/culture-recreation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Joint use parks</title>
+      <link>https://dataportal.netlify.app/datasets/joint-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/joint-use/</guid>
+      <description>&lt;p&gt;Joint use facilities are intended to provide active and passive recreational opportunities for school children when school is in session and the general public when school is not in session.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Library Locations</title>
+      <link>https://dataportal.netlify.app/datasets/library-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/library-locations/</guid>
+      <description>Point feature layer of City of San Diego library locations with associated website and contact information, created by the County of San Diego Department of Public Works GIS, in conjunction with San Diego County Library (SDCL).</description>
+    </item>
+    
+    <item>
+      <title>Locations of artwork in the Civic Art Collection</title>
+      <link>https://dataportal.netlify.app/datasets/public-art/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/public-art/</guid>
+      <description>&lt;p&gt;Point locations of artwork in the collection.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Park Locations</title>
+      <link>https://dataportal.netlify.app/datasets/park-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/park-locations/</guid>
+      <description>Properties managed by the City of San Diego Parks &amp;amp; Recreation Department.</description>
+    </item>
+    
+    <item>
+      <title>Recreation Center Locations</title>
+      <link>https://dataportal.netlify.app/datasets/recreation-center-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/recreation-center-locations/</guid>
+      <description>&lt;p&gt;Recreation centers operated by the City of San Diego Park and Recreation Department for active and passive recreational opportunities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Special Events</title>
+      <link>https://dataportal.netlify.app/datasets/special-events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/special-events/</guid>
+      <description>Details on events from Special Event Permit Applications.</description>
+    </item>
+    
+  </channel>
+</rss>

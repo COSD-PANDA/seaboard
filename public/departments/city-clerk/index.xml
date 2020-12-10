@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>City Clerk on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/departments/city-clerk/</link>
+    <description>Recent content in City Clerk on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/departments/city-clerk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Candidates and Ballot Measures Receiving Financial Support</title>
+      <link>https://dataportal.netlify.app/datasets/candidates-and-ballot-measures-election/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/candidates-and-ballot-measures-election/</guid>
+      <description>&lt;p&gt;Included here are election committees and candidates for office who received donations, goods and services, or loans, or had money spent independently in support, according to campaign finance data reported to the City Clerk. This is a companion dataset to the &lt;a href=&#34;https://data.sandiego.gov/datasets/financial-support-candidates-and-ballot-measures-election/&#34;&gt;campaign finance transactions dataset&lt;/a&gt; and was created by compiling the unique recipients from all years of financial transactions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Financial Support for Candidates and Ballot Measures up for Election</title>
+      <link>https://dataportal.netlify.app/datasets/financial-support-candidates-and-ballot-measures-election/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/financial-support-candidates-and-ballot-measures-election/</guid>
+      <description>&lt;p&gt;This dataset contains transactions between election committees and financial
+supporters, including loans, contributions of money, contributions of goods
+and services, and money spent independently to support a candidate or ballot measure.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

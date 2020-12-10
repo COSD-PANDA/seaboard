@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GIS on City of San Diego Open Data Portal</title>
+    <link>https://dataportal.netlify.app/categories/gis/</link>
+    <description>Recent content in GIS on City of San Diego Open Data Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dataportal.netlify.app/categories/gis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Address Points to APN</title>
+      <link>https://dataportal.netlify.app/datasets/address-points-apn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/address-points-apn/</guid>
+      <description>&lt;p&gt;This dataset comprises SITUS address points (as opposed to owner or mailing addresses) for jurisdictions within the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bike Master Plan</title>
+      <link>https://dataportal.netlify.app/datasets/bike-master-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/bike-master-plan/</guid>
+      <description>&lt;p&gt;Major infrastructure in the Bike Master Plan adopted in January 2014.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bike route lines</title>
+      <link>https://dataportal.netlify.app/datasets/bike-route-lines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/bike-route-lines/</guid>
+      <description>Existing (2015) Bike facilities in the San Diego Region. This dataset was developed for the primary purpose of updating the SANDAG San Diego Regional Bike Map and the interactive bike map on the iCommute website.</description>
+    </item>
+    
+    <item>
+      <title>Business improvement districts</title>
+      <link>https://dataportal.netlify.app/datasets/business-improvement-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/business-improvement-districts/</guid>
+      <description>A BID provides a business area with the resources to develop marketing campaigns, increase awareness and lobbying efforts, secure additional funding and enhance public improvement and beautification projects in partnership with the City.</description>
+    </item>
+    
+    <item>
+      <title>City Council districts</title>
+      <link>https://dataportal.netlify.app/datasets/city-council-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/city-council-districts/</guid>
+      <description>City of San Diego Council Districts Boundaries (adopted August 25, 2011).</description>
+    </item>
+    
+    <item>
+      <title>Community Development Block Grant (CDBG) areas</title>
+      <link>https://dataportal.netlify.app/datasets/community-block-grants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-block-grants/</guid>
+      <description>&lt;p&gt;Census Tract Block Groups where at least 51 percent of residents are considered low and moderate income, according to the U.S. Housing and Urban Development&amp;rsquo;s Office of Community Planning and Development. CDBG funds are awarded for activities that benefit low- and moderate-income people.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Community planning districts</title>
+      <link>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/community-planning-district-boundaries/</guid>
+      <description>Represents the geographic boundaries for the City of San Diego community land use policy plans specific to these geographic areas.</description>
+    </item>
+    
+    <item>
+      <title>Fire battalion districts</title>
+      <link>https://dataportal.netlify.app/datasets/fire-battalion-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-battalion-districts/</guid>
+      <description>&lt;p&gt;Fire Battalion districts have a chief that oversees 6 to 7 fire stations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fire Stations</title>
+      <link>https://dataportal.netlify.app/datasets/fire-stations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/fire-stations/</guid>
+      <description>Data covering the location and status of incorporated and unincorporated Fire stations.</description>
+    </item>
+    
+    <item>
+      <title>General Plan Land Use</title>
+      <link>https://dataportal.netlify.app/datasets/general-plan-land-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/general-plan-land-use/</guid>
+      <description>This dataset represents adopted planned land use polygons for City community planning areas.</description>
+    </item>
+    
+    <item>
+      <title>Historical districts</title>
+      <link>https://dataportal.netlify.app/datasets/historic-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/historic-districts/</guid>
+      <description>&lt;p&gt;Historical districts contain multiple properties and/or objects that share historical significance. The City&amp;rsquo;s Historical Resources Board can establish a district if the contributing resources meet one of six criteria.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Joint use parks</title>
+      <link>https://dataportal.netlify.app/datasets/joint-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/joint-use/</guid>
+      <description>&lt;p&gt;Joint use facilities are intended to provide active and passive recreational opportunities for school children when school is in session and the general public when school is not in session.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Library Locations</title>
+      <link>https://dataportal.netlify.app/datasets/library-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/library-locations/</guid>
+      <description>Point feature layer of City of San Diego library locations with associated website and contact information, created by the County of San Diego Department of Public Works GIS, in conjunction with San Diego County Library (SDCL).</description>
+    </item>
+    
+    <item>
+      <title>Lifeguard station point locations</title>
+      <link>https://dataportal.netlify.app/datasets/lifeguard-stations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/lifeguard-stations/</guid>
+      <description>&lt;p&gt;Point locations for lifeguard stations on San Diego beaches. The City has nine permanent stations in Ocean Beach, Mission Beach, Pacific Beach, La Jolla, and Black&amp;rsquo;s Beach as well as stations operated seasonally.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maintenance assessment districts</title>
+      <link>https://dataportal.netlify.app/datasets/maintenance-assessment-districts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/maintenance-assessment-districts/</guid>
+      <description>&lt;p&gt;A Maintenance Assessment District pays additional taxes to receive services beyond the general services the City provides to other areas. These services include landscape, lighting, and hardscape maintenance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multi-Habitat Planning Areas</title>
+      <link>https://dataportal.netlify.app/datasets/mhpa-areas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/mhpa-areas/</guid>
+      <description>&lt;p&gt;The Multi-Habitat Planning Area is planned habitat preserve. Of the 56,831 acres, 90 percent is targeted for preservation. Within this area, development is limited, but the public is allowed access in many areas for recreational activities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Park Locations</title>
+      <link>https://dataportal.netlify.app/datasets/park-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/park-locations/</guid>
+      <description>Properties managed by the City of San Diego Parks &amp;amp; Recreation Department.</description>
+    </item>
+    
+    <item>
+      <title>Police Beats</title>
+      <link>https://dataportal.netlify.app/datasets/police-beats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/police-beats/</guid>
+      <description>San Diego Police Department beats.</description>
+    </item>
+    
+    <item>
+      <title>Police divisions</title>
+      <link>https://dataportal.netlify.app/datasets/pd-divisions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/pd-divisions/</guid>
+      <description>&lt;p&gt;The City has 9 divisions for the purpose of law enforcement: Central, Northern, Northeastern, Northwestern, Southern, Southeastern, Easter, Western, and Mid-City. Each division is a combination of law beat areas within the division boundary. These are police divisions only and do not represent legal neighborhood or community boundaries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Police neighborhoods</title>
+      <link>https://dataportal.netlify.app/datasets/pd-neighborhoods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/pd-neighborhoods/</guid>
+      <description>&lt;p&gt;Law beat areas for the purpose of law enforcement within the City. These combine into larger police divisions. These boundaries are for law enforcement only and do not represent legal neighborhood or community boundaries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Promise Zone boundary</title>
+      <link>https://dataportal.netlify.app/datasets/promise-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/promise-zone/</guid>
+      <description>&lt;p&gt;Promise Zone is a federal designation for an area of San Diego that has high unemployment, poverty, low educational attainment, insufficient access to healthcare and healthy foods, rising crime rates, and the least affordable housing in the country.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Recreation Center Locations</title>
+      <link>https://dataportal.netlify.app/datasets/recreation-center-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/recreation-center-locations/</guid>
+      <description>&lt;p&gt;Recreation centers operated by the City of San Diego Park and Recreation Department for active and passive recreational opportunities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Revolving Loan Fund Coverage</title>
+      <link>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/revolving-loan-fund-coverage/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.sandiego.gov/economic-development/business/financing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;San Diego Regional Revolving Loan Fund&lt;/a&gt; operates in San Diego and Chula Vista to provide small business assistance and generate neighborhood commercial district revitalization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Right-of-way parcels</title>
+      <link>https://dataportal.netlify.app/datasets/right-of-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/right-of-way/</guid>
+      <description>This is a subset of a countywide parcels dataset maintained by SanGIS. Right-of-way parcels are those that are legally dedicated to unhindered public travel. SanGIS uses county, state and federal sources to update this data.</description>
+    </item>
+    
+    <item>
+      <title>Roads Lines</title>
+      <link>https://dataportal.netlify.app/datasets/roads-lines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/roads-lines/</guid>
+      <description>This dataset comprises centerline segments for roads (both active and inactive, public and private, constructed or of record) in San Diego County based on data received from all official jurisdictions within the County (the County and 18 cities).</description>
+    </item>
+    
+    <item>
+      <title>San Diego city boundary</title>
+      <link>https://dataportal.netlify.app/datasets/san-diego-boundary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/san-diego-boundary/</guid>
+      <description>&lt;p&gt;Polygon representing the City of San Diego administrative boundary.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streets Repair Line Segments</title>
+      <link>https://dataportal.netlify.app/datasets/streets-repair-segments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/streets-repair-segments/</guid>
+      <description>Shapefile of the City&amp;rsquo;s street network. This shapefile contains the street segments identified in our streets repair projects and Overall Condition Index datasets. This data is displayed on streets.sandiego.gov{:target=&amp;rdquo;_blank&amp;rdquo; rel=&amp;quot;noopener&amp;rdquo;}.</description>
+    </item>
+    
+    <item>
+      <title>Transit Routes Lines</title>
+      <link>https://dataportal.netlify.app/datasets/transit-routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-routes/</guid>
+      <description>&lt;p&gt;Public transit routes covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transit Stops Locations</title>
+      <link>https://dataportal.netlify.app/datasets/transit-stops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/transit-stops/</guid>
+      <description>&lt;p&gt;Public transit stops and stations covering the County of San Diego.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zoning</title>
+      <link>https://dataportal.netlify.app/datasets/zoning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataportal.netlify.app/datasets/zoning/</guid>
+      <description>This dataset is a collection of the current base zone designations applied to property in the City of San Diego, as per the Official Zoning Map adopted by the City Council on February 28, 2006, and all subsequent updates.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script type="text/javascript">
+    (function() {
+      'use strict';
+
+      var onload = function() {
+        
+        
+        if (!window.HTMLImports) {
+          document.dispatchEvent(
+            new CustomEvent('WebComponentsReady', {bubbles: true})
+          );
+        }
+      };
+
+      var webComponentsSupported = (
+        'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template')
+      );
+
+      if (!webComponentsSupported) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https:\/\/dataportal.netlify.appassets/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        script.onload = onload;
+        document.head.appendChild(script);
+      } else {
+        onload();
+      }
+
+      var loadElement = function(url) {
+        var link = document.createElement('link')
+        link.rel = "import";
+        link.href = url;
+        document.head.appendChild(link);
+      }
+
+
+
+      document.addEventListener('DOMContentLoaded', function(e) {
+          
+          var lazy_els = {
+              'paper-autocomplete': "https:\/\/dataportal.netlify.appassets/bower_components/paper-autocomplete/paper-autocomplete.html",
+              'px-spinner': "https:\/\/dataportal.netlify.appassets/bower_components/px-spinner/px-spinner.html",
+              'px-data-table': "https:\/\/dataportal.netlify.appassets/bower_components/px-data-table/px-data-table.html",
+              'paper-button': "https:\/\/dataportal.netlify.appassets/bower_components/paper-button/paper-button.html"
+          }
+          
+            loadElement(lazy_els['paper-autocomplete']);
+          
+            loadElement(lazy_els['px-spinner']);
+            loadElement(lazy_els['px-data-table']);
+            loadElement(lazy_els['paper-button']);
+          
+          
+      })
+    })();
+    </script>
+
+    <link rel="import" href="https://dataportal.netlify.appassets/bower_components/polymer/polymer-micro.html">
+   <link rel="import" href="https://dataportal.netlify.appassets/bower_components/iron-ajax/iron-ajax.html">
+
+</head>
+<html prefix="dct: http://purl.org/dc/terms/
+              rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+              dcat: http://www.w3.org/ns/dcat#
+              foaf: http://xmlns.com/foaf/0.1/">
+    <body>
+    
+	<nav id="sd-bar" class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="col-md-4 col-md-offset-8 text-right">
+            <a href="https://www.sandiego.gov/" target="_blank" rel="noopener" title="San Diego Main Site">City of San Diego</a> |
+            <a href="https://www.sandiego.gov/mayor" target="_blank" rel="noopener" title="San Diego Mayor">Mayor Todd Gloria</a>
+        </div>
+    </div>
+</nav>
+<nav id="sd-top-nav" class="sd-navbar-top navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../">
+        <span id="title">
+          Data
+        </span>
+        <span id="logo">
+          <img class="datasd-logo" src="../../assets/img/sdlogo_grays-01-01.png" alt="">
+        </span>
+      </a>
+    </div>
+
+     
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-left">
+      <li></li>    
+    </ul>
+    </div>
+        
+    </div>
+    
+</nav>
+
+	<div class="container default-page-container">
+		<div class="row"><nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="../../">Home</a></li>
+  
+
+      
+      
+        
+        
+
+        
+      
+      
+        
+        
+
+        
+
+          
+
+          
+
+            
+              <li class="breadcrumb-item">
+                <a href='https://dataportal.netlify.appdatasets'>Datasets</a>
+              </li>
+              
+            
+
+
+          
+
+        
+      
+      
+        
+        
+
+        
+
+          
+
+          
+
+            
+              <li class="breadcrumb-item active">
+                <a href='https://dataportal.netlify.app/datasets/monitoring-ocean-water-quality/'>Water Quality - Ocean Monitoring Program</a>
+              </li>
+            
+
+
+          
+
+        
+      
+      
+        
+        
+
+        
+      
+      
+    
+
+</ol>
+</nav></div>
+		<div class="row"><p>Ocean water quality data, including bacteriological sampling for fecal indicator bacteria as well as physical, chemical, and biological parameters observed throughout the region.</p>
+<p>Samples are collected as part of The City&rsquo;s Ocean Monitoring Program, which monitors the effects of treated wastewater effluent on the local marine environment. The OMP extends 340 square miles total from northern San Diego to northern Baja California, Mexico, and encompasses the shoreline seaward approximately 10 miles, to depths of over 500 meters.</p></div>
+	</div>
+
+    <script defer src="../../assets/scripts/dist/vendor/jquery.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/bootstrap.min.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/jquery-deparam.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/lodash.js"></script>
+<script defer type="module" src="../../assets/scripts/src/index.js"></script>
+
+    </body>
+</html>

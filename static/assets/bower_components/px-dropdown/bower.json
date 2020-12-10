@@ -1,0 +1,41 @@
+{
+  "name": "px-dropdown",
+  "version": "2.4.5",
+  "main": [
+    "px-dropdown.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "gulpfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test",
+    "OSS_Notice.pdf",
+    "scripts",
+    ".github",
+    "px-dropdown.png",
+    "HISTORY.md",
+    "LICENSE.md",
+    "README.md",
+    "CONTRIBUTING.md",
+    "monogram-wdmk.png",
+    "wct.conf.json"
+  ],
+  "dependencies": {
+    "polymer": "^1.6.0",
+    "px-theme": "^2.0.1",
+    "px-tooltip": "^0.10.0",
+    "px-spacing-design": "^0.4.0",
+    "px-polymer-font-awesome": "^1.1.0",
+    "px-defaults-design": "^1.0.2",
+    "iron-dropdown": "^1.5.4",
+    "px-forms-design": "^1.1.0",
+    "px-meta-lists-design": "^0.4.1"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "px-demo": "^1.2.3"
+  }
+}

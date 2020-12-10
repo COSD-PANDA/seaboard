@@ -1,0 +1,106 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+<link rel="import" href="../css/px-typography-design-demo-styles.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <!-- 0: Import the styles-->
+    <style include="px-typography-design-demo-styles" is="custom-style"></style>
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-typography-design"
+  description="The Predix UI Typography module defines styles for basic typography."
+  layer="base"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-colors-design",
+    "https://github.com/PredixDev/px-defaults-design",
+    "https://github.com/PredixDev/px-mixins-design"
+  ]'
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Set Options -->
+<px-sass-doc-option
+  option-name="Font Weight"
+  choose-with="dropdown"
+  choices='[
+    "normal (default)",
+    "light",
+    "semibold"
+  ]'
+  default-choice="normal (default)">
+</px-sass-doc-option>
+
+<!-- 3: Make HTML Demo -->
+<section data-slot="demoHTML">
+<span class$={{typeClasses}}>This is GE Inspira Sans!</span>
+</section>
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+{{importCode}}
+</section>
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="usage">
+```
+<!-- Normal -->
+<span class="weight--normal">Normal Text</span>
+
+
+<!-- Light -->
+<span class="weight--light">Light Text</span>
+
+
+<!-- Semibold -->
+<span class="weight--semibold">Bold Text</span>
+```
+</section>
+
+</px-sass-doc>
+</template>
+
+</dom-module>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  Polymer({
+    is: 'local-element-demo',
+
+    attached : function(){
+      var boundHandler = this._handleOptionsUpdated.bind(this); 
+      this.addEventListener('px-sass-doc-options-updated', boundHandler)
+    },
+    
+    detached : function(){
+      this.removeEventListener('px-sass-doc-options-updated', boundHandler);
+    },
+
+    _handleOptionsUpdated : function(evt) {
+      //call functions created below
+      this.importCode = this._importCode();
+      this.typeClasses = this._typeClasses();
+
+      // Wait, then tell the highlighter to run after dom-if restamps
+      this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
+    },
+
+    _typeClasses : function() {
+      var opts = this.selectedOptions || {};
+      if (opts["Font Weight"] === "normal (default)")    return "weight--normal";
+      if (opts["Font Weight"] === "light")               return "weight--light";
+      if (opts["Font Weight"] === "semibold")            return "weight--semibold";
+    },
+
+    _importCode : function() {
+      return '@import "px-typography-design/_base.typography.scss";';
+    },
+
+  });
+</script>
+

@@ -1,0 +1,56 @@
+// Generic
+@import "px-normalize-design/_generic.normalize.scss";
+@import "px-box-sizing-design/_generic.box-sizing.scss";
+
+// Base
+@import "px-flexbox-design/_base.flexbox.scss";
+@import "px-viewport-design/_base.viewport.scss";
+@import "px-typography-design/_base.typography.scss";
+@import "px-iconography-design/_base.iconography.scss";
+
+$inuit-enable-code--inline          : true;
+
+@import "px-code-design/_base.code.scss";
+
+// Objects
+$inuit-enable-btn--primary          : true;
+
+@import "px-buttons-design/_objects.buttons.scss";
+
+// Layout
+
+$inuit-enable-layout--tiny          : true;
+$inuit-enable-layout--small         : true;
+$inuit-enable-layout--large         : true;
+$inuit-enable-layout--huge          : true;
+$inuit-enable-layout--flush         : true;
+$inuit-enable-layout--rev           : true;
+$inuit-enable-layout--middle        : true;
+$inuit-enable-layout--bottom        : true;
+$inuit-enable-layout--full          : true;
+$inuit-enable-layout--right         : true;
+$inuit-enable-layout--center        : true;
+$inuit-enable-layout__item--full    : true;
+$inuit-enable-layout__item--center  : true;
+$inuit-enable-layout__item--bottom  : true;
+
+@import "../_objects.layout.scss";
+
+.layout__item {
+  margin-bottom: $inuit-base-spacing-unit;
+  p {
+    margin: 0;
+    width: 100%;
+    padding: $inuit-base-spacing-unit;
+    text-align: center;
+    background: rgba($black,.1);
+  }
+}
+
+// Trumps
+$inuit-enable-margins--tiny         : true;
+$inuit-enable-margins--large        : true;
+$inuit-enable-margins--huge         : true;
+
+@import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
+@import "px-widths-responsive-design/_trumps.widths-responsive.scss";

@@ -1,0 +1,412 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs
+-->
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="../px-tooltip/px-tooltip.html" />
+<link rel="import" href="../iron-dropdown/iron-dropdown-scroll-manager.html" />
+
+<!--
+Element providing the content for the px-dropdown element
+
+##### Usage
+
+```
+    <px-dropdown-content class="px-dropdown-content" extend-dropdown="true" extend-dropdown-by="40" items='[{"key":"one", "val": "One"}, {"key":"two", "val": "Two"}]'>
+```
+
+@element px-dropdown-content
+@blurb Element to contain contents of a dropdown menu.
+@homepage index.html
+@demo demo.html
+-->
+<link rel="import" href="css/px-dropdown-content-styles.html">
+
+<dom-module id="px-dropdown-content">
+  <template>
+    <style include="px-dropdown-content-styles"></style>
+
+    <div class="px-dropdown--content" id="dropdown" hidden$="{{!menuOpen}}">
+      <ul id="list" class="px-dropdown--list list-bare">
+        <template is="dom-repeat" items="{{computedItems}}" strip-whitespace>
+          <li role="menuitem" class="px-dropdown--listitem" on-tap="_clickItem" value="{{index}}" style$="{{_getDisabledStyle(item.disabled)}}">
+            <template is="dom-if" if="{{checkboxMode}}" strip-whitespace>
+              <input role="menuitemcheckbox" type="checkbox" data-key="{{item.key}}" on-change="_checkChanged" checked="{{item.checked}}" class="px-dropdown--checkbox" disabled$="{{item.disabled}}">
+            </template>{{item.val}}<template is="dom-if" if="{{_includeTooltip(item.val)}}" strip-whitespace>
+              <px-tooltip tooltip-message="{{item.val}}"></px-tooltip>
+            </template>
+          </li>
+        </template>
+      </ul>
+    </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+
+    is: 'px-dropdown-content',
+
+    properties: {
+      /**
+       * Array that contains the list of items which show up in the dropdown.
+       * Each item is an object, where the 'key' should be a unique identifier,
+       * the 'val' attribute reflects the text that is displayed, and
+       * the 'checked' attribute reflects the state of the checkbox
+       * (if px-dropdown-content has checkbox-mode="true").
+       */
+      items: {
+        type: Array,
+        notify: true,
+        value: function() {return [];}
+      },
+      /**
+       * This property stores the items array, after it's been
+       * changed over to be an array of objects.
+       */
+      computedItems: {
+        type: Array,
+        value: function() {return [];},
+        computed: '_computedItems(items, items.*)'
+      },
+      /**
+       * A read-only property that tells you if the user has selected anything from the dropdown.
+       */
+      selectionOccured: {
+        type: Boolean,
+        value: false,
+        readOnly: true
+      },
+      /**
+       * Used to check if the dropdown is currently open or closed.
+       */
+      menuOpen: {
+        type: Boolean,
+        notify: true,
+        value: false
+      },
+      /**
+       * Maximum number of characters in a container.
+       * Will be used to calculate whether the dropdown will have a tooltip and ellipsis.
+       * Optional.
+       */
+      maxContCharacterWidth: {
+        type: Number,
+        value: 0,
+        observer: '_maxContCharacterWidthChanged'
+      },
+      /**
+       * An optional attribute which specifies if the dropdown should extend in width
+       * beyond the cell it's dropping from.
+       */
+      extendDropdown: {
+        type: Boolean,
+        value: false,
+      },
+      /**
+       * An optional attribute which specifies how many pixels the dropdown
+       * should extend beyond the cell it's dropping from.
+       */
+      extendDropdownBy: {
+        type: Number,
+        value: 15,
+      },
+      /**
+       * An attribute which specifies whether the dropdown is
+       * extended in width from its container.
+       */
+      extended : {
+        type: Boolean,
+        value: false
+      },
+      /**
+       * Width of the dropCell.
+       */
+      dropCellWidth: {
+        type: Number,
+        value: 0,
+        observer: '_dropCellWidthChanged'
+      },
+      /**
+       * Height of the dropCell.
+       */
+      dropCellHeight: {
+        type: Number,
+        value: 0,
+        observer: '_dropCellHeightChanged'
+      },
+      /**
+       * By default, the dropdown will constrain scrolling on the page
+       * when opened AND the dropdown has a scrollbar.
+       * Set to true in order to prevent the page from scrolling while the dropdown is open and has a scrollbar of its own.
+       */
+      allowOutsideScroll: {
+        type: Boolean,
+        value: false
+      },
+      /**
+       * If set to true, each dropdown item will have a checkbox and clicking an
+       * item will toggle the checkbox state rather than selecting the item.
+       * The checkbox state will be reflected in the 'items' array.
+       * An event is fired when an item is checked or unchecked.
+       */
+      checkboxMode: {
+        type: Boolean,
+        value:false
+      },
+      _shownTooltip: {
+        type: Array,
+        value: function() {
+          return [];
+        }
+      },
+      _contentScrollHandler: {
+        type: Object
+      }
+    },
+    listeners: { 'px-tooltip-request-show': '_tooltipShow',
+                 'px-tooltip-hide': '_tooltipHide'
+    },
+    attached: function() {
+      this._contentScrollHandler = this._onContentScroll.bind(this);
+      this.$.dropdown.addEventListener('scroll', this._contentScrollHandler);
+    },
+    detached: function() {
+      this.$.dropdown.removeEventListener('scroll', this._contentScrollHandler);
+    },
+    _tooltipShow: function(evt) {
+      this._shownTooltip.push(evt.detail.target);
+    },
+    _tooltipHide: function(evt) {
+      this._shownTooltip.splice(this._shownTooltip.indexOf(evt.detail.target), 1);
+    },
+    _onContentScroll: function() {
+      //hide tooltip that have been shown
+      for(var i=0; i<this._shownTooltip.length; i++) {
+        this._shownTooltip[i]._hide();
+      }
+    },
+    _maxContCharacterWidthChanged: function(newValue) {
+      if(newValue) {
+        this.fire('px-dropdown-max-width', {maxContCharacterWidth : this.maxContCharacterWidth});
+      }
+    },
+    /**
+     * Opens the dropdown menu.
+     */
+    open: function() {
+
+
+      this.menuOpen = true;
+
+      //lock scroll outside if needed
+      if(!this.allowOutsideScroll) {
+
+        //only if we have scroll bar
+        var currentHeight = parseInt(this.$.dropdown.getBoundingClientRect().height);
+
+        //do we have a scrollbar?
+        if(currentHeight < this.$.dropdown.scrollHeight) {
+          Polymer.IronDropdownScrollManager.pushScrollLock(this.$.dropdown);
+        }
+      }
+
+      //resize ourselves
+      this.fire('px-dropdown-request-size', {pxContent: this});
+    },
+    _dropCellWidthChanged: function(newValue, oldValue) {
+      if(newValue) {
+        this._setWidth();
+      }
+    },
+    _dropCellHeightChanged: function(newValue, oldValue) {
+      if(newValue) {
+        this.adjustHeight();
+      }
+    },
+    _checkChanged: function(evt) {
+      var checkbox = evt.target;
+      this._checkboxChanged(checkbox);
+    },
+    _checkboxChanged: function(checkbox) {
+      this.items.forEach(function(item, index) {
+        if(item.key === checkbox.dataKey) {
+          this.set('items.' + index + '.checked', checkbox.checked);
+        }
+      }.bind(this));
+      /**
+       * Event fired when any given element is selected or deselected in checkboxMode.
+       * `evt.detail` contains:
+       * ```
+       * { val: "text of the changed element",
+       *   key: "key of the changed element",
+       *   checked: true/false,
+       *   items: [the updated items array] }
+       * ```
+       * @event px-dropdown-checkbox-changed
+       */
+      this.fire('px-dropdown-checkbox-changed', {
+        val: checkbox.parentNode.textContent,
+        key: checkbox.dataKey,
+        checked: checkbox.checked,
+        items: this.items
+      });
+    },
+    /**
+     * Closes the dropdown menu.
+     */
+    close: function() {
+      this.menuOpen = false;
+      Polymer.IronDropdownScrollManager.removeScrollLock(this.$.dropdown);
+    },
+    /**
+     * Size the content to height to fit maxHeight and do the height adjustments
+     * for scrolling.
+     */
+    sizeHeight: function(maxHeight) {
+      var currentHeight = parseInt(this.$.dropdown.getBoundingClientRect().height);
+
+      //limit height
+      if(currentHeight > maxHeight) {
+        this.$.dropdown.style.height = maxHeight + 'px';
+      }
+      else {
+        this.adjustHeight();
+      }
+    },
+    /**
+     * Reset the height of the content.
+     */
+    resetHeight: function() {
+      this.$.dropdown.style.height = '';
+    },
+    /**
+     * Checks if the length of the value in the dropdown list is longer than
+     * the allowed Max length, passed in as maxContCharacterWidth.
+     * If it is, px-tooltip is included with the component.
+     */
+    _includeTooltip: function(value) {
+      //find the container max character passed in
+      var maxContWidth = this.maxContCharacterWidth;
+      if(value === null || value === undefined || typeof value === 'string' && value.trim().length === 0) {
+        return false;
+      }
+      //find out if the character count in the passed value is higher than the allowed max. if it is, we show the tooltip.
+      return (maxContWidth !== undefined && maxContWidth !== null && maxContWidth !== 0) ? (value.length > maxContWidth) : false;
+    },
+    /**
+     * This function is called on an item click, and calls the fire event
+     * as well as closes the dropdown. Finally, it flips the opened flag.
+     */
+    _clickItem: function(evt) {
+
+      // only handle the click if the item is not disabled
+      if (!this.computedItems[evt.currentTarget.value].disabled) {
+        /**
+        * Event fired when an element is clicked  on in the dropdown.
+        * @event px-dropdown-click
+        */
+        this.fire('px-dropdown-click', evt);
+
+        if (this.checkboxMode) {
+
+          //try to toggle checkbox state
+          var checkbox = Polymer.dom(evt.target).querySelector('input');
+
+          //if we haven't found it it's probably because the click was actually
+          //on the checkbox so just ignore
+          if (checkbox) {
+            checkbox.checked = !checkbox.checked;
+            this._checkboxChanged(checkbox);
+          }
+        }
+        else {
+
+          this.close();
+          this.fire('px-dropdown-flip');
+          this._setSelectionOccured(true);
+          /**
+          * Event fired when a single element is selected if NOT in checkboxMode.
+          * `evt.detail` contains:
+          * ```
+          * { val: "text of the selected element",
+          *   key: "key of the selected element" }
+          * ```
+          * @event px-dropdown-value-changed
+          */
+          this.fire('px-dropdown-value-changed',
+              {
+                val: this.computedItems[evt.target.value].val,
+                key: this.computedItems[evt.target.value].key
+              });
+        }
+      }
+    },
+    /**
+     * Get the style attribute for a disabled item
+     */
+    _getDisabledStyle: function(disabled) {
+      return disabled ? 'opacity: 0.5; cursor: default;' : '';
+    },
+    /**
+     * Sets the dropdown width depending on the dropcell width and the extendDropdownBy.
+     */
+    _setWidth: function() {
+      if (this.extendDropdown) {
+        this.$.dropdown.style.width = this.dropCellWidth + parseInt(this.extendDropdownBy) + 'px';
+      }
+      else {
+        this.$.dropdown.style.width = this.dropCellWidth + 'px';
+      }
+    },
+    /**
+     * Allows for the dropdown height to be adjusted by reducing it by half
+     * an item's height if the dropdown has scrollbars so it's more obvious the user
+     * can scroll.
+     */
+    adjustHeight: function() {
+      var currentHeight = parseInt(this.$.dropdown.getBoundingClientRect().height);
+
+      //do we have a scrollbar?
+      if(currentHeight < this.$.dropdown.scrollHeight) {
+
+        //reduce height by half the size of an item
+        var reduceBy = parseInt(this.dropCellHeight/2);
+        this.$.dropdown.style.height = currentHeight - reduceBy + 'px';
+      }
+    },
+    /**
+     * This function finds out whether the passed items array is
+     * an array of objects, or an array of strings. if it is strings
+     * they are converted to objects.
+     */
+    _computedItems: function(items) {
+      if(this.items){
+        var computedItemsArr = [];
+        if (typeof this.items[0] === 'string') {
+          var len = items.length,
+          i = 0;
+
+          for (i; i < len; i++) {
+            if(this.checkboxMode) {
+              //default unchecked if using a string array in check mode
+              computedItemsArr.push({val:items[i], checked: false});
+            }
+            else {
+              computedItemsArr.push({val:items[i]});
+            }
+          }
+          return computedItemsArr;
+        }
+        else {
+          //with new array it looks like we need to do a copy of items
+          // seems like items can be sparse at this point
+          items.forEach(function(item, index) {
+            computedItemsArr.push(item);
+          });
+          return computedItemsArr;
+        }
+      }
+    }
+  });
+</script>

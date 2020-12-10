@@ -1,0 +1,52 @@
+////
+/// PX-DEFAULTS-DESIGN
+/// These variables are Px defaults; they should not be modified or adjusted directly; you should predefine the variables in your own project.
+/// @group px-defaults-design
+////
+
+@import 'px-functions-design/_tools.functions.scss';
+
+/// Sets the project-wide base font size. Also used to calculate the base spacing unit.
+///
+/// @group px-defaults-design:variables:style
+/// @type Number [default]
+$inuit-base-font-size           : 15px !default;
+
+/// Sets the project-wide base line-height. Also used to calculate the base spacing unit modifiers.
+///
+/// @group px-defaults-design:variables:style
+/// @type Number [default]
+$inuit-base-line-height         : 20px !default;
+
+/// Sets the project-wide base font color.
+///
+/// @group px-defaults-design:variables:style
+/// @type Color [default] - Base text color
+$inuit-base-text-color          : var(--px-base-text-color, rgb(0,0,0)) !default;
+
+/// Sets the project-wide base background color.
+///
+/// @group px-defaults-design:variables:style
+/// @type Color [default] - Base background color
+$inuit-base-background-color    : var(--px-base-background-color, rgb(255,255,255)) !default;
+
+/// Sets a prefix that will be added to the beginning of all classes across your project. (e.g. 'px' or 'intuit').
+///
+/// @group px-defaults-design:variables:style
+/// @type String [default]
+$inuit-namespace                : null !default;
+
+/// @type Number [default] - Base spacing unit (same as $inuit base-font-size)
+$inuit-base-spacing-unit        : calculateRem($inuit-base-font-size);
+
+/// @type Number [default] - Tiny base spacing unit (quarter of $inuit-base-line-height)
+$inuit-base-spacing-unit--tiny  : calculateRem(round($inuit-base-line-height / 4));
+
+/// @type Number [default] - Small base spacing unit (half of $inuit-base-line-height divided by 2)
+$inuit-base-spacing-unit--small : calculateRem(round($inuit-base-line-height / 2));
+
+/// @type Number [default] - Large base spacing unit (same as $inuit-base-line-height)
+$inuit-base-spacing-unit--large : calculateRem($inuit-base-line-height);
+
+/// @type Number [default] - Huge base spacing unit (one and a half times $inuit-base-line-height)
+$inuit-base-spacing-unit--huge  : calculateRem(round($inuit-base-line-height * 1.5));
