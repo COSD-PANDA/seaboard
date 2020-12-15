@@ -14,13 +14,9 @@ resources:
     url: >-
       http://seshat.datasd.org/pud/chem/analyte_tests_dictionary_datasd.csv
     format: csv
-  - name: Analyte definitions
-    url: >-
-      http://seshat.datasd.org/pud/chem/analyte_list_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-11'
-date_modified: '2020-08-01'
+date_modified: '2020-12-14'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
