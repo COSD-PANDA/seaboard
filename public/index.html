@@ -55,12 +55,59 @@
               'paper-button': "https:\/\/dataportal.netlify.appassets/bower_components/paper-button/paper-button.html"
           }
           
-            loadElement(lazy_els['paper-autocomplete']);
+          loadElement(lazy_els['paper-autocomplete']);
+        
+          loadElement(lazy_els['px-spinner']);
+          loadElement(lazy_els['px-data-table']);
+          loadElement(lazy_els['paper-button']);
+
           
-            loadElement(lazy_els['px-spinner']);
-            loadElement(lazy_els['px-data-table']);
-            loadElement(lazy_els['paper-button']);
+
+          let ddHidden = true;
+
+          $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+              ddHidden = false;
+          }).on('hide.bs.dropdown', function () {
+              ddHidden = true;
+          });
           
+          
+
+          document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+            
+            
+            
+            
+
+            event.preventDefault();
+            searchSubmit();
+          });
+
+          
+
+          document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+            
+              if (event.keyCode === 13) {
+                
+                  if (ddHidden) {
+                    
+                      $('#searchSubmit').dropdown('toggle');
+                  }
+                  
+                  searchSubmit();
+              } else {
+                
+                
+                if (event.target.value === "") {
+                  
+                  if (ddHidden === false) {
+                    
+                    $('#searchSubmit').dropdown('toggle');
+                  }
+                }
+              }
+          }, false);
           
       })
     })();
@@ -76,76 +123,90 @@
               foaf: http://xmlns.com/foaf/0.1/">
     <body>
     
-<nav id="sd-bar" class="navbar navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="col-md-4 col-md-offset-8 text-right">
-            <a href="https://www.sandiego.gov/" target="_blank" rel="noopener" title="San Diego Main Site">City of San Diego</a> |
-            <a href="https://www.sandiego.gov/mayor" target="_blank" rel="noopener" title="San Diego Mayor">Mayor Todd Gloria</a>
-        </div>
-    </div>
-</nav>
-<nav id="sd-top-nav" class="sd-navbar-top navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./">
-        <span id="title">
-          Data
-        </span>
-        <span id="logo">
-          <img class="datasd-logo" src="./assets/img/sdlogo_grays-01-01.png" alt="">
-        </span>
-      </a>
-    </div>
-
-     
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-left">
-      <li></li>    
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary text-light fixed-top">
+  
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sdNavbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="sdNavbarToggler">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://data.sandiego.gov/datasets/">Browse catalog</a>
+      </li>
+      
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">Terms of Use</a>
+      </li>
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">About</a>
+      </li>
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://www.sandiego.gov/panda">Performance & Analytics Department</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.sandiego.gov/">sandiego.gov</a>
+      </li>
     </ul>
-    </div>
-        
-    </div>
-    
+  </div>
+  
+  
 </nav>
+<div class="jumbotron jumbotron-fluid dp-jumbotron">
+    <div class="jumbotron-content-layer">
+        <div id="dpJumbotronContent" class="dp-jumbotron-content">
+            <div class="intro-hed">
+                <div class="brand-contain clearfix">
+                        <a class="navbar-brand py-0" href="./">
+                            <div class="fp-logo-solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 77.07 61.43"><g id="initials-black"><path d="M40.57,0V20.93A18.36,18.36,0,0,1,43,57.31c14.4-1.5,25.39-13.93,25.39-28.75a28.55,28.55,0,0,0-1.9-10.26C62.37,7.59,52.12,0,40.57,0Z"/><path d="M11.11,35.76c-3.36-.22-4.43-1.53-4.43-3A2.7,2.7,0,0,1,9.62,30,5.19,5.19,0,0,1,13,31.54l5.2-3.78a10.76,10.76,0,0,0-8.56-4.09c-4.39,0-9.33,3.78-9.33,9.16,0,5,3.58,8.43,9.07,9.06,3.07.34,4.77,1.93,4.77,4.47a3.85,3.85,0,0,1-3.87,3.8,5.49,5.49,0,0,1-4.81-2.3L0,51.86A13.48,13.48,0,0,0,10.26,56.5,10.68,10.68,0,0,0,21,45.9c0-6.14-4.47-9.8-9.88-10.14"/><path d="M38.5,24.22H25.64V56h12.9c9.12,0,16.56-6.77,16.56-15.89S47.66,24.22,38.5,24.22m0,25.77h-6.3V30.18H38.5a9.61,9.61,0,0,1,9.83,9.88A9.67,9.67,0,0,1,38.54,50"/><path d="M72,27A31.64,31.64,0,0,1,42.22,58.62,23.66,23.66,0,0,0,71.71,22.79,30.65,30.65,0,0,1,72,27"/></g></svg>
 
-<section data-hook="main" class="front-page-container">
+                            </div>
+                            <span class="navbar-brand-text float-left">Open Data</span>
+                        </a>
+                    </div>
+            </div>
+            <div class="intro-block-contain">  
+                <div class="intro-block">
+                    <div class="input-group mb-5 dp-jumbotron-searchbox">
+  <input type="text" id="searchQuery" class="form-control dp-jumbotron-input" placeholder="Search the City of San Diego Open Data Portal" aria-label="Search for data" aria-describedby="search-data">
+  <div class="input-group-append">
+    <button class="btn" id="searchSubmit" type="button" data-toggle="dropdown" data-offset="0,0" data-flip="false">
+      <i class="fa fa-search"></i>
+    </button>
+    <div class="dropdown-menu search-dropdown dropdown-menu-right" id="searchResults">
+      <ul class="list-group list-group-flush mb-4" id="searchResultsList">
+        
+      </ul>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="./datasets/" class="search-result-catalog-link pb-4">
+          <i>Didn't find what you need? Browse the <b>full catalog</b></i>
+        </a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<div class="container-fluid data-search data-search-color-layer">
-        <div class="data-search-img-layer">
-        </div>
-        <div class="data-search-box-layer">
-            <div class="container find-data-autocomplete">
-                <div class="col-12">
-                <h2>
-                    Find data
-                </h2>
-                
-                     <paper-autocomplete
-                        label='Search by dataset name, topic or City department' id="find-data" aria-label="Find data" remote-source="true" no-label-float="true" text-property="title" value-property="url" error-message="error">
-                        <template autocomplete-custom-template>
-                            <paper-item on-tap="_onSelect" id$="[[_getSuggestionId(index)]]" role="option" aria-selected="false">
-                            <span class="autocomplete-suggestions-type">[[item.type]]:</span> <span class="autocomplete-suggestions-result">[[item.title]]</span>
-                            <paper-ripple></paper-ripple>
-                            </paper-item>
-                        </template>
-                    </paper-autocomplete>
-                    <i class="find-data-icon fa fa-search"></i>
+
+<script id="searchResultTemplate" type="text/x-js-template">
+    <li class="list-group-item">
+    	${section}: <a id="summary-${key}" href="${link}">${title}</a>
+    </li>
+</script>
+                </div>
+                <div class="intro-block">
+                    Or <a href="./datasets/">browse</a> for data about topics like <a href="./datasets/traffic-volumes/">traffic</a>, the <a href="./budget-topic/">City budget</a>, <a href="./departments/police/">police activity</a>, <a href="./datasets/business-listings/">local businesses</a>, and <a href="./datasets/">more</a>.
                 </div>
             </div>
         </div>
     </div>
-</section>
-
+</div>
 
     <script defer src="./assets/scripts/dist/vendor/jquery.js"></script>
-<script defer src="./assets/scripts/dist/vendor/bootstrap.min.js"></script>
+<script defer src="./assets/scripts/dist/vendor/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="./assets/scripts/dist/vendor/jquery-deparam.js"></script>
 <script defer src="./assets/scripts/dist/vendor/lodash.js"></script>
 <script defer type="module" src="./assets/scripts/src/index.js"></script>

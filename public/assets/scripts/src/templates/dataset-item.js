@@ -1,6 +1,6 @@
 export default (data) => (
 `<dataset>
-  <h3><a href="${data.url}">${data.title}</a></h3>
+  <h2><a href="${data.url}">${data.title}</a></h2>
   <p class="item-date">Last modified: ${data.modified || ''}</p>
   ${data.notes || ''}
 </dataset>`

@@ -1,24 +1,41 @@
-<nav class="navbar navbar-dark navbar-expand-sm sd-bar fixed-top clearfix">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sdBarNav" aria-controls="sdBarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary text-light fixed-top">
+  {{ if .IsHome }}
+  {{ else }}
+  <div class="container">
+  <a class="navbar-brand header-logo-solid" href="/">
+    {{ partial "logo" . }}
+  </a>
+  {{ end }}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sdNavbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="sdBarNav">
+  <div class="collapse navbar-collapse" id="sdNavbarToggler">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">
-          Terms of Use
-        </a>
+      {{ if eq .Title "Datasets" }}
+      <li class="nav-item mr-3">
+        <a class="nav-link" href="https://data.sandiego.gov/datasets/">Browse catalog</a>
+      </li>
+      {{ else }}
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://data.sandiego.gov/datasets/">Browse catalog</a>
+      </li>
+      {{ end }}
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">Terms of Use</a>
+      </li>
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">About</a>
+      </li>
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://www.sandiego.gov/panda">Performance & Analytics Department</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="https://www.sandiego.gov/panda">
-          Performance & Analytics Department
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.sandiego.gov/">
-          sandiego.gov
-        </a>
+        <a class="nav-link" href="https://www.sandiego.gov/">sandiego.gov</a>
       </li>
     </ul>
   </div>
+  {{ if .IsHome }}
+  {{ else }}
+  </div>
+  {{ end }}
 </nav>

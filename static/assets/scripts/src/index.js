@@ -7,7 +7,6 @@ import {queryByComponent, setParams} from './util.js'
 
 const params = $.deparam(window.location.search.substr(1))
 
-
 // Check for these components on the page and initialize them
 const components = [
   {tag: 'dataset-display', class: DatasetDisplay},
