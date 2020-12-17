@@ -1,7 +1,23 @@
 {{ define "main" }}
-	{{ partial "header" . }}
-	<div class="container default-page-container">
-		<div class="row">{{ partial "breadcrumbs" . }}</div>
-		<div class="row">{{.Content}}</div>
+{{ partial "header.html" . }}
+<div class="container default-page-container">
+	<div class="row pt-4">
+		<div class="col">
+			{{ partial "breadcrumbs" . }}
+		</div>
 	</div>
+	<div class="row">
+		<div class="col">
+			<h1 class="display-4 default-page-display-header">
+				{{ .Title }}
+			</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			{{.Content}}
+		</div>
+		
+	</div>
+</div>
 {{ end }}

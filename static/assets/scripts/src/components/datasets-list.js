@@ -27,6 +27,8 @@ export default class {
     const filters = createDatasetFilters(_.defaults(paramFilters, attributeFilters))
     const filteredDatasets = _.filter(opts.datasets, filters)
     const datasetsMarkup = filteredDatasets.map(TmplDatasetItem)
+    console.log("Filling container with: ")
+    console.log(opts.params)
     setContent(elements.datasetsItems, datasetsMarkup)
 
     // // Dataset count
