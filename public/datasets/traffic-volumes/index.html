@@ -12,101 +12,55 @@
     (function() {
       'use strict';
 
-      var onload = function() {
-        
-        
-        if (!window.HTMLImports) {
-          document.dispatchEvent(
-            new CustomEvent('WebComponentsReady', {bubbles: true})
-          );
-        }
-      };
-
-      var webComponentsSupported = (
-        'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template')
-      );
-
-      if (!webComponentsSupported) {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https:\/\/dataportal.netlify.appassets/bower_components/webcomponentsjs/webcomponents-lite.min.js';
-        script.onload = onload;
-        document.head.appendChild(script);
-      } else {
-        onload();
-      }
-
-      var loadElement = function(url) {
-        var link = document.createElement('link')
-        link.rel = "import";
-        link.href = url;
-        document.head.appendChild(link);
-      }
-
-
-
       document.addEventListener('DOMContentLoaded', function(e) {
-          
-          var lazy_els = {
-              'paper-autocomplete': "https:\/\/dataportal.netlify.appassets/bower_components/paper-autocomplete/paper-autocomplete.html",
-              'px-spinner': "https:\/\/dataportal.netlify.appassets/bower_components/px-spinner/px-spinner.html",
-              'px-data-table': "https:\/\/dataportal.netlify.appassets/bower_components/px-data-table/px-data-table.html",
-              'paper-button': "https:\/\/dataportal.netlify.appassets/bower_components/paper-button/paper-button.html"
-          }
-          
-          loadElement(lazy_els['paper-autocomplete']);
+
         
-          loadElement(lazy_els['px-spinner']);
-          loadElement(lazy_els['px-data-table']);
-          loadElement(lazy_els['paper-button']);
 
+        let ddHidden = true;
+
+        $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+            ddHidden = false;
+        }).on('hide.bs.dropdown', function () {
+            ddHidden = true;
+        });
+        
+        
+
+        document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+          
+          
+          
           
 
-          let ddHidden = true;
+          event.preventDefault();
+          searchSubmit();
+        });
 
-          $('#dropdownMenuParent').on('show.bs.dropdown', function () {
-              ddHidden = false;
-          }).on('hide.bs.dropdown', function () {
-              ddHidden = true;
-          });
-          
-          
+        
 
-          document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
-            
-            
-            
-            
-
-            event.preventDefault();
-            searchSubmit();
-          });
+        document.getElementById("searchQuery").addEventListener('keyup', (event) => {
 
           
-
-          document.getElementById("searchQuery").addEventListener('keyup', (event) => {
-
-            
-              if (event.keyCode === 13) {
-                
-                  if (ddHidden) {
-                    
-                      $('#searchSubmit').dropdown('toggle');
-                  }
+            if (event.keyCode === 13) {
+              
+                if (ddHidden) {
                   
-                  searchSubmit();
-              } else {
-                
-                
-                if (event.target.value === "") {
-                  
-                  if (ddHidden === false) {
-                    
                     $('#searchSubmit').dropdown('toggle');
-                  }
+                }
+                
+                searchSubmit();
+            } else {
+              
+              
+              if (event.target.value === "") {
+                
+                if (ddHidden === false) {
+                  
+                  $('#searchSubmit').dropdown('toggle');
                 }
               }
-          }, false);
+            }
+        }, false);
           
       })
     })();
@@ -122,7 +76,7 @@
               foaf: http://xmlns.com/foaf/0.1/">
     <body>
     
-	<nav class="navbar navbar-expand-md navbar-dark bg-secondary text-light fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary text-light fixed-top">
   
   <div class="container">
   <a class="navbar-brand header-logo-solid" href="../../">
@@ -137,20 +91,20 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://data.sandiego.gov/datasets/">Browse catalog</a>
+        <a class="nav-link" href="../../datasets/">Browse catalog</a>
       </li>
       
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">Terms of Use</a>
+        <a class="nav-link" href="../../terms-use/">Terms of Use</a>
       </li>
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">About</a>
+        <a class="nav-link" href="../../get-started/">About</a>
       </li>
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://www.sandiego.gov/panda">Performance & Analytics Department</a>
+        <a class="nav-link" href="https://www.sandiego.gov/panda" target="_blank">Performance & Analytics Department</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="https://www.sandiego.gov/">sandiego.gov</a>
+        <a class="nav-link" href="https://www.sandiego.gov/" target="_blank">sandiego.gov</a>
       </li>
     </ul>
   </div>
@@ -158,8 +112,10 @@
   </div>
   
 </nav>
-	<div class="container default-page-container">
-		<div class="row"><nav aria-label="breadcrumb">
+<div class="container default-page-container">
+	<div class="row pt-4">
+		<div class="col">
+			<nav aria-label="breadcrumb">
 
 
 
@@ -230,8 +186,19 @@
     
 
 </ol>
-</nav></div>
-		<div class="row"><p>The census count of vehicles on city streets is normally reported in the form
+</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<h1 class="display-4 default-page-display-header">
+				Traffic Volumes
+			</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p>The census count of vehicles on city streets is normally reported in the form
 of Average Daily Traffic (ADT) counts.</p>
 <p>These counts provide a good estimate for the actual number of vehicles on
 an average weekday at select street segments. Specific block segments are
@@ -240,8 +207,183 @@ segment on the same roadway. ADT counts are used by transportation engineers,
 economists, real estate agents, planners, and others professionals for planning
 and operational analysis. The frequency for each count varies depending on
 City staff’s needs for analysis in any given area. This report covers the counts
-taken in our City during the past 12 years approximately.</p></div>
+taken in our City during the past 12 years approximately.</p>
+		</div>
 	</div>
+	<div class="row mb-5">
+		<div class="col">
+			<h2 class="mb-3">Downloads</h2>
+			<table class="table table-striped table-sm">
+				<tr>
+					<th>Resource</th>
+					<th class="table-content-centered">File type</th>
+					<th class="table-content-centered"></th>
+					<th class="table-content-centered"></th>
+				</tr><tr>
+					<td>
+						<span>
+							Traffic Counts
+						</span>
+					</td>
+					<td class="table-content-centered">
+						<span>
+							csv
+						</span>
+					</td>
+					<td class="table-content-centered">
+						<a class="btn btn-primary btn-sm" href="http://seshat.datasd.org/traffic_counts/traffic_counts_datasd_v1.csv" role="button">Download</a>
+					</td>
+					<td class="table-content-centered"><button class="btn btn-secondary btn-sm preview-button" disabled>Show preview</button></td>
+				</tr>
+				<tr>
+					<td>
+						<span>
+							Traffic Counts Dictionary
+						</span>
+					</td>
+					<td class="table-content-centered">
+						<span>
+							csv
+						</span>
+					</td>
+					<td class="table-content-centered">
+						<a class="btn btn-primary btn-sm" href="http://seshat.datasd.org/traffic_counts/traffic_counts_dictionary_datasd.csv" role="button">Download</a>
+					</td>
+					<td class="table-content-centered"><button class="btn btn-secondary btn-sm preview-button">Show preview</button></td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col">
+			<h2 id="dataPreviewTitle" class="mb-3">Preview: Traffic Counts</h2>
+			<p class="font-italic font-weight-normal text-primary">This is a preview. If you would like to view the full resource, please download it above.</p>
+			<div id="dataPreview">
+				<p>Preview is loading ...</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col">
+			<h2 class="mb-3">Additional Info</h2>
+			<table class="table table-striped">
+				<tr>
+					<th scope="row">License</th>
+					<td>
+						<a href="http://www.opendefinition.org/licenses/odc-pddl">
+							Open Data Commons Public Domain Dedication and Licence (PDDL)
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<th>Publisher</th>
+					<td>
+						<span>Transportation &amp; Storm Water</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Date issued</th>
+					<td>
+						<span>2016-05-17</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Date modified</th>
+					<td>
+						<span id="dateModified">2020-12-05</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Category</th>
+					<td>
+						<span>
+							[Transportation]
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Maintainer</th>
+					<td>
+						<span>City of San Diego</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Maintainer email</th>
+					<td>
+						<span>data@sandiego.gov</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script>
+	const baseURL = 'https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview';
+	let initialURL = baseURL+'?datasetUrl=http:\/\/seshat.datasd.org\/traffic_counts\/traffic_counts_datasd_v1.csv';
+	initialURL += '&numRows=15';
+	let dataID = 'Traffic Volumes';
+	
+    (function() {
+      'use strict';
+
+      document.addEventListener('DOMContentLoaded', function(e) {
+        
+        getDataPreview(initialURL);
+        getDataDates(dataID);
+        
+        const prevButtons = document.getElementsByClassName("preview-button");
+
+        const changePreview = function () {
+        	if (this.hasAttribute("disabled")) {
+        		console.log("This is disabled");
+        	} else {
+        		let parent = this.parentNode;
+        		let urlSibling = parent.previousElementSibling;
+        		let typeSibling = urlSibling.previousElementSibling;
+        		let titleSibling = typeSibling.previousElementSibling;
+        		console.log(typeSibling)
+        		if (typeSibling.firstElementChild.innerText === "csv") {
+        			console.log("Found csv file");
+        			let urlTarget = urlSibling.firstElementChild.href;
+					let previewURL = baseURL+'?datasetUrl='+urlTarget;
+					previewURL += '&numRows=15';
+					togglePreviewButtons(this);
+					document.getElementById('dataPreview').innerHTML = "<p>Preview is loading ...</p>";
+					getDataPreview(previewURL);
+					let dataPreviewTitle = titleSibling.firstElementChild.innerText
+					document.getElementById('dataPreviewTitle').innerText = 'Preview: '+dataPreviewTitle;
+
+				} else {
+					togglePreviewButtons(this);
+					document.getElementById('dataPreview').innerHTML = '<p class="font-weight-bold">Preview is not available</p>';
+				}
+        	}
+			
+        }
+
+        Array.from(prevButtons).forEach(function(element) {
+        	element.addEventListener('click', changePreview);
+        });
+
+
+      })
+    })();
+</script>
+<script defer src="../../assets/scripts/dist/vendor/jquery.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/jquery-deparam.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/lodash.js"></script>
+<script defer type="module" src="../../assets/scripts/src/index.js"></script>
+<script defer src="../../assets/scripts/src/main.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/fuse.min.js"></script>
+<script defer src="../../assets/scripts/dist/vendor/mark.min.js"></script>
+<script defer src="../../assets/scripts/src/search.js"></script>
+<script defer src="../../assets/scripts/src/data-preview.js"></script>
+
 
     <script defer src="../../assets/scripts/dist/vendor/jquery.js"></script>
 <script defer src="../../assets/scripts/dist/vendor/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
@@ -252,6 +394,7 @@ taken in our City during the past 12 years approximately.</p></div>
 <script defer src="../../assets/scripts/dist/vendor/fuse.min.js"></script>
 <script defer src="../../assets/scripts/dist/vendor/mark.min.js"></script>
 <script defer src="../../assets/scripts/src/search.js"></script>
+<script defer src="../../assets/scripts/src/data-preview.js"></script>
 
     </body>
 </html>

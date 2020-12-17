@@ -7,6 +7,10 @@
   </url>
   
   <url>
+    <loc>https://dataportal.netlify.app/get-started/</loc>
+  </url>
+  
+  <url>
     <loc>https://dataportal.netlify.app/datasets/budget-reference-accounts/</loc>
   </url>
   
@@ -216,6 +220,10 @@
   
   <url>
     <loc>https://dataportal.netlify.app/departments/fire-rescue/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/resources/</loc>
   </url>
   
   <url>
@@ -500,6 +508,10 @@
   
   <url>
     <loc>https://dataportal.netlify.app/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dataportal.netlify.app/terms-use/</loc>
   </url>
   
   <url>

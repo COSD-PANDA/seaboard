@@ -5,9 +5,9 @@ function getDataPreview(urlPreview){
  loadDataJSON(callURL,function(response) {
     let actual_JSON = JSON.parse(response);
     var tableHeaders = Object.keys(actual_JSON[0]);
-    var tableHTML = '<table class="table table-sm table-bordered"><thead><tr>';
+    var tableHTML = '<table class="table table-sm table-responsive table-bordered"><thead><tr>';
     for (var header=0;header<tableHeaders.length;header++) {
-      tableHTML += '<th>'+tableHeaders[header]+'</th>';
+      tableHTML += '<th scope="col">'+tableHeaders[header]+'</th>';
     }
     tableHTML += '</tr></thead><tbody>';
     for (let row=0;row<actual_JSON.length;row++) {

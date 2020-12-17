@@ -8,6 +8,14 @@
      "title": "72-hour Parking Violation Notifications"
    },
    {
+     "categories": null,
+     "contents": "   Open Data is a valuable resource meant for everyone. But let’s face it – using data is difficult, and using it correctly is even more difficult. Our goal is to empower all San Diego residents, from the most techy savvy to the least, to get and use the City’s data.\nWe want to help our users by removing the roadblocks we have run into ourselves as data users. The first roadblock might be knowing how to use this data portal effectively. In this tutorial, you\u0026rsquo;ll learn how the portal is organized, how to search for what you want, and how to access the data once you\u0026rsquo;ve found it.\nWhat this portal contains The main feature of this portal is a catalog of City data. The catalog contains hundreds of downloadable files, most of which are in a tabular format that can be opened in spreadsheet software such as Microsoft Excel.\nEach of these downloadable files - called resources - has rows and rows of records. A record could be the transaction that occurs when a single business pays the City Treasurer for its license, or a record could be an incident that the Police responded to. A payment transaction and a police incident are very different events, so each of the records for those events will have different details. For example, one will have the name of the business as a detail, and one will have a name of a street where a public safety incident occurred. These details fill out the columns in the downloadable files.\nFiles with many rows can start to get large and difficult to work with. For this reason, the same kinds of records might be divided into multiple files according to year. Or, we may create a secondary file that aggregates the individual records into counts or sums by day or month. Files with the same kinds of records are grouped into a collection, called a dataset. The list of datasets is what you\u0026rsquo;ll see if you browse data in the catalog, but know that any given dataset may have many resources.\nHow the portal is organized To organize our data, we follow the Catalog \u0026gt; Dataset \u0026gt; Resource model briefly described above. This model is the standard for government open data portals and is published by the World Wide Web Consortium.\nCatalog The portal’s catalog is essentially a list of datasets.\nDataset A dataset is a bucket for multiple views and formats of a single set of data, as well as a place to provide data dictionaries. Each of those permutations and formats is a resource, and all resources are linked from the same dataset page.\nResources Resources are the actual files, APIs or links that we are sharing. We only provide resources that are machine-readable and in an open format. Resource types include:\n csv json geojson zip txt xml API  Organizing the data into resources contained in datasets allows us to offer the same data in different formats or at different granularities.\nData dictionaries If you need help interpreting the field descriptions, each resource has a corresponding dictionary available for download or preview from within the dataset.\nHow to navigate the portal Available datasets To view all the datasets currently available, navigate to the home page, and click on the Browse Catalog menu tab at the top of the page.\nSearching With the search bar on the homepage, users can search for data based on keywords in the dataset title or the name of the publishing City department. Simply click on the Find Data search field, and key in your desired search term.\nHave more questions? Vist our Frequently Asked Questions page.\n",
+     "departments": null,
+     "permalink": "https://dataportal.netlify.app/get-started/",
+     "section": "",
+     "title": "About"
+   },
+   {
      "categories": [
        "City Management"
      ],
@@ -236,7 +244,7 @@
      "departments": null,
      "permalink": "https://dataportal.netlify.app/departments/commission-for-arts-and-culture/",
      "section": "Departments",
-     "title": "Commission for Arts and Culture"
+     "title": "Commission for Arts \u0026 Culture"
    },
    {
      "categories": [
@@ -413,7 +421,7 @@
      "departments": null,
      "permalink": "https://dataportal.netlify.app/categories/economy-community/",
      "section": "Categories",
-     "title": "Economy \u0026 Community"
+     "title": "Economy \u0026 community"
    },
    {
      "categories": null,
@@ -421,7 +429,7 @@
      "departments": null,
      "permalink": "https://dataportal.netlify.app/categories/energy-environment/",
      "section": "Categories",
-     "title": "Energy \u0026 Environment"
+     "title": "Energy \u0026 environment"
    },
    {
      "categories": [
@@ -510,6 +518,14 @@
      "permalink": "https://dataportal.netlify.app/departments/fire-rescue/",
      "section": "Departments",
      "title": "Fire-Rescue"
+   },
+   {
+     "categories": null,
+     "contents": "What do I do if I find a problem with the data published here? If you think a dataset has an error, please let us know.\nHow do I use the various file types? Data on this portal will be one of the following file types:\n  CSV is tabular data. Excel, Google Docs, LibreOffice Calc or any plain text editor will open files with this format.\n  Shapefile is a common format for geospatial vector and raster data. It was developed by a mapping software company, but most mapping tools can open shapefiles, including QGIS, Google Earth, CartoDB, and Mapbox Studio.\n  Geobuf is a compact binary encoding for GeoJSON data created by Mapbox. These pbf files load more quickly onto a web map than their GeoJSON versions because they are smaller. You will need two JavaScript libraries created by Mapbox to decode geobuf: the geobuf library and the pbf library.\n  GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes, based on JavaScript Object Notation. Learn More.\n  TopoJSON extends GeoJSON to encode topology. GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes, based on JavaScript Object Notation. Learn more.\n  What do I do if I can\u0026rsquo;t find the data I need in the catalog? The portal doesn\u0026rsquo;t yet have everything we will publish. We\u0026rsquo;re working on it as outlined in the City\u0026rsquo;s Open Data Policy. The Data Inventory Dataset has our schedule.\nYou may also be looking for data that belongs to another agency or that complements the data we offer on this portal. The list below has some other places to find data. If we don\u0026rsquo;t have something you think we should include, please let us know!\nCounty data  San Diego County  The County keeps health statistics, property records and parcel maps, and air quality data, among other information.\n SANDAG  San Diego Association of Governments has demographic, transportation and crime data for the San Diego region.\n SanGIS  San Diego Geographic Information Source is a repository of GIS data for the city and county of San Diego. The data is free, but a login is required for access.\n ARJIS  Automated Regional Justice Information System collects crime data from police agencies in San Diego and Imperial counties. The crime data available here is monthly totals by agency of property and violent crimes as defined by the FBI\u0026rsquo;s Uniform Crime Reporting Program\nState data   California Open Data Portal\n  Open Justice\n  The California Department of Justice publishes crime statistics and a dashboard here.\n Traffic records  The California Highway Patrol collects collision data from all agencies in California.\nNational and international data  OpenStreetMap ArcGIS.com Data.gov PolicyMap USGS National Map U.S. Census Bureau American FactFinder Census Reporter World Bank  How can I request City data that isn\u0026rsquo;t published here? The California Public Records Act gives citizens the right to request government records. The City of San Diego has made the process easier by offering a way to request records online. You can also search previous requests for documents that have already been released.\nWhere can I find the Open Data Policy? Curious about what guides our Open Data program? Check out the Open Data Policy.\nWhat are the terms of use for this data portal? Please view the terms of use here.\n",
+     "departments": null,
+     "permalink": "https://dataportal.netlify.app/resources/",
+     "section": "",
+     "title": "Frequently Asked Questions"
    },
    {
      "categories": [
@@ -910,7 +926,7 @@
      "departments": null,
      "permalink": "https://dataportal.netlify.app/categories/public-safety/",
      "section": "Categories",
-     "title": "Public Safety"
+     "title": "Public safety"
    },
    {
      "categories": null,
@@ -1203,6 +1219,14 @@
      "permalink": "https://dataportal.netlify.app/tags/",
      "section": "Tags",
      "title": "Tags"
+   },
+   {
+     "categories": null,
+     "contents": "I. Introduction As a convenience to potential users, the City of San Diego (\u0026ldquo;City\u0026rdquo;) makes a variety of datasets (\u0026ldquo;Data\u0026rdquo;) available for download through this website. Your use of the Data is subject to these terms of use, which constitute a legal agreement between You and the City of San Diego (\u0026ldquo;City\u0026rdquo;). This legal agreement is referred to as the \u0026ldquo;Terms of Use.\u0026rdquo;\nII. Accepting the Terms of Use A. Means of Acceptance.\nIn order to use any of the Data, You must agree to these Terms of Use. You agree to the Terms of Use by either: (1) Clicking to accept the Terms of Use; or (2) Downloading or using any of the Data or any Derivative Work, in which case you understand and agree that the City will treat your download or use of the Data or a Derivative Work as an acceptance of the Terms of Use from that point forward.\nB Authority to Accept.\nYou represent that you have full capacity and authority to accept these Terms of Use. If you are accepting on behalf of your employer or another entity, you represent that you have full authority to bind your employer or such other entity to the Terms of Use.\nIII. Definitions “Data” means any of the data that is available for download through DataSD.org or data.sandiego.gov and includes any updates to that data.\n“Derivative Work” means a work that is based in any way or to any extent on the Data including without limitation any work that uses any of the Data in a modified form.\n“You” or “Your” refers to any individual or entity that seeks to use the Data.\nIV. City’s Intellectual Property Rights Not Affected If the City claims or seeks to protect any patent, copyright, or other intellectual property rights in any Data, the website will so indicate in the file containing such Data or on the page from which such Data is accessed. These Terms of Use do not grant You any title or right to any patent, copyright, or other such intellectual property rights that the City or others may have in the Data.\nV. Exclusion of Warranties A. The Data contains information and data compiled and processed by the City and third parties. The City makes no representation or warranty that the information contained in the Data is accurate, true or correct. In using the Data, you understand and agree that the information contained therein is subject to error, and cannot be relied upon without verification or site inspection.\nB. You understand and agree that your use of the Data is at your sole risk. The Data is made available on an “as is” and “as available” basis without any warranties of any kind, whether express or implied, including without limitation implied warranties of merchantability, fitness for a particular purpose, and non-infringement. Should there be an error, inaccuracy, or other defect in the Data, you assume the full cost of correcting any such error, inaccuracy or defect.\nC. No advice or information, whether oral or written, obtained by you from the City or through or from the Data will create any warranty not expressly stated in these Terms of Use.\nVI. Limitation of Liability and Indemnity A. In no event shall the City be liable for any direct, indirect, incidental, consequential or special damages (including without limitation, loss of use, time or data, inconvenience, commercial loss, lost profits or savings, or the cost of computer equipment and software), to the full extent that such may be disclaimed by law, or for any claim against You by any third party. In no event shall the City be liable for any claim, including claims by third parties, for loss or damages arising from erroneous Data or information contained in the Data.\nB. To the fullest extent permitted by law, You shall indemnify and save harmless the City, from any claim, loss, damage, injury or liability of any kind, nature and description (including, without limitation, incidental and consequential damages, court costs, attorney’s fees and costs of investigation), that arise directly or indirectly, in whole or in part, from Your use of the Data, including without limitation Your use of the Data in a Derivative Work. In addition to Your obligation to indemnify the City, You specifically acknowledge and agree that You have an immediate and independent obligation to defend the City from any claim which actually or potentially falls within this indemnification provision, even if the allegations are or may be groundless, false or fraudulent, which obligation arises at the time such claim is tendered to You by City and continues at all times thereafter.\nVII. Acceptance of Other Conditions For certain of the Data, there may be additional terms and conditions that are stated in the file containing such Data or on the page from which such Data is accessed. You understand and agree that You are bound by such additional terms and conditions.\nVIII. General Provisions A. These Terms of Use shall be governed by and interpreted under the laws of the State of California without regard to conflict of laws provisions. Any dispute arising out of these Terms of Use shall be subject to the exclusive venue of the state and federal courts within the Northern District of California, and You and the City hereby consent to the venue and jurisdiction of such courts.\nB. No modification to these Terms of Use, nor any waiver of any rights, shall be effective except by an instrument in writing signed by You and the City, and the waiver of any breach or default shall not constitute a waiver of any other right hereunder or any subsequent breach or default.\nC. These Terms of Use contain the entire agreement and understanding between You and the City with respect to the subject matter hereof and completely replace and supersede all prior agreements, understanding and representations. In no event will any additional terms or conditions be effective unless expressly accepted by the City in writing.\nD. If any provision of these Terms of Use is held to be invalid by a court of competent jurisdiction, then the remaining provisions will nevertheless remain in full force and effect.\nE. The City may modify these Terms of Use by posting notice of such modifications on this page. Any modification is effective upon posting, unless otherwise indicated.\nF. You agree that, if the City does not exercise or enforce any legal right or remedy contained in these Terms of Use (or that the City has the benefit of under any applicable law), this will not be taken to be a formal waiver of the City’s rights and that those rights or remedies will still be available to the City. Any waiver of any provision of these Terms of Use will be effective only if the City expressly states in a signed writing that it is waiving a specified provision.\n",
+     "departments": null,
+     "permalink": "https://dataportal.netlify.app/terms-use/",
+     "section": "",
+     "title": "Terms of Use"
    },
    {
      "categories": null,

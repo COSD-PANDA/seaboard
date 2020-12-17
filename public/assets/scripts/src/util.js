@@ -10,11 +10,11 @@ export function setContent (container, content) {
   return container.empty().append(content)
 }
 
-/*export function setParams (params) {
+export function setParams (params) {
   let newUrl = window.location.href.split('?')[0]
   if (!isEmpty(params)) newUrl += '?' + $.param(params)
   window.history.replaceState(null, null, newUrl)
-}*/
+}
 
 // Meant to mimic Jekyll's slugify function
 // https://github.com/jekyll/jekyll/blob/master/lib/jekyll/utils.rb#L142

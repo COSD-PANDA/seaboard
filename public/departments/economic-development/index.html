@@ -12,101 +12,55 @@
     (function() {
       'use strict';
 
-      var onload = function() {
-        
-        
-        if (!window.HTMLImports) {
-          document.dispatchEvent(
-            new CustomEvent('WebComponentsReady', {bubbles: true})
-          );
-        }
-      };
-
-      var webComponentsSupported = (
-        'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template')
-      );
-
-      if (!webComponentsSupported) {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https:\/\/dataportal.netlify.appassets/bower_components/webcomponentsjs/webcomponents-lite.min.js';
-        script.onload = onload;
-        document.head.appendChild(script);
-      } else {
-        onload();
-      }
-
-      var loadElement = function(url) {
-        var link = document.createElement('link')
-        link.rel = "import";
-        link.href = url;
-        document.head.appendChild(link);
-      }
-
-
-
       document.addEventListener('DOMContentLoaded', function(e) {
-          
-          var lazy_els = {
-              'paper-autocomplete': "https:\/\/dataportal.netlify.appassets/bower_components/paper-autocomplete/paper-autocomplete.html",
-              'px-spinner': "https:\/\/dataportal.netlify.appassets/bower_components/px-spinner/px-spinner.html",
-              'px-data-table': "https:\/\/dataportal.netlify.appassets/bower_components/px-data-table/px-data-table.html",
-              'paper-button': "https:\/\/dataportal.netlify.appassets/bower_components/paper-button/paper-button.html"
-          }
-          
-          loadElement(lazy_els['paper-autocomplete']);
+
         
-          loadElement(lazy_els['px-spinner']);
-          loadElement(lazy_els['px-data-table']);
-          loadElement(lazy_els['paper-button']);
 
+        let ddHidden = true;
+
+        $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+            ddHidden = false;
+        }).on('hide.bs.dropdown', function () {
+            ddHidden = true;
+        });
+        
+        
+
+        document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+          
+          
+          
           
 
-          let ddHidden = true;
+          event.preventDefault();
+          searchSubmit();
+        });
 
-          $('#dropdownMenuParent').on('show.bs.dropdown', function () {
-              ddHidden = false;
-          }).on('hide.bs.dropdown', function () {
-              ddHidden = true;
-          });
-          
-          
+        
 
-          document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
-            
-            
-            
-            
-
-            event.preventDefault();
-            searchSubmit();
-          });
+        document.getElementById("searchQuery").addEventListener('keyup', (event) => {
 
           
-
-          document.getElementById("searchQuery").addEventListener('keyup', (event) => {
-
-            
-              if (event.keyCode === 13) {
-                
-                  if (ddHidden) {
-                    
-                      $('#searchSubmit').dropdown('toggle');
-                  }
+            if (event.keyCode === 13) {
+              
+                if (ddHidden) {
                   
-                  searchSubmit();
-              } else {
-                
-                
-                if (event.target.value === "") {
-                  
-                  if (ddHidden === false) {
-                    
                     $('#searchSubmit').dropdown('toggle');
-                  }
+                }
+                
+                searchSubmit();
+            } else {
+              
+              
+              if (event.target.value === "") {
+                
+                if (ddHidden === false) {
+                  
+                  $('#searchSubmit').dropdown('toggle');
                 }
               }
-          }, false);
+            }
+        }, false);
           
       })
     })();
@@ -137,20 +91,20 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://data.sandiego.gov/datasets/">Browse catalog</a>
+        <a class="nav-link" href="../../datasets/">Browse catalog</a>
       </li>
       
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">Terms of Use</a>
+        <a class="nav-link" href="../../terms-use/">Terms of Use</a>
       </li>
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://data.sandiego.gov/terms-use/">About</a>
+        <a class="nav-link" href="../../get-started/">About</a>
       </li>
       <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://www.sandiego.gov/panda">Performance & Analytics Department</a>
+        <a class="nav-link" href="https://www.sandiego.gov/panda" target="_blank">Performance & Analytics Department</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="https://www.sandiego.gov/">sandiego.gov</a>
+        <a class="nav-link" href="https://www.sandiego.gov/" target="_blank">sandiego.gov</a>
       </li>
     </ul>
   </div>
@@ -256,6 +210,7 @@
 <script defer src="../../assets/scripts/dist/vendor/fuse.min.js"></script>
 <script defer src="../../assets/scripts/dist/vendor/mark.min.js"></script>
 <script defer src="../../assets/scripts/src/search.js"></script>
+<script defer src="../../assets/scripts/src/data-preview.js"></script>
 
     </body>
 </html>

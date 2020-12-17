@@ -3,11 +3,9 @@ import DatasetsList from './components/datasets-list.js'
 import CategoriesFilter from './components/categories-filter.js'
 import departmentsFilter from './components/departments-filter.js'
 import DatasetDisplay from './components/dataset-display.js'
-/*import {queryByComponent, setParams} from './util.js'*/
-import {queryByComponent} from './util.js'
+import {queryByComponent, setParams} from './util.js'
 
 const params = $.deparam(window.location.search.substr(1))
-
 
 // Check for these components on the page and initialize them
 const components = [

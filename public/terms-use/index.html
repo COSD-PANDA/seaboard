@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  
+  <link rel="stylesheet" href="https://dataportal.netlify.app/scss/style.css">
+
+  <script type="text/javascript">
+    (function() {
+      'use strict';
+
+      document.addEventListener('DOMContentLoaded', function(e) {
+
+        
+
+        let ddHidden = true;
+
+        $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+            ddHidden = false;
+        }).on('hide.bs.dropdown', function () {
+            ddHidden = true;
+        });
+        
+        
+
+        document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+          
+          
+          
+          
+
+          event.preventDefault();
+          searchSubmit();
+        });
+
+        
+
+        document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+          
+            if (event.keyCode === 13) {
+              
+                if (ddHidden) {
+                  
+                    $('#searchSubmit').dropdown('toggle');
+                }
+                
+                searchSubmit();
+            } else {
+              
+              
+              if (event.target.value === "") {
+                
+                if (ddHidden === false) {
+                  
+                  $('#searchSubmit').dropdown('toggle');
+                }
+              }
+            }
+        }, false);
+          
+      })
+    })();
+    </script>
+
+    <link rel="import" href="https://dataportal.netlify.appassets/bower_components/polymer/polymer-micro.html">
+   <link rel="import" href="https://dataportal.netlify.appassets/bower_components/iron-ajax/iron-ajax.html">
+
+</head>
+<html prefix="dct: http://purl.org/dc/terms/
+              rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+              dcat: http://www.w3.org/ns/dcat#
+              foaf: http://xmlns.com/foaf/0.1/">
+    <body>
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary text-light fixed-top">
+  
+  <div class="container">
+  <a class="navbar-brand header-logo-solid" href="../">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 77.07 61.43"><g id="initials-black"><path d="M40.57,0V20.93A18.36,18.36,0,0,1,43,57.31c14.4-1.5,25.39-13.93,25.39-28.75a28.55,28.55,0,0,0-1.9-10.26C62.37,7.59,52.12,0,40.57,0Z"/><path d="M11.11,35.76c-3.36-.22-4.43-1.53-4.43-3A2.7,2.7,0,0,1,9.62,30,5.19,5.19,0,0,1,13,31.54l5.2-3.78a10.76,10.76,0,0,0-8.56-4.09c-4.39,0-9.33,3.78-9.33,9.16,0,5,3.58,8.43,9.07,9.06,3.07.34,4.77,1.93,4.77,4.47a3.85,3.85,0,0,1-3.87,3.8,5.49,5.49,0,0,1-4.81-2.3L0,51.86A13.48,13.48,0,0,0,10.26,56.5,10.68,10.68,0,0,0,21,45.9c0-6.14-4.47-9.8-9.88-10.14"/><path d="M38.5,24.22H25.64V56h12.9c9.12,0,16.56-6.77,16.56-15.89S47.66,24.22,38.5,24.22m0,25.77h-6.3V30.18H38.5a9.61,9.61,0,0,1,9.83,9.88A9.67,9.67,0,0,1,38.54,50"/><path d="M72,27A31.64,31.64,0,0,1,42.22,58.62,23.66,23.66,0,0,0,71.71,22.79,30.65,30.65,0,0,1,72,27"/></g></svg>
+
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sdNavbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="sdNavbarToggler">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="../datasets/">Browse catalog</a>
+      </li>
+      
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="../terms-use/">Terms of Use</a>
+      </li>
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="../get-started/">About</a>
+      </li>
+      <li class="nav-item active mr-3">
+        <a class="nav-link" href="https://www.sandiego.gov/panda" target="_blank">Performance & Analytics Department</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.sandiego.gov/" target="_blank">sandiego.gov</a>
+      </li>
+    </ul>
+  </div>
+  
+  </div>
+  
+</nav>
+<div class="container default-page-container">
+	<div class="row pt-4">
+		<div class="col">
+			<nav aria-label="breadcrumb">
+
+
+
+
+
+
+<ol class="breadcrumb bg-light text-dark">
+  <li class="breadcrumb-item"><a href="../">Home</a></li>
+  
+
+      
+      
+        
+        
+
+        
+      
+      
+        
+        
+
+        
+
+          
+
+          
+
+            
+              <li class="breadcrumb-item active">
+                <a href='https://dataportal.netlify.app/terms-use/'>Terms of Use</a>
+              </li>
+            
+
+
+          
+
+        
+      
+      
+        
+        
+
+        
+      
+      
+    
+
+</ol>
+</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<h1 class="display-4 default-page-display-header">
+				Terms of Use
+			</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<h3 id="" class="mt-5 mb-3">I. Introduction</h3>
+<p>As a convenience to potential users, the City of San Diego (&ldquo;City&rdquo;) makes a variety of datasets (&ldquo;Data&rdquo;) available for download through this website. Your use of the Data is subject to these terms of use, which constitute a legal agreement between You and the City of San Diego (&ldquo;City&rdquo;). This legal agreement is referred to as the &ldquo;Terms of Use.&rdquo;</p>
+<h3 id="" class="mt-5 mb-3">II. Accepting the Terms of Use</h3>
+<p><strong>A.</strong> Means of Acceptance.</p>
+<p>In order to use any of the Data, You must agree to these Terms of Use. You agree to the Terms of Use by either: (1) Clicking to accept the Terms of Use; or (2) Downloading or using any of the Data or any Derivative Work, in which case you understand and agree that the City will treat your download or use of the Data or a Derivative Work as an acceptance of the Terms of Use from that point forward.</p>
+<p><strong>B</strong> Authority to Accept.</p>
+<p>You represent that you have full capacity and authority to accept these Terms of Use. If you are accepting on behalf of your employer or another entity, you represent that you have full authority to bind your employer or such other entity to the Terms of Use.</p>
+<h3 id="" class="mt-5 mb-3">III. Definitions</h3>
+<p>“Data” means any of the data that is available for download through DataSD.org or data.sandiego.gov and includes any updates to that data.</p>
+<p>“Derivative Work” means a work that is based in any way or to any extent on the Data including without limitation any work that uses any of the Data in a modified form.</p>
+<p>“You” or “Your” refers to any individual or entity that seeks to use the Data.</p>
+<h3 id="" class="mt-5 mb-3">IV. City’s Intellectual Property Rights Not Affected</h3>
+<p>If the City claims or seeks to protect any patent, copyright, or other intellectual property rights in any Data, the website will so indicate in the file containing such Data or on the page from which such Data is accessed. These Terms of Use do not grant You any title or right to any patent, copyright, or other such intellectual property rights that the City or others may have in the Data.</p>
+<h3 id="" class="mt-5 mb-3">V. Exclusion of Warranties</h3>
+<p><strong>A.</strong> The Data contains information and data compiled and processed by the City and third parties. The City makes no representation or warranty that the information contained in the Data is accurate, true or correct. In using the Data, you understand and agree that the information contained therein is subject to error, and cannot be relied upon without verification or site inspection.</p>
+<p><strong>B.</strong> You understand and agree that your use of the Data is at your sole risk. The Data is made available on an “as is” and “as available” basis without any warranties of any kind, whether express or implied, including without limitation implied warranties of merchantability, fitness for a particular purpose, and non-infringement. Should there be an error, inaccuracy, or other defect in the Data, you assume the full cost of correcting any such error, inaccuracy or defect.</p>
+<p><strong>C.</strong> No advice or information, whether oral or written, obtained by you from the City or through or from the Data will create any warranty not expressly stated in these Terms of Use.</p>
+<h3 id="" class="mt-5 mb-3">VI. Limitation of Liability and Indemnity</h3>
+<p><strong>A.</strong> In no event shall the City be liable for any direct, indirect, incidental, consequential or special damages (including without limitation, loss of use, time or data, inconvenience, commercial loss, lost profits or savings, or the cost of computer equipment and software), to the full extent that such may be disclaimed by law, or for any claim against You by any third party. In no event shall the City be liable for any claim, including claims by third parties, for loss or damages arising from erroneous Data or information contained in the Data.</p>
+<p><strong>B.</strong> To the fullest extent permitted by law, You shall indemnify and save harmless the City, from any claim, loss, damage, injury or liability of any kind, nature and description (including, without limitation, incidental and consequential damages, court costs, attorney’s fees and costs of investigation), that arise directly or indirectly, in whole or in part, from Your use of the Data, including without limitation Your use of the Data in a Derivative Work. In addition to Your obligation to indemnify the City, You specifically acknowledge and agree that You have an immediate and independent obligation to defend the City from any claim which actually or potentially falls within this indemnification provision, even if the allegations are or may be groundless, false or fraudulent, which obligation arises at the time such claim is tendered to You by City and continues at all times thereafter.</p>
+<h3 id="" class="mt-5 mb-3">VII. Acceptance of Other Conditions</h3>
+<p>For certain of the Data, there may be additional terms and conditions that are stated in the file containing such Data or on the page from which such Data is accessed. You understand and agree that You are bound by such additional terms and conditions.</p>
+<h3 id="" class="mt-5 mb-3">VIII. General Provisions</h3>
+<p><strong>A.</strong> These Terms of Use shall be governed by and interpreted under the laws of the State of California without regard to conflict of laws provisions. Any dispute arising out of these Terms of Use shall be subject to the exclusive venue of the state and federal courts within the Northern District of California, and You and the City hereby consent to the venue and jurisdiction of such courts.</p>
+<p><strong>B.</strong> No modification to these Terms of Use, nor any waiver of any rights, shall be effective except by an instrument in writing signed by You and the City, and the waiver of any breach or default shall not constitute a waiver of any other right hereunder or any subsequent breach or default.</p>
+<p><strong>C.</strong> These Terms of Use contain the entire agreement and understanding between You and the City with respect to the subject matter hereof and completely replace and supersede all prior agreements, understanding and representations. In no event will any additional terms or conditions be effective unless expressly accepted by the City in writing.</p>
+<p><strong>D.</strong> If any provision of these Terms of Use is held to be invalid by a court of competent jurisdiction, then the remaining provisions will nevertheless remain in full force and effect.</p>
+<p><strong>E.</strong> The City may modify these Terms of Use by posting notice of such modifications on this page. Any modification is effective upon posting, unless otherwise indicated.</p>
+<p><strong>F.</strong> You agree that, if the City does not exercise or enforce any legal right or remedy contained in these Terms of Use (or that the City has the benefit of under any applicable law), this will not be taken to be a formal waiver of the City’s rights and that those rights or remedies will still be available to the City. Any waiver of any provision of these Terms of Use will be effective only if the City expressly states in a signed writing that it is waiving a specified provision.</p>
+
+		</div>
+		
+	</div>
+</div>
+
+    <script defer src="../assets/scripts/dist/vendor/jquery.js"></script>
+<script defer src="../assets/scripts/dist/vendor/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="../assets/scripts/dist/vendor/jquery-deparam.js"></script>
+<script defer src="../assets/scripts/dist/vendor/lodash.js"></script>
+<script defer type="module" src="../assets/scripts/src/index.js"></script>
+<script defer src="../assets/scripts/src/main.js"></script>
+<script defer src="../assets/scripts/dist/vendor/fuse.min.js"></script>
+<script defer src="../assets/scripts/dist/vendor/mark.min.js"></script>
+<script defer src="../assets/scripts/src/search.js"></script>
+<script defer src="../assets/scripts/src/data-preview.js"></script>
+
+    </body>
+</html>
