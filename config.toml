@@ -1,4 +1,4 @@
-baseURL = "https://dataportal.netlify.app"
+baseURL = "https://sdopendata.netlify.app"
 languageCode = "en-us"
 title = "City of San Diego Open Data Portal"
 relativeURLS = true
