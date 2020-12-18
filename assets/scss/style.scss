@@ -110,9 +110,9 @@ $light: $fp_back;
 $link-color: $dark;
 $table_stripes: $fp_back;
 $table-accent-bg: $fp_back;
-$breadcrumb-divider: ">";
 $font-family-base: "Open Sans",Helvetica, Arial, sans-serif;
 $line-height-base: 1.6;
+$link-decoration: underline;
 
 @import "bootstrap-4.4.1/scss/bootstrap";
 
@@ -131,6 +131,12 @@ h6 {
 }
 
 /* Bootstrap class overrides */
+
+.navbar {
+  a {
+    text-decoration: none;
+  }
+}
 
 .navbar-dark .navbar-toggler {
   border-color: rgba(0, 0, 0, 0);
@@ -189,11 +195,6 @@ h6 {
     display: grid;
     grid-template-rows: 33.33% 66.67%;
     grid-template-columns: none;
-
-    a {
-      color: inherit;
-      text-decoration: underline;
-    }
     
   }
   .intro-hed {
@@ -321,6 +322,12 @@ dataset {
 		font-style: italic;
 		font-size: 0.9em;
 	}
+
+  h2 {
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 dataset:last-child {

@@ -2496,7 +2496,7 @@ sup {
 
 a {
   color: #37424a;
-  text-decoration: none;
+  text-decoration: underline;
   background-color: transparent; }
   a:hover {
     color: #161b1e;
@@ -4478,7 +4478,7 @@ fieldset:disabled a.btn {
 .btn-link {
   font-weight: 400;
   color: #37424a;
-  text-decoration: none; }
+  text-decoration: underline; }
   .btn-link:hover {
     color: #161b1e;
     text-decoration: underline; }
@@ -5714,7 +5714,7 @@ input[type="button"].btn-block {
     display: inline-block;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: ">"; }
+    content: "/"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }
@@ -9312,6 +9312,9 @@ h6 {
   line-height: 1.8; }
 
 /* Bootstrap class overrides */
+.navbar a {
+  text-decoration: none; }
+
 .navbar-dark .navbar-toggler {
   border-color: rgba(0, 0, 0, 0); }
 
@@ -9357,9 +9360,6 @@ h6 {
     display: grid;
     grid-template-rows: 33.33% 66.67%;
     grid-template-columns: none; }
-    .dp-jumbotron .dp-jumbotron-content a {
-      color: inherit;
-      text-decoration: underline; }
   .dp-jumbotron .intro-hed {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -9472,6 +9472,8 @@ dataset {
   dataset p.item-date {
     font-style: italic;
     font-size: 0.9em; }
+  dataset h2 a {
+    text-decoration: none; }
 
 dataset:last-child {
   border-bottom: none; }
