@@ -1,10 +1,2 @@
-_site
-.sass-cache
-.jekyll-metadata
-_config.dev.yml
-node_modules
-*.map
-serve
-site
-src/assets/bower_components
 .DS_Store
+public/
