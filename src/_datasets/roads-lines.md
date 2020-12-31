@@ -8,23 +8,23 @@ category:
 resources:
   - name: Roads lines
     url: >-
-      http://seshat.datasd.org/sde/roads_all/roads_datasd.zip
+      https://seshat.datasd.org/sde/roads_all/roads_datasd.zip
     format: shp
   - name: Roads lines
     url: >-
-      http://seshat.datasd.org/sde/roads_all/roads_datasd.pbf
+      https://seshat.datasd.org/sde/roads_all/roads_datasd.pbf
     format: pbf
   - name: Roads lines
     url: >-
-      http://seshat.datasd.org/sde/roads_all/roads_datasd.topojson
+      https://seshat.datasd.org/sde/roads_all/roads_datasd.topojson
     format: topojson
   - name: Roads lines
     url: >-
-      http://seshat.datasd.org/sde/roads_all/roads_datasd.geojson
+      https://seshat.datasd.org/sde/roads_all/roads_datasd.geojson
     format: geojson
   - name: Roads lines dictionary
     url: >-
-      http://seshat.datasd.org/sde/roads_all/roads_lines_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/roads_all/roads_lines_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

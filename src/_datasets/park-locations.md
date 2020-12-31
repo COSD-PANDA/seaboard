@@ -9,23 +9,23 @@ category:
 resources:
   - name: Park points
     url: >-
-      http://seshat.datasd.org/sde/parks/parks_datasd.zip
+      https://seshat.datasd.org/sde/parks/parks_datasd.zip
     format: shp
   - name: Park points
     url: >-
-      http://seshat.datasd.org/sde/parks/parks_datasd.pbf
+      https://seshat.datasd.org/sde/parks/parks_datasd.pbf
     format: pbf
   - name: Park points
     url: >-
-      http://seshat.datasd.org/sde/parks/parks_datasd.topojson
+      https://seshat.datasd.org/sde/parks/parks_datasd.topojson
     format: topojson
   - name: Park points
     url: >-
-      http://seshat.datasd.org/sde/parks/parks_datasd.geojson
+      https://seshat.datasd.org/sde/parks/parks_datasd.geojson
     format: geojson
   - name: Park points dictionary
     url: >-
-      http://seshat.datasd.org/sde/parks/parks_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/parks/parks_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-17'

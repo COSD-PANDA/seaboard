@@ -7,11 +7,11 @@ category:
 resources:
   - name: Property seized
     url: >-
-      http://seshat.datasd.org/pd/ripa_prop_seize_type_datasd.csv
+      https://seshat.datasd.org/pd/ripa_prop_seize_type_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      http://seshat.datasd.org/pd/ripa_prop_seize_type_dictionary_datasd.csv
+      https://seshat.datasd.org/pd/ripa_prop_seize_type_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'

@@ -6,7 +6,7 @@ category: Economy & Community
 resources:
   - name: Complaint Type Codes
     url: >-
-      http://seshat.datasd.org/dsd/complaint_types_datasd.csv
+      https://seshat.datasd.org/dsd/complaint_types_datasd.csv
     format: csv
 date_issued: '2016-05-03'
 date_modified: '2016-07-05'
