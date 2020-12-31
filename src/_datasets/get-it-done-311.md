@@ -6,27 +6,27 @@ category: City Management
 resources:
   - name: Get It Done Requests year-to-date
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2020_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2020_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2019
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2019_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2019_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2018
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2018_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2018_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2017
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2017_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2017_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2016
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2016_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2016_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests Data Dictionary
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
     format: csv
   - name: Get It Done Requests JSON API
     url: >-
@@ -34,7 +34,7 @@ resources:
     format: json
   - name: Get It Done Services
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_311_services_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_311_services_datasd.csv
     format: csv
   - name: Get It Done Services JSON API
     url: >-

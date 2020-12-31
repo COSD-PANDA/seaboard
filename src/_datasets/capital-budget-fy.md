@@ -7,7 +7,7 @@ category:
 resources:
   - name: CIP Budget
     url: >-
-      http://seshat.datasd.org/budget/budget_capital_fy_datasd.csv
+      https://seshat.datasd.org/budget/budget_capital_fy_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'

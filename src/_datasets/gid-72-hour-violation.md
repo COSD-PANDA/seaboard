@@ -6,11 +6,11 @@ category: City Management
 resources:
   - name: 72-hour Parking Violation Notifications
     url: >-
-      http://seshat.datasd.org/get_it_done_311/72_hour_violation_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/72_hour_violation_requests_datasd_v1.csv
     format: csv
   - name: 72-hour Parking Violation Notifications Data Dictionary
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
 date_modified: '2020-12-30'
