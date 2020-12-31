@@ -8,23 +8,23 @@ category:
 resources:
   - name: Recreation center points
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.zip
+      https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.zip
     format: shp
   - name: Recreation center points
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.pbf
+      https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.pbf
     format: pbf
   - name: Recreation center points
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.topojson
+      https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.topojson
     format: topojson
   - name: Recreation center points
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.geojson
+      https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.geojson
     format: geojson
   - name: Recreation center points dictionary
     url: >-
-      http://seshat.datasd.org/sde/rec_centers/rec_centers_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/rec_centers/rec_centers_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-16'
