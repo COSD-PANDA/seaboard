@@ -31,4 +31,4 @@ google_gtm:
   enabled: true
   code: "GTM-KDXK7NN"
 
-ds_preview_url: https://ymb9lgr199.execute-api.us-east-1.amazonaws.com/prod/dataset/preview
+ds_preview_url: https://jn60i72zj1.execute-api.us-west-2.amazonaws.com/prod/dataset/preview
