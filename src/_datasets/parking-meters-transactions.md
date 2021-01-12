@@ -8,13 +8,25 @@ category:
 resources:
   - name: Parking meters transactions - Year-to-date (raw)
     url: >-
-      https://seshat.datasd.org/parking_meters/treas_parking_payments_2020_datasd_v2.csv
+      https://seshat.datasd.org/parking_meters/treas_parking_payments_2021_datasd_v2.csv
     format: csv
   - name: Parking meters transactions - Year-to-date (aggregated by day)
     url: >-
-      https://seshat.datasd.org/parking_meters/treas_meters_2020_pole_by_mo_day_datasd_v2.csv
+      https://seshat.datasd.org/parking_meters/treas_meters_2021_pole_by_mo_day_datasd_v2.csv
     format: csv
   - name: Parking meters transactions - Year-to-date (aggregated by month)
+    url: >-
+      https://seshat.datasd.org/parking_meters/treas_meters_2021_pole_by_month_datasd_v2.csv
+    format: csv
+  - name: Parking meters transactions - 2020 (raw)
+    url: >-
+      https://seshat.datasd.org/parking_meters/treas_parking_payments_2020_datasd_v2.csv
+    format: csv
+  - name: Parking meters transactions - 2020 (aggregated by day)
+    url: >-
+      https://seshat.datasd.org/parking_meters/treas_meters_2020_pole_by_mo_day_datasd_v2.csv
+    format: csv
+  - name: Parking meters transactions - 2020 (aggregated by month)
     url: >-
       https://seshat.datasd.org/parking_meters/treas_meters_2020_pole_by_month_datasd_v2.csv
     format: csv
