@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Locations of artwork in the Civic Art Collection
-department: Commission for Arts and Culture
+department: Arts and Culture
 category: Culture & Recreation
 resources:
   - name: Locations of artwork

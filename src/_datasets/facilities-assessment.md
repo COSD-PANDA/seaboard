@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Facility Condition Index ratings for City buildings
-department: Public Works
+department: Real Estate Assets
 category:
   - City Management
 resources:
