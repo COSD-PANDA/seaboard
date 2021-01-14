@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Illegal Dumping Notifications
-department: Performance & Analytics
+department: Environmental Services
 category: City Management
 resources:
   - name: Illegal Dumping Notifications
