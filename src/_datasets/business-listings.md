@@ -5,25 +5,21 @@ department: City Treasurer
 category:
   - Economy & Community
 resources:
-  - name: Active certificates issued since 2008
+  - name: Active certificates
     url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_active_since08_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_active_datasd.csv
     format: csv
-  - name: Active certificates issued before 2008
+  - name: Inactive certificates issued since 2015 
     url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_active_pre08_datasd_v1.csv
-    format: csv
-  - name: Inactive certificates issued since 2010 
-    url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_2010to2019_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_since2015_datasd.csv
     format: csv
   - name: Inactive certificates issued 2000 to 2009 
     url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_2000to2009_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2000to2009_datasd.csv
     format: csv
   - name: Inactive certificates issued 1990 to 1999 
     url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_1990to1999_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_1990to1999_datasd.csv
     format: csv
   - name: Data dictionary
     url: >-
