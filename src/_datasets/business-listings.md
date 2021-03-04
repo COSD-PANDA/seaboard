@@ -11,15 +11,15 @@ resources:
     format: csv
   - name: Inactive certificates issued since 2015 
     url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_inactive_since2015_datasd.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2015tocurr_datasd.csv
     format: csv
   - name: Inactive certificates issued 2000 to 2009 
     url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2000to2009_datasd.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2000to2010_datasd.csv
     format: csv
   - name: Inactive certificates issued 1990 to 1999 
     url: >-
-      https://seshat.datasd.org/ttcs/sd_businesses_inactive_1990to1999_datasd.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_1990to2000_datasd.csv
     format: csv
   - name: Data dictionary
     url: >-
