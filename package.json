@@ -63,7 +63,7 @@
     "jquery-serializejson": "^2.6.2",
     "js-cookie": "^2.1.0",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "netlify-cli": "^1.2.2",
     "node-sass": "^4.7.2",
     "notie": "github:timwis/notie#string-types",
