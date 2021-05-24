@@ -1,0 +1,134 @@
+title: City of San Diego Open Data Portal
+greeting:
+description: Empowering San Diegans by making data usable.
+baseurl:
+
+share_img: /assets/img/sdlogo_share.jpg
+env: dev
+
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: src
+destination: serve
+
+# _config.build.yml overwrites these options when you run `gulp build`
+# Enables future posts (posts with dates in the future) and drafts
+future: true
+show_drafts: true
+# Disables the more accurate related posts for faster generating of the site
+lsi: false
+# Only make the last 10 posts so generating isn't slow
+limit_posts: 1
+
+# Dataset Previews
+ds_preview_url: https://5khyjpuoug.execute-api.us-west-2.amazonaws.com/dev/dataset/preview
+default_preview_rows: 15
+
+
+## Neek
+neek:
+    enabled: false
+    project_id: 58ae0bd08db53dfda8a88883
+    wkey: CBDFBC82DD8C99133FD1D00206D97E9A9B0769F4165E76D0BAEE44C161D31F8654A75803E4B92605902F95C3E1BB66326E66C2AEF653DE1D22A734BBF5F286A301C659F5240F78F47DA6899FBFF280080011DF0DDD0ADE14D88F5DFF5626C663
+
+
+github:
+    owner_name: MrMaksimize
+    repo_org: cityofsandiego
+    repo_branch: master
+    project_title: seaboard
+
+social:
+  - icon:	twitter
+    url:	https://twitter.com/mrmaksimize
+    desc: Follow Quandary on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+
+
+
+
+# Dataset schema
+schema: default
+
+# Nav bar
+navigation:
+  - title: Browse Data
+    url: /datasets/
+    target: "_self"
+  - title: Blog
+    url: https://medium.com/datasd
+    target: "_blank"
+
+# Collections
+collections:
+  datasets:
+    output: true
+    permalink: /datasets/:path/
+  departments:
+    output: true
+    permalink: /departments/:path/
+  stories:
+    output: true
+    permalink: /stories/:path/
+
+# Collections (cont'd)
+defaults:
+  - scope:
+      path: ""
+      type: datasets
+    values:
+      layout: dataset
+      category: Uncategorized
+      department: N/A
+  - scope:
+      path: ""
+      type: departments
+    values:
+      layout: department
+  - scope:
+      path: ""
+      type: stories
+    values:
+      layout: story
+
+# Blog setting
+excerpt_separator: <!--more-->
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Google Analytics
+google_analytics:
+  enabled: false
+  code: "UA-XXXXXX-1"
+
+# Google TagManager
+google_gtm:
+  enabled: false
+  code: "GTM-KDXK7NN"
+
+# Twitter
+twittercard:
+  enabled: false
+  username: "@"
+
+# Open Graph
+opengraph:
+  enabled: true
+
+# Exclude these files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .travis.yml
+  - node_modules
+  - scripts/src
+  - package.json
+  - webpack.config.js
+  - README.md
+  - LICENSE
