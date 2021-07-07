@@ -7,27 +7,27 @@ categories:
 resources:
   - name: Lifeguard station points
     url: >-
-      http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.zip
+      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.zip
     format: shp
   - name: Lifeguard station points
     url: >-
-      http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.pbf
+      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.pbf
     format: pbf
   - name: Lifeguard station points
     url: >-
-      http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.topojson
+      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.topojson
     format: topojson
   - name: Lifeguard station points
     url: >-
-      http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.geojson
+      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.geojson
     format: geojson
   - name: Lifeguard station points dictionary
     url: >-
-      http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

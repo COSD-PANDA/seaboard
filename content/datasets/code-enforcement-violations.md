@@ -5,19 +5,19 @@ categories: Economy & Community
 resources:
   - name: Code Enforcement Cases 2015 through 2018
     url: >-
-      http://seshat.datasd.org/dsd/code_enf_past_3_yr_datasd_v1.csv
+      https://seshat.datasd.org/dsd/code_enf_past_3_yr_datasd_v1.csv
     format: csv
   - name: Code Enforcement Dictionary
     url: >-
-      http://seshat.datasd.org/dsd/code_enforcement_dictionary_datasd.csv
+      https://seshat.datasd.org/dsd/code_enforcement_dictionary_datasd.csv
     format: csv
   - name: Complaint Type Codes
     url: >-
-      http://seshat.datasd.org/dsd/complaint_types_datasd.csv
+      https://seshat.datasd.org/dsd/complaint_types_datasd.csv
     format: csv
   - name: Code Enforcement Remedies
     url: >-
-      http://seshat.datasd.org/dsd/code_enf_remedies_datasd.csv
+      https://seshat.datasd.org/dsd/code_enf_remedies_datasd.csv
     format: csv
 date_issued: '2016-06-21'
 date_modified: '2018-01-19'

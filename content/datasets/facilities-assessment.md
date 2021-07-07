@@ -1,16 +1,16 @@
 ---
 title: Facility Condition Index ratings for City buildings
-departments: Public Works
+departments: Real Estate Assets
 categories:
   - City Management
 resources:
   - name: FCI ratings
     url: >-
-      http://seshat.datasd.org/facilities/facilities_assessment_datasd.csv
+      https://seshat.datasd.org/facilities/facilities_assessment_datasd.csv
     format: csv
   - name: FCI ratings dictionary
     url: >-
-      http://seshat.datasd.org/facilities/facilities_assessment_dictionary_datasd.csv
+      https://seshat.datasd.org/facilities/facilities_assessment_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'

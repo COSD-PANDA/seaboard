@@ -6,23 +6,23 @@ categories:
 resources:
   - name: Parameter Results, 2011 - 2019
     url: >-
-      http://seshat.datasd.org/pud/omp/water_quality_2011_2019_datasd.csv
+      https://seshat.datasd.org/pud/omp/water_quality_2011_2019_datasd.csv
     format: csv
   - name: Parameter Results, 2000 - 2010
     url: >-
-      http://seshat.datasd.org/pud/omp/water_quality_2000_2010_datasd.csv
+      https://seshat.datasd.org/pud/omp/water_quality_2000_2010_datasd.csv
     format: csv
   - name: Parameter Results, 1990 - 1999
     url: >-
-      http://seshat.datasd.org/pud/omp/water_quality_1990_1999_datasd.csv
+      https://seshat.datasd.org/pud/omp/water_quality_1990_1999_datasd.csv
     format: csv
   - name: Parameter Testing Station Locations
     url: >-
-      http://seshat.datasd.org/pud/omp/reference_stations_water_quality.csv
+      https://seshat.datasd.org/pud/omp/reference_stations_water_quality.csv
     format: csv
   - name: Dictionary
     url: >-
-      http://seshat.datasd.org/pud/omp/water_quality_dictionary_datasd.csv
+      https://seshat.datasd.org/pud/omp/water_quality_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'

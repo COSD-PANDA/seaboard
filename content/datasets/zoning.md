@@ -7,27 +7,27 @@ categories:
 resources:
   - name: Zoning
     url: >-
-      http://seshat.datasd.org/sde/zoning/zoning_datasd.zip
+      https://seshat.datasd.org/sde/zoning/zoning_datasd.zip
     format: shp
   - name: Zoning
     url: >-
-      http://seshat.datasd.org/sde/zoning/zoning_datasd.pbf
+      https://seshat.datasd.org/sde/zoning/zoning_datasd.pbf
     format: pbf
   - name: Zoning
     url: >-
-      http://seshat.datasd.org/sde/zoning/zoning_datasd.topojson
+      https://seshat.datasd.org/sde/zoning/zoning_datasd.topojson
     format: topojson
   - name: Zoning
     url: >-
-      http://seshat.datasd.org/sde/zoning/zoning_datasd.geojson
+      https://seshat.datasd.org/sde/zoning/zoning_datasd.geojson
     format: geojson
   - name: Zoning dictionary
     url: >-
-      http://seshat.datasd.org/sde/zoning/zoning_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/zoning/zoning_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-16'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

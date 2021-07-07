@@ -6,11 +6,11 @@ categories:
 resources:
   - name: Disposition Codes, current
     url: >-
-      http://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv
+      https://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv
     format: csv
   - name: Disposition Codes, prior to October 17, 2017
     url: >-
-      http://seshat.datasd.org/pd/pd_dispo_codes_historical_datasd.csv
+      https://seshat.datasd.org/pd/pd_dispo_codes_historical_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'

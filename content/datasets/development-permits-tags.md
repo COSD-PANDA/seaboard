@@ -6,15 +6,15 @@ categories:
 resources:
   - name: Project tags
     url: >-
-      http://seshat.datasd.org/dsd/permits_set1_project_tags_datasd.csv
+      https://seshat.datasd.org/dsd/permits_set1_project_tags_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      http://seshat.datasd.org/dsd/permits_set1_project_tags_datasd_dict.csv
+      https://seshat.datasd.org/dsd/permits_set1_project_tags_datasd_dict.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-03-10'
-date_modified: '2020-12-07'
+date_modified: '2021-07-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

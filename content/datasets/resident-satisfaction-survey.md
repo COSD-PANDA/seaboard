@@ -5,15 +5,15 @@ categories: City Management
 resources:
   - name: Resident Satisfaction survey results weighted
     url: >-
-      http://seshat.datasd.org/resident_survey/resident_survey_weighted_datasd.csv
+      https://seshat.datasd.org/resident_survey/resident_survey_weighted_datasd.csv
     format: csv
   - name: Resident Satisfaction survey results unweighted
     url: >-
-      http://seshat.datasd.org/resident_survey/resident_survey_unweighted_datasd.csv
+      https://seshat.datasd.org/resident_survey/resident_survey_unweighted_datasd.csv
     format: csv
   - name: Resident Satisfaction survey data dictionary
     url: >-
-      http://seshat.datasd.org/resident_survey/resident_survey_dictionary_datasd.csv
+      https://seshat.datasd.org/resident_survey/resident_survey_dictionary_datasd.csv
     format: csv
 date_issued: '2017-05-03'
 date_modified: '2017-05-03'

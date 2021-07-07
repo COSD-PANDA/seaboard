@@ -1,18 +1,19 @@
 ---
+schema: default
 title: Graffiti Removal Requests
-departments: Performance & Analytics
-categories: City Management
+department: Performance & Analytics
+category: City Management
 resources:
   - name: Graffiti Removal Requests
     url: >-
-      http://seshat.datasd.org/get_it_done_311/graffiti_removal_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/graffiti_removal_requests_datasd_v1.csv
     format: csv
   - name: Graffiti Removal Requests Data Dictionary
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
-date_modified: '2020-12-07'
+date_modified: '2021-07-07'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov

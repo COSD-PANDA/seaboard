@@ -8,23 +8,23 @@ categories:
 resources:
   - name: Street segment lines
     url: >-
-      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.zip
+      https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.zip
     format: shp
   - name: Street segment lines
     url: >-
-      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.pbf
+      https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.pbf
     format: pbf
   - name: Street segment lines
     url: >-
-      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.topojson
+      https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.topojson
     format: topojson
   - name: Street segment lines
     url: >-
-      http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.geojson
+      https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.geojson
     format: geojson
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

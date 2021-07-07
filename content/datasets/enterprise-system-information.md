@@ -6,7 +6,7 @@ categories:
 resources:
   - name: SB 272 Catalog
     url: >-
-      http://seshat.datasd.org/sb272_catalog/it_sb272_datasd.csv
+      https://seshat.datasd.org/sb272_catalog/it_sb272_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-08-01'

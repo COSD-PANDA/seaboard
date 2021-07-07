@@ -8,27 +8,27 @@ categories:
 resources:
   - name: Bike Master Plan route lines 
     url: >-
-      http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.zip
+      https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.zip
     format: shp
   - name: Bike Master Plan route lines
     url: >-
-      http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.pbf
+      https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.pbf
     format: pbf
   - name: Bike Master Plan route lines
     url: >-
-      http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.topojson
+      https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.topojson
     format: topojson
   - name: Bike Master Plan route lines
     url: >-
-      http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.geojson
+      https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.geojson
     format: geojson
   - name: Bike Master Plan route lines dictionary
     url: >-
-      http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

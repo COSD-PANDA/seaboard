@@ -7,27 +7,27 @@ categories:
 resources:
   - name: Police neighborhoods
     url: >-
-      http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.zip
+      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.zip
     format: shp
   - name: Police neighborhoods
     url: >-
-      http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.pbf
+      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.pbf
     format: pbf
   - name: Police neighborhoods
     url: >-
-      http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.topojson
+      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.topojson
     format: topojson
   - name: Police neighborhoods
     url: >-
-      http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.geojson
+      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.geojson
     format: geojson
   - name: Police neighborhoods dictionary
     url: >-
-      http://seshat.datasd.org/sde/pd/pd_neighborhoods_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/pd/pd_neighborhoods_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

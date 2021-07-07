@@ -6,7 +6,7 @@ categories:
 resources:
   - name: Operating Budget 
     url: >-
-      http://seshat.datasd.org/budget/budget_operating_datasd.csv
+      https://seshat.datasd.org/budget/budget_operating_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'

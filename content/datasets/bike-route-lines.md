@@ -8,27 +8,27 @@ categories:
 resources:
   - name: Existing bike route lines
     url: >-
-      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip
+      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip
     format: shp
   - name: Existing bike route lines
     url: >-
-      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.pbf
+      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.pbf
     format: pbf
   - name: Existing bike route lines
     url: >-
-      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topojson
+      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topojson
     format: topojson
   - name: Existing bike route lines
     url: >-
-      http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson
+      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson
     format: geojson
   - name: Existing bike route lines dictionary
     url: >-
-      http://seshat.datasd.org/sde/bike_route/bike_routes_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/bike_route/bike_routes_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

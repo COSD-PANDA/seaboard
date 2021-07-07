@@ -8,27 +8,27 @@ categories:
 resources:
   - name: Library points
     url: >-
-      http://seshat.datasd.org/sde/library/libraries_datasd.zip
+      https://seshat.datasd.org/sde/library/libraries_datasd.zip
     format: shp
   - name: Library points
     url: >-
-      http://seshat.datasd.org/sde/library/libraries_datasd.pbf
+      https://seshat.datasd.org/sde/library/libraries_datasd.pbf
     format: pbf
   - name: Library points
     url: >-
-      http://seshat.datasd.org/sde/library/libraries_datasd.topojson
+      https://seshat.datasd.org/sde/library/libraries_datasd.topojson
     format: topojson
   - name: Library points
     url: >-
-      http://seshat.datasd.org/sde/library/libraries_datasd.geojson
+      https://seshat.datasd.org/sde/library/libraries_datasd.geojson
     format: geojson
   - name: Library points dictionary
     url: >-
-      http://seshat.datasd.org/sde/library/libraries_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/library/libraries_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: County of San Diego
 maintainer_email: data@sandiego.gov
 ---

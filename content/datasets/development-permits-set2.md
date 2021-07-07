@@ -6,23 +6,23 @@ categories:
 resources:
   - name: Active approvals
     url: >-
-      http://seshat.datasd.org/dsd/permits_set2_active_datasd.csv
+      https://seshat.datasd.org/dsd/permits_set2_active_datasd.csv
     format: csv
   - name: Closed approvals
     url: >-
-      http://seshat.datasd.org/dsd/permits_set2_closed_datasd.csv
+      https://seshat.datasd.org/dsd/permits_set2_closed_datasd.csv
     format: csv
   - name: All approvals, closed and active (large file)
     url: >-
-      http://seshat.datasd.org/dsd/dsd_permits_all_accela.csv
+      https://seshat.datasd.org/dsd/dsd_permits_all_accela.csv
     format: csv
   - name: Dictionary
     url: >-
-      http://seshat.datasd.org/dsd/permits_set2_datasd_dict.csv
+      https://seshat.datasd.org/dsd/permits_set2_datasd_dict.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-03-10'
-date_modified: '2020-12-07'
+date_modified: '2021-07-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

@@ -6,11 +6,11 @@ categories:
 resources:
   - name: Candidates and Ballot Measures
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_recipients_datasd.csv
+      https://seshat.datasd.org/campaign_fin/financial_support_recipients_datasd.csv
     format: csv
   - name: Candidates and Ballot Measures Dictionary
     url: >-
-      http://seshat.datasd.org/campaign_fin/financial_support_recipients_dictionary_datasd.csv
+      https://seshat.datasd.org/campaign_fin/financial_support_recipients_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-14'

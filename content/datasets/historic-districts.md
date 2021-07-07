@@ -7,27 +7,27 @@ categories:
 resources:
   - name: Historical districts
     url: >-
-      http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.zip
+      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.zip
     format: shp
   - name: Historical districts
     url: >-
-      http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.pbf
+      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.pbf
     format: pbf
   - name: Historical districts
     url: >-
-      http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.topojson
+      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.topojson
     format: topojson
   - name: Historical districts
     url: >-
-      http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.geojson
+      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.geojson
     format: geojson
   - name: Historical districts dictionary
     url: >-
-      http://seshat.datasd.org/sde/historic_districts/historic_districts_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/historic_districts/historic_districts_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

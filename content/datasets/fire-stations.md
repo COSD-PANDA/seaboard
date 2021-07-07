@@ -7,27 +7,27 @@ categories:
 resources:
   - name: Fire station points
     url: >-
-      http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.zip
+      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.zip
     format: shp
   - name: Fire station points
     url: >-
-      http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.pbf
+      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.pbf
     format: pbf
   - name: Fire station points
     url: >-
-      http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.topojson
+      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.topojson
     format: topojson
   - name: Fire station points
     url: >-
-      http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.geojson
+      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.geojson
     format: geojson
   - name: Fire station points dictionary
     url: >-
-      http://seshat.datasd.org/sde/fire_stations/fire_stations_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/fire_stations/fire_stations_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

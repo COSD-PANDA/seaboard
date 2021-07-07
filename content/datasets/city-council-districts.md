@@ -7,27 +7,27 @@ categories:
 resources:
   - name: City Council districts
     url: >-
-      http://seshat.datasd.org/sde/council/council_districts_datasd.zip
+      https://seshat.datasd.org/sde/council/council_districts_datasd.zip
     format: shp
   - name: City Council districts
     url: >-
-      http://seshat.datasd.org/sde/council/council_districts_datasd.pbf
+      https://seshat.datasd.org/sde/council/council_districts_datasd.pbf
     format: pbf
   - name: City Council districts
     url: >-
-      http://seshat.datasd.org/sde/council/council_districts_datasd.topojson
+      https://seshat.datasd.org/sde/council/council_districts_datasd.topojson
     format: topojson
   - name: City Council districts
     url: >-
-      http://seshat.datasd.org/sde/council/council_districts_datasd.geojson
+      https://seshat.datasd.org/sde/council/council_districts_datasd.geojson
     format: geojson
   - name: City Council districts dictionary
     url: >-
-      http://seshat.datasd.org/sde/council/council_districts_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/council/council_districts_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2020-12-08'
+date_modified: '2021-06-29'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

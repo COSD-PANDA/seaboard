@@ -7,27 +7,27 @@ categories:
 resources:
   - name: Cases FY20
     url: >-
-      http://seshat.datasd.org/crb/crb_cases_fy2020_datasd.csv
+      https://seshat.datasd.org/crb/crb_cases_fy2020_datasd.csv
     format: csv
   - name: Allegations FY20
     url: >-
-      http://seshat.datasd.org/crb/crb_allegations_fy2020_datasd.csv
+      https://seshat.datasd.org/crb/crb_allegations_fy2020_datasd.csv
     format: csv
   - name: Body worn camera details FY20
     url: >-
-      http://seshat.datasd.org/crb/crb_cases_bwc_fy2020_datasd.csv
+      https://seshat.datasd.org/crb/crb_cases_bwc_fy2020_datasd.csv
     format: csv
   - name: Cases and allegations, FY19
     url: >-
-      http://seshat.datasd.org/crb/crb_cases_fy19_datasd.csv
+      https://seshat.datasd.org/crb/crb_cases_fy19_datasd.csv
     format: csv
   - name: Body worn camera details FY19
     url: >-
-      http://seshat.datasd.org/crb/crb_cases_bwc_fy19_datasd.csv
+      https://seshat.datasd.org/crb/crb_cases_bwc_fy19_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      http://seshat.datasd.org/crb/dictionary.csv
+      https://seshat.datasd.org/crb/dictionary.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-09-04'

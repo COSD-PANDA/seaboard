@@ -7,15 +7,15 @@ categories:
 resources:
   - name: Overall Condition Index (2015)
     url: >-
-      http://seshat.datasd.org/tsw/oci_2015_datasd.csv
+      https://seshat.datasd.org/tsw/oci_2015_datasd.csv
     format: csv
   - name: Overall Condition Index (2011)
     url: >-
-      http://seshat.datasd.org/tsw/oci_2011_datasd.csv
+      https://seshat.datasd.org/tsw/oci_2011_datasd.csv
     format: csv
   - name: Overall Condition Index Dictionary
     url: >-
-      http://seshat.datasd.org/tsw/oci_dictionary_datasd.csv
+      https://seshat.datasd.org/tsw/oci_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'

@@ -8,27 +8,27 @@ categories:
 resources:
   - name: Joint use parks
     url: >-
-      http://seshat.datasd.org/sde/joint_use/joint_use_datasd.zip
+      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.zip
     format: shp
   - name: Joint use parks
     url: >-
-      http://seshat.datasd.org/sde/joint_use/joint_use_datasd.pbf
+      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.pbf
     format: pbf
   - name: Joint use parks
     url: >-
-      http://seshat.datasd.org/sde/joint_use/joint_use_datasd.topojson
+      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.topojson
     format: topojson
   - name: Joint use parks
     url: >-
-      http://seshat.datasd.org/sde/joint_use/joint_use_datasd.geojson
+      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.geojson
     format: geojson
   - name: Joint use parks dictionary
     url: >-
-      http://seshat.datasd.org/sde/joint_use/joint_use_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/joint_use/joint_use_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

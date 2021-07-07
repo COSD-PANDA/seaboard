@@ -6,27 +6,27 @@ categories:
 resources:
   - name: Address points
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.zip
+      https://seshat.datasd.org/sde/addrapn/addrapn_datasd.zip
     format: shp
   - name: Address points
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.pbf
+      https://seshat.datasd.org/sde/addrapn/addrapn_datasd.pbf
     format: pbf
   - name: Address points
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.topojson
+      https://seshat.datasd.org/sde/addrapn/addrapn_datasd.topojson
     format: topojson
   - name: Address points
     url: >-
-      http://seshat.datasd.org/sde/addrapn/addrapn_datasd.geojson
+      https://seshat.datasd.org/sde/addrapn/addrapn_datasd.geojson
     format: geojson
   - name: Address points dictionary
     url: >-
-      http://seshat.datasd.org/sde/addrapn/address_apn_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/addrapn/address_apn_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---

@@ -8,27 +8,27 @@ categories:
 resources:
   - name: Business improvement district
     url: >-
-      http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.zip
+      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.zip
     format: shp
   - name: Business improvement districts
     url: >-
-      http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.pbf
+      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.pbf
     format: pbf
   - name: Business improvement districts
     url: >-
-      http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.topojson
+      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.topojson
     format: topojson
   - name: Business improvement districts
     url: >-
-      http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.geojson
+      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.geojson
     format: geojson
   - name: Business improvement districts dictionary
     url: >-
-      http://seshat.datasd.org/sde/bus_improvement_districts/bids_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/bus_improvement_districts/bids_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

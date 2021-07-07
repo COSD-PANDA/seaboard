@@ -6,11 +6,11 @@ categories:
 resources:
   - name: Operating Actuals
     url: >-
-      http://seshat.datasd.org/budget/actuals_operating_datasd.csv
+      https://seshat.datasd.org/budget/actuals_operating_datasd.csv
     format: csv
   - name: Operating actuals dictionary
     url: >-
-      http://seshat.datasd.org/budget/operating_actuals_dictionary_datasd.csv
+      https://seshat.datasd.org/budget/operating_actuals_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2018-10-15'

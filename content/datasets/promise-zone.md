@@ -7,27 +7,27 @@ categories:
 resources:
   - name: Promise Zone boundary
     url: >-
-      http://seshat.datasd.org/sde/pz/promise_zone_datasd.zip
+      https://seshat.datasd.org/sde/pz/promise_zone_datasd.zip
     format: shp
   - name: Promise Zone boundary
     url: >-
-      http://seshat.datasd.org/sde/pz/promise_zone_datasd.pbf
+      https://seshat.datasd.org/sde/pz/promise_zone_datasd.pbf
     format: pbf
   - name: Promise Zone boundary
     url: >-
-      http://seshat.datasd.org/sde/pz/promise_zone_datasd.topojson
+      https://seshat.datasd.org/sde/pz/promise_zone_datasd.topojson
     format: topojson
   - name: Promise Zone boundary
     url: >-
-      http://seshat.datasd.org/sde/pz/promise_zone_datasd.geojson
+      https://seshat.datasd.org/sde/pz/promise_zone_datasd.geojson
     format: geojson
   - name: Promise Zone boundary dictionary
     url: >-
-      http://seshat.datasd.org/sde/addrapn/pz/promise_zone_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/addrapn/pz/promise_zone_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2020-12-08'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

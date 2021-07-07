@@ -7,11 +7,11 @@ categories:
 resources:
   - name: Sample Sites
     url: >-
-      http://seshat.datasd.org/water_testing/sample_sites_datasd_v1.csv
+      https://seshat.datasd.org/water_testing/sample_sites_datasd_v1.csv
     format: csv
   - name: Sample Sites Dictionary
     url: >-
-      http://seshat.datasd.org/water_testing/sample_sites_dictionary_datasd.csv
+      https://seshat.datasd.org/water_testing/sample_sites_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-15'

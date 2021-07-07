@@ -5,27 +5,31 @@ categories: City Management
 resources:
   - name: Get It Done Requests year-to-date
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2020_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2021_requests_datasd_v1.csv
+    format: csv
+  - name: Get It Done Requests 2020
+    url: >-
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2020_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2019
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2019_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2019_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2018
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2018_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2018_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2017
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2017_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2017_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests 2016
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_2016_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_2016_requests_datasd_v1.csv
     format: csv
   - name: Get It Done Requests Data Dictionary
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
     format: csv
   - name: Get It Done Requests JSON API
     url: >-
@@ -33,14 +37,14 @@ resources:
     format: json
   - name: Get It Done Services
     url: >-
-      http://seshat.datasd.org/get_it_done_311/get_it_done_311_services_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_311_services_datasd.csv
     format: csv
   - name: Get It Done Services JSON API
     url: >-
       http://san-diego.spotreporters.com/open311/v2/services.json
     format: json
 date_issued: '2016-05-26'
-date_modified: '2020-12-07'
+date_modified: '2021-07-07'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov

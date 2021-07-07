@@ -4,33 +4,29 @@ departments: City Treasurer
 categories:
   - Economy & Community
 resources:
-  - name: Active certificates issued since 2008
+  - name: Active certificates
     url: >-
-      http://seshat.datasd.org/ttcs/sd_businesses_active_since08_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_active_datasd.csv
     format: csv
-  - name: Active certificates issued before 2008
+  - name: Inactive certificates issued since 2015 
     url: >-
-      http://seshat.datasd.org/ttcs/sd_businesses_active_pre08_datasd_v1.csv
-    format: csv
-  - name: Inactive certificates issued since 2010 
-    url: >-
-      http://seshat.datasd.org/ttcs/sd_businesses_2010to2019_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2015tocurr_datasd.csv
     format: csv
   - name: Inactive certificates issued 2000 to 2009 
     url: >-
-      http://seshat.datasd.org/ttcs/sd_businesses_2000to2009_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2000to2010_datasd.csv
     format: csv
   - name: Inactive certificates issued 1990 to 1999 
     url: >-
-      http://seshat.datasd.org/ttcs/sd_businesses_1990to1999_datasd_v1.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_1990to2000_datasd.csv
     format: csv
   - name: Data dictionary
     url: >-
-      http://seshat.datasd.org/ttcs/sd_businesses_dictionary_datasd.csv
+      https://seshat.datasd.org/ttcs/sd_businesses_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2020-12-08'
+date_modified: '2021-07-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

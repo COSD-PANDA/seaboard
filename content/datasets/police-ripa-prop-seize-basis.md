@@ -6,15 +6,15 @@ categories:
 resources:
   - name: Basis for property seizure
     url: >-
-      http://seshat.datasd.org/pd/ripa_prop_seize_basis_datasd.csv
+      https://seshat.datasd.org/pd/ripa_prop_seize_basis_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      http://seshat.datasd.org/pd/ripa_prop_seize_basis_dictionary_datasd.csv
+      https://seshat.datasd.org/pd/ripa_prop_seize_basis_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
-date_modified: '2020-10-29'
+date_modified: '2021-03-31'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

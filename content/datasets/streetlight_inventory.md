@@ -5,11 +5,11 @@ categories: City Infrastructure
 resources:
   - name: Streetlight point locations
     url: >-
-      http://seshat.datasd.org/streetlight_inventory/streetlight_locations_datasd_v1.csv
+      https://seshat.datasd.org/streetlight_inventory/streetlight_locations_datasd_v1.csv
     format: csv
   - name: Streetlight point locations dictionary
     url: >-
-      http://seshat.datasd.org/streetlight_inventory/streetlight_locations_dictionary_datasd.csv
+      https://seshat.datasd.org/streetlight_inventory/streetlight_locations_dictionary_datasd.csv
     format: csv
 date_issued: '2017-05-03'
 date_modified: '2017-05-03'

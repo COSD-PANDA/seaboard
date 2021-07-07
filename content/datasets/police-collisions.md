@@ -6,15 +6,15 @@ categories:
 resources:
   - name: Traffic collisions (2015 through year-to-date)
     url: >-
-      http://seshat.datasd.org/pd/pd_collisions_datasd_v1.csv
+      https://seshat.datasd.org/pd/pd_collisions_datasd_v1.csv
     format: csv
   - name: Traffic collisions dictionary
     url: >-
-      http://seshat.datasd.org/pd/pd_collisions_dictionary_datasd.csv
+      https://seshat.datasd.org/pd/pd_collisions_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-05-03'
-date_modified: '2020-12-07'
+date_modified: '2021-07-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

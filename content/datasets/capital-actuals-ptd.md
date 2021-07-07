@@ -6,7 +6,7 @@ categories:
 resources:
   - name: Project-to-date CIP Actuals
     url: >-
-      http://seshat.datasd.org/budget/actuals_capital_ptd_datasd.csv
+      https://seshat.datasd.org/budget/actuals_capital_ptd_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2018-10-15'
