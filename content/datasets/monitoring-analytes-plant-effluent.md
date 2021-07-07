@@ -1,8 +1,7 @@
 ---
-schema: default
 title: Monitoring of Select Chemical Parameters in Water Treatment Plant Effluents
-department: Public Utilities
-category:
+departments: Public Utilities
+categories:
   - Energy & Environment
   - City Infrastructure
 resources:

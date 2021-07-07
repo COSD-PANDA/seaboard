@@ -1,7 +1,7 @@
 ---
 title: 72-hour Parking Violation Notifications
-department: Police
-category: City Management
+departments: Police
+categories: City Management
 resources:
   - name: 72-hour Parking Violation Notifications
     url: >-

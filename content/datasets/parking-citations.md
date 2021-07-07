@@ -1,8 +1,7 @@
 ---
-schema: default
 title: Parking Citations
-department: City Treasurer
-category:
+departments: City Treasurer
+categories:
   - Transportation
 resources:
   - name: Parking Citations 2021, Jan to current

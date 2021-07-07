@@ -1,7 +1,7 @@
 ---
 title: Illegal Dumping Notifications
-department: Environmental Services
-category: City Management
+departments: Environmental Services
+categories: City Management
 resources:
   - name: Illegal Dumping Notifications
     url: >-

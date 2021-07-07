@@ -1,7 +1,7 @@
 ---
 title: Locations of artwork in the Civic Art Collection
-department: Arts & Culture
-category: Culture & Recreation
+departments: Arts & Culture
+categories: Culture & Recreation
 resources:
   - name: Locations of artwork
     url: >-

@@ -1,8 +1,7 @@
 ---
-schema: default
 title: Graffiti Removal Requests
-department: Performance & Analytics
-category: City Management
+departments: Performance & Analytics
+categories: City Management
 resources:
   - name: Graffiti Removal Requests
     url: >-
