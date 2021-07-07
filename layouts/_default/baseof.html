@@ -8,64 +8,6 @@
   {{ $style := resources.Get "scss/style.scss" | resources.ToCSS }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-  <script type="text/javascript">
-    (function() {
-      'use strict';
-
-      document.addEventListener('DOMContentLoaded', function(e) {
-
-        // Dropdown var for testing
-
-        let ddHidden = true;
-
-        $('#dropdownMenuParent').on('show.bs.dropdown', function () {
-            ddHidden = false;
-        }).on('hide.bs.dropdown', function () {
-            ddHidden = true;
-        });
-        
-        // Button event listener for search submit
-
-        document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
-          
-          // When search button clicked, prevent default to avoid
-          // moving focus and deactivating search
-          // but submit the search
-
-          event.preventDefault();
-          searchSubmit();
-        });
-
-        // Keyboard event listener for search
-
-        document.getElementById("searchQuery").addEventListener('keyup', (event) => {
-
-          // Check if key pressed is enter
-            if (event.keyCode === 13) {
-              // If the dropdown is hidden, show it
-                if (ddHidden) {
-                  
-                    $('#searchSubmit').dropdown('toggle');
-                }
-                // Either way, run the search
-                searchSubmit();
-            } else {
-              // If key is any other, check to see if
-              // user has backspaced input clear
-              if (event.target.value === "") {
-                // If so, check if dropdown is showing
-                if (ddHidden === false) {
-                  // If so, hide it
-                  $('#searchSubmit').dropdown('toggle');
-                }
-              }
-            }
-        }, false);
-          
-      })
-    })();
-    </script>
-
 </head>
 <html prefix="dct: http://purl.org/dc/terms/
               rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

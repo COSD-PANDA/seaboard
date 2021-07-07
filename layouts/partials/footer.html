@@ -1,10 +1,73 @@
 <script defer src="/assets/scripts/dist/vendor/jquery.js"></script>
 <script defer src="/assets/scripts/dist/vendor/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-<script defer src="/assets/scripts/dist/vendor/jquery-deparam.js"></script>
-<script defer src="/assets/scripts/dist/vendor/lodash.js"></script>
-<script defer type="module" src="/assets/scripts/src/index.js"></script>
-<script defer src="/assets/scripts/src/main.js"></script>
+
+{{ if .IsHome}}
+<script type="text/javascript">
+    (function() {
+      'use strict';
+
+      document.addEventListener('DOMContentLoaded', function(e) {
+
+        // Dropdown var for testing
+
+        let ddHidden = true;
+
+        $('#dropdownMenuParent').on('show.bs.dropdown', function () {
+            ddHidden = false;
+        }).on('hide.bs.dropdown', function () {
+            ddHidden = true;
+        });
+        
+        // Button event listener for search submit
+
+        document.getElementById("searchSubmit").addEventListener("mousedown", (event) => {
+          
+          // When search button clicked, prevent default to avoid
+          // moving focus and deactivating search
+          // but submit the search
+
+          event.preventDefault();
+          searchSubmit();
+        });
+
+        // Keyboard event listener for search
+
+        document.getElementById("searchQuery").addEventListener('keyup', (event) => {
+
+          // Check if key pressed is enter
+            if (event.keyCode === 13) {
+              // If the dropdown is hidden, show it
+                if (ddHidden) {
+                  
+                    $('#searchSubmit').dropdown('toggle');
+                }
+                // Either way, run the search
+                searchSubmit();
+            } else {
+              // If key is any other, check to see if
+              // user has backspaced input clear
+              if (event.target.value === "") {
+                // If so, check if dropdown is showing
+                if (ddHidden === false) {
+                  // If so, hide it
+                  $('#searchSubmit').dropdown('toggle');
+                }
+              }
+            }
+        }, false);
+          
+      })
+    })();
+</script>
 <script defer src="/assets/scripts/dist/vendor/fuse.min.js"></script>
 <script defer src="/assets/scripts/dist/vendor/mark.min.js"></script>
 <script defer src="/assets/scripts/src/search.js"></script>
+
+{{ else if eq .Section "datasets"}}
+
 <script defer src="/assets/scripts/src/data-preview.js"></script>
+<script defer src="/assets/scripts/dist/vendor/jquery-deparam.js"></script>
+<script defer src="/assets/scripts/dist/vendor/lodash.js"></script>
+<script defer type="module" src="/assets/scripts/src/index.js"></script>
+
+{{ end }}

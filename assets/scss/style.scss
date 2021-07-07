@@ -132,7 +132,7 @@ h6 {
 
 /* Bootstrap class overrides */
 
-.navbar {
+.navbar, .filter-grid, .breadcrumb-item {
   a {
     text-decoration: none;
   }
@@ -300,6 +300,10 @@ div.dropdown-menu.search-dropdown {
 }
 .filter-grid-depts {
 	grid-row-start: 2;
+
+}
+.filter-grid-search {
+  grid-row-start: 3;
 
 }
 
