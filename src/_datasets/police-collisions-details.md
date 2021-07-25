@@ -19,7 +19,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-08-12'
-date_modified: '2021-07-23'
+date_modified: '2021-07-24'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
