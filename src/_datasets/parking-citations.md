@@ -5,7 +5,11 @@ department: City Treasurer
 category:
   - Transportation
 resources:
-  - name: Parking Citations 2021, Jan to current
+  - name: Parking Citations 2021, July-Dec
+    url: >-
+      https://seshat.datasd.org/treasurer/parking_citations_2021_part2_datasd.csv
+    format: csv
+  - name: Parking Citations 2021, Jan-June
     url: >-
       https://seshat.datasd.org/treasurer/parking_citations_2021_part1_datasd.csv
     format: csv
