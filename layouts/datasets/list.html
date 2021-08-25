@@ -13,9 +13,6 @@
 		</div>
 		<div class="row">
 		  <div class="col datasets-main-listing" data-component="datasets-list">
-		    
-		    <input type="text" data-hook="search-query" placeholder="Search..." class="form-control mb-2">
-
 		    <button type="button" class="btn btn-primary dropdown-toggle rounded mb-2 mt-2" data-toggle="collapse" data-target="#catalogFilters" aria-expanded="false">
 			    Filters
 			</button>
@@ -29,6 +26,11 @@
 			    	<p class="text-muted text-uppercase font-weight-light mb-0 mt-2">Departments</p>
 			    	<div data-component="departments-filter" data-show="300"></div>
 			    </div>
+			    <div class="filter-grid-search">
+			    	<p class="text-muted text-uppercase font-weight-light mb-0 mt-2">Search</p>
+			    	<input type="text" data-hook="search-query" placeholder="Filter datasets by keyword" class="form-control mb-2">
+			    </div>
+			    
 			  </div>
 			</div>
 		    
