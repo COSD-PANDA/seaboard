@@ -100,7 +100,14 @@
 				<tr>
 					<th>Date modified</th>
 					<td>
-						<span id="dateModified">{{ .Params.date_modified }}</span>
+						<!-- <span id="dateModified">{{ .Params.date_modified }}</span> -->
+						{{ $tmp_title := .Params.title }}
+						{{ $reviews := site.Data.datasets }}
+						{{ range $reviews }}
+						{{ if eq .title $tmp_title }}
+							<span id="dateModified">{{ .modified }}</span>
+						{{ end }}
+						{{ end }}
 					</td>
 				</tr>
 				<tr>
