@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ partial "header" . }}
+<div class="container default-page-container">
+	<div class="row pt-4">
+		<div class="col">
+			{{ partial "breadcrumbs-new" . }}
+		</div>
+	</div>
+	<div class="row">
+	  <div class="col">
+		 <h1 class="display-4 default-page-display-header">
+		 	{{.Title}}
+		 </h1> 
+	  </div>
+	</div>
+	<div class="row">
+		<div class="col">
+			{{.Content}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			{{ range .Pages }}
+			<dataset>
+			  <h2>
+			  	<a href="{{ .RelPermalink }}">{{.Title}}</a>
+			  </h2>
+			  <p class="item-date">				
+			  Last modified: {{ .Params.date_modified }}
+			  </p>
+			  {{.Summary}}
+			</dataset>
+  			{{ end }}
+		</div>
+	</div>
+</div>
+{{ end }}
+  
+  
+  
