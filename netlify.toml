@@ -29,7 +29,7 @@ HUGO_VERSION = "0.69.2"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
-[redirects]
+[[redirects]]
   from = "/data.json"
   to = "https://datacatalog.netlify.app/data.json"
   status = 200
