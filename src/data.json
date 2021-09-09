@@ -45,7 +45,7 @@
     {% endcapture %}{% if title %}
     {
       "title": {{ title | jsonify }},
-      "identifier": "{{ dataset.url | replace:'/datasets/','' | replace:'/',''}}",
+      "identifier": "{{ dataset.url | replace:'/datasets/','' | replace:'/','' | replace:'-','_'}}",
       "@type": "dcat:Dataset",
       "issued": {{ date_issued | jsonify }},
       "modified": {{ date_modified | jsonify }},
