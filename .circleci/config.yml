@@ -5,7 +5,7 @@
 defaults: &defaults
   working_directory: ~/seaboard
   docker:
-    - image:  cityofsandiego/seaboard:latest
+    - image:  cityofsandiego/seaboard:ssl-fix
 
 version: 2
 jobs:
@@ -13,7 +13,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: curl -o- -L -k https://yarnpkg.com/install.sh | bash
+      - run: curl -o- -L -k https://classic.yarnpkg.com/install.sh | bash
       - run: yarn cache clean
       - run: yarn install --force
       - run: bundle install
