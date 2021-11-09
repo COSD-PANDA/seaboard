@@ -7,7 +7,7 @@ category:
 resources:
   - name: Project tags
     url: >-
-      https://seshat.datasd.org/dsd/permitsproject_tags_datasd.csv
+      https://seshat.datasd.org/dsd/permits_project_tags_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
