@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Development Services Department Project Approvals by Status, set 1 of 2
+title: Development Permits legacy data
 department: Development Services
 category:
   - Economy & Community
@@ -27,6 +27,8 @@ date_modified: '2021-11-09'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Select permit types organized by permit status.
+Approvals for permits, maps, agreements, and other applications processed by Development Services Department legacy permitting system. The legacy system contains applications submitted in paper or through a hybrid process. Approval types began migrating to the current cloud-based system in 2018. Data from the current system can be found in [this dataset](/datasets/development-permits-set2/).
 
-This larger set of permit types includes all other permits that are not in [set 2](/datasets/development-permits-set2/).
+<!--more-->
+
+A permit is required for projects such as new construction, additions, remodeling, or repairs to electrical, mechanical, and plumbing systems. A full list of the available record types is available within the metadata.
