@@ -27,7 +27,7 @@ date_modified: '2021-11-09'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Permit approvals from Development Services Department's current cloud-based permitting system. Permit types began migrating to the current system in 2018. Data from the legacy system can be found in [this dataset](/datasets/development-permits-set1/).
+Approvals for permits, maps, agreements, and other applications processed by Development Services Department's current cloud-based permitting system. Approval types began migrating to the current system in 2018. Data from the legacy system can be found in [this dataset](/datasets/development-permits-set1/).
 
 <!--more-->
 
