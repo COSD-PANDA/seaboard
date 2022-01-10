@@ -7,6 +7,10 @@ category:
 resources:
   - name: Financial Transactions Reported by Election Committees year-to-date
     url: >-
+      https://seshat.datasd.org/campaign_fin/financial_support_2022_datasd_v1.csv
+    format: csv
+  - name: Financial Transactions Reported by Election Committees 2021
+    url: >-
       https://seshat.datasd.org/campaign_fin/financial_support_2021_datasd_v1.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees 2020
