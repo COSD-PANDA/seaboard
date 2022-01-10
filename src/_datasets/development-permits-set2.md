@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Development Services Department Project Approvals by Status, set 2 of 2
+title: Development Permits
 department: Development Services
 category:
   - Economy & Community
@@ -23,10 +23,12 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-03-10'
-date_modified: '2021-01-11'
+date_modified: '2022-01-04'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Select permit types organized by permit status.
+Approvals for permits, maps, agreements, and other applications processed by Development Services Department's current cloud-based permitting system. Approval types began migrating to the current system in 2018. Data from the legacy system can be found in [this dataset](/datasets/development-permits-set1/).
 
-This smaller set of types includes simple permits for no-plan mechanical, electrical, and plumbing work, as well as certain photovoltaic, newsrack, transportation, and traffic control permits. To see data on the remaining permit types, please visit the page for [set 1](/datasets/development-permits-set1/).
+<!--more-->
+
+A permit is required for projects such as new construction, additions, remodeling, or repairs to electrical, mechanical, and plumbing systems. A full list of the available record types is available within the metadata.
