@@ -49,7 +49,7 @@ resources:
       http://san-diego.spotreporters.com/open311/v2/services.json
     format: json
 date_issued: '2016-05-26'
-date_modified: '2022-04-09'
+date_modified: '2022-04-10'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
