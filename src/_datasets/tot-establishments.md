@@ -27,6 +27,6 @@ San Diego Municipal Code (SDMC) §35.0113 requires within 30 days of commencing 
 
 Except for `date_created`, the fields in the dataset are those that are required to appear on the certificate per the SDMC. The `date_created` is the date the certificate was created in the City’s TOT system. Due to a system upgrade, many certificates with a creation date of 01/01/2012 were created on or before that date. This date is different from the issue date printed on the TOT certificates, which is the date the City prints and sends the certificate to the Operator.
 
-For additional information on Transient Occupancy Registration Certificates and the Transient Occupancy Tax, please visit our website at (sandiego.gov/treasurer/taxesfees/tot/)[https://www.sandiego.gov/treasurer/taxesfees/tot].
+For additional information on Transient Occupancy Registration Certificates and the Transient Occupancy Tax, please visit our website at [sandiego.gov/treasurer/taxesfees/tot/](https://www.sandiego.gov/treasurer/taxesfees/tot).
 
 *see “Transient” and “Occupancy” definitions in San Diego Municipal Code §35.0102
