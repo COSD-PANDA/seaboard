@@ -20,7 +20,6 @@ date_modified: '2022-04-19'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Account number and property address for Rental Unit Business Tax accounts that were paid for the current calendar year.
+Account number and property address for Rental Unit Business Tax accounts that are being billed, have an active status and have paid Rental Unit Business Tax in the current year. 
 <!--more-->
-
-The Rental Unit Business Tax is an annual tax owed by anyone who owns, operates, or manages the rental of any residential real estate, including single- and multi-family residences, mobile homes, mobile home parks, trailers, trailer parks, apartments, bungalows, hotels, and motels. Billing statements for the upcoming year are typically sent in December, and the tax is usually due by March 1.
+The Rental Unit Business Tax is an annual tax owed by anyone who owns, operates, or manages the rental of any residential real estate, including single- and multi-family residences, mobile homes, mobile home parks, trailers, trailer parks, apartments, bungalows, hotels, and motels. Billing statements for the upcoming year are typically issued in January, and the tax is usually due by March 1. Visit [sandiego.gov/treasurer/payments/btax/](https://www.sandiego.gov/treasurer/payments/btax/) for information to pay your Rental Unit Business Tax.
