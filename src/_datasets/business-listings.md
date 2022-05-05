@@ -13,6 +13,10 @@ resources:
     url: >-
       https://seshat.datasd.org/ttcs/sd_businesses_inactive_2015tocurr_datasd.csv
     format: csv
+  - name: Inactive certificates issued 2010 to 2014 
+    url: >-
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2010to2015_datasd.csv
+    format: csv
   - name: Inactive certificates issued 2000 to 2009 
     url: >-
       https://seshat.datasd.org/ttcs/sd_businesses_inactive_2000to2010_datasd.csv
