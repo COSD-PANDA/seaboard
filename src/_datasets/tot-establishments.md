@@ -23,7 +23,7 @@ maintainer_email: data@sandiego.gov
 Certificate number and property addresses for active Transient Occupancy Tax (TOT) vacation type certificates.
 <!--more-->
 
-Properties located in the City of San Diego that are rented to Transients for less than one month are required to obtain a Transient Occupancy Registration Certificate.  This includes short-term residential occupancy properties of any kind (i.e. houses, condos, rooms, or spaces rented directly by the owner/operator, by property management companies or via internet travel services).  The short-term residential occupancy properties are generally issued a "Vacation" type TOT Certificate.
+Properties located in the City of San Diego that are rented to Transients for less than one month are required to obtain a Transient Occupancy Registration Certificate.  This includes short-term residential occupancy properties of any kind (i.e. houses, condos, rooms, or spaces) rented directly by the owner/operator, by property management companies or via internet travel services.  The short-term residential occupancy properties are generally issued a "Vacation" type TOT Certificate.
 
 In general, the data available in this dataset is the same information that is displayed on the TOT Certificate.
 
