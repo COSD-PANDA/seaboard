@@ -13,6 +13,10 @@ resources:
     url: >-
       https://seshat.datasd.org/ttcs/sd_businesses_inactive_2015tocurr_datasd.csv
     format: csv
+  - name: Inactive certificates issued 2010 to 2014 
+    url: >-
+      https://seshat.datasd.org/ttcs/sd_businesses_inactive_2010to2015_datasd.csv
+    format: csv
   - name: Inactive certificates issued 2000 to 2009 
     url: >-
       https://seshat.datasd.org/ttcs/sd_businesses_inactive_2000to2010_datasd.csv
@@ -27,7 +31,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2022-04-19'
+date_modified: '2022-05-06'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
