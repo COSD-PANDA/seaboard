@@ -6,31 +6,31 @@ category: City Management
 resources:
   - name: Open Get It Done Requests
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_open_requests_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_open_datasd.csv
     format: csv
   - name: Recently Closed (2021 or later) Get It Done Requests submitted in 2022
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_closed_2022_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2022_datasd.csv
     format: csv
   - name: Recently Closed Get It Done Requests submitted in 2021
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_closed_2021_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2021_datasd.csv
     format: csv
   - name: Recently Closed Get It Done Requests submitted from 2016-2020
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_closed_2016to2020_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2016to2020_datasd.csv
     format: csv
   - name: Historical (closed 2020 or earlier) Get It Done Requests submitted in 2020
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_historical_2020_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_historical_2020_datasd.csv
     format: csv
   - name: Historical Get It Done Requests submitted in 2019
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_historical_2019_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_historical_2019_datasd.csv
     format: csv
   - name: Historical Get It Done Requests submitted from 2016-2018
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_historical_2016to2018_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_historical_2016to2018_datasd.csv
     format: csv
   - name: Get It Done Requests Data Dictionary
     url: >-
