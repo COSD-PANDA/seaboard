@@ -1,7 +1,7 @@
-s3_id: <%= ENV['S3_ID'] %>
-s3_secret: <%= ENV['S3_SECRET'] %>
+s3_id: <%= ENV['S3_ID_ENT'] %>
+s3_secret: <%= ENV['S3_SECRET_ENT'] %>
 s3_bucket: data.sandiego.gov
-cloudfront_distribution_id: E19109GIWONHFC
+cloudfront_distribution_id: E1ZYPIKIXHC6RJ
 
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
