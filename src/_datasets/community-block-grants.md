@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Census tracts eligible for CDBG
     url: >-
-      https://seshat.datasd.org/sde/block_grants/block_grants_datasd.topojson
+      https://seshat.datasd.org/sde/block_grants/block_grants_datasd.topo.json
     format: topojson
   - name: Census tracts eligible for CDBG
     url: >-

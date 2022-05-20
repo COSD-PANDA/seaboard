@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Business improvement districts
     url: >-
-      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.topojson
+      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.topo.json
     format: topojson
   - name: Business improvement districts
     url: >-

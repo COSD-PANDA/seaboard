@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Revolving Loan Fund coverage boundaries
     url: >-
-      https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.topojson
+      https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.topo.json
     format: topojson
   - name: Revolving Loan Fund coverage boundaries
     url: >-

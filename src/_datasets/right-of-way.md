@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Right-of-way parcels
     url: >-
-      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.topojson
+      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.topo.json
     format: topojson
   - name: Right-of-way parcels
     url: >-

@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Community planning districts
     url: >-
-      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.topojson
+      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.topo.json
     format: topojson
   - name: Community planning districts
     url: >-

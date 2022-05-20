@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Promise Zone boundary
     url: >-
-      https://seshat.datasd.org/sde/pz/promise_zone_datasd.topojson
+      https://seshat.datasd.org/sde/pz/promise_zone_datasd.topo.json
     format: topojson
   - name: Promise Zone boundary
     url: >-

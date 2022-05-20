@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: San Diego boundary
     url: >-
-      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.topojson
+      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.topo.json
     format: topojson
   - name: San Diego boundary
     url: >-
