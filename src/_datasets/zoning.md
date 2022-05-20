@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Zoning
     url: >-
-      https://seshat.datasd.org/sde/zoning/zoning_datasd.topojson
+      https://seshat.datasd.org/sde/zoning/zoning_datasd.topo.json
     format: topojson
   - name: Zoning
     url: >-

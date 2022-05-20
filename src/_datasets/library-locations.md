@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Library points
     url: >-
-      https://seshat.datasd.org/sde/library/libraries_datasd.topojson
+      https://seshat.datasd.org/sde/library/libraries_datasd.topo.json
     format: topojson
   - name: Library points
     url: >-

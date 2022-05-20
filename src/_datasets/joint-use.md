@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Joint use parks
     url: >-
-      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.topojson
+      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.topo.json
     format: topojson
   - name: Joint use parks
     url: >-

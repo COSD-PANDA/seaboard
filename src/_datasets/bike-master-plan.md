@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Bike Master Plan route lines
     url: >-
-      https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.topojson
+      https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.topo.json
     format: topojson
   - name: Bike Master Plan route lines
     url: >-

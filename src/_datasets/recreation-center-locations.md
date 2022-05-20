@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Recreation center points
     url: >-
-      https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.topojson
+      https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.topo.json
     format: topojson
   - name: Recreation center points
     url: >-

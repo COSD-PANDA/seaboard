@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Transit Stops Locations
     url: >-
-      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.topojson
+      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.topo.json
     format: topojson
   - name: Transit Stops Locations
     url: >-

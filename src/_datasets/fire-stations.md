@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Fire station points
     url: >-
-      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.topojson
+      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.topo.json
     format: topojson
   - name: Fire station points
     url: >-

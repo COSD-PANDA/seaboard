@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Street segment lines
     url: >-
-      https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.topojson
+      https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.topo.json
     format: topojson
   - name: Street segment lines
     url: >-

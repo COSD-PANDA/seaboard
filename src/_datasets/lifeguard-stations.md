@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Lifeguard station points
     url: >-
-      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.topojson
+      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.topo.json
     format: topojson
   - name: Lifeguard station points
     url: >-

@@ -20,7 +20,7 @@ resources:
     format: pbf
   - name: Police beats
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_beats_datasd.topojson
+      https://seshat.datasd.org/sde/pd/pd_beats_datasd.topo.json
     format: topojson
   - name: Police beats
     url: >-

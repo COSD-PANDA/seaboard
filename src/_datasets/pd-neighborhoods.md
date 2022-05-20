@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Police neighborhoods
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.topojson
+      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.topo.json
     format: topojson
   - name: Police neighborhoods
     url: >-

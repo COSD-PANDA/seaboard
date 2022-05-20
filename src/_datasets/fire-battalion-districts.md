@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Fire battalion districts
     url: >-
-      https://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.topojson
+      https://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.topo.json
     format: topojson
   - name: Fire battalion districts
     url: >-

@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_datasd.topojson
+      https://seshat.datasd.org/sde/mhpa/mhpa_datasd.topo.json
     format: topojson
   - name: MHPA
     url: >-
