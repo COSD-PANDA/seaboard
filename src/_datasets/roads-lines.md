@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Roads lines
     url: >-
-      https://seshat.datasd.org/sde/roads_all/roads_datasd.topojson
+      https://seshat.datasd.org/sde/roads_all/roads_datasd.topo.json
     format: topojson
   - name: Roads lines
     url: >-

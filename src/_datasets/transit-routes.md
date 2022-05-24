@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Transit routes
     url: >-
-      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.topojson
+      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.topo.json
     format: topojson
   - name: Transit routes
     url: >-

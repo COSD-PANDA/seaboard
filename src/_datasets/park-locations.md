@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Park points
     url: >-
-      https://seshat.datasd.org/sde/parks/parks_datasd.topojson
+      https://seshat.datasd.org/sde/parks/parks_datasd.topo.json
     format: topojson
   - name: Park points
     url: >-

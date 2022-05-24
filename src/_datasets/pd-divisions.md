@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Police divisions
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_divisions_datasd.topojson
+      https://seshat.datasd.org/sde/pd/pd_divisions_datasd.topo.json
     format: topojson
   - name: Police divisions
     url: >-

@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: City Council districts
     url: >-
-      https://seshat.datasd.org/sde/council/council_districts_datasd.topojson
+      https://seshat.datasd.org/sde/council/council_districts_datasd.topo.json
     format: topojson
   - name: City Council districts
     url: >-

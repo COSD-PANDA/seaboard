@@ -16,7 +16,7 @@ resources:
     format: pbf
   - name: Historical districts
     url: >-
-      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.topojson
+      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.topo.json
     format: topojson
   - name: Historical districts
     url: >-

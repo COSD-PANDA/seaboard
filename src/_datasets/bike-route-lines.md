@@ -17,7 +17,7 @@ resources:
     format: pbf
   - name: Existing bike route lines
     url: >-
-      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topojson
+      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topo.json
     format: topojson
   - name: Existing bike route lines
     url: >-
