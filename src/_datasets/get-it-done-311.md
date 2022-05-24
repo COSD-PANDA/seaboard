@@ -8,34 +8,35 @@ resources:
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_open_datasd.csv
     format: csv
-  - name: Recently Closed (2021 or later) Get It Done Requests submitted in 2022
+  - name: Get It Done Requests closed in 2022
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2022_datasd.csv
     format: csv
-  - name: Recently Closed Get It Done Requests submitted in 2021
+  - name: Get It Done Requests closed in 2021
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2021_datasd.csv
     format: csv
-  - name: Recently Closed Get It Done Requests submitted from 2016-2020
+  - name: Get It Done Requests closed in 2020
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2016to2020_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2020_datasd.csv
     format: csv
-  - name: Historical (closed 2020 or earlier) Get It Done Requests submitted in 2020
+  - name: Get It Done Requests closed in 2019
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_historical_2020_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2019_datasd.csv
     format: csv
-  - name: Historical Get It Done Requests submitted in 2019
+  - name: Get It Done Requests closed in 2018
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_historical_2019_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2018_datasd.csv
     format: csv
-  - name: Historical Get It Done Requests submitted from 2016-2018
+  - name: Get It Done Requests closed in 2017
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_historical_2016to2018_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2017_datasd.csv
     format: csv
-  - name: Get It Done Requests Data Dictionary
+  - name: Get It Done Requests closed in 2016
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2016_datasd.csv
     format: csv
+  
 date_issued: '2016-05-26'
 date_modified: '2022-05-23'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
@@ -45,9 +46,7 @@ maintainer_email: data@sandiego.gov
 The <a href="https://www.sandiego.gov/get-it-done" target="_blank" rel="noopener">Get It Done program</a> allows residents and visitors to report certain types of non-emergency problems to the City using the Get It Done mobile app, web app, or by telephone. This dataset contains all Get It Done reports the City has received since the program launched in May 2016.
 <!--more-->
 
-__New! Please Note:__ Get it Done usage has grown year-over-year, and along with the increasing report volume, interest in analyzing reports has grown. This has required a change in how the data are published to better meet the needs of analysts and keep file sizes manageable. Analysts who are interested in recent activity can get all __open__ reports in a single file. Reports that were __closed recently__ (2021 or later) are published in one of three files. __Historical__ reports - those that were submitted and closed between 2016 and 2020 - are available separately. All of the files for closed reports (recent and historical) are further divided by year submitted.
-
-Users who would prefer to get reports by problem type should refer to the datasets for:
+__New!__ We have reorganized the data into a single file of currently open reports and closed reports by year. Users who would prefer to get reports by problem type should refer to the datasets for:
 
 - [72-hour parking violations](/datasets/gid-72-hour-violation/)
 - [Graffiti](/datasets/gid-graffiti/)
