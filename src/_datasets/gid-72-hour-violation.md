@@ -6,14 +6,14 @@ category: City Management
 resources:
   - name: 72-hour Parking Violation Notifications
     url: >-
-      https://seshat.datasd.org/get_it_done_311/72_hour_violation_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_72_hour_violation_requests_datasd_v1.csv
     format: csv
   - name: 72-hour Parking Violation Notifications Data Dictionary
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
-date_modified: '2022-05-04'
+date_modified: '2022-05-24'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
