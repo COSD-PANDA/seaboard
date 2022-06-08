@@ -1,7 +1,7 @@
 ---
 schema: default
 title: City Owned Properties - Details
-department: Real Estate Assets
+department: Department of Real Estate and Airport Management
 category:
   - City Infrastructure
 resources:
