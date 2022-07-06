@@ -67,7 +67,7 @@
     "netlify-cli": "^1.2.2",
     "node-sass": "^4.7.2",
     "notie": "github:timwis/notie#string-types",
-    "select2": "^4.0.2",
+    "select2": "^4.0.6",
     "sw-precache": "^5.0.0"
   }
 }
