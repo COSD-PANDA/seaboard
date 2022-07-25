@@ -5,6 +5,10 @@ department: Public Utilities
 category:
   - Energy & Environment
 resources:
+  - name: Parameter Results, 2020 - 2021
+    url: >-
+      https://datasd.dev.s3.amazonaws.com/pud/omp/water_quality_2011_2019_datasd.csv
+    format: csv
   - name: Parameter Results, 2011 - 2019
     url: >-
       https://seshat.datasd.org/pud/omp/water_quality_2011_2019_datasd.csv
@@ -19,7 +23,7 @@ resources:
     format: csv
   - name: Parameter Testing Station Locations
     url: >-
-      https://seshat.datasd.org/pud/omp/reference_stations_water_quality.csv
+      https://datasd.dev.s3.amazonaws.com/pud/omp/reference_stations_water_quality.csv
     format: csv
   - name: Dictionary
     url: >-
@@ -27,7 +31,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'
-date_modified: '2020-07-02'
+date_modified: '2022-07-25'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
