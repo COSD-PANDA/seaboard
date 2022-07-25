@@ -7,7 +7,7 @@ category:
 resources:
   - name: Parameter Results, 2020 - 2021
     url: >-
-      https://datasd.dev.s3.amazonaws.com/pud/omp/water_quality_2011_2019_datasd.csv
+      https://datasd.dev.s3.amazonaws.com/pud/omp/water_quality_2020_2021_datasd.csv
     format: csv
   - name: Parameter Results, 2011 - 2019
     url: >-
