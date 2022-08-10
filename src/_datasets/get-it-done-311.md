@@ -36,6 +36,10 @@ resources:
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2016_datasd.csv
     format: csv
+  - name: Dictionary
+    url: >-
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
+    format: csv
   
 date_issued: '2016-05-26'
 date_modified: '2022-08-10'
