@@ -23,7 +23,7 @@ resources:
     format: csv
   - name: Parameter Testing Station Locations
     url: >-
-      https://datasd.dev.s3.amazonaws.com/pud/omp/reference_stations_water_quality.csv
+      https://seshat.datasd.org/pud/omp/reference_stations_water_quality.csv
     format: csv
   - name: Dictionary
     url: >-
