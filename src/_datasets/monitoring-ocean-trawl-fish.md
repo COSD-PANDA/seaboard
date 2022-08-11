@@ -7,15 +7,15 @@ category:
 resources:
   - name: Fish Trawl Sample Results, class sizes
     url: >-
-      https://datasd.dev.s3.amazonaws.com/pud/omp/trawl_fish_datasd.csv
+      https://seshat.datasd.org/pud/omp/trawl_fish_datasd.csv
     format: csv
   - name: Fish Trawl Sample Results, mean class sizes
     url: >-
-      https://datasd.dev.s3.amazonaws.com/pud/omp/trawl_fish_summary_datasd.csv
+      https://seshat.datasd.org/pud/omp/trawl_fish_summary_datasd.csv
     format: csv
   - name: Fish Trawl Sampling Station Locations
     url: >-
-      https://datasd.dev.s3.amazonaws.com/pud/omp/reference_stations_fish_trawl.csv
+      https://seshat.datasd.org/pud/omp/reference_stations_fish_trawl.csv
     format: csv
   - name: Dictionary, class size
     url: >-
