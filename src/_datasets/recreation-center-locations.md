@@ -22,6 +22,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.geojson
     format: geojson
+  - name: Recreation center points attribute table
+    url: >-
+      https://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.csv
+    format: csv
   - name: Recreation center points dictionary
     url: >-
       https://seshat.datasd.org/sde/rec_centers/rec_centers_dictionary_datasd.csv
