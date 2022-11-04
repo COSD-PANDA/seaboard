@@ -22,6 +22,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/zoning/zoning_datasd.geojson
     format: geojson
+  - name: Zoning attribute table
+    url: >-
+      https://seshat.datasd.org/sde/zoning/zoning_datasd.csv
+    format: csv
   - name: Zoning dictionary
     url: >-
       https://seshat.datasd.org/sde/zoning/zoning_dictionary_datasd.csv
