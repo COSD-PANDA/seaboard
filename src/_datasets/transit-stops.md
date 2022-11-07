@@ -22,6 +22,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.geojson
     format: geojson
+  - name: Transit Stops Attribute Table
+    url: >-
+      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.csv
+    format: csv
   - name: Transit Stops Locations Dictionary
     url: >-
       https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_dictionary_datasd.csv

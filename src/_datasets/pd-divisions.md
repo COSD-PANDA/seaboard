@@ -22,6 +22,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/pd/pd_divisions_datasd.geojson
     format: geojson
+  - name: Police divisions attribute table
+      url: >-
+        https://seshat.datasd.org/sde/pd/pd_divisions_datasd.csv
+      format: csv
   - name: Police divisions dictionary
     url: >-
       https://seshat.datasd.org/sde/pd/pd_divisions_dictionary_datasd.csv

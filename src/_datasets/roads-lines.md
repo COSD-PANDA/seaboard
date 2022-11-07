@@ -22,6 +22,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/roads_all/roads_datasd.geojson
     format: geojson
+  - name: Roads lines attribute table
+      url: >-
+        s3://datasd.prod/sde/roads_all/roads_datasd.csv
+      format: csv
   - name: Roads lines dictionary
     url: >-
       https://seshat.datasd.org/sde/roads_all/roads_lines_dictionary_datasd.csv

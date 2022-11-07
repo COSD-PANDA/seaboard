@@ -23,6 +23,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/joint_use/joint_use_datasd.geojson
     format: geojson
+  - name: Joint use parks attribute table
+      url: >-
+        https://seshat.datasd.org/sde/joint_use/joint_use_datasd.csv
+      format: csv
   - name: Joint use parks dictionary
     url: >-
       https://seshat.datasd.org/sde/joint_use/joint_use_dictionary_datasd.csv

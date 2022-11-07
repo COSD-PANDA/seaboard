@@ -23,6 +23,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.geojson
     format: geojson
+  - name: Bike Master Plan route lines attribute table
+      url: >-
+        https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.csv
+      format: csv
   - name: Bike Master Plan route lines dictionary
     url: >-
       https://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_dictionary_datasd.csv

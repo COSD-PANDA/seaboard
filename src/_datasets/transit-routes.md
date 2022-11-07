@@ -22,6 +22,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.geojson
     format: geojson
+  - name: Transit routes attribute table
+      url: >-
+        s3://datasd.prod/sde/transit_routes_gtfs/transit_routes_datasd.csv
+      format: csv
   - name: Transit routes dictionary
     url: >-
       https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_dictionary_datasd.csv

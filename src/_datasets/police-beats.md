@@ -26,6 +26,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/pd/pd_beats_datasd.geojson
     format: geojson
+  - name: Police beats attribute table
+      url: >-
+        https://seshat.datasd.org/sde/pd/pd_beats_datasd.csv
+      format: csv
   - name: Police beats dictionary
     url: >-
       https://seshat.datasd.org/sde/pd/pd_beats_dictionary_datasd.csv

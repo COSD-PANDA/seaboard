@@ -23,6 +23,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson
     format: geojson
+  - name: Existing bike route lines attribute table
+      url: >-
+        https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.csv
+      format: csv
   - name: Existing bike route lines dictionary
     url: >-
       https://seshat.datasd.org/sde/bike_route/bike_routes_dictionary_datasd.csv
