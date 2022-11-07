@@ -22,6 +22,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.geojson
     format: geojson
+  - name: Revolving Loan Fund coverage boundaries attribute table
+      url: >-
+        https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.csv
+      format: csv
   - name: Revolving Loan Fund coverage boundaries dictionary
     url: >-
       https://seshat.datasd.org/sde/sd_revloan/rev_loan_dictionary_datasd.csv

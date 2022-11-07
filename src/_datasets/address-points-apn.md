@@ -25,6 +25,10 @@ resources:
       url: >-
         https://seshat.datasd.org/sde/addrapn/addrapn_datasd.csv
       format: csv
+  - name: Address points attribute table
+      url: >-
+        https://seshat.datasd.org/sde/addrapn/addrapn_datasd.csv
+      format: csv
   - name: Address points dictionary
     url: >-
       https://seshat.datasd.org/sde/addrapn/address_apn_dictionary_datasd.csv
