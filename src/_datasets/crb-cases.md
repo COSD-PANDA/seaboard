@@ -6,6 +6,18 @@ category:
   - Public Safety
   - City Management
 resources:
+  - name: Cases FY22
+    url: >-
+      https://seshat.datasd.org/crb/crb_cases_fy2022_datasd.csv
+    format: csv
+  - name: Allegations FY22
+    url: >-
+      https://seshat.datasd.org/crb/crb_allegations_fy2022_datasd.csv
+    format: csv
+  - name: Body worn camera details FY22
+    url: >-
+      https://seshat.datasd.org/crb/crb_cases_bwc_fy2022_datasd.csv
+    format: csv
   - name: Cases FY21
     url: >-
       https://seshat.datasd.org/crb/crb_cases_fy2021_datasd.csv
