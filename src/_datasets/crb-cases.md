@@ -60,7 +60,7 @@ date_modified: '2020-11-24'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-In 2020, voter-approved Measure B created a new independent Commission on Police Practices (CPP) that replaced the Community Review Board on Police Practices (CRB). The CPP independently investigates officer-involved shootings and in-custody deaths and evaluates complaints against the San Diego Police Department and its personnel in a process that is transparent and accountable to the community. This dataset includes all cases the CPP reviewed and closed out since the beginning of FY 2019.
+In 2020, voter-approved Measure B created a new independent Commission on Police Practices (CPP) that replaced the Community Review Board on Police Practices (CRB). The CPP independently investigates officer-involved shootings, in-custody deaths, & other significant incidents in a process that is transparent and accountable to the community. The CPP also evaluates SDPD policies, practices, training, and protocols. This dataset includes all cases the CPP reviewed and closed out since the beginning of FY 2019.
 
 <!--more-->
 
