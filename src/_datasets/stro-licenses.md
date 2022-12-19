@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Licenses for Short-Term Rental Occupancy
+title: Licenses for Short-Term Residential Occupancy
 department: City Treasurer
 category:
   - Economy & Community
