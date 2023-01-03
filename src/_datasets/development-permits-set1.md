@@ -13,10 +13,6 @@ resources:
     url: >-
       https://seshat.datasd.org/dsd/permits_set1_closed_datasd.csv
     format: csv
-  - name: All approvals closed and active, 2003 to date last updated (large file)
-    url: >-
-      https://seshat.datasd.org/dsd/dsd_permits_all_pts.csv
-    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/dsd/permits_set1_datasd_dict.csv
