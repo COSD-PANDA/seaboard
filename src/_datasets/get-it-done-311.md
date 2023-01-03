@@ -8,6 +8,10 @@ resources:
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_open_datasd.csv
     format: csv
+  - name: Get It Done Requests closed in 2023
+    url: >-
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2023_datasd.csv
+    format: csv
   - name: Get It Done Requests closed in 2022
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2022_datasd.csv
