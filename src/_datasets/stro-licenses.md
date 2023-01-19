@@ -1,11 +1,11 @@
 ---
 schema: default
-title: Licenses for Short-Term Residential Occupancy
+title: Active licenses for Short-Term Residential Occupancy
 department: City Treasurer
 category:
   - Economy & Community
 resources:
-  - name: Licenses
+  - name: Active licenses
     url: >-
       https://seshat.datasd.org/stro_licenses/stro_licenses_datasd.csv
     format: csv
@@ -24,7 +24,7 @@ date_modified: '2022-12-18'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Licenses for Short-term Residential Occupancy in San Diego dwelling units.
+Active licenses for Short-term Residential Occupancy in San Diego dwelling units.
 <!--more-->
 
 City regulations require hosts obtain a license for short-term residential occupancy of a dwelling unit, or part thereof, within the City of San Diego. Four license tiers are available, depending on the type of dwelling unit, number of days, and location within the City of San Diego. A host may only hold one license and may not operate more than one dwelling unit for STRO at a time; licenses are not transferrable between ownership or location/dwelling unit.
