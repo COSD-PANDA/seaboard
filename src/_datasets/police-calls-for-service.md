@@ -61,4 +61,4 @@ Priority Definitions are provided in [this PDF file](https://seshat.datasd.org/p
 
 Data regarding the disposition codes used by the Police Department can be
 found [here](/datasets/police-calls-disposition-codes/){:target='_blank'}, while data about the SDPD Police beats
-can be found [here](/datasets/police-beats/){:target='_blank'}.
+can be found [here](/datasets/police-beats/){:target='_blank'}, call type definitions can be found [here](http://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv).
