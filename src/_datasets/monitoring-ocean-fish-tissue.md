@@ -7,11 +7,11 @@ category:
 resources:
   - name: Contaminants in Fish Tissue
     url: >-
-      https://seshat.datasd.org/pud/omp/fish_tissue.csv
+      https://seshat.datasd.org/pud/omp/fish_tissue_datasd.csv
     format: csv
   - name: Fish Tissue Sampling Station Locations
     url: >-
-      https://seshat.datasd.org/pud/omp/reference_stations_fishtissue.csv
+      https://seshat.datasd.org/pud/omp/reference_stations_fish_tissue.csv
     format: csv
   - name: Fish Tissue Data Dictionary
     url: >-
@@ -25,5 +25,5 @@ maintainer_email: data@sandiego.gov
 ---
 Concentrations of various contaminants in liver and muscle tissues of fishes collected throughout the region. 
 <!--more-->
-Concentrations of various contaminants in liver and muscle tissues of fishes collected throughout the region. Samples are collected as part of The City’s Ocean Monitoring Program, which monitors the effects of treated wastewater effluent on the local marine environment. The OMP extends 340 square miles total from northern San Diego to northern Baja California, Mexico, and encompasses the shoreline seaward approximately 10 miles, to depths of over 500 meters.
+Samples are collected as part of The City’s Ocean Monitoring Program, which monitors the effects of treated wastewater effluent on the local marine environment. The OMP extends 340 square miles total from northern San Diego to northern Baja California, Mexico, and encompasses the shoreline seaward approximately 10 miles, to depths of over 500 meters.
 
