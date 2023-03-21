@@ -11,10 +11,6 @@ resources:
     format: shp
   - name: Address points
     url: >-
-      https://seshat.datasd.org/sde/addrapn/addrapn_datasd.pbf
-    format: pbf
-  - name: Address points
-    url: >-
       https://seshat.datasd.org/sde/addrapn/addrapn_datasd.topo.json
     format: topojson
   - name: Address points

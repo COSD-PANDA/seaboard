@@ -8,19 +8,19 @@ category:
 resources:
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_datasd.zip
+      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.zip
     format: shp
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_datasd.pbf
+      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.pbf
     format: pbf
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_datasd.topo.json
+      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.topo.json
     format: topojson
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_datasd.geojson
+      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.geojson
     format: geojson
   - name: MHPA dictionary
     url: >-
