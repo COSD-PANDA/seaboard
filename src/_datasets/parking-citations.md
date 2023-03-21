@@ -5,6 +5,10 @@ department: City Treasurer
 category:
   - Transportation
 resources:
+  - name: Parking Citations 2023, Jan-June
+    url: >-
+      https://seshat.datasd.org/treasurer/parking_citations_2023_part1_datasd.csv
+    format: csv
   - name: Parking Citations 2022, July-Dec
     url: >-
       https://seshat.datasd.org/treasurer/parking_citations_2022_part2_datasd.csv
@@ -99,7 +103,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2021-03-23'
-date_modified: '2021-04-13'
+date_modified: '2023-03-21'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
