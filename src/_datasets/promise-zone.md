@@ -24,7 +24,7 @@ resources:
     format: geojson
   - name: Promise Zone boundary dictionary
     url: >-
-      https://seshat.datasd.org/sde/addrapn/pz/promise_zone_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/pz/promise_zone_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
