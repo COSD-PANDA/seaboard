@@ -23,6 +23,10 @@ resources:
     url: >-
       https://seshat.datasd.org/sde/library/libraries_datasd.geojson
     format: geojson
+  - name: Library points attribute table
+      url: >-
+        https://seshat.datasd.org/sde/library/libraries_datasd.csv
+      format: csv
   - name: Library points dictionary
     url: >-
       https://seshat.datasd.org/sde/library/libraries_dictionary_datasd.csv
