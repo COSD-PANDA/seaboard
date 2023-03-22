@@ -8,6 +8,10 @@ resources:
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_open_datasd.csv
     format: csv
+  - name: Get It Done Requests closed in 2023
+    url: >-
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2023_datasd.csv
+    format: csv
   - name: Get It Done Requests closed in 2022
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2022_datasd.csv
@@ -42,7 +46,7 @@ resources:
     format: csv
   
 date_issued: '2016-05-26'
-date_modified: '2022-11-04'
+date_modified: '2023-03-21'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov

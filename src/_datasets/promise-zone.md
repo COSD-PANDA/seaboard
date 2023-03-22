@@ -28,11 +28,11 @@ resources:
       format: csv
   - name: Promise Zone boundary dictionary
     url: >-
-      https://seshat.datasd.org/sde/addrapn/pz/promise_zone_dictionary_datasd.csv
+      https://seshat.datasd.org/sde/pz/promise_zone_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2022-11-01'
+date_modified: '2023-03-14'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

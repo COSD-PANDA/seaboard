@@ -11,10 +11,6 @@ resources:
     format: shp
   - name: Address points
     url: >-
-      https://seshat.datasd.org/sde/addrapn/addrapn_datasd.pbf
-    format: pbf
-  - name: Address points
-    url: >-
       https://seshat.datasd.org/sde/addrapn/addrapn_datasd.topo.json
     format: topojson
   - name: Address points
@@ -35,7 +31,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2022-11-01'
+date_modified: '2023-03-14'
 maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---
