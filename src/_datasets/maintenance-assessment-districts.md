@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.geojson
     format: geojson
   - name: Maintenance assessment districts attribute table
-      url: >-
-        https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.csv
+    format: csv
   - name: Maintenance assessment districts dictionary
     url: >-
       https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_dictionary_datasd.csv

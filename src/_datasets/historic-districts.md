@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.geojson
     format: geojson
   - name: Historical districts attribute table
-      url: >-
-        https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.csv
+    format: csv
   - name: Historical districts dictionary
     url: >-
       https://seshat.datasd.org/sde/historic_districts/historic_districts_dictionary_datasd.csv

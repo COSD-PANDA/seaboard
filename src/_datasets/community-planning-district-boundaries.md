@@ -24,9 +24,9 @@ resources:
       https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson
     format: geojson
   - name: Community planning districts attribute table
-      url: >-
-        https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.csv
+    format: csv
   - name: Community planning districts dictionary
     url: >-
       https://seshat.datasd.org/sde/cmty_plan/cmty_plan_dictionary_datasd.csv

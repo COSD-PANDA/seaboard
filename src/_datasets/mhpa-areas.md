@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.geojson
     format: geojson
   - name: MHPA attribute table
-      url: >-
-        https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.csv
+    format: csv
   - name: MHPA dictionary
     url: >-
       https://seshat.datasd.org/sde/mhpa/mhpa_dictionary_datasd.csv
