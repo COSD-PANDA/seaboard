@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.geojson
     format: geojson
   - name: General Plan polygons attribute table
-      url: >-
-        https://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.csv
+    format: csv
   - name: General Plan polygons dictionary
     url: >-
       https://seshat.datasd.org/sde/gp_land_use/gp_land_use_dictionary_datasd.csv

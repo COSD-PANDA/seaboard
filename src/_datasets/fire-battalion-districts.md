@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.geojson
     format: geojson
   - name: Fire battalion districts attribute table
-      url: >-
-        https://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.csv
+    format: csv
   - name: Fire battalion districts dictionary
     url: >-
       https://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_dictionary_datasd.csv

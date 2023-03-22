@@ -24,9 +24,9 @@ resources:
       https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.geojson
     format: geojson
   - name: Business improvement districts attribute table
-      url: >-
-        https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.csv
+    format: csv
   - name: Business improvement districts dictionary
     url: >-
       https://seshat.datasd.org/sde/bus_improvement_districts/bids_dictionary_datasd.csv

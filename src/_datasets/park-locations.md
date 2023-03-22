@@ -24,9 +24,9 @@ resources:
       https://seshat.datasd.org/sde/parks/parks_datasd.geojson
     format: geojson
   - name: Park points attribute table
-      url: >-
-        https://seshat.datasd.org/sde/parks/parks_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/parks/parks_datasd.csv
+    format: csv
   - name: Park points dictionary
     url: >-
       https://seshat.datasd.org/sde/parks/parks_dictionary_datasd.csv

@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.geojson
     format: geojson
   - name: Right-of-way parcels attribute table
-      url: >-
-        https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.csv
+    format: csv
   - name: Right-of-way parcels dictionary
     url: >-
       https://seshat.datasd.org/sde/right_of_way/right_of_way_dictionary_datasd.csv

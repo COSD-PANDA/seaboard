@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.geojson
     format: geojson
   - name: Police neighborhoods attribute table
-      url: >-
-        https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.csv
+    format: csv
   - name: Police neighborhoods dictionary
     url: >-
       https://seshat.datasd.org/sde/pd/pd_neighborhoods_dictionary_datasd.csv

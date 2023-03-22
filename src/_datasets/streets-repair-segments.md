@@ -24,9 +24,9 @@ resources:
       https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.geojson
     format: geojson
   - name: Street segment attribute table
-      url: >-
-        https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.csv
+    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'
 date_modified: '2023-03-14'
