@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/pz/promise_zone_datasd.geojson
     format: geojson
   - name: Promise Zone boundary attribute table
-      url: >-
-        https://seshat.datasd.org/sde/pz/promise_zone_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/pz/promise_zone_datasd.csv
+    format: csv
   - name: Promise Zone boundary dictionary
     url: >-
       https://seshat.datasd.org/sde/pz/promise_zone_dictionary_datasd.csv

@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/block_grants/block_grants_datasd.geojson
     format: geojson
   - name: Census tracts eligible for CDBG attribute table
-      url: >-
-        https://seshat.datasd.org/sde/block_grants/block_grants_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/block_grants/block_grants_datasd.csv
+    format: csv
   - name: Census tracts eligible for CDBG dictionary
     url: >-
       https://seshat.datasd.org/sde/block_grants/block_grants_dictionary_datasd.csv

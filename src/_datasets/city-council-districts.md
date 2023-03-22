@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/council/council_districts_datasd.geojson
     format: geojson
   - name: City Council districts attribute table
-      url: >-
-        https://seshat.datasd.org/sde/council/council_districts_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/council/council_districts_datasd.csv
+    format: csv
   - name: City Council districts dictionary
     url: >-
       https://seshat.datasd.org/sde/council/council_districts_dictionary_datasd.csv

@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.geojson
     format: geojson
   - name: Lifeguard station points attribute table
-      url: >-
-        https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.csv
+    format: csv
   - name: Lifeguard station points dictionary
     url: >-
       https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_dictionary_datasd.csv

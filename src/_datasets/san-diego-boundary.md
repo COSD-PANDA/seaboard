@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.geojson
     format: geojson
   - name: San Diego boundary attribute table
-      url: >-
-        https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.csv
+    format: csv
   - name: San Diego boundary dictionary
     url: >-
       https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_dictionary_datasd.csv

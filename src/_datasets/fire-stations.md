@@ -23,9 +23,9 @@ resources:
       https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.geojson
     format: geojson
   - name: Fire station points attribute table
-      url: >-
-        https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.csv
-      format: csv
+    url: >-
+      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.csv
+    format: csv
   - name: Fire station points dictionary
     url: >-
       https://seshat.datasd.org/sde/fire_stations/fire_stations_dictionary_datasd.csv
