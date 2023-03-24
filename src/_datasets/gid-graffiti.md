@@ -10,7 +10,7 @@ resources:
     format: csv
   - name: Graffiti Removal Requests Data Dictionary
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
 date_modified: '2023-03-21'
