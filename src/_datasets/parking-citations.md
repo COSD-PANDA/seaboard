@@ -7,95 +7,95 @@ category:
 resources:
   - name: Parking Citations 2023, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2023_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2023_part1_datasd.csv
     format: csv
   - name: Parking Citations 2022, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2022_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2022_part2_datasd.csv
     format: csv
   - name: Parking Citations 2022, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2022_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2022_part1_datasd.csv
     format: csv
   - name: Parking Citations 2021, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2021_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2021_part2_datasd.csv
     format: csv
   - name: Parking Citations 2021, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2021_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2021_part1_datasd.csv
     format: csv
   - name: Parking Citations 2020, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2020_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2020_part2_datasd.csv
     format: csv
   - name: Parking Citations 2020, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2020_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2020_part1_datasd.csv
     format: csv
   - name: Parking Citations 2019, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2019_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2019_part2_datasd.csv
     format: csv
   - name: Parking Citations 2019, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2019_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2019_part1_datasd.csv
     format: csv
   - name: Parking Citations 2018, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2018_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2018_part2_datasd.csv
     format: csv
   - name: Parking Citations 2018, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2018_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2018_part1_datasd.csv
     format: csv
   - name: Parking Citations 2017, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2017_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2017_part2_datasd.csv
     format: csv
   - name: Parking Citations 2017, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2017_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2017_part1_datasd.csv
     format: csv
   - name: Parking Citations 2016, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2016_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2016_part2_datasd.csv
     format: csv
   - name: Parking Citations 2016, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2016_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2016_part1_datasd.csv
     format: csv
   - name: Parking Citations 2015, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2015_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2015_part2_datasd.csv
     format: csv
   - name: Parking Citations 2015, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2015_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2015_part1_datasd.csv
     format: csv
   - name: Parking Citations 2014, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2014_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2014_part2_datasd.csv
     format: csv
   - name: Parking Citations 2014, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2014_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2014_part1_datasd.csv
     format: csv
   - name: Parking Citations 2013, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2013_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2013_part2_datasd.csv
     format: csv
   - name: Parking Citations 2013, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2013_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2013_part1_datasd.csv
     format: csv
   - name: Parking Citations 2012, July-Dec
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2012_part2_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2012_part2_datasd.csv
     format: csv
   - name: Parking Citations 2012, Jan-June
     url: >-
-      https://seshat.datasd.org/treasurer/parking_citations_2012_part1_datasd.csv
+      https://seshat.datasd.org/parking_citations/parking_citations_2012_part1_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
