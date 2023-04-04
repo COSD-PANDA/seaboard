@@ -7,11 +7,11 @@ category:
 resources:
   - name: Project tags
     url: >-
-      https://seshat.datasd.org/dsd/permits_project_tags_datasd.csv
+      https://seshat.datasd.org/development_permits_tags/permits_project_tags_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/dsd/permits_set1_project_tags_datasd_dict.csv
+      https://seshat.datasd.org/development_permits_tags/permits_set1_project_tags_datasd_dict.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-03-10'
