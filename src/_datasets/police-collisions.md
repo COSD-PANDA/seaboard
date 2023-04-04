@@ -7,11 +7,11 @@ category:
 resources:
   - name: Traffic collisions (2015 through year-to-date)
     url: >-
-      https://seshat.datasd.org/pd/pd_collisions_datasd_v1.csv
+      https://seshat.datasd.org/traffic_collisions/pd_collisions_datasd_v1.csv
     format: csv
   - name: Traffic collisions dictionary
     url: >-
-      https://seshat.datasd.org/pd/pd_collisions_dictionary_datasd.csv
+      https://seshat.datasd.org/traffic_collisions/pd_collisions_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-05-03'
