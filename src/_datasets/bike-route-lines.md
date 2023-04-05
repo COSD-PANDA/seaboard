@@ -9,27 +9,27 @@ category:
 resources:
   - name: Existing bike route lines
     url: >-
-      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip
+      https://seshat.datasd.org/gis_bike_routes/bike_routes_datasd.zip
     format: shp
   - name: Existing bike route lines
     url: >-
-      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.pbf
+      https://seshat.datasd.org/gis_bike_routes/bike_routes_datasd.pbf
     format: pbf
   - name: Existing bike route lines
     url: >-
-      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topo.json
+      https://seshat.datasd.org/gis_bike_routes/bike_routes_datasd.topo.json
     format: topojson
   - name: Existing bike route lines
     url: >-
-      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson
+      https://seshat.datasd.org/gis_bike_routes/bike_routes_datasd.geojson
     format: geojson
   - name: Existing bike route lines attribute table
     url: >-
-      https://seshat.datasd.org/sde/bike_route/bike_routes_datasd.csv
+      https://seshat.datasd.org/gis_bike_routes/bike_routes_datasd.csv
     format: csv
   - name: Existing bike route lines dictionary
     url: >-
-      https://seshat.datasd.org/sde/bike_route/bike_routes_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_bike_routes/bike_routes_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
