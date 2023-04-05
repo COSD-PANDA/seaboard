@@ -8,27 +8,27 @@ category:
 resources:
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.zip
+      https://seshat.datasd.org/gis_mhpa_areas/mhpa_areas_datasd.zip
     format: shp
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.pbf
+      https://seshat.datasd.org/gis_mhpa_areas/mhpa_areas_datasd.pbf
     format: pbf
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.topo.json
+      https://seshat.datasd.org/gis_mhpa_areas/mhpa_areas_datasd.topo.json
     format: topojson
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.geojson
+      https://seshat.datasd.org/gis_mhpa_areas/mhpa_areas_datasd.geojson
     format: geojson
   - name: MHPA attribute table
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_areas_datasd.csv
+      https://seshat.datasd.org/gis_mhpa_areas/mhpa_areas_datasd.csv
     format: csv
   - name: MHPA dictionary
     url: >-
-      https://seshat.datasd.org/sde/mhpa/mhpa_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_mhpa_areas/mhpa_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
