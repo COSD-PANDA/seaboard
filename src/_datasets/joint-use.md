@@ -9,27 +9,27 @@ category:
 resources:
   - name: Joint use parks
     url: >-
-      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.zip
+      https://seshat.datasd.org/gis_joint_use_parksjoint_use_datasd.zip
     format: shp
   - name: Joint use parks
     url: >-
-      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.pbf
+      https://seshat.datasd.org/gis_joint_use_parksjoint_use_datasd.pbf
     format: pbf
   - name: Joint use parks
     url: >-
-      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.topo.json
+      https://seshat.datasd.org/gis_joint_use_parksjoint_use_datasd.topo.json
     format: topojson
   - name: Joint use parks
     url: >-
-      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.geojson
+      https://seshat.datasd.org/gis_joint_use_parksjoint_use_datasd.geojson
     format: geojson
   - name: Joint use parks attribute table
     url: >-
-      https://seshat.datasd.org/sde/joint_use/joint_use_datasd.csv
+      https://seshat.datasd.org/gis_joint_use_parksjoint_use_datasd.csv
     format: csv
   - name: Joint use parks dictionary
     url: >-
-      https://seshat.datasd.org/sde/joint_use/joint_use_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_joint_use_parksjoint_use_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'

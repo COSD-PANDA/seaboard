@@ -8,27 +8,27 @@ category:
 resources:
   - name: Historical districts
     url: >-
-      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.zip
+      https://seshat.datasd.org/gis_historical_districts/historic_districts_datasd.zip
     format: shp
   - name: Historical districts
     url: >-
-      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.pbf
+      https://seshat.datasd.org/gis_historical_districts/historic_districts_datasd.pbf
     format: pbf
   - name: Historical districts
     url: >-
-      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.topo.json
+      https://seshat.datasd.org/gis_historical_districts/historic_districts_datasd.topo.json
     format: topojson
   - name: Historical districts
     url: >-
-      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.geojson
+      https://seshat.datasd.org/gis_historical_districts/historic_districts_datasd.geojson
     format: geojson
   - name: Historical districts attribute table
     url: >-
-      https://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.csv
+      https://seshat.datasd.org/gis_historical_districts/historic_districts_datasd.csv
     format: csv
   - name: Historical districts dictionary
     url: >-
-      https://seshat.datasd.org/sde/historic_districts/historic_districts_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_historical_districts/historic_districts_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'

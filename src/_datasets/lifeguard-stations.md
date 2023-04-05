@@ -8,27 +8,27 @@ category:
 resources:
   - name: Lifeguard station points
     url: >-
-      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.zip
+      https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_datasd.zip
     format: shp
   - name: Lifeguard station points
     url: >-
-      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.pbf
+      https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_datasd.pbf
     format: pbf
   - name: Lifeguard station points
     url: >-
-      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.topo.json
+      https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_datasd.topo.json
     format: topojson
   - name: Lifeguard station points
     url: >-
-      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.geojson
+      https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_datasd.geojson
     format: geojson
   - name: Lifeguard station points attribute table
     url: >-
-      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.csv
+      https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_datasd.csv
     format: csv
   - name: Lifeguard station points dictionary
     url: >-
-      https://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'

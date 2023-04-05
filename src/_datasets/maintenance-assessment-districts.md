@@ -8,27 +8,27 @@ category:
 resources:
   - name: Maintenance assessment districts
     url: >-
-      https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.zip
+      https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_datasd.zip
     format: shp
   - name: Maintenance assessment districts
     url: >-
-      https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.pbf
+      https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_datasd.pbf
     format: pbf
   - name: Maintenance assessment districts
     url: >-
-      https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.topo.json
+      https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_datasd.topo.json
     format: topojson
   - name: Maintenance assessment districts
     url: >-
-      https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.geojson
+      https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_datasd.geojson
     format: geojson
   - name: Maintenance assessment districts attribute table
     url: >-
-      https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.csv
+      https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_datasd.csv
     format: csv
   - name: Maintenance assessment districts dictionary
     url: >-
-      https://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
