@@ -8,11 +8,11 @@ category:
 resources:
   - name: Streets Repair Projects
     url: >-
-      https://seshat.datasd.org/tsw/sd_paving_datasd_v1.csv
+      https://seshat.datasd.org/streets_repair_projects/sd_paving_datasd_v1.csv
     format: csv
   - name: Streets Repair Projects Dictionary
     url: >-
-      https://seshat.datasd.org/tsw/sd_paving_dictionary_datasd.csv
+      https://seshat.datasd.org/streets_repair_projects/sd_paving_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-09-16'
