@@ -57,7 +57,7 @@
     "ampersand-state": "^5.0.0",
     "bootstrap": "^3.3.6",
     "bower": "^1.8.8",
-    "github-api": "^2.3.0",
+    "github-api": "^3.4.0",
     "gulp-webpack": "^1.5.0",
     "jquery-deparam": "^0.5.2",
     "jquery-serializejson": "^2.6.2",
