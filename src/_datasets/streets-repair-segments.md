@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Streets Repair Line Segments
-department: Transportation & Storm Water
+department: Transportation
 category:
   - GIS
   - Transportation

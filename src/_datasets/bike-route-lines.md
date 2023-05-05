@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Bike route lines
-department: Transportation & Storm Water
+department: Transportation
 category:
   - GIS
   - Transportation
