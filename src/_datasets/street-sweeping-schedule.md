@@ -1,26 +1,37 @@
 ---
 schema: default
 title: Street Sweeping Schedule
-department: Transportation & Storm Water
+department: Storm Water
 category:
   - Transportation
   - City Infrastructure
 resources:
-  - name: Street Sweeping Schedule
+  - name: Street Sweeping schedule by street
     url: >-
-      https://seshat.datasd.org/street_sweeping/street_sweeping_datasd_v1.csv
-    format: csv
-  - name: Street Sweeping Possible Routes
+      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.zip
+    format: shp
+  - name: Street Sweeping schedule by street
     url: >-
-      https://seshat.datasd.org/street_sweeping/street_sweeping_possible_routes_datasd.csv
-    format: csv
-  - name: Street Sweeping Dictionary
+      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.pbf
+    format: pbf
+  - name: Street Sweeping schedule by street
+    url: >-
+      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.topo.json
+    format: topojson
+  - name: Street Sweeping schedule by street
+    url: >-
+      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.geojson
+    format: geojson
+  - name: Street Sweeping schedule by street attribute table
+    url: >-
+      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.csv
+  - name: Dictionary
     url: >-
       https://seshat.datasd.org/street_sweeping/street_sweeping_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-18'
-date_modified: '2016-07-05'
+date_modified: '2023-05-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
