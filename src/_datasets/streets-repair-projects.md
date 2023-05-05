@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Streets Repair Projects
-department: Transportation & Storm Water
+department: Transportation
 category:
   - Transportation
   - City Infrastructure
