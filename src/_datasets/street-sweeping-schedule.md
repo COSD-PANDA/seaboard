@@ -25,6 +25,7 @@ resources:
   - name: Street Sweeping schedule by street attribute table
     url: >-
       https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.csv
+    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/street_sweeping/street_sweeping_dictionary_datasd.csv
