@@ -18,8 +18,8 @@ resources:
       https://seshat.datasd.org/pud/omp/sediment_quality_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-date_issued: '2020-07-02'
-date_modified: '2022-07-25'
+date_issued: '2022-11-15'
+date_modified: '2022-11-15'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
