@@ -1,4 +1,0 @@
----
-title: "Special Events & Filming"
-
----

@@ -1,0 +1,44 @@
+<div class="row">
+{{ $url := .Params.described_by }}
+{{ $sep := "," }}
+{{ $csvRows :=  getCSV $sep $url}}
+{{ $noRows := $csvRows | len }}
+{{ $noDataFields := sub $noRows 1 }}
+{{ $dataFields := last $noDataFields $csvRows }}
+{{ $halfFields :=  $noDataFields }}
+
+{{ if le $noDataFields 8 }}
+{{ $halfFields =  $noDataFields }}
+{{ else }}
+{{ $halfFields = div $noDataFields 2 | math.Ceil }}
+{{ end }}
+
+<div class="col-sm">
+    <div class="accordion portal-accordion mt-4" id="accordionColumns">
+        {{ range $i, $r :=  $dataFields }}
+                <div class="accordion-item">
+                    {{ $fieldName :=  index $r 0}}
+                    <h2 class="accordion-header" id="{{ anchorize $fieldName }}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapse{{ $i }}">
+                            {{ index $r 0 }}
+                        </button>
+                    </h2>
+                    <div id="collapse{{ $i }}" class="accordion-collapse collapse" aria-labelledby="{{ anchorize $fieldName }}" data-bs-parent="#accordionColumns">
+                        <div class="accordion-body d-flex">
+                        <p>{{ index $r 1 }}</p><p>{{ index $r 2 }}</p>
+                        </div>
+                    </div>
+                </div>
+                {{ if and (ne $i (sub $noDataFields 1)) (modBool (add $i 1) $halfFields) }}
+    </div>
+</div>
+<div class="col-sm">
+    <div class="accordion portal-accordion mt-4" id="accordionColumns">
+                {{ else }}
+                {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+
+</div>

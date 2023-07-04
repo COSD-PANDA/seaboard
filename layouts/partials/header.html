@@ -1,41 +1,23 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-secondary text-light fixed-top">
-  {{ if .IsHome }}
-  {{ else }}
-  <div class="container">
-  <a class="navbar-brand header-logo-solid" href="/">
-    {{ partial "logo" . }}
-  </a>
-  {{ end }}
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sdNavbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="sdNavbarToggler">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      {{ if eq .Title "Datasets" }}
-      <li class="nav-item mr-3">
-        <a class="nav-link" href="/datasets/">Browse catalog</a>
-      </li>
-      {{ else }}
-      <li class="nav-item active mr-3">
-        <a class="nav-link" href="/datasets/">Browse catalog</a>
-      </li>
-      {{ end }}
-      <li class="nav-item active mr-3">
-        <a class="nav-link" href="/terms-use/">Terms of Use</a>
-      </li>
-      <li class="nav-item active mr-3">
-        <a class="nav-link" href="/help/get-started/">About</a>
-      </li>
-      <li class="nav-item active mr-3">
-        <a class="nav-link" href="https://www.sandiego.gov/panda" target="_blank">Performance & Analytics Department</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.sandiego.gov/" target="_blank">sandiego.gov</a>
-      </li>
-    </ul>
-  </div>
-  {{ if .IsHome }}
-  {{ else }}
-  </div>
-  {{ end }}
-</nav>
+{{- $page := . }}
+<div class="container-fluid nav-color-bar cat-color-{{ .Params.colorbar }}">
+  <nav class="navbar navbar-light navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand header-logo-contain" href="/">
+          <img src="/assets/images/cosd-header-logo.svg" alt="City of San Diego" class="d-inline-block align-text-bottom header-logo">
+          Data Portal
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse header-nav flex-row-reverse fs-5" id="navbarNav">
+          <ul class="navbar-nav">
+            {{ range site.Menus.main }}
+            <li class="nav-item me-5">
+              <a class="nav-link {{ .Params.class }} {{- if or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .)  }} active {{- end }} pe-4" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+  </nav>
+</div>

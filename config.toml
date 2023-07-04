@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "City of San Diego Open Data Portal"
 relativeURLS = true
 
+[params]
+	bootstrap = "5.0.2"
+
 [markup.goldmark.renderer]
 unsafe= true
 

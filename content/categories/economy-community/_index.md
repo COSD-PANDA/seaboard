@@ -1,4 +1,4 @@
 ---
-title: "Economy & community"
+title: "Economy & Community"
 
 ---

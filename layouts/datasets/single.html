@@ -1,184 +1,96 @@
 {{ define "main" }}
-{{ partial "header.html" . }}
-<div class="container default-page-container">
-	<div class="row pt-4">
-		<div class="col">
-			{{ partial "breadcrumbs" . }}
-		</div>
-	</div>
-	<div class="row">
-		<div class="col">
-			<h1 class="display-4 default-page-display-header">
-				{{ .Title }}
-			</h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col">
-			{{ .Content }}
-		</div>
-	</div>
-	<div class="row mb-5">
-		<div class="col">
-			<h2 class="mb-3">Downloads</h2>
-			<table class="table table-striped table-sm">
-				<tr>
-					<th>Resource</th>
-					<th class="table-content-centered">File type</th>
-					<th class="table-content-centered"></th>
-					<th class="table-content-centered"></th>
-				</tr>
-				{{- $scratch := newScratch -}}
-				{{- $scratch.Set "previewPath" "null" -}}
-				{{- $scratch.Set "dataId" .Title -}}
-				{{ range $index, $element := .Params.resources }}
-				{{- if and (eq "null" ($scratch.Get "previewPath")) (eq .format "csv") -}}
-				{{- $scratch.Set "previewPath" .url -}}
-				{{- $scratch.Set "previewTitle" .name -}}
-				{{- end -}}
-				<tr>
-					<td>
-						<span>
-							{{ .name }}
-						</span>
-					</td>
-					<td class="table-content-centered">
-						<span>
-							{{ .format }}
-						</span>
-					</td>
-					<td class="table-content-centered">
-						<a class="btn btn-primary btn-sm" href="{{ .url }}" role="button">Download</a>
-					</td>
-					<td class="table-content-centered">
-						{{- if eq ($scratch.Get "previewPath") .url -}}
-						<button class="btn btn-secondary btn-sm preview-button" disabled>Show preview</button>
-						{{- else -}}
-						<button class="btn btn-secondary btn-sm preview-button">Show preview</button>
-						{{- end -}}
-					</td>
-				</tr>
-				{{ end }}
-			</table>
-		</div>
-	</div>
-
-	<div class="row mb-5">
-		<div class="col">
-			<h2 id="dataPreviewTitle" class="mb-3">Preview: {{ $scratch.Get "previewTitle" }}</h2>
-			<p class="font-italic font-weight-normal text-primary">This is a preview. If you would like to view the full resource, please download it above.</p>
-			<div id="dataPreview">
-				<p>Preview is loading ...</p>
+<div class="container-fluid dataset-main-container">
+	<div class="row dataset-main-row">
+		<div class="col-sm-6 dataset-main-column">
+			<div class="pt-5 pe-5 pb-7">
+				<div class="dataset-taxonomies-contain mb-4">
+					{{ range .Params.categories }}
+					<a class="btn btn-sm me-2" href="/categories/{{ . | urlize }}" role="button">{{ . }}</a>
+					{{ end }}
+					{{ range .Params.departments }}
+					<a class="btn btn-sm me-2" href="/departments/{{ . | urlize }}" role="button">{{ . }}</a>
+					{{ end }}
+				</div>
+				<h1 class="display-4">
+					{{ .Title }}
+				</h1>
+				<div class="dataset-metadata mt-4 mb-5">
+					<p><span class="dataset-metadata-label">Updated:</span> </p>
+					<p><span class="dataset-metadata-label">Issued:</span> {{ .Params.date_issued }}</p>
+					<p><span class="dataset-metadata-label">Views:</span> </p>
+				</div>
+				<div class="dataset-text fs-5">
+				{{ .Summary }}
+				</div>
+				<div class="dataset-jump-links mb-5">
+					<span class="me-4 d-inline fst-italic">Jump to: </span>
+					<a class="me-4" href="#dataDictionary">Data dictionary</a>
+					<a class="me-4" href="#">Insights</a>
+					<a class="me-4" href="#">Additional details</a>
+				</div>
+				<div class="p-3 mb-2 dataset-tags d-flex align-items-center">
+					<span class="me-4 d-inline">Tags: </span>
+					{{ range .Params.tags }}
+					<a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+					{{ end }}
+				</div>
+			</div>
+			<div class="data-resources-contain" id="resourcesExpandTarget">
+				<div class="d-flex h-100">
+					<div class="dataset-resources-toggle align-self-center">
+						<div id="resourcesExpandControl">
+							{{ partial "icon-resources-expand" . }}
+						</div>
+					</div>
+					<div class="dataset-resources-main pt-5 ps-5">
+						<div class="resources-header-contain align-text-bottom mb-5">
+							<h1 class="display-4 text-white header-color-bar cat-color-green d-inline">
+								Downloads
+							</h1>
+						</div>
+						<div class="resources-table">
+							<table>
+								<thead class="rounded-table-border">
+									<th>Resource name</th>
+									<th>File type</th>
+								</thead>
+								<tbody>
+									{{ range $index, $element := .Params.resources }}
+									<tr>
+										<td>
+											<a class="btn d-block" href="{{ .url }}" role="button">
+												<span class="float-start pe-3"><i class="fa-solid fa-file-arrow-down"></i><span class="text-info fw-bold ps-3">{{ .filter }}</span> {{ .name }}</span> 
+												<span class="float-end">23.8 MB</span>
+											</a>
+										</td>
+										<td>
+											{{ .format }}
+										</td>
+									</tr>
+									{{ end }}
+								</tbody>
+							</table>
+						</div>
+						
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="row mb-5">
-		<div class="col">
-			<h2 class="mb-3">Additional Info</h2>
-			<table class="table table-striped">
-				<tr>
-					<th scope="row">License</th>
-					<td>
-						<a href="{{ .Params.license }}">
-							Open Data Commons Public Domain Dedication and Licence (PDDL)
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<th>Publisher</th>
-					<td>
-						<span>{{ .Params.departments }}</span>
-					</td>
-				</tr>
-				<tr>
-					<th>Date issued</th>
-					<td>
-						<span>{{ .Params.date_issued }}</span>
-					</td>
-				</tr>
-				<tr>
-					<th>Date modified</th>
-					<td>
-						<span id="dateModified">{{ .Params.date_modified }}</span>
-					</td>
-				</tr>
-				<tr>
-					<th>Category</th>
-					<td>
-						<span>
-							{{ .Params.categories }}
-						</span>
-					</td>
-				</tr>
-				<tr>
-					<th>Maintainer</th>
-					<td>
-						<span>{{ .Params.maintainer }}</span>
-					</td>
-				</tr>
-				<tr>
-					<th>Maintainer email</th>
-					<td>
-						<span>{{ .Params.maintainer_email }}</span>
-					</td>
-				</tr>
-			</table>
+</div>
+<div class="container-fluid dataset-dictionary-contain py-7">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div>
+					<h1 class="display-4" id="dataDictionary">
+						Data Dictionary
+					</h1>
+				</div>
+			</div>
 		</div>
+		{{ partial "data-dictionary" . }}
 	</div>
 </div>
-
-<script>
-	const baseURL = 'https://gwf7vwruf1.execute-api.us-east-1.amazonaws.com/dev/dataset/preview';
-	let initialURL = baseURL+'?datasetUrl={{ $scratch.Get "previewPath" }}';
-	initialURL += '&numRows=15';
-	let dataID = '{{ $scratch.Get "dataId" }}';
-	
-    (function() {
-      'use strict';
-
-      document.addEventListener('DOMContentLoaded', function(e) {
-        
-        getDataPreview(initialURL);
-        getDataDates(dataID);
-        
-        const prevButtons = document.getElementsByClassName("preview-button");
-
-        const changePreview = function () {
-        	if (this.hasAttribute("disabled")) {
-        		console.log("This is disabled");
-        	} else {
-        		let parent = this.parentNode;
-        		let urlSibling = parent.previousElementSibling;
-        		let typeSibling = urlSibling.previousElementSibling;
-        		let titleSibling = typeSibling.previousElementSibling;
-        		console.log(typeSibling)
-        		if (typeSibling.firstElementChild.innerText === "csv") {
-        			console.log("Found csv file");
-        			let urlTarget = urlSibling.firstElementChild.href;
-					let previewURL = baseURL+'?datasetUrl='+urlTarget;
-					previewURL += '&numRows=15';
-					togglePreviewButtons(this);
-					document.getElementById('dataPreview').innerHTML = "<p>Preview is loading ...</p>";
-					getDataPreview(previewURL);
-					let dataPreviewTitle = titleSibling.firstElementChild.innerText
-					document.getElementById('dataPreviewTitle').innerText = 'Preview: '+dataPreviewTitle;
-
-				} else {
-					togglePreviewButtons(this);
-					document.getElementById('dataPreview').innerHTML = '<p class="font-weight-bold">Preview is not available</p>';
-				}
-        	}
-			
-        }
-
-        Array.from(prevButtons).forEach(function(element) {
-        	element.addEventListener('click', changePreview);
-        });
-
-
-      })
-    })();
-</script>
-{{ partial "footer.html" . }}
+{{ partial "datasets-filters" . }}
 {{ end }}

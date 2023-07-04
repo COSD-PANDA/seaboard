@@ -1,25 +1,18 @@
 {{ define "main" }}
-{{ partial "header" . }}
-<div class="jumbotron jumbotron-fluid dp-jumbotron">
-    <div class="jumbotron-content-layer">
-        <div id="dpJumbotronContent" class="dp-jumbotron-content">
-            <div class="intro-hed">
-                <div class="brand-contain clearfix">
-                        <a class="navbar-brand py-0" href="/">
-                            <div class="fp-logo-solid">
-                            {{ partial "logo-white-color" . }}
-                            </div>
-                            <span class="navbar-brand-text float-left">Open Data</span>
-                        </a>
-                    </div>
+
+<div class="container-fluid py-7">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4">Open Data for All San Diegans</h1>
+                <p>
+                    The City of San Diego's Open Data Portal lets you find City data, lets you find facts about your neighborhood, lets you create maps and graphs about the City, and lets you freely download data for your own analysis.
+                </p>
             </div>
-            <div class="intro-block-contain">  
-                <div class="intro-block">
-                    {{ partial "search-fp" . }}
-                </div>
-                <div class="intro-block">
-                    Or <a href="/datasets/">browse</a> for data about topics like <a href="/datasets/traffic-volumes/">traffic</a>, the <a href="/help/budget-topic/">City budget</a>, <a href="/departments/police/">police activity</a>, <a href="/datasets/business-listings/">local businesses</a>, and <a href="/datasets/">more</a>.
-                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>{{ partial "search-fp" . }}</div>
             </div>
         </div>
     </div>

@@ -1,5 +1,21 @@
-<script defer src="/assets/scripts/dist/vendor/jquery.js"></script>
-<script defer src="/assets/scripts/dist/vendor/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<div class="container-fluid footer-logo-contain">
+    <div class="row row-cols-auto">
+      <div class="col">
+        <a class="footer-logo" href="https://www.sandiego.gov/" target="_blank">{{ partial "logo-white-color-sails" . }}</a>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-center h-100">
+          <p class="float-start logo-text fs-5">Mayor Todd Gloria</p>
+          <p class="float-start logo-text fs-5">Terms of use</p>
+          <p class="float-start logo-text fs-5">Copyrighted © 2002-2023. City of San Diego. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-fluid footer-color-bar"></div>
+
+<script defer src="/assets/scripts/dist/vendor/jquery-3.7.0.js"></script>
+<script defer src="/assets/scripts/dist/vendor/bootstrap-{{ $.Site.Params.bootstrap }}-dist/js/bootstrap.bundle.min.js"></script>
 
 {{ if .IsHome}}
 <script type="text/javascript">
@@ -66,8 +82,37 @@
 {{ else if eq .Section "datasets"}}
 
 <script defer src="/assets/scripts/src/data-preview.js"></script>
-<script defer src="/assets/scripts/dist/vendor/jquery-deparam.js"></script>
-<script defer src="/assets/scripts/dist/vendor/lodash.js"></script>
-<script defer type="module" src="/assets/scripts/src/index.js"></script>
+<script type="text/javascript">
+  (function() {
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', function(e) {
+
+      console.log("Page is loaded");
+
+      document.getElementById("resourcesExpandControl").addEventListener("mousedown", (event) => {
+          
+          // When search button clicked, prevent default to avoid
+          // moving focus and deactivating search
+          // but submit the search
+          console.log("I was clicked!");
+          let targetDiv = document.getElementById("resourcesExpandTarget")
+          let targetClasses = targetDiv.classList;
+          console.log(targetClasses)
+
+          if (targetClasses.contains("data-resources-contain-over")) {
+            targetDiv.classList.remove("data-resources-contain-over")
+          } else {
+            targetDiv.classList.add("data-resources-contain-over");
+          }
+
+
+
+
+        });
+
+    })
+  })();
+</script>
 
 {{ end }}

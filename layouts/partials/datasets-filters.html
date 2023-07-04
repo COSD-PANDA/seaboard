@@ -1,0 +1,47 @@
+<div class="container-fluid datasets-filters-bg py-7">
+    <div class="container">
+        <div class="row">
+            <div class="col mb-3">
+                <h1 class="display-6 text-white">Datasets by category</h1>
+            </div>
+        </div>
+        <div class="row">
+            {{ range $key, $value := .Site.Taxonomies.categories }}
+            {{ $iconPartial := (printf "%s%s" "icon-" $key) }}
+            <div class="col-sm-3">
+                <a class="card category-card {{ $iconPartial }}" href="/categories/{{ $key | urlize }}">
+                    <div class="row g-0">
+                        <div class="col-sm-4">
+                            <div class="category-svg">
+                                {{ partial $iconPartial . }}
+                            </div>
+                        </div>
+                        <div class="col-sm-8 d-flex align-items-center">
+                            <h5 class="card-title text-white fs-6 lh-1 ms-3">{{ humanize $key }}</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row">
+            <div class="col d-flex pt-7 align-items-center">
+                <div>
+                    <h1 class="display-6 text-white">Datasets by department</h1>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="dropdown department-dropdown d-grid ps-5">
+                        <button class="btn department-dropdown-btn dropdown-toggle text-start ps-4 py-3 fs-5" type="button" id="departmentMenu" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="16.75,6.6">
+                            Select Department...
+                        </button>
+                        <ul class="dropdown-menu department-dropdown-menu fs-5" aria-labelledby="departmentMenu">
+                            {{ range $key, $value := .Site.Taxonomies.departments }}
+                            <li><a class="dropdown-item" href="/departments/{{ $key | urlize }}">{{ humanize $key }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

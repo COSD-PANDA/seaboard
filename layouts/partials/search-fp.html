@@ -1,21 +1,27 @@
-<div class="input-group mb-5 dp-jumbotron-searchbox">
-  <input type="text" id="searchQuery" class="form-control dp-jumbotron-input" placeholder="Search the City of San Diego Open Data Portal" aria-label="Search for data" aria-describedby="search-data">
-  <div class="input-group-append">
-    <button class="btn" id="searchSubmit" type="button" data-toggle="dropdown" data-offset="0,0" data-flip="false">
-      <i class="fa fa-search"></i>
-    </button>
-    <div class="dropdown-menu search-dropdown dropdown-menu-right" id="searchResults">
-      <ul class="list-group list-group-flush mb-4" id="searchResultsList">
-        
-      </ul>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <a href="/datasets/" class="search-result-catalog-link pb-4">
-          <i>Didn't find what you need? Browse the <b>full catalog</b></i>
-        </a>
-      </li>
-      </ul>
-    </div>
+<!--<div class="input-group mb-5">
+  <input type="text" id="searchQuery" class="form-control fp-search-br" placeholder="Explore data about San Diego" aria-label="Search for data" aria-describedby="search-data">
+  <button class="btn fp-search-br" id="searchSubmit" type="button" data-toggle="dropdown" data-offset="0,0" data-flip="false">
+    <i class="fa fa-search"></i>
+  </button>
+</div>-->
+<div class="input-group mb-5">
+  <input type="text" class="form-control fp-search-all fp-search-input" id="searchQuery" placeholder="Explore data about San Diego" aria-label="Search for data" aria-describedby="button-addon">
+  <button class="btn fp-search-all fp-search-button fs-1" type="button" id="searchSubmit"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+
+
+<div class="input-group-append">
+  <div class="dropdown-menu search-dropdown dropdown-menu-right" id="searchResults">
+    <ul class="list-group list-group-flush mb-4" id="searchResultsList">
+      
+    </ul>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <a href="/datasets/" class="search-result-catalog-link pb-4">
+        <i>Didn't find what you need? Browse the <b>full catalog</b></i>
+      </a>
+    </li>
+    </ul>
   </div>
 </div>
 
