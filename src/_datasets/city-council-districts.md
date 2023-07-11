@@ -36,4 +36,4 @@ date_modified: '2023-07-11'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-City of San Diego Council Districts Boundaries (adopted August 25, 2011).
+City of San Diego Council Districts Boundaries (adopted December 15, 2021).
