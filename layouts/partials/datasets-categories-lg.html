@@ -8,7 +8,7 @@
         <div class="row">
             {{ range $key, $value := .Site.Taxonomies.categories }}
             {{ $iconPartial := (printf "%s%s" "icon-" $key) }}
-            <div class="col-sm-3">
+            <div class="col-sm-3 mb-3">
                 <a class="card category-card {{ $iconPartial }}" href="/categories/{{ $key | urlize }}">
                     <div class="row g-0">
                         <div class="col-sm-4">

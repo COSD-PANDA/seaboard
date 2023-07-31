@@ -1,0 +1,25 @@
+{{- $thisFile := false }}
+{{- if eq .Section "departments" }}
+    {{- $thisFile = anchorize .Title }}
+{{- end }}
+<div class="card department-menu-card">
+    <div class="card-header">
+      <h5 class="card-title text-white fw-bold">Departments</h5>
+    </div>
+    <div class="card-body">
+        <ul class="nav flex-column">
+            {{- range $key, $value := .Site.Taxonomies.departments }}
+            {{- $thisKey := (printf "%s" $key) }}
+            {{- if eq $thisFile $thisKey }}
+            <li class="nav-item dept-current-nav-item">
+                <a class="nav-link dept-current-link" href="/departments/{{ $key | urlize }}">{{ title (humanize $key) }} <span class="badge rounded-circle float-end dept-count-badge dept-current-badge">{{ .Count }}</span></a>
+            </li>
+            {{- else }}
+            <li class="nav-item">
+                <a class="nav-link" href="/departments/{{ $key | urlize }}">{{ title (humanize $key) }} <span class="badge rounded-circle float-end dept-count-badge">{{ .Count }}</span></a>
+            </li>
+            {{- end }}
+            {{- end }}
+        </ul>
+    </div>
+</div>

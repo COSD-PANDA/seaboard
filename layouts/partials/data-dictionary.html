@@ -1,44 +1,45 @@
-<div class="row">
+<div class="row mt-4">
 {{ $url := .Params.described_by }}
 {{ $sep := "," }}
 {{ $csvRows :=  getCSV $sep $url}}
 {{ $noRows := $csvRows | len }}
 {{ $noDataFields := sub $noRows 1 }}
 {{ $dataFields := last $noDataFields $csvRows }}
-{{ $halfFields :=  $noDataFields }}
-
-{{ if le $noDataFields 8 }}
-{{ $halfFields =  $noDataFields }}
-{{ else }}
-{{ $halfFields = div $noDataFields 2 | math.Ceil }}
-{{ end }}
+{{ $dataFieldsLen :=  sub $noDataFields 1 }}
 
 <div class="col-sm">
-    <div class="accordion portal-accordion mt-4" id="accordionColumns">
-        {{ range $i, $r :=  $dataFields }}
-                <div class="accordion-item">
-                    {{ $fieldName :=  index $r 0}}
-                    <h2 class="accordion-header" id="{{ anchorize $fieldName }}">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapse{{ $i }}">
-                            {{ index $r 0 }}
-                        </button>
-                    </h2>
-                    <div id="collapse{{ $i }}" class="accordion-collapse collapse" aria-labelledby="{{ anchorize $fieldName }}" data-bs-parent="#accordionColumns">
-                        <div class="accordion-body d-flex">
-                        <p>{{ index $r 1 }}</p><p>{{ index $r 2 }}</p>
-                        </div>
-                    </div>
-                </div>
-                {{ if and (ne $i (sub $noDataFields 1)) (modBool (add $i 1) $halfFields) }}
-    </div>
-</div>
-<div class="col-sm">
-    <div class="accordion portal-accordion mt-4" id="accordionColumns">
+    <div class="dictionary-table">
+        <table class="table" id="accordionColumns">
+            <thead class="rounded-table-border">
+                <th>Column name</th>
+                <th>Data type</th>
+                <th></th>
+            </thead>
+            <tbody>
+                {{ range $i, $r :=  $dataFields }}
+                {{ if eq $i $dataFieldsLen }}
+                <tr id="final-data-field" class="dictionary-accordion-header final-data-field-corners">
+                    <td class="align-middle">{{ index $r 0 }}</td>
+                    <td class="align-middle">{{ index $r 2 }}</td>
+                    <td><button class="accordion-button portal-accordian-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapse{{ $i }}"></button></td>
+                </tr>
+                <tr id="collapse{{ $i }}" class="dictionary-accordion-body final-data-def collapse" data-bs-parent="#accordionColumns">
+                    <td class="accordion-body" colspan="3">{{ index $r 1 }}</td>
+                </tr>
                 {{ else }}
+                <tr class="dictionary-accordion-header">
+                    <td class="align-middle">{{ index $r 0 }}</td>
+                    <td class="align-middle">{{ index $r 2 }}</td>
+                    <td><button class="accordion-button portal-accordian-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapse{{ $i }}"></button></td>
+                </tr>
+                <tr id="collapse{{ $i }}" class="dictionary-accordion-body collapse" data-bs-parent="#accordionColumns">
+                    <td class="accordion-body" colspan="3">{{ index $r 1 }}</td>
+                </tr>
                 {{ end }}
-        {{ end }}
+                {{ end }}
+            </tbody>
+        </table>
     </div>
 </div>
-
 
 </div>

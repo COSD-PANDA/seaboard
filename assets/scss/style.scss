@@ -133,6 +133,8 @@ $p_black_rgba_100: rgba(55, 66, 74, 1);
 $p_black_rgba_50: rgba(55, 66, 74, 0.5);
 $p_black_rgba_10: rgba(55, 66, 74, 0.1);
 $p_black_rgba_20: rgba(55, 66, 74, 0.2);
+$p_black_rgba_5: rgba(55, 66, 74, 0.05);
+$s_black_dk_50: rgba(27, 36, 42, 0.5);
 $input_borders: #707070;
 
 $nav_home_blue: $s_blue_dk;
@@ -140,23 +142,35 @@ $nav_data_green: $p_green;
 $nav_about_orange: $p_orange;
 $nav_contact_blue: $p_blue;
 
+$cat_yellow: #fcc200;
+$cat_dk_blue: $s_blue_dk;
+$cat_lt_blue: $p_blue;
+$cat_lt_green: $p_green;
+$cat_dk_green: $s_green_dk;
+$cat_orange: $p_orange;
+$cat_gray: $footer_color_bar;
+$cat_purple: $p_purple;
+
+$cat_yellow_10: rgba(252, 194, 0, 0.1);
+$cat_dk_blue_10: rgba(0, 84, 159, 0.1);
+$cat_lt_blue_10: rgba(0, 152, 219, 0.1);
+$cat_lt_green_10: rgba(0, 199, 178, 0.1);
+$cat_dk_green_10: rgba(0, 123, 105, 0.1);
+$cat_orange_10: rgba(255, 160, 47, 0.1);
+$cat_gray_10: rgba(93, 103, 111, 0.1);
+$cat_purple_10: rgba(127, 48, 196, 0.1);
+
+$fp_image_color: rgba(0, 73, 137, 0.6);
+
 $navbar-light-color: $p_black_rgba_100;
 $navbar-light-hover-color: $p_black_rgba_100;
 $navbar-light-active-color: $p_black_rgba_100;
 $navbar-light-disabled-color: $p_black_rgba_100;
 
-$accordion-color: white;
-$accordion-bg: $p_black;
-$accordion-border-color: rgba(255,255,255, 1);
-$accordion-border-radius: 0.5rem;
-$accordion-button-color:white;
-$accordion-button-bg: $p_black;
-$accordion-icon-color: white;
-$accordion-button-active-bg: $p_black;
-$accordion-button-active-color: white;
-$accordion-button-focus-border-color: white;
-/*$accordion-button-focus-box-shadow: 0 0 0 0.25rem $p_black_rgba_20;*/
+$accordion-button-bg: transparent;
+$accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow: none;
+$accordion-button-active-bg: transparent;
 
 $dropdown-border-radius: 0;
 
@@ -188,8 +202,27 @@ $spacers: (
   7: $spacer * 5,
 );
 
+$btn-border-radius: 2.375rem;
+$btn-font-family: "Poppins";
+$btn-font-size: 1.5625rem;
+$btn-line-height: 1rem;
+$btn-padding-y: 1.5625rem;
+$btn-padding-x: 3.125rem;
+$btn-font-weight: 600;
+
 
 @import "bootstrap-5.0.2/scss/bootstrap";
+
+/* Other custom variables */
+
+$category-nav-item-border-width: 0.3125rem;
+$xxl-container-max-width: map-get($map: $container-max-widths, $key: "xxl");
+$xl-container-max-width: map-get($map: $container-max-widths, $key: "xl");
+$lg-container-max-width: map-get($map: $container-max-widths, $key: "lg");
+$md-container-max-width: map-get($map: $container-max-widths, $key: "md");
+$sm-container-max-width: map-get($map: $container-max-widths, $key: "sm");
+$container-padding-double: calc($container-padding-x * 2);
+$category-nav-item-borders: calc($category-nav-item-border-width * 2 * 8);
 
 /* Site wide */
 
@@ -197,6 +230,10 @@ body {
   width: 100%;
   height:100%;
   color:$p_black;
+}
+
+ul {
+  list-style-position: inside;
 }
 
 h1.display-4, h1.display-6 {
@@ -223,20 +260,36 @@ h1.display-4, h1.display-6 {
   border-bottom-width: 0.375rem;
 }
 
-.cat-color-green {
-  border-bottom-color: $nav_data_green;
+.nav-cat-color-green {
+  border-bottom-color: $cat_lt_green;
 }
 
-.cat-color-dk-blue {
-  border-bottom-color: $nav_home_blue;
+.nav-cat-color-dk-blue {
+  border-bottom-color: $cat_dk_blue;
 }
 
-.cat-color-orange {
-  border-bottom-color: $nav_about_orange;
+.nav-cat-color-orange {
+  border-bottom-color: $cat_orange;
 }
 
-.cat-color-p-blue {
-  border-bottom-color: $nav_contact_blue;
+.nav-cat-color-p-blue {
+  border-bottom-color: $cat_lt_blue;
+}
+
+.nav-cat-color-yellow {
+  border-bottom-color: $cat_yellow;
+}
+
+.nav-cat-color-gray {
+  border-bottom-color: $cat_gray;
+}
+
+.nav-cat-color-dk-green {
+  border-bottom-color: $cat_dk_green;
+}
+
+.nav-cat-color-purple {
+  border-bottom-color: $cat_purple;
 }
 
 /* Site-wide header */
@@ -249,6 +302,7 @@ h1.display-4, h1.display-6 {
 .header-logo {
   height: 4.87125rem;
   width: auto;
+  margin-left: 3.125rem;
 }
 
 #navbarNav.header-nav {
@@ -256,9 +310,7 @@ h1.display-4, h1.display-6 {
   font-weight: 600;
   line-height: 2.5rem;
 
-  ul {
-    width: 75%;
-  }
+  
 
   a.get-started-li {
     border-left: 0.5rem solid $nav_home_blue;
@@ -292,6 +344,49 @@ h1.display-4, h1.display-6 {
 
 /* Front page */
 
+.fp-search-wrapper {
+  /*width: 100%;
+  height: 66.197916666666667%;*/
+  background: url('../assets/images/SanDiego-Coronado-View-1920.jpg') no-repeat center center;
+  background-size:cover;
+  overflow: hidden;
+}
+
+.fp-img-color, .fp-gradient {
+  width: calc(100% + 24px);
+  height: 100%;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.fp-img-color {
+  background-color: $fp_image_color;
+}
+
+.fp-gradient {
+  background-image: linear-gradient(90deg, rgba(0, 84, 159, 1), rgba(0, 84, 159, 0.18));
+}
+
+.fp-sails {
+  width: 100%;
+  height: 100%;
+  background: url('../assets/images/sd-wave.svg') no-repeat 95% 105%;
+  background-size:35%;
+}
+
+.fp-main-content {
+  width: 80%;
+}
+
+.form-control.fp-search-all:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.fp-intro-text {
+  line-height: 2.1875rem;
+}
+
 .fp-search-all {
   border-radius: 3.5625rem;
   border-color: $input_borders;
@@ -308,6 +403,60 @@ h1.display-4, h1.display-6 {
   color: #9BA1A5;
   border-left: none;
   opacity: 1;
+}
+
+.fp-carousel {
+  width: 100%;
+  .carousel-inner {
+    .carousel-item {
+      width: 100%;
+
+      .carousel-item-text {
+          width: 60%;
+
+          .carousel-item-text-body {
+            line-height: 1.875rem;
+          }
+
+          .intro-h1-rule {
+            width: 50px;
+            height: 5px;
+            background-color: $cat_lt_green;
+          }
+
+          .steps-h1-rule {
+            width: 98px;
+            height: 6px;
+            background-color: $primary;
+
+          }
+
+          .carousel-item-h1-rule {
+            width: 98px;
+            height: 6px;
+            background-color: $primary;
+          }
+      }
+
+
+    }
+    .portal-intro { 
+      background: url('../assets/images/fp-carousel-slides_fp-slide-1.svg') no-repeat right bottom; 
+      background-size: contain;
+    }
+    .portal-lingo { 
+      background: url('../assets/images/fp-carousel-slides_fp-slide-2.svg') no-repeat center center; 
+      background-size: contain;
+    }
+    .portal-navigate { 
+      background: url('../assets/images/fp-carousel-slides_fp-slide-3.svg') no-repeat center center; 
+      background-size: contain;
+    }
+    .portal-download { 
+      background: url('../assets/images/fp-carousel-slides_fp-slide-4.svg') no-repeat center center; 
+      background-size: contain;
+    }
+  }
 }
 
 /* Dataset single */
@@ -347,29 +496,16 @@ h1.display-4, h1.display-6 {
 
 }
 
-.dataset-taxonomies-contain {
-  a.btn {
+
+a.dataset-taxonomy-btn {
   border-radius: 1rem;
   background-color: $p_black_rgba_20;
   font-style: italic;
-  }
 }
 
 .dataset-resources-main {
   margin-top: 3rem;
 }
-
-.dataset-resources-toggle {
-  div {
-    cursor: pointer;
-
-    svg {
-      width: 3rem;
-      height: auto;
-    }
-  }
-}
-
 
 .dataset-main-container {
 
@@ -395,7 +531,7 @@ h1.display-4, h1.display-6 {
     bottom: 0;
     width: 100%;
     left: 50%;
-    transition: all .3s ease-out;
+    transition: all .75s ease-out;
     padding-left: var(--bs-gutter-x, 0.75rem);
     padding-right: calc(((100vw - 1320px - 24px) / 2) + 12px);
   }
@@ -404,6 +540,44 @@ h1.display-4, h1.display-6 {
     left: 0;
   }
 
+}
+
+.toggler-icons-contain {
+  cursor: pointer;
+  svg {
+    fill: white;
+    height: 1.875rem;
+    width: auto;
+  }
+}
+
+@keyframes toggle-arrow-expand {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.resources-toggle-open {
+  animation-name: toggle-arrow-expand;
+  animation-duration: .75s;
+  animation-timing-function: ease-out;
+  transform-origin: center center;
+  animation-fill-mode: forwards;
+}
+
+.resources-toggle-close {
+  animation-name: toggle-arrow-expand;
+  animation-duration: .75s;
+  animation-timing-function: ease-out;
+  transform-origin: center center;
+  animation-fill-mode: backwards;
+  animation-direction: reverse;
 }
 
 .resources-table {
@@ -465,25 +639,82 @@ h1.display-4, h1.display-6 {
 
 }
 
+.dictionary-table {
+
+  .table {
+   margin-bottom: $spacer;
+   width: 100%;
+   //color: white;
+   //border-color: white;
+ 
+   > * > * > * {
+     padding: $table-cell-padding-y 1rem;
+     //background-color: $p_black;
+   }
+   
+   > thead {
+     @include montserrat;
+     font-weight: 700;
+     text-transform: uppercase;
+     font-size: 1.875rem;
+   }
+   
+   .dictionary-accordion-header {
+    font-size: 1.25rem;
+    font-weight: 400;
+
+   }
+
+   .dictionary-accordion-body {
+    font-size: 1.125rem;
+    font-weight: 300;
+   }
+  }
+
+  /* top row */
+
+  tr:first-child th:first-child {
+    border-top-left-radius: 0.9375rem;
+  }
+
+  tr:first-child th:last-child {
+    border-top-right-radius: 0.9375rem;
+  }
+
+  /* Bottom row uncollapsed */
+
+  tr.final-data-field-corners td:first-child {
+    border-bottom-left-radius: 0.9375rem;
+  }
+
+  tr.final-data-field-corners td:last-child {
+    border-bottom-right-radius: 0.9375rem;
+  }
+
+  /* Bottom row */
+
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 0.9375rem;
+  }
+
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 0.9375rem;
+  }
+ 
+ }
+
+tr.dictionary-accordion-body {
+  td.accordion-body {
+    padding: 1.5rem 1rem;
+    //background-color: #475158;
+  }
+}
+
 .dataset-dictionary-contain {
   background-color: $light;
 }
 
-.portal-accordion {
-  
-  .accordion-body {
-    color: white;
-    background-color: #475158;
-    font-size: 1.125rem;
-    font-weight: 300;
-  }
-
-  .accordion-button {
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
-
-}
+/* Category menus */
 
 .category-svg {
   width: 100%;
@@ -494,13 +725,57 @@ h1.display-4, h1.display-6 {
   }
 }
 
-a.card.category-card.icon-city-management {
+h5.category-svg-label {
+  width: 150px;
+}
+
+a.card.category-card, .category-nav-item {
   background-color: transparent;
-  border: 0.3125rem solid $p_purple;
+  border-width: 0.3125rem;
+  border-style: solid;
   padding: 1rem;
   text-decoration: none;
-
 }
+
+.category-nav-item {
+  border-color: $dark;
+}
+
+a.card.category-card.icon-city-management, .category-nav-city-management {
+  border-color: $cat_purple;
+}
+
+a.card.category-card.icon-economy-and-community, .category-nav-economy-and-community {
+  border-color: $cat_gray;
+}
+
+a.card.category-card.icon-city-infrastructure, .category-nav-city-infrastructure {
+  border-color: $cat_yellow;
+}
+
+a.card.category-card.icon-public-safety, .category-nav-public-safety {
+  border-color: $cat_dk_blue;
+}
+
+a.card.category-card.icon-energy-and-environment, .category-nav-energy-and-environment {
+  border-color: $cat_lt_green;
+}
+
+a.card.category-card.icon-transportation, .category-nav-transportation {
+  border-color: $cat_orange;
+}
+
+a.card.category-card.icon-culture-and-recreation, .category-nav-culture-and-recreation {
+  border-color: $cat_lt_blue;
+}
+
+a.card.category-card.icon-gis, .category-nav-gis {
+  border-color: $cat_dk_green;
+}
+
+/* Department menus */
+
+/* Dropdown */
 
 .dropdown.department-dropdown {
   @include poppins;
@@ -523,6 +798,119 @@ a.card.category-card.icon-city-management {
 
 .btn.department-dropdown-btn.dropdown-toggle::after {
   color: rgba(55, 66, 74, 0)
+}
+
+/* Card nav */
+
+.card.department-menu-card {
+
+  border: none;
+  @include poppins;
+
+  .card-header {
+    background-color: $s_black_dk;
+    
+    .card-title {
+      font-size: 1.875rem;
+    }
+  }
+
+  .card-header:first-child {
+    border-radius: 0;
+  }
+
+  .card-body {
+    background-color: $p_black_rgba_5;
+    font-size: 1.375rem;
+
+    a.nav-link {
+      color: $p_black;
+      .badge.dept-count-badge {
+        background-color: $p_black_rgba_50;
+      }
+    }
+
+    a.nav-link.dept-current-link {
+      font-weight: bold;
+      .badge.dept-count-badge.dept-current-badge {
+        background-color: $p_black;
+      }
+    }
+
+    .dept-current-nav-item {
+      background-color: $p_black_rgba_5;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding-left: calc(1rem - 0.9375rem);
+      padding-right: 1rem;
+      border-left: 0.9375rem solid $p_black;
+    }
+
+
+  }
+
+}
+
+/* Dataset list component */
+
+.dataset-list-tag-label, .dataset-list-tag-link {
+  font-size: 0.9375rem;
+}
+
+.dataset-list-tag-link {
+  color: $s_black_dk_50;
+  text-decoration: none;
+}
+
+.dataset-metadata-list-item {
+  font-size: 1.125rem;
+}
+
+.category-svg-dataset {
+  width: 135px;
+  height: 135px;
+  
+  svg {
+    width: 135px;
+    height: auto;
+  }
+}
+
+a.dataset-title-link {
+  font-size: 1.5625rem;
+  color: $s_black_dk;
+}
+
+.cat-metadata-city-infrastructure {
+  background-color: $cat_yellow_10;
+}
+
+.cat-metadata-public-safety {
+  background-color: $cat_dk_blue_10;
+}
+
+.cat-metadata-energy-and-environment {
+  background-color: $cat_lt_green_10;
+}
+
+.cat-metadata-transportation {
+  background-color: $cat_orange_10;
+}
+
+.cat-metadata-city-management {
+  background-color: $cat_purple_10;
+}
+
+.cat-metadata-economy-and-community {
+  background-color: $cat_gray_10;
+}
+
+.cat-metadata-culture-and-recreation {
+  background-color: $cat_lt_blue_10;
+}
+
+.cat-metadata-gis {
+  background-color: $cat_dk_green_10;
 }
 
 /* Site-wide footer */
@@ -560,12 +948,28 @@ a.footer-logo {
   .dataset-main-contain {
     margin-left: calc(((100vw - 720px - 24px) / 2) + 12px);
   }
+  .category-nav-svg {
+  
+    svg {
+      height: auto;
+      width: calc((720px - 24px - 5rem - 17rem - 150px) / 8);
+    }
+  
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
   .dataset-main-contain {
     margin-left: calc(((100vw - 960px - 24px) / 2) + 12px);
+  }
+  .category-nav-svg {
+  
+    svg {
+      height: auto;
+      width: calc((960px - 24px - 5rem - 17rem - 150px) / 8);
+    }
+  
   }
 }
 
@@ -574,11 +978,41 @@ a.footer-logo {
   .dataset-main-contain {
     margin-left: calc(((100vw - 1140px - 24px) / 2) + 12px)
   }
+  .category-nav-svg {
+  
+    svg {
+      height: auto;
+      width: calc((1140px - 24px - 5rem - 17rem - 150px) / 8);
+    }
+  
+  }
 }
 
 @media (min-width: 1400px) { 
   .dataset-main-contain {
     /* ((viewport width - $container-max-widths xxl - $container-padding-x*2)/2)+$container-padding-x */
     margin-left: calc(((100vw - 1320px - 24px) / 2) + 12px);
+  }
+  .category-nav-svg {
+
+    /* 
+    $container-max-widths xxl - 
+    $container-padding-x*2 - 
+    .category-nav-item border width*2*8 -
+    .category-svg-label h5 margin start -
+    .category-nav-item padding*2*8 -
+    .category-svg-label h5 width
+    */
+
+    height: calc((1320px - 24px - 5rem - 1rem - 16rem - 150px) / 8);
+    width: calc((1320px - 24px - 5rem - 1rem - 16rem - 150px) / 8);
+    overflow: hidden;
+  
+    svg {
+      height: auto;
+      width: 100%;
+    }
+
+  
   }
 }

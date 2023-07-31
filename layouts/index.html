@@ -1,20 +1,28 @@
 {{ define "main" }}
 
-<div class="container-fluid py-7">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="display-4">Open Data for All San Diegans</h1>
-                <p>
-                    The City of San Diego's Open Data Portal lets you find City data, lets you find facts about your neighborhood, lets you create maps and graphs about the City, and lets you freely download data for your own analysis.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div>{{ partial "search-fp" . }}</div>
+<div class="container-fluid fp-search-wrapper">
+    <div class="fp-img-color">
+        <div class="fp-gradient">
+            <div class="fp-sails">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex flex-column p-6 fp-main-content">
+                                <h1 class="display-4 text-white mb-5">Open Data for All San Diegans</h1>
+                                <p class="text-white fs-3 fp-intro-text mb-5">
+                                    The City of San Diego's Open Data Portal lets you find City data, lets you find facts about your neighborhood, lets you create maps and graphs about the City, and lets you freely download data for your own analysis.
+                                </p>
+                                <div class="mb-5">
+                                    {{ partial "search-fp" . }}
+                                </div>
+                                <p class="text-white fs-3 fp-intro-text mb-5">New to the open data portal? Click here to learn how to use the data portal.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
     </div>
 </div>
+{{ partial "portal-carousel-exp" . }}
 {{ end }}

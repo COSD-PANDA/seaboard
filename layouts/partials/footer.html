@@ -88,31 +88,50 @@
 
     document.addEventListener('DOMContentLoaded', function(e) {
 
-      console.log("Page is loaded");
+      // Controls resources toggle
 
       document.getElementById("resourcesExpandControl").addEventListener("mousedown", (event) => {
           
-          // When search button clicked, prevent default to avoid
-          // moving focus and deactivating search
-          // but submit the search
-          console.log("I was clicked!");
-          let targetDiv = document.getElementById("resourcesExpandTarget")
+          const arrowToggle = document.getElementsByClassName("resources-toggle-arrow").item(0);
+          const targetDiv = document.getElementById("resourcesExpandTarget");
+          
           let targetClasses = targetDiv.classList;
-          console.log(targetClasses)
+          let arrowClasses = arrowToggle.classList;
 
           if (targetClasses.contains("data-resources-contain-over")) {
-            targetDiv.classList.remove("data-resources-contain-over")
+            targetDiv.classList.remove("data-resources-contain-over");
+            arrowToggle.classList.remove("resources-toggle-open");
+            arrowToggle.classList.add("resources-toggle-close");
           } else {
             targetDiv.classList.add("data-resources-contain-over");
+            arrowToggle.classList.remove("resources-toggle-close")
+            arrowToggle.classList.add("resources-toggle-open")
           }
-
-
-
 
         });
 
-    })
-  })();
+      // Controls data dictionary collapse
+
+      const dictFinalBody = document.getElementsByClassName('final-data-def').item(0);
+
+      dictFinalBody.addEventListener('hide.bs.collapse', event => {
+          const dictFinalHeader = document.getElementById('final-data-field');
+          let finalHeaderClasses = dictFinalHeader.classList;
+          if (!(finalHeaderClasses.contains("final-data-field-corners"))) {
+            dictFinalHeader.classList.add("final-data-field-corners")
+          }
+      })
+
+      dictFinalBody.addEventListener('show.bs.collapse', event => {
+          const dictFinalHeader = document.getElementById('final-data-field');
+          let finalHeaderClasses = dictFinalHeader.classList;
+          if (finalHeaderClasses.contains("final-data-field-corners")) {
+            dictFinalHeader.classList.remove("final-data-field-corners")
+          }
+      })
+})
+
+    })();
 </script>
 
 {{ end }}

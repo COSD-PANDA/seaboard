@@ -1,23 +1,68 @@
 {{ define "main" }}
-<div class="container">
+{{- $thisTitle := false }}
+{{- if eq .Section "categories" }}
+    {{- $thisTitle = .Title }}
+{{- end }}
+{{ partial "datasets-categories-sm" . }}
+<div class="container py-7">
 	<div class="row">
-	  <div class="col">
-		 <h1 class="display-4">
-		 	{{.Title}}
-		 </h1> 
-	  </div>
-	</div>
-	<div class="row">
-		<div class="col">
-			{{.Content}}
+		<div class="col-sm-4">
+			{{ partial "datasets-departments" . }}
 		</div>
-		
-	</div>
-	<div class="row">
-		<div class="col">
-			{{ range .Pages }}
-  				{{.Title}}<br>
-  			{{ end }}
+		<div class="col-sm-8">
+			{{- range where .Pages "Section" "datasets" }}
+			{{- $thisCatList := .Params.categories }}
+			{{- $thisCatIndex := 0 }}
+			{{- range $i, $e := $thisCatList }}
+				{{- if eq $e $thisTitle }}
+					{{- $thisCatIndex = $i }}
+				{{- end }}
+			{{- end }}
+			{{- $selectedCat := index $thisCatList $thisCatIndex }}
+			{{- $selectedCatPath :=  anchorize $selectedCat }}
+			{{- $thisIcon := (printf "icon-%s" $selectedCatPath) }}
+			<div class="d-flex flex-sm-wrap flex-md-nowrap align-items-start mb-2">
+				<div class="dataset-list-main d-flex pb-3 me-4 border-bottom w-75">
+					<div class="category-svg-dataset">
+						{{ partial $thisIcon . }}
+					</div>
+					<div class="ps-3">
+						<div class="d-flex flex-wrap align-items-center">
+							<div>
+								<a class="fw-bold text-decoration-none dataset-title-link pe-2" href="{{ .Permalink }}">{{ .Title }}</a>
+							</div>
+							<div>
+								{{ range .Params.departments }}
+								<a class="btn btn-sm me-2 dataset-taxonomy-btn" href="/departments/{{ . | urlize }}" role="button">{{ . }}</a>
+								{{ end }}
+								{{ range .Params.categories }}
+								<a class="btn btn-sm me-2 dataset-taxonomy-btn" href="/categories/{{ . | urlize }}" role="button">{{ . }}</a>
+								{{ end }}
+							</div>
+						</div>
+						<p class="fs-5 pt-3">{{ .Summary }}</p>
+					</div>
+				</div>
+				<div class="cat-metadata-{{ $selectedCatPath }} w-25 h-auto">
+					<div class="d-inline-flex flex-column px-3 pt-3">
+						<p class="dataset-metadata-list-item mb-2"><span class="fw-bold pe-2">Issued:</span>{{ .Params.date_issued }}</p>
+						<p class="dataset-metadata-list-item mb-2"><span class="fw-bold pe-2">Updated:</span></p>
+						<p class="dataset-metadata-list-item mb-2"><span class="fw-bold pe-2">Views:</span>123</p>
+						<p class="dataset-metadata-list-item mb-2"><span class="fw-bold pe-2">Docs:</span></p>
+					</div>
+				</div>
+			</div>
+			{{- $tagsList := .Params.tags }}
+			{{- with $tagsList  }}
+			<div class="mb-5">
+				<p class="dataset-list-tag-label pe-4 d-inline">Tags</p>
+				{{ range . }}
+				<a class="dataset-list-tag-link pe-4" href="/tags/{{ . | urlize }}">{{ . }}</a>
+				{{ end }}
+			</div>
+			{{- end }}
+			
+			{{- end }}
 		</div>
 	</div>
 </div>

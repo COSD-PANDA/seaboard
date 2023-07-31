@@ -3,12 +3,12 @@
 	<div class="row dataset-main-row">
 		<div class="col-sm-6 dataset-main-column">
 			<div class="pt-5 pe-5 pb-7">
-				<div class="dataset-taxonomies-contain mb-4">
-					{{ range .Params.categories }}
-					<a class="btn btn-sm me-2" href="/categories/{{ . | urlize }}" role="button">{{ . }}</a>
-					{{ end }}
+				<div class="mb-4">
 					{{ range .Params.departments }}
-					<a class="btn btn-sm me-2" href="/departments/{{ . | urlize }}" role="button">{{ . }}</a>
+					<a class="btn btn-sm me-2 dataset-taxonomy-btn" href="/departments/{{ . | urlize }}" role="button">{{ . }}</a>
+					{{ end }}
+					{{ range .Params.categories }}
+					<a class="btn btn-sm me-2 dataset-taxonomy-btn" href="/categories/{{ . | urlize }}" role="button">{{ . }}</a>
 					{{ end }}
 				</div>
 				<h1 class="display-4">
@@ -19,19 +19,19 @@
 					<p><span class="dataset-metadata-label">Issued:</span> {{ .Params.date_issued }}</p>
 					<p><span class="dataset-metadata-label">Views:</span> </p>
 				</div>
-				<div class="dataset-text fs-5">
+				<div class="dataset-text fs-5 mb-5">
 				{{ .Summary }}
 				</div>
 				<div class="dataset-jump-links mb-5">
 					<span class="me-4 d-inline fst-italic">Jump to: </span>
 					<a class="me-4" href="#dataDictionary">Data dictionary</a>
 					<a class="me-4" href="#">Insights</a>
-					<a class="me-4" href="#">Additional details</a>
+					{{ with .Content }}<a class="me-4" href="#addDetails">Additional details</a>{{ end }}
 				</div>
 				<div class="p-3 mb-2 dataset-tags d-flex align-items-center">
 					<span class="me-4 d-inline">Tags: </span>
 					{{ range .Params.tags }}
-					<a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+					<a class="tag me-4" href="/tags/{{ . | urlize }}">{{ . }}</a>
 					{{ end }}
 				</div>
 			</div>
@@ -39,7 +39,11 @@
 				<div class="d-flex h-100">
 					<div class="dataset-resources-toggle align-self-center">
 						<div id="resourcesExpandControl">
-							{{ partial "icon-resources-expand" . }}
+							<div class="toggler-icons-contain">
+								{{ partial "toggler-arrow-burger" . }}
+								{{ partial "toggler-arrow" . }}
+							</div>
+							
 						</div>
 					</div>
 					<div class="dataset-resources-main pt-5 ps-5">
@@ -92,5 +96,21 @@
 		{{ partial "data-dictionary" . }}
 	</div>
 </div>
-{{ partial "datasets-filters" . }}
+{{ with .Content }}
+<div class="container py-7">
+	<div class="row">
+		<div class="col">
+			<div>
+				<h1 class="display-4" id="addDetails">
+					Additional details
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-4">
+		{{ . }}
+	</div>
+</div>
+{{ end }}
+{{ partial "datasets-categories-lg" . }}
 {{ end }}

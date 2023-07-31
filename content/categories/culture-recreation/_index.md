@@ -1,4 +1,0 @@
----
-title: "Culture & Recreation"
-
----

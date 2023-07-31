@@ -1,7 +1,10 @@
 {{- $page := . }}
-<div class="container-fluid nav-color-bar cat-color-{{ .Params.colorbar }}">
-  <nav class="navbar navbar-light navbar-expand-lg">
-      <div class="container">
+{{- if .IsHome }}
+<div class="container-fluid"></div>
+{{- else}}
+<div class="container-fluid nav-color-bar nav-cat-color-{{ .Params.colorbar }}">
+{{- end}}
+  <nav class="navbar navbar-light navbar-expand-xl">
         <a class="navbar-brand header-logo-contain" href="/">
           <img src="/assets/images/cosd-header-logo.svg" alt="City of San Diego" class="d-inline-block align-text-bottom header-logo">
           Data Portal
@@ -18,6 +21,5 @@
             {{ end }}
           </ul>
         </div>
-      </div>
   </nav>
 </div>

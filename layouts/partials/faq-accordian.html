@@ -1,0 +1,13 @@
+{{ $url := .Params.described_by }}
+{{ $sep := "," }}
+{{ $csvRows :=  getCSV $sep $url}}
+{{ $noRows := $csvRows | len }}
+{{ $noDataFields := sub $noRows 1 }}
+{{ $dataFields := last $noDataFields $csvRows }}
+{{ $halfFields :=  $noDataFields }}
+
+{{ if le $noDataFields 8 }}
+{{ $halfFields =  $noDataFields }}
+{{ else }}
+{{ $halfFields = div $noDataFields 2 | math.Ceil }}
+{{ end }}
