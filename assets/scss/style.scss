@@ -442,19 +442,19 @@ h1.display-4, h1.display-6 {
     }
     .portal-intro { 
       background: url('../assets/images/fp-carousel-slides_fp-slide-1.svg') no-repeat right bottom; 
-      background-size: contain;
+      background-size: auto 100%;
     }
     .portal-lingo { 
-      background: url('../assets/images/fp-carousel-slides_fp-slide-2.svg') no-repeat center center; 
-      background-size: contain;
+      background: url('../assets/images/fp-carousel-slides_fp-slide-2.svg') no-repeat right bottom; 
+      background-size: auto 100%;
     }
     .portal-navigate { 
-      background: url('../assets/images/fp-carousel-slides_fp-slide-3.svg') no-repeat center center; 
-      background-size: contain;
+      background: url('../assets/images/fp-carousel-slides_fp-slide-3.svg') no-repeat right bottom; 
+      background-size: auto 100%;
     }
     .portal-download { 
-      background: url('../assets/images/fp-carousel-slides_fp-slide-4.svg') no-repeat center center; 
-      background-size: contain;
+      background: url('../assets/images/fp-carousel-slides_fp-slide-4.svg') no-repeat right bottom; 
+      background-size: auto 100%;
     }
   }
 }
