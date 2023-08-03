@@ -48,7 +48,7 @@ date_modified: '2023-08-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Salinity measurements collected by real-time oceanographic mooring system (RTOM).
+Salinity measurements collected by Real-time Oceanographic Mooring System (RTOM).
 
 <!--more-->
 

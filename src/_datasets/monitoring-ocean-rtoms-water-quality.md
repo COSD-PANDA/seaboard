@@ -48,7 +48,7 @@ date_modified: '2023-08-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Water quality measurements collected by real-time oceanographic mooring system (RTOM). Quality parameters include Biological oxygen demand (BOD) equivalent, Chlorophyll fluorescence, Colored dissolved organic matter (CDOM) fluorescence equivalent, and Turbidity.
+Water quality measurements collected by Real-time Oceanographic Mooring System (RTOM). Quality parameters include Biological oxygen demand (BOD) equivalent, Chlorophyll fluorescence, Colored dissolved organic matter (CDOM) fluorescence equivalent, and Turbidity.
 
 <!--more-->
 

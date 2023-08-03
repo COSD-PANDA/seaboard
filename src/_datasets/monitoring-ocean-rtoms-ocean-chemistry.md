@@ -49,7 +49,7 @@ date_modified: '2023-08-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Ocean chemistry measurements collected by real-time oceanographic mooring system (RTOM). Ocean chemistry parameters include dissolved oxygen, fraction dissolved carbon dioxide (xCO2), nitrate + nitrite, and total pH.
+Ocean chemistry measurements collected by Real-time Oceanographic Mooring System (RTOM). Ocean chemistry parameters include dissolved oxygen, fraction dissolved carbon dioxide (xCO2), nitrate + nitrite, and total pH.
 
 <!--more-->
 
