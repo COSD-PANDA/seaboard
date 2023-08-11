@@ -18,6 +18,18 @@ resources:
     url: >-
       https://seshat.datasd.org/parking_meters/treas_meters_2023_pole_by_month_datasd_v2.csv
     format: csv
+  - name: Parking meters transactions - 2023 (raw)
+    url: >-
+      https://seshat.datasd.org/parking_meters/treas_parking_payments_2023_datasd_v2.csv
+    format: csv
+  - name: Parking meters transactions - 2023 (aggregated by day)
+    url: >-
+      https://seshat.datasd.org/parking_meters/treas_meters_2023_pole_by_mo_day_datasd_v2.csv
+    format: csv
+  - name: Parking meters transactions - 2023 (aggregated by month)
+    url: >-
+      https://seshat.datasd.org/parking_meters/treas_meters_2023_pole_by_month_datasd_v2.csv
+    format: csv
   - name: Parking meters transactions - 2022 (raw)
     url: >-
       https://seshat.datasd.org/parking_meters/treas_parking_payments_2022_datasd_v2.csv
