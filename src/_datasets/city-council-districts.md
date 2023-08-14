@@ -32,8 +32,8 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2023-05-16'
+date_modified: '2023-08-08'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-City of San Diego Council Districts Boundaries (adopted August 25, 2011).
+City of San Diego Council Districts Boundaries (adopted December 15, 2021).
