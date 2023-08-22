@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Traffic Volumes
-department: Transportation & Storm Water
+department: Transportation
 category:
   - Transportation
 resources:
