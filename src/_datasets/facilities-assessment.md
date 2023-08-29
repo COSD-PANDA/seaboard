@@ -7,11 +7,11 @@ category:
 resources:
   - name: FCI ratings
     url: >-
-      https://seshat.datasd.org/facilities/facilities_assessment_datasd.csv
+      https://seshat.datasd.org/fci_city_buildings/facilities_assessment_datasd.csv
     format: csv
   - name: FCI ratings dictionary
     url: >-
-      https://seshat.datasd.org/facilities/facilities_assessment_dictionary_datasd.csv
+      https://seshat.datasd.org/fci_city_buildings/facilities_assessment_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'

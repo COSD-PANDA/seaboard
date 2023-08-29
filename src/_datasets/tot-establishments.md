@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/dictionaries/tot_establishments_datasd_dict.csv
+      https://seshat.datasd.org/tot_establishments/tot_establishments_datasd_dict.csv
     format: csv
 
 license: 'http://www.opendefinition.org/licenses/odc-pddl'

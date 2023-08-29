@@ -7,11 +7,11 @@ category:
 resources:
   - name: Accounts hierarchy
     url: >-
-      https://seshat.datasd.org/budget/budget_reference_accounts_datasd_v1.csv
+      https://seshat.datasd.org/accounts_city_budget/budget_reference_accounts_datasd_v1.csv
     format: csv
   - name: Accounts hierarchy dictionary
     url: >-
-      https://seshat.datasd.org/budget/budget_reference_accounts_dictionary_datasd.csv
+      https://seshat.datasd.org/accounts_city_budget/budget_reference_accounts_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
