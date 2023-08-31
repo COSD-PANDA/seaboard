@@ -8,27 +8,27 @@ category:
 resources:
   - name: Street Sweeping schedule by street
     url: >-
-      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.zip
+      https://seshat.datasd.org/street_sweeping_schedule/street_sweeping_datasd.zip
     format: shp
   - name: Street Sweeping schedule by street
     url: >-
-      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.pbf
+      https://seshat.datasd.org/street_sweeping_schedule/street_sweeping_datasd.pbf
     format: pbf
   - name: Street Sweeping schedule by street
     url: >-
-      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.topo.json
+      https://seshat.datasd.org/street_sweeping_schedule/street_sweeping_datasd.topo.json
     format: topojson
   - name: Street Sweeping schedule by street
     url: >-
-      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.geojson
+      https://seshat.datasd.org/street_sweeping_schedule/street_sweeping_datasd.geojson
     format: geojson
   - name: Street Sweeping schedule by street attribute table
     url: >-
-      https://seshat.datasd.org/sde/street_sweeping/street_sweeping_datasd.csv
+      https://seshat.datasd.org/street_sweeping_schedule/street_sweeping_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/street_sweeping/street_sweeping_dictionary_datasd.csv
+      https://seshat.datasd.org/street_sweeping_schedule/street_sweeping_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-18'
