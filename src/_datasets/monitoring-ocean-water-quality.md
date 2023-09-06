@@ -7,27 +7,27 @@ category:
 resources:
   - name: Parameter Results, 2020 - 2021
     url: >-
-      https://seshat.datasd.org/pud/omp/water_quality_2020_2021_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_water_quality/water_quality_2020_2021_datasd.csv
     format: csv
   - name: Parameter Results, 2011 - 2019
     url: >-
-      https://seshat.datasd.org/pud/omp/water_quality_2011_2019_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_water_quality/water_quality_2011_2019_datasd.csv
     format: csv
   - name: Parameter Results, 2000 - 2010
     url: >-
-      https://seshat.datasd.org/pud/omp/water_quality_2000_2010_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_water_quality/water_quality_2000_2010_datasd.csv
     format: csv
   - name: Parameter Results, 1990 - 1999
     url: >-
-      https://seshat.datasd.org/pud/omp/water_quality_1990_1999_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_water_quality/water_quality_1990_1999_datasd.csv
     format: csv
   - name: Parameter Testing Station Locations
     url: >-
-      https://seshat.datasd.org/pud/omp/reference_stations_water_quality.csv
+      https://seshat.datasd.org/monitoring_ocean_water_quality/reference_stations_water_quality.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pud/omp/water_quality_dictionary_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_water_quality/water_quality_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'

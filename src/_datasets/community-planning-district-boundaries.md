@@ -9,27 +9,27 @@ category:
 resources:
   - name: Community planning districts
     url: >-
-      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.zip
+      https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_datasd.zip
     format: shp
   - name: Community planning districts
     url: >-
-      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.pbf
+      https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_datasd.pbf
     format: pbf
   - name: Community planning districts
     url: >-
-      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.topo.json
+      https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_datasd.topo.json
     format: topojson
   - name: Community planning districts
     url: >-
-      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson
+      https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_datasd.geojson
     format: geojson
   - name: Community planning districts attribute table
     url: >-
-      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.csv
+      https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_datasd.csv
     format: csv
   - name: Community planning districts dictionary
     url: >-
-      https://seshat.datasd.org/sde/cmty_plan/cmty_plan_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

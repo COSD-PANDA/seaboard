@@ -8,31 +8,31 @@ category:
 resources:
   - name: Police beats code-to-neighborhood list
     url: >-
-      https://seshat.datasd.org/pd/pd_beat_codes_list_datasd.csv
+      https://seshat.datasd.org/gis_police_beats/pd_beat_codes_list_datasd.csv
     format: csv
   - name: Police beats
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_beats_datasd.zip
+      https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.zip
     format: shp
   - name: Police beats
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_beats_datasd.pbf
+      https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.pbf
     format: pbf
   - name: Police beats
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_beats_datasd.topo.json
+      https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.topo.json
     format: topojson
   - name: Police beats
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_beats_datasd.geojson
+      https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.geojson
     format: geojson
   - name: Police beats attribute table
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_beats_datasd.csv
+      https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.csv
     format: csv
   - name: Police beats dictionary
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_beats_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_police_beats/pd_beats_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-15'

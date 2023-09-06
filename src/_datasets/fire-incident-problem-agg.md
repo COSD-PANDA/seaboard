@@ -7,11 +7,11 @@ category:
 resources:
   - name: Fire incident problem counts 2016 through year-to-date
     url: >-
-      https://seshat.datasd.org/fd_cad/fd_problem_nature_agg_datasd_v1.csv
+      https://seshat.datasd.org/fire_ems_problem_counts/fd_problem_nature_agg_datasd_v1.csv
     format: csv
   - name: Fire incidents problem counts dictionary
     url: >-
-      https://seshat.datasd.org/fd_cad/fire_problem_nature_dictionary_datasd.csv
+      https://seshat.datasd.org/fire_ems_problem_counts/fire_problem_nature_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-01-09'

@@ -7,11 +7,11 @@ category:
 resources:
   - name: CIP Actuals
     url: >-
-      https://seshat.datasd.org/budget/actuals_capital_fy_datasd.csv
+      https://seshat.datasd.org/cip_fy_actuals/actuals_capital_fy_datasd.csv
     format: csv
   - name: CIP Actuals dictionary
     url: >-
-      https://seshat.datasd.org/budget/capital_actuals_fy_dictionary_datasd.csv
+      https://seshat.datasd.org/cip_fy_actuals/capital_actuals_fy_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2018-10-15'

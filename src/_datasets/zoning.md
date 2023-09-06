@@ -8,27 +8,27 @@ category:
 resources:
   - name: Zoning
     url: >-
-      https://seshat.datasd.org/sde/zoning/zoning_datasd.zip
+      https://seshat.datasd.org/gis_zoning/zoning_datasd.zip
     format: shp
   - name: Zoning
     url: >-
-      https://seshat.datasd.org/sde/zoning/zoning_datasd.pbf
+      https://seshat.datasd.org/gis_zoning/zoning_datasd.pbf
     format: pbf
   - name: Zoning
     url: >-
-      https://seshat.datasd.org/sde/zoning/zoning_datasd.topo.json
+      https://seshat.datasd.org/gis_zoning/zoning_datasd.topo.json
     format: topojson
   - name: Zoning
     url: >-
-      https://seshat.datasd.org/sde/zoning/zoning_datasd.geojson
+      https://seshat.datasd.org/gis_zoning/zoning_datasd.geojson
     format: geojson
   - name: Zoning attribute table
     url: >-
-      https://seshat.datasd.org/sde/zoning/zoning_datasd.csv
+      https://seshat.datasd.org/gis_zoning/zoning_datasd.csv
     format: csv
   - name: Zoning dictionary
     url: >-
-      https://seshat.datasd.org/sde/zoning/zoning_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_zoning/zoning_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-16'

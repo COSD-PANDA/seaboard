@@ -8,27 +8,27 @@ category:
 resources:
   - name: Transit routes
     url: >-
-      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.zip
+      https://seshat.datasd.org/gis_transit_routes/transit_routes_datasd.zip
     format: shp
   - name: Transit routes
     url: >-
-      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.pbf
+      https://seshat.datasd.org/gis_transit_routes/transit_routes_datasd.pbf
     format: pbf
   - name: Transit routes
     url: >-
-      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.topo.json
+      https://seshat.datasd.org/gis_transit_routes/transit_routes_datasd.topo.json
     format: topojson
   - name: Transit routes
     url: >-
-      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.geojson
+      https://seshat.datasd.org/gis_transit_routes/transit_routes_datasd.geojson
     format: geojson
   - name: Transit routes attribute table
     url: >-
-      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.csv
+      https://seshat.datasd.org/gis_transit_routes/transit_routes_datasd.csv
     format: csv
   - name: Transit routes dictionary
     url: >-
-      https://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_transit_routes/transit_routes_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
