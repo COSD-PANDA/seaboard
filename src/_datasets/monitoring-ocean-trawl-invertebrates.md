@@ -7,15 +7,15 @@ category:
 resources:
   - name: Invertebrate Trawl Sample Results
     url: >-
-      https://seshat.datasd.org/pud/omp/trawl_invertebrates_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_trawl_invertebrates/trawl_invertebrates_datasd.csv
     format: csv
   - name: Invertebrate Trawl Sampling Station Locations
     url: >-
-      https://seshat.datasd.org/pud/omp/reference_stations_invertebrate_trawls.csv
+      https://seshat.datasd.org/monitoring_ocean_trawl_invertebrates/reference_stations_invertebrate_trawls.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pud/omp/trawl_invertebrates_dictionary_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_trawl_invertebrates/trawl_invertebrates_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'

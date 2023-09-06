@@ -7,11 +7,11 @@ category:
 resources:
   - name: Reason for stop
     url: >-
-      https://seshat.datasd.org/pd/ripa_stop_reason_datasd.csv
+      https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pd/ripa_stop_reason_dictionary_datasd.csv
+      https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'

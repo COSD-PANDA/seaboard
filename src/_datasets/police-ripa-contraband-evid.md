@@ -7,11 +7,11 @@ category:
 resources:
   - name: Contraband and/or evidence found
     url: >-
-      https://seshat.datasd.org/pd/ripa_contraband_evid_datasd.csv
+      https://seshat.datasd.org/police_ripa_contraband_evid/ripa_contraband_evid_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pd/ripa_contraband_evid_dictionary_datasd.csv
+      https://seshat.datasd.org/police_ripa_contraband_evid/ripa_contraband_evid_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'

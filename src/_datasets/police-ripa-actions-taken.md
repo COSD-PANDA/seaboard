@@ -7,11 +7,11 @@ category:
 resources:
   - name: Actions taken
     url: >-
-      https://seshat.datasd.org/pd/ripa_actions_taken_datasd.csv
+      https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pd/ripa_actions_taken_dictionary_datasd.csv
+      https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
