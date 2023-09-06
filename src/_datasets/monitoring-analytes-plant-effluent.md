@@ -8,11 +8,11 @@ category:
 resources:
   - name: Effluent Water Tests (Chemical)
     url: >-
-      https://seshat.datasd.org/pud/chem/analyte_tests_effluent_datasd.csv
+      https://seshat.datasd.org/monitoring_analytes_plant_effluent/analyte_tests_effluent_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pud/chem/analyte_tests_dictionary_datasd.csv
+      https://seshat.datasd.org/monitoring_analytes_plant_effluent/analyte_tests_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-12-14'

@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/dictionaries/rtax_accounts_datasd_dict.csv
+      https://seshat.datasd.org/rtax_accounts/rtax_accounts_datasd_dict.csv
     format: csv
 
 license: 'http://www.opendefinition.org/licenses/odc-pddl'

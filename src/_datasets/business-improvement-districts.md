@@ -9,27 +9,27 @@ category:
 resources:
   - name: Business improvement district
     url: >-
-      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.zip
+      https://seshat.datasd.org/gis_business_improvement_districts/bids_datasd.zip
     format: shp
   - name: Business improvement districts
     url: >-
-      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.pbf
+      https://seshat.datasd.org/gis_business_improvement_districts/bids_datasd.pbf
     format: pbf
   - name: Business improvement districts
     url: >-
-      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.topo.json
+      https://seshat.datasd.org/gis_business_improvement_districts/bids_datasd.topo.json
     format: topojson
   - name: Business improvement districts
     url: >-
-      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.geojson
+      https://seshat.datasd.org/gis_business_improvement_districts/bids_datasd.geojson
     format: geojson
   - name: Business improvement districts attribute table
     url: >-
-      https://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.csv
+      https://seshat.datasd.org/gis_business_improvement_districts/bids_datasd.csv
     format: csv
   - name: Business improvement districts dictionary
     url: >-
-      https://seshat.datasd.org/sde/bus_improvement_districts/bids_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_business_improvement_districts/bids_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'

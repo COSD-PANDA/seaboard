@@ -7,11 +7,11 @@ category:
 resources:
   - name: Hate crimes 2016 through year-to-date
     url: >-
-      https://seshat.datasd.org/pd/hate_crimes_datasd.csv
+      https://seshat.datasd.org/hate_crimes/hate_crimes_datasd.csv
     format: csv
   - name: Hate crimes dictionary
     url: >-
-      https://seshat.datasd.org/pd/hate_crimes_dictionary_datasd.csv
+      https://seshat.datasd.org/hate_crimes/hate_crimes_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2018-11-08'

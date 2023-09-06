@@ -8,27 +8,27 @@ category:
 resources:
   - name: San Diego boundary 
     url: >-
-      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.zip
+      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.zip
     format: shp
   - name: San Diego boundary
     url: >-
-      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.pbf
+      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.pbf
     format: pbf
   - name: San Diego boundary
     url: >-
-      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.topo.json
+      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.topo.json
     format: topojson
   - name: San Diego boundary
     url: >-
-      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.geojson
+      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.geojson
     format: geojson
   - name: San Diego boundary attribute table
     url: >-
-      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.csv
+      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.csv
     format: csv
   - name: San Diego boundary dictionary
     url: >-
-      https://seshat.datasd.org/sde/city_boundary/san_diego_boundary_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
