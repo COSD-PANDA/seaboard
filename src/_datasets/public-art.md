@@ -6,11 +6,11 @@ category: Culture & Recreation
 resources:
   - name: Locations of artwork
     url: >-
-      https://seshat.datasd.org/public_art/public_art_locations_datasd_v1.csv
+      https://seshat.datasd.org/civic_art_collection/public_art_locations_datasd_v1.csv
     format: csv
   - name: Locations of artwork data dictionary
     url: >-
-      https://seshat.datasd.org/public_art/public_art_locations_dictionary_datasd.csv
+      https://seshat.datasd.org/civic_art_collection/public_art_locations_dictionary_datasd.csv
     format: csv
 date_issued: '2018-09-11'
 date_modified: '2023-09-08'

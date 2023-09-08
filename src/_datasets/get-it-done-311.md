@@ -6,43 +6,43 @@ category: City Management
 resources:
   - name: Open Get It Done Requests
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_open_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2023
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2023_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2023_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2022
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2022_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2022_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2021
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2021_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2021_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2020
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2020_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2020_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2019
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2019_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2019_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2018
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2018_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2018_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2017
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2017_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2017_datasd.csv
     format: csv
   - name: Get It Done Requests closed in 2016
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2016_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2016_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
+      https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_dictionary_datasd.csv
     format: csv
   
 date_issued: '2016-05-26'
