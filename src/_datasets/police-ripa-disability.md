@@ -7,15 +7,15 @@ category:
 resources:
   - name: Disability of persons
     url: >-
-      https://seshat.datasd.org/pd/ripa_disability_datasd.csv
+      https://seshat.datasd.org/police_ripa_disability/ripa_disability_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pd/ripa_disability_dictionary_datasd.csv
+      https://seshat.datasd.org/police_ripa_disability/ripa_disability_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
-date_modified: '2023-01-13'
+date_modified: '2023-07-19'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

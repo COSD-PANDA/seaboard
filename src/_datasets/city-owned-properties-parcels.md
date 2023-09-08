@@ -7,15 +7,15 @@ category:
 resources:
   - name: City Owned Properties - Parcels
     url: >-
-      https://seshat.datasd.org/read/city_property_parcels_datasd_v1.csv
+      https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd_v1.csv
     format: csv
   - name: City Owned Properties - Parcels Dictionary
     url: >-
-      https://seshat.datasd.org/read/city_property_parcels_dictionary_datasd.csv
+      https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-01'
-date_modified: '2023-04-06'
+date_modified: '2023-09-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

@@ -9,31 +9,31 @@ category:
 resources:
   - name: Park points
     url: >-
-      https://seshat.datasd.org/sde/parks/parks_datasd.zip
+      https://seshat.datasd.org/gis_park_locations/parks_datasd.zip
     format: shp
   - name: Park points
     url: >-
-      https://seshat.datasd.org/sde/parks/parks_datasd.pbf
+      https://seshat.datasd.org/gis_park_locations/parks_datasd.pbf
     format: pbf
   - name: Park points
     url: >-
-      https://seshat.datasd.org/sde/parks/parks_datasd.topo.json
+      https://seshat.datasd.org/gis_park_locations/parks_datasd.topo.json
     format: topojson
   - name: Park points
     url: >-
-      https://seshat.datasd.org/sde/parks/parks_datasd.geojson
+      https://seshat.datasd.org/gis_park_locations/parks_datasd.geojson
     format: geojson
   - name: Park points attribute table
     url: >-
-      https://seshat.datasd.org/sde/parks/parks_datasd.csv
+      https://seshat.datasd.org/gis_park_locations/parks_datasd.csv
     format: csv
   - name: Park points dictionary
     url: >-
-      https://seshat.datasd.org/sde/parks/parks_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_park_locations/parks_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-17'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

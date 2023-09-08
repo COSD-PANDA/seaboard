@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Streets Overall Condition Index (OCI)
-department: Transportation & Storm Water
+department: Transportation
 category:
   - Transportation
   - City Infrastructure

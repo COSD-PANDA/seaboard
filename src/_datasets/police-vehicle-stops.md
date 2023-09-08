@@ -7,31 +7,31 @@ category:
 resources:
   - name: Vehicle Stops (Oct 2017 - June 2018, new format)
     url: >-
-      https://seshat.datasd.org/pd/vehicle_stops_final_datasd_v1.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_final_datasd_v1.csv
     format: csv
   - name: Vehicle Stops (2017 - June 2018, old format)
     url: >-
-      https://seshat.datasd.org/pd/vehicle_stops_2017_datasd_v1.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_2017_datasd_v1.csv
     format: csv
   - name: Vehicle Stops (2016)
     url: >-
-      https://seshat.datasd.org/pd/vehicle_stops_2016_datasd_v1.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_2016_datasd_v1.csv
     format: csv
   - name: Vehicle Stops (2015)
     url: >-
-      https://seshat.datasd.org/pd/vehicle_stops_2015_datasd_v1.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_2015_datasd_v1.csv
     format: csv
   - name: Vehicle Stops (2014)
     url: >-
-      https://seshat.datasd.org/pd/vehicle_stops_2014_datasd_v1.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_2014_datasd_v1.csv
     format: csv
   - name: Vehicle Stops Dictionary
     url: >-
-      https://seshat.datasd.org/pd/vehicle_stops_dictionary.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_dictionary.csv
     format: csv
   - name: Vehicle Stops Race Codes
     url: >-
-      https://seshat.datasd.org/pd/vehicle_stops_race_codes.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_race_codes.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-11-14'

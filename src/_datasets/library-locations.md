@@ -9,31 +9,31 @@ category:
 resources:
   - name: Library points
     url: >-
-      https://seshat.datasd.org/sde/library/libraries_datasd.zip
+      https://seshat.datasd.org/gis_library_locations/libraries_datasd.zip
     format: shp
   - name: Library points
     url: >-
-      https://seshat.datasd.org/sde/library/libraries_datasd.pbf
+      https://seshat.datasd.org/gis_library_locations/libraries_datasd.pbf
     format: pbf
   - name: Library points
     url: >-
-      https://seshat.datasd.org/sde/library/libraries_datasd.topo.json
+      https://seshat.datasd.org/gis_library_locations/libraries_datasd.topo.json
     format: topojson
   - name: Library points
     url: >-
-      https://seshat.datasd.org/sde/library/libraries_datasd.geojson
+      https://seshat.datasd.org/gis_library_locations/libraries_datasd.geojson
     format: geojson
   - name: Library points attribute table
     url: >-
-      https://seshat.datasd.org/sde/library/libraries_datasd.csv
+      https://seshat.datasd.org/gis_library_locations/libraries_datasd.csv
     format: csv
   - name: Library points dictionary
     url: >-
-      https://seshat.datasd.org/sde/library/libraries_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_library_locations/libraries_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: County of San Diego
 maintainer_email: data@sandiego.gov
 ---

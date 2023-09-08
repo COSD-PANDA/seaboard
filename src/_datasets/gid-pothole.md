@@ -6,14 +6,14 @@ category: City Management
 resources:
   - name: Pothole Repair Requests
     url: >-
-      https://seshat.datasd.org/get_it_done_311/get_it_done_pothole_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_potholes/get_it_done_pothole_requests_datasd_v1.csv
     format: csv
   - name: Pothole Repair Requests Data Dictionary
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
-date_modified: '2023-04-06'
+date_modified: '2023-09-07'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov

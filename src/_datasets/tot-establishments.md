@@ -11,12 +11,12 @@ resources:
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/dictionaries/tot_establishments_datasd_dict.csv
+      https://seshat.datasd.org/tot_establishments/tot_establishments_datasd_dict.csv
     format: csv
 
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2022-05-11'
-date_modified: '2023-04-06'
+date_modified: '2023-09-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

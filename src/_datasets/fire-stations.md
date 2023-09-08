@@ -8,31 +8,31 @@ category:
 resources:
   - name: Fire station points
     url: >-
-      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.zip
+      https://seshat.datasd.org/gis_fire_stations/fire_stations_datasd.zip
     format: shp
   - name: Fire station points
     url: >-
-      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.pbf
+      https://seshat.datasd.org/gis_fire_stations/fire_stations_datasd.pbf
     format: pbf
   - name: Fire station points
     url: >-
-      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.topo.json
+      https://seshat.datasd.org/gis_fire_stations/fire_stations_datasd.topo.json
     format: topojson
   - name: Fire station points
     url: >-
-      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.geojson
+      https://seshat.datasd.org/gis_fire_stations/fire_stations_datasd.geojson
     format: geojson
   - name: Fire station points attribute table
     url: >-
-      https://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.csv
+      https://seshat.datasd.org/gis_fire_stations/fire_stations_datasd.csv
     format: csv
   - name: Fire station points dictionary
     url: >-
-      https://seshat.datasd.org/sde/fire_stations/fire_stations_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_fire_stations/fire_stations_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

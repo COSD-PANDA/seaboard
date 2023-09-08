@@ -7,15 +7,15 @@ category:
 resources:
   - name: Project hierarchy
     url: >-
-      https://seshat.datasd.org/budget/budget_reference_projects_datasd_v1.csv
+      https://seshat.datasd.org/projects_city_budget/budget_reference_projects_datasd_v1.csv
     format: csv
   - name: Project hierarchy dictionary
     url: >-
-      https://seshat.datasd.org/budget/budget_reference_projects_dictionary_datasd.csv
+      https://seshat.datasd.org/projects_city_budget/budget_reference_projects_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2023-03-13'
+date_modified: '2023-08-16'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

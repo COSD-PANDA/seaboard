@@ -8,31 +8,31 @@ category:
 resources:
   - name: Right-of-way parcels
     url: >-
-      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.zip
+      https://seshat.datasd.org/gis_row/right_of_way_datasd.zip
     format: shp
   - name: Right-of-way parcels
     url: >-
-      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.pbf
+      https://seshat.datasd.org/gis_row/right_of_way_datasd.pbf
     format: pbf
   - name: Right-of-way parcels
     url: >-
-      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.topo.json
+      https://seshat.datasd.org/gis_row/right_of_way_datasd.topo.json
     format: topojson
   - name: Right-of-way parcels
     url: >-
-      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.geojson
+      https://seshat.datasd.org/gis_row/right_of_way_datasd.geojson
     format: geojson
   - name: Right-of-way parcels attribute table
     url: >-
-      https://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.csv
+      https://seshat.datasd.org/gis_row/right_of_way_datasd.csv
     format: csv
   - name: Right-of-way parcels dictionary
     url: >-
-      https://seshat.datasd.org/sde/right_of_way/right_of_way_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_row/right_of_way_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---

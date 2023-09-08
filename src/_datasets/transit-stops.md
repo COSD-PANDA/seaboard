@@ -8,31 +8,31 @@ category:
 resources:
   - name: Transit Stops Locations
     url: >-
-      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.zip
+      https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.zip
     format: shp
   - name: Transit Stops Locations
     url: >-
-      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.pbf
+      https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.pbf
     format: pbf
   - name: Transit Stops Locations
     url: >-
-      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.topo.json
+      https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.topo.json
     format: topojson
   - name: Transit Stops Locations
     url: >-
-      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.geojson
+      https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.geojson
     format: geojson
   - name: Transit Stops Attribute Table
     url: >-
-      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.csv
+      https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.csv
     format: csv
   - name: Transit Stops Locations Dictionary
     url: >-
-      https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_transit_stops/transit_stops_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---

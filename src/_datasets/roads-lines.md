@@ -8,31 +8,31 @@ category:
 resources:
   - name: Roads lines
     url: >-
-      https://seshat.datasd.org/sde/roads_all/roads_datasd.zip
+      https://seshat.datasd.org/gis_roads_all/roads_datasd.zip
     format: shp
   - name: Roads lines
     url: >-
-      https://seshat.datasd.org/sde/roads_all/roads_datasd.pbf
+      https://seshat.datasd.org/gis_roads_all/roads_datasd.pbf
     format: pbf
   - name: Roads lines
     url: >-
-      https://seshat.datasd.org/sde/roads_all/roads_datasd.topo.json
+      https://seshat.datasd.org/gis_roads_all/roads_datasd.topo.json
     format: topojson
   - name: Roads lines
     url: >-
-      https://seshat.datasd.org/sde/roads_all/roads_datasd.geojson
+      https://seshat.datasd.org/gis_roads_all/roads_datasd.geojson
     format: geojson
   - name: Roads lines attribute table
     url: >-
-      https://seshat.datasd.org/sde/roads_all/roads_datasd.csv
+      https://seshat.datasd.org/gis_roads_all/roads_datasd.csv
     format: csv
   - name: Roads lines dictionary
     url: >-
-      https://seshat.datasd.org/sde/roads_all/roads_lines_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_roads_all/roads_lines_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---

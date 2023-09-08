@@ -7,15 +7,15 @@ category:
 resources:
   - name: Benthic Invertebrate Sample Results
     url: >-
-      https://seshat.datasd.org/pud/omp/benthic_invertebrates_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_benthic_invertebrates/benthic_invertebrates_datasd.csv
     format: csv
   - name: Benthic Invertebrate Sampling Station Locations
     url: >-
-      https://seshat.datasd.org/pud/omp/reference_stations_benthic.csv
+      https://seshat.datasd.org/monitoring_ocean_benthic_invertebrates/reference_stations_benthic.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pud/omp/benthic_invertebrates_dictionary_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_benthic_invertebrates/benthic_invertebrates_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'

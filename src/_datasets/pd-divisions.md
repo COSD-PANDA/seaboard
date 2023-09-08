@@ -8,31 +8,31 @@ category:
 resources:
   - name: Police divisions
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip
+      https://seshat.datasd.org/gis_police_divisions/pd_divisions_datasd.zip
     format: shp
   - name: Police divisions
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_divisions_datasd.pbf
+      https://seshat.datasd.org/gis_police_divisions/pd_divisions_datasd.pbf
     format: pbf
   - name: Police divisions
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_divisions_datasd.topo.json
+      https://seshat.datasd.org/gis_police_divisions/pd_divisions_datasd.topo.json
     format: topojson
   - name: Police divisions
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_divisions_datasd.geojson
+      https://seshat.datasd.org/gis_police_divisions/pd_divisions_datasd.geojson
     format: geojson
   - name: Police divisions attribute table
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_divisions_datasd.csv
+      https://seshat.datasd.org/gis_police_divisions/pd_divisions_datasd.csv
     format: csv
   - name: Police divisions dictionary
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_divisions_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_police_divisions/pd_divisions_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

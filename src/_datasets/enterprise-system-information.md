@@ -7,11 +7,11 @@ category:
 resources:
   - name: SB 272 Catalog
     url: >-
-      https://seshat.datasd.org/sb272_catalog/it_sb272_datasd.csv
+      https://seshat.datasd.org/enterprise_system_information/it_sb272_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-08-01'
-date_modified: '2016-08-01'
+date_modified: '2023-07-20'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

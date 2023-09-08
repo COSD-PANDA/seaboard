@@ -8,31 +8,31 @@ category:
 resources:
   - name: Promise Zone boundary
     url: >-
-      https://seshat.datasd.org/sde/pz/promise_zone_datasd.zip
+      https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.zip
     format: shp
   - name: Promise Zone boundary
     url: >-
-      https://seshat.datasd.org/sde/pz/promise_zone_datasd.pbf
+      https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.pbf
     format: pbf
   - name: Promise Zone boundary
     url: >-
-      https://seshat.datasd.org/sde/pz/promise_zone_datasd.topo.json
+      https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.topo.json
     format: topojson
   - name: Promise Zone boundary
     url: >-
-      https://seshat.datasd.org/sde/pz/promise_zone_datasd.geojson
+      https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.geojson
     format: geojson
   - name: Promise Zone boundary attribute table
     url: >-
-      https://seshat.datasd.org/sde/pz/promise_zone_datasd.csv
+      https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.csv
     format: csv
   - name: Promise Zone boundary dictionary
     url: >-
-      https://seshat.datasd.org/sde/pz/promise_zone_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_promise_zone/promise_zone_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

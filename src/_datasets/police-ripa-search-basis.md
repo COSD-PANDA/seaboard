@@ -7,15 +7,15 @@ category:
 resources:
   - name: Basis for searches conducted
     url: >-
-      https://seshat.datasd.org/pd/ripa_search_basis_datasd.csv
+      https://seshat.datasd.org/police_ripa_search_basis/ripa_search_basis_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/pd/ripa_search_basis_dictionary_datasd.csv
+      https://seshat.datasd.org/police_ripa_search_basis/ripa_search_basis_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
-date_modified: '2023-01-13'
+date_modified: '2023-07-19'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

@@ -7,11 +7,11 @@ category:
 resources:
   - name: Call Types, current
     url: >-
-      https://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv
+      https://seshat.datasd.org/police_calls_call_types/pd_cfs_calltypes_datasd.csv
     format: csv
   - name: Call Types, prior to October 17, 2017
     url: >-
-      https://seshat.datasd.org/pd/pd_cfs_calltypes_historical_datasd.csv
+      https://seshat.datasd.org/police_calls_call_types/pd_cfs_calltypes_historical_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'

@@ -1,17 +1,17 @@
 ---
 schema: default
 title: Traffic Volumes
-department: Transportation & Storm Water
+department: Transportation
 category:
   - Transportation
 resources:
   - name: Traffic Counts
     url: >-
-      https://seshat.datasd.org/traffic_counts/traffic_counts_datasd_v1.csv
+      https://seshat.datasd.org/traffic_adt_counts/traffic_counts_datasd_v1.csv
     format: csv
   - name: Traffic Counts Dictionary
     url: >-
-      https://seshat.datasd.org/traffic_counts/traffic_counts_dictionary_datasd.csv
+      https://seshat.datasd.org/traffic_adt_counts/traffic_counts_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-17'

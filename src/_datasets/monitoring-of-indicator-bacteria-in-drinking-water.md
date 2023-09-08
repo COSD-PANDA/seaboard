@@ -8,19 +8,19 @@ category:
 resources:
   - name: Latest Drinking Water Tests (Bacteria)
     url: >-
-      https://seshat.datasd.org/water_testing/latest_indicator_bac_tests_datasd_v1.csv
+      https://seshat.datasd.org/monitoring_indicator_bacteria/latest_indicator_bac_tests_datasd_v1.csv
     format: csv
   - name: All Drinking Water Tests (Bacteria)
     url: >-
-      https://seshat.datasd.org/water_testing/indicator_bacteria_tests_datasd_v1.csv
+      https://seshat.datasd.org/monitoring_indicator_bacteria/indicator_bacteria_tests_datasd_v1.csv
     format: csv
   - name: Drinking Water Tests (Bacteria) Dictionary
     url: >-
-      https://seshat.datasd.org/water_testing/indicator_bacteria_tests_dictionary_datasd.csv
+      https://seshat.datasd.org/monitoring_indicator_bacteria/indicator_bacteria_tests_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-11'
-date_modified: '2023-04-06'
+date_modified: '2023-09-07'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

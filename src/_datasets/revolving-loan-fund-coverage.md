@@ -8,31 +8,31 @@ category:
 resources:
   - name: Revolving Loan Fund coverage boundaries
     url: >-
-      https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.zip
+      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.zip
     format: shp
   - name: Revolving Loan Fund coverage boundaries
     url: >-
-      https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.pbf
+      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.pbf
     format: pbf
   - name: Revolving Loan Fund coverage boundaries
     url: >-
-      https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.topo.json
+      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.topo.json
     format: topojson
   - name: Revolving Loan Fund coverage boundaries
     url: >-
-      https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.geojson
+      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.geojson
     format: geojson
   - name: Revolving Loan Fund coverage boundaries attribute table
     url: >-
-      https://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.csv
+      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.csv
     format: csv
   - name: Revolving Loan Fund coverage boundaries dictionary
     url: >-
-      https://seshat.datasd.org/sde/sd_revloan/rev_loan_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

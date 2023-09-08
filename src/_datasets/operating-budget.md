@@ -7,15 +7,15 @@ category:
 resources:
   - name: Operating Budget 
     url: >-
-      https://seshat.datasd.org/budget/budget_operating_datasd.csv
+      https://seshat.datasd.org/operating_budget/budget_operating_datasd.csv
     format: csv
   - name: Operating Budget dictionary
     url: >-
-      https://seshat.datasd.org/budget/operating_budget_dictionary_datasd.csv
+      https://seshat.datasd.org/operating_budget/operating_budget_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2023-03-13'
+date_modified: '2023-08-16'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---

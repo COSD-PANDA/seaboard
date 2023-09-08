@@ -8,31 +8,31 @@ category:
 resources:
   - name: Police neighborhoods
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.zip
+      https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_datasd.zip
     format: shp
   - name: Police neighborhoods
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.pbf
+      https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_datasd.pbf
     format: pbf
   - name: Police neighborhoods
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.topo.json
+      https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_datasd.topo.json
     format: topojson
   - name: Police neighborhoods
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.geojson
+      https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_datasd.geojson
     format: geojson
   - name: Police neighborhoods attribute table
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.csv
+      https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_datasd.csv
     format: csv
   - name: Police neighborhoods dictionary
     url: >-
-      https://seshat.datasd.org/sde/pd/pd_neighborhoods_dictionary_datasd.csv
+      https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
-date_modified: '2023-04-04'
+date_modified: '2023-09-05'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
