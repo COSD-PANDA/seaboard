@@ -7,15 +7,15 @@ category:
 resources:
   - name: ROTV Sample Results
     url: >-
-      https://seshat.datasd.org/pud/omp/rotv_datasd.csv
+      https://seshat.datasd.org/pud_omp_rotv/rotv_datasd.csv
     format: csv
   - name: ROTV Data Dictionary
     url: >-
-      https://seshat.datasd.org/pud/omp/rotv_dictionary_datasd.csv
+      https://seshat.datasd.org/pud_omp_rotv/rotv_dictionary_datasd.csv
     format: csv
   - name: ROTV Parameter Definitions
     url: >-
-      https://seshat.datasd.org/pud/omp/rotv_parameter_definitions_datasd.csv
+      https://seshat.datasd.org/pud_omp_rotv/rotv_parameter_definitions_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2022-11-15'
