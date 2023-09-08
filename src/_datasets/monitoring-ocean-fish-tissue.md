@@ -7,15 +7,15 @@ category:
 resources:
   - name: Contaminants in Fish Tissue
     url: >-
-      https://seshat.datasd.org/pud/omp/fish_tissue_datasd.csv
+      https://seshat.datasd.org/pud_omp_fish_tissue/fish_tissue_datasd.csv
     format: csv
   - name: Fish Tissue Sampling Station Locations
     url: >-
-      https://seshat.datasd.org/pud/omp/reference_stations_fish_tissue.csv
+      https://seshat.datasd.org/pud_omp_fish_tissue/reference_stations_fish_tissue.csv
     format: csv
   - name: Fish Tissue Data Dictionary
     url: >-
-      https://seshat.datasd.org/pud/omp/fish_tissue_dictionary_datasd.csv
+      https://seshat.datasd.org/pud_omp_fish_tissue/fish_tissue_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2022-11-15'
