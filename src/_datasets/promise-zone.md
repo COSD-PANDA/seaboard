@@ -26,10 +26,6 @@ resources:
     url: >-
       https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.csv
     format: csv
-  - name: Promise Zone boundary dictionary
-    url: >-
-      https://seshat.datasd.org/gis_promise_zone/promise_zone_dictionary_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
 date_modified: '2023-09-05'

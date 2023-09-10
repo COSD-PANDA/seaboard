@@ -7,11 +7,11 @@ category:
 resources:
   - name: Disposition Codes, current
     url: >-
-      https://seshat.datasd.org/police_calls_disposition_codes/pd_dispo_codes_datasd.csv
+      https://seshat.datasd.org/police_calls_for_service/pd_dispo_codes_datasd.csv
     format: csv
   - name: Disposition Codes, prior to October 17, 2017
     url: >-
-      https://seshat.datasd.org/police_calls_disposition_codes/pd_dispo_codes_historical_datasd.csv
+      https://seshat.datasd.org/police_calls_for_service/pd_dispo_codes_historical_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'

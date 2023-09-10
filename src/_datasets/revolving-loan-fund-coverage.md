@@ -26,10 +26,6 @@ resources:
     url: >-
       https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.csv
     format: csv
-  - name: Revolving Loan Fund coverage boundaries dictionary
-    url: >-
-      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_dictionary_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
 date_modified: '2023-09-05'

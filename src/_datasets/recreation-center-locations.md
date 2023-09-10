@@ -26,10 +26,6 @@ resources:
     url: >-
       https://seshat.datasd.org/gis_recreation_center/rec_centers_datasd.csv
     format: csv
-  - name: Recreation center points dictionary
-    url: >-
-      https://seshat.datasd.org/gis_recreation_center/rec_centers_dictionary_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-06-16'
 date_modified: '2023-09-05'
