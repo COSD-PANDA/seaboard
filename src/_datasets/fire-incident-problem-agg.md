@@ -9,10 +9,6 @@ resources:
     url: >-
       https://seshat.datasd.org/fire_ems_problem_counts/fd_problem_nature_agg_datasd.csv
     format: csv
-  - name: Fire incidents problem counts dictionary
-    url: >-
-      https://seshat.datasd.org/fire_ems_problem_counts/fire_problem_nature_dictionary_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-01-09'
 date_modified: '2023-09-10'

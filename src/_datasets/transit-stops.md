@@ -26,10 +26,6 @@ resources:
     url: >-
       https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.csv
     format: csv
-  - name: Transit Stops Locations Dictionary
-    url: >-
-      https://seshat.datasd.org/gis_transit_stops/transit_stops_dictionary_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
 date_modified: '2023-09-05'

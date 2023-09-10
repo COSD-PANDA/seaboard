@@ -27,10 +27,6 @@ resources:
     url: >-
       https://seshat.datasd.org/gis_joint_use_parks/joint_use_datasd.csv
     format: csv
-  - name: Joint use parks dictionary
-    url: >-
-      https://seshat.datasd.org/gis_joint_use_parksjoint_use_dictionary_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
 date_modified: '2023-09-05'

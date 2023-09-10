@@ -26,10 +26,6 @@ resources:
     url: >-
       https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.csv
     format: csv
-  - name: San Diego boundary dictionary
-    url: >-
-      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_dictionary_datasd.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2017-06-30'
 date_modified: '2023-09-05'
