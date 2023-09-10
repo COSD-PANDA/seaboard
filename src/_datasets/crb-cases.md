@@ -12,7 +12,7 @@ resources:
     format: csv
   - name: Allegations FY22
     url: >-
-      https://seshat.datasd.org/cpp_complaint_allegations/crb_allegations_fy2022_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2022_datasd.csv
     format: csv
   - name: Body worn camera details FY22
     url: >-
@@ -24,7 +24,7 @@ resources:
     format: csv
   - name: Allegations FY21
     url: >-
-      https://seshat.datasd.org/cpp_complaint_allegations/crb_allegations_fy2021_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2021_datasd.csv
     format: csv
   - name: Body worn camera details FY21
     url: >-
@@ -36,7 +36,7 @@ resources:
     format: csv
   - name: Allegations FY20
     url: >-
-      https://seshat.datasd.org/cpp_complaint_allegations/crb_allegations_fy2020_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2020_datasd.csv
     format: csv
   - name: Body worn camera details FY20
     url: >-
