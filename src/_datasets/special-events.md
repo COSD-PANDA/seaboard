@@ -9,10 +9,6 @@ resources:
     url: >-
       https://seshat.datasd.org/special_events/special_events_list_datasd.csv
     format: csv
-  - name: Special Events Dictionary
-    url: >-
-      https://seshat.datasd.org/special_events/special_events_list_dictionary.csv
-    format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
 date_modified: '2021-12-30'
