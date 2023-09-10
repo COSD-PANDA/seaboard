@@ -8,7 +8,7 @@ category:
 resources:
   - name: Sample Sites
     url: >-
-      https://seshat.datasd.org/drinking_water_sample_sites/sample_sites_datasd_v1.csv
+      https://seshat.datasd.org/drinking_water_sample_sites/sample_sites_datasd.csv
     format: csv
   - name: Sample Sites Dictionary
     url: >-
