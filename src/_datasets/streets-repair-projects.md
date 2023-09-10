@@ -8,7 +8,7 @@ category:
 resources:
   - name: Streets Repair Projects
     url: >-
-      https://seshat.datasd.org/streets_repair_projects/sd_paving_datasd_v1.csv
+      https://seshat.datasd.org/streets_repair_projects/sd_paving_datasd.csv
     format: csv
   - name: Streets Repair Projects Dictionary
     url: >-

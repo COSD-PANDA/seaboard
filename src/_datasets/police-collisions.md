@@ -7,7 +7,7 @@ category:
 resources:
   - name: Traffic collisions (2015 through year-to-date)
     url: >-
-      https://seshat.datasd.org/traffic_collisions/pd_collisions_datasd_v1.csv
+      https://seshat.datasd.org/traffic_collisions/pd_collisions_datasd.csv
     format: csv
   - name: Traffic collisions dictionary
     url: >-

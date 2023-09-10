@@ -7,7 +7,7 @@ category:
 resources:
   - name: City Owned Properties - Details
     url: >-
-      https://seshat.datasd.org/city_owned_properties/city_property_details_datasd_v1.csv
+      https://seshat.datasd.org/city_owned_properties/city_property_details_datasd.csv
     format: csv
   - name: City Owned Properties - Details Dictionary
     url: >-

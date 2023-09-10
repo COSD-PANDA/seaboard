@@ -6,7 +6,7 @@ category: City Management
 resources:
   - name: Graffiti Removal Requests
     url: >-
-      https://seshat.datasd.org/get_it_done_graffiti/get_it_done_graffiti_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_graffiti/get_it_done_graffiti_requests_datasd.csv
     format: csv
   - name: Graffiti Removal Requests Data Dictionary
     url: >-

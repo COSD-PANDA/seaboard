@@ -7,7 +7,7 @@ category:
 resources:
   - name: Project hierarchy
     url: >-
-      https://seshat.datasd.org/projects_city_budget/budget_reference_projects_datasd_v1.csv
+      https://seshat.datasd.org/projects_city_budget/budget_reference_projects_datasd.csv
     format: csv
   - name: Project hierarchy dictionary
     url: >-
