@@ -7,7 +7,7 @@ category:
 resources:
   - name: Accounts hierarchy
     url: >-
-      https://seshat.datasd.org/accounts_city_budget/budget_reference_accounts_datasd_v1.csv
+      https://seshat.datasd.org/accounts_city_budget/budget_reference_accounts_datasd.csv
     format: csv
   - name: Accounts hierarchy dictionary
     url: >-

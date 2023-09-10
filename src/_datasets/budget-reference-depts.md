@@ -7,7 +7,7 @@ category:
 resources:
   - name: Departments hierarchy
     url: >-
-      https://seshat.datasd.org/departments_city_budget/budget_reference_depts_datasd_v1.csv
+      https://seshat.datasd.org/departments_city_budget/budget_reference_depts_datasd.csv
     format: csv
   - name: Departments hierarchy dictionary
     url: >-

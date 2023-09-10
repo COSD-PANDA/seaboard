@@ -7,7 +7,7 @@ category:
 resources:
   - name: Special Events List
     url: >-
-      https://seshat.datasd.org/special_events/special_events_list_datasd_v1.csv
+      https://seshat.datasd.org/special_events/special_events_list_datasd.csv
     format: csv
   - name: Special Events Dictionary
     url: >-

@@ -7,67 +7,67 @@ category:
 resources:
   - name: Financial Transactions Reported by Election Committees year-to-date
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2022_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2022_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees 2021
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2021_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2021_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees 2020
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2020_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2020_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2019)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2019_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2019_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2018)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2018_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2018_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2017)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2017_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2017_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2016)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2016_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2016_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2015)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2015_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2015_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2014)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2014_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2014_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2013)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2013_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2013_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2012)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2012_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2012_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2011)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2011_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2011_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2010)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2010_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2010_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2009)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2009_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2009_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2008)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2008_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2008_datasd.csv
     format: csv
   - name: Financial Transactions Reported by Election Committees (2007)
     url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2007_datasd_v1.csv
+      https://seshat.datasd.org/election_committees_transactions/financial_support_2007_datasd.csv
     format: csv
   - name: Dictionary
     url: >-

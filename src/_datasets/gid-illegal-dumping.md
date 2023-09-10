@@ -6,7 +6,7 @@ category: City Management
 resources:
   - name: Illegal Dumping Notifications
     url: >-
-      https://seshat.datasd.org/get_it_done_illegal_dumping/get_it_done_illegal_dumping_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_illegal_dumping/get_it_done_illegal_dumping_requests_datasd.csv
     format: csv
   - name: Illegal Dumping Notifications Data Dictionary
     url: >-

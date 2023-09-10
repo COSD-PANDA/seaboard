@@ -12,11 +12,11 @@ resources:
     format: csv
   - name: Allegations FY22
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_allegations_fy2022_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2022_datasd.csv
     format: csv
   - name: Body worn camera details FY22
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_bwc_fy2022_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy2022_datasd.csv
     format: csv
   - name: Cases FY21
     url: >-
@@ -24,11 +24,11 @@ resources:
     format: csv
   - name: Allegations FY21
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_allegations_fy2021_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2021_datasd.csv
     format: csv
   - name: Body worn camera details FY21
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_bwc_fy2021_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy2021_datasd.csv
     format: csv
   - name: Cases FY20
     url: >-
@@ -36,11 +36,11 @@ resources:
     format: csv
   - name: Allegations FY20
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_allegations_fy2020_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2020_datasd.csv
     format: csv
   - name: Body worn camera details FY20
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_bwc_fy2020_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy2020_datasd.csv
     format: csv
   - name: Cases and allegations, FY19
     url: >-
@@ -48,7 +48,7 @@ resources:
     format: csv
   - name: Body worn camera details FY19
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_bwc_fy19_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy19_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
