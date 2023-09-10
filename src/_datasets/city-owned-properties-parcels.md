@@ -7,7 +7,7 @@ category:
 resources:
   - name: City Owned Properties - Parcels
     url: >-
-      https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd_v1.csv
+      https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv
     format: csv
   - name: City Owned Properties - Parcels Dictionary
     url: >-

@@ -6,7 +6,7 @@ category: City Management
 resources:
   - name: Pothole Repair Requests
     url: >-
-      https://seshat.datasd.org/get_it_done_potholes/get_it_done_pothole_requests_datasd_v1.csv
+      https://seshat.datasd.org/get_it_done_potholes/get_it_done_pothole_requests_datasd.csv
     format: csv
   - name: Pothole Repair Requests Data Dictionary
     url: >-

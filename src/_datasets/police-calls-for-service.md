@@ -31,15 +31,15 @@ resources:
     format: csv
   - name: Police Calls for Service 2017
     url: >-
-      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2017_datasd_v1.csv
+      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2017_datasd.csv
     format: csv
   - name: Police Calls for Service 2016
     url: >-
-      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2016_datasd_v1.csv
+      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2016_datasd.csv
     format: csv
   - name: Police Calls for Service 2015
     url: >-
-      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2015_datasd_v1.csv
+      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2015_datasd.csv
     format: csv
   - name: Police Calls for Service Dictionary
     url: >-

@@ -7,27 +7,27 @@ category:
 resources:
   - name: Vehicle Stops Search Details (2017 - June 2018)
     url: >-
-      https://seshat.datasd.org/police_vehicle_stops/vehicle_stops_search_details_2017_datasd.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_search_details_2017_datasd.csv
     format: csv
   - name: Vehicle Stops Search Details (2016)
     url: >-
-      https://seshat.datasd.org/police_vehicle_stops/vehicle_stops_search_details_2016_datasd.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_search_details_2016_datasd.csv
     format: csv
   - name: Vehicle Stops Search Details (2015)
     url: >-
-      https://seshat.datasd.org/police_vehicle_stops/vehicle_stops_search_details_2015_datasd.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_search_details_2015_datasd.csv
     format: csv
   - name: Vehicle Stops Search Details (2014)
     url: >-
-      https://seshat.datasd.org/police_vehicle_stops/vehicle_stops_search_details_2014_datasd.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_search_details_2014_datasd.csv
     format: csv
   - name: Vehicle Stops Search Details Dictionary
     url: >-
-      https://seshat.datasd.org/police_vehicle_stops/vehicle_stops_search_details_dictionary.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_search_details_dictionary.csv
     format: csv
   - name: Vehicle Stops Search Details Description List
     url: >-
-      https://seshat.datasd.org/police_vehicle_stops/vehicle_stops_search_details_description_list.csv
+      https://seshat.datasd.org/police_vehicle_stops_search_details/vehicle_stops_search_details_description_list.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-11-14'

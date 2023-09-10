@@ -7,15 +7,11 @@ category:
 resources:
   - name: Sediment Quality Sample Results
     url: >-
-      https://seshat.datasd.org/pud_omp_sediment/sediment_quality_datasd.csv
-    format: csv
-  - name: Sediment Quality Sampling Station Locations
-    url: >-
-      https://seshat.datasd.org/pud_omp_sediment/reference_stations_benthic.csv
+      https://seshat.datasd.org/monitoring_ocean_sediment/sediment_quality_datasd.csv
     format: csv
   - name: Sediment Quality Data Dictionary
     url: >-
-      https://seshat.datasd.org/pud_omp_sediment/sediment_quality_dictionary_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_sediment/sediment_quality_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2022-11-15'
