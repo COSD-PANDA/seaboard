@@ -5,10 +5,6 @@ department: City Clerk
 category:
   - Economy & Community
 resources:
-  - name: Financial Transactions Reported by Election Committees year-to-date
-    url: >-
-      https://seshat.datasd.org/election_committees_transactions/financial_support_2022_datasd.csv
-    format: csv
   - name: Financial Transactions Reported by Election Committees 2021
     url: >-
       https://seshat.datasd.org/election_committees_transactions/financial_support_2021_datasd.csv
