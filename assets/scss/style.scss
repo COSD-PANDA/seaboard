@@ -72,17 +72,7 @@ The main SCSS file for everything, yep
   font-family: "Montserrat",Helvetica, Arial, sans-serif;
 }
 
-
-/* Mixin */
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* Classic Pallete */
+/* San Diego Pallete */
 
 $p_blue: #0098db;
 $p_green: #00c7b2;
@@ -121,7 +111,7 @@ $s_yellow_dk: #d7a900;
 $s_yellow_mid: #fed100;
 $s_yellow_lt: #f3ec7a;
 
-$footer_color_bar: #5D676F;
+$footer_color_bar: $p_black;
 $footer_sep_color: #F4C343;
 
 $primary: $s_blue_dk;
@@ -129,12 +119,15 @@ $secondary: $p_green;
 $light: #F4F5F5;
 $dark: #202E38;
 $info: $p_purple;
+
 $p_black_rgba_100: rgba(55, 66, 74, 1);
 $p_black_rgba_50: rgba(55, 66, 74, 0.5);
 $p_black_rgba_10: rgba(55, 66, 74, 0.1);
 $p_black_rgba_20: rgba(55, 66, 74, 0.2);
 $p_black_rgba_5: rgba(55, 66, 74, 0.05);
 $s_black_dk_50: rgba(27, 36, 42, 0.5);
+$s_black_dk_20: rgba(27, 36, 42, 0.2);
+
 $input_borders: #707070;
 
 $nav_home_blue: $s_blue_dk;
@@ -148,7 +141,7 @@ $cat_lt_blue: $p_blue;
 $cat_lt_green: $p_green;
 $cat_dk_green: $s_green_dk;
 $cat_orange: $p_orange;
-$cat_gray: $footer_color_bar;
+$cat_gray: #5D676F;
 $cat_purple: $p_purple;
 
 $cat_yellow_10: rgba(252, 194, 0, 0.1);
@@ -159,6 +152,15 @@ $cat_dk_green_10: rgba(0, 123, 105, 0.1);
 $cat_orange_10: rgba(255, 160, 47, 0.1);
 $cat_gray_10: rgba(93, 103, 111, 0.1);
 $cat_purple_10: rgba(127, 48, 196, 0.1);
+
+$cat_yellow_20: rgba(252, 194, 0, 0.2);
+$cat_dk_blue_20: rgba(0, 84, 159, 0.2);
+$cat_lt_blue_20: rgba(0, 152, 219, 0.2);
+$cat_lt_green_20: rgba(0, 199, 178, 0.2);
+$cat_dk_green_20: rgba(0, 123, 105, 0.2);
+$cat_orange_20: rgba(255, 160, 47, 0.2);
+$cat_gray_20: rgba(93, 103, 111, 0.2);
+$cat_purple_20: rgba(127, 48, 196, 0.2);
 
 $fp_image_color: rgba(0, 73, 137, 0.6);
 
@@ -173,34 +175,12 @@ $accordion-button-focus-box-shadow: none;
 $accordion-button-active-bg: transparent;
 
 $dropdown-border-radius: 0;
-
 $enable-negative-margins: true;
 
-/*$enable-rounded: false;*/
 $font-family-base: "Open Sans",Helvetica, Arial, sans-serif;
 
 $headings-line-height: 1.8;
-$display-font-sizes: (
-  1: 5rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.75rem,
-  5: 3rem,
-  6: 2.5rem
-);
 $display-line-height: 1.1667;
-
-$spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 4,
-  7: $spacer * 5,
-);
 
 $btn-border-radius: 2.375rem;
 $btn-font-family: "Poppins";
@@ -209,6 +189,41 @@ $btn-line-height: 1rem;
 $btn-padding-y: 1.5625rem;
 $btn-padding-x: 3.125rem;
 $btn-font-weight: 600;
+
+@import "bootstrap-5.0.2/scss/functions";
+@import "bootstrap-5.0.2/scss/variables";
+
+$spacers-new: (
+  6: $spacer * 4,
+  7: $spacer * 5,
+);
+
+$spacers: map-merge($spacers, $spacers-new);
+
+$display-font-sizes-new: (
+  4: 3.75rem
+);
+
+$display-font-sizes: map-merge($display-font-sizes, $display-font-sizes-new);
+
+$font-sizes-new: (
+  6: $font-size-base * 1.125
+);
+
+$font-sizes: map-merge($font-sizes, $font-sizes-new);
+
+$theme-colors-new: (
+  "city-infrastructure": $cat_yellow,
+  "public-safety": $cat_dk_blue,
+  "culture-and-recreation": $cat_lt_blue,
+  "energy-and-environment": $cat_lt_green,
+  "gis": $cat_dk_green,
+  "transportation": $cat_orange,
+  "economy-and-community": $cat_gray,
+  "city-management": $cat_purple,
+);
+
+$theme-colors: map-merge($theme-colors, $theme-colors-new);
 
 
 @import "bootstrap-5.0.2/scss/bootstrap";
@@ -229,7 +244,7 @@ $category-nav-item-borders: calc($category-nav-item-border-width * 2 * 8);
 body {
   width: 100%;
   height:100%;
-  color:$p_black;
+  color: $p_black;
 }
 
 ul {
@@ -240,12 +255,49 @@ h1.display-4, h1.display-6 {
   @include merriweather;
 }
 
+a {
+  color: inherit;
+}
+
 .split-col-container-fluid-s {
   margin-right: calc(var(--bs-gutter-x) * -.5);
 }
 
 .split-col-container-fluid-e {
   margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.section-bg-dk-1 {
+  background-color: $dark;
+}
+.section-bg-lt {
+  background-color: $light;
+}
+
+.section-divider {
+  border-bottom: 1px solid #535C63;
+}
+
+// Used in sidebar shortcode
+.sidebar-wrapper {
+  width: 50%;
+  background-color: #FAFAFA;
+  margin-bottom: $grid-gutter-width;
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.sidebar-wrapper.sidebar-end {
+  margin-left: $grid-gutter-width;
+}
+
+.title-h1-rule {
+  width: 98px;
+  height: 6px;
+  background-color: $primary;
+
 }
 
 /* color bars */
@@ -296,7 +348,7 @@ h1.display-4, h1.display-6 {
 
 .header-logo-contain {
   @include merriweather;
-  font-size: 2.75rem;
+  font-size: 2.75rem; // keep
 }
 
 .header-logo {
@@ -307,7 +359,6 @@ h1.display-4, h1.display-6 {
 
 #navbarNav.header-nav {
   @include poppins;
-  font-weight: 600;
   line-height: 2.5rem;
 
   
@@ -383,20 +434,15 @@ h1.display-4, h1.display-6 {
     box-shadow: none;
 }
 
-.fp-intro-text {
-  line-height: 2.1875rem;
-}
-
 .fp-search-all {
   border-radius: 3.5625rem;
   border-color: $input_borders;
   border-width: 1px;
   padding: 0.375rem 4rem;
-  line-height: 5.0625rem;
+  line-height: 5.0625rem; // keep
 }
 .fp-search-input {
   color: $p_black_rgba_50;
-  font-size: 1.375rem;
   border-right: none;
 }
 .fp-search-button {
@@ -405,58 +451,192 @@ h1.display-4, h1.display-6 {
   opacity: 1;
 }
 
-.fp-carousel {
+// Carousel general styles
+
+.fp-carousel-bg {
+
+  background-image: url('../assets/images/fp-carousel-slides_fp-blue-bg-tight.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 1600px auto;
   width: 100%;
+  height: 794px;
+
+}
+.fp-carousel {
+    
+  width: 100%;
+  height: 100%;
+  
+  .carousel-indicators {
+    bottom: auto;
+    top: 50px;
+    justify-content: flex-start;
+  }
+  .carousel-indicators [data-bs-target] {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #DBDDDE;
+  }
+
+  .carousel-indicators .active {
+    opacity: 1;
+  }
+
   .carousel-inner {
+    
     .carousel-item {
       width: 100%;
 
-      .carousel-item-text {
-          width: 60%;
+      .carousel-illustration {
+        width: 100%;
+        height: 100%;
 
-          .carousel-item-text-body {
-            line-height: 1.875rem;
-          }
+        .carousel-item-text {
+            width: 100%;
+            padding-top: 50px;
 
-          .intro-h1-rule {
-            width: 50px;
-            height: 5px;
-            background-color: $cat_lt_green;
-          }
+            .carousel-item-text-body {
+              line-height: 1.875rem;
+              width: 45%;
+            }
 
-          .steps-h1-rule {
-            width: 98px;
-            height: 6px;
-            background-color: $primary;
+        }
+      }
 
-          }
-
-          .carousel-item-h1-rule {
-            width: 98px;
-            height: 6px;
-            background-color: $primary;
-          }
+      .carousel-illustration-intro {
+        background: url('../assets/images/fp-carousel-slides_fp-slide-1.svg') no-repeat right bottom; 
+        background-size: contain;
+      }
+      .carousel-illustration-lingo {
+        background: url('../assets/images/fp-carousel-slides_fp-slide-2.svg') no-repeat right bottom; 
+        background-size: contain;
+      }
+      .carousel-illustration-navigate {
+        background: url('../assets/images/fp-carousel-slides_fp-slide-3.svg') no-repeat right bottom; 
+        background-size: contain;
+      }
+      .carousel-illustration-download {
+        background: url('../assets/images/fp-carousel-slides_fp-slide-4.svg') no-repeat right bottom; 
+        background-size: contain;
       }
 
 
     }
-    .portal-intro { 
-      background: url('../assets/images/fp-carousel-slides_fp-slide-1.svg') no-repeat right bottom; 
-      background-size: auto 100%;
-    }
-    .portal-lingo { 
-      background: url('../assets/images/fp-carousel-slides_fp-slide-2.svg') no-repeat right bottom; 
-      background-size: auto 100%;
-    }
-    .portal-navigate { 
-      background: url('../assets/images/fp-carousel-slides_fp-slide-3.svg') no-repeat right bottom; 
-      background-size: auto 100%;
-    }
-    .portal-download { 
-      background: url('../assets/images/fp-carousel-slides_fp-slide-4.svg') no-repeat right bottom; 
-      background-size: auto 100%;
-    }
   }
+}
+
+// Organization panel
+
+
+.fp-org-illustration {
+  background: url('../assets/images/fp-portal-organization.svg') no-repeat left center; 
+  background-size: calc(50% - 36px) auto;
+}
+
+// calc((1920px - 24px) / 2)
+
+.fp-organization-accordion {
+  .accordion-item {
+    background-color: $cat_dk_blue_20;
+
+    .accordion-header {
+      border-top: 7px solid $p_black;
+      
+      .accordion-button {
+        color: white;
+        font-weight: 600; // keep
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("../assets/images/accordion-button.svg");
+      }
+      .accordion-button::after {
+        background-image: url("../assets/images/accordion-button.svg");
+      }
+    }
+    
+  }
+
+  .accordion-collapse.collapse.show {
+    border-top: 1px solid #162E42;
+  }
+
+}
+
+// FAQ accordion
+
+.faq-background {
+  background-image: url('../assets/images/gray-sails-bg.svg');
+  background-repeat: no-repeat;
+  background-position: left -568px bottom -40px;
+  background-size: 1213px auto;
+}
+
+.fp-faq-accordion {
+
+  .accordion-item {
+    background-color: $p_black;
+    border-radius: 0.5rem;
+    margin-bottom: 3px;
+
+    .accordion-header {
+      
+      
+      .accordion-button {
+        color: white;
+        font-weight: 600; // keep
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("../assets/images/accordion-button.svg");
+      }
+      .accordion-button::after {
+        background-image: url("../assets/images/accordion-button.svg");
+      }
+    }
+    .accordion-body {
+      background-color: #475158;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    
+  }
+
+}
+
+// Glossary
+
+.fp-glossary-accordion {
+
+  .accordion-item {
+    background-color: $p_black;
+    border-radius: 0.5rem;
+    margin-bottom: 3px;
+
+    .accordion-header {
+      
+      
+      .accordion-button {
+        background-color: $s_black_dk_20;
+        color: white;
+        font-weight: 600; // keep
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("../assets/images/accordion-button.svg");
+      }
+      .accordion-button::after {
+        background-image: url("../assets/images/accordion-button.svg");
+      }
+    }
+    .accordion-body {
+      background-color: #475158;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    
+  }
+
 }
 
 /* Dataset single */
@@ -476,18 +656,8 @@ h1.display-4, h1.display-6 {
   }
 }
 
-.dataset-metadata {
-  p {
-    font-size: 1.125rem;
-  }
-  .dataset-metadata-label {
-    font-weight: 600;
-  }
-}
-
 .dataset-tags {
   background-color: $p_black_rgba_10;
-  font-size: 1rem;
 
   .tag {
     color: $p_black_rgba_50;
@@ -500,7 +670,6 @@ h1.display-4, h1.display-6 {
 a.dataset-taxonomy-btn {
   border-radius: 1rem;
   background-color: $p_black_rgba_20;
-  font-style: italic;
 }
 
 .dataset-resources-main {
@@ -512,6 +681,8 @@ a.dataset-taxonomy-btn {
   overflow: hidden;
 
 }
+
+// Styles for original dataset page design
 
 .dataset-main-row {
 
@@ -605,18 +776,10 @@ a.dataset-taxonomy-btn {
   > thead {
     vertical-align: bottom;
     @include montserrat;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.875rem;
   }
   
   > tbody {
     vertical-align: inherit;
-    font-size: 1.25rem;
-
-    .btn {
-      font-size: 1.25rem;
-    }
   }
 
   tr:last-child td:first-child {
@@ -644,31 +807,15 @@ a.dataset-taxonomy-btn {
   .table {
    margin-bottom: $spacer;
    width: 100%;
-   //color: white;
-   //border-color: white;
  
    > * > * > * {
      padding: $table-cell-padding-y 1rem;
-     //background-color: $p_black;
    }
    
    > thead {
      @include montserrat;
-     font-weight: 700;
-     text-transform: uppercase;
-     font-size: 1.875rem;
-   }
-   
-   .dictionary-accordion-header {
-    font-size: 1.25rem;
-    font-weight: 400;
-
    }
 
-   .dictionary-accordion-body {
-    font-size: 1.125rem;
-    font-weight: 300;
-   }
   }
 
   /* top row */
@@ -706,7 +853,6 @@ a.dataset-taxonomy-btn {
 tr.dictionary-accordion-body {
   td.accordion-body {
     padding: 1.5rem 1rem;
-    //background-color: #475158;
   }
 }
 
@@ -734,7 +880,6 @@ a.card.category-card, .category-nav-item {
   border-width: 0.3125rem;
   border-style: solid;
   padding: 1rem;
-  text-decoration: none;
 }
 
 .category-nav-item {
@@ -810,9 +955,6 @@ a.card.category-card.icon-gis, .category-nav-gis {
   .card-header {
     background-color: $s_black_dk;
     
-    .card-title {
-      font-size: 1.875rem;
-    }
   }
 
   .card-header:first-child {
@@ -821,7 +963,6 @@ a.card.category-card.icon-gis, .category-nav-gis {
 
   .card-body {
     background-color: $p_black_rgba_5;
-    font-size: 1.375rem;
 
     a.nav-link {
       color: $p_black;
@@ -831,7 +972,6 @@ a.card.category-card.icon-gis, .category-nav-gis {
     }
 
     a.nav-link.dept-current-link {
-      font-weight: bold;
       .badge.dept-count-badge.dept-current-badge {
         background-color: $p_black;
       }
@@ -853,17 +993,8 @@ a.card.category-card.icon-gis, .category-nav-gis {
 
 /* Dataset list component */
 
-.dataset-list-tag-label, .dataset-list-tag-link {
-  font-size: 0.9375rem;
-}
-
 .dataset-list-tag-link {
   color: $s_black_dk_50;
-  text-decoration: none;
-}
-
-.dataset-metadata-list-item {
-  font-size: 1.125rem;
 }
 
 .category-svg-dataset {
@@ -877,46 +1008,102 @@ a.card.category-card.icon-gis, .category-nav-gis {
 }
 
 a.dataset-title-link {
-  font-size: 1.5625rem;
   color: $s_black_dk;
 }
 
-.cat-metadata-city-infrastructure {
+.cat-bg-city-infrastructure-10 {
   background-color: $cat_yellow_10;
 }
 
-.cat-metadata-public-safety {
+.cat-bg-city-infrastructure-20 {
+  background-color: $cat_yellow_20;
+}
+
+.cat-bg-public-safety-10 {
   background-color: $cat_dk_blue_10;
 }
 
-.cat-metadata-energy-and-environment {
+.cat-bg-public-safety-20 {
+  background-color: $cat_dk_blue_20;
+}
+
+.cat-bg-energy-and-environment-10 {
   background-color: $cat_lt_green_10;
 }
 
-.cat-metadata-transportation {
+.cat-bg-energy-and-environment-20 {
+  background-color: $cat_lt_green_20;
+}
+
+.cat-bg-transportation-10 {
   background-color: $cat_orange_10;
 }
 
-.cat-metadata-city-management {
+.cat-bg-transportation-20 {
+  background-color: $cat_orange_20;
+}
+
+.cat-bg-city-management-10 {
   background-color: $cat_purple_10;
 }
 
-.cat-metadata-economy-and-community {
+.cat-bg-city-management-20 {
+  background-color: $cat_purple_20;
+}
+
+.cat-bg-economy-and-community-10 {
   background-color: $cat_gray_10;
 }
 
-.cat-metadata-culture-and-recreation {
+.cat-bg-economy-and-community-20 {
+  background-color: $cat_gray_20;
+}
+
+.cat-bg-culture-and-recreation-10 {
   background-color: $cat_lt_blue_10;
 }
 
-.cat-metadata-gis {
+.cat-bg-culture-and-recreation-20 {
+  background-color: $cat_lt_blue_20;
+}
+
+.cat-bg-gis-10 {
   background-color: $cat_dk_green_10;
 }
+
+.cat-bg-gis-20 {
+  background-color: $cat_dk_green_20;
+}
+
+/* dataset card component */
+
+.card.dataset-card, .card.download-card {
+  border-radius: 1.25rem;
+}
+
+.dataset-card-illustration-contain {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  padding: 3.75rem 3.75rem 1.25rem 3.75rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.download-card-title {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  @include montserrat;
+}
+
 
 /* Site-wide footer */
 
 .footer-logo-contain {
-  background-color: $p_black;
+  background-color: $s_black_dk;
 }
 
 .footer-color-bar {

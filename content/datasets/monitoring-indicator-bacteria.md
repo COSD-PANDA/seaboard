@@ -22,8 +22,9 @@ resources:
       https://seshat.datasd.org/water_testing/indicator_bacteria_tests_datasd_v1.csv
     format: csv
     filter: All
+popularity: 3.0
 
-summary: Here are individual test results from the water monitoring database, plus the monthly totals reported to the state to demonstrate MCL compliance. This dataset does not include results of tests for chemical parameters.
+summary: Individual drinking water test results plus the monthly totals reported to the state to demonstrate MCL compliance.
 described_by: https://seshat.datasd.org/monitoring_indicator_bacteria/monitoring_indicator_bacteria_dictionary.csv
 date_issued: 2016-05-11
 update_frequency: R/P1D
@@ -32,4 +33,4 @@ maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
 
-Additional details here.
+This dataset does not include results of tests for chemical parameters.

@@ -38,6 +38,7 @@ resources:
       https://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.csv
     format: csv
     filter: All
+popularity: 4.0
 
 summary: Public transit stops and stations covering the County of San Diego.
 described_by: https://seshat.datasd.org/gis_transit_stops/gis_transit_stops_dictionary.csv

@@ -1,0 +1,220 @@
+{
+    "search": {
+        "title": "Open Data for All San Diegans",
+        "body": [
+            "The City of San Diego's Open Data Portal lets you freely access City data to find facts about your neighborhood, create maps and graphs about the City, and perform any analysis.",
+            "New to the portal? Click here to for help getting started."
+        ]
+            
+    },
+    "quickstart": [
+        {
+            "background": "intro",
+            "title": [
+                "Quick tips for",
+                "getting started"
+            ],
+            "body": [
+                "If you are seeking open data for the first time, save time with this quickstart guide. We've boiled the process down to three easy steps to make your search more efficient."
+            ],
+            "buttons": [
+                {
+                    "text": "Step 1",
+                    "target": {
+                        "type": "internal",
+                        "path": 1
+                    }
+                },
+                {
+                    "text": "Step 2",
+                    "target": {
+                        "type": "internal",
+                        "path": 2
+                    }
+                },
+                {
+                    "text": "Step 3",
+                    "target": {
+                        "type": "internal",
+                        "path": 3
+                    }
+                }
+            ]
+        },
+        {
+            "background": "lingo",
+            "title": [
+                "Understand the lingo"
+            ],
+            "body": [
+                "The portal contains hundreds of downloads. Using the right filters and search terms will shorten the list - and the time you'll spend browsing. Before diving in, take a moment to review [how the catalog is organized](/) and read through our [Glossary of Terms](/)."
+            ],
+            "buttons": [
+                {
+                    "text": "Step 2",
+                    "target": {
+                        "type": "internal",
+                        "path": 2
+                    }
+                },
+                {
+                    "text": "Step 3",
+                    "target": {
+                        "type": "internal",
+                        "path": 3
+                    }
+                },
+                {
+                    "text": "Restart",
+                    "target": {
+                        "type": "internal",
+                        "path": 0
+                    }
+                }
+            ]
+        },
+        {
+            "background": "navigate",
+            "title": [
+                "Use the metadata"
+            ],
+            "body": [
+                "Once you've clicked into a dataset, don't go straight to the downloads. Review key metadata right on the page, including the data dictionary. If the data isn't what you were looking for, adjust your search. Need to see this in action? [Check out our blog](/) to walk through a sample search."
+            ],
+            "buttons": [
+                {
+                    "text": "Step 3",
+                    "target": {
+                        "type": "internal",
+                        "path": 3
+                    }
+                },
+                {
+                    "text": "Restart",
+                    "target": {
+                        "type": "internal",
+                        "path": 0
+                    }
+                }
+                
+            ]
+        },
+        {
+            "background": "download",
+            "title": [
+                "Download a subset"
+            ],
+            "body": [
+                "Some datasets are large and cumbersome to work with, so we've provided pre-filtered subsets to help out. Download the distribution you need for free in a format compatible with your favorite tools. The data is now yours to work with! Just be sure to review our [Terms of Use](/)."
+            ],
+            "buttons": [
+                {
+                    "text": "View data",
+                    "target": {
+                        "type": "external",
+                        "path": ""
+                    }
+                },
+                {
+                    "text": "Restart",
+                    "target": {
+                        "type": "internal",
+                        "path": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "navigation": {
+        "main": [
+            {
+                "title": "How this portal is organized",
+                "body" : "If keyword searches haven't worked out, or you just want browse, here's how to navigate the hierarchy."
+            }
+        ],
+        "hierarchy": [
+            {
+                "title": "Catalog",
+                "body": "The main feature of this portal is a [catalog of City data](/datasets/). The catalog is a list of the datasets published on the portal, and each entry has a basic description. The catalog can be filtered by publishing department, category, and tag."
+            },
+            {
+                "title": "Dataset",
+                "body": "Click a catalog entry to access the dataset. The dataset is a collection of downloadable files, called distributions. Some datasets have multiple distributions of the same data so we can provide the data in multiple formats or pre-filtered for ease of use."
+            },
+            {
+                "title": "Distribution",
+                "body": "A distribution is the single file or API available to access from the dataset page. We only provide distributions that are in a machine-readable format, including .csv, .json, .geojson, .zip, and .xml. "
+            }
+        ],
+        "browsing": [
+            {
+                "title": "Browsing shortcuts",
+                "body": "[Categories](/categories/), [departments](/departments/), and [tags](/tags/) are a good way to narrow down the catalog. You can even get a description of each [category](/) and [department](/) to understand which are relevant to your search."
+            }
+        ]
+    },
+    "faq": {
+        "main": [
+            {
+                "title": "Frequently Asked Questions",
+                "body": "Our team is committed to answering your questions regarding the portal and available data. If your question isn't here, [contact us](/) and we'll get working on an answer for you."
+            }
+        ],
+        "questions": [
+            {
+                "title": "What is open data",
+                "body": "Open data is publicly available data provided for free and without any restrictions on usage or redistribution. This portal contains data that is produced or commissioned by the City and is not restricted for release by federal, state, or local law, rule, or regulation."
+            },
+            {
+                "title": "What is a dataset",
+                "body": "A dataset is a collection of statistical or factual information in digital form. Each dataset published on this portal is listed in the catalog. Clicking an entry in the catalog will take the user to a dataset page that contains the distributions - or downloads - of the dataset."
+            },
+            {
+                "title": "What is the purpose of open data",
+                "body": "The City's created an Open Data Policy to acheive a number of goals, including: Promoting open, accessible, efficient, and transparent government; Encourage civic development of technology products to improve service delivery through expanded and innovative applications; Enable economic development; Decrease the number of requests made through the Public Records Act."
+            },
+            {
+                "title": "How do you download open data",
+                "body": "Navigate to a dataset from the catalog, then click on a file from the downloads table."
+            },
+            {
+                "title": "Are there limitation on how to use open data",
+                "body": "There are no limitations on usage or redistribution of the data available here. However, the portal does have a Terms of Use."
+            },
+            {
+                "title": "How frequently are the data updated",
+                "body": "Each dataset has its own update frequency. Update frequency is a metadata field available on the dataset page. Each catalog listing and each dataset page also states the date a dataset was last updated. This date may not apply to every distribution listed in a dataset."
+            },
+            {
+                "title": "I believe I found an error in a dataset. Where should I report this",
+                "body": "Data quality is our top priority. If you believe you found an error, [contact us](/)."
+            },
+            {
+                "title": "How do I request unpublished City data",
+                "body": "The [California Public Records Act](/) gives the public the right to request government records. The City of San Diego has made the process easier by offering a way to [request records online](/). You can also search previous requests for documents that have already been released."
+            },
+            {
+                "title": "What if I have a simple question and don't want to wrangle large files",
+                "body": "To keep it easy, many datasets have an insights section with visualizations and tables that answer basic questions."
+            }
+        ]
+    },
+    "glossary": {
+        "main": [
+            {
+                "title": "Glossary of Terms",
+                "body": ""
+                }
+        ],
+        "terms": [
+            {
+                "title": "Metadata",
+                "body": "Metadata is a set of attributes that describe a dataset in the catalog. The metadata fields available on this portal meets the standards of [Data Catalog Vocabulary (DCAT) - Version 2](https://www.w3.org/TR/vocab-dcat/#dcat-rdf)."
+            },
+            {
+                "title": "API",
+                "body": "API stands for Application Programming Interface. An API allows users to request data over the web with filters applied."
+            }
+        ]
+    }
+}

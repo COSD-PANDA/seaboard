@@ -1,0 +1,60 @@
+{{- $fpFaq := $.Site.Data.fpSectionContent.faq }}
+<div class="container-fluid faq-background">
+    <div class="container py-6">
+        <div class="row">
+            <div class="col">
+                {{- $fpFaqMain := index $fpFaq.main 0 }}
+                <h1 class="display-4">{{ $fpFaqMain.title }}</h1>
+                <div class="title-h1-rule mt-3 mb-5"></div>
+                <div class="fs-5 mb-5">
+                    {{ markdownify $fpFaqMain.body }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{- $noQuestions := $fpFaq.questions | len }}
+            {{- $halfQuestions := math.Ceil (div $noQuestions 2.0) }}
+            {{- $topHalf :=  first $halfQuestions $fpFaq.questions }}
+            {{- $bottomHalf := last (sub $noQuestions $halfQuestions) $fpFaq.questions }}
+            <div class="col-sm-6">
+                <div class="accordion fp-faq-accordion mb-5" id="accordionFaqFirst">
+                    {{- range $i, $e := $topHalf }}
+                    <div class="accordion-item text-white">
+                        <h2 class="accordion-header" id="faq-first-{{ $i }}">
+                        <button class="accordion-button fs-5 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-first-{{ $i }}" aria-expanded="false" aria-controls="faq-collapse-first-{{ $i }}">
+                            {{ .title }}?
+                        </button>
+                        </h2>
+                        <div id="faq-collapse-first-{{ $i }}" class="accordion-collapse collapse" aria-labelledby="faq-first-{{ $i }}" data-bs-parent="#accordionFaqFirst">
+                        <div class="accordion-body pb-5 px-5">
+                            {{ markdownify .body }}
+                        </div>
+                        </div>
+                    </div>
+                    {{- end }}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="accordion fp-faq-accordion mb-5" id="accordionFaqLast">
+                    {{- range $i, $e := $bottomHalf }}
+                    <div class="accordion-item text-white">
+                        <h2 class="accordion-header" id="faq-last-{{ $i }}">
+                        <button class="accordion-button fs-5 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-last-{{ $i }}" aria-expanded="false" aria-controls="faq-collapse-last-{{ $i }}">
+                            {{ .title }}?
+                        </button>
+                        </h2>
+                        <div id="faq-collapse-last-{{ $i }}" class="accordion-collapse collapse" aria-labelledby="faq-last-{{ $i }}" data-bs-parent="#accordionFaqLast">
+                        <div class="accordion-body pb-5 px-5">
+                            {{ markdownify .body }}
+                        </div>
+                        </div>
+                    </div>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

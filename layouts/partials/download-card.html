@@ -1,0 +1,14 @@
+<div class="col pe-3">
+    <div class="card download-card">
+        <div class="download-card-title cat-bg-{{ .dlCardCat }}-20 p-4 fs-4">
+            {{ .resource.name }}
+        </div>
+        <div class="card-body">
+        <p class="fs-5">Format: <span class="fw-bold">{{ .resource.format }}</span></p>
+        <p class="fs-5">File size: <span class="fw-bold">000 MB</span></p>
+        <p class="fs-5">No. rows: <span class="fw-bold">2,345,678</span> {{ partial "excel-warning" . }}</p>
+        <p class="fs-5">Filters: <span class="fw-bold">None</span></p>
+        <a href="#" class="btn btn-{{ .dlCardCat}}">Download</a>
+        </div>
+    </div>
+</div>

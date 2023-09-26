@@ -1,0 +1,43 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1213.09 2022.57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #f4f5f5;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-1" d="M1046.01,888.2c0,555.58-433.01,1010.44-980.83,1041.77,348.38,187.8,788.75,83.13,1014.98-252.23,196.58-292.39,169.41-668.36-43.72-927.95,6.41,45.86,9.6,92.11,9.57,138.41"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-1" d="M0,688.43c250.06,8.78,460.78,168.06,544.25,389.67,26.03,68.28,39.29,140.77,39.14,213.84,0,260.04-163.48,481.61-393.53,567.25,420.33-93.04,730.32-469.3,730.32-918.86,.17-113.39-20.36-225.85-60.57-331.87C725.02,252.61,382.2,0,0,0V688.43Z"/>
+    </clipPath>
+  </defs>
+  <g id="Group_514" data-name="Group 514">
+    <g id="Group_459" data-name="Group 459">
+      <g class="cls-2">
+        <g id="Group_65" data-name="Group 65">
+          <rect id="Rectangle_103" data-name="Rectangle 103" class="cls-3" x="-242.08" y="523.32" width="1826.08" height="1820.94" transform="translate(-829.45 929.13) rotate(-46.33)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_460" data-name="Group 460">
+      <g class="cls-4">
+        <g id="Group_67" data-name="Group 67">
+          <rect id="Rectangle_104" data-name="Rectangle 104" class="cls-3" x="-1413.43" y="-1492.39" width="3746.97" height="2984.82" transform="translate(419.6 458.3) rotate(-84.96)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

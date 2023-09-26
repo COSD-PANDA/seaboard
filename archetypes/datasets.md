@@ -2,6 +2,7 @@
 {{- $datasetJSON := getJSON "https://raw.githubusercontent.com/COSD-PANDA/data-inventory/add-distros/data.json" }}
 {{- $datasetList :=  $datasetJSON.dataset }}
 {{- $thisTitle := (replace .Name "-" "_") }}
+{{- $thisPopularity := add (len (where .Pages "Section" "datasets")) 1.0 }}
 {{- range where $datasetList ".identifier" $thisTitle }}
 title: {{ .title }}
 menu:
@@ -29,6 +30,7 @@ resources:
     format: {{ $e.format }}
     filter: All
 {{- end }}
+popularity: {{ $thisPopularity }}
 
 summary: {{ .description }}
 described_by: https://seshat.datasd.org/{{ .describedBy }}

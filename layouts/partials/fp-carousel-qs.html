@@ -1,0 +1,79 @@
+<div class="container-fluid fp-carousel-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="carouselPortalExplainer" class="carousel fp-carousel slide">
+                    <div class="carousel-indicators ms-0">
+                        <button type="button" class="ms-0 me-2 active" data-bs-target="#carouselPortalExplainer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Intro to nagivating data"></button>
+                        <button type="button" class="mx-2" data-bs-target="#carouselPortalExplainer" data-bs-slide-to="1" aria-label="Step 1"></button>
+                        <button type="button" class="mx-2" data-bs-target="#carouselPortalExplainer" data-bs-slide-to="2" aria-label="Step 2"></button>
+                        <button type="button" class="mx-2" data-bs-target="#carouselPortalExplainer" data-bs-slide-to="3" aria-label="Step 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    {{- $fpCarousel := $.Site.Data.fpSectionContent }}
+                    {{- range $i, $e := $fpCarousel.quickstart }}
+                    {{- if eq $i 0 }}
+                    <div class="carousel-item active portal-{{ .background }}">
+                    {{- else }}
+                    <div class="carousel-item portal-{{ .background }}">
+                    {{- end }}
+                        <div class="carousel-illustration carousel-illustration-{{ .background }}">
+                            <div class="d-flex flex-column pb-6 carousel-item-text">
+                                <h1 class="display-4 pt-6">
+                                    {{- if eq 1 (len .title) }}
+                                        {{ index .title 0 }}
+                                    {{- else }}
+                                        {{- $titleLines := len .title }}
+                                        {{- range $i, $e := .title }}
+                                            {{- if eq $i $titleLines }}
+                                                {{ . }}
+                                                {{- else }}
+                                                {{ . }} <br>
+                                            {{- end }}
+                                        {{- end }}
+                                    {{- end }}
+                                </h1>
+                                <div class="title-h1-rule mt-3 mb-5"></div>
+                                <p class="fs-5 carousel-item-text-body"> 
+                                    {{- if eq 1 (len .body) }}
+                                        {{ index .body 0 | markdownify }}
+                                    {{- else }}
+                                        {{- $bodyLines := len .body }}
+                                        {{- range $i, $e := .body }}
+                                            {{- if eq $i $bodyLines }}
+                                                {{ . | markdownify}}
+                                                {{- else }}
+                                                {{ . | markdownify }} <br>
+                                            {{- end }}
+                                        {{- end }}
+                                    {{- end }}
+                                </p>
+                                {{- range $i, $e := .buttons }}
+                                    {{- if eq 0 $i }}
+                                <div class="mt-5 mb-2">  
+                                    {{- else }}
+                                <div class="my-2">
+                                    {{- end }}
+                                    {{- if eq "internal" .target.type }}
+                                        <button type="button" class="btn btn-primary" data-bs-target="#carouselPortalExplainer" data-bs-slide-to="{{ .target.path }}">
+                                    {{- else }}
+                                        <button type="button" class="btn btn-primary">
+                                    {{- end }}
+                                    {{- if eq "Restart" .text }}
+                                            <span class="fa-solid fa-rotate-right"></span>
+                                    {{- else }}
+                                            {{ .text }}
+                                    {{- end }}
+                                        </button>
+                                </div><!-- buttons-->
+                                {{- end }}
+                            </div><!-- carousel item text -->
+                        </div>
+                    </div><!-- carousel item -->
+                    {{- end }}
+                    </div><!-- carousel-inner -->
+                </div><!-- carouselPortalExplainer -->
+            </div><!-- col -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

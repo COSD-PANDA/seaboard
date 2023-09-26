@@ -1,0 +1,57 @@
+{{- $fpGlossary := $.Site.Data.fpSectionContent.glossary }}
+<div class="container-fluid section-bg-dk-1">
+    <div class="container py-6">
+        <div class="row">
+            <div class="col">
+                {{- $fpGlossaryMain := index $fpGlossary.main 0 }}
+                <h1 class="display-4 text-white">{{ $fpGlossaryMain.title }}</h1>
+                <div class="title-h1-rule mt-3 mb-5"></div>
+            </div>
+        </div>
+        <div class="row">
+            {{- $noTerms := $fpGlossary.terms | len }}
+            {{- $halfTerms := math.Ceil (div $noTerms 2.0) }}
+            {{- $topHalf :=  first $halfTerms $fpGlossary.terms }}
+            {{- $bottomHalf := last (sub $noTerms $halfTerms) $fpGlossary.terms }}
+            <div class="col-sm-6">
+                <div class="accordion fp-glossary-accordion mb-5" id="accordionGlossaryFirst">
+                    {{- range $i, $e := $topHalf }}
+                    <div class="accordion-item text-white">
+                        <h2 class="accordion-header" id="glossary-first-{{ $i }}">
+                        <button class="accordion-button fs-5 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#glossary-collapse-first-{{ $i }}" aria-expanded="false" aria-controls="glossary-collapse-first-{{ $i }}">
+                            {{ upper .title }}
+                        </button>
+                        </h2>
+                        <div id="glossary-collapse-first-{{ $i }}" class="accordion-collapse collapse" aria-labelledby="glossary-first-{{ $i }}" data-bs-parent="#accordionGlossaryFirst">
+                        <div class="accordion-body pb-5 px-5">
+                            {{ markdownify .body }}
+                        </div>
+                        </div>
+                    </div>
+                    {{- end }}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="accordion fp-glossary-accordion mb-5" id="accordionGlossaryLast">
+                    {{- range $i, $e := $bottomHalf }}
+                    <div class="accordion-item text-white">
+                        <h2 class="accordion-header" id="faq-last-{{ $i }}">
+                        <button class="accordion-button fs-5 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#glossary-collapse-last-{{ $i }}" aria-expanded="false" aria-controls="glossary-collapse-last-{{ $i }}">
+                            {{ upper .title }}
+                        </button>
+                        </h2>
+                        <div id="glossary-collapse-last-{{ $i }}" class="accordion-collapse collapse" aria-labelledby="glossary-last-{{ $i }}" data-bs-parent="#accordionGlossaryLast">
+                        <div class="accordion-body pb-5 px-5">
+                            {{ markdownify .body }}
+                        </div>
+                        </div>
+                    </div>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

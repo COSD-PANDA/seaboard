@@ -13,30 +13,39 @@ tags:
   - 311
   - Get it Done
 resources:
-  - name: Get It Done Reports
+  - name: All Get It Done Reports
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_datasd.csv
     format: csv
-    filter: All
-  - name: Get It Done Reports
+  - name: Open
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_open_datasd.csv
     format: csv
-    filter: Open
-  - name: Get It Done Reports (2021 - current)
+  - name: Closed; 2021 - current
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2023_datasd.csv
     format: csv
-    filter: Closed
-  - name: Get It Done Reports (2016 - 2020)
+  - name: Closed; 2016 - 2020
     url: >-
       https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2022_datasd.csv
     format: csv
-    filter: Closed
+  - name: Open
+    url: >-
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_open_datasd.csv
+    format: csv
+  - name: Closed; 2021 - current
+    url: >-
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2023_datasd.csv
+    format: csv
+  - name: Closed; 2016 - 2020
+    url: >-
+      https://seshat.datasd.org/get_it_done_311/get_it_done_requests_closed_2022_datasd.csv
+    format: csv
+popularity: 5.0
 
 summary: The [Get It Done program](https://www.sandiego.gov/get-it-done) allows residents and visitors to report certain types of non-emergency problems to the City using the Get It Done mobile app, web app, or by telephone. This dataset contains all Get It Done reports the City has received since the program launched in May 2016.
 described_by: https://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv
-date_issued: '2016-05-26'
+date_issued: 2016-05-26
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: pandatech@sandiego.gov

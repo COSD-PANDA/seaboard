@@ -23,6 +23,7 @@ resources:
       https://seshat.datasd.org/dsd/permits_set2_closed_datasd.csv
     format: csv
     filter: All
+popularity: 6.0
 
 summary: Approvals for permits, maps, agreements, and other applications processed by Development Services Department’s current cloud-based permitting system.
 described_by: https://seshat.datasd.org/development_permits_set2/development_permits_set2_dictionary.csv

@@ -1,0 +1,5 @@
+{{- $allClasses := "fs-5"}}
+{{- with .Get "classes" }}
+{{- $allClasses = (printf "%s %s" $allClasses .) }}
+{{- end }}
+<p class="{{ $allClasses }}">{{ .Inner }}</p>

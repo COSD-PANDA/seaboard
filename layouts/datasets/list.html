@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="container-fluid pt-7 section-bg-dk-1 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {{.Content}}
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "datasets-categories-lg" . }}
+{{ partial "datasets-new" . }}
+{{ partial "datasets-popular" . }}
+{{ partial "datasets-listing" . }}
+{{ end }}
+  
+  
+  

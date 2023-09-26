@@ -1,0 +1,14 @@
+<div class="container-fluid section-bg-lt py-7">
+    <div class="container">
+        <div class="row">
+            <h1 class="display-4 text-center pb-6">Popular Datasets</h1>
+        </div>
+        <div class="row">
+            {{- range first 3 (where (.Pages.ByParam "popularity") "Section" "datasets") }}
+            <div class="col-md-4">
+                {{ partial "dataset-card" . }}
+            </div>
+            {{- end }}
+        </div>
+    </div>
+</div>

@@ -23,7 +23,7 @@
                                 {{- if $thisFile }}
                                     {{- $cardClass := (printf "%s" $key) }}
                                     {{- if eq $thisFile $cardClass }}
-                                    <div class="nav-item category-nav-item category-nav-{{ $cardClass }}">
+                                    <div class="nav-item category-nav-item text-decoration-none category-nav-{{ $cardClass }}">
                                         <a aria-current="page" href="/categories/{{ $key | urlize }}">
                                             <div class="d-flex align-items-center">
                                                 <div class="category-nav-svg">
@@ -33,7 +33,7 @@
                                             </div>
                                         </a>
                                     {{- else  }}
-                                    <div class="nav-item category-nav-item">
+                                    <div class="nav-item category-nav-item text-decoration-none">
                                         <a href="/categories/{{ $key | urlize }}">
                                             <div class="d-flex align-items-center">
                                                 <div class="category-nav-svg">
@@ -44,7 +44,7 @@
                                     {{- end }}
                                     </div>
                                 {{- else }}
-                                <div class="nav-item category-nav-item">
+                                <div class="nav-item category-nav-item text-decoration-none">
                                     <a href="/categories/{{ $key | urlize }}">
                                         <div class="d-flex align-items-center">
                                             <div class="category-nav-svg">

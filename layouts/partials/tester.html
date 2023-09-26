@@ -1,0 +1,13 @@
+<div class="container-fluid datasets-filters-bg py-7">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-nowrap overflow-scroll">
+                {{ range first .distrosRem .Page.Params.resources }}
+                    <div class="col-4">
+                        {{ partial "download-card" (dict "resource" . "dlCardCat" .dlCardCat) }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>

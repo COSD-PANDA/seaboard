@@ -17,6 +17,7 @@ resources:
       https://seshat.datasd.org/public_art/public_art_locations_datasd_v1.csv
     format: csv
     filter: All
+popularity: 7.0
 
 summary: Point locations of artwork in the collection.
 described_by: https://seshat.datasd.org/civic_art_collection/civic_art_collection_dictionary.csv

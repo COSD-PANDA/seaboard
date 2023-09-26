@@ -13,12 +13,11 @@ unsafe= true
 	category = "categories"
 	tag = "tags"
 	department = "departments"
-	type = "type"
-	level = "level"
-	topic = "topic"
 
 preserveTaxonomyNames = true
 
 [outputs]
 	home = ["HTML", "JSON"]
 	section = ["HTML","JSON"]
+
+enableGitInfo = true

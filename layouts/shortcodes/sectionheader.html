@@ -1,0 +1,6 @@
+{{- $allClasses := "display-4"}}
+{{- with .Get "classes" }}
+{{- $allClasses = (printf "%s %s" $allClasses .) }}
+{{- end }}
+<h1 class="{{ $allClasses }}" {{ with .Get "id"}}id="{{ . }}"{{ end }}>{{ .Inner }}</h1>
+<div class="title-h1-rule mt-3 mb-5"></div>

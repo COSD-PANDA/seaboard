@@ -1,0 +1,5 @@
+{{- $allClasses := "display-6 mt-5 mb-4"}}
+{{- with .Get "classes" }}
+{{- $allClasses = (printf "%s %s" $allClasses .) }}
+{{- end }}
+<h1 class="{{ $allClasses }}" {{ with .Get "id"}}id="{{ . }}"{{ end }}>{{ .Inner }}</h1>

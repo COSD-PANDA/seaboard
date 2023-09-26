@@ -1,0 +1,25 @@
+{{- $fpAccordionOrg := $.Site.Data.fpSectionContent.search }}
+<div class="container-fluid fp-search-wrapper">
+    <div class="fp-img-color">
+        <div class="fp-gradient">
+            <div class="fp-sails">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex flex-column py-6 fp-main-content">
+                                <h1 class="display-4 text-white mb-5">Open Data for All San Diegans</h1>
+                                <p class="text-white fs-5 fp-intro-text mb-5">
+                                    The City of San Diego's Open Data Portal lets you freely access City data to find facts about your neighborhood, create maps and graphs about the City, and perform any analysis.
+                                </p>
+                                <div class="mb-5">
+                                    {{ partial "fp-search-box" . }}
+                                </div>
+                                <p class="text-white fs-5 fp-intro-text mb-5">New to the portal? Click here to for help getting started.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

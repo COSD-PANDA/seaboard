@@ -1,0 +1,14 @@
+<div class="card dataset-card">
+    {{- $popCatList := .Params.categories }}
+    {{- $selectedPopCat := index $popCatList 0 }}
+	{{- $selectedPopCatPath :=  anchorize $selectedPopCat }}
+	{{- $thisIcon := (printf "-%s" $selectedPopCatPath) }}
+    <div class="dataset-card-illustration-contain cat-bg-{{ $selectedPopCatPath }}-20">
+        <img src="../assets/images/card-illustration-1.svg" />
+    </div>
+    <div class="card-body">
+      <p class="fs-5 fw-bold">{{ .Title }}</p>
+      <p class="fs-5">{{ .Summary }}</p>
+      <a href="#" class="btn btn-{{ $selectedPopCatPath }}">Explore Data</a>
+    </div>
+</div>

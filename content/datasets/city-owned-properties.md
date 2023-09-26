@@ -10,11 +10,11 @@ departments:
 categories:
     - City Infrastructure
 resources:
-  - name: City Owned Properties - Details
+  - name: All City Owned Properties
     url: >-
       https://seshat.datasd.org/read/city_property_details_datasd_v1.csv
     format: csv
-    filter: All
+popularity: 8.0
 
 summary: Data about property the City of San Diego owns, including the cost, month and year of purchase and the acreage and usage of the site.
 described_by: https://seshat.datasd.org/city_owned_properties/city_owned_properties_dictionary.csv
