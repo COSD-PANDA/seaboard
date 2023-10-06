@@ -29,8 +29,8 @@
 		</div>
 		<div class="col-8">
 			<div class="dataset-metadata mb-5">
-				<p><span class="dataset-metadata-label fw-bold">Temporal:</span> {{ partial "temporal-definition" . }}</p>
-				<p><span class="dataset-metadata-label fw-bold">Spatial:</span> {{ partial "spatial-definition" . }}</p>
+				<p><span class="dataset-metadata-label fw-bold">Temporal:</span> {{ .Params.temporal }} {{ partial "temporal-definition" . }}</p>
+				<p><span class="dataset-metadata-label fw-bold">Spatial:</span> {{ .Params.spatial }} {{ partial "spatial-definition" . }}</p>
 				<p><span class="dataset-metadata-label fw-bold">Views:</span> </p>
 				<p><span class="dataset-metadata-label fw-bold">Issued:</span> {{ .Params.date_issued }}</p>
 			</div>
@@ -51,29 +51,61 @@
 	</div>
 </div>
 {{- $noDistros := .Params.resources | len }}
-{{- $remQuestions := sub $noDistros 1 }}
-{{- if gt $remQuestions 0 }}
-<div class="container-fluid datasets-filters-bg py-7">
+{{- $remNoDistros := sub $noDistros 1 }}
+{{- if gt $remNoDistros 0 }}
+{{- $remDistros := last $remNoDistros  .Params.resources }}
+{{- $filterGroups := slice }}
+{{- range $remDistros }}
+{{- range .filterGroup }}
+{{- $filterGroups = $filterGroups | append . }}
+{{- end }}
+{{- end }}
+{{- $uniqueFilterGroups := $filterGroups | uniq }}
+<div class="container-fluid pb-7">
     <div class="container">
 		<div class="row">
 			<div class="col">
-				<h1 class="display-4 mb-5 text-white">
+				<h1 class="display-6 mb-5">
 					More Downloads
 				</h1>
 			</div>
 		</div>
         <div class="row">
-            <div class="col d-flex flex-nowrap overflow-scroll more-downloads-section pb-3">
-                {{ range last $remQuestions .Params.resources }}
-                    <div class="col-4">
-                        {{ partial "download-card" (dict "resource" . "dlCardCat" (anchorize $selectedPageCat)) }}
-                    </div>
-                {{ end }}
-            </div>
+			<div class="col">
+				<ul class="nav nav-pills more-downloads-nav fs-5 fw-bold mb-5" id="moreDownloadsTab" role="tablist">
+					{{- range $i, $e := $uniqueFilterGroups }}
+					<li class="nav-item me-5" role="presentation">
+					<button class="nav-link {{ if eq 0 $i }}active{{ end }}" id="{{ $e }}-tab" data-bs-toggle="tab" data-bs-target="#{{ $e }}-tab-pane" type="button" role="tab" aria-controls="{{ $e }}-tab-pane" aria-selected={{ if eq 0 $i }}"true"{{ else }}"false"{{ end }}>Filtered by {{ $e }}</button>
+					</li>
+					{{- end }}
+				</ul>
+				<div class="tab-content" id="moreDownloadsTabContent">
+					{{- range $i, $e := $uniqueFilterGroups }}
+					<div class="tab-pane fade {{ if eq 0 $i }}show active{{ end }}" id="{{ $e }}-tab-pane" role="tabpanel" aria-labelledby="{{ $e }}-tab" tabindex="{{ $i }}">
+						<div class="d-flex flex-wrap">
+						{{- $remDistrosThisFilter := slice }}
+						{{- range  sort $remDistros "weight" "desc" }}
+						{{- $thisRemDistro := . }}
+						{{- range .filterGroup }}
+						{{- if eq . $e }}
+						{{- $remDistrosThisFilter = $remDistrosThisFilter | append $thisRemDistro }}
+						{{- end }}
+						{{- end }}
+						{{- end }}
+						{{- range $remDistrosThisFilter }}
+							<div class="col-4 mb-3">
+							{{ partial "download-card" (dict "resource" . "dlCardCat" (anchorize $selectedPageCat)) }}
+							</div>
+						{{- end }}
+						</div>
+					</div>
+					{{- end }}
+				</div>
+			</div>
         </div>
     </div>
 </div>
-{{- else }}
+{{- else }} 
 {{- end }}
 <div class="container-fluid dataset-dictionary-contain py-7">
 	<div class="container">
@@ -86,7 +118,7 @@
 				</div>
 			</div>
 		</div>
-		{{ partial "data-dictionary" . }}
+		{{ partial "data-dictionary" . }} 
 	</div>
 </div>
 {{ with .Content }}

@@ -1,13 +1,12 @@
 ---
-{{- $datasetJSON := getJSON "https://raw.githubusercontent.com/COSD-PANDA/data-inventory/add-distros/data.json" }}
+{{- $datasetJSON := getJSON "https://raw.githubusercontent.com/COSD-PANDA/data-inventory/temporal/data.json" }}
 {{- $datasetList :=  $datasetJSON.dataset }}
 {{- $thisTitle := (replace .Name "-" "_") }}
-{{- $thisPopularity := add (len (where .Pages "Section" "datasets")) 1.0 }}
 {{- range where $datasetList ".identifier" $thisTitle }}
-title: {{ .title }}
+title: "{{ .title }}"
 menu:
     main:
-        name: {{ .title }}
+        name: "{{ .title }}"
         parent: Data
 colorbar: green
 departments: 
@@ -22,19 +21,25 @@ tags:
 {{- end }}
 {{- end  }}
 resources: 
-{{- $distroList := .distribution }}
-{{- range $i, $e := $distroList}}
-  - name: {{ $e.title }}
+{{- range .distribution }}
+  - name: "{{ .title }}"
     url: >-
-      {{ $e.downloadURL }}
-    format: {{ $e.format }}
-    filter: All
+      {{ .downloadURL }}
+    format: {{ .format }}
+    filter: "{{ .description }}"
+    bytes: {{ .byteSize }}
+    {{- with .compressFormat }}
+    compression: {{ . }}
+    {{- end }}
+    weight: 0
+    filterGroup: 
+        - none
 {{- end }}
-popularity: {{ $thisPopularity }}
-
-summary: {{ .description }}
-described_by: https://seshat.datasd.org/{{ .describedBy }}
+popularity: 0
+summary: "{{ .description }}"
+described_by: {{ .describedBy }}
 date_issued: {{ .issued }}
+date_updated: {{ .modified }}
 update_frequency: {{ .accrualPeriodicity }}
 {{- with .spatial }}
 spatial: {{ . }}

@@ -5,6 +5,7 @@ relativeURLS = true
 
 [params]
 	bootstrap = "5.0.2"
+	excelLimit = 1048576
 
 [markup.goldmark.renderer]
 unsafe= true
@@ -19,5 +20,3 @@ preserveTaxonomyNames = true
 [outputs]
 	home = ["HTML", "JSON"]
 	section = ["HTML","JSON"]
-
-enableGitInfo = true

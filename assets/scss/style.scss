@@ -357,11 +357,31 @@ a {
   margin-left: 3.125rem;
 }
 
-#navbarNav.header-nav {
+#navbarNav.header-nav, #moreDownloadsTab.more-downloads-nav {
   @include poppins;
-  line-height: 2.5rem;
 
+}
+
+#moreDownloadsTab.more-downloads-nav {
+
+  .nav-link {
+    border-radius: 0;
+    color: inherit;
+  }
   
+  button {
+    border-left: 0.5rem solid $p_black;
+  }
+  button:hover, button.active {
+    background-color: $p_black;
+    color: white;
+  }
+
+}
+
+#navbarNav.header-nav {
+  
+  line-height: 2.5rem;
 
   a.get-started-li {
     border-left: 0.5rem solid $nav_home_blue;
