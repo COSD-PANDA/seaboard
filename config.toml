@@ -6,6 +6,7 @@ relativeURLS = true
 [params]
 	bootstrap = "5.0.2"
 	excelLimit = 1048576
+	rowNosCsv = "https://seshat.datasd.org/seaboard/distribution_row_nos.csv"
 
 [markup.goldmark.renderer]
 unsafe= true
