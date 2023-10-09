@@ -822,7 +822,7 @@ a.dataset-taxonomy-btn {
 
 }
 
-.dictionary-table {
+.dictionary-table, .more-downloads-table {
 
   .table {
    margin-bottom: $spacer;
@@ -870,7 +870,7 @@ a.dataset-taxonomy-btn {
  
  }
 
-tr.dictionary-accordion-body {
+tr.accordion-body {
   td.accordion-body {
     padding: 1.5rem 1rem;
   }

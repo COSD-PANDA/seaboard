@@ -38,7 +38,7 @@
 			<div class="dataset-jump-links mb-5">
 				<span class="me-4 d-inline fst-italic">Jump to: </span>
 				<a class="me-4" href="#dataDictionary">Data dictionary</a>
-				<a class="me-4" href="#">Filter the data</a>
+				<a class="me-4" href="#dataFilters">Filter the data</a>
 				<a class="me-4" href="#">Insights</a>
 				{{ with .Content }}<a class="me-4" href="#addDetails">Additional details</a>{{ end }}
 			</div>
@@ -66,7 +66,7 @@
     <div class="container">
 		<div class="row">
 			<div class="col">
-				<h1 class="display-6 mb-5">
+				<h1 class="display-6 mb-5" id="dataFilters">
 					More Downloads
 				</h1>
 			</div>
@@ -83,8 +83,8 @@
 				<div class="tab-content" id="moreDownloadsTabContent">
 					{{- range $i, $e := $uniqueFilterGroups }}
 					<div class="tab-pane fade {{ if eq 0 $i }}show active{{ end }}" id="{{ $e }}-tab-pane" role="tabpanel" aria-labelledby="{{ $e }}-tab" tabindex="{{ $i }}">
-						<div class="dictionary-table">
-							<table class="table" id="accordionColumns">
+						<div class="more-downloads-table">
+							<table class="table" id="accordionColumnsDownloads">
 								<tbody>
 									{{- $remDistrosThisFilter := slice }}
 									{{- range  sort $remDistros "weight" "desc" }}
@@ -97,14 +97,14 @@
 									{{- end }}
 									{{- range $i, $r := $remDistrosThisFilter }}
 									{{- if eq $i ($remDistrosThisFilter | len) }}
-									<tr id="final-data-field" class="fs-5 fw-semibold dictionary-accordion-header final-data-field-corners">
+									<tr id="final-data-field" class="fs-5 fw-semibold final-data-field-corners">
 										<td class="align-middle">{{ .name }}</td>
 										<td class="align-middle">
 											<a href="{{ .url }}" class="btn btn-sm btn-{{ (anchorize $selectedPageCat) }}">Download</a>
 										</td>
-										<td><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapse{{ $i }}"></button></td>
+										<td><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDl{{ $i }}" aria-expanded="true" aria-controls="collapseDl{{ $i }}"></button></td>
 									</tr>
-									<tr id="collapse{{ $i }}" class="fs-6 dictionary-accordion-body final-data-def collapse" data-bs-parent="#accordionColumns">
+									<tr id="collapseDl{{ $i }}" class="fs-6 accordion-body collapse">
 										<td class="accordion-body" colspan="3">
 											<p class="fs-5">Format: <span class="fw-bold">{{ .format }}</span></p>
 											<p class="fs-5">File size: <span class="fw-bold">000 MB</span></p>
@@ -113,14 +113,14 @@
 										</td>
 									</tr>
 									{{- else }}
-									<tr class="fs-5 fw-semibold dictionary-accordion-header">
+									<tr class="fs-5 fw-semibold">
 										<td class="align-middle">{{ .name }}</td>
 										<td class="align-middle">
 											<a href="{{ .url }}" class="btn btn-sm btn-outline-{{ (anchorize $selectedPageCat) }}">Download</a>
 										</td>
-										<td><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapse{{ $i }}"></button></td>
+										<td><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDl{{ $i }}" aria-expanded="true" aria-controls="collapseDl{{ $i }}"></button></td>
 									</tr>
-									<tr id="collapse{{ $i }}" class="fs-6 dictionary-accordion-body collapse" data-bs-parent="#accordionColumns">
+									<tr id="collapseDl{{ $i }}" class="fs-6 accordion-body collapse">
 										<td class="accordion-body" colspan="3">
 											<p class="fs-5">Format: <span class="fw-bold">{{ .format }}</span></p>
 											<p class="fs-5">File size: <span class="fw-bold">000 MB</span></p>
