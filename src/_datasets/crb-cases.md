@@ -6,61 +6,21 @@ category:
   - Public Safety
   - City Management
 resources:
-  - name: Cases FY23
+  - name: Cases FY22-23
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_fy2023_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_datasd.csv
     format: csv
-  - name: Allegations FY23
+  - name: Allegations FY22-23
     url: >-
-      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2023_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_datasd.csv
     format: csv
-  - name: Body worn camera details FY23
+  - name: Body worn camera details FY22-23
     url: >-
-      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy2023_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_datasd.csv
     format: csv
-  - name: Cases FY22
+  - name: Complainants FY22-23
     url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_fy2022_datasd.csv
-    format: csv
-  - name: Allegations FY22
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2022_datasd.csv
-    format: csv
-  - name: Body worn camera details FY22
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy2022_datasd.csv
-    format: csv
-  - name: Cases FY21
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_fy2021_datasd.csv
-    format: csv
-  - name: Allegations FY21
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2021_datasd.csv
-    format: csv
-  - name: Body worn camera details FY21
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy2021_datasd.csv
-    format: csv
-  - name: Cases FY20
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_fy2020_datasd.csv
-    format: csv
-  - name: Allegations FY20
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_allegations/crb_allegations_fy2020_datasd.csv
-    format: csv
-  - name: Body worn camera details FY20
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy2020_datasd.csv
-    format: csv
-  - name: Cases and allegations, FY19
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_evaluated/crb_cases_fy19_datasd.csv
-    format: csv
-  - name: Body worn camera details FY19
-    url: >-
-      https://seshat.datasd.org/cpp_complaints_body_worn_camera/crb_cases_bwc_fy19_datasd.csv
+      https://seshat.datasd.org/cpp_complaints_complainants/crb_complainants_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
