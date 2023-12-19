@@ -5,9 +5,9 @@ department: Public Utilities
 category:
   - Energy & Environment
 resources:
-  - name: Parameter Results, 2020 - 2021
+  - name: Parameter Results, 2020 - 2029
     url: >-
-      https://seshat.datasd.org/monitoring_ocean_water_quality/water_quality_2020_2021_datasd.csv
+      https://seshat.datasd.org/monitoring_ocean_water_quality/water_quality_2020_2029_datasd.csv
     format: csv
   - name: Parameter Results, 2011 - 2019
     url: >-
@@ -31,7 +31,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2020-07-02'
-date_modified: '2022-07-25'
+date_modified: '2023-12-18'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
