@@ -7,6 +7,10 @@ category:
 resources:
   - name: Fire Incidents year-to-date
     url: >-
+      https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2024_datasd.csv
+    format: csv
+  - name: Fire Incidents 2023
+    url: >-
       https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2023_datasd.csv
     format: csv
   - name: Fire Incidents 2022
