@@ -5,6 +5,10 @@ department: Police
 category:
   - Public Safety
 resources:
+  - name: Police Calls for Service 2024
+    url: >-
+      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2024_datasd.csv
+    format: csv
   - name: Police Calls for Service 2023
     url: >-
       https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2023_datasd.csv
@@ -47,7 +51,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-02'
-date_modified: '2023-12-24'
+date_modified: '2024-01-03'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
