@@ -6,6 +6,17 @@ category:
   - City Infrastructure
   - Transportation
 resources:
+  - name: Parking meters transactions - 2024 (raw)
+    url: >-
+      https://seshat.datasd.org/parking_meters_transactions/treas_parking_payments_2024_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2024 (aggregated by day)
+    url: >-
+      https://seshat.datasd.org/parking_meters_transactions_daily/treas_meters_2024_pole_by_mo_day_datasd.csv
+    format: csv
+  - name: Parking meters transactions - 2024 (aggregated by month)
+    url: >-
+      https://seshat.datasd.org/parking_meters_transactions_monthly/treas_meters_2024_pole_by_month_datasd.csv
   - name: Parking meters transactions - 2023 (raw)
     url: >-
       https://seshat.datasd.org/parking_meters_transactions/treas_parking_payments_2023_datasd.csv
