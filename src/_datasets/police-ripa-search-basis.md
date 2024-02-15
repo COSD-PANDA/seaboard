@@ -7,7 +7,11 @@ category:
 resources:
   - name: Basis for searches conducted
     url: >-
-      https://seshat.datasd.org/police_ripa_search_basis/ripa_search_basis_datasd.csv
+      https://seshat.datasd.org/police_ripa_search_basis/ripa_search_basis.csv
+    format: csv
+  - name: Basis for searches conducted - Historic
+    url: >-
+      https://seshat.datasd.org/police_ripa_search_basis/ripa_search_basis_historic.csv
     format: csv
   - name: Dictionary
     url: >-
