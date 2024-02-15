@@ -9,7 +9,7 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason.csv
     format: csv
-  - name: Reason for stop
+  - name: Reason for stop - Historic
     url: >-
       https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_historic.csv
     format: csv

@@ -9,7 +9,7 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_race/ripa_race.csv
     format: csv
-  - name: Race of persons
+  - name: Race of persons - Historic
     url: >-
       https://seshat.datasd.org/police_ripa_race/ripa_race_historic.csv
     format: csv

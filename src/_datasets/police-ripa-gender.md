@@ -9,7 +9,7 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_gender/ripa_gender.csv
     format: csv
-  - name: Gender of persons
+  - name: Gender of persons - Historic
     url: >-
       https://seshat.datasd.org/police_ripa_gender/ripa_gender_historic.csv
     format: csv
