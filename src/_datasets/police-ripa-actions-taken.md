@@ -7,7 +7,11 @@ category:
 resources:
   - name: Actions taken
     url: >-
-      https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_datasd.csv
+      https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken.csv
+    format: csv
+  - name: Actions taken - Historic
+    url: >-
+      https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_historic.csv
     format: csv
   - name: Dictionary
     url: >-
