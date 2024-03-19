@@ -33,4 +33,4 @@ date_modified: '2024-01-16'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
-Shapefile of the City's street network. This shapefile contains the street segments identified in our streets repair projects and Overall Condition Index datasets. This data is displayed on [streets.sandiego.gov](http://streets.sandiego.gov){:target="_blank" rel="noopener"}.
+Shapefile of the City's street network. This shapefile contains the street segments identified in our streets repair projects, active and completed, and Pavement Condition Assessment datasets. This data is displayed on [streets.sandiego.gov](http://streets.sandiego.gov){:target="_blank" rel="noopener"}.
