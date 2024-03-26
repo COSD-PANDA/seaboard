@@ -9,6 +9,10 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_prop_seize_type/ripa_prop_seize_type_datasd.csv
     format: csv
+  - name: Property seized - Historic
+    url: >-
+      https://seshat.datasd.org/police_ripa_prop_seize_type/ripa_prop_seize_type_historic.csv
+    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/police_ripa_prop_seize_type/ripa_prop_seize_type_dictionary_datasd.csv

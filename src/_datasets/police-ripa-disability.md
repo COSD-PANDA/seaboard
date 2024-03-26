@@ -9,6 +9,10 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_disability/ripa_disability_datasd.csv
     format: csv
+  - name: Disability of persons - Historic
+    url: >-
+      https://seshat.datasd.org/police_ripa_disability/ripa_disability_historic.csv
+    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/police_ripa_disability/ripa_disability_dictionary_datasd.csv

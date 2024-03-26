@@ -9,6 +9,10 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd.csv
     format: csv
+  - name: Stop details - Historic
+    url: >-
+      https://seshat.datasd.org/police_ripa_stops/ripa_stops_historic.csv
+    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/police_ripa_stops/ripa_stops_dictionary_datasd.csv
@@ -25,7 +29,9 @@ All stops made by the San Diego Police Department. Data collected from these sto
 
 This dataset includes basic information about a police stop that occurred, including stop date, time, duration and location, as well as a few details about the person stopped. Each row is a person stopped with both a `pid`, a unique identifier for the person, and a `stop_id`, a unique identifier for the stop. A single stop may involve multiple people, so any given `stop_id` may have more than one associated `pid`.
 
-To get additional details about the person stopped, such as the race, gender, and disability, as well as more information about the stop, such as actions taken and reason for the stop, join this basic stop data to the other datasets available at the following links
+The dataset is divided into two files, historic and current, because of changes in data collection requirements. Stop ids are unique only within each file and may repeat across files.
+
+To get additional details about the person stopped, such as the race, gender, and disability, as well as more information about the stop, such as actions taken and reason for the stop, join this basic stop data to the other datasets (only joining together historic datasets to other historic datasets)
 
 {% include ripa-list.html %}
 
