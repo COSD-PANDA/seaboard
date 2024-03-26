@@ -7,7 +7,7 @@ category:
 resources:
   - name: Stop details
     url: >-
-      https://seshat.datasd.org/police_ripa_stops/ripa_stops.csv
+      https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd.csv
     format: csv
   - name: Stop details - Historic
     url: >-
