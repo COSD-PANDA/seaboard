@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Basis for searches conducted - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_search_basis/ripa_search_basis_historic.csv
+      https://seshat.datasd.org/police_ripa_search_basis/ripa_search_basis_historic_datasd.csv
     format: csv
   - name: Dictionary
     url: >-

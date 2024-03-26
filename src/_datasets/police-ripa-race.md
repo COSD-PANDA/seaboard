@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Race of persons - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_race/ripa_race_historic.csv
+      https://seshat.datasd.org/police_ripa_race/ripa_race_historic_datasd.csv
     format: csv
   - name: Dictionary
     url: >-

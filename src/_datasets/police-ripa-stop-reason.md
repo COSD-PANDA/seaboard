@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Reason for stop - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_historic.csv
+      https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_historic_datasd.csv
     format: csv
   - name: Dictionary
     url: >-

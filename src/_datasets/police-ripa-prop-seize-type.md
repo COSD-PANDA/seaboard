@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Property seized - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_prop_seize_type/ripa_prop_seize_type_historic.csv
+      https://seshat.datasd.org/police_ripa_prop_seize_type/ripa_prop_seize_type_historic_datasd.csv
     format: csv
   - name: Dictionary
     url: >-

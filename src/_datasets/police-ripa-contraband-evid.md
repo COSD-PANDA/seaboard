@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Contraband and/or evidence found - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_contraband_evid/ripa_contraband_evid_historic.csv
+      https://seshat.datasd.org/police_ripa_contraband_evid/ripa_contraband_evid_historic_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
