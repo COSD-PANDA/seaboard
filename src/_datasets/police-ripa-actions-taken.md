@@ -9,6 +9,10 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_datasd.csv
     format: csv
+  - name: Actions taken - Historic
+    url: >-
+      https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_historic.csv
+    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_dictionary_datasd.csv

@@ -9,6 +9,10 @@ resources:
     url: >-
       https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_datasd.csv
     format: csv
+  - name: Basis for property seizure - Historic
+    url: >-
+      https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_historic.csv
+    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_dictionary_datasd.csv
