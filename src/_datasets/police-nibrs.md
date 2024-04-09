@@ -9,10 +9,6 @@ resources:
     url: >-
       https://seshat.datasd.org/police_nibrs/pd_nibrs.csv
     format: csv
-  - name: Stop details - Historic
-    url: >-
-      https://seshat.datasd.org/police_nibrs/pd_nibrs_.csv
-    format: csv
   - name: Dictionary
     url: >-
       https://seshat.datasd.org/police_nibrs/pd_nibrs_dictionary.csv
