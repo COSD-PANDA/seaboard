@@ -23,7 +23,9 @@ The National Incident-Based Reporting System (NIBRS) was implemented in 2021 to 
 
 This dataset includes information about a relevant case that occured, including date and location of that case, the responding police division, service area, beat and NIBRS specific information including group type, category, who crime was committed against, whether it was a property crime or violent crime and relevant police and NIBRS offense information.
 
-For a detailed description about an offense, see [NIBRS offense codes definitions](https://ucr.fbi.gov/nibrs/2011/resources/nibrs-offense-codes)
+For additional information, please visit the [City of San Diego Annual Crime Reports](https://www.sandiego.gov/police/data-transparency/crime-statistics/annual-crime-reports).
+
+For a detailed description about an offense, see [NIBRS offense codes definitions](https://ucr.fbi.gov/nibrs/2011/resources/nibrs-offense-codes).
 
 <!--more-->
 
