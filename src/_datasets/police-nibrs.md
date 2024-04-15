@@ -7,7 +7,7 @@ category:
 resources:
   - name: Police NIBRS Crime Offenses
     url: >-
-      https://seshat.datasd.org/police_nibrs/pd_nibrs.csv
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
