@@ -14,7 +14,7 @@ resources:
       https://seshat.datasd.org/police_nibrs/pd_nibrs_dictionary.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
-date_issued: '2024-04-9'
+date_issued: '2024-04-18'
 date_modified: '2024-04-09'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
