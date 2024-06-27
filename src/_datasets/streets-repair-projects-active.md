@@ -8,11 +8,11 @@ category:
 resources:
   - name: Active Projects
     url: >-
-      https://seshat.datasd.org/streets_repair_projects/street_paving_plan_datasd.csv
+      https://seshat.datasd.org/streets_repair_projects/staged/street_paving_plan_datasd.csv
     format: csv
   - name: Active Projects Dictionary
     url: >-
-      https://seshat.datasd.org/streets_repair_projects/street_paving_plan_dictionary_datasd.csv
+      https://seshat.datasd.org/streets_repair_projects/staged/street_paving_plan_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2024-03-18'
