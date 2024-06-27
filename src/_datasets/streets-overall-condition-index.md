@@ -8,7 +8,7 @@ category:
 resources:
   - name: Pavement Condition Assessment (2023)
     url: >-
-      https://seshat.datasd.org/pavement_condition_assessment/pavement_condition_assessment_2023_datasd.csv
+      https://seshat.datasd.org/pavement_condition_assessment/staged/pavement_condition_assessment_2023_datasd.csv
     format: csv
   - name: Pavement Condition Assessment (2016)
     url: >-
@@ -16,7 +16,7 @@ resources:
     format: csv
   - name: Pavement Condition Assessment Dictionary
     url: >-
-      https://seshat.datasd.org/pavement_condition_assessment/pavement_condition_assessment_dictionary_datasd.csv
+      https://seshat.datasd.org/pavement_condition_assessment/staged/pavement_condition_assessment_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2024-01-16'
