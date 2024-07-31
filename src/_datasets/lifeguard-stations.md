@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Lifeguard station points
     url: >-
-      https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_datasd.pbf
-    format: pbf
-  - name: Lifeguard station points
-    url: >-
       https://seshat.datasd.org/gis_lifeguard_stations/lifeguard_stations_datasd.topo.json
     format: topojson
   - name: Lifeguard station points
