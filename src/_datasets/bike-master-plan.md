@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Bike Master Plan route lines
     url: >-
-      https://seshat.datasd.org/gis_bike_master_plan/bike_master_plan_datasd.pbf
-    format: pbf
-  - name: Bike Master Plan route lines
-    url: >-
       https://seshat.datasd.org/gis_bike_master_plan/bike_master_plan_datasd.topo.json
     format: topojson
   - name: Bike Master Plan route lines
