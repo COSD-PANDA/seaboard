@@ -16,10 +16,6 @@ resources:
     format: shp
   - name: Police beats
     url: >-
-      https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.pbf
-    format: pbf
-  - name: Police beats
-    url: >-
       https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.topo.json
     format: topojson
   - name: Police beats
