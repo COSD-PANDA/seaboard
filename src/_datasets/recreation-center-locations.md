@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Recreation center points
     url: >-
-      https://seshat.datasd.org/gis_recreation_center/rec_centers_datasd.pbf
-    format: pbf
-  - name: Recreation center points
-    url: >-
       https://seshat.datasd.org/gis_recreation_center/rec_centers_datasd.topo.json
     format: topojson
   - name: Recreation center points
