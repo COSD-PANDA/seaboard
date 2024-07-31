@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Business improvement districts
     url: >-
-      https://seshat.datasd.org/gis_business_improvement_districts/bids_datasd.pbf
-    format: pbf
-  - name: Business improvement districts
-    url: >-
       https://seshat.datasd.org/gis_business_improvement_districts/bids_datasd.topo.json
     format: topojson
   - name: Business improvement districts
