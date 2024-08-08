@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Zoning
     url: >-
-      https://seshat.datasd.org/gis_zoning/zoning_datasd.pbf
-    format: pbf
-  - name: Zoning
-    url: >-
       https://seshat.datasd.org/gis_zoning/zoning_datasd.topo.json
     format: topojson
   - name: Zoning

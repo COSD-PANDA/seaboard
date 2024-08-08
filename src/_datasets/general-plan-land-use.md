@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: General Plan polygons
     url: >-
-      https://seshat.datasd.org/gis_general_plan_land_use/gp_land_use_datasd.pbf
-    format: pbf
-  - name: General Plan polygons
-    url: >-
       https://seshat.datasd.org/gis_general_plan_land_use/gp_land_use_datasd.topo.json
     format: topojson
   - name: General Plan polygons

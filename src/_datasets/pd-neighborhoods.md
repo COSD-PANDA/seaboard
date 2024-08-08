@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Police neighborhoods
     url: >-
-      https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_datasd.pbf
-    format: pbf
-  - name: Police neighborhoods
-    url: >-
       https://seshat.datasd.org/gis_police_neighborhoods/pd_neighborhoods_datasd.topo.json
     format: topojson
   - name: Police neighborhoods

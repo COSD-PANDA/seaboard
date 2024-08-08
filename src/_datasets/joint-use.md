@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Joint use parks
     url: >-
-      https://seshat.datasd.org/gis_joint_use_parks/joint_use_datasd.pbf
-    format: pbf
-  - name: Joint use parks
-    url: >-
       https://seshat.datasd.org/gis_joint_use_parks/joint_use_datasd.topo.json
     format: topojson
   - name: Joint use parks

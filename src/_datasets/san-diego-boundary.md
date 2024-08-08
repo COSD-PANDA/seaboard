@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: San Diego boundary
     url: >-
-      https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.pbf
-    format: pbf
-  - name: San Diego boundary
-    url: >-
       https://seshat.datasd.org/gis_city_boundary/san_diego_boundary_datasd.topo.json
     format: topojson
   - name: San Diego boundary

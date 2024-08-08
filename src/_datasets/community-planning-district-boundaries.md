@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Community planning districts
     url: >-
-      https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_datasd.pbf
-    format: pbf
-  - name: Community planning districts
-    url: >-
       https://seshat.datasd.org/gis_community_planning_districts/cmty_plan_datasd.topo.json
     format: topojson
   - name: Community planning districts

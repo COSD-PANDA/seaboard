@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Revolving Loan Fund coverage boundaries
     url: >-
-      https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.pbf
-    format: pbf
-  - name: Revolving Loan Fund coverage boundaries
-    url: >-
       https://seshat.datasd.org/gis_revolving_loan_fund_coverage/rev_loan_datasd.topo.json
     format: topojson
   - name: Revolving Loan Fund coverage boundaries

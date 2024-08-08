@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: MHPA
     url: >-
-      https://seshat.datasd.org/gis_mhpa_areas/mhpa_areas_datasd.pbf
-    format: pbf
-  - name: MHPA
-    url: >-
       https://seshat.datasd.org/gis_mhpa_areas/mhpa_areas_datasd.topo.json
     format: topojson
   - name: MHPA

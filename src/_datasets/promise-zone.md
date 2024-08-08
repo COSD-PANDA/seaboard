@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Promise Zone boundary
     url: >-
-      https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.pbf
-    format: pbf
-  - name: Promise Zone boundary
-    url: >-
       https://seshat.datasd.org/gis_promise_zone/promise_zone_datasd.topo.json
     format: topojson
   - name: Promise Zone boundary

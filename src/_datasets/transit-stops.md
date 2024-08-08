@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Transit Stops Locations
     url: >-
-      https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.pbf
-    format: pbf
-  - name: Transit Stops Locations
-    url: >-
       https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.topo.json
     format: topojson
   - name: Transit Stops Locations

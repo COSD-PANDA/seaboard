@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Roads lines
     url: >-
-      https://seshat.datasd.org/gis_roads_all/roads_datasd.pbf
-    format: pbf
-  - name: Roads lines
-    url: >-
       https://seshat.datasd.org/gis_roads_all/roads_datasd.topo.json
     format: topojson
   - name: Roads lines

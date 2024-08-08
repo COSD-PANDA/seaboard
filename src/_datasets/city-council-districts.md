@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: City Council districts
     url: >-
-      https://seshat.datasd.org/gis_city_council_districts/council_districts_datasd.pbf
-    format: pbf
-  - name: City Council districts
-    url: >-
       https://seshat.datasd.org/gis_city_council_districts/council_districts_datasd.topo.json
     format: topojson
   - name: City Council districts

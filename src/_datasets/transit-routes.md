@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Transit routes
     url: >-
-      https://seshat.datasd.org/gis_transit_routes/transit_routes_datasd.pbf
-    format: pbf
-  - name: Transit routes
-    url: >-
       https://seshat.datasd.org/gis_transit_routes/transit_routes_datasd.topo.json
     format: topojson
   - name: Transit routes

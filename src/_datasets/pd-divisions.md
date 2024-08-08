@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Police divisions
     url: >-
-      https://seshat.datasd.org/gis_police_divisions/pd_divisions_datasd.pbf
-    format: pbf
-  - name: Police divisions
-    url: >-
       https://seshat.datasd.org/gis_police_divisions/pd_divisions_datasd.topo.json
     format: topojson
   - name: Police divisions
