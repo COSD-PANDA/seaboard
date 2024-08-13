@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Fire battalion districts
     url: >-
-      https://seshat.datasd.org/gis_fire_battalion_districts/fire_battalion_districts_datasd.pbf
-    format: pbf
-  - name: Fire battalion districts
-    url: >-
       https://seshat.datasd.org/gis_fire_battalion_districts/fire_battalion_districts_datasd.topo.json
     format: topojson
   - name: Fire battalion districts

@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Right-of-way parcels
     url: >-
-      https://seshat.datasd.org/gis_row/right_of_way_datasd.pbf
-    format: pbf
-  - name: Right-of-way parcels
-    url: >-
       https://seshat.datasd.org/gis_row/right_of_way_datasd.topo.json
     format: topojson
   - name: Right-of-way parcels

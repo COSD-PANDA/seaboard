@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Maintenance assessment districts
     url: >-
-      https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_datasd.pbf
-    format: pbf
-  - name: Maintenance assessment districts
-    url: >-
       https://seshat.datasd.org/gis_maintenance_assessment_districts/maintenance_assessment_districts_datasd.topo.json
     format: topojson
   - name: Maintenance assessment districts

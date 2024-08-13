@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Historical districts
     url: >-
-      https://seshat.datasd.org/gis_historical_districts/historic_districts_datasd.pbf
-    format: pbf
-  - name: Historical districts
-    url: >-
       https://seshat.datasd.org/gis_historical_districts/historic_districts_datasd.topo.json
     format: topojson
   - name: Historical districts

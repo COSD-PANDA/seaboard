@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Library points
     url: >-
-      https://seshat.datasd.org/gis_library_locations/libraries_datasd.pbf
-    format: pbf
-  - name: Library points
-    url: >-
       https://seshat.datasd.org/gis_library_locations/libraries_datasd.topo.json
     format: topojson
   - name: Library points

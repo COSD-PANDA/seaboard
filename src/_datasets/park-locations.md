@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Park points
     url: >-
-      https://seshat.datasd.org/gis_park_locations/parks_datasd.pbf
-    format: pbf
-  - name: Park points
-    url: >-
       https://seshat.datasd.org/gis_park_locations/parks_datasd.topo.json
     format: topojson
   - name: Park points
