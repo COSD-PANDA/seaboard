@@ -12,10 +12,6 @@ resources:
     format: shp
   - name: Fire station points
     url: >-
-      https://seshat.datasd.org/gis_fire_stations/fire_stations_datasd.pbf
-    format: pbf
-  - name: Fire station points
-    url: >-
       https://seshat.datasd.org/gis_fire_stations/fire_stations_datasd.topo.json
     format: topojson
   - name: Fire station points

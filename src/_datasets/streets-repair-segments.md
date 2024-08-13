@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Street segment lines
     url: >-
-      https://seshat.datasd.org/gis_streets_repair_segs/sd_paving_segs_datasd.pbf
-    format: pbf
-  - name: Street segment lines
-    url: >-
       https://seshat.datasd.org/gis_streets_repair_segs/sd_paving_segs_datasd.topo.json
     format: topojson
   - name: Street segment lines

@@ -9,3 +9,4 @@ site
 src/assets/bower_components
 .DS_Store
 /public
+.idea

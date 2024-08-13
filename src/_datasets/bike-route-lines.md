@@ -13,10 +13,6 @@ resources:
     format: shp
   - name: Existing bike route lines
     url: >-
-      https://seshat.datasd.org/gis_bike_routes/bike_routes_datasd.pbf
-    format: pbf
-  - name: Existing bike route lines
-    url: >-
       https://seshat.datasd.org/gis_bike_routes/bike_routes_datasd.topo.json
     format: topojson
   - name: Existing bike route lines
