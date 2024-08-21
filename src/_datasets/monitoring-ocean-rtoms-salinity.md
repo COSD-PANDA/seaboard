@@ -12,6 +12,7 @@ resources:
   - name: South Bay Ocean Outfall (SBOO) 2023 RTOMS salinity measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_salinity/SBOO_salinity_2023_datasd.csv
+    format: csv
   - name: PLOO 2022 RTOMS salinity measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_salinity/PLOO_salinity_2022_datasd.csv

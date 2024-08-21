@@ -11,6 +11,7 @@ resources:
   - name: South Bay Ocean Outfall (SBOO) 2023 RTOMS ocean chemistry measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_ocean_chemistry/SBOO_ocean_chemistry_2023_datasd.csv
+    format: csv
   - name: PLOO 2022 RTOMS ocean chemistry measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_ocean_chemistry/PLOO_ocean_chemistry_2022_datasd.csv

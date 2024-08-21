@@ -12,6 +12,7 @@ resources:
   - name: South Bay Ocean Outfall (SBOO) 2023 RTOMS water temperature measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_water_temperature/SBOO_water_temperature_2023_datasd.csv
+    format: csv
   - name: PLOO 2022 RTOMS water temperature measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_water_temperature/PLOO_water_temperature_2022_datasd.csv
