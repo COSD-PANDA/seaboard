@@ -5,11 +5,19 @@ department: Public Utilities
 category:
   - Energy & Environment
 resources:
-  - name: Point Loma Ocean Outfall (PLOO) 2022 RTOMS ocean chemistry measurements
+  - name: Point Loma Ocean Outfall (PLOO) 2023 RTOMS ocean chemistry measurements
+    url: >-
+      https://seshat.datasd.org/monitoring_ocean_rtoms_ocean_chemistry/PLOO_ocean_chemistry_2023_datasd.csv
+    format: csv
+  - name: South Bay Ocean Outfall (SBOO) 2023 RTOMS ocean chemistry measurements
+    url: >-
+      https://seshat.datasd.org/monitoring_ocean_rtoms_ocean_chemistry/SBOO_ocean_chemistry_2023_datasd.csv
+    format: csv
+  - name: PLOO 2022 RTOMS ocean chemistry measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_ocean_chemistry/PLOO_ocean_chemistry_2022_datasd.csv
     format: csv
-  - name: South Bay Ocean Outfall (SBOO) 2022 RTOMS ocean chemistry measurements
+  - name: SBOO 2022 RTOMS ocean chemistry measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_ocean_chemistry/SBOO_ocean_chemistry_2022_datasd.csv
     format: csv
@@ -45,7 +53,7 @@ resources:
   
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2023-08-14'
-date_modified: '2023-08-14'
+date_modified: '2024-08-19'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
