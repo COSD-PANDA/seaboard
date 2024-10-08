@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container pt-7">
+    <div class="row">
+        <div class="col">
+            <h1 class="display-4">
+				Tag: {{ .Title }}
+			</h1>
+        </div>
+    </div>
+</div>
+{{ partial "datasets-listing" . }}
+{{ partial "datasets-categories-lg" . }}
+{{ end }}

@@ -2,6 +2,7 @@
 {{- if eq .Section "categories" }}
     {{- $thisFile = anchorize .Title }}
 {{- end }}
+{{ $currentPage := . }}
 <div class="container-fluid datasets-filters-bg py-7">
     <div class="container">
         <div class="row">
@@ -18,23 +19,22 @@
                     <div class="collapse navbar-collapse" id="categoryNav">
                         <div class="d-flex">
                             <div class="navbar-nav">
-                                {{- range $key, $value := .Site.Taxonomies.categories }}
-                                {{- $iconPartial := (printf "%s%s" "icon-" $key) }}
-                                {{- if $thisFile }}
-                                    {{- $cardClass := (printf "%s" $key) }}
-                                    {{- if eq $thisFile $cardClass }}
-                                    <div class="nav-item category-nav-item text-decoration-none category-nav-{{ $cardClass }}">
-                                        <a aria-current="page" href="/categories/{{ $key | urlize }}">
+                                {{- range site.Menus.category }}
+                                {{- $thisAnchor := lower (replace .Name " " "-") }}
+                                {{- $iconPartial := (printf "%s%s" "icon-" $thisAnchor) }}
+                                    {{- if $currentPage.IsMenuCurrent .Menu . }}
+                                    <div class="nav-item category-nav-item category-nav-{{ $thisAnchor }}">
+                                        <a class="text-decoration-none" aria-current="page" href="/categories/{{ $thisAnchor | urlize }}">
                                             <div class="d-flex align-items-center">
                                                 <div class="category-nav-svg">
                                                     {{ partial $iconPartial . }}
                                                 </div>
-                                                <h5 class="category-svg-label text-white fs-6 lh-1 ms-3 mb-0">{{ humanize $key }}</h5>
+                                                <h5 class="category-svg-label text-white fs-6 lh-1 ms-3 mb-0">{{ .Name }}</h5>
                                             </div>
                                         </a>
-                                    {{- else  }}
+                                    {{- else }}
                                     <div class="nav-item category-nav-item text-decoration-none">
-                                        <a href="/categories/{{ $key | urlize }}">
+                                        <a class="text-decoration-none" href="/categories/{{ $thisAnchor | urlize }}">
                                             <div class="d-flex align-items-center">
                                                 <div class="category-nav-svg">
                                                     {{ partial $iconPartial . }}
@@ -43,18 +43,7 @@
                                         </a>
                                     {{- end }}
                                     </div>
-                                {{- else }}
-                                <div class="nav-item category-nav-item text-decoration-none">
-                                    <a href="/categories/{{ $key | urlize }}">
-                                        <div class="d-flex align-items-center">
-                                            <div class="category-nav-svg">
-                                                {{ partial $iconPartial . }}
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
                                 {{- end }}
-                                {{- end }}                        
                             </div>
                         </div>
                     </div>

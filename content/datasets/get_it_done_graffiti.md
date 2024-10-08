@@ -4,15 +4,14 @@ menu:
     main:
         name: "Graffiti Removal Requests"
         parent: Data
-colorbar: green
 departments: 
-    - Performance & Analytics
+    - Performance and Analytics
 categories:
     - City Management
 tags:
     - 311
     - Get it Done
-resources:
+distributions:
   - name: "Graffiti Removal Requests"
     url: >-
       https://seshat.datasd.org/get_it_done_graffiti/get_it_done_graffiti_requests_datasd.csv

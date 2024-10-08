@@ -4,12 +4,11 @@ menu:
     main:
         name: "Traffic Counts"
         parent: Data
-colorbar: green
 departments: 
-    - Transportation Department
+    - Transportation
 categories:
     - Transportation
-resources:
+distributions:
   - name: "Traffic Counts"
     url: >-
       https://seshat.datasd.org/traffic_adt_counts/traffic_counts_datasd.csv

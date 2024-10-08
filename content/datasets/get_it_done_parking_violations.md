@@ -4,7 +4,6 @@ menu:
     main:
         name: "72-hour Parking Violation Notifications"
         parent: Data
-colorbar: green
 departments: 
     - Police
 categories:
@@ -12,7 +11,7 @@ categories:
 tags:
     - 311
     - Get it Done
-resources:
+distributions:
   - name: "72-hour Parking Violation Notifications"
     url: >-
       https://seshat.datasd.org/get_it_done_parking_violations/get_it_done_72_hour_violation_requests_datasd.csv

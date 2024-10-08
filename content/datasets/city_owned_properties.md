@@ -4,12 +4,11 @@ menu:
     main:
         name: "City-Owned Properties"
         parent: Data
-colorbar: green
 departments: 
     - Real Estate and Airport Management
 categories:
-    - City Infrastructure
-resources:
+    - "City Infrastructure"
+distributions:
   - name: "Properties"
     url: >-
       https://seshat.datasd.org/city_owned_properties/city_property_details_datasd.csv

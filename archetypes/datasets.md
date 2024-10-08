@@ -1,6 +1,7 @@
 ---
 {{- $datasetJSON := getJSON "https://raw.githubusercontent.com/COSD-PANDA/data-inventory/temporal/data.json" }}
 {{- $datasetList :=  $datasetJSON.dataset }}
+{{- $thisPop := (len | $datasetList) }}
 {{- $thisTitle := (replace .Name "-" "_") }}
 {{- range where $datasetList ".identifier" $thisTitle }}
 title: "{{ .title }}"
@@ -8,7 +9,6 @@ menu:
     main:
         name: "{{ .title }}"
         parent: Data
-colorbar: green
 departments: 
     - {{ .publisher.name }}
 categories:
@@ -20,7 +20,7 @@ tags:
     - {{ . }}
 {{- end }}
 {{- end  }}
-resources: 
+distributions: 
 {{- range .distribution }}
   - name: "{{ .title }}"
     url: >-
@@ -35,7 +35,7 @@ resources:
     filterGroup: 
         - none
 {{- end }}
-popularity: 0
+popularity: $thisPop
 summary: "{{ .description }}"
 described_by: {{ .describedBy }}
 date_issued: {{ .issued }}

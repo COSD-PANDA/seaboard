@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="container-fluid py-7">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <h1 class="display-4">
+                    {{ .Title }}
+                </h1>
+            </div>
+        </div>
+        {{- with .Content}}
+        <div class="row mb-5">
+            <div class="col">
+                {{ . }}
+            </div>
+        </div>
+        {{- end }}
+        <div class="row">
+            {{ range .Pages }}
+                {{ .Render "li" }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ partial "datasets-categories-lg" . }}
+{{ end }}
+  
+  
+  

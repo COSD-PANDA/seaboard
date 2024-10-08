@@ -1,0 +1,19 @@
+{{- $thisCategories := slice }}
+<div class="dataset-list-main d-flex pb-3 me-4 mb-2 border-bottom">
+    <div>
+        <a class="fw-bold text-decoration-none dataset-title-link fs-4 pe-2" href="{{ .Permalink }}">{{ .Title }}</a>
+        <p class="fs-5 pt-3">{{ .Summary }}</p>
+    </div>
+</div>
+<div class="mb-5">
+    <p class="dataset-list-tag-label pe-4 fs-6 d-inline">Categories</p>
+    {{- range .Pages }}
+        {{- range .Params.categories}}
+            {{- $thisCategories = $thisCategories | append . }}
+        {{- end }}
+    {{- end }}
+    {{- $uniqueCats := $thisCategories | uniq }}
+    {{- range $uniqueCats }}
+        <a class="dataset-list-tag-link pe-4 fs-6 text-decoration-none" href="/categories/{{ . | urlize }}">{{ . }}</a>
+    {{- end }}
+</div>

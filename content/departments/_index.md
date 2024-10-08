@@ -1,4 +1,4 @@
 ---
-title: "Departments"
+title: "Department descriptions"
 
 ---

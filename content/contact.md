@@ -9,3 +9,5 @@ menu:
 colorbar: p-blue
 
 ---
+
+Email us at data@sandiego.gov

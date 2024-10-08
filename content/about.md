@@ -9,3 +9,5 @@ menu:
 colorbar: orange
 
 ---
+
+Here is some helpful information

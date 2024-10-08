@@ -4,12 +4,11 @@ menu:
     main:
         name: "Locations of artwork in the Civic Art Collection"
         parent: Data
-colorbar: green
 departments: 
-    - Arts and Culture
+    - Commission for Arts and Culture
 categories:
     - Culture and Recreation
-resources:
+distributions:
   - name: "Locations of artwork"
     url: >-
       https://seshat.datasd.org/civic_art_collection/public_art_locations_datasd.csv

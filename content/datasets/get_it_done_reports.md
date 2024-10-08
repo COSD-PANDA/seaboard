@@ -4,15 +4,14 @@ menu:
     main:
         name: "Reports of non-emergency problems submitted to Get It Done"
         parent: Data
-colorbar: green
 departments: 
-    - Performance & Analytics
+    - Performance and Analytics
 categories:
     - City Management
 tags:
     - 311
     - Get it Done
-resources:
+distributions:
   - name: "Get it Done Reports"
     url: >-
       https://seshat.datasd.org/get_it_done_reports/get_it_done_reports_datasd.zip

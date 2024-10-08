@@ -4,12 +4,11 @@ menu:
     main:
         name: "RIPA police stop data - basic details"
         parent: Data
-colorbar: green
 departments: 
     - Police
 categories:
     - Public Safety
-resources:
+distributions:
   - name: "Stop details"
     url: >-
       https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd.csv

@@ -4,13 +4,12 @@ menu:
     main:
         name: "Transit Stops Locations"
         parent: Data
-colorbar: green
 departments: 
     - SanGIS
 categories:
     - GIS
     - Transportation
-resources:
+distributions:
   - name: "Transit Stops Locations"
     url: >-
       https://seshat.datasd.org/gis_transit_stops/transit_stops_datasd.zip

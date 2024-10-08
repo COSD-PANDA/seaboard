@@ -4,12 +4,11 @@ menu:
     main:
         name: "Monitoring of Indicator Bacteria in Drinking Water"
         parent: Data
-colorbar: green
 departments: 
     - Public Utilities
 categories:
     - Energy and Environment
-resources:
+distributions:
   - name: "All Drinking Water Tests (Bacteria)"
     url: >-
       https://seshat.datasd.org/monitoring_indicator_bacteria/indicator_bacteria_tests_datasd.csv

@@ -1,0 +1,23 @@
+{{- $selectedCat := .Params.menu.category.name }}
+{{- $selectedCatPath :=  anchorize $selectedCat }}
+{{- $thisIcon := (printf "icon-%s" $selectedCatPath) }}
+{{- $thisDepartments := slice }}
+<div class="dataset-list-main d-flex pb-3 me-4 mb-2 border-bottom">
+    <div class="category-svg-dataset">
+        {{ partial $thisIcon . }}
+    </div>
+    <div class="ps-3">
+        <a class="fw-bold text-decoration-none dataset-title-link fs-4 pe-2" href="{{ .Permalink }}">{{ .Title }}</a>
+        <p class="fs-5 pt-3">{{ .Content }}</p>
+    </div>
+</div>
+<div class="mb-5">
+    <p class="dataset-list-tag-label pe-4 fs-6 d-inline">Departments</p>
+    {{- range .Pages }}
+        {{- $thisDepartments = $thisDepartments | append .Params.departments }}
+    {{- end }}
+    {{- $uniqueDepts := $thisDepartments | uniq }}
+    {{- range $uniqueDepts }}
+        <a class="dataset-list-tag-link pe-4 fs-6 text-decoration-none" href="/departments/{{ . | urlize }}">{{ . }}</a>
+    {{- end }}
+</div>

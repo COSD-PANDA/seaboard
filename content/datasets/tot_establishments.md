@@ -4,12 +4,11 @@ menu:
     main:
         name: "Active TOT Vacation Certificates"
         parent: Data
-colorbar: green
 departments: 
     - City Treasurer
 categories:
     - Economy and Community
-resources:
+distributions:
   - name: "Active certificates"
     url: >-
       https://seshat.datasd.org/tot_establishments/tot_establishments_datasd.csv

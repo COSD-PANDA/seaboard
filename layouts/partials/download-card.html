@@ -1,4 +1,4 @@
-{{- $thisURL := printf "%s" .resource.url }}
+{{- $thisURL := printf "%s" .distribution.url }}
 {{- $thisRowCount := 0 }}
 {{- range $i, $e := .dlRows }}
 {{- $currDlRow := index $e 0 }}
@@ -9,15 +9,15 @@
 <div class="col pe-3">
     <div class="card download-card">
         <div class="download-card-title cat-bg-{{ .dlCardCat }}-20 p-4 fs-4">
-            {{ .resource.name }}
+            {{ .distribution.name }}
             <p>{{ .Site.Params.excelLimit }}</p>
         </div>
         <div class="card-body">
-        <p class="fs-5">Format: <span class="fw-bold">{{ .resource.format }}</span></p>
+        <p class="fs-5">Format: <span class="fw-bold">{{ .distribution.format }}</span></p>
         <p class="fs-5">File size: <span class="fw-bold">000 MB</span></p>
         <p class="fs-5">No. rows: <span class="fw-bold">{{ $thisRowCount }}</span> {{ if gt $thisRowCount $.Site.Params.excelLimit }}{{ partial "excel-warning" . }}{{- end }}</p>
-        <p class="fs-5">{{ .resource.filter }}</p>
-        <a href="{{ .resource.url }}" class="btn btn-{{ .dlCardCat}}">Download</a>
+        {{- if ne .distribution.filter "Full dataset" }}<p class="fs-5">{{ .distribution.filter }}</p>{{- end }}
+        <a href="{{ .distribution.url }}" class="btn btn-{{ .dlCardCat}} my-3">Download</a>
         </div>
     </div>
 </div>

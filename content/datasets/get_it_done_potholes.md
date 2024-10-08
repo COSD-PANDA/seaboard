@@ -4,15 +4,14 @@ menu:
     main:
         name: "Pothole Repair Requests"
         parent: Data
-colorbar: green
 departments: 
-    - Performance & Analytics
+    - Performance and Analytics
 categories:
     - City Management
 tags:
     - 311
     - Get it Done
-resources:
+distributions:
   - name: "Pothole Repair Requests"
     url: >-
       https://seshat.datasd.org/get_it_done_potholes/get_it_done_pothole_requests_datasd.csv

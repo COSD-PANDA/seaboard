@@ -1,5 +1,16 @@
 {{ define "main" }}
 {{- $distroRowCounts := getCSV "," $.Site.Params.rowNosCsv }}
+{{- $dsViewCounts := getCSV "," $.Site.Params.dsViewsCsv }}
+{{- $thisIdentifier := (path.Base .RelPermalink) }}
+{{- $pageCatList := $.Params.categories }}
+{{- $selectedPageCat := index $pageCatList 0 }}
+{{- $thisViewCount := 0 }}
+{{- range $i, $e := $dsViewCounts }}
+{{- $currViewsRow := index $e 0 }}
+{{- if eq $currViewsRow $thisIdentifier }}
+{{- $thisViewCount = int (index $e 1) }}
+{{- end }}
+{{- end }}
 <div class="container">
 	<div class="row">
 		<div class="col pt-5">
@@ -22,17 +33,15 @@
 	</div>
 	<div class="row pb-7">
 		<div class="col-4">
-			{{- $pageCatList := $.Params.categories }}
-			{{- $selectedPageCat := index $pageCatList 0 }}
-			{{- range first 1 .Params.resources -}}
-			{{ partial "download-card" (dict "resource" . "dlCardCat" (anchorize $selectedPageCat) "dlRows" $distroRowCounts) }}
+			{{- range first 1 .Params.distributions -}} <!-- loop to get downloads -->
+			{{ partial "download-card" (dict "distribution" . "dlCardCat" (anchorize $selectedPageCat) "dlRows" $distroRowCounts) }}
 			{{- end -}}
 		</div>
 		<div class="col-8">
 			<div class="dataset-metadata mb-5">
 				<p><span class="dataset-metadata-label fw-bold">Temporal:</span> {{ .Params.temporal }} {{ partial "temporal-definition" . }}</p>
 				<p><span class="dataset-metadata-label fw-bold">Spatial:</span> {{ .Params.spatial }} {{ partial "spatial-definition" . }}</p>
-				<p><span class="dataset-metadata-label fw-bold">Views:</span> </p>
+				<p><span class="dataset-metadata-label fw-bold">Views:</span> {{ $thisViewCount | lang.FormatNumber 0 }}</p>
 				<p><span class="dataset-metadata-label fw-bold">Issued:</span> {{ .Params.date_issued }}</p>
 			</div>
 			<div class="dataset-jump-links mb-5">
@@ -51,10 +60,10 @@
 		</div>
 	</div>
 </div>
-{{- $noDistros := .Params.resources | len }}
+{{- $noDistros := .Params.distributions | len }}
 {{- $remNoDistros := sub $noDistros 1 }}
 {{- if gt $remNoDistros 0 }}
-{{- $remDistros := last $remNoDistros  .Params.resources }}
+{{- $remDistros := last $remNoDistros  .Params.distributions }}
 {{- $filterGroups := slice }}
 {{- range $remDistros }}
 {{- range .filterGroup }}
@@ -86,6 +95,7 @@
 						<div class="more-downloads-table">
 							<table class="table" id="accordionColumnsDownloads">
 								<tbody>
+									{{/* This block gets the list of distributions in the filter group */}}
 									{{- $remDistrosThisFilter := slice }}
 									{{- range  sort $remDistros "weight" "desc" }}
 									{{- $thisRemDistro := . }}
@@ -95,24 +105,20 @@
 									{{- end }}
 									{{- end }}
 									{{- end }}
+									{{/* Now we range through the distributions in the filter group to make the table */}}
 									{{- range $i, $r := $remDistrosThisFilter }}
-									{{- if eq $i ($remDistrosThisFilter | len) }}
-									<tr id="final-data-field" class="fs-5 fw-semibold final-data-field-corners">
-										<td class="align-middle">{{ .name }}</td>
-										<td class="align-middle">
-											<a href="{{ .url }}" class="btn btn-sm btn-{{ (anchorize $selectedPageCat) }}">Download</a>
-										</td>
-										<td><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDl{{ $i }}" aria-expanded="true" aria-controls="collapseDl{{ $i }}"></button></td>
-									</tr>
-									<tr id="collapseDl{{ $i }}" class="fs-6 accordion-body collapse">
-										<td class="accordion-body" colspan="3">
-											<p class="fs-5">Format: <span class="fw-bold">{{ .format }}</span></p>
-											<p class="fs-5">File size: <span class="fw-bold">000 MB</span></p>
-											<p class="fs-5">No. rows: <span class="fw-bold">0</span></p>
-											<p class="fs-5">{{ .filter }}</p>
-										</td>
-									</tr>
-									{{- else }}
+									{{/* 
+										We need the view counts. 
+										This code block is repeated in download-card partial
+									*/}}
+									{{- $thisURL := printf "%s" .url }}
+									{{- $thisRowCount := 0 }}
+									{{- range $i, $e := $distroRowCounts }}
+									{{- $currDlRow := index $e 0 }}
+									{{- if eq $currDlRow $thisURL }}
+									{{- $thisRowCount = int (index $e 1) }}
+									{{- end }}
+									{{- end }}
 									<tr class="fs-5 fw-semibold">
 										<td class="align-middle">{{ .name }}</td>
 										<td class="align-middle">
@@ -122,13 +128,12 @@
 									</tr>
 									<tr id="collapseDl{{ $i }}" class="fs-6 accordion-body collapse">
 										<td class="accordion-body" colspan="3">
-											<p class="fs-5">Format: <span class="fw-bold">{{ .format }}</span></p>
-											<p class="fs-5">File size: <span class="fw-bold">000 MB</span></p>
-											<p class="fs-5">No. rows: <span class="fw-bold">0</span></p>
-											<p class="fs-5">{{ .filter }}</p>
+											<p>Format: <span class="fw-bold">{{ .format }}</span></p>
+											<p>File size: <span class="fw-bold">000 MB</span></p>
+											<p>No. rows: <span class="fw-bold">{{ $thisRowCount | lang.FormatNumber 0 }}</span> {{ if gt $thisRowCount $.Site.Params.excelLimit }}{{ partial "excel-warning" . }}{{- end }}</p>
+											<p>{{ .filter }}</p>
 										</td>
 									</tr>
-									{{- end }}
 									{{- end }}
 								</tbody>
 							</table>

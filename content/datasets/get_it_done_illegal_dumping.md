@@ -4,7 +4,6 @@ menu:
     main:
         name: "Illegal Dumping Notifications"
         parent: Data
-colorbar: green
 departments: 
     - Environmental Services
 categories:
@@ -12,7 +11,7 @@ categories:
 tags:
     - 311
     - Get it Done
-resources:
+distributions:
   - name: "Illegal Dumping Notifications"
     url: >-
       https://seshat.datasd.org/get_it_done_illegal_dumping/get_it_done_illegal_dumping_requests_datasd.csv

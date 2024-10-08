@@ -136,7 +136,7 @@ $nav_about_orange: $p_orange;
 $nav_contact_blue: $p_blue;
 
 $cat_yellow: #fcc200;
-$cat_dk_blue: $s_blue_dk;
+$cat_dk_blue: #98d1f0;
 $cat_lt_blue: $p_blue;
 $cat_lt_green: $p_green;
 $cat_dk_green: $s_green_dk;
@@ -145,7 +145,7 @@ $cat_gray: #5D676F;
 $cat_purple: $p_purple;
 
 $cat_yellow_10: rgba(252, 194, 0, 0.1);
-$cat_dk_blue_10: rgba(0, 84, 159, 0.1);
+$cat_dk_blue_10: rgba(152, 209, 240, 0.1);
 $cat_lt_blue_10: rgba(0, 152, 219, 0.1);
 $cat_lt_green_10: rgba(0, 199, 178, 0.1);
 $cat_dk_green_10: rgba(0, 123, 105, 0.1);
@@ -154,7 +154,7 @@ $cat_gray_10: rgba(93, 103, 111, 0.1);
 $cat_purple_10: rgba(127, 48, 196, 0.1);
 
 $cat_yellow_20: rgba(252, 194, 0, 0.2);
-$cat_dk_blue_20: rgba(0, 84, 159, 0.2);
+$cat_dk_blue_20: rgba(152, 209, 240, 0.2);
 $cat_lt_blue_20: rgba(0, 152, 219, 0.2);
 $cat_lt_green_20: rgba(0, 199, 178, 0.2);
 $cat_dk_green_20: rgba(0, 123, 105, 0.2);
@@ -305,43 +305,12 @@ a {
 .nav-color-bar {
   border-bottom-width: 0.625rem;
   border-bottom-style: solid;
+  color: $primary;
 }
 
 .header-color-bar {
   border-bottom-style: solid;
   border-bottom-width: 0.375rem;
-}
-
-.nav-cat-color-green {
-  border-bottom-color: $cat_lt_green;
-}
-
-.nav-cat-color-dk-blue {
-  border-bottom-color: $cat_dk_blue;
-}
-
-.nav-cat-color-orange {
-  border-bottom-color: $cat_orange;
-}
-
-.nav-cat-color-p-blue {
-  border-bottom-color: $cat_lt_blue;
-}
-
-.nav-cat-color-yellow {
-  border-bottom-color: $cat_yellow;
-}
-
-.nav-cat-color-gray {
-  border-bottom-color: $cat_gray;
-}
-
-.nav-cat-color-dk-green {
-  border-bottom-color: $cat_dk_green;
-}
-
-.nav-cat-color-purple {
-  border-bottom-color: $cat_purple;
 }
 
 /* Site-wide header */
@@ -384,31 +353,31 @@ a {
   line-height: 2.5rem;
 
   a.get-started-li {
-    border-left: 0.5rem solid $nav_home_blue;
+    border-left: 0.5rem solid $primary;
   }
   a:hover.get-started-li, a.active.get-started-li {
-    background-color: $nav_home_blue;
+    background-color: $primary;
     color: white;
   }
   a.data-li {
-    border-left: 0.5rem solid $nav_data_green;
+    border-left: 0.5rem solid $primary;
   }
   a:hover.data-li, a.active.data-li {
-    background-color: $nav_data_green;
+    background-color: $primary;
     color: white;
   }
   a.about-li {
-    border-left: 0.5rem solid $nav_about_orange;
+    border-left: 0.5rem solid $primary;
   }
   a:hover.about-li, a.active.about-li {
-    background-color: $nav_about_orange;
+    background-color: $primary;
     color: white;
   }
   a.contact-li {
-    border-left: 0.5rem solid $nav_contact_blue;
+    border-left: 0.5rem solid $primary;
   }
   a:hover.contact-li,a.active.contact-li {
-    background-color: $nav_contact_blue;
+    background-color: $primary;
     color: white;
   }
 }
@@ -824,6 +793,11 @@ a.dataset-taxonomy-btn {
 
 .dictionary-table, .more-downloads-table {
 
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    color: inherit;
+  }
+  
   .table {
    margin-bottom: $spacer;
    width: 100%;
