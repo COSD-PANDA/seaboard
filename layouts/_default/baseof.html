@@ -5,8 +5,17 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ with resources.Get "sass/main.scss" }}
+  {{ with . | toCSS }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 </head>
 <html prefix="dct: http://purl.org/dc/terms/
