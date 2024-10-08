@@ -7,7 +7,6 @@ category:
 resources:
   - name: Contaminants in Fish Tissue
     url: >-
-      https://seshat.datasd.org/monitoring_ocean_fish_tissue/fish_tissue_datasd.csv
     format: csv
   - name: Fish Tissue Sampling Station Locations
     url: >-
