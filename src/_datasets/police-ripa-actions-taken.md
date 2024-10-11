@@ -5,6 +5,10 @@ department: Police
 category:
   - Public Safety
 resources:
+  - name: Actions taken 2024
+    url: >-
+      https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_2024_datasd.csv
+    format: csv
   - name: Actions taken
     url: >-
       https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_datasd.csv

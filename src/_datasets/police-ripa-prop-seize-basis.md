@@ -5,6 +5,10 @@ department: Police
 category:
   - Public Safety
 resources:
+  - name: Basis for property seizure 2024
+    url: >-
+      https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_2024_datasd.csv
+    format: csv
   - name: Basis for property seizure
     url: >-
       https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_datasd.csv

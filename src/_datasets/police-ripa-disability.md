@@ -5,6 +5,10 @@ department: Police
 category:
   - Public Safety
 resources:
+  - name: Disability of persons 2024
+    url: >-
+      https://seshat.datasd.org/police_ripa_disability/ripa_disability_2024_datasd.csv
+    format: csv
   - name: Disability of persons
     url: >-
       https://seshat.datasd.org/police_ripa_disability/ripa_disability_datasd.csv
