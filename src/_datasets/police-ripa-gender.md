@@ -7,11 +7,11 @@ category:
 resources:
   - name: Gender of persons
     url: >-
-      https://seshat.datasd.org/police_ripa_gender/ripa_gender_datasd.csv
+      https://seshat.datasd.org/police_ripa_gender/ripa_gender_2024_v2_datasd.csv
     format: csv
   - name: Gender of persons - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_gender/ripa_gender_historic.csv
+      https://seshat.datasd.org/police_ripa_gender/ripa_gender_historic_v2.csv
     format: csv
   - name: Dictionary
     url: >-
