@@ -7,7 +7,7 @@ category:
 resources:
   - name: Disability of persons
     url: >-
-      https://seshat.datasd.org/police_ripa_disability/ripa_disability_2024_datasd.csv
+      https://seshat.datasd.org/police_ripa_disability/ripa_disability_2024_v2_datasd.csv
     format: csv
   - name: Disability of persons - Historic
     url: >-

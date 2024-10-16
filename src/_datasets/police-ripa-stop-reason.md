@@ -7,7 +7,7 @@ category:
 resources:
   - name: Reason for stop
     url: >-
-      https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_2024_datasd.csv
+      https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_2024_v2_datasd.csv
     format: csv
   - name: Reason for stop - Historic
     url: >-

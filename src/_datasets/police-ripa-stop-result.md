@@ -7,7 +7,7 @@ category:
 resources:
   - name: Result of stop
     url: >-
-      https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_2024_datasd.csv
+      https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_2024_v2_datasd.csv
     format: csv
   - name: Result of stop - Historic
     url: >-

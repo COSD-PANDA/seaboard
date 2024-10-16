@@ -7,7 +7,7 @@ category:
 resources:
   - name: Basis for property seizure
     url: >-
-      https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_2024_datasd.csv
+      https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_2024_v2_datasd.csv
     format: csv
   - name: Basis for property seizure - Historic
     url: >-

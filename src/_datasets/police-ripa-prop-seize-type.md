@@ -7,7 +7,7 @@ category:
 resources:
   - name: Property seized
     url: >-
-      https://seshat.datasd.org/police_ripa_prop_seize_type/ripa_prop_seize_type_2024_datasd.csv
+      https://seshat.datasd.org/police_ripa_prop_seize_type/ripa_prop_seize_type_2024_v2_datasd.csv
     format: csv
   - name: Property seized - Historic
     url: >-
