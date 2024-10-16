@@ -7,11 +7,11 @@ category:
 resources:
   - name: Race of persons
     url: >-
-      https://seshat.datasd.org/police_ripa_race/ripa_race_datasd.csv
+      https://seshat.datasd.org/police_ripa_race/ripa_race_2024_datasd.csv
     format: csv
   - name: Race of persons - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_race/ripa_race_historic.csv
+      https://seshat.datasd.org/police_ripa_race/ripa_race_historic_v2.csv
     format: csv
   - name: Dictionary
     url: >-

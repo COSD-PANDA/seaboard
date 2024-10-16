@@ -5,17 +5,13 @@ department: Police
 category:
   - Public Safety
 resources:
-  - name: Result of stop 2024
+  - name: Result of stop
     url: >-
       https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_2024_datasd.csv
     format: csv
-  - name: Result of stop
-    url: >-
-      https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_datasd.csv
-    format: csv
   - name: Result of stop - Historic
     url: >-
-      https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_historic.csv
+      https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_historic_v2.csv
     format: csv
   - name: Dictionary
     url: >-
