@@ -7,6 +7,11 @@ category:
 resources:
   - name: Sediment Quality Sample Results
     url: >-
+      https://seshat.datasd.org/monitoring_ocean_sediment/sediment_quality_datasd.csv
+    format: csv
+  - name: Sediment Quality Sampling Station Locations
+    url: >-
+      https://seshat.datasd.org/monitoring_ocean_sediment/reference_stations_sediment_quality.csv
     format: csv
   - name: Sediment Quality Data Dictionary
     url: >-
