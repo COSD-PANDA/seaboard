@@ -13,7 +13,7 @@ resources:
       https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_dictionary_datasd.csv
     format: csv
 date_issued: '2017-06-13'
-date_modified: '2024-11-24'
+date_modified: '2024-11-25'
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
