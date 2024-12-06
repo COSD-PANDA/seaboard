@@ -1,32 +1,16 @@
-- title: Parking meter revenue
+- title: Parking meter locations
   intro: >-
-    Check how much each of the City's smart parking meters made last year
-  url: /stories/parking-meters
+    Plan where to park
+  url: https://webmaps.sandiego.gov/portal/apps/webappviewer/index.html?id=debc40c6a1ee4178af15eb995da063b0
   featured: true
-  img: '/assets/img/stories/meters.jpg'
-- title: Solar permits issued
-  intro: >-
-    Explore planned solar installations
-  url: /stories/solar-permits-2016/
-  featured: false
-  img: '/assets/img/stories/solar-permits.jpg'
+  img: '/assets/img/stories/meters.png'
 - title: Street repair work
   intro: >-
     Get a condition rating for each street in the City's network, plus view current and future street repair work
   url: >-
-    http://streets.sandiego.gov/
+    https://streets.sandiego.gov/
   featured: true
   img: '/assets/img/stories/streets.jpg'
-- title: Get water testing results
-  intro: Use this map of the sampling sites where the City’s Public Utilities Department tests for indicator bacteria.
-  url: /stories/get-water-testing-results/
-  featured: true
-  img: '/assets/img/stories/water-kitchen-black-design.jpg'
-- title: Keep track of street sweeping
-  intro: The City’s street sweeping schedule might not be the first thing on your mind when you’re looking for a parking spot - unless you’ve gotten one of those parking tickets.
-  url: /stories/keep-track-street-sweeping/
-  featured: true
-  img: '/assets/img/stories/featurestreetsweeper.jpg'
 - title: Budget data since 2011
   intro: >-
     Compare budgets with actual expenditures and revenue for the City's annual Operating and Capital budgets
