@@ -5,6 +5,10 @@ department: Police
 category:
   - Public Safety
 resources:
+  - name: Police Calls for Service 2025
+    url: >-
+      https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2025_datasd.csv
+    format: csv
   - name: Police Calls for Service 2024
     url: >-
       https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2024_datasd.csv
