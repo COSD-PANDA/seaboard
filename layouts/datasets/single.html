@@ -1,16 +1,42 @@
 {{ define "main" }}
-{{- $distroRowCounts := getCSV "," $.Site.Params.rowNosCsv }}
-{{- $dsViewCounts := getCSV "," $.Site.Params.dsViewsCsv }}
+
+
+{{- $urlviewcounts := $.Site.Params.dsViewsCsv }}
+{{- with resources.GetRemote $urlviewcounts }}
+  {{- with .Err }}
+    {{- errorf "%s" . }}
+  {{- else }}
+    {{- $.Scratch.Add "dsViewCounts" ( . | transform.Unmarshal ) }}
+  {{- end }}
+{{- else }}
+  {{- errorf "Unable to get remote resource %q" $urlviewcounts }}
+{{- end }}
+
+
+{{- $urlrowcounts :=  $.Site.Params.rowNosCsv }}
+{{- with resources.GetRemote $urlrowcounts }}
+  {{- with .Err }}
+    {{- errorf "%s" . }}
+  {{- else }}
+    {{- $.Scratch.Add "distroRowCounts" ( . | transform.Unmarshal ) }}
+  {{- end }}
+{{- else }}
+  {{- errorf "Unable to get remote resource %q" $urlrowcounts }}
+{{- end }}
+
+
 {{- $thisIdentifier := (path.Base .RelPermalink) }}
 {{- $pageCatList := $.Params.categories }}
 {{- $selectedPageCat := index $pageCatList 0 }}
 {{- $thisViewCount := 0 }}
-{{- range $i, $e := $dsViewCounts }}
+
+{{- range $i, $e := $.Scratch.Get "dsViewCounts" }}
 {{- $currViewsRow := index $e 0 }}
 {{- if eq $currViewsRow $thisIdentifier }}
 {{- $thisViewCount = int (index $e 1) }}
 {{- end }}
 {{- end }}
+
 <div class="container">
 	<div class="row">
 		<div class="col pt-5">
@@ -34,7 +60,7 @@
 	<div class="row pb-7">
 		<div class="col-4">
 			{{- range first 1 .Params.distributions -}} <!-- loop to get downloads -->
-			{{ partial "download-card" (dict "distribution" . "dlCardCat" (anchorize $selectedPageCat) "dlRows" $distroRowCounts) }}
+			{{ partial "download-card" (dict "distribution" . "dlCardCat" (anchorize $selectedPageCat) "dlRows" ($.Scratch.Get "distroRowCounts") ) }}
 			{{- end -}}
 		</div>
 		<div class="col-8">
@@ -113,7 +139,7 @@
 									*/}}
 									{{- $thisURL := printf "%s" .url }}
 									{{- $thisRowCount := 0 }}
-									{{- range $i, $e := $distroRowCounts }}
+									{{- range $i, $e := $.Scratch.Get "distroRowCounts" }}
 									{{- $currDlRow := index $e 0 }}
 									{{- if eq $currDlRow $thisURL }}
 									{{- $thisRowCount = int (index $e 1) }}

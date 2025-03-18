@@ -1,10 +1,19 @@
 <div class="row mt-4">
 {{ $url := .Params.described_by }}
-{{ $sep := "," }}
-{{ $csvRows :=  getCSV $sep $url}}
-{{ $noRows := $csvRows | len }}
+{{- with resources.GetRemote $url }}
+  {{- with .Err }}
+    {{- errorf "%s" . }}
+  {{- else }}
+    {{- $.Scratch.Add "csvRows" ( .Content | transform.Unmarshal ) }}
+  {{- end }}
+{{- else }}
+  {{- errorf "Unable to get remote resource %q" $url }}
+{{- end }}
+
+
+{{ $noRows := ( $.Scratch.Get "csvRows" ) | len }}
 {{ $noDataFields := sub $noRows 1 }}
-{{ $dataFields := last $noDataFields $csvRows }}
+{{ $dataFields := last $noDataFields ( $.Scratch.Get "csvRows" ) }}
 {{ $dataFieldsLen :=  sub $noDataFields 1 }}
 
 <div class="col-sm">
@@ -16,6 +25,7 @@
                 <th></th>
             </thead>
             <tbody>
+                
                 {{- range $i, $r :=  $dataFields }}
                 <tr class="fs-5 fw-semibold">
                     <td class="align-middle">{{ index $r 0 }}</td>

@@ -6,10 +6,11 @@
             </div>
         </div>
         <div class="row">
-            {{ range $key, $value := .Site.Taxonomies.categories }}
-            {{ $iconPartial := (printf "%s%s" "icon-" $key) }}
+            {{- range site.Menus.category }}
+            {{- $thisCategory := lower (replace .Name " " "-") }}
+            {{- $iconPartial := (printf "%s%s" "icon-" $thisCategory) }}
             <div class="col-sm-3 mb-3">
-                <a class="card category-card text-decoration-none {{ $iconPartial }}" href="/categories/{{ $key | urlize }}">
+                <a class="card category-card text-decoration-none {{ $iconPartial }}" href="/categories/{{ $thisCategory | urlize }}">
                     <div class="row g-0">
                         <div class="col-sm-4">
                             <div class="category-svg">
@@ -17,12 +18,12 @@
                             </div>
                         </div>
                         <div class="col-sm-8 d-flex align-items-center">
-                            <h5 class="card-title text-white fs-6 lh-1 ms-3">{{ humanize $key }}</h5>
+                            <h5 class="card-title text-white fs-6 lh-1 ms-3">{{ humanize $thisCategory }}</h5>
                         </div>
                     </div>
                 </a>
             </div>
-            {{ end }}
+            {{- end }}
         </div>
         <div class="row">
             <div class="col d-flex pt-7 align-items-center">
