@@ -25,4 +25,4 @@ The file contains one row per non-force-related action per person stopped by Pol
 
 {% include ripa-list.html %}
 
-For more information about RIPA regulations, see the California Code of Regulations final text.
+For more information about RIPA regulations, see the [California Code of Regulations final text](https://oag.ca.gov/system/files/media/ripa-final-text-of-proposed-regulations.pdf).

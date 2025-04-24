@@ -15,7 +15,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
-date_modified: '2025-04-22'
+date_modified: '2025-04-24'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
@@ -25,4 +25,4 @@ The file contains one row per force-related action per person stopped by Police.
 
 {% include ripa-list.html %}
 
-For more information about RIPA regulations, see the California Code of Regulations final text.
+For more information about RIPA regulations, see the [California Code of Regulations final text](https://oag.ca.gov/system/files/media/ripa-final-text-of-proposed-regulations.pdf).
