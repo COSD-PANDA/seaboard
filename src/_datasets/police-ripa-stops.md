@@ -7,7 +7,7 @@ category:
 resources:
   - name: Stop details
     url: >-
-      https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd.csv
+      https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd_v2.csv
     format: csv
   - name: Stop details - Historic
     url: >-
@@ -15,11 +15,11 @@ resources:
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/police_ripa_stops/ripa_stops_dictionary_datasd.csv
+      https://seshat.datasd.org/police_ripa_stops/ripa_stops_dictionary_datasd_v2.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
-date_modified: '2024-02-09'
+date_modified: '2025-04-22'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
