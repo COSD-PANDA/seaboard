@@ -5,7 +5,7 @@ department: Police
 category:
   - Public Safety
 resources:
-  - name: Actions taken
+  - name: (Deprecated) Actions taken
     url: >-
       https://seshat.datasd.org/police_ripa_actions_taken/ripa_actions_taken_datasd.csv
     format: csv
@@ -19,10 +19,13 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
-date_modified: '2023-10-06'
+date_modified: '2024-10-16'
 maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
+
+**This dataset has been retired and similar information is contained within the [Stops](https://data.sandiego.gov/datasets/police-ripa-stops/) data.**
+
 Actions an officer took toward a person stopped by the San Diego Police Department. This data is collected according to requirements set forth in Government Code section 12525.5 that was enacted as a result of the Racial and Identity Profiling Act of 2015 (AB 953), also known as RIPA.
 
 <!--more-->
