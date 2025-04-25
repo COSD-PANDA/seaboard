@@ -7,7 +7,7 @@ category:
 resources:
   - name: Stop details
     url: >-
-      https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd_v2.csv
+      https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd.csv
     format: csv
   - name: Stop details - Historic
     url: >-
@@ -15,7 +15,7 @@ resources:
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/police_ripa_stops/ripa_stops_dictionary_datasd_v2.csv
+      https://seshat.datasd.org/police_ripa_stops/ripa_stops_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'

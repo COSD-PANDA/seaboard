@@ -11,7 +11,7 @@ resources:
     format: csv
   - name: Dictionary
     url: >-
-      https://seshat.datasd.org/police_ripa_force_actions/ripa_force_actions_dictionary_datasd_v2.csv
+      https://seshat.datasd.org/police_ripa_force_actions/ripa_force_actions_dictionary_datasd.csv
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2019-04-16'
