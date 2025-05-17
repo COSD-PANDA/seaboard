@@ -1,0 +1,8 @@
+{% for dataset in site.datasets %}
+{% if dataset.title contains 'Parking study' and dataset.title != page.title %}
+{% assign dataset_resources = dataset.resources %}
+<ul>
+<li><a href="{{ site.baseurl }}{{ dataset.url }}">{{ dataset_resources.first.name }}</a></li>
+</ul>
+{% endif %}
+{% endfor %}
