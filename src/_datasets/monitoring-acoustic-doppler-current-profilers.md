@@ -5,7 +5,7 @@ department: Public Utilities
 category:
   - Energy & Environment
 resources:
-- name: Point Loma Ocean Outfall (PLOO) 2021 acoustic doppler current profiler measurements (east) November deployment 3
+  - name: Point Loma Ocean Outfall (PLOO) 2021 acoustic doppler current profiler measurements (east) November deployment 3
     url: >-
       https://seshat.datasd.org/monitoring_acoustic_doppler_current_profilers/PLOO_03_eastNewQC_2021_11.csv
     format: csv
