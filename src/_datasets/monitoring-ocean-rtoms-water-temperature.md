@@ -5,11 +5,19 @@ department: Public Utilities
 category:
   - Energy & Environment
 resources:
-  - name: Point Loma Ocean Outfall (PLOO) 2023 RTOMS water temperature measurements
+  - name: Point Loma Ocean Outfall (PLOO) 2024 RTOMS water temperature measurements
+    url: >-
+      https://seshat.datasd.org/monitoring_ocean_rtoms_water_temperature/PLOO_water_temperature_2024_datasd.csv
+    format: csv
+  - name: South Bay Ocean Outfall (SBOO) 2024 RTOMS water temperature measurements
+    url: >-
+      https://seshat.datasd.org/monitoring_ocean_rtoms_water_temperature/SBOO_water_temperature_2024_datasd.csv
+    format: csv
+  - name: PLOO 2023 RTOMS water temperature measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_water_temperature/PLOO_water_temperature_2023_datasd.csv
     format: csv
-  - name: South Bay Ocean Outfall (SBOO) 2023 RTOMS water temperature measurements
+  - name: SBOO 2023 RTOMS water temperature measurements
     url: >-
       https://seshat.datasd.org/monitoring_ocean_rtoms_water_temperature/SBOO_water_temperature_2023_datasd.csv
     format: csv
