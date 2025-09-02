@@ -29,7 +29,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2025-08-26'
+date_modified: '2025-09-02'
 maintainer: County of San Diego
 maintainer_email: data@sandiego.gov
 ---
