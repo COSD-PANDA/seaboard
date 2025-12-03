@@ -6,6 +6,26 @@ category:
   - Public Safety
   - City Management
 resources:
+  - name: Cases FY25
+    url: >-
+      https://seshat.datasd.org/cpp_complaints_evaluated/2025_crb_cases_datasd.csv
+    format: csv
+  - name: Allegations FY25
+    url: >-
+      https://seshat.datasd.org/cpp_complaints_allegations/2025_crb_allegations_datasd.csv
+    format: csv
+  - name: Body worn camera details FY25
+    url: >-
+      https://seshat.datasd.org/cpp_complaints_body_worn_camera/2025_crb_cases_bwc_datasd.csv
+    format: csv
+  - name: Complainants FY25
+    url: >-
+      https://seshat.datasd.org/cpp_complaints_complainants/2025_crb_complainants_datasd.csv
+    format: csv
+  - name: Dictionary FY25
+    url: >-
+      https://seshat.datasd.org/cpp_complaints_evaluated/dictionary_FY25.csv
+    format: csv
   - name: Cases FY20-FY24
     url: >-
       https://seshat.datasd.org/cpp_complaints_evaluated/2024_crb_cases_datasd.csv
