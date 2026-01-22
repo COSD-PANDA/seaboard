@@ -6,7 +6,11 @@ category:
   - City Infrastructure
   - Transportation
 resources:
-  - name: Parking Meters Locations
+  - name: Parking Meter Locations - Active
+    url: >-
+      https://seshat.datasd.org/parking_meters_locations/parking_meters_current.csv
+    format: csv
+  - name: Parking Meter Locations - Historic
     url: >-
       https://seshat.datasd.org/parking_meters_locations/treas_parking_meters_loc_datasd.csv
     format: csv
