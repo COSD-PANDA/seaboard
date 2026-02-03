@@ -27,7 +27,7 @@ resources:
     format: csv
 license: 'http://www.opendefinition.org/licenses/odc-pddl'
 date_issued: '2016-05-09'
-date_modified: '2026-01-27'
+date_modified: '2026-02-03'
 maintainer: SanGIS
 maintainer_email: data@sandiego.gov
 ---
