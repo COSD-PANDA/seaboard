@@ -5,9 +5,33 @@ department: Police
 category:
   - Public Safety
 resources:
-  - name: Police NIBRS Crime Offenses
+  - name: Police NIBRS Crime Offenses - 2026
     url: >-
-      https://seshat.datasd.org/police_nibrs/pd_nibrs_datasd.csv
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_2026_datasd.csv
+    format: csv
+  - name: Police NIBRS Crime Offenses - 2025
+    url: >-
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_2025_datasd.csv
+    format: csv
+  - name: Police NIBRS Crime Offenses - 2024
+    url: >-
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_2024_datasd.csv
+    format: csv
+  - name: Police NIBRS Crime Offenses - 2023
+    url: >-
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_2023_datasd.csv
+    format: csv
+  - name: Police NIBRS Crime Offenses - 2022
+    url: >-
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_2022_datasd.csv
+    format: csv
+  - name: Police NIBRS Crime Offenses - 2021
+    url: >-
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_2021_datasd.csv
+    format: csv
+  - name: Police NIBRS Crime Offenses - 2020
+    url: >-
+      https://seshat.datasd.org/police_nibrs/pd_nibrs_2020_datasd.csv
     format: csv
   - name: Dictionary
     url: >-
