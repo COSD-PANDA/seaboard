@@ -37,3 +37,5 @@ maintainer: City of San Diego
 maintainer_email: data@sandiego.gov
 ---
 San Diego Police Department beats.
+
+A static [pdf map](https://seshat.datasd.org/gis_police_beats/pd_beats_datasd.pdf) is available here displaying the beats as of 8/01/2017.
